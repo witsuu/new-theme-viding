@@ -156,6 +156,12 @@
   width: 30%;
 }
 
+@media (max-width: 767px) {
+  .header-section .spring-3 {
+    width: 45%;
+  }
+}
+
 .header-section .card-wrapper .card {
   position: absolute;
   top: 50%;
@@ -263,6 +269,12 @@
   }
 }
 
+@media (max-width: 767px) {
+  .couple-section .spring-3 {
+    top: 295px;
+  }
+}
+
 .couple-section h4 {
   margin-top: -5rem;
   color: #052293;
@@ -342,6 +354,8 @@
   .story-section .spring-4 {
     width: 150%;
     left: -110px;
+    height: 80%;
+    top: -125px;
   }
 }
 
@@ -360,6 +374,12 @@
   padding: 0.5rem;
 }
 
+@media (max-width: 767px) {
+  .story-section .card .card-body {
+    padding: 0.25rem;
+  }
+}
+
 .story-section .card .card-body .image-story {
   width: 100%;
   height: 500px;
@@ -370,6 +390,12 @@
 @media (max-width: 991px) {
   .story-section .card .card-body .image-story {
     height: 320px;
+  }
+}
+
+@media (max-width: 575px) {
+  .story-section .card .card-body .image-story {
+    height: 280px;
   }
 }
 
@@ -407,6 +433,14 @@
   }
 }
 
+@media (max-width: 575px) {
+  .venue-section .blue-flower {
+    width: 145px;
+    top: 295px;
+    left: -80px;
+  }
+}
+
 .venue-section .spring-2 {
   position: absolute;
   right: 0;
@@ -426,6 +460,12 @@
     width: 160px;
     top: -80px;
     opacity: 0.75;
+  }
+}
+
+@media (max-width: 575px) {
+  .venue-section .spring-2 {
+    width: 145px;
   }
 }
 
@@ -451,6 +491,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .venue-section .spring-3 {
+    width: 145px;
+    bottom: -80px;
+  }
+}
+
 .venue-section .tree {
   position: absolute;
   right: 0;
@@ -469,6 +516,12 @@
 @media (max-width: 767px) {
   .venue-section .tree {
     bottom: 286px;
+  }
+}
+
+@media (max-width: 575px) {
+  .venue-section .tree {
+    width: 180px;
   }
 }
 
@@ -554,10 +607,17 @@
   }
 }
 
+@media (max-width: 575px) {
+  .venue-section .maps-embed {
+    height: 286px;
+  }
+}
+
 .rsvp-section {
   position: relative;
   text-align: center;
   padding: 3rem 0;
+  z-index: 2;
 }
 
 .rsvp-section .butterfly {
@@ -727,6 +787,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .egift-section .spring-6 {
+    width: 145px;
+    top: -63px;
+  }
+}
+
 .egift-section .btn-qrCode {
   background-color: transparent;
   color: #383b5e;
@@ -764,6 +831,12 @@
 .gallery-section {
   position: relative;
   padding: 3rem 0;
+}
+
+@media (max-width: 575px) {
+  .gallery-section {
+    padding: 1rem 0 3rem 0;
+  }
 }
 
 .gallery-section .spring-9 {
@@ -865,6 +938,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .apology-section {
+    margin-top: 4rem;
+  }
+}
+
 .apology-section .brush {
   width: 70%;
   height: 250%;
@@ -873,7 +952,6 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  opacity: 0.15;
 }
 
 @media (max-width: 767px) {
@@ -906,6 +984,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .apology-section .tree {
+    width: 145px;
+    top: -180px;
+  }
+}
+
 .apology-section .spring-2 {
   position: absolute;
   width: 250px;
@@ -924,6 +1009,13 @@
 @media (max-width: 767px) {
   .apology-section .spring-2 {
     width: 168px;
+  }
+}
+
+@media (max-width: 575px) {
+  .apology-section .spring-2 {
+    width: 145px;
+    bottom: -276px;
   }
 }
 
@@ -966,6 +1058,13 @@
   }
 }
 
+@media (max-width: 575px) {
+  .stream-section .spring-3 {
+    top: 198px;
+    width: 110px;
+  }
+}
+
 .stream-section .spring-6 {
   position: absolute;
   left: 0;
@@ -982,6 +1081,12 @@
 @media (max-width: 767px) {
   .stream-section .spring-6 {
     width: 170px;
+  }
+}
+
+@media (max-width: 575px) {
+  .stream-section .spring-6 {
+    width: 145px;
   }
 }
 
@@ -1016,6 +1121,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .thank-section .spring-2 {
+    width: 126px;
+  }
+}
+
 .thank-section .tree {
   position: absolute;
   right: 0;
@@ -1032,6 +1143,12 @@
 @media (max-width: 767px) {
   .thank-section .tree {
     width: 168px;
+  }
+}
+
+@media (max-width: 575px) {
+  .thank-section .tree {
+    width: 126px;
   }
 }
 
@@ -1058,6 +1175,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .thank-section .butterfly {
+    width: 83px;
+  }
+}
+
 .thank-section .thank {
   text-align: center;
   padding-bottom: 5rem;
@@ -1080,6 +1203,15 @@ h2,
 h3 {
   font-family: "Bad Script";
   color: #052293;
+}
+
+@media (max-width: 767px) {
+  p {
+    font-size: 14px;
+  }
+  small {
+    font-size: 12px;
+  }
 }
 
 .btn-custom {
@@ -1158,5 +1290,23 @@ h3 {
   transition: 1s;
   -webkit-box-shadow: 3px 0px 15px 15px rgba(89, 89, 89, 0.2);
           box-shadow: 3px 0px 15px 15px rgba(89, 89, 89, 0.2);
+}
+
+@media (min-width: 576px) {
+  .lg {
+    display: block;
+  }
+  .sm {
+    display: none;
+  }
+}
+
+@media (max-width: 575px) {
+  .lg {
+    display: none;
+  }
+  .sm {
+    display: block;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
