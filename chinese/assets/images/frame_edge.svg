@@ -1,0 +1,8 @@
+<svg width="93" height="93" viewBox="0 0 93 93" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 71V93" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M3 93V71H8H27V38H3V61H15V45" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M71 15H93" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M93 3H71V8V27H38V3H61V15H45" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M21 21H3V3H21V21Z" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+<path d="M45 45V27H38V15H21V21H15V38H27V45H45Z" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10"/>
+</svg>
