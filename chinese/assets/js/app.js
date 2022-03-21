@@ -1,6 +1,6 @@
-// const cd = document.querySelector('.countdown').getAttribute('date')
+const cd = document.querySelector('.countdown').getAttribute('date')
 
-// Countdown(cd)
+Countdown(cd)
 
 
 
