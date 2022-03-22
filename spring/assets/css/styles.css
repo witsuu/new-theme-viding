@@ -340,8 +340,9 @@
 
 .story-section .spring-4 {
   position: absolute;
-  top: -170px;
+  top: -200px;
   left: 0;
+  height: auto;
 }
 
 @media (max-width: 991px) {
@@ -889,12 +890,12 @@
 }
 
 .gallery-section .splide .splide__slide.is-active .img-thumbnail {
-  border: 5px solid #e1cb7b;
+  border: 3px solid #fff;
 }
 
 .gallery-section .splide .splide__arrow {
   border-radius: 0;
-  background-color: #ce4152;
+  background-color: #196534;
   width: 70px;
   height: 65px;
 }
@@ -952,6 +953,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
+  opacity: 0.1;
 }
 
 @media (max-width: 767px) {
