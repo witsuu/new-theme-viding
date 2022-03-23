@@ -20,3 +20,39 @@ $(".zoom-gallery").magnificPopup({
         easing: "ease-in-out",
     },
 });
+
+const cloudLeft1 = $('.cloud-left-1')
+const cloudLeft2 = $(".cloud-left-2")
+const cloudRight1 = $('.cloud-right-1')
+const cloudRight2 = $('.cloud-right-2')
+
+gsap.to(cloudLeft1, {
+    x: 20,
+    repeat: -1,
+    yoyo: true,
+    ease: Linear.easeNone,
+    duration: 3
+})
+
+gsap.to(cloudLeft2, {
+    x: 15,
+    repeat: -1,
+    yoyo: true,
+    ease: Linear.easeNone,
+    duration: 5
+})
+
+gsap.to(cloudRight1, {
+    x: -20,
+    repeat: -1,
+    yoyo: true,
+    ease: Linear.easeNone,
+    duration: 3.5
+})
+gsap.to(cloudRight2, {
+    x: -15,
+    repeat: -1,
+    yoyo: true,
+    ease: Linear.easeNone,
+    duration: 5
+})
