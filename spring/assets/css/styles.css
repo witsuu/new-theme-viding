@@ -235,6 +235,10 @@
   margin-bottom: -2.5rem;
 }
 
+.header-section .card-wrapper .card .card-body .btn-custom:hover {
+  background-color: #196534;
+}
+
 .couple-section {
   position: relative;
 }
