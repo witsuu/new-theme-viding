@@ -13,6 +13,12 @@
   padding: 1rem 0 0 0;
 }
 
+@media (max-width: 575px) {
+  .countdown {
+    gap: 1.5rem;
+  }
+}
+
 .countdown .days,
 .countdown .hours,
 .countdown .minutes,
@@ -150,7 +156,7 @@
 
 .header-section .cloud-left-1 {
   bottom: 230px;
-  left: 130px;
+  left: 72px;
   width: 120px;
   height: 49px;
 }
@@ -214,7 +220,7 @@
 }
 
 .header-section .cloud-right-2 {
-  bottom: 210px;
+  bottom: 150px;
   right: 53px;
   width: 161px;
   height: 87px;
@@ -826,9 +832,22 @@
   stroke: #9c231c;
 }
 
-.venue-section .prokes {
-  width: auto;
-  margin-bottom: 3rem;
+.venue-section .prokes-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 1.5rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (max-width: 575px) {
+  .venue-section .prokes-wrap {
+    gap: 0.75rem;
+  }
 }
 
 .venue-section .cloud-left-1,
@@ -866,12 +885,12 @@
 }
 
 .venue-section .cloud-left-2 {
-  top: 40%;
+  top: 50%;
   left: -10px;
   width: 161px;
   height: 87px;
-  -webkit-transform: translate(0, -40%);
-          transform: translate(0, -40%);
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 @media (max-width: 1199px) {
@@ -965,7 +984,7 @@
 }
 
 .rsvp-section .cloud-left-2 {
-  top: 235px;
+  top: 156px;
   left: -23px;
 }
 
@@ -982,7 +1001,7 @@
 
 @media (max-width: 767px) {
   .rsvp-section .cloud-right-1 {
-    top: 120px;
+    top: 70px;
   }
 }
 
@@ -1085,7 +1104,8 @@
 
 @media (max-width: 767px) {
   .wishes-section .cloud-left-1 {
-    top: 20px;
+    top: 87px;
+    left: 10;
   }
 }
 
@@ -1248,7 +1268,7 @@
 }
 
 .egift-section .cloud-right-3 {
-  bottom: 25px;
+  bottom: 187px;
   right: -13px;
 }
 
@@ -1422,8 +1442,8 @@
 }
 
 .apology-section .cloud-left-1 {
-  top: 30px;
-  left: -10px;
+  top: 70px;
+  left: 30px;
 }
 
 .apology-section .cloud-left-2 {
@@ -1438,8 +1458,8 @@
 }
 
 .apology-section .cloud-right-1 {
-  bottom: 50%;
-  right: 0;
+  bottom: 20%;
+  right: 15px;
 }
 
 @media (max-width: 767px) {
@@ -1630,7 +1650,7 @@
 
 @media (max-width: 767px) {
   .thank-section {
-    padding-bottom: 156px;
+    padding-bottom: 3rem;
   }
 }
 
@@ -1675,13 +1695,12 @@
 }
 
 .thank-section .cloud-left-2 {
-  top: 185px;
-  left: 23px;
+  top: 76px;
+  left: 35px;
 }
 
 @media (max-width: 767px) {
   .thank-section .cloud-left-2 {
-    top: 90px;
     left: -45px;
   }
 }
