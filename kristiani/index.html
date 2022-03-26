@@ -21,8 +21,6 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
-        integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/magnific-popup.css">
 
     <!-- styles custom -->
@@ -588,40 +586,6 @@
         AOS.init({
             easing: "ease-out-back",
             duration: 1000,
-        });
-    </script>
-
-    <!-- scripts plugins -->
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js"
-        integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
-    <script>
-        document.addEventListener("DOMContentLoaded", function () {
-            const splide = new Splide("#main-slider", {
-                pagination: false,
-            });
-
-            const thumbnails = new Splide('#thumbnail-slider', {
-                fixedWidth: 275,
-                fixedHeight: 163,
-                pagination: false,
-                arrows: false,
-                focus: "center",
-                gap: 5,
-                breakpoints: {
-                    991: {
-                        fixedWidth: 156,
-                        fixedHeight: 86
-                    },
-                    767: {
-                        fixedWidth: 108,
-                        fixedHeight: 75
-                    }
-                }
-            });
-
-            splide.sync(thumbnails)
-            splide.mount();
-            thumbnails.mount();
         });
     </script>
 
