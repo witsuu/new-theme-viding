@@ -29,6 +29,25 @@
 </head>
 
 <body>
+    <!-- Loader -->
+    <div class="loader-wrapper">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+    <script>
+        document.onreadystatechange = () => {
+            if (document.readyState !== "complete") {
+                document.querySelector(".loader-wrapper").style.visibility = "visible";
+            } else {
+                document.querySelector(".loader-wrapper").style.visibility = "hidden";
+            }
+        };
+    </script>
+    <!-- End Loader -->
+
+    <!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top pe-none invisible">
         <div class="container d-flex justify-content-center">
             <a href="#sectionMain" class="navbar-brand m-auto">
@@ -36,6 +55,181 @@
             </a>
         </div>
     </nav>
+    <!-- end navbar -->
+    <section class="envelope-wrap">
+        <img src="./assets/images/logo_viding.png" alt="logo_viding" class="logo-viding">
+        <svg class="lampion-left" width="75" height="129" viewBox="0 0 75 129" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Lampion" clip-path="url(#clip0_1356_5745)">
+                <path id="Vector"
+                    d="M37.3333 90.5618C56.5713 90.5618 72.1667 79.3382 72.1667 65.4933C72.1667 51.6484 56.5713 40.4248 37.3333 40.4248C18.0954 40.4248 2.5 51.6484 2.5 65.4933C2.5 79.3382 18.0954 90.5618 37.3333 90.5618Z"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_2"
+                    d="M36.5833 90.5618C26.75 90.5618 18.75 79.3645 18.75 65.4933C18.75 51.6221 26.75 40.4248 36.5833 40.4248"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_3"
+                    d="M37.5859 90.5618C47.4193 90.5618 55.4193 79.3645 55.4193 65.4933C55.4193 51.6221 47.4193 40.4248 37.5859 40.4248"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_4" d="M47.3359 31.2324H27.3359V40.4242H47.3359V31.2324Z" stroke="#FDEEC9"
+                    stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_5" d="M47.3359 90.5615H27.3359V99.7533H47.3359V90.5615Z" stroke="#FDEEC9"
+                    stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_6" d="M37.082 39.5889V91.3971" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_7" d="M37.082 -55.2539V31.2324" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_8" d="M37.082 99.7539V111.453" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_9"
+                    d="M41.2513 126.494H32.918L33.5846 113.124C33.668 111.285 35.2513 109.781 37.0846 109.781C38.918 109.781 40.5013 111.285 40.5846 113.124L41.2513 126.494Z"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+            </g>
+            <defs>
+                <clipPath id="clip0_1356_5745">
+                    <rect width="75" height="129" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+        <svg class="lampion-right" width="75" height="129" viewBox="0 0 75 129" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <g id="Lampion" clip-path="url(#clip0_1356_5745)">
+                <path id="Vector"
+                    d="M37.3333 90.5618C56.5713 90.5618 72.1667 79.3382 72.1667 65.4933C72.1667 51.6484 56.5713 40.4248 37.3333 40.4248C18.0954 40.4248 2.5 51.6484 2.5 65.4933C2.5 79.3382 18.0954 90.5618 37.3333 90.5618Z"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_2"
+                    d="M36.5833 90.5618C26.75 90.5618 18.75 79.3645 18.75 65.4933C18.75 51.6221 26.75 40.4248 36.5833 40.4248"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_3"
+                    d="M37.5859 90.5618C47.4193 90.5618 55.4193 79.3645 55.4193 65.4933C55.4193 51.6221 47.4193 40.4248 37.5859 40.4248"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_4" d="M47.3359 31.2324H27.3359V40.4242H47.3359V31.2324Z" stroke="#FDEEC9"
+                    stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_5" d="M47.3359 90.5615H27.3359V99.7533H47.3359V90.5615Z" stroke="#FDEEC9"
+                    stroke-width="4" stroke-miterlimit="10" />
+                <path id="Vector_6" d="M37.082 39.5889V91.3971" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_7" d="M37.082 -55.2539V31.2324" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_8" d="M37.082 99.7539V111.453" stroke="#FDEEC9" stroke-width="4"
+                    stroke-miterlimit="10" />
+                <path id="Vector_9"
+                    d="M41.2513 126.494H32.918L33.5846 113.124C33.668 111.285 35.2513 109.781 37.0846 109.781C38.918 109.781 40.5013 111.285 40.5846 113.124L41.2513 126.494Z"
+                    stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+            </g>
+            <defs>
+                <clipPath id="clip0_1356_5745">
+                    <rect width="75" height="129" fill="white" />
+                </clipPath>
+            </defs>
+        </svg>
+        <svg class="cloud-left-1 lg" width="120" height="49" viewBox="0 0 120 49" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M117.882 39.4135C117.882 43.5323 114.564 46.87 110.47 46.87H34.2348C30.1407 46.87 26.8231 43.5323 26.8231 39.4135C26.8231 35.2946 30.1407 31.9569 34.2348 31.9569H48.3525C52.4466 31.9569 55.7642 28.6193 55.7642 24.5004C55.7642 20.3816 52.4466 17.0439 48.3525 17.0439H9.52895C5.43483 17.0439 2.11719 13.7062 2.11719 9.58738C2.11719 5.46854 5.43483 2.13086 9.52895 2.13086H91.4113C95.5054 2.13086 98.8231 5.46854 98.8231 9.58738C98.8231 13.7062 95.5054 17.0439 91.4113 17.0439H81.5289C77.4348 17.0439 74.1172 20.3816 74.1172 24.5004C74.1172 28.6193 77.4348 31.9569 81.5289 31.9569H110.47C114.564 31.9569 117.882 35.2946 117.882 39.4135Z"
+                stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+        </svg>
+        <svg class="cloud-right-2 lg" width="161" height="87" viewBox="0 0 161 87" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path
+                d="M116.126 27.0408C116.126 31.5867 119.826 35.2705 124.393 35.2705H135.415C139.981 35.2705 143.681 38.9543 143.681 43.5002C143.681 48.0462 139.981 51.7299 135.415 51.7299H69.2826C64.7163 51.7299 61.0161 55.4137 61.0161 59.9597C61.0161 64.5056 64.7163 68.1894 69.2826 68.1894H77.1555C81.7217 68.1894 85.422 71.8732 85.422 76.4191C85.422 80.9651 81.7217 84.6489 77.1555 84.6489H26.7691C22.2029 84.6489 18.5026 80.9651 18.5026 76.4191C18.5026 71.8732 22.2029 68.1894 26.7691 68.1894H32.2802C36.8464 68.1894 40.5467 64.5056 40.5467 59.9597C40.5467 55.4137 36.8464 51.7299 32.2802 51.7299H10.6298C6.06353 51.7299 2.36328 48.0462 2.36328 43.5002C2.36328 38.9543 6.06353 35.2705 10.6298 35.2705H87.3902C91.9564 35.2705 95.6567 31.5867 95.6567 27.0408C95.6567 22.4948 91.9564 18.811 87.3902 18.811H44.0894C39.5232 18.811 35.8229 15.1272 35.8229 10.5813C35.8229 6.03535 39.5232 2.35156 44.0894 2.35156H150.373C154.939 2.35156 158.64 6.03535 158.64 10.5813C158.64 15.1272 154.939 18.811 150.373 18.811H124.393C119.826 18.811 116.126 22.4948 116.126 27.0408Z"
+                stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
+        </svg>
+        <div class="frame-wrapper">
+            <svg class="edge-frame-top-left" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1362_6868)">
+                    <path d="M53.4324 36.5V20H20.1641V53H36.7982V36.5H53.4324Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M36.7969 1V36.5" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M54.4378 36.5H53.4297" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7967 36.5H20.5659H1" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M20.1616 20H3.02344V3H20.1616V20Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M3 37V62" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7969 3H62.0001" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1362_6868">
+                        <rect width="62" height="62" fill="white" transform="matrix(1 0 0 -1 0 62)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="edge-frame-top-right" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1362_6868)">
+                    <path d="M53.4324 36.5V20H20.1641V53H36.7982V36.5H53.4324Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M36.7969 1V36.5" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M54.4378 36.5H53.4297" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7967 36.5H20.5659H1" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M20.1616 20H3.02344V3H20.1616V20Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M3 37V62" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7969 3H62.0001" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1362_6868">
+                        <rect width="62" height="62" fill="white" transform="matrix(1 0 0 -1 0 62)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="edge-frame-bottom-right" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1362_6868)">
+                    <path d="M53.4324 36.5V20H20.1641V53H36.7982V36.5H53.4324Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M36.7969 1V36.5" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M54.4378 36.5H53.4297" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7967 36.5H20.5659H1" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M20.1616 20H3.02344V3H20.1616V20Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M3 37V62" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7969 3H62.0001" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1362_6868">
+                        <rect width="62" height="62" fill="white" transform="matrix(1 0 0 -1 0 62)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <svg class="edge-frame-bottom-left" width="62" height="62" viewBox="0 0 62 62" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_1362_6868)">
+                    <path d="M53.4324 36.5V20H20.1641V53H36.7982V36.5H53.4324Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M36.7969 1V36.5" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M54.4378 36.5H53.4297" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7967 36.5H20.5659H1" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M20.1616 20H3.02344V3H20.1616V20Z" stroke="#9C231C" stroke-width="4"
+                        stroke-miterlimit="10" />
+                    <path d="M3 37V62" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                    <path d="M36.7969 3H62.0001" stroke="#9C231C" stroke-width="4" stroke-miterlimit="10" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_1362_6868">
+                        <rect width="62" height="62" fill="white" transform="matrix(1 0 0 -1 0 62)" />
+                    </clipPath>
+                </defs>
+            </svg>
+            <div class="line-top"></div>
+            <div class="line-right"></div>
+            <div class="line-bottom"></div>
+            <div class="line-left"></div>
+            <div class="frame">
+                <img src="./assets/images/frame_image-header.png" alt="frame-header" class="frame-image-header lg">
+                <img src="./assets/images/frame_image_header_sm.png" alt="frame-header-sm"
+                    class="frame-image-header sm">
+                <img src="./assets/images/header_bg.jpg" alt="header-image" class="header-image">
+                <div class="name-couple">
+                    <h5>You're Invited To Celebrate The Wedding</h5>
+                    <h1 class="mt-4 mb-4">John & Jane</h1>
+                </div>
+            </div>
+            <button class="btn btn-custom mt-3" id="btn-envelope">
+                <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
+            </button>
+        </div>
+    </section>
     <section class="header-section">
         <img src="./assets/images/logo_viding.png" alt="logo_viding" class="logo-viding">
         <svg class="lampion-left" width="75" height="129" viewBox="0 0 75 129" fill="none"
@@ -236,7 +430,7 @@
             <div class="row">
                 <div class="col-md-9 m-auto">
                     <div class="couple-description">
-                        <div class="title-section">
+                        <div class="title-section" data-aos="fade-down">
                             <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1360_5956)">
@@ -264,7 +458,8 @@
                             </svg>
 
                         </div>
-                        <p>What greater thing is there for two human souls, than to feel that they are joined for
+                        <p data-aos="zoom-out">What greater thing is there for two human souls, than to feel that they
+                            are joined for
                             life–to strength
                             each other in all labor, to rest on each other in all sorrow, to minister to each other in
                             silent
@@ -277,7 +472,7 @@
         </div>
         <div class="container">
             <div class="row align-items-center justify-content-around">
-                <div class="col-lg-4 col-md-5 col-sm-10">
+                <div class="col-lg-4 col-md-5 col-sm-10" data-aos="fade-right">
                     <div class="card">
                         <div class="card-body text-center">
                             <img src="./assets/images/frame_couple.png" alt="frame-couple" class="frame-couple">
@@ -293,7 +488,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-1 text-center position-relative and-couple">
+                <div class="col-md-1 text-center position-relative and-couple" data-aos="zoom-in">
                     <h4 class="font-secondary">&</h4>
                     <svg class="lampion" width="75" height="185" viewBox="0 0 75 185" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
@@ -318,7 +513,7 @@
                             stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
                     </svg>
                 </div>
-                <div class="col-lg-4 col-md-5 col-sm-10">
+                <div class="col-lg-4 col-md-5 col-sm-10" data-aos="fade-left">
                     <div class="card">
                         <div class="card-body text-center">
                             <img src="./assets/images/frame_couple.png" alt="frame-couple" class="frame-couple">
@@ -417,7 +612,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="countdown mb-3" date="03/31/2022 23:59:00">
-                    <div class="days">
+                    <div class="days" data-aos="fade-down">
                         <svg class="frame-edge-top-left" width="93" height="93" viewBox="0 0 93 93" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 71V93" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
@@ -441,7 +636,8 @@
                             <path d="M21 21H3V3H21V21Z" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
                             <path d="M45 45V27H38V15H21V21H15V38H27V45H45Z" stroke="#FDEEC9" stroke-width="4"
                                 stroke-miterlimit="10" />
-                        </svg><svg class="lampion-left" width="75" height="129" viewBox="0 0 75 129" fill="none"
+                        </svg>
+                        <svg class="lampion-left sm" width="75" height="129" viewBox="0 0 75 129" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Lampion" clip-path="url(#clip0_1356_5745)">
                                 <path id="Vector"
@@ -476,15 +672,15 @@
                         <p class="angka">00</p>
                         <p class="huruf">Day</p>
                     </div>
-                    <div class="hours">
+                    <div class="hours" data-aos="fade-down" data-aos-delay="200">
                         <p class="angka">00</p>
                         <p class="huruf">Hours</p>
                     </div>
-                    <div class="minutes">
+                    <div class="minutes" data-aos="fade-down" data-aos-delay="400">
                         <p class="angka">00</p>
                         <p class="huruf">Mins</p>
                     </div>
-                    <div class="seconds">
+                    <div class="seconds" data-aos="fade-down" data-aos-delay="600">
                         <svg class="frame-edge-top-right" width="93" height="93" viewBox="0 0 93 93" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 71V93" stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
@@ -509,7 +705,7 @@
                             <path d="M45 45V27H38V15H21V21H15V38H27V45H45Z" stroke="#FDEEC9" stroke-width="4"
                                 stroke-miterlimit="10" />
                         </svg>
-                        <svg class="lampion-right" width="75" height="129" viewBox="0 0 75 129" fill="none"
+                        <svg class="lampion-right sm" width="75" height="129" viewBox="0 0 75 129" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g id="Lampion" clip-path="url(#clip0_1356_5745)">
                                 <path id="Vector"
@@ -545,7 +741,7 @@
                         <p class="huruf">Secs</p>
                     </div>
                 </div>
-                <a href="#" class="btn btn-custom">
+                <a href="#" class="btn btn-custom" data-aos="zoom-in" data-aos-delay="800">
                     <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path
                             d="M16 2C8.26875 2 2 8.26875 2 16C2 23.7313 8.26875 30 16 30C23.7313 30 30 23.7313 30 16C30 8.26875 23.7313 2 16 2ZM21.5156 20.3031L20.6219 21.5219C20.6024 21.5484 20.5779 21.5708 20.5498 21.5879C20.5217 21.6049 20.4904 21.6162 20.4579 21.6212C20.4254 21.6261 20.3922 21.6246 20.3603 21.6167C20.3284 21.6087 20.2983 21.5946 20.2719 21.575L15.1031 17.8062C15.0709 17.7831 15.0448 17.7526 15.0268 17.7173C15.0089 17.6819 14.9997 17.6428 15 17.6031V9C15 8.8625 15.1125 8.75 15.25 8.75H16.7531C16.8906 8.75 17.0031 8.8625 17.0031 9V16.7344L21.4594 19.9562C21.5719 20.0344 21.5969 20.1906 21.5156 20.3031Z"
@@ -574,7 +770,7 @@
                 </div>
             </div>
             <div class="row align-items-center justify-content-center">
-                <div class="col-lg-5 col-md-6">
+                <div class="col-lg-5 col-md-6" data-aos="fade-right">
                     <img src="./assets/images/story-image.jpg" alt="image-story" class="story-image">
                 </div>
                 <div class="col-lg-7 col-md-6">
@@ -631,7 +827,7 @@
                         </svg>
                         <div class="card">
                             <div class="card-body">
-                                <div class="title-section">
+                                <div class="title-section" data-aos="fade-down">
                                     <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                                         xmlns="http://www.w3.org/2000/svg">
                                         <g clip-path="url(#clip0_1360_5956)">
@@ -659,7 +855,7 @@
                                         </defs>
                                     </svg>
                                 </div>
-                                <p>
+                                <p data-aos="zoom-in">
                                     “I love you without knowing how, or when, or from where. I love you in this way
                                     because
                                     I do not know any other way of loving but this, in which there is no I or you, so
@@ -701,7 +897,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-lg-5 col-md-7">
-                    <div class="title-section">
+                    <div class="title-section" data-aos="fade-down">
                         <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1360_5956)">
@@ -728,7 +924,7 @@
                             </defs>
                         </svg>
                     </div>
-                    <p>
+                    <p data-aos="zoom-out">
                         If you will be present at the event location. Please fill out
                         the form below
                     </p>
@@ -736,7 +932,7 @@
             </div>
             <div class="row justify-content-center">
                 <div class="prokes-wrap">
-                    <div class="prokes">
+                    <div class="prokes" data-aos="zoom-out">
                         <svg width="156" height="156" viewBox="0 0 156 156" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -789,7 +985,7 @@
                                 fill="#4F4F4F" />
                         </svg>
                     </div>
-                    <div class="prokes">
+                    <div class="prokes" data-aos="zoom-out" data-aos-delay="200">
                         <svg width="156" height="156" viewBox="0 0 156 156" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -847,7 +1043,7 @@
                                 fill="#4F4F4F" />
                         </svg>
                     </div>
-                    <div class="prokes">
+                    <div class="prokes" data-aos="zoom-out" data-aos-delay="400">
                         <svg width="156" height="156" viewBox="0 0 156 156" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -948,7 +1144,7 @@
                                 fill="#4F4F4F" />
                         </svg>
                     </div>
-                    <div class="prokes">
+                    <div class="prokes" data-aos="zoom-out" data-aos-delay="600">
                         <svg width="156" height="156" viewBox="0 0 156 156" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <path
@@ -1085,7 +1281,7 @@
                 </div>
             </div>
             <div class="row justify-content-around">
-                <div class="col-lg-3 col-md-7">
+                <div class="col-lg-3 col-md-7" data-aos="zoom-out">
                     <div class="event-wrapper">
                         <img src="./assets/images/divider.png" alt="divider" class="divider lg">
                         <img src="./assets/images/divider-sm.png" alt="divider" class="divider sm">
@@ -1126,7 +1322,7 @@
                         <a href="#" class="btn btn-custom">See Location</a>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-7">
+                <div class="col-lg-3 col-md-7" data-aos="zoom-out">
                     <div class="event-wrapper">
                         <img src="./assets/images/divider.png" alt="divider" class="divider lg">
                         <img src="./assets/images/divider-sm.png" alt="divider" class="divider sm">
@@ -1216,7 +1412,7 @@
                 stroke="#FDEEC9" stroke-width="4" stroke-miterlimit="10" />
         </svg>
         <div class="container position-relative">
-            <div class="title-section">
+            <div class="title-section" data-aos="fade-down">
                 <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                     xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_1360_5956)">
@@ -1243,7 +1439,7 @@
                     </defs>
                 </svg>
             </div>
-            <form action="#">
+            <form action="#" data-aos="zoom-in">
                 <div class="row justify-content-center">
                     <div class="col-sm-6 col-lg-5">
                         <input type="text" class="form-control" placeholder="Name">
@@ -1290,7 +1486,7 @@
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-sm-6 col-lg-5">
-                    <div class="title-section">
+                    <div class="title-section" data-aos="fade-down">
                         <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1360_5956)">
@@ -1317,9 +1513,10 @@
                             </defs>
                         </svg>
                     </div>
-                    <p>Without reducing our respect, if you intend to give wedding gifts online in various ways
+                    <p data-aos="zoom-out">Without reducing our respect, if you intend to give wedding gifts online in
+                        various ways
                         various payment methods, please fill out the form provided below:</p>
-                    <form action="#" method="post">
+                    <form action="#" method="post" data-aos="zoom-in" data-aos-delay="400">
                         <div class="mb-4">
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
@@ -1403,7 +1600,7 @@
         <div class="container position-relative text-center">
             <div class="row">
                 <div class="col-md-7 col-lg-5 m-auto">
-                    <div class="title-section">
+                    <div class="title-section" data-aos="fade-down">
                         <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1360_5956)">
@@ -1430,7 +1627,7 @@
                             </defs>
                         </svg>
                     </div>
-                    <form action="#">
+                    <form action="#" data-aos="zoom-out-right">
                         <div class="mb-4">
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
@@ -1443,7 +1640,7 @@
                         </div>
                         <button class="btn btn-custom w-100">Send</button>
                     </form>
-                    <div class="card">
+                    <div class="card" data-aos="zoom-out-left">
                         <div class="card-body text-left">
                             <div class="wishes">
                                 <div class="wish text-dark">
@@ -1617,7 +1814,7 @@
                         <div class="line-right"></div>
                         <div class="line-bottom"></div>
                         <div class="line-left"></div>
-                        <div class="title-section">
+                        <div class="title-section" data-aos="fade-down">
                             <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
                                 <g clip-path="url(#clip0_1360_5956)">
@@ -1644,7 +1841,8 @@
                                 </defs>
                             </svg>
                         </div>
-                        <p>Due to the limitations of the current pandemic, we apologize for not being able to directly
+                        <p data-aos="zoom-in">Due to the limitations of the current pandemic, we apologize for not being
+                            able to directly
                             invite all of you to our wedding. Without reducing respect, allow us to expect your virtual
                             presence and give us your blessing.
                             Thank you</p>
@@ -1771,7 +1969,7 @@
         </svg>
         <div class="container">
             <div class="row justify-content-center">
-                <div class="title-section">
+                <div class="title-section" data-aos="fade-down">
                     <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                         xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_1360_5956)">
@@ -1800,7 +1998,7 @@
                 </div>
                 <div class="col-lg-6 col-md-7">
                     <div class="card text-dark">
-                        <div class="card-body">
+                        <div class="card-body" data-aos="zoom-in">
                             <h3 class="text-dark">Live Wedding Schedule</h3>
                             <ul class="text-start ">
                                 <ol>10.00 Live Wedding Schedule</ol>
@@ -1815,10 +2013,10 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col-lg-10">
+                <div class="col-lg-10" data-aos="zoom-out-down">
                     <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
                     </iframe>
-                    <div class="col-md-7 m-auto">
+                    <div class="col-md-7 m-auto" data-aos="fade-down">
                         <a href="#" class="btn btn-custom w-100 mt-3">Join Youtube</a>
                     </div>
                 </div>
@@ -1826,7 +2024,7 @@
             <div class="row justify-content-center">
                 <div class="col-md-8 position-relative" style="z-index: 2;">
                     <div class="card mt-5 text-dark">
-                        <div class="card-body p-se text-start">
+                        <div class="card-body p-se text-start" data-aos="zoom-in">
                             <h3 class="text-center text-dark">Live Wedding</h3>
                             <p>We apologize for the limitations of Zoom participants, only for invited guests who have
                                 been given a password, who can join the Room Zoom of the bride and groom to watch a
@@ -1887,8 +2085,8 @@
         </svg>
         <div class="container position-relative">
             <div class="row">
-                <div class="col-md-8 m-auto thank">
-                    <div class="title-section">
+                <div class="col-md-8 m-auto thank" data-aos="zoom-out">
+                    <div class="title-section" data-aos="fade-down">
                         <svg class="left-title-frame" width="92" height="30" viewBox="0 0 92 30" fill="none"
                             xmlns="http://www.w3.org/2000/svg">
                             <g clip-path="url(#clip0_1360_5956)">

@@ -29,6 +29,23 @@
 </head>
 
 <body>
+    <div class="loader-wrapper">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+    </div>
+    <script>
+        document.onreadystatechange = () => {
+            if (document.readyState !== "complete") {
+                document.querySelector(".main-app").style.visibility = "hidden";
+                document.querySelector(".loader-wrapper").style.visibility = "visible";
+            } else {
+                document.querySelector(".main-app").style.visibility = "visible";
+                document.querySelector(".loader-wrapper").style.visibility = "hidden";
+            }
+        };
+    </script>
     <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
         <div class="container d-flex justify-content-center">
             <a href="#sectionMain" class="navbar-brand m-auto">
@@ -36,572 +53,599 @@
             </a>
         </div>
     </nav>
-    <section class="header-section">
-        <img src="./assets/images/brush.png" alt="brus" class="brush">
-        <img src="./assets/images/spring_floral_6.png" alt="spring-6" class="spring-1">
-        <img src="./assets/images/spring_floral_1.png" alt="spring-1" class="spring-2">
-        <img src="./assets/images/spring_leaf.png" alt="spring-leaf" class="spring-3">
-        <div class="card-wrapper">
-            <div class="card">
-                <div class="card-body text-center">
-                    <div class="title-wrapper">
-                        <img src="./assets/images/header_bg.jpg" alt="image-couple-header" class="image-couple-header">
-                        <div class="title text-center">
-                            <h1 class="text-white m-0">John & Jane</h1>
-                            <p>We’re getting married</p>
-                        </div>
-                    </div>
-                    <div class="countdown" date="03/31/2022 23:59:00">
-                        <div class="days">
-                            <p class="angka">00</p>
-                            <p class="huruf">Day</p>
-                        </div>
-                        <div class="hours">
-                            <p class="angka">00</p>
-                            <p class="huruf">Hours</p>
-                        </div>
-                        <div class="minutes">
-                            <p class="angka">00</p>
-                            <p class="huruf">Mins</p>
-                        </div>
-                        <div class="seconds">
-                            <p class="angka">00</p>
-                            <p class="huruf">Secs</p>
-                        </div>
-                    </div>
-                    <a href="#" class="btn btn-custom">Remind Me</a>
-                </div>
-            </div>
+    <section class="envelope-wrap">
+        <img src="./assets/images/header_bg.jpg" alt="cover" class="background" />
+        <div class="envelope">
+            <h5>You're Invited To Celebrate The Wedding</h5>
+            <h1 class="mt-4 mb-4">John & Jane</h1>
+            <button class="btn btn-custom" id="btn-envelope">
+                <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
+            </button>
         </div>
     </section>
-    <section class="couple-section">
-        <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
-        <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-md-9 m-auto">
-                    <div class="couple-description">
-                        <h2>Bride & Groom</h2>
-                        <p>What greater thing is there for two human souls, than to feel that they are joined for
-                            life–to strength
-                            each other in all labor, to rest on each other in all sorrow, to minister to each other in
-                            silent
-                            unspeakable memories at the moment of the last parting? Being deeply loved by someone gives
-                            you
-                            strength, while loving someone deeply gives you courage.</p>
+    <main class="main-app">
+        <section class="header-section">
+            <img src="./assets/images/brush.png" alt="brus" class="brush">
+            <img src="./assets/images/spring_floral_6.png" alt="spring-6" class="spring-1">
+            <img src="./assets/images/spring_floral_1.png" alt="spring-1" class="spring-2">
+            <img src="./assets/images/spring_leaf.png" alt="spring-leaf" class="spring-3">
+            <div class="card-wrapper">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <div class="title-wrapper">
+                            <img src="./assets/images/header_bg.jpg" alt="image-couple-header"
+                                class="image-couple-header">
+                            <div class="title text-center">
+                                <h1 class="text-white m-0">John & Jane</h1>
+                                <p>We’re getting married</p>
+                            </div>
+                        </div>
+                        <div class="countdown" date="03/31/2022 23:59:00">
+                            <div class="days">
+                                <p class="angka">00</p>
+                                <p class="huruf">Day</p>
+                            </div>
+                            <div class="hours">
+                                <p class="angka">00</p>
+                                <p class="huruf">Hours</p>
+                            </div>
+                            <div class="minutes">
+                                <p class="angka">00</p>
+                                <p class="huruf">Mins</p>
+                            </div>
+                            <div class="seconds">
+                                <p class="angka">00</p>
+                                <p class="huruf">Secs</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-custom">Remind Me</a>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="container">
-            <div class="row align-items-center justify-content-center">
-                <div class="col-lg-3 col-md-5 col-sm-10">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="./assets/images/couple.jpg" alt="couple" class="image-couple">
-                            <div class="instagram">
-                                <i class="fab fa-instagram"></i>
-                                <small>@johnstew22</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="couple-description pt-3">
-                        <h3 class="m-0">John Stew S.Pd. M.pd</h3>
-                        <p>First son of H. Heru Stiawan and
-                            Siti Amizah</p>
-                    </div>
-                </div>
-                <div class="col-md-1 text-center">
-                    <h4 class="font-secondary">&</h4>
-                </div>
-                <div class="col-lg-3 col-md-5 col-sm-10">
-                    <div class="card">
-                        <div class="card-body text-center">
-                            <img src="./assets/images/couple.jpg" alt="couple" class="image-couple">
-                            <div class="instagram">
-                                <i class="fab fa-instagram"></i>
-                                <small>@janemin12</small>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="couple-description pt-3">
-                        <h3 class="m-0">Jane Min S.Pd. M.pd</h3>
-                        <p>First son of H. Heru Stiawan and
-                            Siti Amizah </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="story-section">
-        <img src="./assets/images/brush.png" alt="brush" class="brush">
-        <div class="container">
-            <img src="./assets/images/spring_floral_4.png" alt="spring4" width="100%" height="100%" class="spring-4">
-            <div class="row">
-                <div class="col-md-10 m-auto">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./assets/images/couple-story.jpg" alt="couple-story" class="image-story">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-8 m-auto text-center position-relative">
-                    <div class="story-description">
-                        <h2>Our Story</h2>
-                        <p>“I love you without knowing how, or when, or from where. I love you in this way because I do
-                            not
-                            know any other way of loving but this, in which there is no I or you, so intimate that your
-                            hand
-                            upon my chest is my hand, so intimate then when I fall asleep your eyes close.”“I love you
-                            without knowing how, or when, or from where. I love you in this way because I do not know
-                            any
-                            other way of loving but this, in which there is no I or you, so intimate that your hand upon
-                            my
-                            chest is my hand, so intimate then when I fall asleep your eyes close.”</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="venue-section">
-        <img src="./assets/images/blue_flower.png" alt="blue-flower" class="blue-flower">
-        <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
-        <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
-        <img src="./assets/images/tree.png" alt="tree" class="tree">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-4 col-md-6 m-auto position-relative text-center">
-                    <h2>Event & Venue</h2>
-                    <div class="venue-description">
-                        <p>If you will be present at the event location. Please fill out
-                            the form below</p>
-                    </div>
-                    <div class="prokes-wrapper">
-                        <div class="prokes">
-                            <svg width="50" height="34" viewBox="0 0 50 34" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="Group">
-                                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M24.6325 0.805312C24.8725 0.731562 25.1275 0.731562 25.3675 0.805312L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805312ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
-                                        fill="#052293" />
-                                </g>
-                            </svg>
-                            <small>Use Medical Mask</small>
-                        </div>
-                        <div class="prokes">
-                            <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="Group">
-                                    <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
-                                        d="M2.45906 6.745C2.82406 6.1075 3.52906 5.12 4.40906 4.31C5.31656 3.47375 6.21906 3 6.99906 3H15.7491V10.5H10.7491C10.086 10.5 9.45014 10.7634 8.9813 11.2322C8.51245 11.7011 8.24906 12.337 8.24906 13V16.75H6.99906C5.34146 16.75 3.75175 17.4085 2.57965 18.5806C1.40754 19.7527 0.749063 21.3424 0.749063 23V43C0.749063 43.663 1.01246 44.2989 1.4813 44.7678C1.95014 45.2366 2.58602 45.5 3.24906 45.5H30.7491C31.4121 45.5 32.048 45.2366 32.5168 44.7678C32.9857 44.2989 33.2491 43.663 33.2491 43V23C33.2491 21.3424 32.5906 19.7527 31.4185 18.5806C30.2464 17.4085 28.6567 16.75 26.9991 16.75H25.7491V13C25.7491 12.337 25.4857 11.7011 25.0168 11.2322C24.548 10.7634 23.9121 10.5 23.2491 10.5H18.2491V3H28.2491V0.5H6.99906C5.27906 0.5 3.78656 1.48375 2.71406 2.47125C1.61406 3.48375 0.757812 4.68375 0.289062 5.505L2.45906 6.745ZM9.49906 29.25H15.7491V23H18.2491V29.25H24.4991V31.75H18.2491V38H15.7491V31.75H9.49906V29.25Z"
-                                        fill="#052293" />
-                                </g>
-                            </svg>
-                            <small>Wash Hand</small>
-                        </div>
-                        <div class="prokes">
-                            <svg width="50" height="36" viewBox="0 0 50 36" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <g id="Group">
-                                    <path id="Vector" d="M5 5.5H45" stroke="#052293" stroke-width="2" />
-                                    <path id="Vector_2"
-                                        d="M8.53614 1.75L5.88614 4.40125C5.76992 4.51734 5.67772 4.6552 5.61481 4.80695C5.55191 4.9587 5.51953 5.12135 5.51953 5.28562C5.51953 5.44989 5.55191 5.61255 5.61481 5.7643C5.67772 5.91605 5.76992 6.05391 5.88614 6.17L8.53739 8.82"
-                                        stroke="#052293" stroke-width="2" stroke-linecap="round" />
-                                    <path id="Vector_3"
-                                        d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
-                                        stroke="#052293" stroke-width="2" stroke-linecap="round" />
-                                    <path id="Vector_4"
-                                        d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
-                                        fill="#052293" stroke="#052293" stroke-width="2" />
-                                    <path id="Vector_5"
-                                        d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
-                                        fill="#052293" stroke="#052293" stroke-width="2" />
-                                    <path id="Vector_6"
-                                        d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
-                                        fill="#052293" stroke="#052293" stroke-width="2" />
-                                    <path id="Vector_7"
-                                        d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
-                                        fill="#052293" stroke="#052293" stroke-width="2" />
-                                </g>
-                            </svg>
-                            <small>Keep The Distance</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="row justify-content-evenly">
-                <div class="col-md-6">
-                    <div class="col-lg-8 col-md-12 m-auto">
-                        <div class="event-wrapper">
-                            <img src="./assets/images/brush_event.png" alt="brush" class="brush">
-                            <div class="event-name">
-                                <h4>Marriage Contract</h4>
-                                <p class="mb-0">Sunday, 22 December 2021</p>
-                                <p>19.00 - 21.00 WIB</p>
-                            </div>
-                            <div class="event-place">
-                                <h5>Groom House</h5>
-                                <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang, Kota
-                                    Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
-                                <button class="btn btn-custom mt-3">See Location</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="col-lg-8 col-md-12 m-auto">
-                        <div class="event-wrapper">
-                            <img src="./assets/images/brush_event.png" alt="brush" class="brush-reverse">
-                            <div class="event-name">
-                                <h4>Wedding Party</h4>
-                                <p class="mb-0">Sunday, 22 December 2021</p>
-                                <p>19.00 - 21.00 WIB</p>
-                            </div>
-                            <div class="event-place">
-                                <h5>Hotel Shangri La</h5>
-                                <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang, Kota
-                                    Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
-                                <button class="btn btn-custom mt-3">See Location</button>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-12">
-                        <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
-                            src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="rsvp-section">
-        <img src="./assets/images/buttefly.png" alt="buttefly" class="butterfly">
-        <div class="container position-relative">
-            <h3 class="mb-3">Confirmation of Attendance</h3>
-            <form action="#">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="E-Mail">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Phone Number">
-                    </div>
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="number" class="form-control" placeholder="The Number of Guest">
-                    </div>
-                </div>
+        </section>
+        <section class="couple-section">
+            <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
+            <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
+            <div class="container position-relative">
                 <div class="row">
-                    <div class="col-sm-7 col-lg-5 m-auto">
-                        <select name="" class="form-select" id="">
-                            <option disabled selected>Confirmation Attendance</option>
-                            <option value="1">Yes</option>
-                            <option value="0">No</option>
-                        </select>
+                    <div class="col-md-9 m-auto">
+                        <div class="couple-description">
+                            <h2 data-aos="fade-down">Bride & Groom</h2>
+                            <p data-aos="zoom-in">What greater thing is there for two human souls, than to feel that
+                                they are joined for
+                                life–to strength
+                                each other in all labor, to rest on each other in all sorrow, to minister to each other
+                                in
+                                silent
+                                unspeakable memories at the moment of the last parting? Being deeply loved by someone
+                                gives
+                                you
+                                strength, while loving someone deeply gives you courage.</p>
+                        </div>
                     </div>
                 </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-center justify-content-center">
+                    <div class="col-lg-3 col-md-5 col-sm-10">
+                        <div class="card" data-aos="fade-right">
+                            <div class="card-body text-center">
+                                <img src="./assets/images/couple.jpg" alt="couple" class="image-couple">
+                                <div class="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <small>@johnstew22</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="couple-description pt-3" data-aos="zoom-in">
+                            <h3 class="m-0">John Stew S.Pd. M.pd</h3>
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah</p>
+                        </div>
+                    </div>
+                    <div class="col-md-1 text-center">
+                        <h4 class="font-secondary" data-aos="zoom-in">&</h4>
+                    </div>
+                    <div class="col-lg-3 col-md-5 col-sm-10">
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-body text-center">
+                                <img src="./assets/images/couple.jpg" alt="couple" class="image-couple">
+                                <div class="instagram">
+                                    <i class="fab fa-instagram"></i>
+                                    <small>@janemin12</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="couple-description pt-3" data-aos="zoom-in">
+                            <h3 class="m-0">Jane Min S.Pd. M.pd</h3>
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="story-section">
+            <img src="./assets/images/brush.png" alt="brush" class="brush">
+            <div class="container">
+                <img src="./assets/images/spring_floral_4.png" alt="spring4" width="100%" height="100%"
+                    class="spring-4">
                 <div class="row">
-                    <div class="col-sm-7 col-lg-5 m-auto">
-                        <button class="btn btn-custom w-100">Send</button>
+                    <div class="col-md-10 m-auto">
+                        <div class="card" data-aos="fade-down">
+                            <div class="card-body">
+                                <img src="./assets/images/couple-story.jpg" alt="couple-story" class="image-story">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-8 m-auto text-center position-relative">
+                        <div class="story-description">
+                            <h2 data-aos="fade-down">Our Story</h2>
+                            <p data-aos="zoom-in">“I love you without knowing how, or when, or from where. I love you in
+                                this way because I
+                                do
+                                not
+                                know any other way of loving but this, in which there is no I or you, so intimate that
+                                your
+                                hand
+                                upon my chest is my hand, so intimate then when I fall asleep your eyes close.”“I love
+                                you
+                                without knowing how, or when, or from where. I love you in this way because I do not
+                                know
+                                any
+                                other way of loving but this, in which there is no I or you, so intimate that your hand
+                                upon
+                                my
+                                chest is my hand, so intimate then when I fall asleep your eyes close.”</p>
+                        </div>
                     </div>
                 </div>
-            </form>
-        </div>
-    </section>
-    <section class="wishes-section">
-        <img src="./assets/images/brush.png" alt="brush" class="brush">
-        <img src="./assets/images/spring_leaf_2.png" alt="spring-left" class="spring-leaf">
-        <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
-        <div class="container position-relative text-center">
-            <div class="row">
-                <div class="col-md-7 col-lg-5 m-auto">
-                    <h3>Best Wishes</h3>
-                    <form action="#">
-                        <div class="mb-3">
+            </div>
+        </section>
+        <section class="venue-section">
+            <img src="./assets/images/blue_flower.png" alt="blue-flower" class="blue-flower">
+            <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
+            <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
+            <img src="./assets/images/tree.png" alt="tree" class="tree">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 m-auto position-relative text-center">
+                        <h2 data-aos="fade-down">Event & Venue</h2>
+                        <div class="venue-description" data-aos="zoom-in">
+                            <p>If you will be present at the event location. Please fill out
+                                the form below</p>
+                        </div>
+                        <div class="prokes-wrapper">
+                            <div class="prokes" data-aos="flip-right">
+                                <svg width="50" height="34" viewBox="0 0 50 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group">
+                                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M24.6325 0.805312C24.8725 0.731562 25.1275 0.731562 25.3675 0.805312L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805312ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
+                                            fill="#052293" />
+                                    </g>
+                                </svg>
+                                <small>Use Medical Mask</small>
+                            </div>
+                            <div class="prokes" data-aos="flip-down">
+                                <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group">
+                                        <path id="Vector" fill-rule="evenodd" clip-rule="evenodd"
+                                            d="M2.45906 6.745C2.82406 6.1075 3.52906 5.12 4.40906 4.31C5.31656 3.47375 6.21906 3 6.99906 3H15.7491V10.5H10.7491C10.086 10.5 9.45014 10.7634 8.9813 11.2322C8.51245 11.7011 8.24906 12.337 8.24906 13V16.75H6.99906C5.34146 16.75 3.75175 17.4085 2.57965 18.5806C1.40754 19.7527 0.749063 21.3424 0.749063 23V43C0.749063 43.663 1.01246 44.2989 1.4813 44.7678C1.95014 45.2366 2.58602 45.5 3.24906 45.5H30.7491C31.4121 45.5 32.048 45.2366 32.5168 44.7678C32.9857 44.2989 33.2491 43.663 33.2491 43V23C33.2491 21.3424 32.5906 19.7527 31.4185 18.5806C30.2464 17.4085 28.6567 16.75 26.9991 16.75H25.7491V13C25.7491 12.337 25.4857 11.7011 25.0168 11.2322C24.548 10.7634 23.9121 10.5 23.2491 10.5H18.2491V3H28.2491V0.5H6.99906C5.27906 0.5 3.78656 1.48375 2.71406 2.47125C1.61406 3.48375 0.757812 4.68375 0.289062 5.505L2.45906 6.745ZM9.49906 29.25H15.7491V23H18.2491V29.25H24.4991V31.75H18.2491V38H15.7491V31.75H9.49906V29.25Z"
+                                            fill="#052293" />
+                                    </g>
+                                </svg>
+                                <small>Wash Hand</small>
+                            </div>
+                            <div class="prokes" data-aos="flip-left">
+                                <svg width="50" height="36" viewBox="0 0 50 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <g id="Group">
+                                        <path id="Vector" d="M5 5.5H45" stroke="#052293" stroke-width="2" />
+                                        <path id="Vector_2"
+                                            d="M8.53614 1.75L5.88614 4.40125C5.76992 4.51734 5.67772 4.6552 5.61481 4.80695C5.55191 4.9587 5.51953 5.12135 5.51953 5.28562C5.51953 5.44989 5.55191 5.61255 5.61481 5.7643C5.67772 5.91605 5.76992 6.05391 5.88614 6.17L8.53739 8.82"
+                                            stroke="#052293" stroke-width="2" stroke-linecap="round" />
+                                        <path id="Vector_3"
+                                            d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
+                                            stroke="#052293" stroke-width="2" stroke-linecap="round" />
+                                        <path id="Vector_4"
+                                            d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
+                                            fill="#052293" stroke="#052293" stroke-width="2" />
+                                        <path id="Vector_5"
+                                            d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
+                                            fill="#052293" stroke="#052293" stroke-width="2" />
+                                        <path id="Vector_6"
+                                            d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
+                                            fill="#052293" stroke="#052293" stroke-width="2" />
+                                        <path id="Vector_7"
+                                            d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
+                                            fill="#052293" stroke="#052293" stroke-width="2" />
+                                    </g>
+                                </svg>
+                                <small>Keep The Distance</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-evenly">
+                    <div class="col-md-6">
+                        <div class="col-lg-8 col-md-12 m-auto">
+                            <div class="event-wrapper" data-aos="fade-right">
+                                <img src="./assets/images/brush_event.png" alt="brush" class="brush">
+                                <div class="event-name">
+                                    <h4>Marriage Contract</h4>
+                                    <p class="mb-0">Sunday, 22 December 2021</p>
+                                    <p>19.00 - 21.00 WIB</p>
+                                </div>
+                                <div class="event-place">
+                                    <h5>Groom House</h5>
+                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang,
+                                        Kota
+                                        Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                    <button class="btn btn-custom mt-3">See Location</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" data-aos="zoom-in">
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="col-lg-8 col-md-12 m-auto">
+                            <div class="event-wrapper" data-aos="fade-left">
+                                <img src="./assets/images/brush_event.png" alt="brush" class="brush-reverse">
+                                <div class="event-name">
+                                    <h4>Wedding Party</h4>
+                                    <p class="mb-0">Sunday, 22 December 2021</p>
+                                    <p>19.00 - 21.00 WIB</p>
+                                </div>
+                                <div class="event-place">
+                                    <h5>Hotel Shangri La</h5>
+                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang,
+                                        Kota
+                                        Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                    <button class="btn btn-custom mt-3">See Location</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-12" data-aos="zoom-in">
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rsvp-section">
+            <img src="./assets/images/buttefly.png" alt="buttefly" class="butterfly">
+            <div class="container position-relative">
+                <h3 class="mb-3" data-aos="fade-down">Confirmation of Attendance</h3>
+                <form action="#" data-aos="zoom-in">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-5">
                             <input type="text" class="form-control" placeholder="Name">
                         </div>
-                        <div class="mb-3">
-                            <input type="text" class="form-control" placeholder="Address">
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="E-Mail">
                         </div>
-                        <div class="mb-3">
-                            <textarea name="" id="" rows="5" class="form-control"
-                                placeholder="Write your wishes"></textarea>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="Phone Number">
                         </div>
-                        <button class="btn btn-custom w-100">Send</button>
-                    </form>
-                    <div class="card">
-                        <div class="card-body text-left">
-                            <div class="wishes">
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
-                                </div>
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
-                                </div>
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
-                                </div>
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
-                                </div>
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
-                                </div>
-                                <div class="wish">
-                                    <h6>Dewi</h6>
-                                    <p>Dewi
-                                        Happy Married Guys, hope you enjoy new journey and be happy family!</p>
-                                    <small class="text-muted">3 Days ago</small>
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="number" class="form-control" placeholder="The Number of Guest">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 col-lg-5 m-auto">
+                            <select name="" class="form-select" id="">
+                                <option disabled selected>Confirmation Attendance</option>
+                                <option value="1">Yes</option>
+                                <option value="0">No</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-7 col-lg-5 m-auto">
+                            <button class="btn btn-custom w-100">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="wishes-section">
+            <img src="./assets/images/brush.png" alt="brush" class="brush">
+            <img src="./assets/images/spring_leaf_2.png" alt="spring-left" class="spring-leaf">
+            <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
+            <div class="container position-relative text-center">
+                <div class="row">
+                    <div class="col-md-7 col-lg-5 m-auto">
+                        <h3 data-aos="fade-down">Best Wishes</h3>
+                        <form action="#" data-aos="fade-right">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="" id="" rows="5" class="form-control"
+                                    placeholder="Write your wishes"></textarea>
+                            </div>
+                            <button class="btn btn-custom w-100">Send</button>
+                        </form>
+                        <div class="card" data-aos="fade-left">
+                            <div class="card-body text-left">
+                                <div class="wishes">
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <h6>Dewi</h6>
+                                        <p>Dewi
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="egift-section">
-        <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
-        <img src="./assets/images/spring_floral_6.png" alt="spring6" class="spring-6">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-8 col-sm-10 text-center m-auto">
-                    <h3>E-Gift</h3>
-                    <p>Without reducing our respect, if you intend to give wedding gifts online in various ways
-                        various payment methods, please fill out the form provided below:</p>
-                    <p>Or you may use the QR code below</p>
-                    <img src="./assets/images/qr-code.png" alt="QrCode" class="qr-code">
-                    <p>BCA Mishela N. B 2211987723</p>
-                    <div class="col-md-7 col-sm-8 m-auto">
-                        <button class="btn btn-custom w-100 btn-qrCode">Copy Account Number</button>
-                    </div>
-                </div>
-            </div>
-            <form action="#">
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Name">
-                    </div>
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="E-Mail">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Phone Number">
-                    </div>
-                    <div class="col-sm-6 col-lg-5">
-                        <input type="text" class="form-control" placeholder="Adress">
-                    </div>
-                </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-12 col-lg-10">
-                        <div class="input-group">
-                            <span class="input-group-text" id="basic-addon1">Rp</span>
-                            <input type="text" class="form-control" placeholder="Amount" name="payment">
+        </section>
+        <section class="egift-section">
+            <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
+            <img src="./assets/images/spring_floral_6.png" alt="spring6" class="spring-6">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-8 col-sm-10 text-center m-auto">
+                        <h3 data-aos="fade-down">E-Gift</h3>
+                        <p>Without reducing our respect, if you intend to give wedding gifts online in various ways
+                            various payment methods, please fill out the form provided below:</p>
+                        <p>Or you may use the QR code below</p>
+                        <img src="./assets/images/qr-code.png" alt="QrCode" class="qr-code">
+                        <p>BCA Mishela N. B 2211987723</p>
+                        <div class="col-md-7 col-sm-8 m-auto">
+                            <button class="btn btn-custom w-100 btn-qrCode">Copy Account Number</button>
                         </div>
                     </div>
                 </div>
-                <div class="row justify-content-center">
-                    <div class="col-sm-6 col-lg-5">
-                        <button class="btn btn-custom w-100">Send</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </section>
-    <section class="gallery-section">
-        <img src="./assets/images//spring_floral_9.png" alt="spring9" class="spring-9">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-12 position-relative">
-                    <div id="main-slider" class="splide mb-1">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" width="100%" alt="gallery"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" width="100%" alt="gallery"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
-                                        class="img-gallery" />
-                                </li>
-                            </ul>
+                <form action="#" data-aos="zoom-in">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="E-Mail">
                         </div>
                     </div>
-                    <div id="thumbnail-slider" class="splide">
-                        <div class="splide__track">
-                            <ul class="splide__list">
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                                <li class="splide__slide">
-                                    <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
-                                </li>
-                            </ul>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="Phone Number">
+                        </div>
+                        <div class="col-sm-6 col-lg-5">
+                            <input type="text" class="form-control" placeholder="Adress">
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-12 col-lg-10">
+                            <div class="input-group">
+                                <span class="input-group-text" id="basic-addon1">Rp</span>
+                                <input type="text" class="form-control" placeholder="Amount" name="payment">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-sm-6 col-lg-5">
+                            <button class="btn btn-custom w-100">Send</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+        <section class="gallery-section">
+            <img src="./assets/images//spring_floral_9.png" alt="spring9" class="spring-9">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 position-relative">
+                        <div id="main-slider" class="splide mb-1">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" width="100%" alt="gallery"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" width="100%" alt="gallery"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" width="100%"
+                                            class="img-gallery" />
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="thumbnail-slider" class="splide">
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                    <li class="splide__slide">
+                                        <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row">
-                <div class="d-flex justify-content-center mt-4 position-relative">
-                    <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
-                    </iframe>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="apology-section">
-        <img src="./assets/images/brush.png" alt="brush" class="brush lg">
-        <img src="./assets/images/brush_apology_sm.png" alt="brush-sm" class="brush sm">
-        <img src="./assets/images/tree.png" alt="tree" class="tree">
-        <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-lg-7 col-md-8 m-auto text-center">
-                    <h3>Apology</h3>
-                    <p>Due to the limitations of the current pandemic, we apologize for not being able to directly
-                        invite all of you to our wedding. Without reducing respect, allow us to expect your virtual
-                        presence and give us your blessing.
-                        Thank you</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="stream-section">
-        <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
-        <img src="./assets/images/spring_floral_6.png" alt="spring6" class="spring-6">
-        <div class="container position-relative">
-            <div class="row">
-                <div>
-                    <h3>Live Streaming</h3>
-                    <h4>Live Wedding Schedule</h4>
-                    <div class="col-lg-4 col-md-6 m-auto">
-                        <ul class="text-start">
-                            <ol>10.00 Live Wedding Schedule</ol>
-                            <ol>13.00 Lunch Party</ol>
-                            <ol>14.00 Sungkeman</ol>
-                            <ol>14.30 Saweran</ol>
-                            <ol>15.00 Nincak Endog</ol>
-                            <ol>15.20 Ngaleupas japati</ol>
-                        </ul>
-                    </div>
-                </div>
-                <div class="stream-wrapper">
-                    <div class="col-lg-7 col-md-9 m-auto">
-                        <h3>Live Wedding</h3>
-                        <p>We apologize for the limitations of Zoom participants, only for invited guests who have been
-                            given a password, who can join the Room Zoom of the bride and groom to watch a series of
-                            wedding
-                            events and say hello Bride Live. Meanwhile, other invited guests can watch via Youtube Live
-                            Streaming.</p>
-                    </div>
-                    <div class=" col d-flex justify-content-center mt-4 position-relative">
+                <div class="row">
+                    <div class="d-flex justify-content-center mt-4 position-relative" data-aos="zoom-in">
                         <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
                         </iframe>
                     </div>
-                    <div class="col-sm-5 m-auto mt-3">
-                        <a href="#" class="btn btn-custom w-100">Join Youtube</a>
+                </div>
+            </div>
+        </section>
+        <section class="apology-section">
+            <img src="./assets/images/brush.png" alt="brush" class="brush lg">
+            <img src="./assets/images/brush_apology_sm.png" alt="brush-sm" class="brush sm">
+            <img src="./assets/images/tree.png" alt="tree" class="tree">
+            <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-lg-7 col-md-8 m-auto text-center">
+                        <h3 data-aos="fade-down">Apology</h3>
+                        <p data-aos="zoom-in">Due to the limitations of the current pandemic, we apologize for not being
+                            able to directly
+                            invite all of you to our wedding. Without reducing respect, allow us to expect your virtual
+                            presence and give us your blessing.
+                            Thank you</p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <section class="thank-section">
-        <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
-        <img src="./assets/images/buttefly.png" alt="buttefly" class="butterfly">
-        <img src="./assets/images/tree.png" alt="tree" class="tree">
-        <div class="container position-relative">
-            <div class="row">
-                <div class="col-md-8 m-auto thank">
-                    <h2>Thank You</h2>
-                    <p>Thank you for your presence, participation and blessing.</p>
-                    <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
-                    <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
-                    <p class="mt-3">with</p>
-                    <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
-                    <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+        </section>
+        <section class="stream-section">
+            <img src="./assets/images/spring_floral_3.png" alt="spring3" class="spring-3">
+            <img src="./assets/images/spring_floral_6.png" alt="spring6" class="spring-6">
+            <div class="container position-relative">
+                <div class="row">
+                    <div>
+                        <h3 data-aos="fade-down">Live Streaming</h3>
+                        <h4 data-aos="fade-down">Live Wedding Schedule</h4>
+                        <div class="col-lg-4 col-md-6 m-auto" data-aos="zoom-in">
+                            <ul class="text-start">
+                                <ol>10.00 Live Wedding Schedule</ol>
+                                <ol>13.00 Lunch Party</ol>
+                                <ol>14.00 Sungkeman</ol>
+                                <ol>14.30 Saweran</ol>
+                                <ol>15.00 Nincak Endog</ol>
+                                <ol>15.20 Ngaleupas japati</ol>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="stream-wrapper">
+                        <div class="col-lg-7 col-md-9 m-auto">
+                            <h3 data-aos="fade-down">Live Wedding</h3>
+                            <p data-aos="zoom-in">We apologize for the limitations of Zoom participants, only for
+                                invited guests who have
+                                been
+                                given a password, who can join the Room Zoom of the bride and groom to watch a series of
+                                wedding
+                                events and say hello Bride Live. Meanwhile, other invited guests can watch via Youtube
+                                Live
+                                Streaming.</p>
+                        </div>
+                        <div class=" col d-flex justify-content-center mt-4 position-relative" data-aos="zoom-in">
+                            <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
+                            </iframe>
+                        </div>
+                        <div class="col-sm-5 m-auto mt-3" data-aos="fade-down">
+                            <a href="#" class="btn btn-custom w-100">Join Youtube</a>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
-    <footer class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="text-center">
-                    <small>Copyright 2021 © Created with ❤️ by viding.co</small>
+        </section>
+        <section class="thank-section">
+            <img src="./assets/images/spring_floral_2.png" alt="spring2" class="spring-2">
+            <img src="./assets/images/buttefly.png" alt="buttefly" class="butterfly">
+            <img src="./assets/images/tree.png" alt="tree" class="tree">
+            <div class="container position-relative">
+                <div class="row">
+                    <div class="col-md-8 m-auto thank" data-aos="zoom-in">
+                        <h2>Thank You</h2>
+                        <p>Thank you for your presence, participation and blessing.</p>
+                        <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                        <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                        <p class="mt-3">with</p>
+                        <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                        <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-
-
+        </section>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="text-center">
+                        <small>Copyright 2021 © Created with ❤️ by viding.co</small>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </main>
 
     <!-- script libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
@@ -610,12 +654,6 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init({
-            easing: "ease-out-back",
-            duration: 1000,
-        });
-    </script>
 
     <!-- scripts plugins -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js"
@@ -627,27 +665,22 @@
             });
 
             const thumbnails = new Splide('#thumbnail-slider', {
-                fixedWidth: 275,
-                fixedHeight: 163,
+                fixedWidth: 175,
+                fixedHeight: 80,
                 pagination: false,
                 arrows: false,
                 focus: "center",
                 gap: 5,
-                breakpoints: {
-                    991: {
-                        fixedWidth: 156,
-                        fixedHeight: 86
-                    },
-                    767: {
-                        fixedWidth: 108,
-                        fixedHeight: 75
-                    }
-                }
             });
 
             splide.sync(thumbnails)
             splide.mount();
             thumbnails.mount();
+        });
+
+        AOS.init({
+            easing: "ease-out-back",
+            duration: 1000,
         });
     </script>
 
