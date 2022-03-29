@@ -358,7 +358,7 @@
 
 .header-section .frame-wrapper .frame {
   position: relative;
-  margin: 3.5rem 0 0 0;
+  margin: 4rem 0 0 0;
   padding: 15px;
 }
 
@@ -398,7 +398,7 @@
 
 .header-section .frame-wrapper .frame .header-image {
   width: 718px;
-  height: 412px;
+  height: 386px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -425,7 +425,7 @@
 }
 
 .header-section .frame-wrapper .name-couple {
-  padding: 2rem 0 0 0;
+  padding: 1.25rem 0 0 0;
 }
 
 @media (max-width: 375px) {
@@ -733,7 +733,7 @@
 
 .envelope-wrap .frame-wrapper .frame .header-image {
   width: 718px;
-  height: 412px;
+  height: 386px;
   -o-object-fit: cover;
      object-fit: cover;
 }
