@@ -19,7 +19,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .countdown {
     gap: 0.25rem;
   }
@@ -127,7 +127,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .header-section .logo-viding {
     display: none;
   }
@@ -362,6 +362,12 @@
   padding: 15px;
 }
 
+@media (max-width: 375px) {
+  .header-section .frame-wrapper .frame {
+    padding: 5px 13px 17px;
+  }
+}
+
 .header-section .frame-wrapper .frame::before {
   position: absolute;
   content: "";
@@ -370,6 +376,15 @@
   right: 15px;
   bottom: 15px;
   background-color: #00000031;
+}
+
+@media (max-width: 375px) {
+  .header-section .frame-wrapper .frame::before {
+    top: 5px;
+    left: 13px;
+    right: 13px;
+    bottom: 17px;
+  }
 }
 
 .header-section .frame-wrapper .frame .frame-image-header {
@@ -402,7 +417,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .header-section .frame-wrapper .frame .header-image {
     width: 226px;
     height: 298px;
@@ -413,7 +428,7 @@
   padding: 2rem 0 0 0;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .header-section .frame-wrapper .name-couple {
     padding: 0;
   }
@@ -682,6 +697,12 @@
   padding: 15px;
 }
 
+@media (max-width: 375px) {
+  .envelope-wrap .frame-wrapper .frame {
+    padding: 5px 13px 17px;
+  }
+}
+
 .envelope-wrap .frame-wrapper .frame::before {
   position: absolute;
   content: "";
@@ -690,6 +711,15 @@
   right: 15px;
   bottom: 15px;
   background-color: #00000031;
+}
+
+@media (max-width: 375px) {
+  .envelope-wrap .frame-wrapper .frame::before {
+    top: 5px;
+    left: 13px;
+    right: 13px;
+    bottom: 17px;
+  }
 }
 
 .envelope-wrap .frame-wrapper .frame .frame-image-header {
@@ -722,7 +752,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .envelope-wrap .frame-wrapper .frame .header-image {
     width: 226px;
     height: 298px;
@@ -765,7 +795,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .couple-section .cloud-left-1 {
     left: -15px;
   }
@@ -911,7 +941,7 @@
      object-fit: cover;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .couple-section .card .card-body .image-couple {
     height: 285px;
   }
@@ -1987,7 +2017,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 375px) {
   .stream-section .cloud-left-1 {
     left: -45px;
   }
