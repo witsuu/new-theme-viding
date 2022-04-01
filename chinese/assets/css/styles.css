@@ -21,7 +21,7 @@
 
 @media (max-width: 375px) {
   .countdown {
-    gap: 0.25rem;
+    gap: 0.75rem;
   }
 }
 
@@ -100,6 +100,10 @@
   height: 3rem;
 }
 
+.logo-viding path {
+  fill: #fff;
+}
+
 @media (max-width: 767px) {
   .logo-viding {
     height: 3.5rem;
@@ -119,6 +123,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -2.5%);
           transform: translate(-50%, -2.5%);
+  margin-top: 1rem;
 }
 
 @media (max-width: 991px) {
@@ -454,6 +459,7 @@
   left: 50%;
   -webkit-transform: translate(-50%, -2.5%);
           transform: translate(-50%, -2.5%);
+  margin-top: 2rem;
 }
 
 @media (max-width: 991px) {
@@ -462,7 +468,7 @@
   }
 }
 
-@media (max-width: 575px) {
+@media (max-width: 375px) {
   .envelope-wrap .logo-viding {
     display: none;
   }

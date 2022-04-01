@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Winter</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Petit+Formal+Script&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Open+Sans&family=Roboto&family=Amatic+SC&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Playball&family=Righteous&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Oswald&family=Playball&family=Righteous&family=Architects+Daughter&family=Bebas+Neue&family=Ceviche+One&family=Cinzel&family=Concert+One&family=Cookie&family=DM+Serif+Display&family=Dongle&family=Fredoka+One&family=Fruktur&family=Gluten&family=Great+Vibes&family=Handlee&family=Irish+Grover&family=Josefin+Sans&family=Kaushan+Script&family=Luckiest+Guy&family=Merienda&family=Mochiy+Pop+P+One&family=Noto+Serif+Display&family=Orbitron&family=Pacifico&family=Passion+One&family=Permanent+Marker&family=Russo+One&family=Shadows+Into+Light&family=Staatliches&family=Acme&family=Alex+Brush&family=Anton&family=Bangers&family=Bree+Serif&family=Francois+One&family=Fugaz+One&family=Genos&family=Gochi+Hand&family=Hammersmith+One&family=Julius+Sans+One&family=Kanit&family=Kings&family=Patrick+Hand&family=Petemoss&family=Playfair+Display+SC&family=Praise&family=Satisfy&family=Shalimar&family=Viga&family=Yuji+Boku&family=Black+Ops+One&family=Carattere&family=Damion&family=Lilita+One&family=Sriracha&display=swap"
+        rel="stylesheet">
+
+    <!-- styles libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
+        integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+
+    <!-- styles custom -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container d-flex justify-content-center">
+            <a href="#sectionMain" class="navbar-brand m-auto">
+                <svg class="logo-viding" width="4404" height="2583" viewBox="0 0 4404 2583" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1760.01 9.05267C1708.72 36.9635 1692.12 64.8744 1631.77 218.761C1579.72 353.789 1537.48 506.167 1502.78 686.456C1488.45 763.4 1474.87 835.063 1472.6 846.378C1468.83 864.482 1464.31 867.5 1433.38 871.271C1376.05 878.06 1339.84 890.13 1307.4 912.76C1259.88 945.952 1158.8 1047.79 1127.87 1093.8C1032.07 1234.87 1047.91 1470.22 1156.53 1526.8C1221.41 1560.74 1328.52 1541.89 1445.45 1476.26C1467.32 1464.19 1486.94 1455.89 1489.2 1458.15C1491.46 1460.42 1503.53 1507.94 1514.85 1564.52C1566.14 1808.92 1603.11 1870.03 1702.68 1872.29C1799.99 1874.55 1862.6 1787.05 1960.67 1511.71L2001.4 1397.05L2009.7 1448.35C2014.98 1477.01 2024.79 1510.2 2031.58 1522.27C2059.49 1569.04 2124.36 1580.36 2209.6 1553.96C2304.65 1524.54 2395.17 1443.82 2446.47 1342.74C2457.78 1319.35 2452.5 1323.13 2404.22 1369.89C2282.77 1485.31 2177.92 1530.57 2132.66 1485.31C2109.27 1461.93 2115.31 1435.52 2177.92 1277.86C2240.53 1122.47 2250.34 1071.17 2227.71 1004.04C2214.88 964.056 2199.8 950.478 2168.87 950.478C2138.69 950.478 2112.29 991.212 2084.38 1082.49C2070.8 1126.24 2067.03 1132.28 2062.5 1117.94C2059.49 1108.89 2054.21 1101.35 2050.43 1101.35C2046.66 1101.35 2035.35 1108.89 2024.03 1117.94C2008.95 1131.52 1999.14 1156.41 1978.77 1234.11C1930.49 1418.93 1884.48 1557.73 1846.76 1633.16C1809.8 1706.33 1769.06 1765.17 1760.77 1756.87C1753.98 1750.09 1711.73 1530.57 1699.66 1434.77C1692.87 1383.47 1684.58 1291.44 1681.56 1231.09C1674.02 1099.84 1678.54 1076.45 1733.61 956.513C1779.62 856.939 1816.59 740.769 1850.53 588.391C1887.5 424.698 1897.3 309.283 1885.99 163.694C1881.46 99.5743 1875.43 42.2439 1873.16 35.4548C1867.88 21.8766 1817.34 0.000509673 1791.69 0.000509673C1782.64 0.000509673 1768.31 4.52659 1760.01 9.05267ZM1821.87 105.609C1867.13 297.968 1863.36 480.52 1812.06 660.054C1793.96 722.665 1710.22 955.004 1696.65 979.143C1667.23 1031.19 1694.38 452.609 1730.59 248.935C1741.15 187.079 1766.05 101.837 1780.38 73.1722C1793.2 47.5244 1812.06 61.857 1821.87 105.609ZM1479.39 1291.44C1482.41 1300.49 1468.08 1314.83 1432.62 1341.23C1369.26 1388 1354.93 1395.54 1327.77 1395.54C1280.25 1395.54 1247.05 1323.13 1252.34 1231.09C1257.62 1131.52 1343.61 995.739 1425.84 955.004L1465.82 934.636L1471.1 1106.63C1474.11 1200.92 1477.89 1283.9 1479.39 1291.44ZM2063.26 1201.68C2061 1227.32 2049.68 1274.09 2038.36 1305.02C1996.88 1419.68 1996.12 1378.19 2036.86 1234.87C2049.68 1190.36 2061.75 1154.15 2064.01 1154.15C2066.28 1154.15 2065.52 1175.27 2063.26 1201.68Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M814.814 717.382C795.955 727.189 777.096 743.784 770.307 757.363C755.22 785.274 753.712 848.639 766.536 872.778C788.412 912.004 854.794 880.321 882.705 816.956C897.038 784.519 902.318 725.68 893.266 709.839C884.968 697.015 850.268 700.032 814.814 717.382Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M2217.9 716.63C2163.59 741.523 2140.96 819.221 2171.89 875.797C2182.45 896.164 2217.9 893.901 2245.06 871.271C2280.51 841.851 2300.88 792.819 2297.86 745.295C2295.6 706.823 2294.85 705.314 2272.97 703.051C2260.9 702.297 2236.01 708.332 2217.9 716.63Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M513.83 825.255C495.726 841.096 494.217 844.868 502.515 862.972C507.041 873.533 516.093 882.585 521.373 882.585C527.408 882.585 537.215 888.62 544.004 896.163C555.319 908.987 555.319 915.022 538.723 977.633C487.428 1167.73 402.941 1302 276.211 1394.03C263.387 1403.08 261.124 1400.82 247.545 1370.65C239.248 1351.79 220.389 1267.3 206.056 1182.82C170.602 973.107 148.726 908.987 102.711 883.339C84.6064 872.779 80.0803 872.779 56.6955 884.094C34.0651 894.655 28.7847 902.198 21.9955 936.144C-15.7218 1112.66 -3.65225 1356.32 48.3977 1470.98C72.5368 1523.78 98.1846 1551.69 145.708 1573.57C244.528 1620.34 302.613 1584.88 408.221 1413.65C485.919 1288.42 491.954 1275.6 541.741 1128.5C608.123 934.635 614.912 873.533 578.704 826.763C559.845 802.624 540.986 801.87 513.83 825.255Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M2916.42 938.407C2859.09 961.792 2816.1 994.983 2780.64 1042.51C2748.2 1086.26 2714.26 1123.98 2707.47 1123.98C2705.21 1123.98 2704.45 1101.35 2705.21 1074.19C2710.49 982.914 2691.63 942.934 2643.35 942.934C2592.05 942.934 2572.44 985.177 2514.36 1216.76C2473.62 1375.93 2472.11 1388 2474.38 1464.94C2476.64 1558.48 2485.69 1575.08 2539.25 1581.87C2610.16 1591.67 2636.56 1558.48 2656.93 1438.54C2662.96 1398.56 2673.52 1353.3 2679.56 1338.97C2699.17 1292.95 2816.1 1121.71 2856.08 1080.22C2891.53 1044.02 2959.42 1003.28 2985.07 1003.28C2999.4 1003.28 2992.61 1043.26 2951.12 1192.62C2894.55 1401.58 2884.74 1455.14 2883.99 1569.04C2883.99 1663.33 2885.5 1673.9 2903.6 1713.12C2948.11 1806.66 3055.98 1838.34 3157.82 1787.05C3219.67 1756.87 3262.67 1707.09 3312.46 1608.27C3372.8 1491.34 3391.66 1403.09 3367.52 1358.58C3356.96 1338.97 3356.96 1338.97 3211.37 1602.99C3160.83 1693.51 3104.26 1724.44 3083.13 1672.39C3066.54 1633.92 3071.82 1568.29 3105.01 1412.14C3144.24 1230.34 3154.8 1148.87 3148.76 1086.26C3141.97 1015.35 3132.92 987.44 3101.99 951.986L3074.84 920.303H3017.51C2974.51 920.303 2948.11 924.829 2916.42 938.407Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M3786.94 939.161C3764.31 944.441 3722.07 961.037 3692.65 976.124C3526.69 1060.61 3448.24 1169.24 3439.94 1324.63C3435.42 1415.15 3449.75 1460.41 3498.03 1508.69C3574.97 1584.88 3673.79 1587.9 3805.05 1516.99C3836.73 1499.64 3863.89 1486.82 3865.39 1488.33C3866.9 1489.83 3859.36 1541.13 3848.8 1602.23C3826.92 1732.73 3845.03 1702.56 3642.11 1946.21C3472.38 2150.64 3429.38 2217.02 3402.98 2318.11C3390.16 2367.14 3387.89 2480.29 3398.45 2526.31C3409.01 2568.55 3447.49 2583.64 3540.27 2582.88C3636.83 2582.88 3685.11 2564.78 3746.96 2508.2C3820.13 2440.31 3853.32 2352.05 3894.81 2115.19C3905.37 2053.33 3929.51 1943.95 3948.37 1871.53C3967.23 1799.12 3987.6 1705.58 3993.63 1664.09L4004.95 1587.9L4089.44 1502.66C4189.01 1401.58 4249.36 1356.31 4323.28 1326.14C4388.91 1299.74 4404 1286.91 4404 1257.5V1234.87L4363.26 1239.39C4341.39 1241.65 4309.7 1249.95 4293.11 1258.25C4258.41 1276.35 4143.75 1370.65 4094.72 1421.94C4075.86 1440.8 4050.96 1461.92 4038.89 1468.71L4017.02 1480.03L4022.3 1454.38C4045.68 1325.39 4051.72 1170.75 4035.88 1100.59C4028.33 1068.15 4018.53 1049.3 3994.39 1023.65C3977.04 1004.79 3955.16 979.141 3945.36 966.318C3917.44 929.355 3864.64 920.302 3786.94 939.161ZM3900.09 1022.89C3911.41 1028.93 3922.72 1037.23 3924.99 1041C3931.02 1050.8 3834.47 1263.53 3790.71 1337.46C3756.77 1395.54 3734.89 1415.91 3697.93 1422.7C3581.76 1444.57 3622.49 1149.62 3749.22 1046.28C3800.52 1004.79 3849.55 997.246 3900.09 1022.89ZM3774.12 1902.46C3768.84 1924.34 3748.47 2008.83 3729.61 2089.54C3679.07 2304.53 3663.23 2346.02 3605.14 2419.19C3576.48 2456.15 3519.15 2492.36 3479.92 2498.4C3459.56 2501.41 3448.99 2441.07 3461.06 2379.96C3470.87 2327.16 3533.48 2198.92 3594.58 2104.63C3645.12 2026.93 3769.59 1863.24 3777.89 1863.24C3780.91 1863.24 3779.4 1881.34 3774.12 1902.46Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M731.08 969.334C700.152 1009.31 622.454 1254.48 608.876 1354.81C599.824 1421.94 608.122 1489.83 629.243 1521.52C660.172 1569.04 721.274 1580.36 806.515 1553.95C895.528 1526.8 983.786 1452.12 1031.31 1363.86L1056.96 1316.33L1001.14 1369.89C909.106 1457.4 835.934 1500.39 777.85 1501.15C733.343 1501.15 712.221 1480.03 717.502 1440.8C719.765 1424.96 745.413 1351.79 775.587 1277.86C818.584 1173.01 831.408 1132.27 833.671 1093.8C838.197 1037.98 826.882 986.684 805.006 964.808C784.639 944.441 749.939 945.95 731.08 969.334Z"
+                        fill="#DA0F7A" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <section class="header-section">
+        <img src="./assets/images/bg-header.jpg" alt="bg-header" class="bg-header">
+        <img src="./assets/images/waves.png" alt="waves" class="waves">
+        <svg class="snowflake-1" width="441" height="748" viewBox="0 0 441 748" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M102.846 -22.2214V740.222" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M4.49414 149.527L102.066 212.532L201.35 149.06" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M39.6641 46.6957L102.378 87.1436L166.181 46.229" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M201.35 573.763L103.778 510.913L4.49414 574.385" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M166.181 676.75L103.467 636.302L39.6641 677.061" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M-227.219 168.195L433.22 549.339" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M338.293 381.013L235.119 433.907L240.41 551.672" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M409.877 462.998L343.584 496.912L347.008 572.674" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M-227.219 549.183L433.22 168.039" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M239.943 166.017L234.186 281.916L338.76 336.054" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M346.696 145.015L342.961 219.377L410.188 254.225" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <svg class="snowflake-2" width="95" height="110" viewBox="0 0 95 110" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M47.543 16.9116V93.3486" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M40.8105 5.02371V12.9056L47.587 16.8465L54.3635 12.9056V5.02371L47.587 1.08276L40.8105 5.02371Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M40.8105 97.0945V104.976L47.587 108.917L54.3635 104.976V97.0945L47.587 93.1536L40.8105 97.0945Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.7363 35.9233L80.5221 74.1418" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M1.16211 35.8582L7.9386 39.7992L14.7151 35.8582V27.9763L7.9386 24.0354L1.16211 27.9763V35.8582Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M80.3711 81.8939L87.1476 85.8348L93.9241 81.8939V74.012L87.1476 70.071L80.3711 74.012V81.8939Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M14.7148 74.0336L80.4791 35.7935" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M7.85267 85.8348L14.6292 81.8939V74.012L7.85267 70.071L1.07617 74.012V81.8939L7.85267 85.8348Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M87.0617 39.7992L93.8597 35.8582V27.9763L87.0617 24.0354L80.2852 27.9763V35.8582L87.0617 39.7992Z"
+                stroke="white" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M47.4569 39.2363L62.989 27.8032L60.9023 47.0532L78.5212 54.8702L60.9023 62.6871L62.989 81.9371L47.4569 70.4824L31.9462 81.9371L34.0114 62.6871L16.4141 54.8702L34.0114 47.0532L31.9462 27.8032L47.4569 39.2363Z"
+                stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+        <div class="header">
+            <div class="card">
+                <svg class="snowflake-card" width="171" height="171" viewBox="0 0 171 171" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M85.4824 1.70972V169.29" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M63.873 11.8992L85.278 25.7475L107.093 11.7625" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M71.5996 44.417L85.3453 53.3073L99.3645 44.3145" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M107.093 160.263L85.6883 146.449L63.873 160.4" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M99.3645 127.746L85.6188 118.89L71.5996 127.848" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M26.2246 26.2605L144.704 144.74" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M18.1562 48.7594L43.0831 43.3911L48.6224 18.0881" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M46.6055 66.3005L62.6421 62.847L66.1981 46.571" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M153.664 123.095L128.703 128.464L123.164 153.767" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M125.18 105.589L109.177 109.042L105.621 125.284" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M1.70898 85.5171H169.29" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M11.8985 107.161L25.7467 85.7222L11.7617 63.907" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M44.417 99.3996L53.3073 85.654L44.3145 71.6348" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M160.263 63.907L146.449 85.3119L160.4 107.161" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M127.745 71.6348L118.889 85.3804L127.847 99.3996" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M26.2598 144.774L144.739 26.2947" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M48.7592 152.844L43.3908 127.917L18.0879 122.343" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M66.2998 124.395L62.8463 108.392L46.5703 104.802" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M123.094 17.3701L128.462 42.2969L153.765 47.8362" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M105.588 45.8188L109.041 61.8212L125.283 65.4115" stroke="white" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                </svg>
+                <div class="card-body">
+                    <div class="header-name">
+                        <h1>John</h1>
+                        <div class="font-secondary and">
+                            &
+                        </div>
+                        <h1>Jane</h1>
+                    </div>
+                    <p>We’re getting married</p>
+                    <div class="header-date">
+                        <span>30 Mei 2022</span>
+                        <span>08:00 WIB (GMT +7)</span>
+                    </div>
+                    <a href="#" class="btn btn-custom">
+                        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 2C8.26875 2 2 8.26875 2 16C2 23.7313 8.26875 30 16 30C23.7313 30 30 23.7313 30 16C30 8.26875 23.7313 2 16 2ZM21.5156 20.3031L20.6219 21.5219C20.6024 21.5484 20.5779 21.5708 20.5498 21.5879C20.5217 21.6049 20.4904 21.6162 20.4579 21.6212C20.4254 21.6261 20.3922 21.6246 20.3603 21.6167C20.3284 21.6087 20.2983 21.5946 20.2719 21.575L15.1031 17.8062C15.0709 17.7831 15.0448 17.7526 15.0268 17.7173C15.0089 17.6819 14.9997 17.6428 15 17.6031V9C15 8.8625 15.1125 8.75 15.25 8.75H16.7531C16.8906 8.75 17.0031 8.8625 17.0031 9V16.7344L21.4594 19.9562C21.5719 20.0344 21.5969 20.1906 21.5156 20.3031Z"
+                                fill="#383B5E" />
+                        </svg>
+                        Save The Date
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="couple-section">
+        <svg class="snowflake-1" width="230" height="456" viewBox="0 0 230 456" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M227.953 4.55908V451.441" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M170.326 31.7312L227.406 68.6598L285.58 31.3665" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M190.934 118.445L227.589 142.152L264.973 118.172" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M285.58 427.369L228.5 390.531L170.326 427.734" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M264.973 340.655L228.318 317.039L190.934 340.929" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M69.9355 70.0276L385.88 385.972" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M48.418 130.025L114.889 115.71L129.661 48.2351" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M124.279 176.801L167.044 167.592L176.526 124.189" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M4.55859 228.046H451.44" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M31.73 285.764L68.6586 228.593L31.3652 170.419" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M118.445 265.065L142.153 228.41L118.172 191.026" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M70.0273 386.064L385.972 70.1189" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M130.024 407.582L115.709 341.111L48.2344 326.248" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M176.801 331.719L167.592 289.046L124.189 279.472" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <svg class="snowflake-2" width="150" height="277" viewBox="0 0 150 277" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M30.6094 42.5859V235.068" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M13.6699 12.6503V32.4984L30.7182 42.4224L47.7664 32.4984V12.6503L30.7182 2.72632L13.6699 12.6503Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M13.6699 244.502V264.35L30.7182 274.274L47.7664 264.35V244.502L30.7182 234.578L13.6699 244.502Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-51.9258 90.4612L113.577 186.702" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M113.199 206.223L130.247 216.147L147.296 206.223V186.375L130.247 176.451L113.199 186.375V206.223Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-51.9805 186.43L113.469 90.134" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M130.031 100.222L147.133 90.2977V70.4496L130.031 60.5256L112.982 70.4496V90.2977L130.031 100.222Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M30.3921 98.804L69.4677 70.0134L64.218 118.488L108.543 138.173L64.218 157.857L69.4677 206.332L30.3921 177.487L-8.62943 206.332L-3.43378 157.857L-47.7051 138.173L-3.43378 118.488L-8.62943 70.0134L30.3921 98.804Z"
+                stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10 text-center mb-5">
+                    <h3>Bride & Groom</h3>
+                    <p>What greater thing is there for two human souls, than to feel that they are joined for life–to
+                        strength each other in all labor, to rest on each other in all sorrow, to minister to each other
+                        in silent unspeakable memories at the moment of the last parting? Being deeply loved by someone
+                        gives you strength, while loving someone deeply gives you courage.</p>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center">
+                <div class="col-md-5 text-end">
+                    <div class="couple">
+                        <img src="./assets/images/couple.jpg" alt="couple" class="couple-image">
+                        <h3>John Stew S.Pd. M.pd</h3>
+                        <div class="couple-parent ms-auto">
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah</p>
+                        </div>
+                        <div class="sosmed-wrap">
+                            <div class="sosmed">
+                                <i class="fab fa-instagram"></i>
+                                @Johnstew
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-2 text-center">
+                    <div class="and">
+                        <h2>&</h2>
+                    </div>
+                </div>
+                <div class="col-md-5 text-start">
+                    <div class="couple">
+                        <img src="./assets/images/couple.jpg" alt="couple" class="couple-image">
+                        <h3>Jane Stew S.Pd. M.pd</h3>
+                        <div class="couple-parent">
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah</p>
+                        </div>
+                        <div class="sosmed-wrap">
+                            <div class="sosmed">
+                                <i class="fab fa-instagram"></i>
+                                @Janestew
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="story-section">
+        <img src="./assets/images/waves.png" alt="waves" class="waves-top">
+        <img src="./assets/images/waves.png" alt="waves" class="waves-bottom">
+        <svg class="snowflake-1" width="418" height="618" viewBox="0 0 418 618" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M267.877 6.17871V611.821" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M189.896 142.606L267.261 192.654L345.983 142.235" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M217.781 60.9226L267.507 93.0522L318.096 60.5519" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M345.983 479.596L268.618 429.671L189.896 480.09" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M318.096 561.403L268.371 529.273L217.781 561.65" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M6.16992 157.435L529.831 460.194" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M85.2617 293.368L167.068 251.352L162.873 157.806" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M28.5039 228.243L81.0674 201.304L78.3529 141.123" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M454.564 326.486L372.758 368.501L376.953 462.048" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M6.16992 460.071L529.831 157.311" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M163.243 459.576L167.808 367.513L84.7676 324.385" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M78.5987 476.136L81.4367 417.067L28.1328 389.386" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M376.583 155.705L372.018 247.768L454.935 290.773" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-4">
+                    <div class="image-wrap">
+                        <svg class="snowflake" width="171" height="171" viewBox="0 0 171 171" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M85.4824 1.70972V169.29" stroke="white" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M63.873 11.8992L85.278 25.7475L107.093 11.7625" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M71.5996 44.417L85.3453 53.3073L99.3645 44.3145" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M107.093 160.263L85.6883 146.449L63.873 160.4" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M99.3645 127.746L85.6188 118.89L71.5996 127.848" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M26.2246 26.2604L144.704 144.74" stroke="white" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M18.1562 48.7595L43.0831 43.3912L48.6224 18.0883" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M46.6055 66.3006L62.6421 62.8471L66.1981 46.5712" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M153.664 123.095L128.703 128.464L123.164 153.767" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M125.18 105.589L109.177 109.042L105.621 125.284" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M1.70898 85.5172H169.29" stroke="white" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M11.8985 107.161L25.7467 85.7223L11.7617 63.9071" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M44.417 99.3996L53.3073 85.654L44.3145 71.6348" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M160.263 63.9071L146.449 85.312L160.4 107.161" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M127.745 71.6348L118.889 85.3804L127.847 99.3996" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M26.2598 144.774L144.739 26.2946" stroke="white" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M48.7592 152.843L43.3908 127.917L18.0879 122.343" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M66.2998 124.395L62.8463 108.392L46.5703 104.802" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M123.094 17.3702L128.462 42.2971L153.765 47.8363" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M105.588 45.8188L109.041 61.8212L125.283 65.4115" stroke="white"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                        <img src="./assets/images/bg-stroy.jpg" alt="bg-story" class="story-image">
+                    </div>
+                </div>
+                <div class="col-lg-6 story-description">
+                    <h2 class="text-center text-light">Our Story</h2>
+                    <p>“I love you without knowing how, or when, or from where. I love you in this way because I do not
+                        know any other way of loving but this, in which there is no I or you, so intimate that your hand
+                        upon my chest is my hand, so intimate then when I fall asleep your eyes close.”“I love you
+                        without knowing how, or when, or from where. I love you in this way because I do not know any
+                        other way of loving but this, in which there is no I or you, so intimate that your hand upon my
+                        chest is my hand, so intimate then when I fall asleep your eyes close.”</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="venue-section">
+        <div class="container">
+            <div class="venue-wrap shadow-lg">
+                <svg class="snowflake" width="294" height="339" viewBox="0 0 294 339" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M146.934 3.38934V335.611" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+                    <path d="M104.16 78.2256L146.595 105.679L189.775 78.0222" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M119.455 33.4188L146.73 51.0432L174.479 33.2154" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M189.775 263.079L147.34 235.693L104.16 263.35" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M174.479 307.954L147.204 290.329L119.455 308.089" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M3.38477 86.36L290.617 252.437" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M46.7676 160.925L91.6391 137.878L89.338 86.5633" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M15.6348 125.202L44.4663 110.424L42.9773 77.4121" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M249.332 179.092L204.461 202.139L206.762 253.454" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M280.464 214.815L251.633 229.593L253.122 262.605" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M3.38477 252.369L290.617 86.2922" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M89.5403 252.098L92.0444 201.597L46.4961 177.939" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M43.1126 261.181L44.6692 228.779L15.4316 213.595" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M206.559 85.4109L204.055 135.912L249.535 159.502" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                    <path d="M252.988 76.2598L251.363 108.662L280.601 123.846" stroke="#383B5E" stroke-miterlimit="10"
+                        stroke-linecap="round" />
+                </svg>
+                <div class="w-100 bg-white venue-description">
+                    <div class="col-lg-4 m-auto p-0">
+                        <h2>Event & Venue</h2>
+                        <p>If you will be present at the event location. Please fill out
+                            the form below</p>
+                    </div>
+                    <div class="prokes-wrap bg-white">
+                        <div class="prokes">
+                            <svg width="50" height="34" viewBox="0 0 50 34" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M24.6325 0.805312C24.8725 0.731562 25.1275 0.731562 25.3675 0.805312L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805312ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
+                                    fill="#383B5E" />
+                            </svg>
+                            <small>Use Medical Mask</small>
+                        </div>
+                        <div class="prokes">
+                            <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M2.45906 6.745C2.82406 6.1075 3.52906 5.12 4.40906 4.31C5.31656 3.47375 6.21906 3 6.99906 3H15.7491V10.5H10.7491C10.086 10.5 9.45014 10.7634 8.9813 11.2322C8.51245 11.7011 8.24906 12.337 8.24906 13V16.75H6.99906C5.34146 16.75 3.75175 17.4085 2.57965 18.5806C1.40754 19.7527 0.749063 21.3424 0.749063 23V43C0.749063 43.663 1.01246 44.2989 1.4813 44.7678C1.95014 45.2366 2.58602 45.5 3.24906 45.5H30.7491C31.4121 45.5 32.048 45.2366 32.5168 44.7678C32.9857 44.2989 33.2491 43.663 33.2491 43V23C33.2491 21.3424 32.5906 19.7527 31.4185 18.5806C30.2464 17.4085 28.6567 16.75 26.9991 16.75H25.7491V13C25.7491 12.337 25.4857 11.7011 25.0168 11.2322C24.548 10.7634 23.9121 10.5 23.2491 10.5H18.2491V3H28.2491V0.5H6.99906C5.27906 0.5 3.78656 1.48375 2.71406 2.47125C1.61406 3.48375 0.757812 4.68375 0.289062 5.505L2.45906 6.745ZM9.49906 29.25H15.7491V23H18.2491V29.25H24.4991V31.75H18.2491V38H15.7491V31.75H9.49906V29.25Z"
+                                    fill="#383B5E" />
+                            </svg>
+                            <small>Wash Hand</small>
+                        </div>
+                        <div class="prokes">
+                            <svg width="50" height="36" viewBox="0 0 50 36" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 5.5H45" stroke="#383B5E" stroke-width="2" />
+                                <path
+                                    d="M8.53614 1.75L5.88614 4.40125C5.76992 4.51734 5.67772 4.6552 5.61481 4.80695C5.55191 4.9587 5.51953 5.12135 5.51953 5.28562C5.51953 5.44989 5.55191 5.61255 5.61481 5.7643C5.67772 5.91605 5.76992 6.05391 5.88614 6.17L8.53739 8.82"
+                                    stroke="#383B5E" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
+                                    stroke="#383B5E" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
+                                    fill="#383B5E" stroke="#383B5E" stroke-width="2" />
+                                <path
+                                    d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
+                                    fill="#383B5E" stroke="#383B5E" stroke-width="2" />
+                                <path
+                                    d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
+                                    fill="#383B5E" stroke="#383B5E" stroke-width="2" />
+                                <path
+                                    d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
+                                    fill="#383B5E" stroke="#383B5E" stroke-width="2" />
+                            </svg>
+                            <small>Keep the Distance</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="event-wrap">
+                    <div class="row justify-content-center">
+                        <div class="col-md-5" data-aos="fade-right">
+                            <div class="card text-center border-0">
+                                <div class="card-body">
+                                    <div class="event-name">
+                                        <h4>Marriage Contract</h4>
+                                        <p class="mb-0">Sunday, 22 December 2021</p>
+                                        <p>19.00 - 21.00 WIB</p>
+                                    </div>
+                                    <div class="event-place">
+                                        <h5>Groom House</h5>
+                                        <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang,
+                                            Kota
+                                            Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                        <button class="btn btn-custom mt-3">See Location</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <div class="col-md-5" data-aos="fade-left">
+                            <div class="card text-center border-0">
+                                <div class="card-body">
+                                    <div class="event-name">
+                                        <h4>Wedding Party</h4>
+                                        <p class="mb-0">Sunday, 22 December 2021</p>
+                                        <p>19.00 - 21.00 WIB</p>
+                                    </div>
+                                    <div class="event-place">
+                                        <h5>Hotel Shangri La</h5>
+                                        <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah Abang,
+                                            Kota
+                                            Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                        <button class="btn btn-custom mt-3">See Location</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="rsvp-section">
+        <img src="./assets/images/waves-blue.png" alt="waves" class="waves-bottom">
+        <div class="container">
+            <h3 class="mb-3" data-aos="fade-down">Confirmation of Attendance</h3>
+            <form action="#" data-aos="zoom-in">
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="E-Mail">
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="number" class="form-control" placeholder="The Number of Guest">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-7 col-lg-5 m-auto">
+                        <select name="" class="form-select" id="">
+                            <option disabled selected>Confirmation Attendance</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-7 col-lg-5 m-auto">
+                        <button class="btn btn-custom w-100">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="wishes-section">
+        <svg class="snowflake-1" width="323" height="663" viewBox="0 0 323 663" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M37.2598 101.93V562.636" stroke="#F9FDF9" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M-3.2832 30.2788V77.7851L37.5184 101.538L78.3201 77.7851V30.2788L37.5184 6.52563L-3.2832 30.2788Z"
+                stroke="#F9FDF9" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-3.2832 585.215V632.721L37.5184 656.474L78.3201 632.721V585.215L37.5184 561.462L-3.2832 585.215Z"
+                stroke="#F9FDF9" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-160.273 216.519L235.826 446.873" stroke="#F9FDF9" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M234.92 493.596L275.722 517.349L316.523 493.596V446.089L275.722 422.336L234.92 446.089V493.596Z"
+                stroke="#F9FDF9" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-160.402 446.22L235.568 215.736" stroke="#F9FDF9" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M275.204 239.881L316.135 216.128V168.621L275.204 144.868L234.402 168.621V216.128L275.204 239.881Z"
+                stroke="#F9FDF9" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M36.7405 236.487L130.26 167.577L117.696 283.602L223.78 330.717L117.696 377.832L130.26 493.857L36.7405 424.816L-56.65 493.857L-44.2152 377.832L-150.17 330.717L-44.2152 283.602L-56.65 167.577L36.7405 236.487Z"
+                stroke="#F9FDF9" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+        <svg class="snowflake-2" width="86" height="171" viewBox="0 0 86 171" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M85.4824 1.70972V169.29" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M63.873 11.8992L85.278 25.7475L107.093 11.7625" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M71.5996 44.417L85.3453 53.3073L99.3645 44.3145" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M107.093 160.263L85.6883 146.449L63.873 160.4" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M99.3645 127.746L85.6188 118.89L71.5996 127.848" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M26.2246 26.2604L144.704 144.74" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M18.1562 48.7595L43.0831 43.3912L48.6224 18.0883" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M46.6055 66.3006L62.6421 62.8471L66.1981 46.5712" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M1.70898 85.5172H169.29" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M11.8985 107.161L25.7467 85.7223L11.7617 63.9071" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M44.417 99.3996L53.3073 85.654L44.3145 71.6348" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M26.2598 144.774L144.739 26.2946" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M48.7592 152.843L43.3908 127.917L18.0879 122.343" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M66.2998 124.395L62.8463 108.392L46.5703 104.802" stroke="white" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <div class="container">
+            <h2 class="text-center text-white mb-3" data-aos="fade-down">Wedding Wishes</h2>
+            <div class="col-lg-5 col-md-6 m-auto" data-aos="fade-down">
+                <form action="#">
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control" placeholder="Address">
+                    </div>
+                    <div class="mb-3">
+                        <textarea name="" id="" rows="5" class="form-control"
+                            placeholder="Write your wishes"></textarea>
+                    </div>
+                    <button class="btn btn-custom w-100">Send</button>
+                </form>
+            </div>
+            <div class="col-lg-5 col-md-6 m-auto mt-4" data-aos="fade-down">
+                <div class="card">
+                    <div class="card-body text-left">
+                        <div class="wishes">
+                            <div class="wish ">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish ">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish ">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish ">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                            <div class="wish ">
+                                <p><strong>Dewi</strong> |
+                                    Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                <small class="text-muted">3 Days ago</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="egift-section">
+        <img src="./assets/images/waves-blue.png" alt="waves" class="waves">
+        <svg class="snowflake" width="375" height="456" viewBox="0 0 375 456" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M227.953 4.55908V451.441" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M170.326 31.7312L227.406 68.6598L285.58 31.3665" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M190.934 118.445L227.589 142.152L264.973 118.172" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M285.58 427.369L228.5 390.531L170.326 427.734" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M264.973 340.655L228.318 317.039L190.934 340.929" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M69.9355 70.0276L385.88 385.972" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M48.418 130.025L114.889 115.71L129.661 48.2351" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M124.279 176.801L167.044 167.592L176.526 124.189" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M409.77 328.254L343.207 342.57L328.436 410.045" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M333.816 281.569L291.143 290.779L281.66 334.09" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M4.55859 228.046H451.44" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M31.73 285.764L68.6586 228.593L31.3652 170.419" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M118.445 265.065L142.153 228.41L118.172 191.026" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M340.655 191.026L317.039 227.681L340.929 265.065" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M70.0273 386.064L385.972 70.1189" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M130.024 407.582L115.709 341.111L48.2344 326.248" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M176.801 331.719L167.592 289.046L124.189 279.472" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M328.254 46.3203L342.569 112.792L410.044 127.563" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M281.568 122.184L290.778 164.857L334.089 174.431" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-lg-8 col-sm-10 text-center m-auto">
+                    <h2>E-Gift</h2>
+                    <p>Without reducing our respect, if you intend to give wedding gifts online
+                        in various ways
+                        various payment methods, please fill out the form provided below:</p>
+                </div>
+            </div>
+            <form action="#">
+                <div class="row justify-content-center mb-3">
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="Name">
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="E-Mail">
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                    </div>
+                    <div class="col-sm-6 col-lg-5">
+                        <input type="text" class="form-control" placeholder="Adress">
+                    </div>
+                </div>
+                <div class="row justify-content-center mb-3">
+                    <div class="col-sm-12 col-lg-10">
+                        <div class="input-group">
+                            <span class="input-group-text" id="basic-addon1">Rp</span>
+                            <input type="text" class="form-control" placeholder="Amount" name="payment">
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-6 col-lg-5">
+                        <button class="btn btn-custom w-100">Send</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="gallery-section">
+        <div class="zoom-gallery">
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./ssets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+            </a>
+            <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+            </a>
+        </div>
+        <div class="container ">
+            <div class="row justify-content-center mt-4 mb-5">
+                <div class="col-md-6">
+                    <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="section-group">
+        <img src="./assets/images/waves.png" alt="waves" class="waves-top">
+        <img src="./assets/images/waves.png" alt="waves" class="waves-bottom">
+        <section class="apology-section">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center">
+                        <h2>Apology</h2>
+                        <p>Due to the limitations of the current pandemic, we apologize for not being able to directly
+                            invite all of you to our wedding. Without reducing respect, allow us to expect your virtual
+                            presence and give us your blessing.
+                            Thank you</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stream-section">
+            <svg class="snowflake-2" width="372" height="504" viewBox="0 0 372 504" fill="none"
+                xmlns="http://www.w3.org/2000/svg">
+                <path d="M218.898 5.03906V498.961" stroke="white" stroke-miterlimit="10" stroke-linecap="round" />
+                <path d="M155.174 116.3L218.393 157.116L282.722 115.998" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M177.963 49.6847L218.597 75.8874L259.937 49.3823" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M282.722 391.127L219.503 350.412L155.174 391.53" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M259.937 457.843L219.303 431.64L177.963 458.044" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M5.04102 128.394L432.958 375.304" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M69.6719 239.251L136.521 204.986L133.093 128.696" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M23.291 186.141L66.2441 164.171L64.0258 115.091" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M371.453 266.261L304.604 300.526L308.032 376.816" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M5.04102 375.204L432.958 128.293" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M133.395 374.8L137.125 299.719L69.2676 264.547" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M64.2272 388.305L66.5463 340.132L22.9883 317.558" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+                <path d="M307.729 126.982L303.998 202.063L371.755 237.135" stroke="white" stroke-miterlimit="10"
+                    stroke-linecap="round" />
+            </svg>
+            <div class="container shadow-lg position-relative">
+                <div class="row">
+                    <div class="bg-white text-center w-100 p-3 position-relative">
+                        <svg class="snowflake-1" width="240" height="276" viewBox="0 0 240 276" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path d="M119.947 2.75928V273.24" stroke="#383B5E" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M85.0293 63.688L119.67 86.0396L154.919 63.5225" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M97.5156 27.208L119.781 41.5572L142.433 27.0425" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M154.919 214.188L120.278 191.892L85.0293 214.409" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M142.433 250.723L120.168 236.374L97.5156 250.833" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M2.76367 70.3105L237.239 205.524" stroke="#383B5E" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M38.1777 131.018L74.8076 112.254L72.9291 70.4761" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M12.7637 101.934L36.2996 89.9024L35.0841 63.0254" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M203.538 145.809L166.908 164.573L168.787 206.351" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M228.952 174.894L205.416 186.925L206.631 213.802" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M2.76367 205.468L237.239 70.2554" stroke="#383B5E" stroke-miterlimit="10"
+                                stroke-linecap="round" />
+                            <path d="M73.0951 205.248L75.1394 164.132L37.957 144.871" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M35.1943 212.643L36.4651 186.263L12.5977 173.9" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M168.62 69.5381L166.576 110.654L203.703 129.86" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                            <path d="M206.521 62.0874L205.195 88.4677L229.063 100.83" stroke="#383B5E"
+                                stroke-miterlimit="10" stroke-linecap="round" />
+                        </svg>
+                        <h2 class="mb-0 p-3">Live Streaming</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="bg-theme">
+                        <div class="col-lg-3 col-md-4 m-auto p-0">
+                            <h3 class="text-center">Live Wedding Schedule</h3>
+                            <ul class="text-start ">
+                                <ol>10.00 Live Wedding Schedule</ol>
+                                <ol>13.00 Lunch Party</ol>
+                                <ol>14.00 Sungkeman</ol>
+                                <ol>14.30 Saweran</ol>
+                                <ol>15.00 Nincak Endog</ol>
+                                <ol>15.20 Ngaleupas japati</ol>
+                            </ul>
+                        </div>
+                        <div class="col-lg-10 m-auto p-0" data-aos="fade-down">
+                            <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
+                            </iframe>
+                            <div class="col-md-7 m-auto" data-aos="fade-down">
+                                <a href="#" class="btn btn-custom w-100 mt-3">Join Youtube</a>
+                            </div>
+                        </div>
+                        <div class="col-md-7 m-auto p-0">
+                            <div class="text-center yt-description">
+                                <h3>Live Wedding</h3>
+                                <p>We apologize for the limitations of Zoom participants, only for invited guests
+                                    who
+                                    have
+                                    been given a password, who can join the Room Zoom of the bride and groom to
+                                    watch a
+                                    series of wedding events and say hello Bride Live. Meanwhile, other invited
+                                    guests
+                                    can
+                                    watch via Youtube Live Streaming.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="thank-section">
+        <svg class="snowflake-1" width="441" height="646" viewBox="0 0 441 646" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M162.752 99.3164V548.21" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M123.273 29.5025V75.7907L163.005 98.9348L202.737 75.7907V29.5025L163.005 6.3584L123.273 29.5025Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M123.273 570.21V616.498L163.005 639.642L202.737 616.498V570.21L163.005 547.065L123.273 570.21Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-29.5996 210.967L356.113 435.414" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M355.23 480.94L394.962 504.084L434.694 480.94V434.651L394.962 411.507L355.23 434.651V480.94Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path d="M-29.7266 434.779L355.86 210.205" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M394.456 233.73L434.314 210.586V164.298L394.456 141.154L354.725 164.298V210.586L394.456 233.73Z"
+                stroke="#383B5E" stroke-linecap="round" stroke-linejoin="round" />
+            <path
+                d="M162.247 230.424L253.315 163.28L241.08 276.33L344.382 322.237L241.08 368.144L253.315 481.194L162.247 413.923L71.3058 481.194L83.4145 368.144L-19.7617 322.237L83.4145 276.33L71.3058 163.28L162.247 230.424Z"
+                stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+        </svg>
+        <svg class="snowflake-2" width="316" height="316" viewBox="0 0 316 316" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M157.967 3.15918V312.84" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M118.031 21.9891L157.587 47.58L197.9 21.7363" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M132.312 82.0802L157.714 98.5089L183.621 81.8906" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M197.9 296.159L158.345 270.631L118.031 296.412" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M183.621 236.068L158.219 219.702L132.312 236.257" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M48.4629 48.5278L267.407 267.472" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M33.5527 90.1049L79.6163 80.1844L89.8527 33.4258" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M86.123 122.52L115.758 116.138L122.329 86.061" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M283.963 227.475L237.836 237.395L227.6 284.154" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M231.329 195.123L201.757 201.504L195.186 231.518" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M3.1582 158.031H312.84" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M21.9871 198.029L47.578 158.411L21.7344 118.097" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M82.0802 183.686L98.5089 158.284L81.8906 132.377" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M296.159 118.097L270.631 157.652L296.411 198.029" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M236.067 132.377L219.701 157.779L236.256 183.686" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M48.5273 267.535L267.472 48.5908" stroke="#383B5E" stroke-miterlimit="10" stroke-linecap="round" />
+            <path d="M90.1029 282.447L80.1825 236.384L33.4238 226.084" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M122.52 229.875L116.138 200.304L86.0605 193.669" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M227.473 32.0991L237.393 78.1627L284.152 88.3991" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+            <path d="M195.121 84.6709L201.503 114.243L231.517 120.877" stroke="#383B5E" stroke-miterlimit="10"
+                stroke-linecap="round" />
+        </svg>
+        <div class="container position-relative">
+            <div class="row">
+                <div class="col-md-8 m-auto thank" data-aos="zoom-in">
+                    <h2 class="mb-5">Thank You</h2>
+                    <p>Thank you for your presence, participation and blessing.</p>
+                    <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                    <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                    <p class="mt-3">with</p>
+                    <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                    <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <small>Copyright 2021 Created with ❤️ by viding.co</small>
+    </footer>
+
+
+
+    <!-- script libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: "ease-out-back",
+            duration: 1000,
+        });
+    </script>
+
+    <!-- scripts plugins -->
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- scripts custom -->
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
