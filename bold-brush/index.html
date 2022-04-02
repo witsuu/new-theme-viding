@@ -1,0 +1,596 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Bold Brush</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow&family=Yellowtail&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Open+Sans&family=Roboto&family=Amatic+SC&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Playball&family=Righteous&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Oswald&family=Playball&family=Righteous&family=Architects+Daughter&family=Bebas+Neue&family=Ceviche+One&family=Cinzel&family=Concert+One&family=Cookie&family=DM+Serif+Display&family=Dongle&family=Fredoka+One&family=Fruktur&family=Gluten&family=Great+Vibes&family=Handlee&family=Irish+Grover&family=Josefin+Sans&family=Kaushan+Script&family=Luckiest+Guy&family=Merienda&family=Mochiy+Pop+P+One&family=Noto+Serif+Display&family=Orbitron&family=Pacifico&family=Passion+One&family=Permanent+Marker&family=Russo+One&family=Shadows+Into+Light&family=Staatliches&family=Acme&family=Alex+Brush&family=Anton&family=Bangers&family=Bree+Serif&family=Francois+One&family=Fugaz+One&family=Genos&family=Gochi+Hand&family=Hammersmith+One&family=Julius+Sans+One&family=Kanit&family=Kings&family=Patrick+Hand&family=Petemoss&family=Playfair+Display+SC&family=Praise&family=Satisfy&family=Shalimar&family=Viga&family=Yuji+Boku&family=Black+Ops+One&family=Carattere&family=Damion&family=Lilita+One&family=Sriracha&display=swap"
+        rel="stylesheet">
+
+    <!-- styles libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css"
+        integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
+        integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+
+    <!-- styles custom -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+        <div class="container d-flex justify-content-center">
+            <a href="#sectionMain" class="navbar-brand m-auto">
+                <svg class="logo-viding" width="4404" height="2583" viewBox="0 0 4404 2583" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M1760.01 9.05267C1708.72 36.9635 1692.12 64.8744 1631.77 218.761C1579.72 353.789 1537.48 506.167 1502.78 686.456C1488.45 763.4 1474.87 835.063 1472.6 846.378C1468.83 864.482 1464.31 867.5 1433.38 871.271C1376.05 878.06 1339.84 890.13 1307.4 912.76C1259.88 945.952 1158.8 1047.79 1127.87 1093.8C1032.07 1234.87 1047.91 1470.22 1156.53 1526.8C1221.41 1560.74 1328.52 1541.89 1445.45 1476.26C1467.32 1464.19 1486.94 1455.89 1489.2 1458.15C1491.46 1460.42 1503.53 1507.94 1514.85 1564.52C1566.14 1808.92 1603.11 1870.03 1702.68 1872.29C1799.99 1874.55 1862.6 1787.05 1960.67 1511.71L2001.4 1397.05L2009.7 1448.35C2014.98 1477.01 2024.79 1510.2 2031.58 1522.27C2059.49 1569.04 2124.36 1580.36 2209.6 1553.96C2304.65 1524.54 2395.17 1443.82 2446.47 1342.74C2457.78 1319.35 2452.5 1323.13 2404.22 1369.89C2282.77 1485.31 2177.92 1530.57 2132.66 1485.31C2109.27 1461.93 2115.31 1435.52 2177.92 1277.86C2240.53 1122.47 2250.34 1071.17 2227.71 1004.04C2214.88 964.056 2199.8 950.478 2168.87 950.478C2138.69 950.478 2112.29 991.212 2084.38 1082.49C2070.8 1126.24 2067.03 1132.28 2062.5 1117.94C2059.49 1108.89 2054.21 1101.35 2050.43 1101.35C2046.66 1101.35 2035.35 1108.89 2024.03 1117.94C2008.95 1131.52 1999.14 1156.41 1978.77 1234.11C1930.49 1418.93 1884.48 1557.73 1846.76 1633.16C1809.8 1706.33 1769.06 1765.17 1760.77 1756.87C1753.98 1750.09 1711.73 1530.57 1699.66 1434.77C1692.87 1383.47 1684.58 1291.44 1681.56 1231.09C1674.02 1099.84 1678.54 1076.45 1733.61 956.513C1779.62 856.939 1816.59 740.769 1850.53 588.391C1887.5 424.698 1897.3 309.283 1885.99 163.694C1881.46 99.5743 1875.43 42.2439 1873.16 35.4548C1867.88 21.8766 1817.34 0.000509673 1791.69 0.000509673C1782.64 0.000509673 1768.31 4.52659 1760.01 9.05267ZM1821.87 105.609C1867.13 297.968 1863.36 480.52 1812.06 660.054C1793.96 722.665 1710.22 955.004 1696.65 979.143C1667.23 1031.19 1694.38 452.609 1730.59 248.935C1741.15 187.079 1766.05 101.837 1780.38 73.1722C1793.2 47.5244 1812.06 61.857 1821.87 105.609ZM1479.39 1291.44C1482.41 1300.49 1468.08 1314.83 1432.62 1341.23C1369.26 1388 1354.93 1395.54 1327.77 1395.54C1280.25 1395.54 1247.05 1323.13 1252.34 1231.09C1257.62 1131.52 1343.61 995.739 1425.84 955.004L1465.82 934.636L1471.1 1106.63C1474.11 1200.92 1477.89 1283.9 1479.39 1291.44ZM2063.26 1201.68C2061 1227.32 2049.68 1274.09 2038.36 1305.02C1996.88 1419.68 1996.12 1378.19 2036.86 1234.87C2049.68 1190.36 2061.75 1154.15 2064.01 1154.15C2066.28 1154.15 2065.52 1175.27 2063.26 1201.68Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M814.814 717.382C795.955 727.189 777.096 743.784 770.307 757.363C755.22 785.274 753.712 848.639 766.536 872.778C788.412 912.004 854.794 880.321 882.705 816.956C897.038 784.519 902.318 725.68 893.266 709.839C884.968 697.015 850.268 700.032 814.814 717.382Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M2217.9 716.63C2163.59 741.523 2140.96 819.221 2171.89 875.797C2182.45 896.164 2217.9 893.901 2245.06 871.271C2280.51 841.851 2300.88 792.819 2297.86 745.295C2295.6 706.823 2294.85 705.314 2272.97 703.051C2260.9 702.297 2236.01 708.332 2217.9 716.63Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M513.83 825.255C495.726 841.096 494.217 844.868 502.515 862.972C507.041 873.533 516.093 882.585 521.373 882.585C527.408 882.585 537.215 888.62 544.004 896.163C555.319 908.987 555.319 915.022 538.723 977.633C487.428 1167.73 402.941 1302 276.211 1394.03C263.387 1403.08 261.124 1400.82 247.545 1370.65C239.248 1351.79 220.389 1267.3 206.056 1182.82C170.602 973.107 148.726 908.987 102.711 883.339C84.6064 872.779 80.0803 872.779 56.6955 884.094C34.0651 894.655 28.7847 902.198 21.9955 936.144C-15.7218 1112.66 -3.65225 1356.32 48.3977 1470.98C72.5368 1523.78 98.1846 1551.69 145.708 1573.57C244.528 1620.34 302.613 1584.88 408.221 1413.65C485.919 1288.42 491.954 1275.6 541.741 1128.5C608.123 934.635 614.912 873.533 578.704 826.763C559.845 802.624 540.986 801.87 513.83 825.255Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M2916.42 938.407C2859.09 961.792 2816.1 994.983 2780.64 1042.51C2748.2 1086.26 2714.26 1123.98 2707.47 1123.98C2705.21 1123.98 2704.45 1101.35 2705.21 1074.19C2710.49 982.914 2691.63 942.934 2643.35 942.934C2592.05 942.934 2572.44 985.177 2514.36 1216.76C2473.62 1375.93 2472.11 1388 2474.38 1464.94C2476.64 1558.48 2485.69 1575.08 2539.25 1581.87C2610.16 1591.67 2636.56 1558.48 2656.93 1438.54C2662.96 1398.56 2673.52 1353.3 2679.56 1338.97C2699.17 1292.95 2816.1 1121.71 2856.08 1080.22C2891.53 1044.02 2959.42 1003.28 2985.07 1003.28C2999.4 1003.28 2992.61 1043.26 2951.12 1192.62C2894.55 1401.58 2884.74 1455.14 2883.99 1569.04C2883.99 1663.33 2885.5 1673.9 2903.6 1713.12C2948.11 1806.66 3055.98 1838.34 3157.82 1787.05C3219.67 1756.87 3262.67 1707.09 3312.46 1608.27C3372.8 1491.34 3391.66 1403.09 3367.52 1358.58C3356.96 1338.97 3356.96 1338.97 3211.37 1602.99C3160.83 1693.51 3104.26 1724.44 3083.13 1672.39C3066.54 1633.92 3071.82 1568.29 3105.01 1412.14C3144.24 1230.34 3154.8 1148.87 3148.76 1086.26C3141.97 1015.35 3132.92 987.44 3101.99 951.986L3074.84 920.303H3017.51C2974.51 920.303 2948.11 924.829 2916.42 938.407Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M3786.94 939.161C3764.31 944.441 3722.07 961.037 3692.65 976.124C3526.69 1060.61 3448.24 1169.24 3439.94 1324.63C3435.42 1415.15 3449.75 1460.41 3498.03 1508.69C3574.97 1584.88 3673.79 1587.9 3805.05 1516.99C3836.73 1499.64 3863.89 1486.82 3865.39 1488.33C3866.9 1489.83 3859.36 1541.13 3848.8 1602.23C3826.92 1732.73 3845.03 1702.56 3642.11 1946.21C3472.38 2150.64 3429.38 2217.02 3402.98 2318.11C3390.16 2367.14 3387.89 2480.29 3398.45 2526.31C3409.01 2568.55 3447.49 2583.64 3540.27 2582.88C3636.83 2582.88 3685.11 2564.78 3746.96 2508.2C3820.13 2440.31 3853.32 2352.05 3894.81 2115.19C3905.37 2053.33 3929.51 1943.95 3948.37 1871.53C3967.23 1799.12 3987.6 1705.58 3993.63 1664.09L4004.95 1587.9L4089.44 1502.66C4189.01 1401.58 4249.36 1356.31 4323.28 1326.14C4388.91 1299.74 4404 1286.91 4404 1257.5V1234.87L4363.26 1239.39C4341.39 1241.65 4309.7 1249.95 4293.11 1258.25C4258.41 1276.35 4143.75 1370.65 4094.72 1421.94C4075.86 1440.8 4050.96 1461.92 4038.89 1468.71L4017.02 1480.03L4022.3 1454.38C4045.68 1325.39 4051.72 1170.75 4035.88 1100.59C4028.33 1068.15 4018.53 1049.3 3994.39 1023.65C3977.04 1004.79 3955.16 979.141 3945.36 966.318C3917.44 929.355 3864.64 920.302 3786.94 939.161ZM3900.09 1022.89C3911.41 1028.93 3922.72 1037.23 3924.99 1041C3931.02 1050.8 3834.47 1263.53 3790.71 1337.46C3756.77 1395.54 3734.89 1415.91 3697.93 1422.7C3581.76 1444.57 3622.49 1149.62 3749.22 1046.28C3800.52 1004.79 3849.55 997.246 3900.09 1022.89ZM3774.12 1902.46C3768.84 1924.34 3748.47 2008.83 3729.61 2089.54C3679.07 2304.53 3663.23 2346.02 3605.14 2419.19C3576.48 2456.15 3519.15 2492.36 3479.92 2498.4C3459.56 2501.41 3448.99 2441.07 3461.06 2379.96C3470.87 2327.16 3533.48 2198.92 3594.58 2104.63C3645.12 2026.93 3769.59 1863.24 3777.89 1863.24C3780.91 1863.24 3779.4 1881.34 3774.12 1902.46Z"
+                        fill="#DA0F7A" />
+                    <path
+                        d="M731.08 969.334C700.152 1009.31 622.454 1254.48 608.876 1354.81C599.824 1421.94 608.122 1489.83 629.243 1521.52C660.172 1569.04 721.274 1580.36 806.515 1553.95C895.528 1526.8 983.786 1452.12 1031.31 1363.86L1056.96 1316.33L1001.14 1369.89C909.106 1457.4 835.934 1500.39 777.85 1501.15C733.343 1501.15 712.221 1480.03 717.502 1440.8C719.765 1424.96 745.413 1351.79 775.587 1277.86C818.584 1173.01 831.408 1132.27 833.671 1093.8C838.197 1037.98 826.882 986.684 805.006 964.808C784.639 944.441 749.939 945.95 731.08 969.334Z"
+                        fill="#DA0F7A" />
+                </svg>
+            </a>
+        </div>
+    </nav>
+    <section class="header-section">
+        <div class="header-wrap">
+            <div class="header">
+                <img src="./assets/images/header_bg.jpg" alt="image-header" class="header-image">
+                <div class="header-description">
+                    <h1>John <br> & <br> Jane</h1>
+                    <p>We're getting merried</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="couple-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-7 text-center">
+                    <h2>Bridge & Groom</h2>
+                    <p>What greater thing is there for two human souls, than to feel that they are joined for life–to
+                        strength each other in all labor, to rest on each other in all sorrow, to minister to each other
+                        in silent unspeakable memories at the moment of the last parting? Being deeply loved by someone
+                        gives you strength, while loving someone deeply gives you courage.</p>
+                </div>
+            </div>
+            <div class="row mt-5 align-items-center">
+                <div class="col-md-4">
+                    <div class="couple-description">
+                        <h3>John Stew S.Pd. M.pd</h3>
+                        <div class="couple-parent">
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah</p>
+                        </div>
+                        <div class="sosmed">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="couple-wrap">
+                        <img src="./assets/images/brush-couple.png" alt="brush-couple" class="brush-couple">
+                        <img src="./assets/images/couple.jpg" alt="couple" class="couple-image">
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="couple-description">
+                        <h3>Jane Stew S.Pd. M.pd</h3>
+                        <div class="couple-parent">
+                            <p>First son of H. Heru Stiawan and
+                                Siti Amizah</p>
+                        </div>
+                        <div class="sosmed">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center mt-3">
+                <div class="col-md-4 text-center">
+                    <div class="countdown mb-3" date="03/31/2022 23:59:00">
+                        <div class="days">
+                            <p class="angka">00</p>
+                            <p class="huruf">Day</p>
+                        </div>
+                        <div class="hours">
+                            <p class="angka">00</p>
+                            <p class="huruf">Hours</p>
+                        </div>
+                        <div class="minutes">
+                            <p class="angka">00</p>
+                            <p class="huruf">Mins</p>
+                        </div>
+                        <div class="seconds">
+                            <p class="angka">00</p>
+                            <p class="huruf">Secs</p>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-custom">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <g clip-path="url(#clip0_2411_130)">
+                                <path fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M6 0.75C6 0.551088 5.92098 0.360322 5.78033 0.21967C5.63968 0.0790176 5.44891 0 5.25 0C5.05109 0 4.86032 0.0790176 4.71967 0.21967C4.57902 0.360322 4.5 0.551088 4.5 0.75V1.5H3C2.20435 1.5 1.44129 1.81607 0.87868 2.37868C0.316071 2.94129 0 3.70435 0 4.5L0 21C0 21.7956 0.316071 22.5587 0.87868 23.1213C1.44129 23.6839 2.20435 24 3 24H21C21.7956 24 22.5587 23.6839 23.1213 23.1213C23.6839 22.5587 24 21.7956 24 21V4.5C24 3.70435 23.6839 2.94129 23.1213 2.37868C22.5587 1.81607 21.7956 1.5 21 1.5H19.5V0.75C19.5 0.551088 19.421 0.360322 19.2803 0.21967C19.1397 0.0790176 18.9489 0 18.75 0C18.5511 0 18.3603 0.0790176 18.2197 0.21967C18.079 0.360322 18 0.551088 18 0.75V1.5H6V0.75ZM1.5 21V6H22.5V21C22.5 21.3978 22.342 21.7794 22.0607 22.0607C21.7794 22.342 21.3978 22.5 21 22.5H3C2.60218 22.5 2.22064 22.342 1.93934 22.0607C1.65804 21.7794 1.5 21.3978 1.5 21ZM12 11.2395C14.496 8.673 20.7375 13.164 12 18.9375C3.2625 13.1625 9.504 8.673 12 11.2395Z"
+                                    fill="#F9FDF9" />
+                            </g>
+                            <defs>
+                                <clipPath id="clip0_2411_130">
+                                    <rect width="24" height="24" fill="white" />
+                                </clipPath>
+                            </defs>
+                        </svg>
+                        Save the Date
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-brush-1">
+        <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-1">
+        <img src="./assets/images/brush-pink-2.png" alt="brush-pink-2" class="brush-2">
+        <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-3">
+        <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-4">
+        <section class="story-section">
+            <div class="container">
+                <div class="story-wrap">
+                    <img src="./assets/images/brush-card.png" alt="brush" class="brush-card">
+                    <div class="row justify-content-between align-items-center p-4">
+                        <div class="col-md-5">
+                            <img src="./assets/images/bg-stroy.jpg" alt="bg-story" class="story-image">
+                        </div>
+                        <div class="col-md-6 position-relative">
+                            <h2 class="text-center mb-3">Our Story</h2>
+                            <p>“I love you without knowing how, or when, or from where. I love you in this way because I
+                                do
+                                not know any other way of loving but this, in which there is no I or you, so intimate
+                                that
+                                your hand upon my chest is my hand, so intimate then when I fall asleep your eyes
+                                close.”“I
+                                love you without knowing how, or when, or from where. I love you in this way because I
+                                do
+                                not know any other way of loving but this, in which there is no I or you, so intimate
+                                that
+                                your hand upon my chest is my hand, so intimate then when I fall asleep your eyes
+                                close.”
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="venue-section">
+            <div class="container shadow-lg">
+                <div class="wrapper">
+                    <div class="venue-wrap">
+                        <div class="event mb-3">
+                            <div class="col-md-7 m-auto">
+                                <h2>Event & Venue</h2>
+                                <p>If you will be present at the event location. Please fill out
+                                    the form below</p>
+                            </div>
+                        </div>
+                        <div class="prokes-wrap">
+                            <div class="prokes" data-aos="flip-right">
+                                <svg width="50" height="34" viewBox="0 0 50 34" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M24.6325 0.805312C24.8725 0.731562 25.1275 0.731562 25.3675 0.805312L41.6175 5.80531C41.8731 5.88392 42.0967 6.04241 42.2555 6.25749C42.4144 6.47258 42.5 6.73293 42.5 7.00031V8.25031H43.75C45.4076 8.25031 46.9973 8.90879 48.1694 10.0809C49.3415 11.253 50 12.8427 50 14.5003V19.5003C50 21.1579 49.3415 22.7476 48.1694 23.9197C46.9973 25.0918 45.4076 25.7503 43.75 25.7503H40.68C39.2438 27.959 37.0772 29.5929 34.5587 30.3666L25.3675 33.1953C25.128 33.2689 24.872 33.2689 24.6325 33.1953L15.4412 30.3666C12.9228 29.5929 10.7562 27.959 9.32 25.7503H6.25C4.5924 25.7503 3.00268 25.0918 1.83058 23.9197C0.65848 22.7476 0 21.1579 0 19.5003V14.5003C0 12.8427 0.65848 11.253 1.83058 10.0809C3.00268 8.90879 4.5924 8.25031 6.25 8.25031H7.5V7.00031C7.49995 6.73293 7.58563 6.47258 7.74447 6.25749C7.90331 6.04241 8.12694 5.88392 8.3825 5.80531L24.6325 0.805312ZM7.5 19.6141C7.5 20.8766 7.71 22.1016 8.1025 23.2503H6.25C5.25544 23.2503 4.30161 22.8552 3.59835 22.152C2.89509 21.4487 2.5 20.4949 2.5 19.5003V14.5003C2.5 13.5058 2.89509 12.5519 3.59835 11.8487C4.30161 11.1454 5.25544 10.7503 6.25 10.7503H7.5V19.6141ZM41.8975 23.2503H43.75C44.7446 23.2503 45.6984 22.8552 46.4016 22.152C47.1049 21.4487 47.5 20.4949 47.5 19.5003V14.5003C47.5 13.5058 47.1049 12.5519 46.4016 11.8487C45.6984 11.1454 44.7446 10.7503 43.75 10.7503H42.5V19.6141C42.5 20.8766 42.29 22.1016 41.8975 23.2503ZM32.5 13.2503H17.5V10.7503H32.5V13.2503ZM32.5 20.7503H17.5V18.2503H32.5V20.7503Z"
+                                        fill="#983C48" />
+                                </svg>
+                                <small>Use Medical Mask</small>
+                            </div>
+                            <div class="prokes" data-aos="flip-down">
+                                <svg width="34" height="46" viewBox="0 0 34 46" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M2.46004 6.745C2.82504 6.1075 3.53004 5.12 4.41004 4.31C5.31754 3.47375 6.22004 3 7.00004 3H15.75V10.5H10.75C10.087 10.5 9.45111 10.7634 8.98227 11.2322C8.51343 11.7011 8.25004 12.337 8.25004 13V16.75H7.00004C5.34244 16.75 3.75272 17.4085 2.58062 18.5806C1.40852 19.7527 0.750039 21.3424 0.750039 23V43C0.750039 43.663 1.01343 44.2989 1.48227 44.7678C1.95111 45.2366 2.587 45.5 3.25004 45.5H30.75C31.4131 45.5 32.049 45.2366 32.5178 44.7678C32.9866 44.2989 33.25 43.663 33.25 43V23C33.25 21.3424 32.5916 19.7527 31.4195 18.5806C30.2474 17.4085 28.6576 16.75 27 16.75H25.75V13C25.75 12.337 25.4866 11.7011 25.0178 11.2322C24.549 10.7634 23.9131 10.5 23.25 10.5H18.25V3H28.25V0.5H7.00004C5.28004 0.5 3.78754 1.48375 2.71504 2.47125C1.61504 3.48375 0.758789 4.68375 0.290039 5.505L2.46004 6.745ZM9.50004 29.25H15.75V23H18.25V29.25H24.5V31.75H18.25V38H15.75V31.75H9.50004V29.25Z"
+                                        fill="#983C48" />
+                                </svg>
+                                <small>Wash Hand</small>
+                            </div>
+                            <div class="prokes" data-aos="flip-left">
+                                <svg width="50" height="36" viewBox="0 0 50 36" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M5 5.5H45" stroke="#983C48" stroke-width="2" />
+                                    <path
+                                        d="M8.53712 1.75L5.88712 4.40125C5.7709 4.51734 5.6787 4.6552 5.61579 4.80695C5.55289 4.9587 5.52051 5.12135 5.52051 5.28562C5.52051 5.44989 5.55289 5.61255 5.61579 5.7643C5.6787 5.91605 5.7709 6.05391 5.88712 6.17L8.53837 8.82"
+                                        stroke="#983C48" stroke-width="2" stroke-linecap="round" />
+                                    <path
+                                        d="M41.4629 8.82125L44.1141 6.16875C44.3485 5.93434 44.4801 5.61646 44.4801 5.285C44.4801 4.95355 44.3485 4.63566 44.1141 4.40125L41.4629 1.75"
+                                        stroke="#983C48" stroke-width="2" stroke-linecap="round" />
+                                    <path
+                                        d="M12.5 19.875C12.5 20.7038 12.1708 21.4987 11.5847 22.0847C10.9987 22.6708 10.2038 23 9.375 23C8.5462 23 7.75134 22.6708 7.16529 22.0847C6.57924 21.4987 6.25 20.7038 6.25 19.875C6.25 19.0462 6.57924 18.2513 7.16529 17.6653C7.75134 17.0792 8.5462 16.75 9.375 16.75C10.2038 16.75 10.9987 17.0792 11.5847 17.6653C12.1708 18.2513 12.5 19.0462 12.5 19.875Z"
+                                        fill="#983C48" stroke="#983C48" stroke-width="2" />
+                                    <path
+                                        d="M1.25 30.8337C1.25 29.8675 2.13625 28.8388 4.0325 27.9738C5.8225 27.1588 7.99 26.75 9.375 26.75C10.76 26.75 12.9275 27.1575 14.7175 27.975C16.6125 28.8375 17.5 29.8662 17.5 30.8325V34.25H1.25V30.8337Z"
+                                        fill="#983C48" stroke="#983C48" stroke-width="2" />
+                                    <path
+                                        d="M43.75 19.875C43.75 20.7038 43.4208 21.4987 42.8347 22.0847C42.2487 22.6708 41.4538 23 40.625 23C39.7962 23 39.0013 22.6708 38.4153 22.0847C37.8292 21.4987 37.5 20.7038 37.5 19.875C37.5 19.0462 37.8292 18.2513 38.4153 17.6653C39.0013 17.0792 39.7962 16.75 40.625 16.75C41.4538 16.75 42.2487 17.0792 42.8347 17.6653C43.4208 18.2513 43.75 19.0462 43.75 19.875Z"
+                                        fill="#983C48" stroke="#983C48" stroke-width="2" />
+                                    <path
+                                        d="M32.5 30.8337C32.5 29.8675 33.3863 28.8388 35.2825 27.9738C37.0725 27.1588 39.24 26.75 40.625 26.75C42.01 26.75 44.1775 27.1575 45.9675 27.975C47.8625 28.8375 48.75 29.8662 48.75 30.8325V34.25H32.5V30.8337Z"
+                                        fill="#983C48" stroke="#983C48" stroke-width="2" />
+                                </svg>
+                                <small>Keep the Distance</small>
+                            </div>
+                        </div>
+                        <div class="venue">
+                            <div class="venue-description">
+                                <div class="card text-center border-0">
+                                    <div class="card-body">
+                                        <div class="event-name">
+                                            <h4 class="color-secondary">Marriage Contract</h4>
+                                            <p class="mb-0">Sunday, 22 December 2021</p>
+                                            <p>19.00 - 21.00 WIB</p>
+                                        </div>
+                                        <div class="event-place">
+                                            <h5 class="fw-bold">Groom House</h5>
+                                            <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah
+                                                Abang,
+                                                Kota
+                                                Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                            <button class="btn btn-custom mt-3">See Location</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                            <div class="venue-description">
+                                <div class="card text-center border-0">
+                                    <div class="card-body">
+                                        <div class="event-name">
+                                            <h4 class="color-secondary">Wedding Party</h4>
+                                            <p class="mb-0">Sunday, 22 December 2021</p>
+                                            <p>19.00 - 21.00 WIB</p>
+                                        </div>
+                                        <div class="event-place">
+                                            <h5 class="fw-bold">Hotel Shangri La</h5>
+                                            <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan Tanah
+                                                Abang,
+                                                Kota
+                                                Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
+                                            <button class="btn btn-custom mt-3">See Location</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="rsvp-section">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class=" col-lg-6 col-md-8">
+                    <h2 class="mb-3" data-aos="fade-down">Confirmation of Attendance</h2>
+                    <form action="#" data-aos="zoom-in">
+                        <input type="text" class="form-control" placeholder="Name">
+                        <input type="text" class="form-control" placeholder="Phone Number">
+                        <input type="text" class="form-control" placeholder="E-Mail">
+                        <input type="number" class="form-control" placeholder="The Number of Guest">
+                        <select name="" class="form-select" id="">
+                            <option disabled selected>Confirmation Attendance</option>
+                            <option value="1">Yes</option>
+                            <option value="0">No</option>
+                        </select>
+                        <button class="btn btn-custom w-100 border-0">Send</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-brush-2">
+        <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-1">
+        <img src="./assets/images/brush-pink-2.png" alt="brush-pink-2" class="brush-2">
+        <section class="wishes-section">
+            <div class="container ">
+                <div class="bg-white p-3 pt-5 position-relative overflow-hidden">
+                    <img src="./assets/images/brush-card.png" alt="brush-card" class="brush-card lg">
+                    <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-1 lg">
+                    <h2 class="text-center mb-3" data-aos="fade-down">Wedding Wishes</h2>
+                    <div class="col-lg-5 col-md-8 m-auto" data-aos="fade-down">
+                        <form action="#">
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Name">
+                            </div>
+                            <div class="mb-3">
+                                <input type="text" class="form-control" placeholder="Address">
+                            </div>
+                            <div class="mb-3">
+                                <textarea name="" id="" rows="5" class="form-control"
+                                    placeholder="Write your wishes"></textarea>
+                            </div>
+                            <button class="btn btn-custom w-100">Send</button>
+                        </form>
+                    </div>
+                    <div class="col-lg-5 col-md-8 m-auto mt-4" data-aos="fade-down">
+                        <div class="card">
+                            <div class="card-body text-left">
+                                <div class="wishes">
+                                    <div class="wish ">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish ">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish ">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish ">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                    <div class="wish ">
+                                        <p><strong>Dewi</strong> |
+                                            Happy Married Guys, hope you enjoy new journey and be happy family!</p>
+                                        <small class="text-muted">3 Days ago</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="egift-section">
+            <div class="container position-relative">
+                <div class="bg-white p-3 pb-5 position-relative">
+                    <img src="./assets/images/brush-pink-3.png" alt="brush-pink-3" class="brush-3 lg">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-5 col-md-8 text-center">
+                            <h2>E-Gift</h2>
+                            <p data-aos="zoom-out">Without reducing our respect, if you intend to give wedding gifts
+                                online
+                                in
+                                various ways
+                                various payment methods, please fill out the form provided below:</p>
+                            <form action="#" method="post" data-aos="zoom-in" data-aos-delay="400">
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="E-Mail">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Phone Number">
+                                </div>
+                                <div class="mb-4">
+                                    <input type="text" class="form-control" placeholder="Adress">
+                                </div>
+                                <div class="mb-4">
+                                    <div class="input-group">
+                                        <span class="input-group-text" id="basic-addon1">Rp</span>
+                                        <input type="text" class="form-control" placeholder="Amount" name="payment">
+                                    </div>
+                                </div>
+                                <button class="btn btn-custom w-100">Send</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="gallery-section">
+        <img src="./assets/images/brush-pink-2.png" alt="brush-pink-2" class="brush-1">
+        <div class="container">
+            <div class="zoom-gallery">
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./ssets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo02.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo02.jfif" alt="photo" class="photo">
+                </a>
+                <a href="./assets/images/photo01.jfif" data-aos="flip-left">
+                    <img src="./assets/images/photo01.jfif" alt="photo" class="photo">
+                </a>
+            </div>
+            <div class="container ">
+                <div class="row justify-content-center mt-4 mb-5">
+                    <div class="col-md-6">
+                        <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="bg-brush-3">
+        <img src="./assets/images/brush-pink-2.png" alt="brush-pink-2" class="brush-2">
+        <section class="apology-section">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="apology">
+                        <div class="col-lg-7 col-md-8 text-center m-auto">
+                            <h2>Apology</h2>
+                            <p>Due to the limitations of the current pandemic, we apologize for not being able to
+                                directly
+                                invite all of you to our wedding. Without reducing respect, allow us to expect your
+                                virtual
+                                presence and give us your blessing.
+                                Thank you</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="stream-section">
+            <div class="container position-relative">
+                <div class="bg-theme shadow-lg">
+                    <img src="./assets/images/brush-card.png" alt="brush-card" class="brush-card lg">
+                    <img src="./assets/images/brush-pink-3.png" alt="brush-pink-3" class="brush-3 lg">
+                    <h2 class="text-center">Live Streaming</h2>
+                    <div class="stream">
+                        <div class="stream-description">
+                            <h4 class="color-secondary font-secondary">Live Wedding Schedule</h4>
+                            <ul class="text-start ">
+                                <ol>10.00 Live Wedding Schedule</ol>
+                                <ol>13.00 Lunch Party</ol>
+                                <ol>14.00 Sungkeman</ol>
+                                <ol>14.30 Saweran</ol>
+                                <ol>15.00 Nincak Endog</ol>
+                                <ol>15.20 Ngaleupas japati</ol>
+                            </ul>
+                        </div>
+                        <div class="stream-description">
+                            <div class="text-start">
+                                <h4 class="text-center color-secondary font-secondary">Live Wedding</h4>
+                                <p>We apologize for the limitations of Zoom participants, only for invited guests
+                                    who
+                                    have
+                                    been given a password, who can join the Room Zoom of the bride and groom to
+                                    watch a
+                                    series of wedding events and say hello Bride Live. Meanwhile, other invited
+                                    guests
+                                    can
+                                    watch via Youtube Live Streaming.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-10 m-auto p-0" data-aos="fade-down">
+                        <iframe class="yt-embed" src="https://www.youtube.com/embed/z2oKzxplzEY">
+                        </iframe>
+                        <div class="col-md-7 m-auto" data-aos="fade-down">
+                            <a href="#" class="btn btn-custom w-100 mt-3">Join Youtube</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <section class="thank-section">
+        <img src="./assets/images/brush-4.png" alt="brush-bg" class="brush-bg">
+        <img src="./assets/images/brush-pink-1.png" alt="brush-pink-1" class="brush-1">
+        <div class="container position-relative">
+            <div class="wrapper">
+                <div class="thank">
+                    <div class="col-md-8 m-auto" data-aos="zoom-in">
+                        <h2 class="mb-5">Thank You</h2>
+                        <p>Thank you for your presence, participation and blessing.</p>
+                        <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                        <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                        <p class="mt-3">with</p>
+                        <p class="mb-0">The Big Family of Mr. Lorem and Mrs. Ipsum</p>
+                        <small>Lorem Ipsum, Lorem Ipsum - Indonesia</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <small>Copyright 2021 Created with ❤️ by viding.co</small>
+    </footer>
+
+
+
+    <!-- script libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            easing: "ease-out-back",
+            duration: 1000,
+        });
+    </script>
+
+    <!-- scripts plugins -->
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- scripts custom -->
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/app.js"></script>
+</body>
+
+</html>
