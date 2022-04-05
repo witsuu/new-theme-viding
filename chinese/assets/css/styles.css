@@ -2282,6 +2282,12 @@ h3 {
   }
 }
 
+@media (max-width: 575px) {
+  .yt-embed {
+    height: 180px;
+  }
+}
+
 .scrolled {
   color: #000;
   background: #9c231c !important;

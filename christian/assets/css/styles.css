@@ -862,6 +862,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .stream-section .yt-embed {
+    height: 180px;
+  }
+}
+
 .thank-section {
   position: relative;
   padding: 8rem 0;
@@ -1085,6 +1091,12 @@ h1 {
 @media (max-width: 767px) {
   .yt-embed {
     height: 240px;
+  }
+}
+
+@media (max-width: 575px) {
+  .yt-embed {
+    height: 180px;
   }
 }
 

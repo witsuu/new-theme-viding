@@ -779,6 +779,18 @@
   }
 }
 
+@media (max-width: 767px) {
+  .gallery-section .yt-embed {
+    height: 240px;
+  }
+}
+
+@media (max-width: 575px) {
+  .gallery-section .yt-embed {
+    height: 180px;
+  }
+}
+
 .apology-section {
   position: relative;
   padding: 5rem 0;
@@ -1098,6 +1110,12 @@ h2 {
 @media (max-width: 767px) {
   .yt-embed {
     height: 240px;
+  }
+}
+
+@media (max-width: 575px) {
+  .yt-embed {
+    height: 180px;
   }
 }
 
