@@ -22,14 +22,13 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
-        integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
 
     <!-- styles custom -->
     <style>
         body {
             background-color: #4b5770;
             font-family: 'Noto Sans', sans-serif;
+            color: #fff;
         }
 
         h1 {
@@ -49,7 +48,33 @@
         }
 
         .nav-link {
-            color: #fff;
+            color: #303850;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        li {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: .5rem 1rem;
+            background-color: #c1c6d6;
+            border-radius: 10px;
+            box-shadow: 0px 0px 25px 5px #00000057;
+        }
+
+        .actions {
+            display: flex;
+            gap: .75rem;
+            align-items: center;
+        }
+
+        .actions a {
+            color: #303850;
         }
     </style>
 </head>
@@ -70,17 +95,98 @@
         </div>
         <div class="container">
             <div class="row justify-content-center align-items-center h-100">
-                <div class="col-md-10 text-center h-100">
+                <div class="col-md-6 text-center h-100">
                     <h1>List New Theme</h1>
-                    <ul class="list-unstyled">
-                        <li><a href="./spring" class="nav-link">Spring Memory</a></li>
-                        <li><a href="./chinese" class="nav-link">Chinese</a></li>
-                        <li><a href="./christian" class="nav-link">Christian</a></li>
-                        <li><a href="./ulos" class="nav-link">Ulos Ragi Hotang</a></li>
-                        <li><a href="./winter" class="nav-link">Winter</a></li>
-                        <li><a href="./bold-brush" class="nav-link">Bold Brush</a></li>
-                        <li><a href="./art-deco" class="nav-link">Art Deco</a></li>
-                        <li><a href="./leaf-art" class="nav-link">Leaf Art</a></li>
+                    <ul class="p-0 list-unstyled">
+                        <li>
+                            <a href="./spring" class="nav-link">Spring Memory</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./chinese" class="nav-link">Chinese</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./christian" class="nav-link">Christian</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./ulos" class="nav-link">Ulos Ragi Hotang</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./winter" class="nav-link">Winter</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./bold-brush" class="nav-link">Bold Brush</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./art-deco" class="nav-link">Art Deco</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
+                        <li><a href="./leaf-art" class="nav-link">Leaf Art</a>
+                            <div class="actions">
+                                <input type="checkbox" title="done" class="form-check-input">
+                                <a href="#comment" title="comment">
+                                    <i class="fa-solid fa-message"></i>
+                                </a>
+                                <a href="#new-comment" title="new comment">
+                                    <i class="fa-solid fa-pen"></i>
+                                </a>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

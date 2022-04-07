@@ -1012,6 +1012,15 @@ h2 {
   margin-bottom: 1.25rem;
 }
 
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+  }
+  small {
+    font-size: 12px;
+  }
+}
+
 .btn-custom {
   background-color: #5b7e98;
   padding: 0.5rem 1.5rem;

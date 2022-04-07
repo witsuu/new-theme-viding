@@ -411,6 +411,10 @@
   }
 }
 
+.venue-section .sun-half {
+  margin-bottom: 0.5rem;
+}
+
 .venue-section .venue-wrap {
   position: relative;
   border: 1px solid #010046;
@@ -967,6 +971,15 @@ h1 {
 @media (max-width: 767px) {
   h1 {
     font-size: 48px;
+  }
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+  }
+  small {
+    font-size: 12px;
   }
 }
 

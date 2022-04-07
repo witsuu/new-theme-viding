@@ -251,6 +251,7 @@
 
 .couple-section .couple-description {
   margin-top: 0.75rem;
+  padding: 0 1rem;
 }
 
 .couple-section .couple-description .fab {
@@ -531,6 +532,12 @@
   }
 }
 
+@media (max-width: 575px) {
+  .gallery-section {
+    padding: 3rem 1rem;
+  }
+}
+
 .gallery-section .hotang {
   width: 100%;
 }
@@ -622,7 +629,7 @@
 
 @media (max-width: 767px) {
   .apology-section {
-    padding: 5rem 0.4rem;
+    padding: 5rem 1rem;
   }
 }
 
@@ -650,7 +657,7 @@
 
 @media (max-width: 575px) {
   .apology-section .apology {
-    padding: 3rem 1.5rem;
+    padding: 3rem 1rem;
   }
 }
 
@@ -763,6 +770,15 @@ h3 {
 
 h2 {
   font-weight: 700;
+}
+
+@media (max-width: 575px) {
+  p {
+    font-size: 14px;
+  }
+  small {
+    font-size: 12px;
+  }
 }
 
 .btn-custom {
@@ -917,6 +933,12 @@ h2 {
   }
 }
 
+@media (max-width: 575px) {
+  .line-group-left .line-1 {
+    width: 8px;
+  }
+}
+
 .line-group-left .line-2 {
   background-color: #7b9970;
   width: 5px;
@@ -980,6 +1002,12 @@ h2 {
 @media (max-width: 767px) {
   .line-group-right .line-1 {
     width: 12px;
+  }
+}
+
+@media (max-width: 575px) {
+  .line-group-right .line-1 {
+    width: 8px;
   }
 }
 
