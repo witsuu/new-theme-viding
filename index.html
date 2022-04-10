@@ -48,13 +48,14 @@
         }
 
         .nav-link {
-            color: #303850;
+            color: #303030;
         }
 
         ul {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 1rem;
+            flex-wrap: wrap;
         }
 
         li {
@@ -62,8 +63,9 @@
             justify-content: space-between;
             align-items: center;
             padding: .5rem 1rem;
-            background-color: #c1c6d6;
+            background-color: #fff;
             border-radius: 10px;
+            width: fit-content;
             box-shadow: 0px 0px 25px 5px #00000057;
         }
 
@@ -72,21 +74,10 @@
             gap: .75rem;
             align-items: center;
         }
-
-        .actions a {
-            color: #303850;
-        }
     </style>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top pe-none invisible">
-        <div class="container d-flex justify-content-center">
-            <a href="#sectionMain" class="navbar-brand m-auto">
-                <img src="./assets/images/logo_viding.png" class="w-100 logo-viding">
-            </a>
-        </div>
-    </nav>
     <section class="section vh-100 overflow-hidden">
         <div class="banner">
             <a href="https://github.com/witsuu/new-theme-viding" class="text-white text-decoration-none" target="_blank"
@@ -95,10 +86,10 @@
         </div>
         <div class="container">
             <div class="row justify-content-center align-items-center h-100">
-                <div class="col-md-6 text-center h-100">
+                <div class="col-md-10 text-center h-100">
                     <h1>List New Theme</h1>
-                    <ul class="p-0 list-unstyled">
-                        <li>
+                    <ul class="p-0 list-unstyled" id="list-theme">
+                        <!-- <li>
                             <a href="./spring" class="nav-link">Spring Memory</a>
                             <div class="actions">
                                 <input type="checkbox" title="done" class="form-check-input">
@@ -111,82 +102,19 @@
                             </div>
                         </li>
                         <li><a href="./chinese" class="nav-link">Chinese</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./christian" class="nav-link">Christian</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./ulos" class="nav-link">Ulos Ragi Hotang</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./winter" class="nav-link">Winter</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./bold-brush" class="nav-link">Bold Brush</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./art-deco" class="nav-link">Art Deco</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
                         </li>
                         <li><a href="./leaf-art" class="nav-link">Leaf Art</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
-                        </li>
+                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -202,6 +130,9 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.2/gsap.min.js"
+        integrity="sha512-kVlGhj2qFy+KBCFuvjBJTGUMxbdqJKs4yK2jh0e0VPhWUPiPC87bzm4THmaaIee3Oj7j6sDpTTgm2EPPiESqBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
         AOS.init({
             easing: "ease-out-back",
@@ -214,8 +145,31 @@
         integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
 
     <!-- scripts custom -->
-    <script src="./assets/js/countdown.js"></script>
-    <script src="./assets/js/app.js"></script>
+    <script>
+        const addList = (datas) => {
+            const list = document.querySelector("#list-theme")
+            const el = document.createElement('li')
+            el.setAttribute("class", 'list-item')
+
+            const {
+                name,
+                path
+            } = datas;
+
+            el.innerHTML = `<a href="${path}" class="nav-link">${name}</a>`
+
+            list.appendChild(el)
+        }
+
+        fetch('./data.json').then((res) => {
+            return res.json()
+        }).then((jsonData) => {
+            jsonData.map(item => addList({
+                name: item.name,
+                path: item.path
+            }))
+        })
+    </script>
 </body>
 
 </html>
