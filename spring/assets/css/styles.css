@@ -1435,7 +1435,7 @@ h3 {
 .loader-wrapper {
   position: fixed;
   min-height: 100vh;
-  background-color: #052293;
+  background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1445,80 +1445,12 @@ h3 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  gap: 5px;
   width: 100%;
   z-index: 1500;
 }
 
-.loader-wrapper .dots {
+.loader-wrapper .spinner {
   position: relative;
-  width: 25px;
-  height: 25px;
-  border-radius: 50%;
-  -webkit-animation: dot 3s ease-in-out infinite;
-          animation: dot 3s ease-in-out infinite;
-}
-
-.loader-wrapper .dots:nth-child(1) {
-  -webkit-animation-delay: 0.2s;
-          animation-delay: 0.2s;
-}
-
-.loader-wrapper .dots:nth-child(2) {
-  -webkit-animation-delay: 0.4s;
-          animation-delay: 0.4s;
-}
-
-.loader-wrapper .dots:nth-child(3) {
-  -webkit-animation-delay: 0.6s;
-          animation-delay: 0.6s;
-}
-
-.loader-wrapper .dots:nth-child(4) {
-  -webkit-animation-delay: 0.8s;
-          animation-delay: 0.8s;
-}
-
-.loader-wrapper .dots:nth-child(5) {
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
-}
-
-@-webkit-keyframes dot {
-  0%,
-  100% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-    background-color: #d8274e;
-  }
-  40% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #259dff;
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #0044ff;
-  }
-}
-
-@keyframes dot {
-  0%,
-  100% {
-    -webkit-transform: scale(0.2);
-            transform: scale(0.2);
-    background-color: #d8274e;
-  }
-  40% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #259dff;
-  }
-  50% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    background-color: #0044ff;
-  }
+  width: 84px;
 }
 /*# sourceMappingURL=styles.css.map */
