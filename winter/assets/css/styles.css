@@ -9,13 +9,7 @@
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  gap: 1rem;
-  position: absolute;
-  bottom: -50px;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-          transform: translate(-50%, 0);
-  background-color: #383b5e;
+  gap: 0.75rem;
 }
 
 .countdown .days,
@@ -274,6 +268,16 @@
   margin-bottom: -55px;
   position: relative;
   z-index: 2;
+}
+
+.envelope-wrap {
+  position: fixed;
+  z-index: 1300;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #fff;
+  height: 100vh !important;
+  padding: 0 0 5rem;
 }
 
 .couple-section {

@@ -233,6 +233,47 @@
   padding: 2rem 3rem;
 }
 
+.envelope-wrap {
+  position: fixed;
+  z-index: 1300;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #e1d7d6;
+  padding-bottom: 3rem;
+}
+
+.envelope-wrap .row {
+  -webkit-box-align: end !important;
+      -ms-flex-align: end !important;
+          align-items: flex-end !important;
+}
+
+.envelope-wrap .header .card {
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
+  background-color: rgba(19, 76, 97, 0.3) !important;
+  border: 0;
+  border-radius: 0;
+}
+
+.envelope-wrap .header .card .card-body {
+  background-color: transparent;
+}
+
+.envelope-wrap .header .card .card-body .header-title {
+  padding: 1.25rem 0.75rem !important;
+}
+
+.envelope-wrap .envelope-image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .couple-section {
   position: relative;
   padding: 5rem 0;
@@ -338,7 +379,7 @@
   border-top: none;
   padding: 3rem 0;
   background-color: #134c61;
-  margin-top: -1px;
+  margin-top: -2px;
 }
 
 .story-section .deco-leaf-2 {
@@ -729,6 +770,7 @@
   position: relative;
   background-color: #134c61;
   padding: 0 0 3rem 0;
+  margin-top: -2px;
 }
 
 .apology-section .deco-leaf-1 {
@@ -746,6 +788,7 @@
 
 .apology-section .image-wrap {
   position: relative;
+  margin-top: -2px;
 }
 
 .apology-section .image-wrap .image-apology {

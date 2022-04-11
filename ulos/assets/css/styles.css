@@ -210,6 +210,29 @@
   }
 }
 
+.envelope-wrap {
+  position: fixed;
+  z-index: 1300;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #f9faff;
+}
+
+.envelope-wrap .date {
+  background-color: #983c48;
+  padding: 1rem 3rem;
+  position: absolute;
+  left: 50%;
+  bottom: -35px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  color: #fff;
+}
+
+.envelope-wrap .envelope-description {
+  color: #fff;
+}
+
 .couple-section {
   position: relative;
   padding: 3rem 0;

@@ -124,6 +124,11 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 @media (max-width: 767px) {
@@ -180,10 +185,23 @@
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
   z-index: 2;
+  width: 100%;
 }
 
 .header-section .header-wrap .header .header-description h1 {
   color: #fff;
+}
+
+.envelope-wrap {
+  position: fixed;
+  z-index: 1300;
+  -webkit-transition: all 1s ease-out;
+  transition: all 1s ease-out;
+  background-color: #f5fbff;
+}
+
+.envelope-wrap .btn-custom {
+  background-color: #383b5e;
 }
 
 .couple-section {

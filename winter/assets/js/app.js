@@ -1,7 +1,14 @@
-// const cd = document.querySelector('.countdown').getAttribute('date')
+const cd = document.querySelector('.countdown').getAttribute('date')
 
-// Countdown(cd)
+Countdown(cd)
 
+$("body").css('overflow-y', 'hidden')
+
+$("#btn-envelope").on("click", function () {
+    $("body").css("overflow-y", "auto");
+
+    $(".envelope-wrap").css("transform", "translateY(-100%)");
+});
 
 
 $(document).scroll(function () {
