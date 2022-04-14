@@ -1,3 +1,11 @@
+:root {
+  --color-main: #e5e5e5;
+  --color-primary: #9c231c;
+  --color-secondary: #fdeec9;
+  --color-dark: #1e1f1e;
+  --vd-color-pink: #ff3190;
+}
+
 .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -42,7 +50,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #9c231c;
+  background-color: var(--color-primary);
   min-width: 73px;
   padding: 10px;
   position: relative;
@@ -102,12 +110,6 @@
 
 .logo-viding path {
   fill: #fff;
-}
-
-@media (max-width: 767px) {
-  .logo-viding {
-    height: 3.5rem;
-  }
 }
 
 .header-section {
@@ -296,7 +298,7 @@
 .header-section .frame-wrapper .edge-frame-bottom-right path,
 .header-section .frame-wrapper .edge-frame-bottom-left path {
   stroke-width: 4px;
-  stroke: #fdeec9;
+  stroke: var(--color-secondary);
 }
 
 .header-section .frame-wrapper .edge-frame-top-left {
@@ -330,7 +332,7 @@
 .header-section .frame-wrapper .line-bottom,
 .header-section .frame-wrapper .line-left {
   position: absolute;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
 }
 
 .header-section .frame-wrapper .line-top {
@@ -449,7 +451,7 @@
   overflow: hidden;
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
-  background-color: #9c231c;
+  background-color: var(--color-primary);
   z-index: 1300;
 }
 
@@ -632,7 +634,7 @@
 .envelope-wrap .frame-wrapper .edge-frame-bottom-right path,
 .envelope-wrap .frame-wrapper .edge-frame-bottom-left path {
   stroke-width: 4px;
-  stroke: #fdeec9;
+  stroke: var(--color-secondary);
 }
 
 .envelope-wrap .frame-wrapper .edge-frame-top-left {
@@ -666,7 +668,7 @@
 .envelope-wrap .frame-wrapper .line-bottom,
 .envelope-wrap .frame-wrapper .line-left {
   position: absolute;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
 }
 
 .envelope-wrap .frame-wrapper .line-top {
@@ -880,7 +882,7 @@
 
 .couple-section h4 {
   font-size: 36px;
-  color: #fdeec9;
+  color: var(--color-secondary);
 }
 
 @media (max-width: 767px) {
@@ -905,7 +907,7 @@
 }
 
 .couple-section h3 {
-  color: #fdeec9;
+  color: var(--color-secondary);
 }
 
 .couple-section .couple-description {
@@ -964,7 +966,7 @@
 
 .countdown-wrapper {
   position: relative;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   padding: 1rem 0;
   text-align: center;
   overflow: hidden;
@@ -1033,7 +1035,7 @@
 
 .countdown-wrapper .lampion-left path,
 .countdown-wrapper .lampion-right path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -1087,7 +1089,7 @@
 
 .countdown-wrapper .cloud-left-2 path,
 .countdown-wrapper .cloud-right-2 path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -1148,7 +1150,7 @@
 }
 
 .story-section .divider path {
-  stroke: #fdeec9;
+  stroke: var(--color-secondary);
   stroke-width: 5px;
 }
 
@@ -1197,7 +1199,7 @@
 
 .story-section .story-description .card {
   border-radius: 0;
-  border: 4px solid #fdeec9;
+  border: 4px solid var(--color-secondary);
   position: relative;
 }
 
@@ -1213,7 +1215,7 @@
 }
 
 .story-section .story-description .card .card-body h2 {
-  color: #9c231c;
+  color: var(--color-primary);
 }
 
 .story-section .story-image {
@@ -1221,19 +1223,19 @@
   height: 597px;
   -o-object-fit: cover;
      object-fit: cover;
-  border: 4px solid #fdeec9;
+  border: 4px solid var(--color-secondary);
 }
 
 .venue-section {
   position: relative;
   padding: 3rem 0;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   text-align: center;
   overflow: hidden;
 }
 
 .venue-section .title-section path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .venue-section .prokes-wrap {
@@ -1246,6 +1248,7 @@
   gap: 1.5rem;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-bottom: 2rem;
 }
 
 @media (max-width: 575px) {
@@ -1253,9 +1256,32 @@
     gap: 0.75rem;
   }
   .venue-section .prokes-wrap svg {
-    width: 132px;
-    height: 132px;
+    width: 63px;
+    height: 63px;
   }
+}
+
+.venue-section .prokes-wrap .prokes {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  width: 132px;
+}
+
+.venue-section .prokes-wrap .prokes svg {
+  width: 93px;
+  height: 93px;
 }
 
 .venue-section .cloud-left-1,
@@ -1269,7 +1295,7 @@
 .venue-section .cloud-left-2 path,
 .venue-section .cloud-right-1 path,
 .venue-section .cloud-right-2 path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .venue-section .cloud-left-1 {
@@ -1348,7 +1374,7 @@
 }
 
 .venue-section .event-wrapper .btn-custom {
-  background-color: #9c231c;
+  background-color: var(--color-primary);
   color: #fff;
 }
 
@@ -1444,13 +1470,13 @@
 }
 
 .divider path {
-  stroke: #fdeec9;
+  stroke: var(--color-secondary);
 }
 
 .wishes-section {
   position: relative;
   padding: 156px 0 3rem 0;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   overflow: hidden;
 }
 
@@ -1461,7 +1487,7 @@
 }
 
 .wishes-section .title-section path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .wishes-section .lampion {
@@ -1475,16 +1501,16 @@
 }
 
 .wishes-section .lampion path {
-  stroke: #9c231c;
+  stroke: var(index 16);
 }
 
 .wishes-section .btn-custom {
-  background-color: #9c231c;
+  background-color: var(--color-primary);
   color: #fff;
 }
 
 .wishes-section .btn-custom:hover {
-  color: #fdeec9;
+  color: var(--color-primary);
 }
 
 .wishes-section .cloud-left-1,
@@ -1502,7 +1528,7 @@
 .wishes-section .cloud-right-2 path,
 .wishes-section .cloud-left-3 path,
 .wishes-section .cloud-right-4 path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .wishes-section .cloud-left-1 {
@@ -1583,7 +1609,7 @@
 
 .wishes-section .card {
   margin: 2rem 0 0 0;
-  border-color: #fdeec9;
+  border-color: var(--color-secondary);
   position: relative;
   z-index: 2;
 }
@@ -1709,9 +1735,9 @@
 }
 
 .egift-section form .input-group-text {
-  color: #9c231c;
-  background-color: #fdeec9;
-  border-color: #fdeec9;
+  color: var(--color-primary);
+  background-color: var(--color-secondary);
+  border-color: var(--color-secondary);
 }
 
 .egift-section form .form-control {
@@ -1721,7 +1747,7 @@
 .gallery-section {
   position: relative;
   padding: 3rem 0;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
 }
 
 .gallery-section .divider-top {
@@ -1898,7 +1924,7 @@
 }
 
 .apology-section .apology {
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   padding: 5rem 3rem;
   position: relative;
 }
@@ -1950,7 +1976,7 @@
 .apology-section .apology .line-bottom,
 .apology-section .apology .line-left {
   position: absolute;
-  background-color: #9c231c;
+  background-color: var(--color-primary);
 }
 
 .apology-section .apology .line-top {
@@ -1982,7 +2008,7 @@
 }
 
 .apology-section .apology path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .stream-section {
@@ -2091,7 +2117,7 @@
 .thank-section {
   position: relative;
   padding-top: 156px;
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   overflow: hidden;
 }
 
@@ -2112,7 +2138,7 @@
 }
 
 .thank-section .lampion path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .thank-section .cloud-left-1,
@@ -2126,7 +2152,7 @@
 .thank-section .cloud-left-2 path,
 .thank-section .cloud-right-1 path,
 .thank-section .cloud-right-2 path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .thank-section .cloud-left-1 {
@@ -2170,7 +2196,7 @@
 }
 
 .thank-section .title-section path {
-  stroke: #9c231c;
+  stroke: var(--color-primary);
 }
 
 .thank-section .thank {
@@ -2185,7 +2211,7 @@
 }
 
 body {
-  background-color: #9c231c;
+  background-color: var(--color-primary);
   font-family: "Noto Sans", sans-serif;
   color: #fff;
 }
@@ -2207,16 +2233,16 @@ h3 {
 }
 
 .btn-custom {
-  background-color: #fdeec9;
+  background-color: var(--color-secondary);
   padding: 0.5rem 2rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-color: #9c231c;
+  border-color: var(--color-primary);
   border-radius: 0;
 }
 
 .btn-custom:hover {
-  color: #9c231c;
+  color: var(--color-primary);
 }
 
 @media (max-width: 575px) {
@@ -2237,27 +2263,27 @@ h3 {
 .form-select {
   background-color: #fff;
   font-family: "Noto Sans", sans-serif;
-  border-color: #fdeec9;
+  border-color: var(--color-secondary);
 }
 
 .form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:-ms-input-placeholder,
 .form-select:-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::-ms-input-placeholder,
 .form-select::-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::placeholder,
 .form-select::placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:focus,
@@ -2293,7 +2319,7 @@ h3 {
 
 .scrolled {
   color: #000;
-  background: #9c231c !important;
+  background: var(--color-primary) !important;
   -webkit-transition: 1s;
   transition: 1s;
   -webkit-box-shadow: 3px 0px 15px 15px rgba(89, 89, 89, 0.2);
@@ -2360,10 +2386,47 @@ h3 {
           align-items: center;
   width: 100%;
   z-index: 1500;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
 }
 
 .loader-wrapper .spinner {
   position: relative;
   width: 84px;
+}
+
+.loader-wrapper span {
+  color: var(--vd-color-pink);
+  font-weight: 700;
+  -webkit-animation: fade 2s linear infinite;
+          animation: fade 2s linear infinite;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

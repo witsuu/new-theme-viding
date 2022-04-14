@@ -28,6 +28,15 @@
   src: url(../fonts/Gotham-Book.ttf);
 }
 
+:root {
+  --color-main: #f9faff;
+  --color-primary: #010046;
+  --color-secondary: #383b5e;
+  --color-dark: #1e1f1e;
+  --color-bg-secondary: #f3f3ff;
+  --vd-color-pink: #ff3190;
+}
+
 .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -126,17 +135,11 @@
   margin: 0;
   padding: 0;
   line-height: normal;
-  color: #010046;
+  color: var(--color-primary);
 }
 
 .logo-viding {
   height: 3rem;
-}
-
-@media (max-width: 767px) {
-  .logo-viding {
-    height: 3.5rem;
-  }
 }
 
 .header-section {
@@ -285,7 +288,7 @@
 
 .couple-section .couple-wrap {
   position: relative;
-  border: 1px solid #383b5e;
+  border: 1px solid var(--color-secondary);
   padding: 5rem 0;
 }
 
@@ -363,7 +366,7 @@
 .story-section {
   position: relative;
   padding: 200px 0 5rem 0;
-  background-color: #f3f3ff;
+  background-color: var(--color-bg-secondary);
 }
 
 @media (max-width: 991px) {
@@ -461,7 +464,7 @@
 
 .venue-section .venue-wrap {
   position: relative;
-  border: 1px solid #010046;
+  border: 1px solid var(--color-primary);
   padding: 3rem 0 0 0;
 }
 
@@ -582,7 +585,7 @@
   border: none;
   position: relative;
   z-index: 2;
-  background-color: #f3f3ff;
+  background-color: var(--color-bg-secondary);
 }
 
 .wishes-section .card .card-body {
@@ -614,7 +617,7 @@
 }
 
 .wrapper {
-  border: 1px solid #010046;
+  border: 1px solid var(--color-primary);
   position: relative;
 }
 
@@ -683,14 +686,14 @@
 
 .egift-section form .input-group-text {
   color: #fff;
-  background-color: #010046;
-  border-color: #010046;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 .gallery-section {
   position: relative;
   padding: 3rem 0 5rem;
-  background-color: #f3f3ff;
+  background-color: var(--color-bg-secondary);
 }
 
 .gallery-section .zoom-gallery {
@@ -794,11 +797,11 @@
 }
 
 .apology-section .apology {
-  background-color: #f3f3ff;
+  background-color: var(--color-bg-secondary);
   padding: 5rem 3rem;
   position: relative;
   text-align: center;
-  border: 1px solid #010046;
+  border: 1px solid var(--color-primary);
 }
 
 @media (max-width: 575px) {
@@ -825,7 +828,7 @@
 
 .stream-section .stream {
   position: relative;
-  background-color: #f3f3ff;
+  background-color: var(--color-bg-secondary);
   padding: 3rem 0 8rem;
 }
 
@@ -919,7 +922,7 @@
 .thank-section {
   position: relative;
   padding: 8rem 0;
-  border: 1px solid #010046;
+  border: 1px solid var(--color-primary);
   margin: 3rem 2rem;
 }
 
@@ -991,20 +994,20 @@
   color: #fff;
   position: relative;
   text-align: center;
-  background-color: #010046;
+  background-color: var(--color-primary);
 }
 
 body {
-  background-color: #f9faff;
+  background-color: var(--color-main);
   font-family: "Gotham Book", sans-serif;
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Fondamento";
-  color: #010046;
+  color: var(--color-primary);
 }
 
 h1 {
@@ -1047,7 +1050,7 @@ h1 {
 
 .title-reflection h1 {
   font-family: "Gotham Ultra";
-  -webkit-text-stroke: 1px #010046;
+  -webkit-text-stroke: 1px var(--color-primary);
   color: transparent;
   font-size: 98px;
 }
@@ -1060,7 +1063,7 @@ h1 {
 
 .title-reflection h2 {
   font-family: "Gotham Ultra";
-  -webkit-text-stroke: 1px #010046;
+  -webkit-text-stroke: 1px var(--color-primary);
   color: transparent;
   font-size: 72px;
   word-break: keep-all;
@@ -1073,11 +1076,11 @@ h1 {
 }
 
 .btn-custom {
-  background-color: #010046;
+  background-color: var(--color-primary);
   padding: 0.75rem 2rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  border-color: #010046;
+  border-color: var(--color-primary);
   color: #fff;
 }
 
@@ -1097,28 +1100,28 @@ h1 {
 .form-select {
   background-color: #fff;
   font-family: "Gotham Book", sans-serif;
-  border-color: #383b5e;
+  border-color: var(--color-secondary);
   padding: 0.75rem 1rem;
 }
 
 .form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:-ms-input-placeholder,
 .form-select:-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::-ms-input-placeholder,
 .form-select::-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::placeholder,
 .form-select::placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:focus,
@@ -1228,10 +1231,47 @@ h1 {
           align-items: center;
   width: 100%;
   z-index: 1500;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
 }
 
 .loader-wrapper .spinner {
   position: relative;
   width: 84px;
+}
+
+.loader-wrapper span {
+  color: var(--vd-color-pink);
+  font-weight: 700;
+  -webkit-animation: fade 2s linear infinite;
+          animation: fade 2s linear infinite;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

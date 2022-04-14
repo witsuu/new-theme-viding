@@ -25,8 +25,14 @@
 
     <!-- styles custom -->
     <style>
+        /* :root {
+            --color-main: #4b5770;
+            --color-primary: #2dac1d;
+            --color-secondary: #303030;
+        } */
+
         body {
-            background-color: #4b5770;
+            background-color: var(--color-main);
             font-family: 'Noto Sans', sans-serif;
             color: #fff;
         }
@@ -43,7 +49,7 @@
             position: absolute;
             bottom: 0;
             right: 0;
-            background-color: #2a7920;
+            background-color: var(--color-primary);
             padding: .75rem;
         }
 
@@ -74,10 +80,117 @@
             gap: .75rem;
             align-items: center;
         }
+
+        .btn-sidebar {
+            background-color: var(--color-primary);
+            color: #fff;
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+            position: absolute;
+            right: 100%;
+            top: 0;
+        }
+
+        .btn-sidebar:hover {
+            color: #fff;
+        }
+
+        .btn:focus {
+            box-shadow: none;
+        }
+
+        aside {
+            position: fixed;
+            right: 0;
+            top: 40px;
+            transition: all 1s ease-in-out;
+            transform: translate(100%, 0);
+            height: 100%;
+        }
+
+        aside.active {
+            transform: translate(0, 0);
+        }
+
+        aside.active .sidebar #icon-close {
+            display: block;
+        }
+
+        aside.active .sidebar #icon-open {
+            display: none;
+        }
+
+        .sidebar {
+            position: relative;
+            background-color: #fff;
+            color: #303030;
+        }
+
+        .fas span {
+            font-size: 10px;
+            text-transform: capitalize !important;
+            writing-mode: vertical-rl;
+            margin-top: .5rem;
+        }
+
+        .sidebar #icon-close {
+            display: none;
+            font-size: 23px;
+        }
+
+        .sidebar .sidebar-title {
+            border-bottom: 2px solid #2e2d2d52;
+            padding: 1rem 3rem 0 1rem;
+        }
+
+        .sidebar .sidebar-menu {
+            padding: 1rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: .75rem;
+        }
+
+        .sidebar .sidebar-footer {
+            padding: 1rem;
+            text-align: right;
+        }
+
+        .sidebar-footer .btn-reset {
+            color: #f03030;
+        }
+
+        @media (min-width:1200px) {
+            aside {
+                min-width: 360px;
+            }
+        }
     </style>
 </head>
 
 <body>
+    <aside>
+        <div class="sidebar">
+            <button class="btn btn-sidebar" id="btn-sidebar">
+                <i class="fas fa-close" id="icon-close"><span>Close</span></i>
+                <i class="fas fa-palette" id="icon-open"><span>Palettes</span></i>
+            </button>
+            <div class="sidebar-title">
+                <h2>Color Picker</h2>
+            </div>
+            <div class="sidebar-menu">
+                <label for="color-primary">Color Main</label>
+                <input type="color" name="main" id="color-main" onchange="setColorMain()">
+            </div>
+            <div class="sidebar-menu">
+                <label for="color-primary">Color Primary</label>
+                <input type="color" name="primary" id="color-primary" onchange="setColorPrimary()">
+            </div>
+            <div class="sidebar-footer">
+                <button class="btn bg-transparent btn-reset" onclick="resetColor()">Reset To Default</button>
+            </div>
+        </div>
+    </aside>
     <section class="section vh-100 overflow-hidden">
         <div class="banner">
             <a href="https://github.com/witsuu/new-theme-viding" class="text-white text-decoration-none" target="_blank"
@@ -89,32 +202,6 @@
                 <div class="col-md-10 text-center h-100">
                     <h1>List New Theme</h1>
                     <ul class="p-0 list-unstyled" id="list-theme">
-                        <!-- <li>
-                            <a href="./spring" class="nav-link">Spring Memory</a>
-                            <div class="actions">
-                                <input type="checkbox" title="done" class="form-check-input">
-                                <a href="#comment" title="comment">
-                                    <i class="fa-solid fa-message"></i>
-                                </a>
-                                <a href="#new-comment" title="new comment">
-                                    <i class="fa-solid fa-pen"></i>
-                                </a>
-                            </div>
-                        </li>
-                        <li><a href="./chinese" class="nav-link">Chinese</a>
-                        </li>
-                        <li><a href="./christian" class="nav-link">Christian</a>
-                        </li>
-                        <li><a href="./ulos" class="nav-link">Ulos Ragi Hotang</a>
-                        </li>
-                        <li><a href="./winter" class="nav-link">Winter</a>
-                        </li>
-                        <li><a href="./bold-brush" class="nav-link">Bold Brush</a>
-                        </li>
-                        <li><a href="./art-deco" class="nav-link">Art Deco</a>
-                        </li>
-                        <li><a href="./leaf-art" class="nav-link">Leaf Art</a>
-                        </li> -->
                     </ul>
                 </div>
             </div>
@@ -146,6 +233,70 @@
 
     <!-- scripts custom -->
     <script>
+        let colormain = document.querySelector("#color-main");
+        let colorprimary = document.querySelector("#color-primary");
+        // all function change color theme
+        const invokeTheme = () => {
+            if (!localStorage.getItem('color-main')) {
+                document.documentElement.style.setProperty("--color-main", "#4b5770");
+                colormain.value = "#4b5770"
+            } else {
+                document.documentElement.style.setProperty("--color-main", localStorage.getItem("color-main"));
+                colormain.value = localStorage.getItem('color-main')
+            }
+
+
+            if (!localStorage.getItem('color-primary')) {
+                document.documentElement.style.setProperty("--color-primary", "#2dac1d")
+                colorprimary.value = "#2dac1d"
+            } else {
+                document.documentElement.style.setProperty("--color-primary", localStorage.getItem(
+                    "color-primary"));
+                colorprimary.value = localStorage.getItem('color-primary')
+            }
+        }
+
+        const setColorMain = () => {
+            localStorage.setItem('color-main', colormain.value)
+            document.documentElement.style.setProperty("--color-main", colormain.value);
+        }
+
+        const setColorPrimary = () => {
+            localStorage.setItem('color-primary', colorprimary.value)
+            document.documentElement.style.setProperty("--color-primary", colorprimary.value);
+        }
+
+        const resetColor = () => {
+            if (confirm("You will reset color themes ?")) {
+                localStorage.removeItem('color-main')
+                localStorage.removeItem('color-primary')
+
+                // color-main-default
+                document.documentElement.style.setProperty("--color-main", "#4b5770");
+                colormain.value = "#4b5770"
+                // color-primary-default
+                document.documentElement.style.setProperty("--color-primary", "#2dac1d")
+                colorprimary.value = "#2dac1d"
+            }
+        }
+
+        // End all function change color theme
+
+        // function sidebar
+        const switchSidebar = () => {
+            const aside = document.querySelector('aside');
+            const icon = document.querySelector("#icon-sidebar")
+            aside.classList.toggle("active")
+        }
+
+        // invoke color theme
+        invokeTheme()
+
+        // addEvent sidebar
+        const btnSidebar = document.querySelector('#btn-sidebar')
+        btnSidebar.addEventListener('click', switchSidebar)
+
+        // add list theme
         const addList = (datas) => {
             const list = document.querySelector("#list-theme")
             const el = document.createElement('li')

@@ -1,3 +1,11 @@
+:root {
+  --color-main: #ffffff;
+  --color-primary: #383b5e;
+  --color-secondary: #8dbac9;
+  --color-dark: #1e1f1e;
+  --vd-color-pink: #ff3190;
+}
+
 .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -68,7 +76,7 @@
   font-weight: 300;
   font-size: 36px;
   font-family: "Petit Formal Script", cursive;
-  color: #8dbac9;
+  color: var(--color-secondary);
 }
 
 @media (max-width: 575px) {
@@ -95,12 +103,6 @@
 
 .logo-viding {
   height: 3rem;
-}
-
-@media (max-width: 767px) {
-  .logo-viding {
-    height: 3.5rem;
-  }
 }
 
 .header-section {
@@ -195,7 +197,7 @@
 
 .header-section .header .card {
   min-width: 558px;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
   text-align: center;
   border-radius: 0;
 }
@@ -263,8 +265,8 @@
 }
 
 .header-section .header .card .card-body .btn-custom {
-  background-color: #8dbac9;
-  color: #383b5e;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
   margin-bottom: -55px;
   position: relative;
   z-index: 2;
@@ -278,6 +280,12 @@
   background-color: #fff;
   height: 100vh !important;
   padding: 0 0 5rem;
+}
+
+@media (max-width: 767px) {
+  .envelope-wrap .header {
+    padding: 0 0 20px 0;
+  }
 }
 
 .couple-section {
@@ -386,7 +394,7 @@
 .story-section {
   position: relative;
   padding: 10rem 0 350px;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
   color: #fff;
 }
 
@@ -528,7 +536,7 @@
 }
 
 .venue-section .venue-wrap .event-wrap {
-  background-color: #383b5e;
+  background-color: var(--color-primary);
   color: #fff;
   padding: 3rem 0;
 }
@@ -573,8 +581,8 @@
 }
 
 .venue-section .venue-wrap .card .card-body .btn-custom {
-  background-color: #8dbac9;
-  color: #383b5e;
+  background-color: var(--color-secondary);
+  color: var(--color-primary);
 }
 
 .venue-section .venue-wrap .maps-embed {
@@ -603,7 +611,7 @@
 .wishes-section {
   position: relative;
   padding: 3rem 0 5rem 0;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -671,7 +679,7 @@
 }
 
 .wishes-section .btn-custom {
-  background-color: #8dbac9;
+  background-color: var(--color-secondary);
   color: #fff;
 }
 
@@ -719,7 +727,7 @@
   text-align: left;
   height: 20.5rem;
   overflow: auto;
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .wishes-section .card .card-body .wishes::-webkit-scrollbar {
@@ -793,8 +801,8 @@
 
 .egift-section form .input-group-text {
   color: #fff;
-  background-color: #383b5e;
-  border-color: #383b5e;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -924,7 +932,7 @@
   position: relative;
   padding: 8rem 0;
   color: #fff;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
 }
 
 .section-group h3 {
@@ -1008,7 +1016,7 @@
 .stream-section .bg-theme {
   padding: 3rem 0;
   margin-bottom: -200px;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
   position: relative;
 }
 
@@ -1019,7 +1027,7 @@
 }
 
 .stream-section .bg-theme .btn-custom {
-  background-color: #8dbac9;
+  background-color: var(--color-secondary);
   color: #fff;
 }
 
@@ -1104,24 +1112,30 @@
   color: #fff;
   position: relative;
   text-align: center;
-  background-color: #383b5e;
+  background-color: var(--color-primary);
 }
 
 body {
-  background-color: #ffffff;
+  background-color: var(--color-main);
   font-family: "Cabin", sans-serif;
-  color: #383b5e;
+  color: var(--color-primary);
 }
 
 h1,
 h2,
 h3 {
   font-family: "Petit Formal Script", cursive;
-  color: #383b5e;
+  color: var(--color-primary);
 }
 
 h1 {
   font-size: 60px;
+}
+
+@media (max-width: 575px) {
+  h1 {
+    font-size: 48px;
+  }
 }
 
 h2 {
@@ -1139,7 +1153,7 @@ h2 {
 }
 
 .btn-custom {
-  background-color: #383b5e;
+  background-color: var(--color-primary);
   padding: 0.5rem 2rem;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -1163,11 +1177,11 @@ h2 {
 }
 
 .color-primary {
-  color: #383b5e;
+  color: var(--color-primary);
 }
 
 .color-secondary {
-  color: #8dbac9;
+  color: var(--color-secondary);
 }
 
 .color-success {
@@ -1178,28 +1192,28 @@ h2 {
 .form-select {
   background-color: #fff;
   font-family: "Cabin", sans-serif;
-  border-color: #8dbac9;
+  border-color: var(--color-secondary);
   padding: 0.5rem 1rem;
 }
 
 .form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:-ms-input-placeholder,
 .form-select:-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::-ms-input-placeholder,
 .form-select::-ms-input-placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control::placeholder,
 .form-select::placeholder {
-  color: #1e1f1e;
+  color: var(--color-dark);
 }
 
 .form-control:focus,
@@ -1236,154 +1250,6 @@ h2 {
   pointer-events: all !important;
 }
 
-.bg-line {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-.line-group-left {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-}
-
-.line-group-left .line-1 {
-  background-color: #ce4152;
-  width: 90px;
-}
-
-@media (max-width: 1199px) {
-  .line-group-left .line-1 {
-    width: 38px;
-  }
-}
-
-@media (max-width: 767px) {
-  .line-group-left .line-1 {
-    width: 12px;
-  }
-}
-
-.line-group-left .line-2 {
-  background-color: #7b9970;
-  width: 5px;
-}
-
-@media (max-width: 767px) {
-  .line-group-left .line-2 {
-    width: 2px;
-  }
-}
-
-.line-group-left .line-3 {
-  background-color: #8dbac9;
-  width: 20px;
-  margin: 0 0.5rem;
-}
-
-@media (max-width: 767px) {
-  .line-group-left .line-3 {
-    width: 8px;
-    margin: 0 0.25rem;
-  }
-}
-
-.line-group-left .line-4 {
-  background-color: #8dbac9;
-  width: 5px;
-}
-
-@media (max-width: 767px) {
-  .line-group-left .line-4 {
-    width: 2px;
-  }
-}
-
-.line-group-right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 100%;
-}
-
-.line-group-right .line-1 {
-  background-color: #ce4152;
-  width: 90px;
-}
-
-@media (max-width: 1199px) {
-  .line-group-right .line-1 {
-    width: 38px;
-  }
-}
-
-@media (max-width: 767px) {
-  .line-group-right .line-1 {
-    width: 12px;
-  }
-}
-
-.line-group-right .line-2 {
-  background-color: #7b9970;
-  width: 5px;
-}
-
-@media (max-width: 767px) {
-  .line-group-right .line-2 {
-    width: 2px;
-  }
-}
-
-.line-group-right .line-3 {
-  background-color: #8dbac9;
-  width: 20px;
-  margin: 0 0.5rem;
-}
-
-@media (max-width: 767px) {
-  .line-group-right .line-3 {
-    width: 8px;
-    margin: 0 0.25rem;
-  }
-}
-
-.line-group-right .line-4 {
-  background-color: #8dbac9;
-  width: 5px;
-}
-
-@media (max-width: 767px) {
-  .line-group-right .line-4 {
-    width: 2px;
-  }
-}
-
-.border-color-secondary {
-  border-style: solid;
-  border-color: #8dbac9;
-}
-
-.border-color-success {
-  border-style: solid;
-  border-color: #7b9970;
-}
-
-.border-8 {
-  border-width: 8px;
-}
-
 @media (min-width: 768px) {
   .lg {
     display: block;
@@ -1417,10 +1283,47 @@ h2 {
           align-items: center;
   width: 100%;
   z-index: 1500;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
 }
 
 .loader-wrapper .spinner {
   position: relative;
   width: 84px;
+}
+
+.loader-wrapper span {
+  color: var(--vd-color-pink);
+  font-weight: 700;
+  -webkit-animation: fade 2s linear infinite;
+          animation: fade 2s linear infinite;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */

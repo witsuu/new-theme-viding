@@ -1,3 +1,11 @@
+:root {
+  --color-main: #e5e5e5;
+  --color-primary: #052293;
+  --color-secondary: #383b5e;
+  --color-dark: #1e1f1e;
+  --vd-color-pink: #ff3190;
+}
+
 .countdown {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -77,7 +85,7 @@
   margin: 0;
   padding: 0;
   line-height: 2rem;
-  color: #052293;
+  color: var(--color-primary);
 }
 
 .logo-viding {
@@ -308,13 +316,13 @@
 
 .envelope-wrap .envelope .btn-custom:hover {
   color: #fff;
-  background-color: #052293;
-  border: 2px solid #052293;
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
 }
 
 .envelope-wrap .envelope .btn-custom:focus {
-  background-color: #052293;
-  border-color: #052293;
+  background-color: var(--color-primary);
+  border-color: var(--color-primary);
   -webkit-box-shadow: none;
           box-shadow: none;
 }
@@ -361,7 +369,7 @@
 
 .couple-section h4 {
   margin-top: -5rem;
-  color: #052293;
+  color: var(--color-primary);
   font-size: 36px;
 }
 
@@ -378,7 +386,7 @@
 }
 
 .couple-section .couple-description p {
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .couple-section .card {
@@ -405,7 +413,7 @@
 
 .couple-section .card .card-body .instagram {
   padding: 0.5rem 0 0 0;
-  color: #052293;
+  color: var(--color-primary);
 }
 
 .story-section {
@@ -897,7 +905,7 @@
 
 .egift-section .btn-qrCode {
   background-color: transparent;
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .egift-section .btn-qrCode:hover {
@@ -1310,7 +1318,7 @@
 }
 
 body {
-  background-color: #e5e5e5;
+  background-color: var(--color-main);
   font-family: "Open Sans", sans-serif;
 }
 
@@ -1318,7 +1326,7 @@ h1,
 h2,
 h3 {
   font-family: "Bad Script";
-  color: #052293;
+  color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -1355,28 +1363,28 @@ h3 {
 .form-control,
 .form-select {
   border-color: #196534;
-  color: #383b5e;
+  color: var(--color-secondary);
   background-color: transparent;
 }
 
 .form-control::-webkit-input-placeholder,
 .form-select::-webkit-input-placeholder {
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .form-control:-ms-input-placeholder,
 .form-select:-ms-input-placeholder {
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .form-control::-ms-input-placeholder,
 .form-select::-ms-input-placeholder {
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .form-control::placeholder,
 .form-select::placeholder {
-  color: #383b5e;
+  color: var(--color-secondary);
 }
 
 .form-control:focus,
@@ -1447,10 +1455,47 @@ h3 {
           align-items: center;
   width: 100%;
   z-index: 1500;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1.25rem;
 }
 
 .loader-wrapper .spinner {
   position: relative;
   width: 84px;
+}
+
+.loader-wrapper span {
+  color: var(--vd-color-pink);
+  font-weight: 700;
+  -webkit-animation: fade 2s linear infinite;
+          animation: fade 2s linear infinite;
+  letter-spacing: 5px;
+}
+
+@-webkit-keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+  80% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
 }
 /*# sourceMappingURL=styles.css.map */
