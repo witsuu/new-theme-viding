@@ -33,8 +33,13 @@
     {
         "name":"Leaf Art",
         "path":"leaf-art"
-    },{
+    },
+    {
         "name":"Songket",
         "path":"songket"
+    },
+    {
+        "name":"Shop Signage",
+        "path":"shop-signage"
     }
 ]
