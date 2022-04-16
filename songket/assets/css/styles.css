@@ -290,7 +290,7 @@
 .envelope-wrap {
   position: fixed;
   z-index: 1300;
-  background-color: #fff;
+  background-color: var(--color-main);
   -webkit-transition: all 1s ease-out;
   transition: all 1s ease-out;
 }
@@ -452,7 +452,7 @@
 }
 
 .couple-section .couple h3 {
-  color: var(--bs-color-white);
+  color: #fff;
 }
 
 @media (max-width: 991px) {
@@ -851,7 +851,7 @@
   position: relative;
   padding: 0 0 12rem;
   text-align: center;
-  color: #1e1f1e;
+  color: var(--color-dark);
   margin-top: -150px;
 }
 
@@ -1037,7 +1037,7 @@
 
 .gallery-section .splide .splide__arrow {
   border-radius: 0;
-  background-color: #c52e42;
+  background-color: var(--color-primary);
   width: 70px;
   height: 45px;
   z-index: 10;
@@ -1095,7 +1095,7 @@
 
 .apology-section {
   position: relative;
-  background-color: #c52e42;
+  background-color: var(--color-primary);
   padding: 13rem 0;
   overflow: hidden;
 }
@@ -1318,7 +1318,7 @@
   position: relative;
   padding: 5rem 0;
   text-align: center;
-  background-color: #c52e42;
+  background-color: var(--color-primary);
 }
 
 @media (max-width: 767px) {
@@ -1328,7 +1328,7 @@
 }
 
 .thank-section .title-section h2 {
-  color: var(--bs-color-white);
+  color: #fff;
 }
 
 .thank-section .thank {

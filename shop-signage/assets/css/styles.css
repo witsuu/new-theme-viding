@@ -115,7 +115,7 @@
       -ms-flex-align: center;
           align-items: center;
   background-color: var(--color-primary);
-  padding-top: 3rem;
+  padding-top: 3.5rem;
 }
 
 .header-section .neuron-brown,
@@ -417,6 +417,27 @@
           clip-path: url(#trapezoid-story-border) !important;
 }
 
+.story-section .neuron-brown {
+  position: absolute;
+  top: 11%;
+  left: 15%;
+  z-index: 2;
+  width: 126px;
+}
+
+.story-section .star-orange {
+  position: absolute;
+  top: 30px;
+  right: 35%;
+}
+
+.story-section .star-yellow {
+  position: absolute;
+  bottom: 30px;
+  right: 8%;
+  width: 118px;
+}
+
 .story-section .story-description {
   position: relative;
 }
@@ -484,9 +505,43 @@
           clip-path: url(#trapezoid-story-border) !important;
 }
 
+.venue-section .star-orange {
+  right: 50px;
+  bottom: 0;
+}
+
+.venue-section .star-yellow {
+  width: 126px;
+  top: 30%;
+  left: -50px;
+  -webkit-transform: rotate(30deg);
+          transform: rotate(30deg);
+}
+
+.venue-section .neuron-brown {
+  right: -10px;
+  top: 10%;
+  width: 136px;
+}
+
+.venue-section .neuron-green {
+  left: 0;
+  bottom: 20%;
+  width: 148px;
+}
+
 .venue-section .venue-wrapper {
   position: relative;
   padding: 3rem 0;
+}
+
+.venue-section .venue-wrapper .arrow-yellow {
+  left: 93.5%;
+  bottom: 60%;
+  width: 205px;
+  -webkit-transform: scaleX(-1) rotate(3deg);
+          transform: scaleX(-1) rotate(3deg);
+  z-index: 5;
 }
 
 .venue-section .venue-wrapper .venue-content {
@@ -505,7 +560,10 @@
           justify-content: space-evenly;
   background-color: var(--color-secondary);
   padding: 3rem 1.5rem;
-  margin: 1.5rem 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2rem 0 0.75rem;
   color: #fff;
 }
 
@@ -551,8 +609,8 @@
 }
 
 .venue-section .prokes-wrap .prokes path {
-  fill: var(--color-secondary);
-  stroke: var(--color-secondary);
+  fill: var(--color-dark);
+  stroke: var(--color-dark);
 }
 
 @media (max-width: 767px) {
@@ -564,10 +622,6 @@
 .venue-section .card {
   border: none;
   background-color: transparent;
-}
-
-.venue-section .card .card-body {
-  padding: 0 1rem;
 }
 
 .venue-section .maps-embed {
@@ -597,6 +651,26 @@
           clip-path: url(#trapezoid-story-border) !important;
 }
 
+.rsvp-section .star-yellow {
+  bottom: -90px;
+  right: 5%;
+  -webkit-transform: rotate(-20deg);
+          transform: rotate(-20deg);
+  width: 120px;
+}
+
+.rsvp-section .neuron-brown {
+  width: 146px;
+  right: -50px;
+  top: -120px;
+}
+
+.rsvp-section .neuron-green {
+  width: 138px;
+  bottom: -130px;
+  left: 8%;
+}
+
 .rsvp-section .form-control,
 .rsvp-section .form-select {
   margin-bottom: 1rem;
@@ -623,6 +697,25 @@
 
 .wishes-section .tepi-wrap .tepi-2 {
   background-color: var(--color-main) !important;
+}
+
+.wishes-section .star-yellow {
+  width: 146px;
+  right: 41%;
+  bottom: -125px;
+  -webkit-transform: rotate(-10deg);
+          transform: rotate(-10deg);
+}
+
+.wishes-section .star-orange {
+  top: 6%;
+  right: -60px;
+}
+
+.wishes-section .neuron-brown {
+  left: 0;
+  width: 148px;
+  top: 3%;
 }
 
 .wishes-section .card {
@@ -672,6 +765,14 @@
 .egift-section .tepi-wrap {
   top: 50px;
   height: 83%;
+}
+
+.egift-section .arrow-yellow {
+  left: 98%;
+  top: 4%;
+  width: 118px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .egift-section .title-section {
@@ -740,23 +841,30 @@
   padding: 3rem 0;
 }
 
-@media (max-width: 767px) {
-  .gallery-section {
-    padding: 5rem 0 3rem;
-  }
+.gallery-section .star-orange {
+  top: 0;
+  right: 0;
 }
 
-.gallery-section .deco-tali-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
+.gallery-section .star-yellow {
+  bottom: -180px;
+  left: 20%;
+  width: 118px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  z-index: 5;
 }
 
-@media (min-width: 992px) {
-  .gallery-section .deco-tali-bottom {
-    height: 409px;
-  }
+.gallery-section .arrow-yellow {
+  right: 99%;
+  bottom: 70%;
+  width: 118px;
+}
+
+.gallery-section .neuron-brown {
+  right: -50px;
+  bottom: -50px;
+  width: 138px;
 }
 
 .gallery-section .img-gallery {
@@ -808,6 +916,8 @@
 
 .gallery-section .splide {
   margin-bottom: 0;
+  position: relative;
+  z-index: 2;
 }
 
 .gallery-section .splide .splide__track {
@@ -910,6 +1020,37 @@
           clip-path: url(#trapezoid-story-border) !important;
 }
 
+.apology-section .neuron-brown {
+  right: 25%;
+  top: -110px;
+  width: 146px;
+}
+
+.apology-section .neuron-green {
+  left: 25%;
+  bottom: -120px;
+  width: 136px;
+}
+
+.apology-section .star-orange {
+  left: -20px;
+  top: -105px;
+}
+
+.apology-section .star-yellow {
+  right: 13%;
+  bottom: -140px;
+  width: 120px;
+  -webkit-transform: rotate(-12deg);
+          transform: rotate(-12deg);
+}
+
+.apology-section .arrow-yellow {
+  left: 0;
+  top: 50px;
+  width: 118px;
+}
+
 .stream-section {
   position: relative;
   text-align: center;
@@ -935,6 +1076,31 @@
 
 .stream-section .tepi-wrap .tepi-2 {
   background-color: var(--color-main) !important;
+}
+
+.stream-section .star-orange {
+  right: 0;
+  top: -120px;
+}
+
+.stream-section .star-yellow {
+  width: 118px;
+  -webkit-transform: rotate(40deg);
+          transform: rotate(40deg);
+  bottom: -100px;
+  left: 20px;
+}
+
+.stream-section .neuron-brown {
+  right: 20px;
+  bottom: -40px;
+  width: 146px;
+}
+
+.stream-section .neuron-green {
+  top: 13%;
+  left: 0;
+  width: 138px;
 }
 
 .stream-section .stream-wrapper {
@@ -1002,12 +1168,6 @@
   color: var(--color-secondary);
 }
 
-.thank-section .tepi-wrap {
-  top: 80px;
-  height: 70%;
-  width: 60%;
-}
-
 .thank-section .tepi-wrap .tepi-1 {
   -webkit-clip-path: url(#trapezoid-story-border);
           clip-path: url(#trapezoid-story-border);
@@ -1016,6 +1176,25 @@
 .thank-section .tepi-wrap .tepi-2 {
   -webkit-clip-path: url(#trapezoid-story-border) !important;
           clip-path: url(#trapezoid-story-border) !important;
+}
+
+.thank-section .neuron-brown {
+  left: 40px;
+  top: -70px;
+  width: 146px;
+}
+
+.thank-section .star-orange {
+  left: 80px;
+  bottom: 0;
+}
+
+.thank-section .arrow-yellow {
+  left: 95%;
+  top: 20%;
+  width: 118px;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .thank-section .thank {
@@ -1206,13 +1385,14 @@ h2 {
   height: 100%;
 }
 
-.divider {
+.star-orange,
+.star-yellow,
+.neuron-green,
+.neuron-brown,
+.arrow-yellow,
+.arrow-green,
+.arrow-orange {
   position: absolute;
-  width: 100%;
-  left: 0;
-  top: 0;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 @media (min-width: 768px) {
