@@ -546,6 +546,12 @@
   width: 148px;
 }
 
+.venue-section .arrow-green {
+  position: absolute;
+  top: 5%;
+  left: -80px;
+}
+
 .venue-section .venue-wrapper {
   position: relative;
   padding: 3rem 0;
@@ -670,6 +676,12 @@
           clip-path: url(#trapezoid-story-border) !important;
 }
 
+.rsvp-section .arrow-green {
+  top: -120px;
+  left: -50px;
+  position: absolute;
+}
+
 .rsvp-section .star-yellow {
   bottom: 0px;
   right: 5%;
@@ -705,8 +717,8 @@
 }
 
 .wishes-section .container {
-  padding-top: 8rem;
-  padding-bottom: 10rem;
+  padding-top: 10rem;
+  padding-bottom: 12rem;
 }
 
 @media (max-width: 767px) {
@@ -730,6 +742,7 @@
   bottom: 0;
   -webkit-transform: rotate(-10deg);
           transform: rotate(-10deg);
+  z-index: 2;
 }
 
 .wishes-section .star-orange {
@@ -741,6 +754,13 @@
   left: 0;
   width: 148px;
   top: 10%;
+}
+
+.wishes-section .arrow-green {
+  bottom: 0;
+  left: -100px;
+  position: absolute;
+  z-index: 2;
 }
 
 .wishes-section .card {
@@ -894,6 +914,12 @@
   right: -50px;
   bottom: -50px;
   width: 138px;
+}
+
+.gallery-section .arrow-orange {
+  position: absolute;
+  left: -140px;
+  bottom: -80px;
 }
 
 .gallery-section .img-gallery {
@@ -1078,6 +1104,12 @@
   width: 118px;
 }
 
+.apology-section .arrow-brown {
+  position: absolute;
+  left: 90%;
+  bottom: 6%;
+}
+
 .stream-section {
   position: relative;
   text-align: center;
@@ -1132,6 +1164,12 @@
   top: 13%;
   left: 0;
   width: 138px;
+}
+
+.stream-section .arrow-brown {
+  top: 25%;
+  right: -40px;
+  position: absolute;
 }
 
 .stream-section .stream-wrapper {
@@ -1230,6 +1268,12 @@
   width: 118px;
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
+}
+
+.thank-section .arrow-green {
+  position: absolute;
+  left: -170px;
+  top: 5%;
 }
 
 .thank-section .thank {
