@@ -464,7 +464,7 @@
     width: 150%;
     left: -110px;
     height: 80%;
-    top: -105px;
+    top: -70px;
   }
 }
 
@@ -951,7 +951,7 @@
 .gallery-section .spring-9 {
   position: absolute;
   width: 100%;
-  top: -278px;
+  top: -50px;
   left: 0;
 }
 
@@ -970,15 +970,9 @@
   }
 }
 
-@media (max-width: 991px) {
-  .gallery-section .spring-9 {
-    top: -220px;
-  }
-}
-
 @media (max-width: 767px) {
   .gallery-section .spring-9 {
-    top: -120px;
+    top: -30px;
   }
 }
 
