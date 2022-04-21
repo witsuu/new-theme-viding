@@ -958,9 +958,11 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .venue-section .prokes-wrap .prokes {
@@ -974,11 +976,27 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: 132px;
 }
 
-.venue-section .prokes-wrap .prokes path {
-  fill: var(--color-dark);
-  stroke: var(--color-dark);
+@media (max-width: 767px) {
+  .venue-section .prokes-wrap .prokes {
+    width: 120px;
+  }
+}
+
+.venue-section .prokes-wrap .prokes .prokes-icon {
+  width: auto;
+  height: 60px;
+}
+
+@media (max-width: 767px) {
+  .venue-section .prokes-wrap .prokes .prokes-icon {
+    height: 52px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1944,7 +1962,7 @@ h2 {
   }
 }
 
-.moveable-section {
+.moveable-section-wrapper {
   overflow-x: hidden;
   overflow-y: hidden;
 }
