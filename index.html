@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&family=Saira+Condensed&display=swap"
         rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
     <link
         href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Caveat&family=Dancing+Script&family=Open+Sans&family=Roboto&family=Amatic+SC&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Playball&family=Righteous&family=Balsamiq+Sans&family=Cinzel&family=Courgette&family=Itim&family=Lobster&family=Londrina+Solid:wght@300&family=Mate+SC&family=Oswald&family=Playball&family=Righteous&family=Architects+Daughter&family=Bebas+Neue&family=Ceviche+One&family=Cinzel&family=Concert+One&family=Cookie&family=DM+Serif+Display&family=Dongle&family=Fredoka+One&family=Fruktur&family=Gluten&family=Great+Vibes&family=Handlee&family=Irish+Grover&family=Josefin+Sans&family=Kaushan+Script&family=Luckiest+Guy&family=Merienda&family=Mochiy+Pop+P+One&family=Noto+Serif+Display&family=Orbitron&family=Pacifico&family=Passion+One&family=Permanent+Marker&family=Russo+One&family=Shadows+Into+Light&family=Staatliches&family=Acme&family=Alex+Brush&family=Anton&family=Bangers&family=Bree+Serif&family=Francois+One&family=Fugaz+One&family=Genos&family=Gochi+Hand&family=Hammersmith+One&family=Julius+Sans+One&family=Kanit&family=Kings&family=Patrick+Hand&family=Petemoss&family=Playfair+Display+SC&family=Praise&family=Satisfy&family=Shalimar&family=Viga&family=Yuji+Boku&family=Black+Ops+One&family=Carattere&family=Damion&family=Lilita+One&family=Sriracha&display=swap"
         rel="stylesheet">
@@ -22,14 +23,16 @@
         integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./colorjoe.css">
 
     <!-- styles custom -->
+    <link rel="stylesheet" href="./app.css">
     <style>
-        /* :root {
+        :root {
             --color-main: #4b5770;
             --color-primary: #2dac1d;
             --color-secondary: #303030;
-        } */
+        }
 
         body {
             background-color: var(--color-main);
@@ -190,6 +193,82 @@
 </head>
 
 <body>
+    <div class="colorpicker-wrapper">
+        <button type="button" class="btn btn-palette shadow" onclick="colorPickerToggle()">
+            <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3022_561)">
+                    <path
+                        d="M25.9717 17.266C30.192 17.0009 31.9596 18.8724 33.2408 20.7174C34.3739 22.3486 34.6284 24.4427 34.2501 26.3991C33.9991 27.6962 33.5354 29.6932 32.9462 30.826C30.4377 35.6436 25.1524 37.9639 19.2394 37.0786C13.4782 36.2179 8.85172 31.4092 8.12306 25.5526C7.60707 21.4155 8.95108 17.5876 11.4247 14.8113C11.4247 14.8113 13.269 12.7719 16.0808 12.8602C19.5654 12.9715 20.8467 15.9547 20.8467 16.8931"
+                        fill="#FFE7E5" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M27.2058 17.1971C31.242 16.9439 32.9338 18.7292 34.1607 20.4924C35.2327 22.0375 35.4569 24.0243 35.0978 25.8781C34.8498 27.1626 34.4178 28.3861 33.8326 29.5098C31.3478 34.2818 26.0846 37.3369 20.229 36.4609H20.2272C14.521 35.607 9.94333 30.8423 9.2214 25.0408C8.70913 20.9378 10.0418 17.1398 12.4938 14.386C12.4974 14.3823 12.5011 14.3786 12.5047 14.3749C12.5047 14.3749 14.3898 12.1478 16.9967 12.231C18.4734 12.2772 19.2773 13.1403 19.7149 14.081C20.1998 15.1215 20.2746 16.2582 20.2746 16.6962C20.2746 17.101 20.6027 17.4299 21.0074 17.4299C21.4121 17.4299 21.7403 17.101 21.7403 16.6962C21.7403 16.1528 21.6437 14.7482 21.0457 13.4637C20.4022 12.0794 19.2117 10.8337 17.0441 10.7635C13.7699 10.6618 11.389 13.4212 11.389 13.4212C8.67813 16.4633 7.19964 20.6717 7.76661 25.2219C8.56875 31.6722 13.6678 36.9636 20.012 37.9098C26.5222 38.8857 32.3723 35.4905 35.1342 30.1862C35.7814 28.9405 36.2609 27.5839 36.538 26.1553C36.9701 23.9171 36.662 21.5237 35.3639 19.657C33.9092 17.5612 31.9056 15.432 27.1146 15.7333C26.7099 15.7592 26.4037 16.1066 26.4292 16.5114C26.4529 16.9143 26.8029 17.2229 27.2058 17.1971Z"
+                        fill="#EC87BC" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.8544 32.0214C21.8544 30.6152 20.7229 29.4785 19.3354 29.4785C17.9476 29.4785 16.8164 30.6152 16.8164 32.0214C16.8164 33.4272 17.9476 34.5638 19.3354 34.5638C20.7229 34.5638 21.8544 33.4272 21.8544 32.0214Z"
+                        fill="#FC80BE" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M29.3739 30.6352C29.3739 29.2294 28.2424 28.0928 26.8549 28.0928C25.4675 28.0928 24.3359 29.2294 24.3359 30.6352C24.3359 32.0414 25.4675 33.1781 26.8549 33.1781C28.2424 33.1781 29.3739 32.0414 29.3739 30.6352Z"
+                        fill="#F6399D" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M33.8759 24.8602C33.8759 23.4541 32.7444 22.3174 31.3569 22.3174C29.9691 22.3174 28.8379 23.4541 28.8379 24.8602C28.8379 26.266 29.9691 27.4027 31.3569 27.4027C32.7444 27.4027 33.8759 26.266 33.8759 24.8602Z"
+                        fill="#EC87BC" />
+                    <path d="M26.125 22.7344C26.125 22.7344 25.1542 25.3379 22.6451 25.5582Z" fill="#FFE7E5" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M25.4388 22.4771C25.4388 22.4771 24.653 24.6464 22.5801 24.8277C22.1781 24.8627 21.8798 25.2184 21.9146 25.6233C21.9497 26.0257 22.3063 26.3235 22.7094 26.2899C25.6561 26.0293 26.8133 22.9905 26.8133 22.9905C26.9533 22.6118 26.761 22.1878 26.382 22.0479C26.0033 21.9055 25.58 22.0998 25.4388 22.4771Z"
+                        fill="#EC87BC" />
+                    <path
+                        d="M16.7957 20.4844C18.5458 20.4844 19.9623 21.9223 19.9623 23.6947C19.9623 25.4671 18.5458 26.905 16.7957 26.905H13.6309V23.6947C13.6309 21.9223 15.0474 20.4844 16.7957 20.4844Z"
+                        fill="#FFE7E5" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M16.7961 19.751C14.6449 19.751 12.8984 21.5142 12.8984 23.695V26.9054C12.8984 27.3101 13.2266 27.6391 13.6313 27.6391H16.7961C18.9491 27.6391 20.6956 25.8759 20.6956 23.695C20.6956 21.5142 18.9491 19.751 16.7961 19.751ZM16.7961 21.2184C18.1434 21.2184 19.2299 22.3311 19.2299 23.695C19.2299 25.059 18.1434 26.1716 16.7961 26.1716H14.3642V23.695C14.3642 22.3311 15.4507 21.2184 16.7961 21.2184Z"
+                        fill="#EC87BC" />
+                    <path
+                        d="M19.1685 21.7054L18.6033 21.1325C18.3226 20.8497 18.3718 20.3119 18.7218 19.8554L21.7043 15.9557C23.4034 13.7323 25.3997 11.7104 27.591 9.986L31.4431 6.95865C31.8916 6.60565 32.4239 6.55575 32.7046 6.84037L33.2661 7.41146C33.5487 7.69424 33.4977 8.23206 33.1495 8.68857L30.1578 12.5994C28.4587 14.8209 26.4625 16.8428 24.2712 18.5672L20.4264 21.5872C19.9779 21.9383 19.4474 21.9901 19.1685 21.7054Z"
+                        fill="#FFE7E5" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M18.645 22.2196C19.1373 22.7223 20.0852 22.7851 20.8783 22.1642L24.7249 19.1442C26.9636 17.381 29.0036 15.3147 30.741 13.0451L33.7326 9.13434C34.3397 8.33777 34.2795 7.39149 33.7891 6.89802L33.2258 6.32508C32.7299 5.82237 31.7819 5.75953 30.9889 6.38237L27.1368 9.40972C24.8981 11.1729 22.8581 13.2392 21.1207 15.5106L18.1382 19.4103C17.5275 20.2069 17.5913 21.155 18.0835 21.6504C18.0817 21.6485 18.6469 22.2214 18.6469 22.2214L18.645 22.2196ZM32.2213 7.39519L32.7099 7.89235C32.6971 7.94595 32.6479 8.13631 32.5658 8.24351L29.5742 12.1543C27.9134 14.3278 25.9609 16.3054 23.817 17.9909L19.974 21.0109C19.8756 21.0867 19.706 21.1366 19.6514 21.1513L19.1591 20.6523C19.1719 20.5987 19.2211 20.4084 19.3032 20.3012L22.2875 16.4015C23.9483 14.2261 25.9008 12.2486 28.0447 10.563L31.8968 7.53565C31.9952 7.45803 32.1666 7.40997 32.2213 7.39519Z"
+                        fill="#EC87BC" />
+                    <path fill-rule="evenodd" clip-rule="evenodd"
+                        d="M21.9086 16.0538L24.0455 18.2184C24.3292 18.5058 24.7946 18.5095 25.0819 18.2258C25.3706 17.9407 25.3729 17.4755 25.0892 17.1881L22.9523 15.0235C22.6686 14.7361 22.2032 14.7324 21.9146 15.0174C21.6272 15.3012 21.6248 15.7664 21.9086 16.0538Z"
+                        fill="#EC87BC" />
+                </g>
+                <defs>
+                    <clipPath id="clip0_3022_561">
+                        <rect width="44" height="44" fill="white" />
+                    </clipPath>
+                </defs>
+            </svg>
+            Variasi <br> Warna
+            <i class="fas fa-angle-down"></i>
+        </button>
+        <div class="colorpicker-content shadow-lg">
+            <div class="colorpicker-action">
+                <button type="button" disabled class="btn btn-reset px-0" onclick="cp.handleResetButton()"><i
+                        class="fas fa-rotate-left"></i>Reset</button>
+            </div>
+            <div class="colorjoe" style="margin: 0;"></div>
+            <div class="d-flex justify-content-evenly py-2" style="gap: .3rem;">
+                <div class="col-3">
+                    <select name="code-name" id="code-name" class="form-control">
+                        <option value="HEX" selected>HEX</option>
+                    </select>
+                </div>
+                <div class="col-5">
+                    <input type="text" id="code-color" class="form-control">
+                </div>
+                <div class="col-3">
+                    <input type="text" id="alpha" class="form-control">
+                </div>
+            </div>
+            <div class="colorpicker-menu">
+                <div class="colorpicker-menu-title">
+                    <h6>Swatches</h6>
+                </div>
+                <div class="colorpicker-menu-content" id="color-swatches">
+                </div>
+            </div>
+        </div>
+    </div>
     <aside>
         <div class="sidebar">
             <button class="btn btn-sidebar" id="btn-sidebar">
@@ -279,8 +358,10 @@
     <!-- scripts plugins -->
     <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js"
         integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
+    <script src="./colorjoe.min.js"></script>
 
     <!-- scripts custom -->
+    <script src="./colorPicker.js"></script>
     <script>
         let colormain = document.querySelector("#color-main");
         let colorprimary = document.querySelector("#color-primary");
@@ -369,6 +450,113 @@
                 path: item.path
             }))
         })
+    </script>
+
+    <script>
+        const colorPickerToggle = () => {
+            const cp = document.querySelector(".colorpicker-content")
+            cp.classList.toggle("show")
+        }
+
+        class colorPicker {
+            constructor(root, defaultColor) {
+                this.root = root;
+                this.defaultColor = defaultColor || "#ffffff";
+                this.colorPalette = ["#fff000", "#ffdd00", "#dad442", "#3030aa", "#0ff050", "#0fdd04", "#aad542",
+                    "#3f3faa", "#1b5552", '#ea0b41'
+                ];
+
+                this.colorjoe = colorjoe.rgb(this.root.querySelector('.colorjoe'), this.defaultColor, ["alpha"])
+                this.colorjoe.show()
+
+                this.root.querySelector(".oned.alpha .bg").style.background =
+                    'linear-gradient(to left,  rgba(255,255,255,1) 0%,' + this.defaultColor + ' 80%,' + this
+                    .defaultColor + ' 100%';
+
+                this.showCodeColor(this.defaultColor)
+                this.showAlphaColor(1)
+
+                this.colorjoe.on("change", color => {
+                    this.root.querySelector(".oned.alpha .bg").style.background =
+                        'linear-gradient(to left,  rgba(255,255,255,1) 0%,' + color.hex() + ' 80%,' + color
+                        .hex() + ' 100%';
+                    this.showCodeColor(color.hex())
+                    this.showAlphaColor(color.alpha())
+
+                    // this.root.querySelector('.selected').classList.remove('selected')
+                });
+
+                // use this event for save color
+                this.colorjoe.on('done', color => {
+                    this.root.querySelector(".selected") && this.root.querySelector(".selected")
+                        .classList.remove("selected")
+
+                    this.setPrimaryColor(color.cssa())
+
+                    // handle change disable button reset
+                    if (this.colorjoe.get().hex() !== this.defaultColor) {
+                        this.root.querySelector(".btn-reset").disabled = false
+                    }
+                })
+
+                this.csw = this.root.querySelector("#color-swatches");
+
+                this.colorPalette.map(item => {
+                    this.htmlPalette = document.createElement('div')
+                    this.htmlPalette.classList.add("color")
+                    this.htmlPalette.dataset.color = item
+                    this.htmlPalette.style.backgroundColor = item
+
+                    this.csw.appendChild(this.htmlPalette)
+                })
+
+                this.root.querySelectorAll(".color").forEach(el => {
+                    el.addEventListener('mouseup', e => {
+                        this.root.querySelector(".selected") && this.root.querySelector(".selected")
+                            .classList.remove("selected")
+
+                        this.setSelectedColor(el.dataset.color)
+                        this.setPrimaryColor(el.dataset.color)
+
+                        el.classList.add('selected')
+
+                        // handle change disable button reset
+                        if (this.colorjoe.get().hex() !== this.defaultColor) {
+                            this.root.querySelector(".btn-reset").disabled = false
+                        }
+                    })
+                });
+            }
+
+            setSelectedColor = (color) => {
+                this.colorjoe.set(color)
+            }
+
+            showCodeColor = (color) => {
+                const el = document.querySelector("#code-color")
+                el.value = color;
+            }
+
+            showAlphaColor = (alpha) => {
+                const el = document.querySelector("#alpha")
+                el.value = alpha.toFixed(2);
+            }
+
+            setPrimaryColor = (color) => {
+                document.querySelector(':root').style.setProperty('--color-main', color)
+            }
+
+            handleResetButton = () => {
+                this.colorjoe.set(this.defaultColor);
+                this.setPrimaryColor(this.defaultColor);
+
+                this.root.querySelector('.btn-reset').disabled = true;
+                this.root.querySelector(".selected") && this.root.querySelector(".selected")
+                    .classList.remove("selected")
+            }
+        }
+
+        const cp = new colorPicker(document.querySelector('.colorpicker-wrapper'), '#292b4b')
     </script>
 </body>
 
