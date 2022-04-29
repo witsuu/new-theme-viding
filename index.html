@@ -533,13 +533,11 @@
             }
 
             showCodeColor = (color) => {
-                const el = document.querySelector("#code-color")
-                el.value = color;
+                document.querySelector("#code-color").value = color;
             }
 
             showAlphaColor = (alpha) => {
-                const el = document.querySelector("#alpha")
-                el.value = alpha.toFixed(2);
+                document.querySelector("#alpha").value = alpha.toFixed(2) * 100 + "%";
             }
 
             setPrimaryColor = (color) => {
