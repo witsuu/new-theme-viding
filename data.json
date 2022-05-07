@@ -1,45 +1,55 @@
 [
     {
         "name":"Spring Memory",
-        "path":"spring"
+        "path":"spring",
+        "status":"DONE"
     },
     {
         "name":"Chinese",
-        "path":"chinese"
+        "path":"chinese",
+        "status":"DONE"
     },
     {
         "name":"Christian",
-        "path":"christian"
+        "path":"christian",
+        "status":"DONE"
     },
     {
         "name":"Ulos",
-        "path":"ulos"
+        "path":"ulos",
+        "status":"DONE"
     },
     
     {
         "name":"Winter",
-        "path":"winter"
+        "path":"winter",
+        "status":""
     },
     
     {
         "name":"Bold Brush",
-        "path":"bold-brush"
+        "path":"bold-brush",
+        "status":""
     },
     
     {
         "name":"Art Deco",
-        "path":"art-deco"
+        "path":"art-deco",
+        "status":""
     },
     {
         "name":"Leaf Art",
-        "path":"leaf-art"
+        "path":"leaf-art",
+        "status":"DONE"
     },
     {
         "name":"Songket",
-        "path":"songket"
+        "path":"songket",
+        "status":""
     },
     {
         "name":"Shop Signage",
-        "path":"shop-signage"
+        "path":"shop-signage",
+        "status":""
     }
 ]

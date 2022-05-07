@@ -361,7 +361,6 @@
     <script src="./colorjoe.min.js"></script>
 
     <!-- scripts custom -->
-    <script src="./colorPicker.js"></script>
     <script>
         let colormain = document.querySelector("#color-main");
         let colorprimary = document.querySelector("#color-primary");
@@ -430,12 +429,15 @@
         const addList = (datas) => {
             const list = document.querySelector("#list-theme")
             const el = document.createElement('li')
-            el.setAttribute("class", 'list-item')
+            el.classList.add("list-item")
 
             const {
                 name,
-                path
+                path,
+                status
             } = datas;
+
+            status === "DONE" && el.classList.add('text-decoration-line-through');
 
             el.innerHTML = `<a href="${path}" class="nav-link">${name}</a>`
 
@@ -447,7 +449,8 @@
         }).then((jsonData) => {
             jsonData.map(item => addList({
                 name: item.name,
-                path: item.path
+                path: item.path,
+                status: item.status
             }))
         })
     </script>
@@ -461,20 +464,26 @@
         class colorPicker {
             constructor(root, defaultColor) {
                 this.root = root;
-                this.defaultColor = defaultColor || "#ffffff";
-                this.colorPalette = ["#fff000", "#ffdd00", "#dad442", "#3030aa", "#0ff050", "#0fdd04", "#aad542",
+                this.defaultColor = defaultColor;
+
+                this.colorTheme = localStorage.getItem("color-theme") || this.defaultColor;
+                this.colorPalette = ["#fff000", "#ffdd00", "#dad442", "rgba(26,52,50,0.845833)", "#0ff050",
+                    "#0fdd04", "#aad542",
                     "#3f3faa", "#1b5552", '#ea0b41'
                 ];
 
-                this.colorjoe = colorjoe.rgb(this.root.querySelector('.colorjoe'), this.defaultColor, ["alpha"])
+                this.colorjoe = colorjoe.rgb(this.root.querySelector('.colorjoe'), this.colorTheme, ["alpha"])
                 this.colorjoe.show()
+                this.setSelectedColor(this.colorTheme)
 
                 this.root.querySelector(".oned.alpha .bg").style.background =
                     'linear-gradient(to left,  rgba(255,255,255,1) 0%,' + this.defaultColor + ' 80%,' + this
-                    .defaultColor + ' 100%';
+                    .colorTheme + ' 100%';
 
-                this.showCodeColor(this.defaultColor)
+                this.showCodeColor(this.colorTheme)
                 this.showAlphaColor(1)
+
+                this.handleDisableResetButton()
 
                 this.colorjoe.on("change", color => {
                     this.root.querySelector(".oned.alpha .bg").style.background =
@@ -491,32 +500,30 @@
                     this.root.querySelector(".selected") && this.root.querySelector(".selected")
                         .classList.remove("selected")
 
-                    this.setPrimaryColor(color.cssa())
+                    this.setSelectedColor(color.cssa())
 
-                    // handle change disable button reset
-                    if (this.colorjoe.get().hex() !== this.defaultColor) {
-                        this.root.querySelector(".btn-reset").disabled = false
-                    }
+                    this.handleDisableResetButton()
                 })
 
                 this.csw = this.root.querySelector("#color-swatches");
 
                 this.colorPalette.map(item => {
-                    this.htmlPalette = document.createElement('div')
-                    this.htmlPalette.classList.add("color")
-                    this.htmlPalette.dataset.color = item
-                    this.htmlPalette.style.backgroundColor = item
+                    this.htmlPalette = document.createElement('div');
+                    this.htmlPalette.classList.add("color");
+                    this.htmlPalette.dataset.color = item;
+                    this.htmlPalette.style.backgroundColor = item;
 
                     this.csw.appendChild(this.htmlPalette)
                 })
 
                 this.root.querySelectorAll(".color").forEach(el => {
+                    el.dataset.color === this.colorTheme && el.classList.add('selected');
+
                     el.addEventListener('mouseup', e => {
                         this.root.querySelector(".selected") && this.root.querySelector(".selected")
                             .classList.remove("selected")
 
                         this.setSelectedColor(el.dataset.color)
-                        this.setPrimaryColor(el.dataset.color)
 
                         el.classList.add('selected')
 
@@ -528,8 +535,12 @@
                 });
             }
 
-            setSelectedColor = (color) => {
-                this.colorjoe.set(color)
+            setSelectedColor = (color, skipCjUpdate = false) => {
+                localStorage.setItem('color-theme', color)
+
+                document.querySelector(':root').style.setProperty('--color-main', color);
+
+                !skipCjUpdate && this.colorjoe.set(color);
             }
 
             showCodeColor = (color) => {
@@ -540,17 +551,22 @@
                 document.querySelector("#alpha").value = alpha.toFixed(2) * 100 + "%";
             }
 
-            setPrimaryColor = (color) => {
-                document.querySelector(':root').style.setProperty('--color-main', color)
+            handleDisableResetButton = () => {
+                // handle change disable button reset
+                if (this.colorjoe.get().hex() !== this.colorTheme) {
+                    this.root.querySelector(".btn-reset").disabled = false
+                }
             }
 
             handleResetButton = () => {
-                this.colorjoe.set(this.defaultColor);
-                this.setPrimaryColor(this.defaultColor);
+                this.setSelectedColor(this.defaultColor);
 
                 this.root.querySelector('.btn-reset').disabled = true;
                 this.root.querySelector(".selected") && this.root.querySelector(".selected")
                     .classList.remove("selected")
+
+                // remove data in local storage
+                localStorage.removeItem("color-theme");
             }
         }
 

@@ -1,13 +1,10 @@
-:root{
-    --vd-pink:#fc17b7;
-    --color-palette:#ffffff;
-    --font-colorpicker:"Poppins",sans-serif;
-}
-
 .colorpicker-wrapper{
     position: fixed;
     left: 0;
     top: 30px;
+    --vd-pink:#fc17b7;
+    --color-palette:#ffffff;
+    --font-colorpicker:"Poppins",sans-serif;
 }
 
 .colorpicker-wrapper .btn-palette{
