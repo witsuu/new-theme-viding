@@ -35,7 +35,7 @@
     {
         "name":"Art Deco",
         "path":"art-deco",
-        "status":""
+        "status":"DONE"
     },
     {
         "name":"Leaf Art",
@@ -45,11 +45,11 @@
     {
         "name":"Songket",
         "path":"songket",
-        "status":""
+        "status":"DONE"
     },
     {
         "name":"Shop Signage",
         "path":"shop-signage",
-        "status":""
+        "status":"DONE"
     }
 ]

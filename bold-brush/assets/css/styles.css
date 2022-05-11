@@ -148,6 +148,12 @@
   padding: 1.5rem;
 }
 
+@media (max-width: 991px) {
+  .header-section .header-wrap {
+    width: 680px;
+  }
+}
+
 @media (max-width: 767px) {
   .header-section .header-wrap {
     width: 100%;
