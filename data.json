@@ -23,13 +23,13 @@
     {
         "name":"Winter",
         "path":"winter",
-        "status":""
+        "status":"DONE"
     },
     
     {
         "name":"Bold Brush",
         "path":"bold-brush",
-        "status":""
+        "status":"DONE"
     },
     
     {
@@ -51,5 +51,10 @@
         "name":"Shop Signage",
         "path":"shop-signage",
         "status":"DONE"
+    },
+    {
+        "name":"Ramadhan",
+        "path":"ramadhan",
+        "status":""
     }
 ]
