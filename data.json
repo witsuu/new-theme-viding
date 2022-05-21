@@ -1,60 +1,65 @@
 [
-    {
-        "name":"Spring Memory",
-        "path":"spring",
-        "status":"DONE"
-    },
-    {
-        "name":"Chinese",
-        "path":"chinese",
-        "status":"DONE"
-    },
-    {
-        "name":"Christian",
-        "path":"christian",
-        "status":"DONE"
-    },
-    {
-        "name":"Ulos",
-        "path":"ulos",
-        "status":"DONE"
-    },
-    
-    {
-        "name":"Winter",
-        "path":"winter",
-        "status":"DONE"
-    },
-    
-    {
-        "name":"Bold Brush",
-        "path":"bold-brush",
-        "status":"DONE"
-    },
-    
-    {
-        "name":"Art Deco",
-        "path":"art-deco",
-        "status":"DONE"
-    },
-    {
-        "name":"Leaf Art",
-        "path":"leaf-art",
-        "status":"DONE"
-    },
-    {
-        "name":"Songket",
-        "path":"songket",
-        "status":"DONE"
-    },
-    {
-        "name":"Shop Signage",
-        "path":"shop-signage",
-        "status":"DONE"
-    },
-    {
-        "name":"Ramadhan",
-        "path":"ramadhan",
-        "status":""
-    }
+  {
+    "name": "Spring Memory",
+    "path": "spring",
+    "status": "DONE"
+  },
+  {
+    "name": "Chinese",
+    "path": "chinese",
+    "status": "DONE"
+  },
+  {
+    "name": "Christian",
+    "path": "christian",
+    "status": "DONE"
+  },
+  {
+    "name": "Ulos",
+    "path": "ulos",
+    "status": "DONE"
+  },
+
+  {
+    "name": "Winter",
+    "path": "winter",
+    "status": "DONE"
+  },
+
+  {
+    "name": "Bold Brush",
+    "path": "bold-brush",
+    "status": "DONE"
+  },
+
+  {
+    "name": "Art Deco",
+    "path": "art-deco",
+    "status": "DONE"
+  },
+  {
+    "name": "Leaf Art",
+    "path": "leaf-art",
+    "status": "DONE"
+  },
+  {
+    "name": "Songket",
+    "path": "songket",
+    "status": "DONE"
+  },
+  {
+    "name": "Shop Signage",
+    "path": "shop-signage",
+    "status": "DONE"
+  },
+  {
+    "name": "Ramadhan",
+    "path": "ramadhan",
+    "status": "DONE"
+  },
+  {
+    "name": "Tuntrum",
+    "path": "tuntrum",
+    "status": ""
+  }
 ]

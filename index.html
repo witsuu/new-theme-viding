@@ -269,28 +269,6 @@
             </div>
         </div>
     </div>
-    <aside>
-        <div class="sidebar">
-            <button class="btn btn-sidebar" id="btn-sidebar">
-                <i class="fas fa-close" id="icon-close"><span>Close</span></i>
-                <i class="fas fa-palette" id="icon-open"><span>Palettes</span></i>
-            </button>
-            <div class="sidebar-title">
-                <h2>Color Picker</h2>
-            </div>
-            <div class="sidebar-menu">
-                <label for="color-primary">Color Main</label>
-                <input type="color" name="main" id="color-main" onchange="setColorMain()">
-            </div>
-            <div class="sidebar-menu">
-                <label for="color-primary">Color Primary</label>
-                <input type="color" name="primary" id="color-primary" onchange="setColorPrimary()">
-            </div>
-            <div class="sidebar-footer">
-                <button class="btn bg-transparent btn-reset" onclick="resetColor()">Reset To Default</button>
-            </div>
-        </div>
-    </aside>
     <section class="section">
         <div class="banner">
             <a href="https://github.com/witsuu/new-theme-viding" class="text-white text-decoration-none" target="_blank"
@@ -362,69 +340,6 @@
 
     <!-- scripts custom -->
     <script>
-        let colormain = document.querySelector("#color-main");
-        let colorprimary = document.querySelector("#color-primary");
-        // all function change color theme
-        const invokeTheme = () => {
-            if (!localStorage.getItem('color-main')) {
-                document.documentElement.style.setProperty("--color-main", "#4b5770");
-                colormain.value = "#4b5770"
-            } else {
-                document.documentElement.style.setProperty("--color-main", localStorage.getItem("color-main"));
-                colormain.value = localStorage.getItem('color-main')
-            }
-
-
-            if (!localStorage.getItem('color-primary')) {
-                document.documentElement.style.setProperty("--color-primary", "#2dac1d")
-                colorprimary.value = "#2dac1d"
-            } else {
-                document.documentElement.style.setProperty("--color-primary", localStorage.getItem(
-                    "color-primary"));
-                colorprimary.value = localStorage.getItem('color-primary')
-            }
-        }
-
-        const setColorMain = () => {
-            localStorage.setItem('color-main', colormain.value)
-            document.documentElement.style.setProperty("--color-main", colormain.value);
-        }
-
-        const setColorPrimary = () => {
-            localStorage.setItem('color-primary', colorprimary.value)
-            document.documentElement.style.setProperty("--color-primary", colorprimary.value);
-        }
-
-        const resetColor = () => {
-            if (confirm("You will reset color themes ?")) {
-                localStorage.removeItem('color-main')
-                localStorage.removeItem('color-primary')
-
-                // color-main-default
-                document.documentElement.style.setProperty("--color-main", "#4b5770");
-                colormain.value = "#4b5770"
-                // color-primary-default
-                document.documentElement.style.setProperty("--color-primary", "#2dac1d")
-                colorprimary.value = "#2dac1d"
-            }
-        }
-
-        // End all function change color theme
-
-        // function sidebar
-        const switchSidebar = () => {
-            const aside = document.querySelector('aside');
-            const icon = document.querySelector("#icon-sidebar")
-            aside.classList.toggle("active")
-        }
-
-        // invoke color theme
-        invokeTheme()
-
-        // addEvent sidebar
-        const btnSidebar = document.querySelector('#btn-sidebar')
-        btnSidebar.addEventListener('click', switchSidebar)
-
         // add list theme
         const addList = (datas) => {
             const list = document.querySelector("#list-theme")
@@ -553,7 +468,7 @@
 
             handleDisableResetButton = () => {
                 // handle change disable button reset
-                if (this.colorjoe.get().hex() !== this.colorTheme) {
+                if (this.colorjoe.get().hex() !== this.defaultColor) {
                     this.root.querySelector(".btn-reset").disabled = false
                 }
             }
