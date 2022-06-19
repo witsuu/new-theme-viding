@@ -81,5 +81,15 @@
     "name": "Polaroid",
     "path": "polaroid",
     "status": ""
+  },
+  {
+    "name": "Fanny",
+    "path": "fanny",
+    "status": ""
+  },
+  {
+    "name": "Travel Time",
+    "path": "travel-time",
+    "status": ""
   }
 ]
