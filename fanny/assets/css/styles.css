@@ -576,6 +576,8 @@
 .wishes-section .splide__pagination .splide__pagination__page {
   border: 2px solid var(--color-primary);
   background-color: transparent;
+  width: 10px;
+  height: 10px;
 }
 
 .wishes-section .splide__pagination .splide__pagination__page.is-active {
