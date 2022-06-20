@@ -552,6 +552,21 @@
 .venue-section .card {
   border: none;
   background-color: transparent;
+  margin-bottom: 1rem;
+}
+
+@media (max-width: 767px) {
+  .venue-section .card .card-body {
+    text-align: center;
+  }
+}
+
+.venue-section .card .event-name {
+  text-align: left;
+}
+
+.venue-section .card .event-place {
+  text-align: left;
 }
 
 .venue-section .maps-embed {
