@@ -80,16 +80,21 @@
   {
     "name": "Polaroid",
     "path": "polaroid",
-    "status": ""
+    "status": "DONE"
   },
   {
     "name": "Fanny",
     "path": "fanny",
-    "status": ""
+    "status": "DONE"
   },
   {
     "name": "Travel Time",
     "path": "travel-time",
+    "status": "DONE"
+  },
+  {
+    "name": "Kurimu",
+    "path": "kurimu",
     "status": ""
   }
 ]
