@@ -1,10 +1,10 @@
-// $("body").css('overflow-y', 'hidden')
+$("body").css('overflow-y', 'hidden')
 
-// $("#btn-envelope").on("click", function () {
-//     $("body").css("overflow-y", "auto");
+$("#btn-envelope").on("click", function () {
+    $("body").css("overflow-y", "auto");
 
-//     $(".envelope-wrap").css("transform", "translateY(-100%)");
-// });
+    $(".envelope-wrap").css("transform", "translateY(-100%)");
+});
 
 var previousScroll = 70;
 $(window).scroll(function (e) {
@@ -46,20 +46,57 @@ tab.forEach(el => {
 
         el.classList.add('active')
         giftWrap.querySelector(el.dataset.tab).classList.add('show');
-
-        AOS.refresh()
     })
 })
 
-$("#zoom-gallery").magnificPopup({
-    delegate: "li a",
-    type: "image",
-    mainClass: "mfp-with-zoom mfp-img-mobile",
-    gallery: {
-        enabled: true,
-    },
-    zoom: {
-        enabled: true,
-        easing: "ease-in-out",
-    },
+// $("#zoom-gallery").magnificPopup({
+//     delegate: "a",
+//     type: "image",
+//     mainClass: "mfp-with-zoom mfp-img-mobile",
+//     gallery: {
+//         enabled: true,
+//     },
+//     zoom: {
+//         enabled: true,
+//         easing: "ease-in-out",
+//     },
+// });
+
+// Parallax
+gsap.registerPlugin(ScrollTrigger);
+
+let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
+
+gsap.utils.toArray('.parallax-wrapper').forEach((imgWrap, i) => {
+    imgWrap.parallax = imgWrap.querySelector(".parallax");
+
+    gsap.fromTo(imgWrap.parallax, {
+        backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(imgWrap)}px` : "50% 0px",
+        y: 0,
+    }, {
+        backgroundPosition: () => `50% ${window.innerHeight * (1- getRatio(imgWrap))}px`,
+        y: "40%",
+        ease: "none",
+        scrollTrigger: {
+            trigger: imgWrap,
+            start: "top top",
+            end: "bottom top",
+            scrub: true,
+            invalidateOnRefresh: true,
+        }
+    })
+})
+
+AOS.init({
+    easing: "ease-out-back",
+    duration: 1000,
 });
+
+// Progress Bar
+let progress = document.querySelector(".progress");
+
+gsap.to("body", {
+    scrollTrigger: {
+        onUpdate: self => progress.style.width = `${self.progress *100}%`
+    }
+})
