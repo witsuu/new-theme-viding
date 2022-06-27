@@ -1556,7 +1556,7 @@ small {
   border-bottom: 1px solid var(--color-dark);
   width: 35px;
   content: "";
-  top: 100%;
+  top: 130%;
   left: 0;
   position: absolute;
 }
