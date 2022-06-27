@@ -656,7 +656,7 @@
 
 .venue-section .card .border-before::before {
   position: absolute;
-  top: 120%;
+  top: 150%;
   left: 0;
   width: 35px;
   border-bottom: 1px solid var(--color-dark);
@@ -692,6 +692,7 @@
       -ms-flex-align: center;
           align-items: center;
   gap: 0.5rem;
+  text-align: left;
 }
 
 @media (max-width: 767px) {
