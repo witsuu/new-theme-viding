@@ -1,3 +1,5 @@
+window.scrollTo(0, 0)
+
 $("body").css('overflow-y', 'hidden')
 
 $("#btn-envelope").on("click", function () {
@@ -49,33 +51,29 @@ tab.forEach(el => {
     })
 })
 
-// $("#zoom-gallery").magnificPopup({
-//     delegate: "a",
-//     type: "image",
-//     mainClass: "mfp-with-zoom mfp-img-mobile",
-//     gallery: {
-//         enabled: true,
-//     },
-//     zoom: {
-//         enabled: true,
-//         easing: "ease-in-out",
-//     },
-// });
+$(".zoom-gallery").magnificPopup({
+    delegate: "a",
+    type: "image",
+    mainClass: "mfp-with-zoom mfp-img-mobile",
+    gallery: {
+        enabled: true,
+    },
+    zoom: {
+        enabled: true,
+        easing: "ease-in-out",
+    },
+});
 
 // Parallax
 gsap.registerPlugin(ScrollTrigger);
-
-let getRatio = el => window.innerHeight / (window.innerHeight + el.offsetHeight);
 
 gsap.utils.toArray('.parallax-wrapper').forEach((imgWrap, i) => {
     imgWrap.parallax = imgWrap.querySelector(".parallax");
 
     gsap.fromTo(imgWrap.parallax, {
-        backgroundPosition: () => i ? `50% ${-window.innerHeight * getRatio(imgWrap)}px` : "50% 0px",
         y: 0,
     }, {
-        backgroundPosition: () => `50% ${window.innerHeight * (1- getRatio(imgWrap))}px`,
-        y: "40%",
+        y: "80%",
         ease: "none",
         scrollTrigger: {
             trigger: imgWrap,

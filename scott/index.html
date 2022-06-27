@@ -20,6 +20,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css"
         integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
 
     <!-- styles custom -->
     <link rel="stylesheet" href="./assets/css/styles.css">
@@ -78,8 +79,8 @@
 
     <!-- Envelope Section -->
     <section class="header-section envelope-wrap">
-        <div class="parallax-wrapper image-wrapper">
-            <img src="./assets/images/header-background.jpg" alt="bg-header" class="background-header parallax">
+        <div class="image-wrapper">
+            <img src="./assets/images/header-background.jpg" alt="bg-header" class="background-header">
         </div>
         <div class="container-fluid h-100">
             <div class="header-content">
@@ -191,9 +192,10 @@
                 </div>
                 <div class="row justify-content-center position-relative">
                     <div class="col-md-6 col-lg-4">
-                        <div class="couple" data-aos="zoom-out-right">
-                            <div class="image-wrap">
-                                <img src="./assets/images/mempelai-1.png" alt="couple" class="couple-image man">
+                        <div class="couple" data-aos="fade-right">
+                            <div class="image-wrap parallax-wrapper">
+                                <img src="./assets/images/mempelai-1.png" alt="couple"
+                                    class="couple-image man parallax">
                             </div>
                             <div class="couple-description">
                                 <h3>John Stew S.Pd. M.pd</h3>
@@ -213,9 +215,10 @@
                         <h3 class="mb-0">&</h3>
                     </div>
                     <div class="col-md-6 col-lg-4">
-                        <div class="couple" data-aos="zoom-out-left">
-                            <div class="image-wrap">
-                                <img src="./assets/images/mempelai-2.png" alt="couple" class="couple-image women">
+                        <div class="couple" data-aos="fade-left">
+                            <div class="image-wrap parallax-wrapper">
+                                <img src="./assets/images/mempelai-2.png" alt="couple"
+                                    class="couple-image women parallax">
                             </div>
                             <div class="couple-description">
                                 <h3>Jane Stew S.Pd. M.pd</h3>
@@ -687,9 +690,9 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-10">
+                    <div class="col-lg-10 m-auto">
                         <div class="venue-content" data-aos="fade-right">
-                            <div class="col-md-6">
+                            <div class="col-md-6 m-auto">
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="event-name mb-3">
@@ -755,8 +758,8 @@
             <div class="container position-relative">
                 <div class="row justify-content-between">
                     <div class="col-md-6 form" data-aos="fade-right">
-                        <div class="title-section mx-auto text-white">
-                            <h2 data-aos="fade-down">Wedding Wishes</h2>
+                        <div class="title-section mx-auto text-white" data-aos="fade-down">
+                            <h2>Wedding Wishes</h2>
                         </div>
                         <form action="#" class="text-center">
                             <div class="mb-3">
@@ -843,8 +846,8 @@
             <div class="container position-relative">
                 <div class="row justify-content-center">
                     <div class="col-md-8 text-center position-relative">
-                        <div class="title-section mx-auto">
-                            <h2 data-aos="fade-down">E-Gift</h2>
+                        <div class="title-section mx-auto" data-aos="fade-down">
+                            <h2>E-Gift</h2>
                         </div>
                         <div class="tabs-gift">
                             <button class="btn btn-custom tab active" data-tab="#angpao">
@@ -920,8 +923,8 @@
             <div class="container position-relative">
                 <div class="">
                     <div class="col-xxl-9 col-lg-8 col-md-10 text-center position-relative m-auto py-5">
-                        <div class="title-section mx-auto">
-                            <h2 data-aos="fade-down">Apology</h2>
+                        <div class="title-section mx-auto" data-aos="fade-down">
+                            <h2>Apology</h2>
                         </div>
                         <div class="col-md-10 m-auto col-10" data-aos="zoom-in">
                             <p>Due to the limitations of the current pandemic, we apologize for not being able
@@ -979,8 +982,8 @@
         <!-- Stream Section -->
         <section class="stream-section">
             <div class="container position-relative">
-                <div class="title-section mx-auto">
-                    <h2 data-aos="fade-down">Live Streaming</h2>
+                <div class="title-section mx-auto" data-aos="fade-down">
+                    <h2>Live Streaming</h2>
                 </div>
                 <div class="stream-wrapper">
                     <div class="col-lg-6">
@@ -1055,6 +1058,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
 
     <!-- scripts plugins -->
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
 
     <!-- scripts custom -->
     <script src="./assets/js/countdown.js"></script>
