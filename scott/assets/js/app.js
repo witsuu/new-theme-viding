@@ -73,12 +73,26 @@ gsap.utils.toArray('.parallax-wrapper').forEach((imgWrap, i) => {
     gsap.fromTo(imgWrap.parallax, {
         y: 0,
     }, {
-        y: "80%",
+        y: "100%",
         ease: "none",
         scrollTrigger: {
             trigger: imgWrap,
             start: "top top",
             end: "bottom top",
+            scrub: true,
+            invalidateOnRefresh: true,
+        }
+    })
+
+    gsap.fromTo(imgWrap.parallax, {
+        y: "-100%",
+    }, {
+        y: 0,
+        ease: "none",
+        scrollTrigger: {
+            trigger: imgWrap,
+            start: "top bottom",
+            end: "bottom bottom",
             scrub: true,
             invalidateOnRefresh: true,
         }
