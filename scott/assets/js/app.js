@@ -112,3 +112,57 @@ gsap.to("body", {
         onUpdate: self => progress.style.width = `${self.progress *100}%`
     }
 })
+
+gsap.utils.toArray(".venue-content").forEach((vc, i) => {
+    vc.event = vc.querySelector("#event");
+    vc.maps = vc.querySelector("#maps");
+    vc.buttonMaps = vc.querySelector("#button-maps");
+    vc.btnClose = vc.querySelector(".btn-close");
+
+    vc.maps.style.opacity = 0;
+
+    vc.buttonMaps.addEventListener("click", e => {
+        gsap.fromTo(vc.maps, .5, {
+            x: "100%",
+        }, {
+            x: "0%",
+            opacity: 1,
+            ease: "none",
+            display: "block",
+            position: "relative"
+        })
+
+        gsap.fromTo(vc.event, .5, {
+            x: "0%",
+        }, {
+            x: "-100%",
+            display: "none",
+            opacity: 0,
+            ease: "none",
+            position: "absolute"
+        })
+    })
+
+    vc.btnClose.addEventListener("click", e => {
+        gsap.fromTo(vc.event, .5, {
+            x: "-100%",
+        }, {
+            x: "0%",
+            ease: "none",
+            opacity: 1,
+            display: "block",
+            position: "relative"
+        })
+
+        gsap.fromTo(vc.maps, .5, {
+            x: "0%",
+            opacity: 1,
+            position: "absolute"
+        }, {
+            x: "100%",
+            opacity: 0,
+            display: "none",
+            ease: "none",
+        })
+    })
+})

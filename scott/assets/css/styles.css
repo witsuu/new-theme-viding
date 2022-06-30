@@ -572,7 +572,45 @@
   }
 }
 
+.venue-section .btn-close {
+  position: absolute;
+  right: -25px;
+  top: -25px;
+}
+
+@media (max-width: 767px) {
+  .venue-section .btn-close {
+    right: 0;
+  }
+}
+
 .venue-section .venue-wrapper {
+  position: relative;
+}
+
+.venue-section .venue-wrapper .venue-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.venue-section .venue-wrapper .venue-content #maps {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+  display: none;
+  position: absolute;
+}
+
+.venue-section .venue-wrapper .venue-content #event {
+  top: 0;
+  position: relative;
+}
+
+.venue-section .venue-wrapper .venue-content .col-md-6 {
   position: relative;
 }
 
@@ -725,7 +763,7 @@
 }
 
 .venue-section .maps-embed {
-  height: 268px;
+  height: 340px;
   position: relative;
 }
 

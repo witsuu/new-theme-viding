@@ -692,7 +692,7 @@
                     </div>
                     <div class="col-lg-10 m-auto">
                         <div class="venue-content" data-aos="fade-right">
-                            <div class="col-md-6 m-auto">
+                            <div class="col-md-6 m-auto" id="event">
                                 <div class="card border-0">
                                     <div class="card-body">
                                         <div class="event-name mb-3">
@@ -711,15 +711,18 @@
                                                 Abang,
                                                 Kota
                                                 Jakarta Pusat, Daerah Khusus Ibukota Jakarta 10220</p>
-                                            <a class="btn btn-custom mt-3" href="#">See Location</a>
+                                            <button class="btn btn-custom mt-3" id="button-maps">Open Location</button>
                                         </div>
                                     </div>
                                 </div>
-                                <!-- <div class="col-12">
-                                        <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
-                                            src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
-                                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                                    </div> -->
+                            </div>
+                            <div class="col-md-8 text-center m-auto" id="maps">
+                                <button class="btn btn-close">
+                                </button>
+                                <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                                    src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                                    frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                <a class="btn btn-custom w-50 mt-3" href="#">Location</a>
                             </div>
                         </div>
                     </div>
