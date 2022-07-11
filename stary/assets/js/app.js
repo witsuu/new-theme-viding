@@ -113,56 +113,74 @@ gsap.to("body", {
     }
 })
 
-gsap.utils.toArray(".venue-content").forEach((vc, i) => {
-    vc.event = vc.querySelector("#event");
-    vc.maps = vc.querySelector("#maps");
-    vc.buttonMaps = vc.querySelector("#button-maps");
-    vc.btnClose = vc.querySelector(".btn-close");
+// gsap.utils.toArray(".venue-content").forEach((vc, i) => {
+//     vc.event = vc.querySelector("#event");
+//     vc.maps = vc.querySelector("#maps");
+//     vc.buttonMaps = vc.querySelector("#button-maps");
+//     vc.btnClose = vc.querySelector(".btn-close");
 
-    vc.maps.style.opacity = 0;
+//     vc.maps.style.opacity = 0;
 
-    vc.buttonMaps.addEventListener("click", e => {
-        gsap.fromTo(vc.maps, .5, {
-            x: "100%",
-        }, {
-            x: "0%",
-            opacity: 1,
-            ease: "none",
-            display: "block",
-            position: "relative"
-        })
+//     vc.buttonMaps.addEventListener("click", e => {
+//         gsap.fromTo(vc.maps, .5, {
+//             x: "100%",
+//         }, {
+//             x: "0%",
+//             opacity: 1,
+//             ease: "none",
+//             display: "block",
+//             position: "relative"
+//         })
 
-        gsap.fromTo(vc.event, .5, {
-            x: "0%",
-        }, {
-            x: "-100%",
-            display: "none",
-            opacity: 0,
-            ease: "none",
-            position: "absolute"
-        })
+//         gsap.fromTo(vc.event, .5, {
+//             x: "0%",
+//         }, {
+//             x: "-100%",
+//             display: "none",
+//             opacity: 0,
+//             ease: "none",
+//             position: "absolute"
+//         })
+//     })
+
+//     vc.btnClose.addEventListener("click", e => {
+//         gsap.fromTo(vc.event, .5, {
+//             x: "-100%",
+//         }, {
+//             x: "0%",
+//             ease: "none",
+//             opacity: 1,
+//             display: "block",
+//             position: "relative"
+//         })
+
+//         gsap.fromTo(vc.maps, .5, {
+//             x: "0%",
+//             opacity: 1,
+//             position: "absolute"
+//         }, {
+//             x: "100%",
+//             opacity: 0,
+//             display: "none",
+//             ease: "none",
+//         })
+//     })
+// })
+
+const tl = new gsap.timeline();
+const ornamentWrap = document.querySelector(".ornamen-fixed");
+
+for (let i = 0; i < 5; i++) {
+    let ornament = ornamentWrap.querySelector(`.ornamen-${i}`)
+    console.log(ornament);
+
+    tl.yoyo(true);
+
+    tl.fromTo(ornament,{
+        top:"0%",
+    },{
+        top:"100%",
+        yoyo:true,
+        duration:5,
     })
-
-    vc.btnClose.addEventListener("click", e => {
-        gsap.fromTo(vc.event, .5, {
-            x: "-100%",
-        }, {
-            x: "0%",
-            ease: "none",
-            opacity: 1,
-            display: "block",
-            position: "relative"
-        })
-
-        gsap.fromTo(vc.maps, .5, {
-            x: "0%",
-            opacity: 1,
-            position: "absolute"
-        }, {
-            x: "100%",
-            opacity: 0,
-            display: "none",
-            ease: "none",
-        })
-    })
-})
+}

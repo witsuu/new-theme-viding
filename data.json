@@ -95,12 +95,12 @@
   {
     "name": "Rosas",
     "path": "rosas",
-    "status": "Done"
+    "status": "DONE"
   },
   {
     "name": "Scott",
     "path": "scott",
-    "status": "Done"
+    "status": "DONE"
   },
   {
     "name": "Javier",
@@ -110,6 +110,11 @@
   {
     "name": "Stary",
     "path": "stary",
+    "status": ""
+  },
+  {
+    "name": "Kurimu",
+    "path": "kurimu",
     "status": ""
   }
 ]
