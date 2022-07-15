@@ -121,5 +121,10 @@
     "name": "Simply",
     "path": "simply",
     "status": ""
+  },
+  {
+    "name": "Arch",
+    "path": "arch",
+    "status": ""
   }
 ]
