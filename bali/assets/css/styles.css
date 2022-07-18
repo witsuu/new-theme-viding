@@ -18,9 +18,8 @@
           align-items: center;
   text-align: center;
   position: relative;
-  margin: 0 auto;
   gap: 0.75rem;
-  padding: 0.75rem 1rem 1.75rem;
+  padding: 0.75rem 0 1.75rem;
   border-radius: 5px;
   z-index: 3;
 }
@@ -377,9 +376,9 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -417,6 +416,7 @@
 .couple-section .reminder-wrap .btn-reminder {
   z-index: 3;
   position: relative;
+  margin: 0;
 }
 
 .story-section {
@@ -1500,6 +1500,47 @@ small {
   .waves-pink-top {
     top: -15px;
   }
+}
+
+.modal .modal-body {
+  padding: 2rem 3rem;
+  position: relative;
+}
+
+.modal .modal-body .btn-modal {
+  background-color: var(--color-main);
+  color: #fff;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  border-radius: 50px;
+  opacity: 0.5;
+  padding: 0 0.425rem;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.modal .modal-body .btn-modal:hover {
+  opacity: 1;
+}
+
+.modal .modal-body .btn-custom {
+  background: transparent;
+  border-color: var(--color-dark);
+  color: var(--color-dark);
+  -webkit-transition: all 0.25 ease-in-out;
+  transition: all 0.25 ease-in-out;
+}
+
+.modal .modal-body .btn-custom:hover {
+  background: linear-gradient(315deg, var(--color-primary) 0%, var(--color-primary) 20%, var(--color-secondary) 100%);
+  border-color: var(--color-secondary);
+  color: #fff;
+}
+
+.modal .modal-body .modal-actions {
+  position: relative;
+  color: var(--color-dark);
 }
 
 ul {

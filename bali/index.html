@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Rosas</title>
+    <title>Bali</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -193,7 +193,7 @@
                 <img src="./assets/images/poleng.png" alt="poleng" class="couple-background">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class="col-xl-6 col-lg-8 col-md-10">
+                        <div class="col-lg-8 col-md-11">
                             <div class="reminder">
                                 <div class="countdown" date="08/31/2022 23:59:00">
                                     <div class="days">
@@ -719,7 +719,8 @@
                                             <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan
                                                 Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta
                                                 10220</p>
-                                            <a class="btn btn-custom mt-3" href="#">See Location</a>
+                                            <button class="btn btn-custom mt-3" data-bs-toggle="modal"
+                                                data-bs-target="#event1">See Location</button>
                                         </div>
                                         <!-- <div class="col-12 mt-3">
                                             <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
@@ -743,7 +744,8 @@
                                             <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin, Kecamatan
                                                 Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota Jakarta
                                                 10220</p>
-                                            <a class="btn btn-custom mt-3" href="#">See Location</a>
+                                            <button class="btn btn-custom mt-3" data-bs-toggle="modal"
+                                                data-bs-target="#event2">See Location</button>
                                         </div>
                                         <!-- <div class="col-12 mt-3">
                                             <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
@@ -1206,6 +1208,47 @@
         <small>Copyright 2021 Created with ❤️ by viding.co</small>
     </footer>
 
+    <!-- Modal -->
+    <div class="modal fade" id="event1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class=" btn-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                    <div class="modal-actions">
+                        <h3>Event I</h3>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="#" class="btn btn-custom mt-3">Location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="event2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class="btn-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                    <div class="modal-actions">
+                        <h3>Event II</h3>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas"
+                            src="https://maps.google.com/maps?q=surabaya&t=&z=15&ie=UTF8&iwloc=&output=embed"
+                            frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        <a href="#" class="btn btn-custom mt-3">Location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- script libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
