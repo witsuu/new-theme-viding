@@ -387,6 +387,9 @@
   background: linear-gradient(30deg, #8a6d2e 0%, var(--color-secondary) 100%);
   position: relative;
   z-index: 2;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 
 @media (max-width: 767px) {
