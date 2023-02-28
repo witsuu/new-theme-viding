@@ -160,24 +160,9 @@ small {
   }
 }
 .img-fluid {
+  position: relative;
   width: 100%;
   height: auto;
-}
-
-.logo-name {
-  position: relative;
-  width: 58px;
-  height: auto;
-}
-@media (max-width: 991px) {
-  .logo-name {
-    width: 53px;
-  }
-}
-@media (max-width: 767px) {
-  .logo-name {
-    width: 45px;
-  }
 }
 
 @media (max-width: 767px) {
