@@ -81,6 +81,10 @@ body {
   width: 100%;
   height: 100%;
 }
+.main-app .image-element {
+  position: relative;
+  width: 100%;
+}
 
 .logo-viding {
   height: 2.4rem;
@@ -1470,6 +1474,88 @@ ul li {
   left: 35%;
   width: 160px;
 }
+.header-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  left: 25%;
+  width: 200px;
+  transform: translate(-50%, 15%);
+}
+.header-section .orn-4 .orn-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  transform: translate(20%, -30%);
+}
+.header-section .orn-4 .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  transform: translate(0, 30%);
+}
+.header-section .orn-4 .orn-7 .orn-8 {
+  position: absolute;
+  top: 0;
+  left: 85%;
+  width: 60px;
+  transform: translate(-50%, -65%);
+}
+.header-section .orn-4 .orn-7 .orn-8 .image-element {
+  animation: butterflyMove 4s ease-in-out infinite;
+}
+.header-section .orn-4 .orn-7 .orn-8 img {
+  animation: butterfly 1s ease-in-out infinite alternate;
+}
+.header-section .orn-4 .orn-7 .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  transform: translate(100%, -20%);
+}
+.header-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 25%;
+  width: 200px;
+  transform: translate(50%, 15%) scaleX(-1);
+}
+.header-section .orn-5 .orn-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  transform: translate(20%, -30%);
+}
+.header-section .orn-5 .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  transform: translate(0, 30%);
+}
+.header-section .orn-5 .orn-7 .orn-8 {
+  position: absolute;
+  top: 0;
+  left: 85%;
+  width: 50px;
+  transform: translate(-50%, -70%) rotate(20deg);
+}
+.header-section .orn-5 .orn-7 .orn-8 .image-element {
+  animation: butterflyMove 4s ease-in-out infinite 1.5s;
+}
+.header-section .orn-5 .orn-7 .orn-8 img {
+  animation: butterfly 1s ease-in-out infinite alternate;
+}
+.header-section .orn-5 .orn-7 .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  transform: translate(100%, -20%);
+}
 .header-section .elements-absolute {
   position: absolute;
   top: unset;
@@ -1581,6 +1667,28 @@ ul li {
   100% {
     transform: translate3d(0, 100%, 0);
     opacity: 0;
+  }
+}
+@keyframes butterflyMove {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(20px, -20px, 0);
+  }
+  50% {
+    transform: translate3d(-15px, -25px, 0);
+  }
+  75% {
+    transform: translate3d(20px, -10px, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes butterfly {
+  to {
+    transform: scaleX(0.5);
   }
 }
 .couple-section {
