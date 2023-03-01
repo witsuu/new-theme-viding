@@ -3204,6 +3204,16 @@ ul li {
   border-radius: 500px;
   margin-bottom: 2rem;
 }
+@media (max-width: 991px) {
+  .thank-section .image-wrapper {
+    width: 70%;
+  }
+}
+@media (max-width: 767px) {
+  .thank-section .image-wrapper {
+    width: 80%;
+  }
+}
 .thank-section .image-wrapper .image-element {
   aspect-ratio: 3/4;
   height: auto;

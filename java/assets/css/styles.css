@@ -1456,8 +1456,8 @@ ul li {
   background: linear-gradient(110deg, #c6a058, #ffda92);
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -1487,8 +1487,8 @@ ul li {
   background: var(--color-main);
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -2352,8 +2352,8 @@ ul li {
   background: linear-gradient(110deg, #c6a058, #ffda92);
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -2365,8 +2365,8 @@ ul li {
   height: 100%;
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -2405,8 +2405,8 @@ ul li {
   background: linear-gradient(110deg, #c6a058, #ffda92);
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;
@@ -2420,8 +2420,8 @@ ul li {
   width: 100%;
   -webkit-mask-image: url(../images/mask-photo.png);
           mask-image: url(../images/mask-photo.png);
-  -webkit-mask-size: 100%;
-          mask-size: 100%;
+  -webkit-mask-size: 100% 100%;
+          mask-size: 100% 100%;
   -webkit-mask-position: center;
           mask-position: center;
   -webkit-mask-repeat: no-repeat;

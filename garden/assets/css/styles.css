@@ -1612,7 +1612,12 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-1 {
+    width: 180px;
     transform: translate(-50%, -90%);
+  }
+}
+@media (max-width: 375px) {
+  .header-section .orn-1 {
     width: 140px;
   }
 }
@@ -1630,6 +1635,11 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-2 {
+    width: 180px;
+  }
+}
+@media (max-width: 375px) {
+  .header-section .orn-2 {
     width: 140px;
   }
 }
@@ -1645,6 +1655,11 @@ ul li {
     width: 230px;
   }
 }
+@media (max-width: 375px) {
+  .header-section .orn-3 {
+    width: 200px;
+  }
+}
 .header-section .orn-4 {
   position: absolute;
   bottom: 0;
@@ -1653,9 +1668,14 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-4 .image-element img {
-    height: 200px;
+    height: 160px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .header-section .orn-4 .image-element img {
+    height: 140px;
   }
 }
 .header-section .orn-5 {
@@ -1673,6 +1693,7 @@ ul li {
 @media (max-width: 767px) {
   .header-section .orn-5 {
     width: 200px;
+    transform: translate(-130%, -20%);
   }
 }
 .header-section .orn-6 {
@@ -1686,6 +1707,11 @@ ul li {
   .header-section .orn-6 {
     right: 0;
     width: 140px;
+  }
+}
+@media (max-width: 375px) {
+  .header-section .orn-6 {
+    width: 100px;
   }
 }
 .header-section .orn-7 {
@@ -3497,6 +3523,16 @@ ul li {
   aspect-ratio: 3/4;
   margin: -15rem auto 2rem;
 }
+@media (max-width: 991px) {
+  .egift-section .gift-wrap .image-wrapper {
+    width: 80%;
+  }
+}
+@media (max-width: 767px) {
+  .egift-section .gift-wrap .image-wrapper {
+    width: 100%;
+  }
+}
 .egift-section .gift-wrap .image-wrapper img {
   width: 100%;
   height: 100%;
@@ -3655,7 +3691,7 @@ ul li {
 }
 .egift-section .gift-content {
   position: relative;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 .egift-section .gift-content .elements-absolute {
   position: absolute;
@@ -3912,6 +3948,11 @@ ul li {
     width: 230px;
   }
 }
+@media (max-width: 375px) {
+  .thank-section .orn-3 {
+    width: 200px;
+  }
+}
 .thank-section .orn-4 {
   position: absolute;
   bottom: 0;
@@ -3920,9 +3961,14 @@ ul li {
 }
 @media (max-width: 767px) {
   .thank-section .orn-4 .image-element img {
-    height: 200px;
+    height: 160px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media (max-width: 375px) {
+  .thank-section .orn-4 .image-element img {
+    height: 150px;
   }
 }
 .thank-section .orn-5 {
@@ -3953,6 +3999,11 @@ ul li {
   .thank-section .orn-6 {
     right: 0;
     width: 140px;
+  }
+}
+@media (max-width: 375px) {
+  .thank-section .orn-6 {
+    width: 100px;
   }
 }
 .thank-section .orn-7 {
