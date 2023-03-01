@@ -512,7 +512,7 @@
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 .waves-bottom #grass2 {
   transform-origin: 50% 100%;
@@ -530,19 +530,19 @@
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 .waves-bottom #grass5 {
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 4s;
+  animation-delay: 2s;
 }
 .waves-bottom #grass6 {
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 1s;
+  animation-delay: 4s;
 }
 .waves-bottom #grass7 {
   transform-origin: 50% 100%;
@@ -554,7 +554,7 @@
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 4s;
+  animation-delay: 1s;
 }
 .waves-bottom #grass9 {
   transform-origin: 50% 100%;
@@ -566,7 +566,7 @@
   transform-origin: 50% 100%;
   transform-box: fill-box;
   animation: grass 2500ms ease-in-out infinite alternate;
-  animation-delay: 2s;
+  animation-delay: 3s;
 }
 
 @keyframes grass {
@@ -616,98 +616,98 @@
 }
 .blossom-wrapper.animation-loop .blossom.pos-1 {
   animation-name: blossom1;
-  animation-duration: 30s;
-  animation-delay: 2s;
+  animation-duration: 33s;
+  animation-delay: 10s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-2 {
   animation-name: blossom2;
-  animation-duration: 33s;
-  animation-delay: 7s;
+  animation-duration: 37s;
+  animation-delay: 9s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-3 {
   animation-name: blossom3;
-  animation-duration: 23s;
-  animation-delay: 6s;
+  animation-duration: 26s;
+  animation-delay: 9s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-4 {
   animation-name: blossom4;
-  animation-duration: 29s;
-  animation-delay: 4s;
+  animation-duration: 34s;
+  animation-delay: 3s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-5 {
   animation-name: blossom5;
-  animation-duration: 27s;
-  animation-delay: 10s;
+  animation-duration: 26s;
+  animation-delay: 3s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-6 {
   animation-name: blossom6;
-  animation-duration: 28s;
-  animation-delay: 10s;
+  animation-duration: 34s;
+  animation-delay: 6s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-7 {
   animation-name: blossom7;
-  animation-duration: 30s;
-  animation-delay: 1s;
+  animation-duration: 19s;
+  animation-delay: 5s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-8 {
   animation-name: blossom8;
-  animation-duration: 18s;
-  animation-delay: 14s;
+  animation-duration: 35s;
+  animation-delay: 10s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-9 {
   animation-name: blossom9;
-  animation-duration: 20s;
-  animation-delay: 11s;
+  animation-duration: 30s;
+  animation-delay: 2s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-10 {
   animation-name: blossom10;
-  animation-duration: 19s;
+  animation-duration: 27s;
   animation-delay: 15s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-11 {
   animation-name: blossom11;
-  animation-duration: 25s;
-  animation-delay: 4s;
+  animation-duration: 34s;
+  animation-delay: 14s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-12 {
   animation-name: blossom12;
-  animation-duration: 35s;
-  animation-delay: 5s;
+  animation-duration: 28s;
+  animation-delay: 11s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-13 {
   animation-name: blossom13;
-  animation-duration: 27s;
-  animation-delay: 4s;
+  animation-duration: 21s;
+  animation-delay: 5s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-14 {
   animation-name: blossom14;
-  animation-duration: 30s;
-  animation-delay: 14s;
+  animation-duration: 23s;
+  animation-delay: 6s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-15 {
   animation-name: blossom15;
-  animation-duration: 27s;
-  animation-delay: 8s;
+  animation-duration: 34s;
+  animation-delay: 7s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-16 {
   animation-name: blossom16;
-  animation-duration: 22s;
-  animation-delay: 15s;
+  animation-duration: 18s;
+  animation-delay: 2s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-17 {
   animation-name: blossom17;
-  animation-duration: 17s;
-  animation-delay: 15s;
+  animation-duration: 22s;
+  animation-delay: 2s;
 }
 .blossom-wrapper.animation-loop .blossom.pos-18 {
   animation-name: blossom18;
-  animation-duration: 35s;
-  animation-delay: 4s;
+  animation-duration: 26s;
+  animation-delay: 12s;
 }
 
 @keyframes blossom1 {
   0% {
-    top: 2%;
+    top: 42%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -739,13 +739,13 @@
   }
   100% {
     top: 120%;
-    left: 120%;
+    left: 135%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom2 {
   0% {
-    top: 11%;
+    top: 22%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -777,13 +777,13 @@
   }
   100% {
     top: 120%;
-    left: 97%;
+    left: 130%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom3 {
   0% {
-    top: 25%;
+    top: 14%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -815,13 +815,13 @@
   }
   100% {
     top: 120%;
-    left: 137%;
+    left: 153%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom4 {
   0% {
-    top: 27%;
+    top: 18%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -853,13 +853,13 @@
   }
   100% {
     top: 120%;
-    left: 138%;
+    left: 132%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom5 {
   0% {
-    top: 2%;
+    top: 24%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -891,13 +891,13 @@
   }
   100% {
     top: 120%;
-    left: 182%;
+    left: 158%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom6 {
   0% {
-    top: 25%;
+    top: 41%;
     transform: rotateY(20deg) rotateX(5deg);
   }
   10% {
@@ -929,13 +929,13 @@
   }
   100% {
     top: 120%;
-    left: 134%;
+    left: 126%;
     transform: rotateX(400deg) rotateY(520deg);
   }
 }
 @keyframes blossom7 {
   0% {
-    left: 37%;
+    left: 43%;
     transform: rotateY(20deg) rotateX(40deg);
   }
   10% {
@@ -964,13 +964,13 @@
   }
   100% {
     top: 120%;
-    left: 124%;
+    left: 163%;
     transform: rotateY(480deg) rotateX(400deg);
   }
 }
 @keyframes blossom8 {
   0% {
-    left: 11%;
+    left: 53%;
     transform: rotateY(20deg) rotateX(40deg);
   }
   10% {
@@ -999,13 +999,13 @@
   }
   100% {
     top: 120%;
-    left: 75%;
+    left: 154%;
     transform: rotateY(480deg) rotateX(400deg);
   }
 }
 @keyframes blossom9 {
   0% {
-    left: 35%;
+    left: 12%;
     transform: rotateY(20deg) rotateX(40deg);
   }
   10% {
@@ -1034,46 +1034,11 @@
   }
   100% {
     top: 120%;
-    left: 74%;
+    left: 89%;
     transform: rotateY(480deg) rotateX(400deg);
   }
 }
 @keyframes blossom10 {
-  0% {
-    left: 33%;
-    transform: rotateY(20deg) rotateX(40deg);
-  }
-  10% {
-    transform: rotateY(80deg) rotateX(80deg);
-  }
-  20% {
-    transform: rotateY(120deg) rotateX(120deg);
-  }
-  30% {
-    transform: rotateY(180deg) rotateX(160deg);
-  }
-  40% {
-    transform: rotateY(220deg) rotateX(200deg);
-  }
-  60% {
-    transform: rotateY(280deg) rotateX(240deg);
-  }
-  70% {
-    transform: rotateY(320deg) rotateX(280deg);
-  }
-  80% {
-    transform: rotateY(380deg) rotateX(320deg);
-  }
-  90% {
-    transform: rotateY(420deg) rotateX(360deg);
-  }
-  100% {
-    top: 120%;
-    left: 138%;
-    transform: rotateY(480deg) rotateX(400deg);
-  }
-}
-@keyframes blossom11 {
   0% {
     left: 27%;
     transform: rotateY(20deg) rotateX(40deg);
@@ -1104,13 +1069,13 @@
   }
   100% {
     top: 120%;
-    left: 76%;
+    left: 139%;
     transform: rotateY(480deg) rotateX(400deg);
   }
 }
-@keyframes blossom12 {
+@keyframes blossom11 {
   0% {
-    left: 50%;
+    left: 39%;
     transform: rotateY(20deg) rotateX(40deg);
   }
   10% {
@@ -1139,13 +1104,48 @@
   }
   100% {
     top: 120%;
-    left: 109%;
+    left: 163%;
+    transform: rotateY(480deg) rotateX(400deg);
+  }
+}
+@keyframes blossom12 {
+  0% {
+    left: 57%;
+    transform: rotateY(20deg) rotateX(40deg);
+  }
+  10% {
+    transform: rotateY(80deg) rotateX(80deg);
+  }
+  20% {
+    transform: rotateY(120deg) rotateX(120deg);
+  }
+  30% {
+    transform: rotateY(180deg) rotateX(160deg);
+  }
+  40% {
+    transform: rotateY(220deg) rotateX(200deg);
+  }
+  60% {
+    transform: rotateY(280deg) rotateX(240deg);
+  }
+  70% {
+    transform: rotateY(320deg) rotateX(280deg);
+  }
+  80% {
+    transform: rotateY(380deg) rotateX(320deg);
+  }
+  90% {
+    transform: rotateY(420deg) rotateX(360deg);
+  }
+  100% {
+    top: 120%;
+    left: 148%;
     transform: rotateY(480deg) rotateX(400deg);
   }
 }
 @keyframes blossom13 {
   0% {
-    top: 49%;
+    top: 90%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1168,13 +1168,13 @@
   }
   100% {
     top: 120%;
-    left: 127%;
+    left: 146%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes blossom14 {
   0% {
-    top: 98%;
+    top: 119%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1197,13 +1197,13 @@
   }
   100% {
     top: 120%;
-    left: 94%;
+    left: 79%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes blossom15 {
   0% {
-    top: 86%;
+    top: 87%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1226,13 +1226,13 @@
   }
   100% {
     top: 120%;
-    left: 81%;
+    left: 147%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes blossom16 {
   0% {
-    top: 78%;
+    top: 77%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1255,13 +1255,13 @@
   }
   100% {
     top: 120%;
-    left: 119%;
+    left: 122%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes blossom17 {
   0% {
-    top: 46%;
+    top: 90%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1284,13 +1284,13 @@
   }
   100% {
     top: 120%;
-    left: 118%;
+    left: 111%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
 @keyframes blossom18 {
   0% {
-    top: 44%;
+    top: 84%;
     transform: rotateY(20deg) rotateX(45deg);
   }
   10% {
@@ -1313,7 +1313,7 @@
   }
   100% {
     top: 120%;
-    left: 160%;
+    left: 123%;
     transform: rotateY(360deg) rotateX(360deg);
   }
 }
@@ -1853,52 +1853,52 @@
   }
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-1 {
-  animation-duration: 6s;
-  animation-delay: 4s;
+  animation-duration: 4s;
+  animation-delay: 20s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-2 {
-  animation-duration: 7s;
-  animation-delay: 14s;
+  animation-duration: 6s;
+  animation-delay: 11s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-3 {
   animation-duration: 10s;
-  animation-delay: 4s;
+  animation-delay: 20s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-4 {
-  animation-duration: 9s;
-  animation-delay: 5s;
+  animation-duration: 4s;
+  animation-delay: 17s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-5 {
   animation-duration: 10s;
-  animation-delay: 10s;
+  animation-delay: 9s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-6 {
-  animation-duration: 4s;
-  animation-delay: 1s;
+  animation-duration: 8s;
+  animation-delay: 10s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-7 {
-  animation-duration: 8s;
-  animation-delay: 14s;
+  animation-duration: 3s;
+  animation-delay: 8s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-8 {
-  animation-duration: 8s;
-  animation-delay: 15s;
+  animation-duration: 3s;
+  animation-delay: 4s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-9 {
-  animation-duration: 6s;
-  animation-delay: 7s;
+  animation-duration: 3s;
+  animation-delay: 9s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-10 {
   animation-duration: 3s;
-  animation-delay: 2s;
+  animation-delay: 9s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-11 {
-  animation-duration: 9s;
-  animation-delay: 13s;
+  animation-duration: 6s;
+  animation-delay: 11s;
 }
 .venue-section .venue-wrapper .venue-content .card .blossom-wrapper .animation-loop .blossom.pos-12 {
-  animation-duration: 5s;
-  animation-delay: 14s;
+  animation-duration: 8s;
+  animation-delay: 6s;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
   position: relative;
