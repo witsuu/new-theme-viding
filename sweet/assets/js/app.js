@@ -17,12 +17,25 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 		document.body.style.overflow = "auto"
 	})
 
+	const noAnim = [0, 1]
+
 	gsap.utils.toArray(".rose").forEach((el, index) => {
 		const flipState = Flip.getState(el)
 
 		document.querySelector(`#rose-${index}`).appendChild(el)
 
-		Flip.from(flipState, { duration: 2.5, ease: "power1.inOut" })
+		Flip.from(flipState,
+			{
+				duration: 2.5,
+				ease: "power1.inOut",
+				onComplete: () => {
+					if (!noAnim.includes(index)) {
+						el.classList.add("has-animate", "animate-loop")
+						el.dataset.anim = "rotate-right"
+						ScrollTrigger.refresh()
+					}
+				}
+			})
 	})
 
 	runAnimationOrnament()

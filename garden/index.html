@@ -101,12 +101,12 @@
                     <div class="cover-content">
                         <div class="cover-body">
                             <div class="col-lg-5 col-12">
-                                <div class="image-wrapper">
+                                <div class="image-wrapper" data-anim="zoom-out">
                                     <img src="./assets/images/background-1.webp" alt="cover-background" class="cover-background">
                                 </div>
                             </div>
                             <div class="col-lg-7 col-12">
-                                <div class="cover-description">
+                                <div class="cover-description" data-anim="fade-down">
                                     <div class="greeting-wrapper">
                                         <span>Dear,</span>
                                         <h6>Name Guest</h6>
@@ -136,7 +136,7 @@
                     <img src="./assets/images/grompol-main.png" alt="grompol-main">
                 </div>
                 <div class="ellipse"></div>
-                <div class="orn-4">
+                <div class="orn-4 visible" data-anim="zoom-in-main" data-anim-duration="4000ms">
                     <div class="orn-1">
                         <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
                     </div>
@@ -150,52 +150,56 @@
                         <img src="./assets/images/rumput-main.png" alt="rumput-main" class="img-fluid">
                     </div>
                     <div class="orn-5">
-                        <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
+                        <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
                     </div>
                     <div class="orn-6">
-                        <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
+                        <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
+                    </div>
+                    <div class="orn-9">
+                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-left">
+                    </div>
+                    <div class="orn-10">
+                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                    </div>
+                    <div class="orn-11">
+                        <div class="orn-14">
+                            <div class="image-element">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                            </div>
+                        </div>
+                        <div class="image-element">
+                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid animate-loop visible" data-anim="rotate-left">
+                        </div>
+                    </div>
+                    <div class="orn-12">
+                        <div class="orn-14">
+                            <div class="image-element">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                            </div>
+                        </div>
+                        <div class="image-element">
+                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid animate-loop visible" data-anim="rotate-left">
+                        </div>
                     </div>
                 </div>
                 <div class="orn-7">
                     <div class="orn-13">
-                        <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
+                        <div class="w-100" data-anim="fade-right">
+                            <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-right">
+                        </div>
                     </div>
-                    <div class="image-element">
-                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                     </div>
                 </div>
                 <div class="orn-8">
-                    <div class="image-element">
-                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                    <div class="image-element" data-anim="fade-left">
+                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                     </div>
                     <div class="orn-13">
-                        <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
-                    </div>
-                </div>
-                <div class="orn-9">
-                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                </div>
-                <div class="orn-10">
-                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                </div>
-                <div class="orn-11">
-                    <div class="orn-14">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                        <div class="w-100" data-anim="fade-right">
+                            <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
                         </div>
-                    </div>
-                    <div class="image-element">
-                        <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
-                    </div>
-                </div>
-                <div class="orn-12">
-                    <div class="orn-14">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="image-element">
-                        <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                     </div>
                 </div>
             </div>
@@ -206,8 +210,10 @@
                             <div class="header">
                                 <div class="header-title">
                                     <div class="header-title-content">
-                                        <h1 class="title mb-3" data-anim="fade-down">Vidi & Hening</h1>
-                                        <p>We're Getting Married</p>
+                                        <h1 class="title mb-3" data-anim="fade-up">Vidi & Hening</h1>
+                                        <div data-anim="zoom-in">
+                                            <p>We're Getting Married</p>
+                                        </div>
                                         <div class="scroll-icon">
                                             <svg data-anim="slide-down" width="28" height="42" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect opacity="0.6" x="0.5" y="0.5" width="27" height="41" rx="13.5" stroke="#757346" />
@@ -232,67 +238,67 @@
             <!-- Couple section -->
             <section class="couple-section">
                 <div class="orn-1">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                     </div>
                     <div class="orn-2">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                         <div class="orn-3">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
                             </div>
                             <div class="orn-4">
-                                <div class="image-element">
-                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-5">
-                    <div class="image-element">
-                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-right">
                     </div>
                     <div class="orn-6">
-                        <div class="image-element">
+                        <div class="image-element" data-anim="fade-right">
                             <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                         </div>
                         <div class="orn-7">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
                             </div>
                             <div class="orn-8">
-                                <div class="image-element">
-                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-9">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                     </div>
                     <div class="orn-10">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
                         </div>
                         <div class="orn-11">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-12">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-left">
                         <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
                     </div>
                     <div class="orn-13">
-                        <div class="image-element">
-                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-left">
+                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                     </div>
                 </div>
@@ -322,8 +328,8 @@
                         <div class="row justify-content-evenly">
                             <div class="col-md-6 col-xl-5">
                                 <div class="couple">
-                                    <div class="image-wrap man">
-                                        <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man" data-anim="height-up">
+                                    <div class="image-wrap man" data-anim="fade-down">
+                                        <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
                                     </div>
                                     <div class="couple-description">
                                         <h3 data-anim="zoom-in" data-anim-delay="500">Vidi Dwi Saputra</h3>
@@ -342,8 +348,8 @@
                             <div class="and"><span>&</span></div>
                             <div class="col-md-6 col-xl-5">
                                 <div class="couple">
-                                    <div class="image-wrap woman">
-                                        <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women" data-anim="height-up">
+                                    <div class="image-wrap woman" data-anim="fade-down">
+                                        <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women">
                                     </div>
                                     <div class="couple-description">
                                         <h3 data-anim="zoom-in" data-anim-delay="500">Hening Saputri</h3>
@@ -364,9 +370,60 @@
                 </div>
                 <div class="container">
                     <div class="reminder-wrap">
-                        <div class="elements-wrapper-absolute">
-                            <div class="background-element">
-                                <img src="./assets/images/bg-countdown.png" alt="bg-countdown">
+                        <div class="orn-4 visible" data-anim="zoom-in-main" data-anim-duration="4000ms">
+                            <div class="orn-1">
+                                <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
+                            </div>
+                            <div class="orn-2">
+                                <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
+                            </div>
+                            <div class="orn-3">
+                                <img src="./assets/images/prambanan-1.png" alt="prambanan" class="img-fluid">
+                            </div>
+                            <div class="image-element">
+                                <img src="./assets/images/rumput-main.png" alt="rumput-main" class="img-fluid">
+                            </div>
+                            <div class="orn-5">
+                                <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
+                            </div>
+                            <div class="orn-6">
+                                <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
+                            </div>
+                            <div class="orn-9">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-10">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                            </div>
+                            <div class="orn-11">
+                                <div class="orn-14">
+                                    <div class="image-element">
+                                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                                    </div>
+                                </div>
+                                <div class="image-element">
+                                    <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-12">
+                                <div class="orn-14">
+                                    <div class="image-element">
+                                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                                    </div>
+                                </div>
+                                <div class="image-element">
+                                    <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-7">
+                            <div class="orn-13">
+                                <div class="w-100" data-anim="fade-right">
+                                    <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-right">
+                                </div>
+                            </div>
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                             </div>
                         </div>
                         <div class="reminder-content">
@@ -414,30 +471,30 @@
                     </div>
                 </div>
                 <div class="orn-1">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
                     </div>
                     <div class="orn-2">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                         <div class="orn-3">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-4">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-left">
                         <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
                     </div>
                     <div class="orn-5">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
                         </div>
                         <div class="orn-6">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                             </div>
                         </div>
@@ -797,23 +854,23 @@
             <!-- rsvp section -->
             <section class="rsvp-section">
                 <div class="orn-1">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                     </div>
                     <div class="orn-2">
-                        <div class="image-element">
+                        <div class="image-element" data-anim="fade-right">
                             <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                         </div>
                         <div class="orn-3">
-                            <div class="image-element">
-                                <img src="./assets/images/flower-2.png" alt="flower2" class="img-fluid">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower2" class="img-fluid animate-loop" data-anim="rotate-left">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-4">
-                    <div class="image-element">
-                        <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-right">
                     </div>
                 </div>
                 <div class="container position-relative">
@@ -851,27 +908,27 @@
             <!-- Wishes section -->
             <section class="wishes-section">
                 <div class="orn-1">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                     </div>
                     <div class="orn-2">
-                        <div class="image-element">
-                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                         <div class="orn-3">
-                            <div class="image-element">
+                            <div class="image-element" data-anim="fade-right">
                                 <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="orn-4">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
                     </div>
                     <div class="orn-5">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-right">
                         </div>
                     </div>
                 </div>
@@ -991,22 +1048,22 @@
             <!-- Egift section -->
             <section class="egift-section">
                 <div class="orn-1">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
                     </div>
                     <div class="orn-2">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-1.png" alt="flower-2" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-1.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                     </div>
                 </div>
                 <div class="orn-3">
-                    <div class="image-element">
+                    <div class="image-element" data-anim="fade-right">
                         <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
                     </div>
                     <div class="orn-4">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
                         </div>
                     </div>
                 </div>
@@ -1300,7 +1357,7 @@
                     <div class="background-element">
                         <img src="./assets/images/grompol-3.png" alt="grompol-3">
                     </div>
-                    <div class="orn-4">
+                    <div class="orn-4 visible" data-anim="zoom-in-main" data-anim-duration="4000ms">
                         <div class="orn-1">
                             <img src="./assets/images/pohon-1.png" alt="pohon-1" class="img-fluid">
                         </div>
@@ -1314,52 +1371,56 @@
                             <img src="./assets/images/rumput-main.png" alt="rumput-main" class="img-fluid">
                         </div>
                         <div class="orn-5">
-                            <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
+                            <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
                         </div>
                         <div class="orn-6">
-                            <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid">
+                            <img src="./assets/images/peafowl-1.png" alt="peafowl-1" class="img-fluid visible" data-anim="peafowl-right">
+                        </div>
+                        <div class="orn-9">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-10">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                        </div>
+                        <div class="orn-11">
+                            <div class="orn-14">
+                                <div class="image-element">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                                </div>
+                            </div>
+                            <div class="image-element">
+                                <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid ">
+                            </div>
+                        </div>
+                        <div class="orn-12">
+                            <div class="orn-14">
+                                <div class="image-element">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop visible" data-anim="rotate-right">
+                                </div>
+                            </div>
+                            <div class="image-element">
+                                <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
+                            </div>
                         </div>
                     </div>
                     <div class="orn-7">
                         <div class="orn-13">
-                            <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
+                            <div class="w-100" data-anim="fade-right">
+                                <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-right">
+                            </div>
                         </div>
-                        <div class="image-element">
-                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                     </div>
                     <div class="orn-8">
-                        <div class="image-element">
-                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid">
+                        <div class="image-element" data-anim="fade-left">
+                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                         <div class="orn-13">
-                            <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="orn-9">
-                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                    </div>
-                    <div class="orn-10">
-                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                    </div>
-                    <div class="orn-11">
-                        <div class="orn-14">
-                            <div class="image-element">
-                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
+                            <div class="w-100" data-anim="fade-right">
+                                <img src="./assets/images/daun-2.png" alt="daun-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
                             </div>
-                        </div>
-                        <div class="image-element">
-                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="orn-12">
-                        <div class="orn-14">
-                            <div class="image-element">
-                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid">
-                            </div>
-                        </div>
-                        <div class="image-element">
-                            <img src="./assets/images/daun-1.png" alt="daun-1" class="img-fluid">
                         </div>
                     </div>
                 </div>
