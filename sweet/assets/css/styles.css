@@ -3256,6 +3256,8 @@ ul li {
 .thank-section .thank-wrapper {
   position: relative;
   padding: 8rem 2rem 3rem;
+  border-radius: var(--border-radius);
+  overflow: hidden;
 }
 .thank-section .thank-wrapper .thank {
   position: relative;
