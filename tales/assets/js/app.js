@@ -116,9 +116,9 @@ mapModal.forEach(modal => {
 	})
 })
 
-if (document.querySelector("#zoom-gallery")) {
-	$("#zoom-gallery").magnificPopup({
-		delegate: "li a",
+if (document.querySelector(".zoom-gallery-default")) {
+	$(".zoom-gallery-default").magnificPopup({
+		delegate: "a",
 		type: "image",
 		mainClass: "mfp-with-zoom mfp-img-mobile",
 		zoom: {
@@ -231,8 +231,7 @@ if (gallery) {
 		if (grid && mqh.matches) {
 			grid.forEach((el, index) => {
 				el.classList.remove("grid-lg-default");
-				el.style.height = ``;
-				console.log("remove class")
+				el.style.height = "";
 			});
 		}
 
@@ -241,7 +240,8 @@ if (gallery) {
 				if (gridSm.includes(index)) {
 					el.classList.add("grid-lg-default");
 					el.style.height = `${galleryItems[1].clientHeight}px`;
-					console.log("mobile")
+				} else {
+					el.style.height = ""
 				}
 			}
 		});
@@ -252,7 +252,6 @@ if (gallery) {
 			grid.forEach((el, index) => {
 				el.classList.remove("grid-lg-default");
 				el.style.height = "";
-				console.log("remove class")
 			});
 		}
 
@@ -261,7 +260,8 @@ if (gallery) {
 				if (gridLg.includes(index)) {
 					el.classList.add("grid-lg-default");
 					el.style.height = `${galleryItems[1].clientHeight}px`;
-					console.log("tablet")
+				} else {
+					el.style.height = ""
 				}
 			}
 		});
@@ -272,7 +272,6 @@ if (gallery) {
 			grid.forEach((el, index) => {
 				el.classList.remove("grid-lg-default");
 				el.style.height = "";
-				console.log("remove class")
 			});
 		}
 
@@ -281,7 +280,8 @@ if (gallery) {
 				if (gridLg.includes(index)) {
 					el.classList.add("grid-lg-default");
 					el.style.height = `${galleryItems[1].clientHeight}px`;
-					console.log("desktop")
+				} else {
+					el.style.height = ""
 				}
 			}
 		});
