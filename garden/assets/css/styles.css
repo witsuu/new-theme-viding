@@ -1391,13 +1391,12 @@ ul li {
   .cover-section .orn-5 {
     right: 0;
     width: 120%;
-    transform: translate(20%, 20%) scaleY(-1) rotate(-20deg);
+    transform: translate(40%, 20%) scaleY(-1) rotate(-20deg);
   }
 }
 @media (max-width: 767px) {
   .cover-section .orn-5 {
     width: 150%;
-    transform: translate(20%, 0%) scaleY(-1) rotate(-20deg);
   }
 }
 .cover-section .orn-6 {
@@ -1422,9 +1421,9 @@ ul li {
 .cover-section .orn-7 {
   position: absolute;
   bottom: 0;
-  left: 20%;
+  left: 0;
   width: 100%;
-  transform: translate(0, 40%) scaleY(-1) rotate(90deg);
+  transform: translate(-30%, 40%) scaleY(-1) rotate(90deg);
 }
 @media (max-width: 991px) {
   .cover-section .orn-7 {
@@ -1435,7 +1434,6 @@ ul li {
   .cover-section .orn-7 {
     left: 0;
     width: 150%;
-    transform: translate(-30%, 40%) scaleY(-1) rotate(90deg);
   }
 }
 .cover-section .orn-8 {
@@ -1692,7 +1690,7 @@ ul li {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -86%);
   width: 380px;
 }
 @media (max-width: 767px) {
@@ -1997,6 +1995,14 @@ ul li {
 .header-section .header-content {
   position: relative;
 }
+@media (max-width: 991px) {
+  .header-section .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+  }
+}
 .header-section .header-content .header {
   position: relative;
   display: block;
@@ -2007,6 +2013,7 @@ ul li {
 @media (max-width: 991px) {
   .header-section .header-content .header {
     width: 80%;
+    margin-top: -60%;
   }
 }
 @media (max-width: 767px) {
@@ -3985,7 +3992,7 @@ ul li {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -100%);
+  transform: translate(-50%, -86%);
   width: 380px;
 }
 @media (max-width: 767px) {
