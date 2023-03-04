@@ -118,7 +118,7 @@ h3 {
 }
 
 h1 {
-  font-size: 42px;
+  font-size: 36px;
   color: var(--color-secondary);
 }
 @media (max-width: 575px) {
@@ -1641,7 +1641,7 @@ ul li {
   height: calc(100% - 4rem);
   transform: translateX(-50%);
   background-color: rgba(255, 255, 255, 0.8);
-  border-radius: 500px;
+  border-radius: 500px 500px 0 0;
 }
 @media (max-width: 991px) {
   .header-section .ellipse {
@@ -1713,7 +1713,7 @@ ul li {
   position: absolute;
   left: 50%;
   top: 0;
-  transform: translate(-50%, -86%);
+  transform: translate(-46.5%, -86%);
   width: 420px;
 }
 @media (max-width: 767px) {

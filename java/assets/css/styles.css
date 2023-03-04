@@ -1599,22 +1599,32 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100px;
+  width: 140px;
   transform: translate(-50%, 20%);
   z-index: 3;
 }
+@media (min-width: 1440px) {
+  .header-section .orn-3 {
+    width: 160px;
+  }
+}
 @media (max-width: 767px) {
   .header-section .orn-3 {
-    width: 80px;
+    width: 100px;
   }
 }
 .header-section .orn-4 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 280px;
+  width: 300px;
   transform: translate(-30%, 40%) rotate(15deg);
   z-index: 3;
+}
+@media (min-width: 1440px) {
+  .header-section .orn-4 {
+    width: 340px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-4 {
@@ -1640,8 +1650,18 @@ ul li {
   position: absolute;
   top: 0;
   right: 0;
-  width: 200px;
-  transform: translate(130%, 0);
+  width: 220px;
+  transform: translate(160%, 0);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-4 .orn-5 {
+    width: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-section .orn-4 .orn-5 {
+    transform: translate(90%, 0);
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-4 .orn-5 {
@@ -1664,9 +1684,14 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 280px;
+  width: 300px;
   transform: translate(25%, 40%) rotate(15deg);
   z-index: 3;
+}
+@media (min-width: 1440px) {
+  .header-section .orn-6 {
+    width: 340px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-6 {
@@ -1692,8 +1717,18 @@ ul li {
   position: absolute;
   top: 0;
   left: 0;
-  width: 200px;
-  transform: translate(-120%, 45%) rotate(-15deg);
+  width: 220px;
+  transform: translate(-130%, 45%) rotate(-15deg);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-6 .orn-7 {
+    width: 240px;
+  }
+}
+@media (max-width: 1199px) {
+  .header-section .orn-6 .orn-7 {
+    transform: translate(-60%, 40%) rotate(-15deg);
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-6 .orn-7 {
@@ -1759,19 +1794,9 @@ ul li {
   background: linear-gradient(180deg, rgba(255, 255, 255, 0.2), transparent);
   content: "";
 }
-@media (min-width: 992px) {
-  .header-section .header-content .header {
-    width: 60%;
-  }
-}
-@media (min-width: 1200px) {
+@media (max-width: 1199px) {
   .header-section .header-content .header {
     width: 50%;
-  }
-}
-@media (min-width: 1440px) {
-  .header-section .header-content .header {
-    width: 40%;
   }
 }
 @media (max-width: 991px) {
