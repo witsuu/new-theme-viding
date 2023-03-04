@@ -121,12 +121,17 @@ h1 {
   font-size: 42px;
   color: var(--color-secondary);
 }
-h1 span {
-  font-size: 26px;
-}
 @media (max-width: 575px) {
   h1 {
     font-size: 28px;
+  }
+}
+h1 span {
+  font-size: 26px;
+}
+@media (max-width: 767px) {
+  h1 span {
+    font-size: 20px;
   }
 }
 
@@ -1652,8 +1657,13 @@ ul li {
   position: absolute;
   top: 0;
   left: 3rem;
-  width: 320px;
+  width: 340px;
   transform: translateY(-90%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-1 {
+    width: 360px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-1 {
@@ -1676,8 +1686,13 @@ ul li {
   position: absolute;
   top: 0;
   right: 0;
-  width: 320px;
+  width: 340px;
   transform: translateY(-90%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-2 {
+    width: 360px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-2 {
@@ -1699,7 +1714,7 @@ ul li {
   left: 50%;
   top: 0;
   transform: translate(-50%, -86%);
-  width: 380px;
+  width: 420px;
 }
 @media (max-width: 767px) {
   .header-section .orn-3 {
@@ -1716,6 +1731,16 @@ ul li {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+@media (min-width: 1200px) {
+  .header-section .orn-4 {
+    height: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .header-section .orn-4 {
+    height: 220px;
+  }
 }
 @media (max-width: 767px) {
   .header-section .orn-4 .image-element img {
@@ -1736,6 +1761,11 @@ ul li {
   width: 340px;
   transform: translate(-100%, -10%);
 }
+@media (min-width: 1440px) {
+  .header-section .orn-5 {
+    width: 380px;
+  }
+}
 @media (max-width: 991px) {
   .header-section .orn-5 {
     transform: translate(-130%, -40%);
@@ -1754,6 +1784,11 @@ ul li {
   width: 180px;
   transform: translate(100%, -60%) scaleX(-1);
 }
+@media (min-width: 1440px) {
+  .header-section .orn-6 {
+    width: 200px;
+  }
+}
 @media (max-width: 767px) {
   .header-section .orn-6 {
     right: 0;
@@ -1771,6 +1806,11 @@ ul li {
   left: 0;
   width: 180px;
   transform: translate(-20%, -30%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-7 {
+    width: 220px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-7 {
@@ -1792,6 +1832,11 @@ ul li {
   width: 160px;
   transform: translate(0, 90%);
 }
+@media (min-width: 1440px) {
+  .header-section .orn-7 .orn-13 {
+    width: 200px;
+  }
+}
 @media (max-width: 991px) {
   .header-section .orn-7 .orn-13 {
     width: 120px;
@@ -1808,6 +1853,11 @@ ul li {
   right: 0;
   width: 180px;
   transform: translate(20%, -30%) rotate(-65deg);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-8 {
+    width: 220px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-8 {
@@ -1829,6 +1879,11 @@ ul li {
   width: 160px;
   transform: translate(-65%, 25%) rotate(-45deg);
 }
+@media (min-width: 1440px) {
+  .header-section .orn-8 .orn-13 {
+    width: 200px;
+  }
+}
 @media (max-width: 991px) {
   .header-section .orn-8 .orn-13 {
     width: 120px;
@@ -1843,8 +1898,13 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 240px;
+  width: 260px;
   transform: translate(-30%, 10%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-9 {
+    width: 280px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-9 {
@@ -1868,8 +1928,13 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 240px;
+  width: 260px;
   transform: translate(10%, 10%) scaleX(-1);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-10 {
+    width: 280px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-10 {
@@ -1894,8 +1959,13 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 2rem;
-  width: 180px;
+  width: 200px;
   transform: translateY(50%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-11 {
+    width: 240px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-11 {
@@ -1916,7 +1986,7 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 180px;
+  width: 200px;
   transform: translate(60%, 0%);
 }
 @media (max-width: 991px) {
@@ -1938,8 +2008,13 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 180px;
+  width: 200px;
   transform: translate(-60%, 50%) scaleX(-1);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-12 {
+    width: 240px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-12 {
@@ -1961,8 +2036,13 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 180px;
+  width: 200px;
   transform: translate(40%, 20%);
+}
+@media (min-width: 1440px) {
+  .header-section .orn-12 .orn-14 {
+    width: 240px;
+  }
 }
 @media (max-width: 991px) {
   .header-section .orn-12 .orn-14 {
