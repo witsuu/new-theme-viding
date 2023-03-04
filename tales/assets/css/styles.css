@@ -270,24 +270,18 @@ small {
   text-align: center;
   margin-bottom: 1.25rem;
 }
-.title-section::before {
+.title-section .title-deco {
   position: relative;
-  display: block;
   width: 26px;
+  margin: 0 auto;
+  transform: translate(-10%, 40%) rotate(30deg);
+}
+.title-section .title-deco .background-element .butterfly {
   height: 30px;
   background-image: url(../images/butterfly-1.png);
   background-size: 26px;
   background-position: center;
   background-repeat: no-repeat;
-  margin: 0 auto;
-  transform: rotate(30deg);
-  content: "";
-}
-.title-section .title-deco {
-  position: relative;
-}
-.title-section .title-deco .deco-line {
-  fill: var(--color-secondary);
 }
 
 .reminder-wrap {
@@ -1171,6 +1165,14 @@ ul li {
   animation-direction: alternate;
 }
 
+[data-anim=butterfly-move-2].has-animate {
+  animation-name: butterflyMove2;
+  animation-duration: 4000ms !important;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 [data-anim=butterfly].has-animate {
   animation-name: butterfly;
   animation-duration: 500ms !important;
@@ -1192,6 +1194,23 @@ ul li {
   }
   75% {
     transform: translate3d(15px, -20px, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
+@keyframes butterflyMove2 {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  25% {
+    transform: translate3d(5px, -10px, 0);
+  }
+  50% {
+    transform: translate3d(-5px, -10px, 0);
+  }
+  75% {
+    transform: translate3d(5px, -10px, 0);
   }
   100% {
     transform: translateZ(0);
@@ -3370,9 +3389,6 @@ ul li {
   .egift-section .gift-wrap {
     padding: 2rem 1rem;
   }
-}
-.egift-section .gift-wrap .title-section h2 {
-  color: var(--color-dark);
 }
 .egift-section .tabs-gift {
   position: relative;
