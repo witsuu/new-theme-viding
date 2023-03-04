@@ -124,7 +124,7 @@ h1 {
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: 28px;
+    font-size: 34px;
   }
 }
 
@@ -1519,7 +1519,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
-    padding: 2rem 0 1rem;
+    padding: 2rem 0;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .greeting-wrapper {
