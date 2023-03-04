@@ -121,6 +121,9 @@ h1 {
   font-size: 42px;
   color: var(--color-secondary);
 }
+h1 span {
+  font-size: 26px;
+}
 @media (max-width: 575px) {
   h1 {
     font-size: 28px;
@@ -137,8 +140,13 @@ small {
   font-size: 12px;
 }
 
+span {
+  font-size: 16px;
+}
+
 @media (max-width: 575px) {
-  p {
+  p,
+  span {
     font-size: 14px;
   }
   small {
@@ -2028,13 +2036,7 @@ ul li {
 }
 .header-section .header-content .header .header-title-content {
   position: relative;
-  padding: 3rem 0 0;
   border-radius: var(--border-radius);
-}
-@media (max-width: 991px) {
-  .header-section .header-content .header .header-title-content {
-    padding: 4rem 0 0;
-  }
 }
 .header-section .header-content .header #scroll-animate {
   animation: scrollAnim 1500ms ease infinite;
