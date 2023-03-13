@@ -13,10 +13,7 @@ document.body.style.overflow = "hidden"
 document.querySelector("#btn-envelope").addEventListener("click", () => {
 	document.body.style.overflow = "auto"
 
-	waitCoverLoading(document.querySelector(".cover-section")).then((el) => {
-		el.classList.remove('cover-opening')
-		el.classList.add("cover-opened")
-	})
+	document.querySelector(".cover-section").classList.add("cover-opened")
 
 	runAnimationOrnament()
 	runAnimationLoop()
