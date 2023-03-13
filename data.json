@@ -62,56 +62,71 @@
 	{
 		"name": "Edmond",
 		"path": "edmond",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Shore",
 		"path": "shore",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Tranquil",
 		"path": "tranquil",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Cloud",
 		"path": "cloud",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Deriva",
 		"path": "deriva",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom",
 		"path": "custom",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Eka",
 		"path": "eka",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Sweet",
 		"path": "sweet",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Tales",
 		"path": "tales",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Garden",
 		"path": "garden",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Java",
 		"path": "java",
+		"status": "DONE"
+	},
+	{
+		"name": "Pillar",
+		"path": "pillar",
+		"status": ""
+	},
+	{
+		"name": "Secret",
+		"path": "secret",
+		"status": ""
+	},
+	{
+		"name": "Sage",
+		"path": "sage",
 		"status": ""
 	}
 ]
