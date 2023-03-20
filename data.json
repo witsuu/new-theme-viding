@@ -128,5 +128,15 @@
 		"name": "Sage",
 		"path": "sage",
 		"status": ""
+	},
+	{
+		"name": "Jade",
+		"path": "jade",
+		"status": ""
+	},
+	{
+		"name": "Dillian",
+		"path": "dillian",
+		"status": ""
 	}
 ]
