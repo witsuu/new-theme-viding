@@ -11,9 +11,12 @@ const waitCoverLoading = (el) => {
 document.body.style.overflow = "hidden"
 
 document.querySelector("#btn-envelope").addEventListener("click", () => {
-	document.body.style.overflow = "auto"
+	waitCoverLoading(document.querySelector(".cover-section")).then((el) => {
+		el.classList.add('cover-opened')
+		el.classList.remove('cover-opening')
 
-	document.querySelector(".cover-section").classList.add("cover-opened")
+		document.body.style.overflow = "auto"
+	}).catch(err => console.log(err))
 
 	runAnimationOrnament()
 	runAnimationLoop()
