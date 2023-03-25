@@ -11,15 +11,15 @@ const waitCoverLoading = (el) => {
 document.body.style.overflow = "hidden"
 
 document.querySelector("#btn-envelope").addEventListener("click", () => {
+	runAnimationOrnament()
+	runAnimationLoop()
+	
 	waitCoverLoading(document.querySelector(".cover-section")).then((el) => {
 		el.classList.add('cover-opened')
 		el.classList.remove('cover-opening')
 
 		document.body.style.overflow = "auto"
 	}).catch(err => console.log(err))
-
-	runAnimationOrnament()
-	runAnimationLoop()
 })
 
 var previousScroll = 70;

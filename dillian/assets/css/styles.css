@@ -562,7 +562,7 @@ ul li {
   visibility: hidden;
 }
 [data-anim][data-anim].has-animate {
-  animation-duration: 2000ms;
+  animation-duration: 2500ms;
   animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop {
@@ -751,7 +751,7 @@ ul li {
     transform: rotateZ(0);
   }
   100% {
-    transform: rotate(-15deg);
+    transform: rotate(-10deg);
   }
 }
 @keyframes rotateLeft {
@@ -759,7 +759,7 @@ ul li {
     transform: rotateZ(0);
   }
   100% {
-    transform: rotate(15deg);
+    transform: rotate(10deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1542,6 +1542,9 @@ ul li {
     width: 200px;
   }
 }
+.couple-section .orn-1 img {
+  transform-origin: 10% 100%;
+}
 .couple-section .orn-2 {
   position: absolute;
   bottom: 0;
@@ -1562,6 +1565,9 @@ ul li {
     width: 240px;
   }
 }
+.couple-section .orn-2 img {
+  transform-origin: 50% 100%;
+}
 .couple-section .orn-3 {
   position: absolute;
   top: 0;
@@ -1579,6 +1585,9 @@ ul li {
   .couple-section .orn-3 {
     width: 200px;
   }
+}
+.couple-section .orn-3 img {
+  transform-origin: 10% 100%;
 }
 .couple-section .and {
   font-weight: 600;
@@ -1865,6 +1874,9 @@ ul li {
     width: 240px;
   }
 }
+.venue-section .orn-1 img {
+  transform-origin: 10% 100%;
+}
 .venue-section .venue-wrapper {
   position: relative;
   z-index: 3;
@@ -2131,6 +2143,9 @@ ul li {
     width: 200px;
   }
 }
+.wishes-section .orn-1 img {
+  transform-origin: 10% 100%;
+}
 .wishes-section .card-form {
   margin-bottom: 0;
   background: var(--color-primary);
@@ -2254,6 +2269,9 @@ ul li {
   .egift-section .orn-1 {
     transform: translate(20%, -20%) scaleX(-1) rotate(-25deg);
   }
+}
+.egift-section .orn-1 img {
+  transform-origin: 10% 100%;
 }
 .egift-section .gift-wrap {
   position: relative;
@@ -2588,6 +2606,9 @@ ul li {
   .thank-section .orn-1 {
     width: 240px;
   }
+}
+.thank-section .orn-1 img {
+  transform-origin: 10% 100%;
 }
 .thank-section .image-wrapper {
   position: relative;
