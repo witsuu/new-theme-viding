@@ -1520,6 +1520,7 @@ ul li {
   .cover-section .cover-wrapper .cover-content .cover-body {
     width: 100%;
     min-height: 80%;
+    padding: 5rem 1rem;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
@@ -1548,7 +1549,7 @@ ul li {
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .title {
   color: var(--color-dark);
 }
-.cover-section .cover-wrapper .cover-content .elements-widget {
+.cover-section .cover-wrapper .cover-content .widget-element {
   width: 100%;
 }
 
@@ -1739,6 +1740,7 @@ ul li {
 .header-section .header-content .header .header-title-content {
   position: relative;
   z-index: 5;
+  color: #987c1b;
 }
 .header-section .header-content .header #scroll-animate {
   animation: scrollAnim 1500ms ease infinite;
@@ -2055,7 +2057,6 @@ ul li {
 }
 .couple-section .couple-content {
   position: relative;
-  margin-bottom: 3rem;
 }
 .couple-section .couple {
   position: relative;
