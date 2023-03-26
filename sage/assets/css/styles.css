@@ -1488,20 +1488,13 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(110deg, #c6a058, #ffda92);
-  -webkit-mask-image: url(../images/mask-1.png);
-          mask-image: url(../images/mask-1.png);
-  -webkit-mask-size: 100% 100%;
-          mask-size: 100% 100%;
-  -webkit-mask-repeat: no-repeat;
-          mask-repeat: no-repeat;
 }
 .cover-section .cover-wrapper .cover-content .cover-body::before {
   position: absolute;
-  top: 5px;
-  left: 5px;
-  right: 5px;
-  bottom: 5px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
   background-color: var(--color-primary);
   -webkit-mask-image: url(../images/mask-1.png);
           mask-image: url(../images/mask-1.png);
@@ -1509,6 +1502,7 @@ ul li {
           mask-size: 100% 100%;
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
+  opacity: 0.8;
   content: "";
 }
 @media (max-width: 991px) {
@@ -1542,6 +1536,9 @@ ul li {
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .greeting-wrapper h6 {
   font-weight: 700;
+}
+.cover-section .cover-wrapper .cover-content .cover-body .cover-description * {
+  position: relative;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description h6 {
   font-weight: 600;
