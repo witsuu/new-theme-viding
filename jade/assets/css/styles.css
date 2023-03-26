@@ -1185,7 +1185,7 @@ ul li {
   align-items: center;
   position: relative;
   color: var(--color-dark);
-  padding: 1rem 2rem;
+  padding: 0.5rem 2rem 1rem;
   min-width: 100px;
 }
 .countdown .days::before,
@@ -1206,7 +1206,7 @@ ul li {
   .countdown .minutes,
   .countdown .seconds {
     min-width: 65px;
-    padding: 1rem 0.75rem;
+    padding: 0.4rem 0.75rem 1rem;
   }
 }
 @media (max-width: 375px) {
@@ -2801,7 +2801,7 @@ ul li {
   font-weight: 400;
   margin-bottom: 0;
   font-size: 62px;
-  min-width: 30%;
+  line-height: 1;
 }
 .venue-section .event-name h4 {
   font-family: "Champignon", cursive;
