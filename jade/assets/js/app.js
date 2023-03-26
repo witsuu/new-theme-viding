@@ -4,7 +4,7 @@ const waitCoverLoading = (el) => {
 	return new Promise((resolve) => {
 		el.classList.add('cover-opening')
 
-		setTimeout(() => resolve(el), 2500)
+		setTimeout(() => resolve(el), 3500)
 	})
 }
 

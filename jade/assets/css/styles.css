@@ -1,16 +1,16 @@
 @font-face {
-  font-family: "Thesignature";
-  src: url(../fonts/Thesignature.ttf) format("ttf");
+  font-family: "Champignon";
+  src: url(../fonts/Champignon.ttf) format("ttf");
   font-display: swap;
 }
 @font-face {
-  font-family: "Thesignature";
-  src: url(../fonts/Thesignature.woff) format("woff");
+  font-family: "Champignon";
+  src: url(../fonts/Champignon.woff) format("woff");
   font-display: swap;
 }
 @font-face {
-  font-family: "Thesignature";
-  src: url(../fonts/Thesignature.woff2) format("woff2");
+  font-family: "Champignon";
+  src: url(../fonts/Champignon.woff2) format("woff2");
   font-display: swap;
 }
 :root {
@@ -27,7 +27,7 @@
 }
 
 body {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
   color: var(--color-light);
   -webkit-hyphens: manual;
           hyphens: manual;
@@ -91,16 +91,16 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Luxurious Script", cursive;
+  font-family: "Champignon", cursive;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 68px;
   line-height: 0.8;
 }
 @media (max-width: 575px) {
   h1 {
-    font-size: 32px;
+    font-size: 56px;
   }
 }
 h1 span {
@@ -117,6 +117,21 @@ h1 span {
 h2 {
   margin-bottom: 0;
   font-weight: 500;
+  font-size: 48px;
+}
+@media (max-width: 767px) {
+  h2 {
+    font-size: 42px;
+  }
+}
+
+h3 {
+  font-size: 46px;
+}
+@media (max-width: 767px) {
+  h3 {
+    font-size: 40px;
+  }
 }
 
 small {
@@ -187,11 +202,11 @@ span {
 }
 
 .font-primary {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
 }
 
 .font-secondary {
-  font-family: "Luxurious Script", cursive;
+  font-family: "Champignon", cursive;
 }
 
 .scaleX-reverse {
@@ -208,7 +223,7 @@ span {
 
 .form-control,
 .form-select {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Mulish", sans-serif;
   border: none;
   padding: 0.5rem 1rem;
   background-color: #fff;
@@ -1123,6 +1138,27 @@ ul li {
     transform: translateZ(0);
   }
 }
+[data-anim][data-anim=bird].has-animate {
+  animation-name: bird;
+  animation-duration: 5500ms;
+  animation-timing-function: linear;
+  animation-direction: normal;
+}
+
+@keyframes bird {
+  0% {
+    transform: translateZ(0);
+  }
+  33.3% {
+    transform: translate3d(-30%, 0, 0);
+  }
+  66.6% {
+    transform: translate3d(-10%, 30%, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
 .countdown {
   display: flex;
   text-align: center;
@@ -1210,23 +1246,16 @@ ul li {
 .countdown .seconds .angka {
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 38px;
-  font-family: "Luxurious Script", cursive;
+  font-size: 52px;
+  line-height: 1;
+  font-family: "Champignon", cursive;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
-    font-size: 28px;
-  }
-}
-@media (max-width: 375px) {
-  .countdown .days .angka,
-  .countdown .hours .angka,
-  .countdown .minutes .angka,
-  .countdown .seconds .angka {
-    font-size: 24px;
+    font-size: 42px;
   }
 }
 .countdown .days .huruf,
@@ -1371,24 +1400,29 @@ ul li {
 }
 .cover-section.cover-opening .orn-1 .image-element,
 .cover-section.cover-opening .orn-3 .image-element {
-  transition: transform 2.5s ease, opacity 2.5s ease;
-  transition-delay: 200ms;
+  transition: transform 3500ms ease, opacity 3500ms ease;
   transform: translateX(-100%);
   opacity: 0;
-}
-@media (max-width: 991px) {
-  .cover-section.cover-opening .orn-1 .image-element,
-  .cover-section.cover-opening .orn-3 .image-element {
-    transition-delay: 700ms;
-  }
 }
 .cover-section.cover-opening .orn-1 .orn-2 .image-element,
 .cover-section.cover-opening .orn-1 .orn-4 .image-element,
 .cover-section.cover-opening .orn-3 .orn-2 .image-element,
 .cover-section.cover-opening .orn-3 .orn-4 .image-element {
-  transition: transform 2.7s ease, opacity 2.7s ease;
+  transition: transform 3500ms ease, opacity 3500ms ease;
   transform: translateX(-120%);
   opacity: 0;
+}
+.cover-section.cover-opening .orn-1 .image-element {
+  transition-delay: 1500ms;
+}
+.cover-section.cover-opening .orn-1 .orn-2 .image-element {
+  transition-delay: 500ms;
+}
+.cover-section.cover-opening .orn-3 .image-element {
+  transition-delay: 1000ms;
+}
+.cover-section.cover-opening .orn-3 .orn-4 .image-element {
+  transition-delay: 0;
 }
 .cover-section.cover-opening .cover-content {
   opacity: 0;
@@ -1697,6 +1731,20 @@ ul li {
 }
 .header-section .orn-9 .orn-10 img {
   transform-origin: 50% 70%;
+}
+.header-section .orn-11 {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 40px;
+  transform: translate(-50%, 0);
+}
+.header-section .orn-12 {
+  position: absolute;
+  bottom: 30%;
+  right: 0;
+  width: 40px;
+  transform: translate(40%, 0);
 }
 .header-section .header-content {
   position: relative;
@@ -2155,6 +2203,25 @@ ul li {
     width: 140px;
   }
 }
+.couple-section .orn-15 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 80px;
+  transform: translate(-50%, -50%);
+}
+.couple-section .orn-16 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 160px;
+  transform: translate(-50%, -40%);
+}
+@media (max-width: 767px) {
+  .couple-section .orn-16 {
+    width: 120px;
+  }
+}
 .couple-section .and {
   font-weight: 600;
   display: flex;
@@ -2162,7 +2229,7 @@ ul li {
   align-items: center;
   width: 100%;
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 3rem;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -2175,8 +2242,8 @@ ul li {
 }
 .couple-section .and span {
   position: relative;
-  font-size: 48px;
-  font-family: "Luxurious Script", cursive;
+  font-size: 32px;
+  font-family: "Champignon", cursive;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -2194,21 +2261,8 @@ ul li {
 }
 @media (max-width: 767px) {
   .couple-section .couple-content {
-    padding: 8rem 1rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
-}
-.couple-section .couple-content::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 140px;
-  height: 85px;
-  background-image: url(../images/pattern-4.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  transform: translate(-50%, -42%);
-  pointer-events: none;
-  content: "";
 }
 .couple-section .couple {
   position: relative;
@@ -2228,25 +2282,6 @@ ul li {
   background-image: url(../images/border-gold.png);
   background-size: 100% 100%;
   background-repeat: no-repeat;
-}
-.couple-section .couple .image-wrap .image-element::before {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 100px;
-  height: 100px;
-  transform: translate(-50%, -42%);
-  background-image: url(../images/ornament-gold.png);
-  background-size: 100%;
-  background-repeat: no-repeat;
-  z-index: 2;
-  content: "";
-}
-@media (max-width: 767px) {
-  .couple-section .couple .image-wrap .image-element::before {
-    width: 80px;
-    height: 80px;
-  }
 }
 .couple-section .couple .image-wrap .image-element .couple-image {
   height: 100%;
@@ -2762,14 +2797,15 @@ ul li {
   align-items: center;
 }
 .venue-section .event-name .date h5 {
-  font-family: "Luxurious Script", cursive;
-  font-weight: 700;
+  font-family: "Champignon", cursive;
+  font-weight: 400;
   margin-bottom: 0;
-  font-size: 48px;
+  font-size: 62px;
   min-width: 30%;
 }
 .venue-section .event-name h4 {
-  font-family: "Luxurious Script", cursive;
+  font-family: "Champignon", cursive;
+  font-size: 42px;
 }
 .venue-section .event-name p {
   margin-bottom: 0;
@@ -2958,7 +2994,7 @@ ul li {
   top: 0;
   left: 50%;
   width: 140px;
-  transform: translate(-50%, -42%);
+  transform: translate(-50%, -40%);
 }
 .rsvp-section .rsvp-wrapper {
   position: relative;
@@ -2970,7 +3006,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .rsvp-section .rsvp-wrapper {
-    padding: 8rem 1rem 2rem;
+    padding: 5rem 1rem 2rem;
   }
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
