@@ -2803,6 +2803,12 @@ ul li {
   font-size: 62px;
   line-height: 1;
 }
+@media (max-width: 767px) {
+  .venue-section .event-name .date h5 {
+    margin-top: -0.5rem;
+    margin-bottom: 1rem;
+  }
+}
 .venue-section .event-name h4 {
   font-family: "Champignon", cursive;
   font-size: 42px;
