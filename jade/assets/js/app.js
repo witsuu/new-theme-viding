@@ -14,7 +14,7 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 	setTimeout(() => {
 		runAnimationOrnament()
 		runAnimationLoop()
-	}, 2000)
+	}, 1500)
 
 	waitCoverLoading(document.querySelector(".cover-section")).then((el) => {
 		el.classList.add('cover-opened')
