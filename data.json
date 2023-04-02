@@ -32,17 +32,17 @@
 	{
 		"name": "Chicory",
 		"path": "chicory",
-		"status": ""
+		"status": "DRAFT"
 	},
 	{
 		"name": "Tropical",
 		"path": "tropical",
-		"status": ""
+		"status": "DRAFT"
 	},
 	{
 		"name": "Duke",
 		"path": "duke",
-		"status": ""
+		"status": "DRAFT"
 	},
 	{
 		"name": "Harlow",
@@ -117,22 +117,22 @@
 	{
 		"name": "Pillar",
 		"path": "pillar",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Secret",
 		"path": "secret",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Sage",
 		"path": "sage",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Jade",
 		"path": "jade",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Dillian",
