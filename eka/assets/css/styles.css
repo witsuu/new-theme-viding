@@ -918,8 +918,7 @@ ul li {
   }
 }
 [data-anim*=flip][data-anim*=flip] {
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 [data-anim=flip-up].has-animate {

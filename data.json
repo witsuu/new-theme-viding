@@ -137,6 +137,21 @@
 	{
 		"name": "Dillian",
 		"path": "dillian",
+		"status": "DONE"
+	},
+	{
+		"name": "Champ",
+		"path": "champ",
+		"status": ""
+	},
+	{
+		"name": "Fountain",
+		"path": "fountain",
+		"status": ""
+	},
+	{
+		"name": "Aye",
+		"path": "aye",
 		"status": ""
 	}
 ]
