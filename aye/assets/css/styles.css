@@ -2580,6 +2580,7 @@ ul li {
 .venue-section .event-name {
   position: relative;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .venue-section .event-name .date {
   position: relative;
@@ -3482,10 +3483,25 @@ ul li {
   width: 100%;
   margin-top: -2px;
 }
+@media (max-width: 991px) {
+  .thank-section .orn-1 {
+    width: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .thank-section .orn-1 {
+    width: 200%;
+  }
+}
 .thank-section .orn-2 {
   position: relative;
   width: 240px;
   margin: 0 auto;
+}
+@media (max-width: 767px) {
+  .thank-section .orn-2 {
+    width: 180px;
+  }
 }
 .thank-section .orn-3 {
   position: absolute;

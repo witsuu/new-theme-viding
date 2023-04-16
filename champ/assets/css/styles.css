@@ -1146,6 +1146,7 @@ ul li {
 @media (max-width: 767px) {
   .countdown {
     gap: 0.5rem;
+    margin-bottom: -1.5rem;
   }
 }
 .countdown .days,
@@ -2263,6 +2264,7 @@ ul li {
 .venue-section .event-name {
   position: relative;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .venue-section .event-name .date {
   position: relative;
