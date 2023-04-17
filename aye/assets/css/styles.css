@@ -1148,6 +1148,15 @@ ul li {
   visibility: visible !important;
 }
 
+#ondel #male {
+  transform-box: fill-box;
+  transform-origin: 30% 80%;
+}
+#ondel #female {
+  transform-box: fill-box;
+  transform-origin: 80% 80%;
+}
+
 .countdown {
   display: flex;
   justify-content: center;
@@ -1407,6 +1416,9 @@ ul li {
   .cover-section .orn-2 {
     width: 180px;
   }
+}
+.cover-section .orn-2 path {
+  fill: var(--color-primary);
 }
 .cover-section .orn-3 {
   position: absolute;
@@ -2260,6 +2272,9 @@ ul li {
   width: 180px;
   margin: 0 auto;
 }
+.story-section .orn-1 path {
+  fill: var(--color-main);
+}
 .story-section .orn-2 {
   position: absolute;
   top: 0;
@@ -2691,6 +2706,9 @@ ul li {
   .rsvp-section .orn-1 {
     width: 180px;
   }
+}
+.rsvp-section .orn-1 path {
+  fill: var(--color-main);
 }
 .rsvp-section .orn-2 {
   position: absolute;
@@ -3526,6 +3544,9 @@ ul li {
   .thank-section .orn-2 {
     width: 180px;
   }
+}
+.thank-section .orn-2 path {
+  fill: var(--color-primary);
 }
 .thank-section .orn-3 {
   position: absolute;

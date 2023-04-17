@@ -1160,7 +1160,7 @@ ul li {
   position: relative;
   color: var(--color-light);
   padding: 1rem 2rem;
-  min-width: 100px;
+  min-width: 120px;
 }
 .countdown .days::before,
 .countdown .hours::before,
@@ -3200,6 +3200,7 @@ ul li {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 50%;
+  position: relative;
 }
 .thank-section .thank-wrapper {
   position: relative;
