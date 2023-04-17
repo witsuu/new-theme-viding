@@ -1063,7 +1063,7 @@
                     <div class="row justify-content-center">
                         <div class=" col-11 col-md-12">
                             <div class="gallery-default">
-                                <div id="gallery-default" class="splide mb-1">
+                                <div id="gallery-default" class="splide mb-3">
                                     <div class="splide__track overflow-visible">
                                         <ul class="splide__list" id="zoom-gallery-default">
                                             <li class="splide__slide position-relative">
@@ -1409,9 +1409,15 @@
         if (document.querySelector(".gallery-default")) {
             document.addEventListener("DOMContentLoaded", function () {
                 const gallery = new Splide("#gallery-default", {
-                    pagination: false,
+                    pagination: true,
+                    type: 'loop',
                     perPage: 3,
                     perMove: 1,
+                    breakpoints: {
+                        576: {
+                            perPage: 1
+                        }
+                    }
                 });
 
                 gallery.mount();

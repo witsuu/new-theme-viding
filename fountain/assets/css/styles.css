@@ -1186,7 +1186,7 @@ ul li {
   align-items: center;
   position: relative;
   padding: 1rem 2rem;
-  min-width: 100px;
+  min-width: 120px;
   background: var(--color-main);
   border-radius: var(--border-radius);
 }
@@ -1196,7 +1196,7 @@ ul li {
   .countdown .minutes,
   .countdown .seconds {
     min-width: 65px;
-    padding: 1rem 0.75rem;
+    padding: 0.5rem 0.75rem;
   }
 }
 @media (max-width: 375px) {
@@ -2817,18 +2817,8 @@ ul li {
   -o-object-fit: cover;
      object-fit: cover;
 }
-.gallery-section .img-thumbnail {
-  -o-object-fit: cover;
-     object-fit: cover;
-  padding: 0;
-  border: none;
-  border-radius: 0;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 16/9;
-}
-.gallery-section .splide .splide__slide.is-active .img-thumbnail {
-  border: 3px solid #fff;
+.gallery-section .splide .splide__pagination {
+  bottom: -1.5rem;
 }
 .gallery-section .splide .splide__arrow {
   border-radius: 0;
