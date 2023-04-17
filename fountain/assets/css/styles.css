@@ -299,11 +299,11 @@ span {
   height: 30%;
 }
 .overlay-elements-gradient.overlay-bottom {
-  bottom: 0;
+  bottom: -1px;
   background: linear-gradient(to top, var(--color-main) 20%, transparent 100%);
 }
 .overlay-elements-gradient.overlay-top {
-  top: 0;
+  top: -1px;
   background: linear-gradient(to bottom, var(--color-main) 20%, transparent 100%);
 }
 
@@ -2140,6 +2140,7 @@ ul li {
   overflow: hidden;
   border: none;
   background: linear-gradient(110deg, #c6a058, #ffda92);
+  color: var(--color-light);
   padding: 1px;
   -webkit-mask: var(--mask);
           mask: var(--mask);
@@ -2220,6 +2221,7 @@ ul li {
 .venue-section .event-name {
   position: relative;
   width: 100%;
+  margin-bottom: 1rem;
 }
 .venue-section .event-name .date {
   position: relative;

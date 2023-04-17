@@ -1180,7 +1180,7 @@ ul li {
   .countdown .minutes,
   .countdown .seconds {
     min-width: 65px;
-    padding: 1rem 0.75rem;
+    padding: 0.25rem 0.75rem 0.5rem;
   }
 }
 @media (max-width: 375px) {

@@ -2719,6 +2719,9 @@ ul li {
     width: 120px;
   }
 }
+.rsvp-section .orn-3 path {
+  fill: var(--color-main);
+}
 .rsvp-section .orn-4 {
   position: absolute;
   bottom: -1px;
@@ -2736,6 +2739,27 @@ ul li {
   .rsvp-section .orn-4 {
     width: 120px;
   }
+}
+.rsvp-section .orn-4 path {
+  fill: var(--color-main);
+}
+.rsvp-section .orn-5 {
+  position: relative;
+  width: 100%;
+  margin-top: -2px;
+}
+@media (max-width: 991px) {
+  .rsvp-section .orn-5 {
+    width: 150%;
+  }
+}
+@media (max-width: 767px) {
+  .rsvp-section .orn-5 {
+    width: 200%;
+  }
+}
+.rsvp-section .orn-5 path {
+  fill: var(--color-main);
 }
 .rsvp-section .image-wrapper {
   position: relative;
