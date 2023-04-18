@@ -2803,51 +2803,82 @@ ul li {
 }
 .gallery-section {
   position: relative;
-  padding: 5rem 0;
+  padding: 3rem 0;
+}
+.gallery-section .zoom-gallery-default {
+  width: 100%;
+  position: relative;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 5px;
 }
 @media (max-width: 767px) {
-  .gallery-section {
-    padding: 3rem 0;
+  .gallery-section .zoom-gallery-default {
+    padding: 0;
+    grid-template-columns: auto auto auto auto;
   }
 }
-.gallery-section .img-gallery {
-  height: auto;
+.gallery-section .zoom-gallery-default a {
+  position: relative;
   width: 100%;
+  height: auto;
   aspect-ratio: 3/4;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
-.gallery-section .splide .splide__pagination {
-  bottom: -1.5rem;
-}
-.gallery-section .splide .splide__arrow {
-  border-radius: 0;
-  width: 70px;
-  height: 65px;
-  background-color: var(--color-secondary);
+.gallery-section .zoom-gallery-default a.grid-lg-default {
+  grid-column: span 2;
+  height: 280px;
+  aspect-ratio: unset;
 }
 @media (max-width: 991px) {
-  .gallery-section .splide .splide__arrow {
-    width: 40px;
-    height: 30px;
+  .gallery-section .zoom-gallery-default a.grid-lg-default {
+    height: 170px;
   }
-}
-.gallery-section .splide .splide__arrow svg {
-  fill: var(--text-button);
-  width: 25px;
-  height: 30px;
 }
 @media (max-width: 767px) {
-  .gallery-section .splide .splide__arrow svg {
-    width: 15px;
-    height: 20px;
+  .gallery-section .zoom-gallery-default a.grid-lg-default {
+    height: 50px;
   }
 }
-.gallery-section .splide .splide__arrow--prev {
-  left: 0;
-}
-.gallery-section .splide .splide__arrow--next {
+.gallery-section .zoom-gallery-default a::before {
+  position: absolute;
+  content: "";
+  top: 0;
   right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: transparent;
+  z-index: 2;
+  transition: all 0.5s ease-in-out;
+}
+.gallery-section .zoom-gallery-default a::after {
+  position: absolute;
+  font-family: "Font Awesome 6 Free";
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  content: "+";
+  transition: all 0.4s ease-in-out;
+  color: #f4f4f4;
+  padding: 2px 8px;
+  font-size: 20px;
+  border-radius: 1000px;
+  font-weight: 700;
+  border: solid 2px #f4f4f4;
+  opacity: 0;
+  z-index: 3;
+}
+.gallery-section .zoom-gallery-default a:hover::before {
+  background-color: rgba(8, 8, 8, 0.3647058824);
+}
+.gallery-section .zoom-gallery-default a:hover::after {
+  opacity: 1;
+}
+.gallery-section .zoom-gallery-default .photo {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: relative;
 }
 
 .apology-section {
