@@ -142,16 +142,26 @@
 	{
 		"name": "Champ",
 		"path": "champ",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Fountain",
 		"path": "fountain",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Aye",
 		"path": "aye",
+		"status": "DONE"
+	},
+	{
+		"name": "Paradis",
+		"path": "paradise",
+		"status": ""
+	},
+	{
+		"name": "Skye",
+		"path": "skye",
 		"status": ""
 	}
 ]
