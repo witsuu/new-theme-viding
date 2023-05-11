@@ -1541,11 +1541,15 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-1 {
-    top: 0;
-    bottom: unset;
+    bottom: 15%;
     left: 50%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 0);
     width: 110%;
+  }
+}
+@media (max-width: 375px) {
+  .header-section .orn-1 {
+    bottom: 10%;
   }
 }
 .header-section .orn-2 {
