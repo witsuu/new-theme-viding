@@ -729,6 +729,10 @@ ul li {
   animation-name: rotateRight;
 }
 
+[data-anim=rotate-right-2].has-animate {
+  animation-name: rotateRight2;
+}
+
 [data-anim=rotate-left].has-animate {
   animation-name: rotateLeft;
 }
@@ -745,6 +749,14 @@ ul li {
     transform: rotate(-10deg);
   }
 }
+@keyframes rotateRight2 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotate(-20deg);
+  }
+}
 @keyframes rotateLeft {
   0% {
     transform: rotateZ(0);
@@ -753,7 +765,7 @@ ul li {
     transform: rotate(10deg);
   }
 }
-@keyframes rotateLef2 {
+@keyframes rotateLeft2 {
   0% {
     transform: rotateZ(0);
   }
@@ -1680,6 +1692,7 @@ ul li {
 @media (min-width: 992px) {
   .header-section .orn-5 {
     width: 160px;
+    transform: translate(-30%, 10%) rotate(-10deg);
   }
 }
 .header-section .orn-5 img {
