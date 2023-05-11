@@ -733,6 +733,10 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=rotate-left-2].has-animate {
+  animation-name: rotateLeft2;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -747,6 +751,14 @@ ul li {
   }
   100% {
     transform: rotate(10deg);
+  }
+}
+@keyframes rotateLef2 {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotate(20deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -2202,6 +2214,7 @@ ul li {
 @media (min-width: 992px) {
   .story-section .orn-1 .orn-3 {
     width: 160px;
+    transform: translate(-70%, -5%);
   }
 }
 .story-section .orn-1 .orn-3 img {
