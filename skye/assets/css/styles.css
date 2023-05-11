@@ -2154,6 +2154,8 @@ ul li {
   top: 0;
   left: 50%;
   width: 113%;
+  max-height: 80%;
+  overflow: hidden;
   transform: translate(-50%, 0);
   z-index: 2;
 }
@@ -2338,11 +2340,11 @@ ul li {
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .card .card-body {
-    padding: calc(35vw + 5rem) 0 2rem;
+    padding: calc(52vw - 0.25rem) 0 2rem;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
-  margin: 1rem 0;
+  margin: 0 1rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body hr {
   display: block;
@@ -2401,11 +2403,11 @@ ul li {
 .venue-section .event-name {
   position: relative;
   width: 100%;
-  padding: 0 calc(6vw - 1.5rem) 2rem;
+  padding: 3rem calc(6vw - 1.5rem) 3rem;
 }
 @media (min-width: 992px) {
   .venue-section .event-name {
-    padding: 0 calc(6vw + 1rem) 2rem;
+    padding: 3rem calc(6vw + 1rem) 3rem;
   }
 }
 .venue-section .event-name .date {
@@ -2563,7 +2565,17 @@ ul li {
   width: 75%;
   transform: translate(-50%, -50%);
   background: var(--color-primary);
-  padding: 5rem 2rem;
+  padding: 6.5rem 2rem;
+}
+@media (min-width: 1200px) {
+  .rsvp-section .rsvp-wrapper .rsvp-form {
+    padding: 8rem 2rem;
+  }
+}
+@media (max-width: 375px) {
+  .rsvp-section .rsvp-wrapper .rsvp-form {
+    padding: 5rem 2rem;
+  }
 }
 @media (max-width: 767px) {
   .rsvp-section .rsvp-wrapper .rsvp-form {
