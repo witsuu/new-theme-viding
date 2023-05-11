@@ -1433,15 +1433,15 @@ ul li {
     width: 60%;
   }
 }
-.cover-section .orn-1 img {
-  transform-origin: 30% 20%;
+.cover-section .orn-1 .image-element {
+  transform-origin: 10% 10%;
 }
 .cover-section .orn-1 .orn-3 {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 60%;
-  transform: translate(-20%, 20%) rotate(-35deg);
+  transform: translate(-12%, 12%) rotate(-35deg);
 }
 .cover-section .orn-1 .orn-3 img {
   transform-origin: 70% 40%;
@@ -1464,15 +1464,15 @@ ul li {
     width: 70%;
   }
 }
-.cover-section .orn-2 img {
-  transform-origin: 30% 20%;
+.cover-section .orn-2 .image-element {
+  transform-origin: 10% 10%;
 }
 .cover-section .orn-2 .orn-4 {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 50%;
-  transform: translate(-40%, 0) rotate(-20deg);
+  transform: translate(-30%, 0) rotate(-20deg);
 }
 .cover-section .orn-2 .orn-4 img {
   transform-origin: 70% 40%;
@@ -1612,7 +1612,7 @@ ul li {
   }
 }
 .header-section .orn-1 img {
-  transform-origin: 30% 20%;
+  transform-origin: 10% 10%;
 }
 .header-section .orn-2 {
   position: absolute;
@@ -1632,8 +1632,8 @@ ul li {
     width: 280px;
   }
 }
-.header-section .orn-2 img {
-  transform-origin: 30% 20%;
+.header-section .orn-2 .image-element {
+  transform-origin: 10% 10%;
 }
 .header-section .orn-3 {
   position: absolute;
@@ -1653,8 +1653,8 @@ ul li {
     width: 280px;
   }
 }
-.header-section .orn-3 img {
-  transform-origin: 30% 20%;
+.header-section .orn-3 .image-element {
+  transform-origin: 10% 10%;
 }
 .header-section .orn-4 {
   position: absolute;
@@ -1682,7 +1682,7 @@ ul li {
   bottom: 0;
   right: 0;
   width: 100px;
-  transform: translate(-30%, 0) rotate(-10deg);
+  transform: translate(-35%, 0) rotate(-10deg);
 }
 @media (min-width: 768px) {
   .header-section .orn-5 {

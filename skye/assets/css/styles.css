@@ -1270,8 +1270,13 @@ ul li {
 .reminder-wrap {
   position: relative;
   display: block;
-  padding: calc(40vh + 1rem) 0;
+  padding: calc(45vh + 1rem) 0;
   background: var(--color-primary);
+}
+@media (max-width: 991px) {
+  .reminder-wrap {
+    padding: calc(30vh + 1rem) 0;
+  }
 }
 @media (max-width: 767px) {
   .reminder-wrap {
@@ -1354,6 +1359,27 @@ ul li {
 }
 .reminder-wrap .orn-5 img {
   transform-origin: 45% 90%;
+}
+.reminder-wrap .orn-6 {
+  position: absolute;
+  top: 0;
+  right: 30%;
+  width: 80px;
+  transform: translate(50%, 0) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .reminder-wrap .orn-6 {
+    width: 100px;
+  }
+}
+@media (min-width: 1200px) {
+  .reminder-wrap .orn-6 {
+    width: 120px;
+    transform: translate(80%, -10%) rotate(-10deg) scaleX(-1);
+  }
+}
+.reminder-wrap .orn-6 img {
+  transform-origin: 85% 40%;
 }
 .reminder-wrap .reminder-content {
   position: relative;
