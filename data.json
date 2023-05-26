@@ -163,5 +163,30 @@
 		"name": "Skye",
 		"path": "skye",
 		"status": ""
+	},
+	{
+		"name": "Jungle",
+		"path": "jungle",
+		"status": ""
+	},
+	{
+		"name": "Fairytail",
+		"path": "fairytail",
+		"status": ""
+	},
+	{
+		"name": "Triumph",
+		"path": "triumph",
+		"status": ""
+	},
+	{
+		"name": "Wingman",
+		"path": "wingman",
+		"status": ""
+	},
+	{
+		"name": "Wooden",
+		"path": "wooden",
+		"status": ""
 	}
 ]
