@@ -124,9 +124,9 @@ mapModal.forEach(modal => {
 	})
 })
 
-if (document.querySelector("#zoom-gallery-default")) {
-	$("#zoom-gallery-default").magnificPopup({
-		delegate: "li a",
+if (document.querySelector(".zoom-gallery-default")) {
+	$(".zoom-gallery-default").magnificPopup({
+		delegate: "a",
 		type: "image",
 		mainClass: "mfp-with-zoom mfp-img-mobile",
 		zoom: {
@@ -221,4 +221,79 @@ const runAnimationLoop = () => {
 			onToggle: self => self.isActive ? al.classList.add("animation-loop") : al.classList.remove("animation-loop")
 		})
 	})
+}
+
+const gallery = document.querySelector(".gallery-default");
+if (gallery) {
+	const gridLg = [3, 4, 11, 12];
+	const gridSm = [2, 3, 8, 9];
+
+	const mqm = window.matchMedia("screen and (max-width: 767px)");
+	const mqt = window.matchMedia("screen and (min-width:768px) and (max-width: 991px)");
+	const mqd = window.matchMedia("(min-width: 992px)");
+
+	const galleryItems = gallery.querySelectorAll("a");
+
+	const switchGridMobile = (mqh) => {
+		let grid = gallery.querySelectorAll(".grid-lg-default");
+		if (grid && mqh.matches) {
+			grid.forEach((el, index) => {
+				el.classList.remove("grid-lg-default");
+				el.style.height = ``;
+			});
+		}
+
+		galleryItems.forEach((el, index) => {
+			if (mqh.matches) {
+				if (gridSm.includes(index)) {
+					el.classList.add("grid-lg-default");
+					el.style.height = `${galleryItems[1].clientHeight}px`;
+				}
+			}
+		});
+	};
+	const switchGridTablet = (mqt) => {
+		let grid = gallery.querySelectorAll(".grid-lg-default");
+		if (grid && mqt.matches) {
+			grid.forEach((el, index) => {
+				el.classList.remove("grid-lg-default");
+				el.style.height = "";
+			});
+		}
+
+		galleryItems.forEach((el, index) => {
+			if (mqt.matches) {
+				if (gridLg.includes(index)) {
+					el.classList.add("grid-lg-default");
+					el.style.height = `${galleryItems[1].clientHeight}px`;
+				}
+			}
+		});
+	};
+	const switchGridDesktop = (mqt) => {
+		let grid = gallery.querySelectorAll(".grid-lg-default");
+		if (grid && mqt.matches) {
+			grid.forEach((el, index) => {
+				el.classList.remove("grid-lg-default");
+				el.style.height = "";
+			});
+		}
+
+		galleryItems.forEach((el, index) => {
+			if (mqt.matches) {
+				if (gridLg.includes(index)) {
+					el.classList.add("grid-lg-default");
+					el.style.height = `${galleryItems[1].clientHeight}px`;
+				}
+			}
+		});
+	};
+
+	switchGridMobile(mqm);
+	switchGridTablet(mqt);
+	switchGridDesktop(mqd)
+
+	mqm.addEventListener("change", switchGridMobile);
+	mqt.addEventListener("change", switchGridTablet)
+	mqd.addEventListener("change", switchGridDesktop)
 }
