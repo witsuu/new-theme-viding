@@ -1823,12 +1823,47 @@ ul li {
 }
 .couple-section .and span {
   position: relative;
-  font-size: 36px;
+  font-size: 28px;
   font-family: "Libre Bodoni", serif;
+}
+@media (max-width: 991px) {
+  .couple-section .and span {
+    font-size: 24px;
+  }
 }
 @media (max-width: 767px) {
   .couple-section .and span {
-    width: 32px;
+    width: 20px;
+  }
+}
+.couple-section .and span::before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(calc(-100% - 0.3rem), -50%);
+  width: 20px;
+  height: 1px;
+  background-color: #5b421c;
+  content: "";
+}
+@media (max-width: 991px) {
+  .couple-section .and span::before {
+    width: 15px;
+  }
+}
+.couple-section .and span::after {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translate(calc(100% + 0.3rem), -50%);
+  width: 20px;
+  height: 1px;
+  background-color: #5b421c;
+  content: "";
+}
+@media (max-width: 991px) {
+  .couple-section .and span::after {
+    width: 15px;
   }
 }
 .couple-section .couple-wrapper {
