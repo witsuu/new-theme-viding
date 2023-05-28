@@ -28,7 +28,7 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  color: var(--color-dark);
+  color: #5b421c;
   -webkit-hyphens: manual;
           hyphens: manual;
 }
@@ -1392,7 +1392,6 @@ ul li {
   position: relative;
   background-color: transparent;
   border-radius: 12px;
-  color: var(--color-dark);
   height: 100%;
   display: flex;
   align-items: center;
@@ -1476,7 +1475,6 @@ ul li {
   position: relative;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .title {
-  color: var(--color-dark);
   margin: 1rem 0;
 }
 .cover-section .cover-wrapper .cover-content .elements-widget {
