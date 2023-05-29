@@ -1144,14 +1144,14 @@ ul li {
 }
 [data-anim][data-anim=rabbit-1].has-animate {
   animation-name: rabbit1;
-  animation-duration: 13500ms;
+  animation-duration: 14500ms;
   animation-direction: normal;
   animation-timing-function: linear;
 }
 @media (max-width: 991px) {
   [data-anim][data-anim=rabbit-1].has-animate {
     animation-name: rabbit1sm;
-    animation-duration: 8500ms;
+    animation-duration: 10000ms;
   }
 }
 
