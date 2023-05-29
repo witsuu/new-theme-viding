@@ -1144,14 +1144,14 @@ ul li {
 }
 [data-anim][data-anim=rabbit-1].has-animate {
   animation-name: rabbit1;
-  animation-duration: 14500ms;
+  animation-duration: 16500ms;
   animation-direction: normal;
   animation-timing-function: linear;
 }
 @media (max-width: 991px) {
   [data-anim][data-anim=rabbit-1].has-animate {
     animation-name: rabbit1sm;
-    animation-duration: 10000ms;
+    animation-duration: 12000ms;
   }
 }
 
@@ -1187,34 +1187,34 @@ ul li {
   43.75% {
     transform: translate(350%, -30%);
   }
-  49% {
+  48% {
     transform: translate(400%, 0%);
   }
-  50% {
+  51% {
     transform: translate(400%, 0%) scaleX(-1);
   }
-  56.25% {
+  55.25% {
     transform: translate(350%, -30%) scaleX(-1);
   }
-  62.5% {
+  60.5% {
     transform: translate(300%, 0%) scaleX(-1);
   }
-  69.75% {
+  67.75% {
     transform: translate(250%, -30%) scaleX(-1);
   }
-  75% {
+  73% {
     transform: translate(200%, 0%) scaleX(-1);
   }
-  81.25% {
+  79.25% {
     transform: translate(150%, -30%) scaleX(-1);
   }
-  87.5% {
+  85.5% {
     transform: translate(100%, 0%) scaleX(-1);
   }
-  93.75% {
+  91.75% {
     transform: translate(50%, -30%) scaleX(-1);
   }
-  99% {
+  96% {
     transform: translate(0%, 0%) scaleX(-1);
   }
   100% {
@@ -1237,19 +1237,19 @@ ul li {
   48% {
     transform: translate(200%, 0%);
   }
-  50% {
+  52% {
     transform: translate(200%, 0%) scaleX(-1);
   }
-  62.5% {
+  61.5% {
     transform: translate(150%, -30%) scaleX(-1);
   }
-  75% {
+  74% {
     transform: translate(100%, 0%) scaleX(-1);
   }
-  87.5% {
+  86.5% {
     transform: translate(50%, -30%) scaleX(-1);
   }
-  98% {
+  96% {
     transform: translate(0%, 0%) scaleX(-1);
   }
   100% {
