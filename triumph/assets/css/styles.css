@@ -2876,17 +2876,6 @@ ul li {
     width: 85%;
   }
 }
-.venue-section .event-name::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-light);
-  content: "";
-  border-radius: 500px;
-  z-index: 2;
-}
 .venue-section .event-name::after {
   position: absolute;
   top: 50%;
@@ -2897,9 +2886,6 @@ ul li {
   border-radius: 500px;
   border: 2px solid #fff;
   content: "";
-}
-.venue-section .event-name .elements-wrapper-absolute {
-  z-index: 3;
 }
 .venue-section .event-name .date {
   position: relative;
@@ -2925,8 +2911,14 @@ ul li {
   font-weight: 600;
 }
 .venue-section .event-name .elements-wrapper-absolute {
+  z-index: 3;
+}
+.venue-section .event-name .elements-wrapper-absolute .background-element {
   overflow: hidden;
   border-radius: 500px;
+  background-color: var(--color-light);
+}
+.venue-section .event-name .elements-wrapper-absolute .background-element img {
   opacity: 0.6;
 }
 .venue-section .event-place {
