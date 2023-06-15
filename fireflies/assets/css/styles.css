@@ -1216,11 +1216,11 @@ ul li {
 .reminder-wrap {
   position: relative;
   display: block;
-  padding: 5rem 0 0;
+  padding: 5rem 0;
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0 0;
+    padding: 3rem 0;
   }
 }
 .reminder-wrap .reminder-content {
@@ -1803,6 +1803,7 @@ ul li {
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
   padding: 2rem;
+  overflow: hidden;
 }
 .venue-section .event-name .date {
   position: relative;
@@ -2041,12 +2042,6 @@ ul li {
 .egift-section {
   position: relative;
   text-align: center;
-  padding: 0 0 5rem;
-}
-@media (max-width: 767px) {
-  .egift-section {
-    padding: 0 0 3rem;
-  }
 }
 .egift-section .image-wrapper {
   position: relative;
@@ -2066,6 +2061,15 @@ ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.egift-section .gift-body {
+  position: relative;
+  padding: 5rem 0;
+}
+@media (max-width: 767px) {
+  .egift-section .gift-body {
+    padding: 3rem 0;
+  }
 }
 .egift-section .gift-wrap {
   position: relative;
