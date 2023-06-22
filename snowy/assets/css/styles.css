@@ -3022,7 +3022,7 @@ ul li {
   border-radius: 500px;
   overflow: hidden;
 }
-@media (max-width: 767px) {
+@media (max-width: 375px) {
   .rsvp-section .rsvp-wrapper {
     padding: 5rem 2rem;
   }
