@@ -43,6 +43,10 @@ if (cd) Countdown(cd.getAttribute("date"))
 
 gsap.registerPlugin(ScrollTrigger, Flip)
 
+const getRandomNumber = (min, max) => {
+	return Math.floor(Math.random() * max) + min
+}
+
 // Progress Bar
 let progress = document.querySelector(".progress");
 
@@ -222,3 +226,41 @@ const runAnimationLoop = () => {
 		})
 	})
 }
+
+const glow = document.querySelectorAll(".glow")
+
+gsap.utils.toArray(glow).forEach(g => {
+	ScrollTrigger.create({
+		trigger: g,
+		start: "top bottom",
+		onToggle: self => {
+			if (self.isActive) {
+				gsap.to(g,
+					{
+						opacity: 0,
+						repeat: -1,
+						delay: getRandomNumber(0, 3),
+						duration: 3,
+						ease: 'none',
+						stagger: {
+							amount: 3
+						}
+					}).yoyo(true)
+
+				gsap.to(g,
+					{
+						y: "-100%",
+						repeat: -1,
+						delay: getRandomNumber(0, 3),
+						duration: 6,
+						ease: "none",
+						stagger: {
+							amount: 3
+						}
+					}).yoyo(true)
+			} else {
+				self.kill()
+			}
+		}
+	})
+})

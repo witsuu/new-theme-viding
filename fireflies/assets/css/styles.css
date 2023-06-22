@@ -351,6 +351,19 @@ ul li {
     display: block;
   }
 }
+.glow {
+  position: absolute;
+  width: 40px;
+  height: auto;
+  aspect-ratio: 1;
+  border-radius: 50px;
+  background: #f2e3a4;
+  filter: blur(5px);
+  box-shadow: 0 0 1rem #f2e3a4;
+  z-index: 5;
+  pointer-events: none;
+}
+
 .loader-wrapper {
   position: fixed;
   min-height: 100vh;
@@ -1254,6 +1267,53 @@ ul li {
 .cover-section.cover-opened {
   transform: translateY(-100%);
 }
+.cover-section .glow-1 {
+  top: 18%;
+  left: 45%;
+}
+@media (max-width: 991px) {
+  .cover-section .glow-1 {
+    top: 10%;
+    left: 20%;
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .glow-1 {
+    left: 10%;
+  }
+}
+.cover-section .glow-2 {
+  top: 50%;
+  right: 25%;
+  width: 20px;
+}
+@media (max-width: 991px) {
+  .cover-section .glow-2 {
+    right: 15%;
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .glow-2 {
+    right: 10%;
+  }
+}
+.cover-section .glow-3 {
+  bottom: 15%;
+  left: 40%;
+  width: 30px;
+}
+@media (max-width: 991px) {
+  .cover-section .glow-3 {
+    bottom: 10%;
+    left: 30%;
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .glow-3 {
+    bottom: 5%;
+    left: 25%;
+  }
+}
 .cover-section .cover-wrapper {
   position: relative;
   padding: 4rem 0 3rem;
@@ -1287,6 +1347,12 @@ ul li {
 @media (max-width: 991px) {
   .cover-section .cover-wrapper .cover-content .cover-body {
     flex-direction: column;
+    width: 60%;
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .cover-wrapper .cover-content .cover-body {
+    width: 100%;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .greeting-wrapper {
@@ -1312,19 +1378,8 @@ ul li {
 }
 @media (max-width: 991px) {
   .cover-section .cover-wrapper .cover-content .cover-body .image-wrapper {
-    width: 50%;
-    margin: 0 auto;
-  }
-}
-@media (max-width: 767px) {
-  .cover-section .cover-wrapper .cover-content .cover-body .image-wrapper {
-    width: 70%;
-    height: 100%;
-  }
-}
-@media (max-width: 375px) {
-  .cover-section .cover-wrapper .cover-content .cover-body .image-wrapper {
-    width: 60%;
+    width: 100%;
+    padding: 2rem;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .cover-background {
@@ -1343,7 +1398,8 @@ ul li {
 }
 @media (max-width: 991px) {
   .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
-    padding: 2rem 1rem 1rem;
+    margin-left: 0;
+    padding: 0 2rem 2rem;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description * {

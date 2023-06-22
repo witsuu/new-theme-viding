@@ -1270,6 +1270,126 @@ ul li {
 .cover-section.cover-opened {
   transform: translateY(-100%);
 }
+.cover-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 160px;
+  transform: translate(-40%, -40%);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-1 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-1 {
+    width: 320px;
+  }
+}
+.cover-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-60%, 30%);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-2 {
+    width: 380px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-2 {
+    width: 420px;
+  }
+}
+.cover-section .orn-3 {
+  position: absolute;
+  top: 70%;
+  right: 0;
+  width: 160px;
+  transform: translate(20%, -50%);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-3 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-3 {
+    width: 320px;
+  }
+}
+.cover-section .orn-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  transform: translate(30%, -40%) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-4 {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-4 {
+    width: 340px;
+  }
+}
+.cover-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(60%, 20%);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-5 {
+    width: 420px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-5 {
+    width: 460px;
+  }
+}
+.cover-section .orn-6 {
+  position: absolute;
+  top: 70%;
+  left: 0;
+  width: 160px;
+  transform: translate(-20%, -50%) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-6 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-6 {
+    width: 320px;
+  }
+}
+.cover-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  transform: translate(0, 80%) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .cover-section .orn-7 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .cover-section .orn-7 {
+    width: 320px;
+    transform: translate(0, 85%) scaleX(-1);
+  }
+}
 .cover-section .cover-wrapper {
   position: relative;
   padding: 4rem 0 3rem;
