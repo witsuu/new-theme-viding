@@ -157,36 +157,61 @@
 	{
 		"name": "Paradis",
 		"path": "paradise",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Skye",
 		"path": "skye",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Jungle",
 		"path": "jungle",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Fairytail",
 		"path": "fairytail",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Triumph",
 		"path": "triumph",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Wingman",
 		"path": "wingman",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Wooden",
 		"path": "wooden",
+		"status": "DONE"
+	},
+	{
+		"name": "Windmill",
+		"path": "windmill",
+		"status": ""
+	},
+	{
+		"name": "Snowy",
+		"path": "snowy",
+		"status": ""
+	},
+	{
+		"name": "Carribean",
+		"path": "carribean",
+		"status": ""
+	},
+	{
+		"name": "Fireflies",
+		"path": "fireflies",
+		"status": ""
+	},
+	{
+		"name": "Teacup",
+		"path": "teacup",
 		"status": ""
 	}
 ]
