@@ -239,7 +239,7 @@ gsap.utils.toArray(glow).forEach(g => {
 					{
 						opacity: 0,
 						repeat: -1,
-						delay: getRandomNumber(0, 3),
+						delay: getRandomNumber(0, 6),
 						duration: 3,
 						ease: 'none',
 						stagger: {
@@ -251,7 +251,7 @@ gsap.utils.toArray(glow).forEach(g => {
 					{
 						y: "-100%",
 						repeat: -1,
-						delay: getRandomNumber(0, 3),
+						delay: getRandomNumber(0, 6),
 						duration: 6,
 						ease: "none",
 						stagger: {
