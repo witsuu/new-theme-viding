@@ -164,19 +164,13 @@ const runAnimationOrnament = () => {
 					}
 				}
 
-				if (da.dataset.animDuration) da.style.animationDuration = da.dataset.animDuration
+				if (da.dataset.animDuration) da.style.animationDuration = `${da.dataset.animDuration}ms`
 
-				if (da.dataset.animDelay) {
-					setTimeout(() => {
-						da.classList.add("has-animate")
-						da.classList.remove("animation-invisible")
-						da.dataset.loadAnimation = true;
-					}, da.dataset.animDelay)
-				} else {
-					da.classList.add("has-animate")
-					da.classList.remove("animation-invisible")
-					da.dataset.loadAnimation = true;
-				}
+				if (da.dataset.animDelay) da.style.animationDelay = `${da.dataset.animDelay}ms`
+
+				da.classList.add("has-animate")
+				da.classList.remove("animation-invisible")
+				da.dataset.loadAnimation = true;
 			}
 		})
 	})
