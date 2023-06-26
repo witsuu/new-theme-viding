@@ -151,7 +151,7 @@ const runAnimationOrnament = () => {
 	document.querySelectorAll("[data-anim]").forEach(da => {
 		ScrollTrigger.create({
 			trigger: da,
-			start: da.dataset.animAnchor ? da.dataset.animAnchor : "top bottom",
+			start: da.dataset.animAnchor ? da.dataset.animAnchor : "-20% bottom",
 			onToggle: self => {
 				if (!self.isActive) {
 					if (da.classList.contains("animate-loop")) {
@@ -190,7 +190,7 @@ const runAnimationOrnamentCover = () => {
 	document.querySelectorAll(".cover-section [data-anim]").forEach(vs => {
 		ScrollTrigger.create({
 			trigger: vs,
-			start: "top bottom",
+			start: "-20% bottom",
 			onToggle: self => {
 				if (self.isActive) {
 					if (vs.dataset.animDuration) vs.style.animationDuration = vs.dataset.animDuration

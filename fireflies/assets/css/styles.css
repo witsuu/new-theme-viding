@@ -1240,11 +1240,11 @@ ul li {
 .reminder-wrap {
   position: relative;
   display: block;
-  padding: 5rem 0;
+  padding: 5rem 0 15rem;
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0 5rem;
+    padding: 3rem 0 12rem;
   }
 }
 .reminder-wrap .reminder-content {
@@ -1500,7 +1500,7 @@ ul li {
 }
 @media (min-width: 992px) {
   .header-section .orn-1 {
-    width: 65%;
+    width: 70%;
     transform: translate(10%, 0);
   }
 }
@@ -1521,6 +1521,9 @@ ul li {
     width: 380px;
   }
 }
+.header-section .orn-2 img {
+  transform-origin: 60% 100%;
+}
 .header-section .orn-3 {
   position: absolute;
   bottom: 0;
@@ -1538,6 +1541,9 @@ ul li {
     width: 380px;
   }
 }
+.header-section .orn-3 img {
+  transform-origin: 60% 100%;
+}
 .header-section .orn-4 {
   position: absolute;
   bottom: 0;
@@ -1554,6 +1560,9 @@ ul li {
   .header-section .orn-4 {
     width: 180px;
   }
+}
+.header-section .orn-4 img {
+  transform-origin: 50% 100%;
 }
 .header-section .orn-5 {
   position: absolute;
@@ -1606,6 +1615,9 @@ ul li {
     width: 180px;
   }
 }
+.header-section .orn-7 img {
+  transform-origin: 40% 100%;
+}
 .header-section .orn-7 .orn-8 {
   position: absolute;
   top: 0;
@@ -1623,6 +1635,9 @@ ul li {
     width: 180px;
   }
 }
+.header-section .orn-7 .orn-8 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-7 .orn-8 .orn-9 {
   position: absolute;
   top: 0;
@@ -1639,6 +1654,9 @@ ul li {
   .header-section .orn-7 .orn-8 .orn-9 {
     width: 140px;
   }
+}
+.header-section .orn-7 .orn-8 .orn-9 img {
+  transform-origin: 40% 100%;
 }
 .header-section .orn-10 {
   position: absolute;
@@ -1658,6 +1676,9 @@ ul li {
     width: 180px;
   }
 }
+.header-section .orn-10 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-10 .orn-11 {
   position: absolute;
   bottom: 0;
@@ -1675,6 +1696,9 @@ ul li {
     width: 160px;
   }
 }
+.header-section .orn-10 .orn-11 img {
+  transform-origin: 40% 100%;
+}
 .header-section .orn-10 .orn-11 .orn-12 {
   position: absolute;
   top: 0;
@@ -1691,6 +1715,9 @@ ul li {
   .header-section .orn-10 .orn-11 .orn-12 {
     width: 180px;
   }
+}
+.header-section .orn-10 .orn-11 .orn-12 img {
+  transform-origin: 50% 100%;
 }
 .header-section .header-content {
   position: relative;
@@ -1893,6 +1920,9 @@ ul li {
     width: 280px;
   }
 }
+.couple-section .couple-wrapper .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .couple-section .couple-wrapper .orn-2 {
   position: relative;
   width: 140px;
@@ -1907,6 +1937,9 @@ ul li {
   .couple-section .couple-wrapper .orn-2 {
     width: 180px;
   }
+}
+.couple-section .couple-wrapper .orn-2 img {
+  transform-origin: 40% 100%;
 }
 .couple-section .couple-body {
   position: relative;
@@ -1954,6 +1987,9 @@ ul li {
     width: 180px;
   }
 }
+.couple-section .couple-body .orn-2 img {
+  transform-origin: 50% 100%;
+}
 .couple-section .couple-body .orn-2 .orn-3 {
   position: absolute;
   top: 50%;
@@ -1971,12 +2007,15 @@ ul li {
     width: 180px;
   }
 }
+.couple-section .couple-body .orn-2 .orn-3 img {
+  transform-origin: 40% 100%;
+}
 .couple-section .couple-body .orn-4 {
   position: absolute;
   bottom: 1rem;
   right: 0;
   width: 140px;
-  transform: translate(60%, 0) rotate(-10deg) scaleX(-1);
+  transform: translate(50%, 0) rotate(-35deg) scaleX(-1);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-4 {
@@ -1988,12 +2027,15 @@ ul li {
     width: 180px;
   }
 }
+.couple-section .couple-body .orn-4 img {
+  transform-origin: 50% 100%;
+}
 .couple-section .couple-body .orn-4 .orn-5 {
   position: absolute;
   top: 50%;
   right: 0;
   width: 120px;
-  transform: scaleX(-1);
+  transform: translate(20%, 0) scaleX(-1);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-4 .orn-5 {
@@ -2002,8 +2044,11 @@ ul li {
 }
 @media (min-width: 992px) {
   .couple-section .couple-body .orn-4 .orn-5 {
-    width: 1px;
+    width: 160px;
   }
+}
+.couple-section .couple-body .orn-4 .orn-5 img {
+  transform-origin: 40% 100%;
 }
 .couple-section .couple-content {
   position: relative;
@@ -2113,6 +2158,9 @@ ul li {
     width: 380px;
   }
 }
+.story-section .story .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .story-section .story .orn-2 {
   position: absolute;
   bottom: 0;
@@ -2129,6 +2177,9 @@ ul li {
   .story-section .story .orn-2 {
     width: 380px;
   }
+}
+.story-section .story .orn-2 img {
+  transform-origin: 60% 100%;
 }
 .story-section .story .orn-3 {
   position: absolute;
@@ -2147,6 +2198,9 @@ ul li {
     width: 180px;
   }
 }
+.story-section .story .orn-3 img {
+  transform-origin: 50% 100%;
+}
 .story-section .story .orn-4 {
   position: absolute;
   bottom: 0;
@@ -2163,6 +2217,9 @@ ul li {
   .story-section .story .orn-4 {
     width: 180px;
   }
+}
+.story-section .story .orn-4 img {
+  transform-origin: 60% 100%;
 }
 .story-section .story-content {
   position: relative;
@@ -2232,6 +2289,9 @@ ul li {
     width: 380px;
   }
 }
+.venue-section .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .venue-section .orn-1 .orn-2 {
   position: absolute;
   top: 0;
@@ -2248,6 +2308,9 @@ ul li {
   .venue-section .orn-1 .orn-2 {
     width: 180px;
   }
+}
+.venue-section .orn-1 .orn-2 img {
+  transform-origin: 50% 100%;
 }
 .venue-section .orn-1 .orn-3 {
   position: absolute;
@@ -2266,6 +2329,9 @@ ul li {
     width: 180px;
   }
 }
+.venue-section .orn-1 .orn-3 img {
+  transform-origin: 40% 100%;
+}
 .venue-section .orn-4 {
   position: absolute;
   top: 0;
@@ -2283,6 +2349,9 @@ ul li {
     width: 340px;
   }
 }
+.venue-section .orn-4 img {
+  transform-origin: 60% 100%;
+}
 .venue-section .orn-4 .orn-5 {
   position: absolute;
   top: 0;
@@ -2299,6 +2368,9 @@ ul li {
   .venue-section .orn-4 .orn-5 {
     width: 160px;
   }
+}
+.venue-section .orn-4 .orn-5 img {
+  transform-origin: 40% 100%;
 }
 .venue-section .orn-6 {
   position: absolute;
@@ -2351,6 +2423,9 @@ ul li {
     width: 180px;
   }
 }
+.venue-section .orn-8 img {
+  transform-origin: 40% 100%;
+}
 .venue-section .orn-9 {
   position: absolute;
   top: 0;
@@ -2367,6 +2442,9 @@ ul li {
   .venue-section .orn-9 {
     width: 340px;
   }
+}
+.venue-section .orn-9 img {
+  transform-origin: 60% 100%;
 }
 .venue-section .orn-9 .orn-10 {
   position: absolute;
@@ -2385,6 +2463,9 @@ ul li {
     width: 180px;
   }
 }
+.venue-section .orn-9 .orn-10 img {
+  transform-origin: 50% 100%;
+}
 .venue-section .orn-11 {
   position: absolute;
   top: 0;
@@ -2402,6 +2483,9 @@ ul li {
     width: 340px;
   }
 }
+.venue-section .orn-11 img {
+  transform-origin: 60% 100%;
+}
 .venue-section .orn-11 .orn-12 {
   position: absolute;
   top: 50%;
@@ -2418,6 +2502,9 @@ ul li {
   .venue-section .orn-11 .orn-12 {
     width: 180px;
   }
+}
+.venue-section .orn-11 .orn-12 img {
+  transform-origin: 40% 100%;
 }
 .venue-section .venue-wrapper {
   position: relative;
@@ -2691,12 +2778,18 @@ ul li {
     width: 380px;
   }
 }
+.rsvp-section .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .rsvp-section .orn-1 .orn-2 {
   position: absolute;
   top: 50%;
   left: 0;
   width: 140px;
   transform: translate(50%, 10%) rotate(-20deg);
+}
+.rsvp-section .orn-1 .orn-2 img {
+  transform-origin: 50% 100%;
 }
 .rsvp-section .orn-3 {
   position: absolute;
@@ -2715,6 +2808,9 @@ ul li {
     width: 380px;
   }
 }
+.rsvp-section .orn-3 img {
+  transform-origin: 60% 100%;
+}
 .rsvp-section .orn-3 .orn-4 {
   position: absolute;
   top: 50%;
@@ -2722,10 +2818,14 @@ ul li {
   width: 140px;
   transform: translate(30%, 10%) rotate(-20deg);
 }
+.rsvp-section .orn-3 .orn-4 img {
+  transform-origin: 40% 100%;
+}
 .rsvp-section .orn-5 {
   position: relative;
   width: 100%;
   overflow: hidden;
+  padding-top: 3rem;
 }
 .rsvp-section .orn-5 .orn-6 {
   position: absolute;
@@ -2741,6 +2841,9 @@ ul li {
     width: 60%;
   }
 }
+.rsvp-section .orn-5 .orn-6 img {
+  transform-origin: 60% 100%;
+}
 .rsvp-section .orn-5 .orn-7 {
   position: absolute;
   bottom: 0;
@@ -2755,6 +2858,9 @@ ul li {
     width: 60%;
   }
 }
+.rsvp-section .orn-5 .orn-7 img {
+  transform-origin: 60% 100%;
+}
 .rsvp-section .orn-5 .orn-8 {
   position: absolute;
   bottom: 0;
@@ -2767,6 +2873,9 @@ ul li {
     transform: translate(-10%, 20%);
   }
 }
+.rsvp-section .orn-5 .orn-8 img {
+  transform-origin: 50% 100%;
+}
 .rsvp-section .orn-5 .orn-9 {
   position: absolute;
   bottom: 0;
@@ -2778,12 +2887,18 @@ ul li {
     transform: translate(0, 20%);
   }
 }
+.rsvp-section .orn-5 .orn-9 img {
+  transform-origin: 40% 100%;
+}
 .rsvp-section .orn-10 {
   position: absolute;
   top: 0;
   left: 0;
   width: 120px;
   transform: translate(-20%, -70%) rotate(20deg);
+}
+.rsvp-section .orn-10 img {
+  transform-origin: 40% 100%;
 }
 .rsvp-section .orn-11 {
   position: absolute;
@@ -2792,11 +2907,13 @@ ul li {
   width: 120px;
   transform: translate(50%, -60%) rotate(-20deg) scaleX(-1);
 }
+.rsvp-section .orn-11 img {
+  transform-origin: 50% 100%;
+}
 .rsvp-section .rsvp-wrapper {
   position: relative;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
-  padding-top: 3rem;
   overflow: hidden;
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
@@ -2855,6 +2972,9 @@ ul li {
     width: 340px;
   }
 }
+.wishes-section .wishes-form-wrapper .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .wishes-section .wishes-form-wrapper .orn-1 .orn-2 {
   position: absolute;
   top: 50%;
@@ -2871,6 +2991,9 @@ ul li {
   .wishes-section .wishes-form-wrapper .orn-1 .orn-2 {
     width: 180px;
   }
+}
+.wishes-section .wishes-form-wrapper .orn-1 .orn-2 img {
+  transform-origin: 50% 100%;
 }
 .wishes-section .wishes-form-wrapper .orn-3 {
   position: absolute;
@@ -2889,6 +3012,9 @@ ul li {
     width: 340px;
   }
 }
+.wishes-section .wishes-form-wrapper .orn-3 img {
+  transform-origin: 60% 100%;
+}
 .wishes-section .wishes-form-wrapper .orn-3 .orn-4 {
   position: absolute;
   top: 50%;
@@ -2905,6 +3031,9 @@ ul li {
   .wishes-section .wishes-form-wrapper .orn-3 .orn-4 {
     width: 180px;
   }
+}
+.wishes-section .wishes-form-wrapper .orn-3 .orn-4 img {
+  transform-origin: 40% 100%;
 }
 .wishes-section .card-form {
   margin-bottom: 0;
@@ -3285,6 +3414,9 @@ ul li {
     width: 340px;
   }
 }
+.stream-section .orn-1 img {
+  transform-origin: 60% 100%;
+}
 .stream-section .orn-1 .orn-2 {
   position: absolute;
   top: 50%;
@@ -3301,6 +3433,9 @@ ul li {
   .stream-section .orn-1 .orn-2 {
     width: 180px;
   }
+}
+.stream-section .orn-1 .orn-2 img {
+  transform-origin: 50% 100%;
 }
 .stream-section .orn-3 {
   position: absolute;
@@ -3319,6 +3454,9 @@ ul li {
     width: 340px;
   }
 }
+.stream-section .orn-3 img {
+  transform-origin: 60% 100%;
+}
 .stream-section .orn-3 .orn-4 {
   position: absolute;
   top: 50%;
@@ -3335,6 +3473,9 @@ ul li {
   .stream-section .orn-3 .orn-4 {
     width: 180px;
   }
+}
+.stream-section .orn-3 .orn-4 img {
+  transform-origin: 40% 100%;
 }
 .stream-section .ornament-stream {
   position: relative;
@@ -3457,6 +3598,9 @@ ul li {
     width: 40%;
   }
 }
+.thank-section .orn-2 img {
+  transform-origin: 60% 100%;
+}
 .thank-section .orn-3 {
   position: absolute;
   bottom: 0;
@@ -3475,6 +3619,9 @@ ul li {
     top: 0;
     width: 40%;
   }
+}
+.thank-section .orn-3 img {
+  transform-origin: 60% 100%;
 }
 .thank-section .orn-4 {
   position: absolute;
@@ -3563,6 +3710,9 @@ ul li {
     width: 180px;
   }
 }
+.thank-section .orn-9 img {
+  transform-origin: 40% 100%;
+}
 .thank-section .orn-9 .orn-10 {
   position: absolute;
   top: 0;
@@ -3580,6 +3730,9 @@ ul li {
     width: 180px;
   }
 }
+.thank-section .orn-9 .orn-10 img {
+  transform-origin: 50% 100%;
+}
 .thank-section .orn-9 .orn-10 .orn-11 {
   position: absolute;
   top: 0;
@@ -3596,6 +3749,9 @@ ul li {
   .thank-section .orn-9 .orn-10 .orn-11 {
     width: 140px;
   }
+}
+.thank-section .orn-9 .orn-10 .orn-11 img {
+  transform-origin: 40% 100%;
 }
 .thank-section .orn-12 {
   position: absolute;
@@ -3615,6 +3771,9 @@ ul li {
     width: 180px;
   }
 }
+.thank-section .orn-12 img {
+  transform-origin: 40% 100%;
+}
 .thank-section .orn-12 .orn-13 {
   position: absolute;
   bottom: 0;
@@ -3632,6 +3791,9 @@ ul li {
     width: 160px;
   }
 }
+.thank-section .orn-12 .orn-13 img {
+  transform-origin: 50% 100%;
+}
 .thank-section .orn-12 .orn-13 .orn-14 {
   position: absolute;
   top: 0;
@@ -3648,6 +3810,9 @@ ul li {
   .thank-section .orn-12 .orn-13 .orn-14 {
     width: 180px;
   }
+}
+.thank-section .orn-12 .orn-13 .orn-14 img {
+  transform-origin: 40% 100%;
 }
 .thank-section .image-wrapper {
   position: relative;
