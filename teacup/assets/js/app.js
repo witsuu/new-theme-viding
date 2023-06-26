@@ -17,6 +17,17 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 
 	runAnimationOrnament()
 	runAnimationLoop()
+
+	gsap.to(".slide-full img", {
+		duration: 4,
+		x: "-100%",
+		stagger: {
+			amount: 2.5
+		},
+		onComplete: () => {
+			document.querySelector("#slide-wrap").style.display = 'none'
+		}
+	})
 })
 
 var previousScroll = 70;
