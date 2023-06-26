@@ -1240,11 +1240,11 @@ ul li {
 .reminder-wrap {
   position: relative;
   display: block;
-  padding: 5rem 0 15rem;
+  padding: 5rem 0 12rem;
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0 12rem;
+    padding: 3rem 0 8rem;
   }
 }
 .reminder-wrap .reminder-content {
@@ -1969,6 +1969,12 @@ ul li {
   bottom: 0;
   left: 0;
   width: 100%;
+}
+@media (max-width: 991px) {
+  .couple-section .couple-body .orn-1 {
+    width: 125%;
+    transform: translateX(-20%);
+  }
 }
 .couple-section .couple-body .orn-2 {
   position: absolute;
