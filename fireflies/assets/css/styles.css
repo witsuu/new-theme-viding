@@ -1240,11 +1240,16 @@ ul li {
 .reminder-wrap {
   position: relative;
   display: block;
-  padding: 5rem 0;
+  padding: 5rem 0 18rem;
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0;
+    padding: 3rem 0 15rem;
+  }
+}
+@media (max-width: 375px) {
+  .reminder-wrap {
+    padding: 3rem 0 13rem;
   }
 }
 .reminder-wrap .reminder-content {
