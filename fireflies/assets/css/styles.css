@@ -1244,12 +1244,12 @@ ul li {
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0 15rem;
+    padding: 5rem 0 15rem;
   }
 }
 @media (max-width: 375px) {
   .reminder-wrap {
-    padding: 3rem 0 13rem;
+    padding: 5rem 0 13rem;
   }
 }
 .reminder-wrap .reminder-content {
