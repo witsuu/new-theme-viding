@@ -3728,6 +3728,46 @@ ul li {
 .apology-section .orn-3 .orn-4 img {
   transform-origin: 50% 100%;
 }
+.apology-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-40%, -5%) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .apology-section .orn-5 {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .apology-section .orn-5 {
+    width: 360px;
+  }
+}
+.apology-section .orn-5 img {
+  transform-origin: 10% 100%;
+}
+.apology-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(40%, -5%);
+}
+@media (min-width: 768px) {
+  .apology-section .orn-6 {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .apology-section .orn-6 {
+    width: 360px;
+  }
+}
+.apology-section .orn-6 img {
+  transform-origin: 10% 100%;
+}
 .apology-section .appology-wrap {
   position: relative;
   padding: 5rem 2rem;

@@ -287,7 +287,7 @@ span {
 .title-section span {
   padding: 0 1rem;
   margin-bottom: 0;
-  font-weight: 600;
+  font-weight: 500;
   font-size: 56px;
 }
 @media (max-width: 767px) {
@@ -1165,6 +1165,113 @@ ul li {
     transform: translate3d(-10px, -50px, 0);
   }
 }
+[data-anim][data-anim=rabbit-1].has-animate {
+  animation-name: rabbit1;
+  animation-duration: 16500ms;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+@media (max-width: 991px) {
+  [data-anim][data-anim=rabbit-1].has-animate {
+    animation-name: rabbit1sm;
+    animation-duration: 12000ms;
+  }
+}
+
+@keyframes rabbit1 {
+  0% {
+    transform: translate(0, 0);
+  }
+  6.25% {
+    transform: translate(50%, -30%);
+  }
+  12.5% {
+    transform: translate(100%, 0%);
+  }
+  18.75% {
+    transform: translate(150%, -30%);
+  }
+  25% {
+    transform: translate(200%, 0%);
+  }
+  31.25% {
+    transform: translate(250%, -30%);
+  }
+  37.5% {
+    transform: translate(300%, 0%);
+  }
+  43.75% {
+    transform: translate(350%, -30%);
+  }
+  48% {
+    transform: translate(400%, 0%);
+  }
+  51% {
+    transform: translate(400%, 0%) scaleX(-1);
+  }
+  55.25% {
+    transform: translate(350%, -30%) scaleX(-1);
+  }
+  60.5% {
+    transform: translate(300%, 0%) scaleX(-1);
+  }
+  67.75% {
+    transform: translate(250%, -30%) scaleX(-1);
+  }
+  73% {
+    transform: translate(200%, 0%) scaleX(-1);
+  }
+  79.25% {
+    transform: translate(150%, -30%) scaleX(-1);
+  }
+  85.5% {
+    transform: translate(100%, 0%) scaleX(-1);
+  }
+  91.75% {
+    transform: translate(50%, -30%) scaleX(-1);
+  }
+  96% {
+    transform: translate(0%, 0%) scaleX(-1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
+@keyframes rabbit1sm {
+  0% {
+    transform: translate(0, 0);
+  }
+  12.5% {
+    transform: translate(50%, -30%);
+  }
+  25% {
+    transform: translate(100%, 0%);
+  }
+  37.5% {
+    transform: translate(150%, -30%);
+  }
+  48% {
+    transform: translate(200%, 0%);
+  }
+  52% {
+    transform: translate(200%, 0%) scaleX(-1);
+  }
+  61.5% {
+    transform: translate(150%, -30%) scaleX(-1);
+  }
+  74% {
+    transform: translate(100%, 0%) scaleX(-1);
+  }
+  86.5% {
+    transform: translate(50%, -30%) scaleX(-1);
+  }
+  96% {
+    transform: translate(0%, 0%) scaleX(-1);
+  }
+  100% {
+    transform: translate(0%, 0%);
+  }
+}
 .countdown {
   display: flex;
   text-align: center;
@@ -1556,7 +1663,7 @@ ul li {
   min-height: 70%;
   padding: 1rem;
   border-radius: 500px;
-  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.8) 20%, rgba(255, 255, 255, 0.6) 40%, transparent 80%, rgba(255, 255, 255, 0) 100%);
+  background: radial-gradient(ellipse, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.7) 20%, rgba(255, 255, 255, 0.6) 30%, transparent 75%, rgba(255, 255, 255, 0) 100%);
 }
 .cover-section .cover-wrapper .cover-content .cover-body .greeting-wrapper {
   position: relative;
@@ -1835,7 +1942,7 @@ ul li {
 .header-section .orn-13 {
   position: absolute;
   bottom: 30%;
-  left: 35%;
+  left: 25%;
   width: 50px;
 }
 @media (min-width: 768px) {
@@ -1846,8 +1953,8 @@ ul li {
 }
 @media (min-width: 992px) {
   .header-section .orn-13 {
-    bottom: 28%;
-    left: 45%;
+    bottom: 30%;
+    left: 35%;
   }
 }
 .header-section .orn-14 {
@@ -2741,11 +2848,12 @@ ul li {
 .venue-section .table-card {
   position: relative;
   width: 80%;
-  margin: 0 auto -13rem;
+  margin: -1rem auto -5rem;
+  transform: translateX(-10%);
 }
 @media (max-width: 767px) {
   .venue-section .table-card {
-    margin: -1rem auto -10rem;
+    margin: -1rem auto -4rem;
   }
 }
 .venue-section .venue-wrapper {
@@ -2896,7 +3004,7 @@ ul li {
 }
 .venue-section .event-name .date h5 {
   font-family: "Milton One Bold", cursive;
-  font-weight: 700;
+  font-weight: 500;
   margin-bottom: 0;
   font-size: 42px;
   min-width: 30%;

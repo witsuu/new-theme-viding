@@ -2729,7 +2729,19 @@ ul li {
   position: relative;
   padding: 0 0 1rem;
   margin-top: -15rem;
-  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 85%;
+}
+@media (max-width: 767px) {
+  .venue-section .event-name {
+    width: 80%;
+  }
+}
+@media (max-width: 375px) {
+  .venue-section .event-name {
+    width: 90%;
+  }
 }
 .venue-section .event-name .date {
   position: relative;
