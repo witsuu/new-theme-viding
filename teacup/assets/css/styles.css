@@ -16,7 +16,7 @@
 :root {
   --color-main: #ebebeb;
   --color-primary: #c9dbc3;
-  --color-secondary: #c38a7f;
+  --color-secondary: #507643;
   --color-dark: #1e1f1e;
   --color-light: #fff;
   --text-button: #ffffff;
@@ -4078,12 +4078,12 @@ ul li {
 
 .thank-section {
   position: relative;
-  padding: 5rem 0 20rem;
+  padding: 5rem 0 18rem;
   text-align: center;
 }
 @media (max-width: 767px) {
   .thank-section {
-    padding: 3rem 0 15rem;
+    padding: 3rem 0 13rem;
   }
 }
 .thank-section .orn-1 {
@@ -4322,6 +4322,29 @@ ul li {
 @media (min-width: 992px) {
   .thank-section .orn-12 {
     bottom: 40%;
+  }
+}
+.thank-section .orn-13 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 320px;
+  transform: translate(-58%, 0);
+}
+@media (min-width: 400px) {
+  .thank-section .orn-13 {
+    width: 380px;
+  }
+}
+@media (min-width: 768px) {
+  .thank-section .orn-13 {
+    width: 420px;
+  }
+}
+@media (min-width: 992px) {
+  .thank-section .orn-13 {
+    width: 460px;
+    transform: translate(-58%, 20%);
   }
 }
 .thank-section .image-wrapper {
