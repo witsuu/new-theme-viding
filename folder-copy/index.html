@@ -597,31 +597,37 @@
 
             <!-- Wishes section -->
             <section class="wishes-section moveable-section" data-id="6">
-                <div class="container position-relative">
-                    <div class="row justify-content-center align-items-center flex-column">
-                        <div class="col-md-8 col-lg-6 position-relative" style="z-index: 3;">
-                            <div class="card card-form">
-                                <div class="card-body">
-                                    <div class="title-section" data-anim="fade-down">
-                                        <h2>Wedding Wishes</h2>
+                <div class="wishes-form-wrapper">
+                    <div class="container position-relative">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col-md-8 col-lg-6 position-relative" style="z-index: 3;">
+                                <div class="card card-form">
+                                    <div class="card-body">
+                                        <div class="title-section" data-anim="fade-down">
+                                            <h2>Wedding Wishes</h2>
+                                        </div>
+                                        <form action="#" class="text-center" data-anim="fade-up">
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Address">
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea name="" id="" rows="5" class="form-control" placeholder="Write your wishes"></textarea>
+                                            </div>
+                                            <button class="btn btn-custom m-auto w-100">Send</button>
+                                        </form>
                                     </div>
-                                    <form action="#" class="text-center" data-anim="fade-up">
-                                        <div class="mb-4">
-                                            <input type="text" class="form-control" placeholder="Name">
-                                        </div>
-                                        <div class="mb-4">
-                                            <input type="text" class="form-control" placeholder="Address">
-                                        </div>
-                                        <div class="mb-4">
-                                            <textarea name="" id="" rows="5" class="form-control" placeholder="Write your wishes"></textarea>
-                                        </div>
-                                        <button class="btn btn-custom m-auto w-100">Send</button>
-                                    </form>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-8 col-lg-6">
-                            <div class="wishes-preview">
+                    </div>
+                </div>
+                <div class="wishes-preview">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
                                 <div class="card">
                                     <div class="card-body text-left">
                                         <div class="wishes" data-anim="slide-up">
@@ -964,11 +970,13 @@
                                     </div>
                                 </div>
                                 <div class="thank mt-4">
-                                    <div class="title-section" data-anim="fade-down">
-                                        <h2>Thank You</h2>
-                                    </div>
-                                    <div data-anim="zoom-in">
-                                        <p>Thank you for your presence, participation and blessing.</p>
+                                    <div class="thank-body">
+                                        <div class="title-section" data-anim="fade-down">
+                                            <h2>Thank You</h2>
+                                        </div>
+                                        <div data-anim="zoom-in">
+                                            <p>Thank you for your presence, participation and blessing.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
