@@ -186,13 +186,18 @@ span {
 
 .btn-custom {
   background-color: var(--color-secondary);
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   transition: all 0.3s ease-in-out;
   color: var(--text-button);
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
   border-radius: 8px;
+}
+@media (max-width: 767px) {
+  .btn-custom {
+    font-size: 14px;
+  }
 }
 .btn-custom:hover {
   color: var(--text-button);
@@ -235,8 +240,6 @@ form .icon path {
 }
 
 .input-group .input-group-text {
-  display: flex;
-  align-items: flex-start;
   background-color: rgba(248, 250, 251, 0.8);
   border-color: var(--color-main);
   border-right: none;
