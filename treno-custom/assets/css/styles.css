@@ -2542,6 +2542,7 @@ ul li {
 .apology-section .orn-1 {
   width: 50%;
   margin: 0 auto;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .apology-section .orn-1 {

@@ -50,7 +50,7 @@ ScrollTrigger.create({
 	trigger: "body",
 	start: "top top",
 	end: "bottom bottom",
-	onUpdate: (self) => (progress.style.width = `${self.progress * 100}%`),
+	onUpdate: (self) => (progress.style.transform = `${self.progress}`),
 })
 
 // Egift section
