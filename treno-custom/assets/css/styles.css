@@ -349,7 +349,7 @@ form .icon path {
   .title-section h2,
   .title-section p,
   .title-section span {
-    font-size: 2rem;
+    font-size: 28px;
   }
 }
 
@@ -1967,12 +1967,12 @@ ul li {
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body h4 {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .card .card-body h4 {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .line-horizontal {
@@ -2016,7 +2016,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .card .card-body .event-name-body .time {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-date {
@@ -2033,12 +2033,12 @@ ul li {
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body .event-date .day {
-    font-size: 34px;
+    font-size: 32px;
   }
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .card .card-body .event-date .day {
-    font-size: 28px;
+    font-size: 24px;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-date .line-vertical {
