@@ -186,7 +186,7 @@ span {
 
 .btn-custom {
   background-color: var(--color-secondary);
-  padding: 0.5rem 1.5rem;
+  padding: 0.5rem 1rem;
   transition: all 0.3s ease-in-out;
   color: var(--text-button);
   width: -moz-fit-content;
@@ -1572,9 +1572,9 @@ ul li {
     width: 320px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 410px) {
   .header-section .header-content .header .header-title-content .name {
-    width: 100%;
+    width: 85%;
   }
 }
 .header-section .header-content .header .header-title-content #header-description {
