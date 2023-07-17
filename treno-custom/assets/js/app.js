@@ -17,6 +17,21 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 
 	runAnimationOrnament()
 	runAnimationLoop()
+
+	const headerName = document.querySelector("#header-name")
+	const headerDescription = document.querySelector("#header-description")
+
+	gsap.to(headerName, 2.5, {
+		opacity: 0,
+		display: "none",
+		delay: 4,
+		onComplete: () => {
+			gsap.to(headerDescription, 4, {
+				display: "block",
+				opacity: 1
+			})
+		}
+	})
 })
 
 var previousScroll = 70;

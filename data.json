@@ -192,26 +192,31 @@
 	{
 		"name": "Windmill",
 		"path": "windmill",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Snowy",
 		"path": "snowy",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Carribean",
 		"path": "carribean",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Fireflies",
 		"path": "fireflies",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Teacup",
 		"path": "teacup",
+		"status": "DONE"
+	},
+	{
+		"name": "Treno Custom",
+		"path": "treno-custom",
 		"status": ""
 	}
 ]
