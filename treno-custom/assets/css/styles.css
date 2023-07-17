@@ -244,6 +244,11 @@ form .icon path {
   border-color: var(--color-main);
   border-right: none;
 }
+.input-group .input-group-text.textarea {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 0.5rem;
+}
 .input-group.attend {
   justify-content: space-between;
   padding-right: 2rem;
@@ -1711,11 +1716,11 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
-  padding: 5rem 0;
+  padding: 3rem 0 5rem;
 }
 @media (max-width: 767px) {
   .couple-section .couple-wrapper {
-    padding: 5rem 0 3rem;
+    padding: 3rem 0;
   }
   .couple-section .couple-wrapper .container {
     padding: 0;
