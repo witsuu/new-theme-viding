@@ -130,12 +130,12 @@ h3 {
 }
 
 h1 {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 0.8;
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 32px;
+    font-size: 16px;
   }
 }
 h1 span {
@@ -186,13 +186,13 @@ span {
 
 .btn-custom {
   background-color: var(--color-secondary);
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 1.5rem;
   transition: all 0.3s ease-in-out;
   color: var(--text-button);
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 8px;
 }
 .btn-custom:hover {
   color: var(--text-button);
@@ -1349,14 +1349,9 @@ ul li {
 .cover-section {
   position: fixed;
   z-index: 1000;
-  transition: all 1s ease-out;
   background-color: var(--color-main);
   overflow: hidden;
   width: 100%;
-  transform: translateZ(0);
-}
-.cover-section.cover-opened {
-  transform: translateY(-100%);
 }
 .cover-section .orn-1 {
   position: absolute;
@@ -1409,9 +1404,14 @@ ul li {
   width: 150px;
   margin: 0 auto;
 }
-@media (max-width: 375px) {
+@media (max-width: 991px) {
   .cover-section .logo {
     width: 130px;
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .logo {
+    width: 110px;
   }
 }
 .cover-section .cover-wrapper {
@@ -1491,7 +1491,7 @@ ul li {
 @media (max-width: 767px) {
   .cover-section .cover-wrapper .cover-content .cover-body .cover-description span,
   .cover-section .cover-wrapper .cover-content .cover-body .cover-description h6 {
-    font-size: 16px;
+    font-size: 14px;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .title {
@@ -1787,12 +1787,6 @@ ul li {
 .couple-section .couple .sosmed-wrap {
   position: absolute;
   top: 0;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%;
-  background: var(--color-secondary);
-  padding: 0.5rem 0.6rem;
-  border-radius: 50px;
 }
 .couple-section .couple .sosmed-wrap .sosmed {
   color: var(--text-button);
@@ -1800,7 +1794,10 @@ ul li {
   display: block;
   width: -moz-fit-content;
   width: fit-content;
-  margin: 0 auto;
+  max-width: 100%;
+  background: var(--color-secondary);
+  padding: 0.5rem 0.6rem;
+  border-radius: 50px;
 }
 .couple-section .couple .sosmed-wrap .sosmed small {
   align-items: center;

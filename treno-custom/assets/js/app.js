@@ -13,7 +13,9 @@ document.body.style.overflow = "hidden"
 document.querySelector("#btn-envelope").addEventListener("click", () => {
 	document.body.style.overflow = "auto"
 
-	document.querySelector(".cover-section").classList.add("cover-opened")
+	const coverEl = document.querySelector(".cover-section")
+
+	gsap.to(coverEl, 1.5, { display: 'none', scale: 1.5, opacity: 0 })
 
 	runAnimationOrnament()
 	runAnimationLoop()
