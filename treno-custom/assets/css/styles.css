@@ -176,6 +176,9 @@ span {
   width: 100%;
   height: auto;
 }
+.img-fluid path {
+  fill: var(--color-secondary);
+}
 
 @media (max-width: 767px) {
   .container {
