@@ -500,7 +500,7 @@ ul li {
   }
 }
 .modal.show-maps .modal-body .btn-modal {
-  background-color: var(--color-main);
+  background-color: transparent;
   color: var(--color-dark);
   position: absolute;
   right: 10px;
@@ -1941,9 +1941,19 @@ ul li {
 .venue-section .orn-1 {
   margin-top: -10rem;
 }
+@media (max-width: 767px) {
+  .venue-section .orn-1 {
+    margin-top: -3rem;
+  }
+}
 .venue-section .orn-2 {
   margin-bottom: -10rem;
   transform: scale(-1);
+}
+@media (max-width: 767px) {
+  .venue-section .orn-2 {
+    margin-bottom: -3rem;
+  }
 }
 .venue-section .venue-wrapper {
   position: relative;
@@ -1960,6 +1970,7 @@ ul li {
   background-color: var(--color-main);
   border-radius: var(--border-radius);
   overflow: hidden;
+  padding: 0 1rem;
 }
 .venue-section .venue-wrapper .venue-content .ribbon-venue {
   position: relative;
@@ -2079,7 +2090,7 @@ ul li {
   position: relative;
 }
 .venue-section .row-venue {
-  row-gap: 3rem;
+  row-gap: 1rem;
 }
 .venue-section .animation-loop .st1 {
   will-change: transform;
