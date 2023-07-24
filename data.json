@@ -218,5 +218,10 @@
 		"name": "Treno Custom",
 		"path": "treno-custom",
 		"status": ""
+	},
+	{
+		"name": "Treno",
+		"path": "treno",
+		"status": ""
 	}
 ]
