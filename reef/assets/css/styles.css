@@ -106,6 +106,8 @@ h1,
 h2,
 h3 {
   font-family: "Pinyon Script", cursive;
+  padding: 0.5rem;
+  overflow: visible;
 }
 
 h1 {
@@ -1262,9 +1264,59 @@ ul li {
   background-color: var(--color-main);
   overflow: hidden;
   width: 100%;
+  transform: translateZ(0);
 }
 .cover-section.cover-opened {
   transform: translateY(-100%);
+}
+.cover-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  transform: translate(-50%, 0);
+}
+.cover-section .orn-2 {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 120px;
+  transform: translate(60%, 0);
+}
+.cover-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(0, 70%);
+}
+.cover-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  transform: translate(-50%, 30%);
+}
+.cover-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 10%;
+  width: 200px;
+  transform: translate(0, 70%);
+}
+.cover-section .orn-5 .orn-6 {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 120px;
+  transform: translate(0, 50%);
+}
+.cover-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  transform: translate(30%, 60%);
 }
 .cover-section .cover-wrapper {
   position: relative;
@@ -1420,7 +1472,7 @@ ul li {
 .header-section .scroll-icon rect {
   stroke: var(--color-light);
 }
-.header-section .orn-1 {
+.header-section .orn-99 {
   position: absolute;
   bottom: 0;
   left: 50%;
@@ -1428,14 +1480,119 @@ ul li {
   transform: translateX(-50%);
 }
 @media (max-width: 991px) {
-  .header-section .orn-1 {
+  .header-section .orn-99 {
     width: 150%;
   }
 }
 @media (max-width: 767px) {
-  .header-section .orn-1 {
+  .header-section .orn-99 {
     width: 250%;
   }
+}
+.header-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  transform: translate(-50%, 0);
+}
+.header-section .orn-2 {
+  position: absolute;
+  top: 5%;
+  right: 0;
+  width: 120px;
+  transform: translate(60%, 0);
+}
+.header-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(-20%, 50%);
+}
+.header-section .orn-3 .orn-8 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  transform: translate(20%, 0) scaleX(-1);
+}
+.header-section .orn-3 .orn-9 {
+  position: absolute;
+  top: 0;
+  left: 45%;
+  width: 160px;
+  transform: translate(-50%, -70%);
+}
+.header-section .orn-3 .orn-10 {
+  position: absolute;
+  bottom: 0;
+  left: 40%;
+  width: 140px;
+  transform: translate(-50%, 0);
+}
+.header-section .orn-3 .orn-11 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  transform: translate(40%, -30%);
+}
+.header-section .orn-3 .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(0, -85%);
+}
+.header-section .orn-3 .orn-12 .orn-13 {
+  position: absolute;
+  bottom: 100%;
+  left: 25%;
+  width: 60px;
+  transform: translate(-50%, 45%);
+}
+.header-section .orn-3 .orn-12 .orn-14 {
+  position: absolute;
+  bottom: 100%;
+  left: 60%;
+  width: 60px;
+  transform: translate(-50%, 40%);
+}
+.header-section .orn-3 .orn-12 .orn-15 {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  width: 60px;
+  transform: translate(0%, 70%);
+}
+.header-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 140px;
+  transform: translate(-50%, 0%);
+}
+.header-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(0, 70%);
+}
+.header-section .orn-5 .orn-6 {
+  position: absolute;
+  bottom: 100%;
+  right: 50%;
+  width: 120px;
+  transform: translate(50%, 50%);
+}
+.header-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 160px;
+  transform: translate(30%, 60%);
 }
 .header-section .header-content {
   position: relative;
