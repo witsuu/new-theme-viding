@@ -1506,20 +1506,9 @@ ul li {
   height: 100%;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description span,
+.cover-section .cover-wrapper .cover-content .cover-body .cover-description p,
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description h6 {
-  font-size: 24px;
-}
-@media (max-width: 991px) {
-  .cover-section .cover-wrapper .cover-content .cover-body .cover-description span,
-  .cover-section .cover-wrapper .cover-content .cover-body .cover-description h6 {
-    font-size: 18px;
-  }
-}
-@media (max-width: 767px) {
-  .cover-section .cover-wrapper .cover-content .cover-body .cover-description span,
-  .cover-section .cover-wrapper .cover-content .cover-body .cover-description h6 {
-    font-size: 14px;
-  }
+  margin-bottom: 0;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .title {
   position: relative;
@@ -1530,8 +1519,14 @@ ul li {
   margin-bottom: 1rem;
   font-weight: 600;
 }
-.cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event * {
-  margin-bottom: 0;
+.cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event h6 {
+  font-size: 18px;
+  font-weight: 600;
+}
+@media (max-width: 767px) {
+  .cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event h6 {
+    width: 16px;
+  }
 }
 .cover-section .cover-wrapper .cover-content .elements-widget {
   width: 100%;
@@ -1567,7 +1562,7 @@ ul li {
 }
 .header-section .header-content .header {
   position: relative;
-  width: 45%;
+  width: 50%;
   margin: 0 auto;
   color: var(--color-light);
 }
@@ -1594,25 +1589,10 @@ ul li {
 }
 .header-section .header-content .header .header-title-content .name .title {
   font-family: "Batrisyia Script", cursive;
-  display: flex;
-  flex-direction: column;
 }
 .header-section .header-content .header .header-title-content .title-header span,
 .header-section .header-content .header .header-title-content .title-header p {
-  font-size: 24px;
   margin-bottom: 0;
-}
-@media (max-width: 991px) {
-  .header-section .header-content .header .header-title-content .title-header span,
-  .header-section .header-content .header .header-title-content .title-header p {
-    font-size: 18px;
-  }
-}
-@media (max-width: 767px) {
-  .header-section .header-content .header .header-title-content .title-header span,
-  .header-section .header-content .header .header-title-content .title-header p {
-    font-size: 16px;
-  }
 }
 .header-section .header-content .header #scroll-animate {
   animation: scrollAnim 1500ms ease infinite;
@@ -1758,7 +1738,7 @@ ul li {
 .couple-section .couple .image-wrap {
   width: 100%;
   position: relative;
-  aspect-ratio: 7/8;
+  aspect-ratio: 6/7;
   margin: 0 auto;
 }
 .couple-section .couple .image-wrap .image-element {
