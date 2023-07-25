@@ -1726,6 +1726,11 @@ ul li {
   position: relative;
   margin-bottom: 3rem;
 }
+@media (max-width: 767px) {
+  .couple-section .couple-content {
+    padding: 0 1.25rem;
+  }
+}
 .couple-section .couple {
   position: relative;
   width: 41.5333%;
