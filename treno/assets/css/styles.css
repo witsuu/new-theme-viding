@@ -1542,6 +1542,9 @@ ul li {
   position: relative;
   margin-top: 2rem;
 }
+.header-section .scroll-icon rect {
+  stroke: var(--color-light);
+}
 .header-section .elements-wrapper-absolute .background-element {
   position: relative;
 }
@@ -2004,12 +2007,7 @@ ul li {
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body h4 {
-    font-size: 24px;
-  }
-}
-@media (max-width: 767px) {
-  .venue-section .venue-wrapper .venue-content .card .card-body h4 {
-    font-size: 20px;
+    font-size: 26px;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .line-horizontal {
@@ -2052,18 +2050,23 @@ ul li {
   align-items: center;
   gap: 0.5rem;
 }
-.venue-section .venue-wrapper .venue-content .card .card-body .event-date .day,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-date .day {
+  font-size: 24px;
+}
+@media (max-width: 767px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-date .day {
+    font-size: 22px;
+  }
+}
 .venue-section .venue-wrapper .venue-content .card .card-body .event-date .date {
   font-size: 20px;
 }
 @media (max-width: 991px) {
-  .venue-section .venue-wrapper .venue-content .card .card-body .event-date .day,
   .venue-section .venue-wrapper .venue-content .card .card-body .event-date .date {
     font-size: 18px;
   }
 }
 @media (max-width: 767px) {
-  .venue-section .venue-wrapper .venue-content .card .card-body .event-date .day,
   .venue-section .venue-wrapper .venue-content .card .card-body .event-date .date {
     font-size: 16px;
   }
