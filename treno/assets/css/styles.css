@@ -151,7 +151,7 @@ h1 {
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 48px;
+    font-size: 60px;
   }
 }
 h1 span {
@@ -1401,6 +1401,7 @@ ul li {
 @media (max-width: 375px) {
   .cover-section .orn-1 {
     width: 240px;
+    transform: translate(-60%, 0);
   }
 }
 .cover-section .orn-2 {
@@ -1424,6 +1425,7 @@ ul li {
 @media (max-width: 375px) {
   .cover-section .orn-2 {
     width: 240px;
+    transform: translate(65%, 20%) scaleX(-1);
   }
 }
 .cover-section .logo {
@@ -1521,11 +1523,11 @@ ul li {
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event h6 {
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 700;
 }
 @media (max-width: 767px) {
   .cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event h6 {
-    width: 16px;
+    font-size: 16px;
   }
 }
 .cover-section .cover-wrapper .cover-content .elements-widget {
@@ -1883,6 +1885,11 @@ ul li {
   width: 100%;
   height: auto;
   aspect-ratio: 16/9;
+}
+@media (max-width: 767px) {
+  .story-section .image-wrapper {
+    aspect-ratio: 6/4;
+  }
 }
 .story-section .image-wrapper .image-element {
   position: relative;
