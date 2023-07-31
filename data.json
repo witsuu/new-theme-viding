@@ -223,5 +223,30 @@
 		"name": "Treno",
 		"path": "treno",
 		"status": ""
+	},
+	{
+		"name": "Reef",
+		"path": "reef",
+		"status": ""
+	},
+	{
+		"name": "Summer Escape",
+		"path": "summer-escape",
+		"status": ""
+	},
+	{
+		"name": "Spring Memory",
+		"path": "spring-memory",
+		"status": ""
+	},
+	{
+		"name": "Sunset Fall",
+		"path": "sunset-fall",
+		"status": ""
+	},
+	{
+		"name": "Potter",
+		"path": "potter",
+		"status": ""
 	}
 ]
