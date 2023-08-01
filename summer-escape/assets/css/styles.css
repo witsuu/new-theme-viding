@@ -755,6 +755,20 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=rotate-right-infinite].has-animate {
+  animation-name: rotateRightInfinite;
+  animation-timing-function: linear !important;
+  animation-duration: 52000ms !important;
+  animation-direction: normal !important;
+}
+
+[data-anim=rotate-left-infinite].has-animate {
+  animation-name: rotateLeftInfinite;
+  animation-timing-function: linear !important;
+  animation-duration: 52000ms !important;
+  animation-direction: normal !important;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -769,6 +783,22 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes rotateRightInfinite {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateLeftInfinite {
+  0% {
+    transform: rotateZ(0);
+  }
+  100% {
+    transform: rotate(-360deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -3873,7 +3903,7 @@ ul li {
 .gallery-section .img-gallery {
   height: auto;
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3887,8 +3917,8 @@ ul li {
   height: auto;
   aspect-ratio: 16/9;
 }
-.gallery-section .splide .splide__slide.is-active .img-thumbnail {
-  border: 3px solid #fff;
+.gallery-section .splide.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border: 3px solid var(--color-secondary);
 }
 .gallery-section .splide .splide__arrow {
   border-radius: 0;

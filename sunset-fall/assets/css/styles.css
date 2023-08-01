@@ -548,6 +548,18 @@ ul li {
   color: var(--color-dark);
 }
 
+img[alt=flower-1] {
+  transform-origin: 60% 80%;
+}
+
+img[alt=tree-1] {
+  transform-origin: 35% 80%;
+}
+
+img[alt=tree-2] {
+  transform-origin: 85% 80%;
+}
+
 [data-anim][data-anim] {
   will-change: transform;
 }
@@ -1123,6 +1135,16 @@ ul li {
   visibility: visible !important;
 }
 
+[data-anim=butterfly].has-animate {
+  animation-name: butterfly;
+  animation-duration: 1200ms !important;
+}
+
+@keyframes butterfly {
+  to {
+    transform: scaleX(0.65);
+  }
+}
 .countdown {
   display: flex;
   justify-content: center;

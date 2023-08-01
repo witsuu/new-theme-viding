@@ -156,6 +156,7 @@ span {
 .img-fluid {
   width: 100%;
   height: auto;
+  transform-origin: 50% 100%;
 }
 .img-fluid path {
   fill: var(--color-secondary);
@@ -662,7 +663,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-50%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -718,7 +719,7 @@ ul li {
 }
 @keyframes slideRotateRight {
   0% {
-    transform: translate3d(-30%, 0, 0) rotate(-45deg);
+    transform: translate3d(-50%, 0, 0) rotate(-45deg);
     opacity: 0;
   }
   50% {
@@ -1132,6 +1133,64 @@ ul li {
   visibility: visible !important;
 }
 
+[data-anim=fish-right].has-animate {
+  animation-name: fishRight;
+  animation-duration: 58000ms !important;
+  animation-timing-function: linear !important;
+  animation-direction: normal !important;
+}
+
+[data-anim=fish-left].has-animate {
+  animation-name: fishLeft;
+  animation-duration: 58000ms !important;
+  animation-timing-function: linear !important;
+  animation-direction: normal !important;
+}
+
+@keyframes fishRight {
+  0% {
+    left: 0;
+    transform: translate3d(-100%, 0, 0);
+  }
+  20% {
+    transform: translate3d(-50%, -50%, 0);
+  }
+  40% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  60% {
+    transform: translate3d(-50%, -50%, 0);
+  }
+  80% {
+    transform: translate3d(-50%, 0, 0);
+  }
+  100% {
+    left: 100%;
+    transform: translate3d(0, -50%, 0);
+  }
+}
+@keyframes fishLeft {
+  0% {
+    left: 100%;
+    transform: translate3d(0%, 0, 0) scaleX(-1);
+  }
+  20% {
+    transform: translate3d(-50%, -50%, 0) scaleX(-1);
+  }
+  40% {
+    transform: translate3d(-50%, 0, 0) scaleX(-1);
+  }
+  60% {
+    transform: translate3d(-50%, -50%, 0) scaleX(-1);
+  }
+  80% {
+    transform: translate3d(-50%, 0, 0) scaleX(-1);
+  }
+  100% {
+    left: 0;
+    transform: translate3d(-100%, -50%, 0) scaleX(-1);
+  }
+}
 .countdown {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1474,6 +1533,9 @@ ul li {
     width: 240px;
   }
 }
+.cover-section .orn-1 img {
+  transform-origin: 50% 100%;
+}
 .cover-section .orn-2 {
   position: absolute;
   top: 5%;
@@ -1527,6 +1589,9 @@ ul li {
     transform: translate(-50%, 0%);
   }
 }
+.cover-section .orn-4 img {
+  transform-origin: 60% 100%;
+}
 .cover-section .orn-5 {
   position: absolute;
   bottom: 0;
@@ -1544,6 +1609,9 @@ ul li {
   .cover-section .orn-5 {
     width: 45%;
   }
+}
+.cover-section .orn-5 img {
+  transform-origin: 60% 100%;
 }
 .cover-section .orn-5 .orn-6 {
   position: absolute;
@@ -1804,6 +1872,9 @@ ul li {
     width: 45%;
   }
 }
+.header-section .orn-3 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-3 .orn-8 {
   position: absolute;
   top: 0;
@@ -1968,6 +2039,9 @@ ul li {
     width: 180px;
   }
 }
+.header-section .orn-4 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-5 {
   position: absolute;
   bottom: 0;
@@ -1984,6 +2058,9 @@ ul li {
   .header-section .orn-5 {
     width: 45%;
   }
+}
+.header-section .orn-5 img {
+  transform-origin: 50% 100%;
 }
 .header-section .orn-5 .orn-6 {
   position: absolute;
@@ -2162,6 +2239,9 @@ ul li {
     width: 120px;
   }
 }
+.header-section .orn-23 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-24 {
   position: absolute;
   top: 0;
@@ -2179,10 +2259,13 @@ ul li {
     width: 160px;
   }
 }
+.header-section .orn-24 img {
+  transform-origin: 50% 100%;
+}
 .header-section .orn-25 {
   position: absolute;
   bottom: 18%;
-  left: 18%;
+  left: 0;
   width: 80px;
   transform: translate(-50%, -50%);
 }
@@ -2198,8 +2281,8 @@ ul li {
 }
 .header-section .orn-26 {
   position: absolute;
-  bottom: 25%;
-  right: 18%;
+  bottom: 35%;
+  left: 0;
   width: 80px;
   transform: translate(50%, -50%) scaleX(-1);
 }
@@ -2445,7 +2528,7 @@ ul li {
 }
 .couple-section .couple-wrapper .orn-5 {
   position: absolute;
-  bottom: 0;
+  bottom: -4rem;
   left: 0;
   width: 100px;
   transform: translate(-50%, 80%);
@@ -3556,7 +3639,7 @@ ul li {
 .rsvp-section .orn-22 {
   position: absolute;
   top: 25%;
-  right: 15%;
+  left: 0;
   width: 40px;
   transform: translate(50%, -50%) scaleX(-1);
 }
