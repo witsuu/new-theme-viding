@@ -1684,6 +1684,32 @@ ul li {
     transform: translate(0, 0);
   }
 }
+@media (min-width: 768px) {
+  .header-section .orn-5 .image-element {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) {
+  .header-section .orn-5 .image-element {
+    width: 65%;
+  }
+}
+.header-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, 0%);
+  opacity: 0.2;
+}
+.header-section .orn-6 .image-element {
+  width: 200%;
+}
+@media (min-width: 992px) {
+  .header-section .orn-6 .image-element {
+    width: 100%;
+  }
+}
 .header-section .header-content {
   position: relative;
   height: 100%;
@@ -2964,48 +2990,32 @@ ul li {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  transform: translate(0, 50%);
+  opacity: 0.5;
 }
 .thank-section .orn-1 .image-element {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200%;
-  height: 100%;
-  overflow: hidden;
+  width: 250%;
 }
-.thank-section .orn-1 .image-element .img01,
-.thank-section .orn-1 .image-element .img02 {
-  float: right;
-  height: 100%;
-  width: 50%;
-}
-@media (max-width: 991px) {
-  .thank-section .orn-1 .image-element .img01,
-  .thank-section .orn-1 .image-element .img02 {
-    width: 100%;
+@media (min-width: 992px) {
+  .thank-section .orn-1 .image-element {
+    width: 150%;
   }
 }
-.thank-section .orn-1 .image-element.foglayer_01 {
-  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite !important;
+.thank-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(0, 0%);
+  opacity: 0.25;
 }
-.thank-section .orn-1 .image-element.foglayer_01 .img01,
-.thank-section .orn-1 .image-element.foglayer_01 .img02 {
-  background: url("../images/fog.png") center center/cover no-repeat transparent;
+.thank-section .orn-6 .image-element {
+  width: 200%;
 }
-.thank-section .orn-1 .image-element.foglayer_02 {
-  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite !important;
-}
-.thank-section .orn-1 .image-element.foglayer_02 .img01,
-.thank-section .orn-1 .image-element.foglayer_02 .img02 {
-  background: url("../images/fog2.png") center center/cover no-repeat transparent;
-}
-.thank-section .orn-1 .image-element.foglayer_03 {
-  animation: foglayer_03_opacity 21s linear infinite, foglayer_moveme 13s linear infinite !important;
-}
-.thank-section .orn-1 .image-element.foglayer_03 .img01,
-.thank-section .orn-1 .image-element.foglayer_03 .img02 {
-  background: url("../images/fog2.png") center center/cover no-repeat transparent;
+@media (min-width: 992px) {
+  .thank-section .orn-6 .image-element {
+    width: 100%;
+  }
 }
 .thank-section .orn-2 {
   position: absolute;
