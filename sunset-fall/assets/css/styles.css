@@ -1318,7 +1318,7 @@ img[alt=tree-2] {
 }
 @media (max-width: 767px) {
   .reminder-wrap .orn-2 .orn-7 {
-    top: 0;
+    top: 10%;
   }
 }
 .reminder-wrap .orn-3 {
