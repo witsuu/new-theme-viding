@@ -4079,4 +4079,20 @@ ul li {
 }
 .footer small {
   position: relative;
+}
+
+img[alt=flower-1] {
+  transform-origin: 95% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 5% 98%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 30% 100%;
+}
+
+img[alt=flower-4] {
+  transform-origin: 30% 95%;
 }/*# sourceMappingURL=styles.css.map */
