@@ -554,10 +554,12 @@ img[alt=flower-1] {
 
 img[alt=tree-1] {
   transform-origin: 35% 80%;
+  animation-duration: 8000ms !important;
 }
 
 img[alt=tree-2] {
   transform-origin: 85% 80%;
+  animation-duration: 8000ms !important;
 }
 
 [data-anim][data-anim] {
@@ -1270,7 +1272,7 @@ img[alt=tree-2] {
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0;
+    padding: 10rem 0 5rem;
   }
 }
 .reminder-wrap .orn-1 {
@@ -1292,7 +1294,7 @@ img[alt=tree-2] {
 }
 .reminder-wrap .orn-2 {
   position: absolute;
-  top: 10%;
+  top: 8%;
   right: 0;
   width: 100%;
   transform: translate(70%, 0) rotate(20deg);
