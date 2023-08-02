@@ -1175,81 +1175,39 @@ ul li {
 
 [data-anim=cloud].has-animate {
   animation-name: cloud;
-  animation-duration: 35000ms !important;
   animation-direction: normal !important;
   animation-timing-function: linear !important;
 }
 
+[data-anim=cloud].has-animate.animate-loop {
+  animation-duration: 35000ms;
+}
+
 @keyframes cloud {
   0% {
-    transform: translateX(-100%);
     left: 0;
+    transform: translateX(-100%);
   }
   100% {
-    transform: translateZ(0);
     left: 100%;
+    transform: translateZ(0);
   }
 }
-@keyframes foglayer_01_opacity {
+@keyframes fog_opacity {
   0% {
-    opacity: 0.1;
-  }
-  22% {
-    opacity: 0.3;
-  }
-  40% {
-    opacity: 0.18;
-  }
-  58% {
-    opacity: 0.3;
-  }
-  80% {
-    opacity: 0.15;
-  }
-  100% {
-    opacity: 0.1;
-  }
-}
-@keyframes foglayer_02_opacity {
-  0% {
-    opacity: 0.4;
-  }
-  25% {
-    opacity: 0.2;
-  }
-  50% {
-    opacity: 0.05;
-  }
-  80% {
-    opacity: 0.2;
-  }
-  100% {
-    opacity: 0.4;
-  }
-}
-@keyframes foglayer_03_opacity {
-  0% {
-    opacity: 0.4;
+    opacity: 0.6;
   }
   27% {
-    opacity: 0.1;
+    opacity: 0.8;
   }
   52% {
-    opacity: 0.3;
+    opacity: 0.7;
   }
   68% {
-    opacity: 0.2;
+    opacity: 0.9;
   }
   100% {
-    opacity: 0.4;
-  }
-}
-@keyframes foglayer_moveme {
-  0% {
-    right: 0;
-  }
-  100% {
-    right: -100%;
+    opacity: 0.6;
   }
 }
 .countdown {
@@ -1617,6 +1575,7 @@ ul li {
   position: relative;
   min-height: 100vh;
   width: 100%;
+  overflow: hidden;
 }
 .header-section .scroll-icon {
   position: relative;
@@ -1643,48 +1602,16 @@ ul li {
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 100%;
+  transform: translate(0, 50%);
+  opacity: 0.4;
 }
 .header-section .orn-1 .image-element {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 200%;
-  height: 100%;
-  overflow: hidden;
+  width: 250%;
 }
-.header-section .orn-1 .image-element .img01,
-.header-section .orn-1 .image-element .img02 {
-  float: right;
-  height: 100%;
-  width: 50%;
-}
-@media (max-width: 991px) {
-  .header-section .orn-1 .image-element .img01,
-  .header-section .orn-1 .image-element .img02 {
-    width: 100%;
+@media (min-width: 992px) {
+  .header-section .orn-1 .image-element {
+    width: 150%;
   }
-}
-.header-section .orn-1 .image-element.foglayer_01 {
-  animation: foglayer_01_opacity 10s linear infinite, foglayer_moveme 15s linear infinite !important;
-}
-.header-section .orn-1 .image-element.foglayer_01 .img01,
-.header-section .orn-1 .image-element.foglayer_01 .img02 {
-  background: url("../images/fog.png") center center/cover no-repeat transparent;
-}
-.header-section .orn-1 .image-element.foglayer_02 {
-  animation: foglayer_02_opacity 21s linear infinite, foglayer_moveme 13s linear infinite !important;
-}
-.header-section .orn-1 .image-element.foglayer_02 .img01,
-.header-section .orn-1 .image-element.foglayer_02 .img02 {
-  background: url("../images/fog2.png") center center/cover no-repeat transparent;
-}
-.header-section .orn-1 .image-element.foglayer_03 {
-  animation: foglayer_03_opacity 21s linear infinite, foglayer_moveme 13s linear infinite !important;
-}
-.header-section .orn-1 .image-element.foglayer_03 .img01,
-.header-section .orn-1 .image-element.foglayer_03 .img02 {
-  background: url("../images/fog2.png") center center/cover no-repeat transparent;
 }
 .header-section .orn-2 {
   position: absolute;
@@ -1704,12 +1631,11 @@ ul li {
   top: 0;
   left: 0;
   width: 100%;
-  transform: translate(0, -40%);
+  transform: translate(0, -55%) scaleY(-1);
 }
 @media (min-width: 992px) {
   .header-section .orn-3 {
-    width: 60%;
-    transform: translate(0, -50%);
+    transform: translate(0, -70%) scaleY(-1);
   }
 }
 .header-section .orn-3 .image-element {
@@ -1756,11 +1682,6 @@ ul li {
   .header-section .orn-5 {
     top: 0;
     transform: translate(0, 0);
-  }
-}
-@media (min-width: 992px) {
-  .header-section .orn-5 {
-    width: 50%;
   }
 }
 .header-section .header-content {

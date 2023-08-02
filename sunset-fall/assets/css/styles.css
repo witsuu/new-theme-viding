@@ -1316,6 +1316,11 @@ img[alt=tree-2] {
   width: 40px;
   transform: rotateZ(-45deg);
 }
+@media (max-width: 767px) {
+  .reminder-wrap .orn-2 .orn-7 {
+    top: 0;
+  }
+}
 .reminder-wrap .orn-3 {
   position: absolute;
   bottom: 0;
