@@ -567,11 +567,11 @@ img[alt=tree-2] {
   visibility: hidden;
 }
 [data-anim][data-anim].has-animate {
-  animation-duration: 3000ms;
+  animation-duration: 2500ms;
   animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop {
-  animation-duration: 4000ms;
+  animation-duration: 3500ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -1137,12 +1137,12 @@ img[alt=tree-2] {
 
 [data-anim=butterfly].has-animate {
   animation-name: butterfly;
-  animation-duration: 1200ms !important;
+  animation-duration: 800ms !important;
 }
 
 @keyframes butterfly {
   to {
-    transform: scaleX(0.65);
+    transform: scaleX(0.6);
   }
 }
 .countdown {
@@ -2429,6 +2429,7 @@ img[alt=tree-2] {
 .venue-section .venue-wrapper .venue-content .card .elements-wrapper-absolute .background-element img {
   -o-object-position: 50% 40%;
      object-position: 50% 40%;
+  border-radius: 4px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
   position: relative;

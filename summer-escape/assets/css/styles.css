@@ -1351,23 +1351,24 @@ ul li {
 @media (min-width: 992px) {
   .cover-section .orn-1 {
     width: 420px;
+    transform: translate(-40%, -40%);
   }
 }
 .cover-section .orn-1 .orn-2 {
   position: absolute;
   top: 50%;
   right: 30%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .cover-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .cover-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 140px;
   }
 }
 .cover-section .orn-3 {
@@ -1385,23 +1386,24 @@ ul li {
 @media (min-width: 992px) {
   .cover-section .orn-3 {
     width: 480px;
+    transform: translate(50%, -30%);
   }
 }
 .cover-section .orn-3 .orn-4 {
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .cover-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .cover-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 160px;
   }
 }
 .cover-section .orn-3 .orn-5 {
@@ -1436,6 +1438,7 @@ ul li {
 @media (min-width: 992px) {
   .cover-section .orn-6 {
     width: 240px;
+    transform: translate(-30%, -50%);
   }
 }
 .cover-section .orn-6 .orn-7 {
@@ -1470,6 +1473,7 @@ ul li {
 @media (min-width: 992px) {
   .cover-section .orn-8 {
     width: 520px;
+    transform: translate(-45%, 30%) scaleX(-1);
   }
 }
 .cover-section .orn-8 .orn-9 {
@@ -1493,17 +1497,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 30%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .cover-section .orn-8 .orn-10 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .cover-section .orn-8 .orn-10 {
-    width: 140px;
+    width: 160px;
   }
 }
 .cover-section .orn-11 {
@@ -1521,6 +1525,7 @@ ul li {
 @media (min-width: 992px) {
   .cover-section .orn-11 {
     width: 440px;
+    transform: translate(60%, 10%) scaleX(-1);
   }
 }
 .cover-section .orn-11 .orn-12 {
@@ -1560,17 +1565,17 @@ ul li {
   position: absolute;
   top: 0;
   right: 10%;
-  width: 100px;
+  width: 120px;
   transform: translate(-20%, -20%);
 }
 @media (min-width: 768px) {
   .cover-section .orn-11 .orn-14 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .cover-section .orn-11 .orn-14 {
-    width: 140px;
+    width: 160px;
   }
 }
 .cover-section .cover-wrapper {
@@ -1699,17 +1704,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .header-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 140px;
   }
 }
 .header-section .orn-3 {
@@ -1734,17 +1739,17 @@ ul li {
   position: absolute;
   top: 23%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .header-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 160px;
   }
 }
 .header-section .orn-5 {
@@ -1821,34 +1826,34 @@ ul li {
   position: absolute;
   top: 35%;
   left: 50%;
-  width: 80px;
+  width: 100px;
   transform: translate(-40%, 25%);
 }
 @media (min-width: 768px) {
   .header-section .orn-5 .orn-9 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-5 .orn-9 {
-    width: 120px;
+    width: 140px;
   }
 }
 .header-section .orn-5 .orn-10 {
   position: absolute;
   top: 60%;
   right: 0;
-  width: 100px;
+  width: 120px;
   transform: translate(50%, 10%);
 }
 @media (min-width: 768px) {
   .header-section .orn-5 .orn-10 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-5 .orn-10 {
-    width: 140px;
+    width: 160px;
   }
 }
 .header-section .orn-5 .orn-17 {
@@ -1948,38 +1953,38 @@ ul li {
   position: absolute;
   top: 40%;
   left: 10%;
-  width: 100px;
+  width: 120px;
   transform: translate(0, 5%) scaleX(-1);
 }
 @media (min-width: 768px) {
   .header-section .orn-11 .orn-15 {
     top: 65%;
-    width: 120px;
+    width: 140px;
     transform: translate(-30%, -20%) scaleX(-1);
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-11 .orn-15 {
-    width: 140px;
+    width: 160px;
   }
 }
 .header-section .orn-11 .orn-16 {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 80px;
+  width: 100px;
   transform: translate(-50%, 0) scaleX(-1);
 }
 @media (min-width: 768px) {
   .header-section .orn-11 .orn-16 {
     top: 75%;
-    width: 100px;
+    width: 120px;
     transform: translate(-80%, 0) scaleX(-1);
   }
 }
 @media (min-width: 992px) {
   .header-section .orn-11 .orn-16 {
-    width: 120px;
+    width: 140px;
   }
 }
 .header-section .orn-11 .orn-18 {
@@ -2209,17 +2214,17 @@ ul li {
   position: absolute;
   top: 50%;
   right: 30%;
-  width: 80px;
+  width: 120px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-1 .orn-2 {
-    width: 100px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .couple-section .couple-body .orn-1 .orn-2 {
-    width: 120px;
+    width: 160px;
   }
 }
 .couple-section .couple-body .orn-3 {
@@ -2243,17 +2248,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 100px;
+  width: 140px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-3 .orn-4 {
-    width: 120px;
+    width: 160px;
   }
 }
 @media (min-width: 992px) {
   .couple-section .couple-body .orn-3 .orn-4 {
-    width: 140px;
+    width: 180px;
   }
 }
 .couple-section .couple-body .orn-3 .orn-5 {
@@ -2345,17 +2350,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 30%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-8 .orn-10 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .couple-section .couple-body .orn-8 .orn-10 {
-    width: 140px;
+    width: 160px;
   }
 }
 .couple-section .couple-body .orn-11 {
@@ -2412,17 +2417,17 @@ ul li {
   position: absolute;
   top: 0;
   right: 10%;
-  width: 100px;
+  width: 120px;
   transform: translate(-20%, -20%);
 }
 @media (min-width: 768px) {
   .couple-section .couple-body .orn-11 .orn-14 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .couple-section .couple-body .orn-11 .orn-14 {
-    width: 140px;
+    width: 160px;
   }
 }
 .couple-section .couple-content {
@@ -2663,18 +2668,18 @@ ul li {
   position: absolute;
   top: 20%;
   right: 0;
-  width: 100px;
-  transform: translate(-30%, 0);
+  width: 140px;
+  transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .story-section .orn-3 .orn-4 {
     top: 40%;
-    width: 120px;
+    width: 160px;
   }
 }
 @media (min-width: 992px) {
   .story-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 180px;
   }
 }
 .story-section .story {
@@ -2758,17 +2763,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 120px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .venue-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .venue-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 160px;
   }
 }
 .venue-section .orn-3 {
@@ -2792,17 +2797,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 100px;
+  width: 140px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .venue-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 160px;
   }
 }
 @media (min-width: 992px) {
   .venue-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 180px;
   }
 }
 .venue-section .orn-3 .orn-5 {
@@ -2996,17 +3001,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .venue-section .orn-15 .orn-16 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .venue-section .orn-15 .orn-16 {
-    width: 120px;
+    width: 140px;
   }
 }
 .venue-section .orn-17 {
@@ -3031,17 +3036,17 @@ ul li {
   position: absolute;
   top: 23%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .venue-section .orn-17 .orn-18 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .venue-section .orn-17 .orn-18 {
-    width: 140px;
+    width: 160px;
   }
 }
 .venue-section .venue-wrapper {
@@ -3461,17 +3466,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .wishes-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .wishes-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 140px;
   }
 }
 .wishes-section .orn-3 {
@@ -3495,17 +3500,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .wishes-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .wishes-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 160px;
   }
 }
 .wishes-section .orn-5 {
@@ -3546,17 +3551,17 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 120px;
+  width: 140px;
   transform: translate(-50%, 50%);
 }
 @media (min-width: 768px) {
   .wishes-section .orn-5 .orn-7 {
-    width: 140px;
+    width: 160px;
   }
 }
 @media (min-width: 992px) {
   .wishes-section .orn-5 .orn-7 {
-    width: 160px;
+    width: 180px;
   }
 }
 .wishes-section .orn-8 {
@@ -4113,17 +4118,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .stream-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .stream-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 140px;
   }
 }
 .stream-section .orn-3 {
@@ -4147,17 +4152,17 @@ ul li {
   position: absolute;
   top: 50%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .stream-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .stream-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 160px;
   }
 }
 .stream-section .orn-3 .orn-5 {
@@ -4475,17 +4480,17 @@ ul li {
   position: absolute;
   top: 30%;
   right: 10%;
-  width: 80px;
+  width: 100px;
   transform: translate(-20%, 0);
 }
 @media (min-width: 768px) {
   .thank-section .orn-1 .orn-2 {
-    width: 100px;
+    width: 120px;
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-1 .orn-2 {
-    width: 120px;
+    width: 140px;
   }
 }
 .thank-section .orn-3 {
@@ -4510,17 +4515,17 @@ ul li {
   position: absolute;
   top: 23%;
   left: 25%;
-  width: 100px;
+  width: 120px;
   transform: scaleX(-1);
 }
 @media (min-width: 768px) {
   .thank-section .orn-3 .orn-4 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-3 .orn-4 {
-    width: 140px;
+    width: 160px;
   }
 }
 .thank-section .orn-5 {
@@ -4614,17 +4619,17 @@ ul li {
   position: absolute;
   top: 60%;
   right: 0;
-  width: 100px;
+  width: 120px;
   transform: translate(50%, 10%);
 }
 @media (min-width: 768px) {
   .thank-section .orn-5 .orn-10 {
-    width: 120px;
+    width: 140px;
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-5 .orn-10 {
-    width: 140px;
+    width: 160px;
   }
 }
 .thank-section .orn-5 .orn-17 {
@@ -4724,38 +4729,38 @@ ul li {
   position: absolute;
   top: 40%;
   left: 10%;
-  width: 100px;
+  width: 120px;
   transform: translate(0, 5%) scaleX(-1);
 }
 @media (min-width: 768px) {
   .thank-section .orn-11 .orn-15 {
     top: 65%;
-    width: 120px;
+    width: 140px;
     transform: translate(-30%, -20%) scaleX(-1);
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-11 .orn-15 {
-    width: 140px;
+    width: 160px;
   }
 }
 .thank-section .orn-11 .orn-16 {
   position: absolute;
   top: 50%;
   left: 0;
-  width: 80px;
+  width: 100px;
   transform: translate(-50%, 0) scaleX(-1);
 }
 @media (min-width: 768px) {
   .thank-section .orn-11 .orn-16 {
     top: 75%;
-    width: 100px;
+    width: 120px;
     transform: translate(-80%, 0) scaleX(-1);
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-11 .orn-16 {
-    width: 120px;
+    width: 140px;
   }
 }
 .thank-section .orn-11 .orn-18 {
@@ -4842,4 +4847,8 @@ ul li {
 }
 .footer small {
   position: relative;
+}
+
+img[alt=flower-1] {
+  animation-duration: 3000ms !important;
 }/*# sourceMappingURL=styles.css.map */

@@ -1150,23 +1150,38 @@ ul li {
 @keyframes fishRight {
   0% {
     left: 0;
-    transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0%, 0);
+  }
+  10% {
+    transform: translate3d(-50%, -100%, 0);
   }
   20% {
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, 0%, 0);
+  }
+  30% {
+    transform: translate3d(-50%, -100%, 0);
   }
   40% {
-    transform: translate3d(-50%, 0, 0);
+    transform: translate3d(-50%, 0%, 0);
+  }
+  50% {
+    transform: translate3d(-50%, -100%, 0);
   }
   60% {
-    transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, 0%, 0);
+  }
+  70% {
+    transform: translate3d(-50%, -100%, 0);
   }
   80% {
     transform: translate3d(-50%, 0, 0);
   }
+  90% {
+    transform: translate3d(-50%, -100%, 0);
+  }
   100% {
     left: 100%;
-    transform: translate3d(0, -50%, 0);
+    transform: translate3d(0, 0%, 0);
   }
 }
 @keyframes fishLeft {
@@ -1174,21 +1189,36 @@ ul li {
     left: 100%;
     transform: translate3d(0%, 0, 0) scaleX(-1);
   }
+  10% {
+    transform: translate3d(-50%, -100%, 0) scaleX(-1);
+  }
   20% {
-    transform: translate3d(-50%, -50%, 0) scaleX(-1);
+    transform: translate3d(-50%, 0%, 0) scaleX(-1);
+  }
+  30% {
+    transform: translate3d(-50%, -100%, 0) scaleX(-1);
   }
   40% {
     transform: translate3d(-50%, 0, 0) scaleX(-1);
   }
+  50% {
+    transform: translate3d(-50%, -100%, 0) scaleX(-1);
+  }
   60% {
-    transform: translate3d(-50%, -50%, 0) scaleX(-1);
+    transform: translate3d(-50%, 0%, 0) scaleX(-1);
+  }
+  70% {
+    transform: translate3d(-50%, -100%, 0) scaleX(-1);
   }
   80% {
     transform: translate3d(-50%, 0, 0) scaleX(-1);
   }
+  90% {
+    transform: translate3d(-50%, -100%, 0) scaleX(-1);
+  }
   100% {
     left: 0;
-    transform: translate3d(-100%, -50%, 0) scaleX(-1);
+    transform: translate3d(-100%, 0%, 0) scaleX(-1);
   }
 }
 .countdown {
@@ -1817,7 +1847,12 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-99 {
-    width: 250%;
+    width: 280%;
+  }
+}
+@media (max-width: 410px) {
+  .header-section .orn-99 {
+    bottom: 10%;
   }
 }
 .header-section .orn-1 {
@@ -3171,6 +3206,11 @@ ul li {
     width: 75%;
   }
 }
+@media (max-width: 500px) and (min-width: 450px) {
+  .venue-section .event-name .date {
+    padding: 7rem 1rem;
+  }
+}
 .venue-section .event-name .date h5 {
   font-family: "Pinyon Script", cursive;
   font-weight: 700;
@@ -3184,7 +3224,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .venue-section .event-name h4 {
-    padding-bottom: 6rem;
+    padding-bottom: 32%;
   }
 }
 .venue-section .event-name p {
@@ -3195,12 +3235,17 @@ ul li {
   position: relative;
   background-color: var(--color-primary);
   color: var(--color-dark);
-  padding: 6rem 2rem 2rem;
+  padding: 32% 2rem 2rem;
   border-radius: var(--border-radius);
 }
 @media (max-width: 767px) {
   .venue-section .event-place {
-    padding-top: 7rem;
+    padding-top: 35%;
+  }
+}
+@media (max-width: 500px) and (min-width: 450px) {
+  .venue-section .event-place {
+    padding-bottom: 40%;
   }
 }
 .venue-section .event-place::before {
