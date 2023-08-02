@@ -1843,7 +1843,7 @@ ul li {
 @media (max-width: 991px) {
   .header-section .orn-99 {
     width: 150%;
-    transform: translate(-50%, 30%);
+    transform: translate(-50%, 25%);
   }
 }
 @media (max-width: 767px) {
@@ -1890,7 +1890,7 @@ ul li {
   bottom: 0;
   left: 0;
   width: 200px;
-  transform: translate(-20%, 50%);
+  transform: translate(-20%, 40%);
 }
 @media (min-width: 768px) {
   .header-section .orn-3 {
@@ -2078,7 +2078,7 @@ ul li {
   bottom: 0;
   right: 0;
   width: 200px;
-  transform: translate(0, 70%);
+  transform: translate(0, 60%);
 }
 @media (min-width: 768px) {
   .header-section .orn-5 {
