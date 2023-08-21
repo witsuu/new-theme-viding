@@ -217,36 +217,41 @@
 	{
 		"name": "Treno Custom",
 		"path": "treno-custom",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Treno",
 		"path": "treno",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Reef",
 		"path": "reef",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Summer Escape",
 		"path": "summer-escape",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Spring Melody",
 		"path": "spring-melody",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Sunset Fall",
 		"path": "sunset-fall",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Potter",
 		"path": "potter",
+		"status": "DONE"
+	},
+	{
+		"name": "Doodling",
+		"path": "doodling",
 		"status": ""
 	}
 ]
