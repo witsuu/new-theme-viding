@@ -92,6 +92,13 @@ body {
   width: 100%;
   height: auto;
 }
+.main-app .ornaments-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 
 .logo-viding {
   height: 2.4rem;
@@ -1491,45 +1498,87 @@ ul li {
 }
 .header-section .ornaments-wrapper .orn-1 {
   position: absolute;
-  bottom: 3rem;
+  bottom: 5rem;
   left: 0;
-  width: 200px;
+  width: 240px;
   transform: translate(-70%, 0);
 }
 .header-section .ornaments-wrapper .orn-1 .orn-2 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 180px;
-  transform: translate(30%, 40%);
+  width: 200px;
+  transform: translate(25%, 40%);
 }
 .header-section .ornaments-wrapper .orn-1 .orn-2 .orn-3 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 100px;
-  transform: translate(-40%, 30%);
+  width: 120px;
+  transform: translate(-30%, 30%);
 }
 .header-section .ornaments-wrapper .orn-1 .orn-4 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 100px;
+  width: 120px;
   transform: translate(-5%, -10%);
 }
 .header-section .ornaments-wrapper .orn-1 .orn-4 .orn-5 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 80px;
-  transform: translate(-10%, -65%);
+  width: 100px;
+  transform: translate(-15%, -65%);
 }
 .header-section .ornaments-wrapper .orn-6 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 160px;
+  width: 240px;
   transform: translate(-15%, 40%);
+}
+.header-section .ornaments-wrapper .orn-7 {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  width: 240px;
+  transform: translate(70%, 0) scaleX(-1);
+}
+.header-section .ornaments-wrapper .orn-7 .orn-8 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(25%, 40%);
+}
+.header-section .ornaments-wrapper .orn-7 .orn-8 .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-15%, 30%);
+}
+.header-section .ornaments-wrapper .orn-7 .orn-10 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-5%, -10%);
+}
+.header-section .ornaments-wrapper .orn-7 .orn-10 .orn-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  transform: translate(-15%, -65%);
+}
+.header-section .ornaments-wrapper .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(15%, 40%) scaleX(-1);
 }
 .header-section .header-content {
   position: relative;
@@ -1708,8 +1757,8 @@ ul li {
   width: -moz-fit-content;
   width: fit-content;
   max-width: 100%;
-  margin: 1rem auto;
-  padding-left: 1rem;
+  margin: 0 auto;
+  padding-left: 1em;
   position: relative;
   z-index: 3;
   -webkit-mask-image: url(../images/mask.png);
@@ -1742,6 +1791,11 @@ ul li {
   font-size: 48px;
   font-family: "Snell Roundhand", cursive;
   color: var(--color-primary);
+}
+@media (max-width: 767px) {
+  .couple-section .and span {
+    font-size: 36px;
+  }
 }
 .couple-section .image-couple-container {
   position: relative;
@@ -1850,6 +1904,20 @@ ul li {
     width: 40px;
   }
 }
+.couple-section .couple-wrapper .orn-5 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120px;
+  transform: translate(-30%, 65%);
+}
+.couple-section .couple-wrapper .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(30%, 65%) scaleX(-1);
+}
 .couple-section .couple-wrapper .orn-99 {
   position: relative;
   width: 120px;
@@ -1916,7 +1984,6 @@ ul li {
   position: relative;
   background-color: var(--color-primary);
   width: calc(100% - 30px);
-  overflow: hidden;
 }
 @media (max-width: 767px) {
   .couple-section .couple .couple-description {
@@ -1986,8 +2053,18 @@ ul li {
   left: 0;
   width: 80%;
 }
+@media (max-width: 767px) {
+  .couple-section .couple.man .couple-description .orn-elephent {
+    width: 100%;
+  }
+}
 .couple-section .couple.man .sosmed-wrap {
   margin-right: auto;
+}
+@media (max-width: 767px) {
+  .couple-section .couple.woman {
+    padding-top: 1rem;
+  }
 }
 .couple-section .couple.woman .couple-description {
   text-align: right;
@@ -2006,6 +2083,11 @@ ul li {
   width: 80%;
   transform: scaleX(-1);
 }
+@media (max-width: 767px) {
+  .couple-section .couple.woman .couple-description .orn-elephent {
+    width: 100%;
+  }
+}
 .couple-section .couple.woman .sosmed-wrap {
   margin-left: auto;
 }
@@ -2021,6 +2103,20 @@ ul li {
   .story-section .story {
     padding: 3rem 0;
   }
+}
+.story-section .story .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(-63%, 0);
+}
+.story-section .story .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(63%, 0) scaleX(-1);
 }
 .story-section .orn-99 {
   position: relative;
@@ -2093,6 +2189,20 @@ ul li {
   .venue-section {
     padding: 3rem 0;
   }
+}
+.venue-section .orn-3 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 100px;
+  transform: translate(-50%, 0%) rotate(15deg);
+}
+.venue-section .orn-4 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 100px;
+  transform: translate(50%, 0%) rotate(-15deg) scaleX(-1);
 }
 .venue-section .orn-99 {
   position: relative;
@@ -2219,6 +2329,7 @@ ul li {
   z-index: 5;
   text-align: center;
   border: none;
+  overflow: hidden;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
   position: relative;
@@ -3033,12 +3144,12 @@ ul li {
 
 .thank-section {
   position: relative;
-  padding: 5rem 0;
-  text-align: center;
+  padding: 5rem 0 0;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .thank-section {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
 }
 .thank-section .image-wrapper {
@@ -3047,6 +3158,20 @@ ul li {
   height: auto;
   aspect-ratio: 7/8;
   margin: 0 auto;
+}
+.thank-section .image-wrapper .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(-35%, -15%) scaleX(-1);
+}
+.thank-section .image-wrapper .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(35%, -15%);
 }
 .thank-section .image-wrapper .image-element {
   position: relative;
@@ -3063,6 +3188,135 @@ ul li {
 }
 .thank-section .thank-wrapper {
   position: relative;
+  padding: 0 0 5rem;
+}
+@media (max-width: 767px) {
+  .thank-section .thank-wrapper {
+    padding: 0 0 3rem;
+  }
+}
+.thank-section .thank-wrapper .side-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 100%;
+}
+.thank-section .thank-wrapper .side-1 .image-element {
+  width: auto;
+  height: 100%;
+}
+.thank-section .thank-wrapper .side-1 .image-element img {
+  width: auto;
+  height: 100%;
+}
+.thank-section .thank-wrapper .side-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: auto;
+  height: 100%;
+  transform: scaleX(-1);
+}
+.thank-section .thank-wrapper .side-2 .image-element {
+  width: auto;
+  height: 100%;
+}
+.thank-section .thank-wrapper .side-2 .image-element img {
+  width: auto;
+  height: 100%;
+}
+.thank-section .thank-wrapper .ornaments-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 5;
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-1 {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 240px;
+  transform: translate(-70%, 0);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(25%, 40%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-1 .orn-2 .orn-3 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-30%, 30%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-1 .orn-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-5%, -10%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-1 .orn-4 .orn-5 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  transform: translate(-15%, -65%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-15%, 40%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-7 {
+  position: absolute;
+  bottom: 5rem;
+  right: 0;
+  width: 240px;
+  transform: translate(70%, 0) scaleX(-1);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-7 .orn-8 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(25%, 40%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-7 .orn-8 .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-15%, 30%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-7 .orn-10 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 120px;
+  transform: translate(-5%, -10%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-7 .orn-10 .orn-11 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100px;
+  transform: translate(-15%, -65%);
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(15%, 40%) scaleX(-1);
 }
 .thank-section .thank-wrapper .thank {
   position: relative;
@@ -3086,11 +3340,12 @@ ul li {
 }
 .thank-section .thank-wrapper .thank-body {
   position: relative;
+  text-align: center;
   padding: 10rem 2rem;
 }
 @media (max-width: 767px) {
   .thank-section .thank-wrapper .thank-body {
-    padding: 8rem 1rem;
+    padding: 8rem 2rem;
   }
 }
 

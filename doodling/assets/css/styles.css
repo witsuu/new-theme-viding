@@ -1352,6 +1352,7 @@ ul li {
 }
 .reminder-wrap .orn-4 path {
   fill: var(--color-button-trans);
+  stroke: var(--color-button-trans);
 }
 .reminder-wrap .reminder-content {
   position: relative;
