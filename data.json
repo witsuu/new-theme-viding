@@ -253,5 +253,30 @@
 		"name": "Doodling",
 		"path": "doodling",
 		"status": ""
+	},
+	{
+		"name": "Forest",
+		"path": "forest",
+		"status": ""
+	},
+	{
+		"name": "Picnic",
+		"path": "picnic",
+		"status": ""
+	},
+	{
+		"name": "Horizon",
+		"path": "horizon",
+		"status": ""
+	},
+	{
+		"name": "Ouranos",
+		"path": "ouranos",
+		"status": ""
+	},
+	{
+		"name": "Percha",
+		"path": "percha",
+		"status": ""
 	}
 ]
