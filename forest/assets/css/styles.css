@@ -127,7 +127,7 @@ h3 {
 h1 {
   font-size: 72px;
   line-height: 0.8;
-  font-weight: 700;
+  font-weight: 600;
 }
 @media (max-width: 767px) {
   h1 {
