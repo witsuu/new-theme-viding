@@ -120,7 +120,7 @@ h1 {
 h1 span {
   font-size: 26px;
   display: block;
-  transform: translateY(1.5rem);
+  transform: translateY(1.25rem);
 }
 @media (max-width: 767px) {
   h1 span {
@@ -1115,9 +1115,23 @@ ul li {
 }
 
 [data-anim=zoom-out-image] {
-  transform: scale3d(1.25, 1.25, 1.25);
+  transform: scale3d(1.35, 1.35, 1.35);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=flower-1],
+img[alt=leaf] {
+  transform-origin: 50% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 30% 100%;
+}
+
+img[alt=palm-1],
+img[alt=palm-2] {
+  transform-origin: 40% 90%;
 }
 
 .countdown {
@@ -1146,45 +1160,6 @@ ul li {
   align-items: center;
   position: relative;
   color: var(--color-light);
-  padding: 2rem 1rem;
-  min-width: 120px;
-}
-.countdown .days::before,
-.countdown .hours::before,
-.countdown .minutes::before,
-.countdown .seconds::before {
-  position: absolute;
-  inset: 0;
-  background: var(--color-secondary);
-  border-radius: 300px;
-  opacity: 0.6;
-  z-index: -1;
-  content: "";
-}
-@media (max-width: 767px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 65px;
-    padding: 1rem 0.75rem;
-  }
-}
-@media (max-width: 375px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 63px;
-  }
-}
-@media (max-width: 350px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 72px;
-  }
 }
 .countdown .days .huruf,
 .countdown .hours .huruf,
@@ -1192,6 +1167,7 @@ ul li {
 .countdown .seconds .huruf {
   font-size: 14px;
   font-weight: 600;
+  text-shadow: 1px 1px 2px #000;
 }
 @media (max-width: 375px) {
   .countdown .days .huruf,
@@ -1205,10 +1181,13 @@ ul li {
 .countdown .hours .angka,
 .countdown .minutes .angka,
 .countdown .seconds .angka {
+  position: relative;
   margin-bottom: 0;
   font-weight: 500;
   font-size: 38px;
   font-family: "Prata", serif;
+  padding: 1.5rem 0.5rem;
+  min-width: 80px;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
@@ -1216,6 +1195,7 @@ ul li {
   .countdown .minutes .angka,
   .countdown .seconds .angka {
     font-size: 28px;
+    min-width: 65px;
   }
 }
 @media (max-width: 375px) {
@@ -1223,8 +1203,29 @@ ul li {
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
+    min-width: 63px;
     font-size: 24px;
   }
+}
+@media (max-width: 350px) {
+  .countdown .days .angka,
+  .countdown .hours .angka,
+  .countdown .minutes .angka,
+  .countdown .seconds .angka {
+    min-width: 72px;
+  }
+}
+.countdown .days .angka::before,
+.countdown .hours .angka::before,
+.countdown .minutes .angka::before,
+.countdown .seconds .angka::before {
+  position: absolute;
+  inset: 0;
+  background: var(--color-secondary);
+  border-radius: 300px;
+  opacity: 0.6;
+  z-index: -1;
+  content: "";
 }
 .countdown .days .huruf,
 .countdown .days .angka,
@@ -1235,7 +1236,6 @@ ul li {
 .countdown .seconds .huruf,
 .countdown .seconds .angka {
   margin: 0;
-  padding: 0;
 }
 
 .reminder-wrap {
@@ -1437,6 +1437,7 @@ ul li {
   top: 5%;
   left: 0;
   width: 260px;
+  transform: translate(-60%, 0);
 }
 @media (min-width: 768px) {
   .header-section .orn-1 {
@@ -1447,6 +1448,24 @@ ul li {
 @media (min-width: 992px) {
   .header-section .orn-1 {
     width: 340px;
+  }
+}
+.header-section .orn-1 .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  transform: translate(-30%, 0);
+}
+@media (min-width: 768px) {
+  .header-section .orn-1 .orn-6 {
+    width: 160px;
+    transform: translate(-40%, 0);
+  }
+}
+@media (min-width: 992px) {
+  .header-section .orn-1 .orn-6 {
+    width: 180px;
   }
 }
 .header-section .orn-2 {
@@ -1466,6 +1485,24 @@ ul li {
   .header-section .orn-2 {
     top: 8%;
     width: 340px;
+  }
+}
+.header-section .orn-2 .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 140px;
+  transform: translate(-20%, 0);
+}
+@media (min-width: 768px) {
+  .header-section .orn-2 .orn-7 {
+    width: 160px;
+    transform: translate(-40%, 0);
+  }
+}
+@media (min-width: 992px) {
+  .header-section .orn-2 .orn-7 {
+    width: 180px;
   }
 }
 .header-section .orn-3 {
@@ -2113,6 +2150,9 @@ ul li {
   justify-content: center;
   text-align: left;
   padding: 1rem 0.5rem;
+}
+.venue-section .event-name .time span {
+  font-size: 14px;
 }
 .venue-section .event-place {
   position: relative;
