@@ -229,19 +229,20 @@ span {
 .form-select {
   font-family: "Nunito Sans", sans-serif;
   border: none;
-  padding: 0.5rem 1rem;
-  background-color: rgba(255, 255, 255, 0.7);
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-bottom: 1px solid #fff;
+  background-color: transparent;
+  color: var(--color-button-trans);
 }
 .form-select::-moz-placeholder {
-  color: var(--color-dark);
+  color: var(--color-button-trans);
 }
 .form-select::placeholder {
-  color: var(--color-dark);
+  color: var(--color-button-trans);
 }
 .form-select:focus {
   box-shadow: none;
-  border-color: var(--color-dark);
+  background-color: var(--color-primary);
+  color: var(--color-button-trans);
 }
 
 input.form-control {
@@ -249,18 +250,18 @@ input.form-control {
   border: none;
   border-bottom: 1px solid #fff;
   background-color: transparent;
-  color: var(--color-light);
+  color: var(--color-button-trans);
 }
 input.form-control::-moz-placeholder {
-  color: var(--color-light);
+  color: var(--color-button-trans);
 }
 input.form-control::placeholder {
-  color: var(--color-light);
+  color: var(--color-button-trans);
 }
 input.form-control:focus {
   box-shadow: none;
   background-color: transparent;
-  color: var(--color-light);
+  color: var(--color-button-trans);
 }
 
 .scrolled {
@@ -701,7 +702,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 80%, 0);
   }
   100% {
     transform: translateZ(0);
@@ -1153,6 +1154,61 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+[data-anim=butterfly].has-animate {
+  animation-name: butterfly;
+  animation-duration: 1000ms !important;
+}
+
+[data-anim=butterfly-move-right].has-animate {
+  animation-name: butterflyMoveRight;
+}
+
+[data-anim=butterfly-move-left].has-animate {
+  animation-name: butterflyMoveLeft;
+}
+
+@keyframes butterfly {
+  to {
+    transform: scaleX(0.25);
+  }
+}
+@keyframes butterflyMoveRight {
+  50% {
+    transform: translate3d(50px, -20px, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+@keyframes butterflyMoveLeft {
+  50% {
+    transform: translate3d(-40px, -30px, 0);
+  }
+  100% {
+    transform: translate3d(-10px, -50px, 0);
+  }
+}
+img[alt=flower-1] {
+  transform-origin: 35% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 45% 100%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 25% 90%;
+}
+
+img[alt=palm] {
+  transform-origin: 48% 100%;
+}
+
+img[alt=elephent-title],
+img[alt=elephent] {
+  transform-origin: 20% 90%;
 }
 
 .countdown {
@@ -1688,6 +1744,18 @@ ul li {
 @media (min-width: 992px) {
   .header-section .ornaments-wrapper .orn-12 {
     width: 280px;
+  }
+}
+.header-section .ornaments-wrapper .orn-13 {
+  position: absolute;
+  top: 18%;
+  right: 12%;
+  width: 40px;
+  transform: rotateZ(45deg);
+}
+@media (min-width: 768px) {
+  .header-section .ornaments-wrapper .orn-13 {
+    width: 60px;
   }
 }
 .header-section .header-content {
@@ -3035,12 +3103,10 @@ ul li {
     padding: 5rem 0;
   }
 }
-.wishes-section .image-wrapper .image-element {
-  aspect-ratio: 7/8;
-}
 .wishes-section .image-wrapper .image-element .wishes-background {
   width: 100%;
-  height: 100%;
+  height: auto;
+  aspect-ratio: 7/8;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
@@ -3818,6 +3884,18 @@ ul li {
 @media (min-width: 992px) {
   .thank-section .thank-wrapper .ornaments-wrapper .orn-12 {
     width: 280px;
+  }
+}
+.thank-section .thank-wrapper .ornaments-wrapper .orn-13 {
+  position: absolute;
+  top: 18%;
+  right: 12%;
+  width: 40px;
+  transform: rotateZ(45deg);
+}
+@media (min-width: 768px) {
+  .thank-section .thank-wrapper .ornaments-wrapper .orn-13 {
+    width: 60px;
   }
 }
 .thank-section .thank-wrapper .thank {
