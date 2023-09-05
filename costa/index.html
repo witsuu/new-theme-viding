@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Secret</title>
+    <title>Costa</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
 
     <!-- fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz@6..12&family=Prata&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- styles libraries -->
@@ -66,31 +66,42 @@
 
         <!-- Envelope Section -->
         <section class="cover-section">
-            <div class="container h-100">
-                <div class="cover-wrapper h-100">
+            <div class="elements-absolute">
+                <div class="background-element">
+                    <img src="./assets/images/bg-cover.png" alt="bg-cover">
+                </div>
+            </div>
+            <div class="container">
+                <div class="cover-wrapper">
                     <div class="cover-content">
                         <div class="cover-body">
-                            <div class="col-lg-5 col-12">
-                                <div class="image-wrapper" data-anim="zoom-out">
-                                    <img src="./assets/images/background-1.webp" alt="cover-background" class="cover-background">
+                            <div class="frame-top">
+                                <div class="image-element">
+                                    <img src="./assets/images/frame-side-top.png" alt="frame-side-top" class="img-fluid">
                                 </div>
                             </div>
-                            <div class="col-lg-7 col-12">
-                                <div class="cover-description" data-anim="fade-down">
-                                    <div class="greeting-wrapper">
-                                        <span>Dear,</span>
-                                        <h6>Name Guest</h6>
-                                    </div>
+                            <div class="frame-bottom">
+                                <div class="image-element">
+                                    <img src="./assets/images/frame-side-top.png" alt="frame-side-top" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="cover-description">
+                                <div class="greeting-wrapper">
+                                    <span>Dear,</span>
+                                    <h6>Name Guest</h6>
+                                </div>
+                                <div class="position-relative">
                                     <p>You're Invited To Wedding</p>
-                                    <h1 class="title">Vidi & Hening</h1>
-                                    <div class="cover-event">
-                                        <p>31 May 2021</p>
-                                    </div>
-                                    <div class="elements-widget" data-anim="zoom-in">
-                                        <button class="btn btn-custom" id="btn-envelope">
-                                            <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
-                                        </button>
-                                    </div>
+                                </div>
+                                <h1 class="title">Vidi & Hening</h1>
+                                <div class="cover-event">
+                                    <h6>Akad Nikah</h6>
+                                    <p>31 May 2021</p>
+                                </div>
+                                <div class="elements-widget" data-anim="zoom-in">
+                                    <button class="btn btn-custom" id="btn-envelope">
+                                        <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -101,15 +112,30 @@
 
         <!-- Header section -->
         <section class="header-section">
-            <div class="container h-100">
-                <div class="row justify-content-center h-100">
+            <div class="ornaments-wrapper">
+                <div class="elements-absolute">
+                    <div class="background-element">
+                        <picture>
+                            <source media="(max-width: 992px)" srcset="./assets/images/bg-header-sm.png">
+                        </picture>
+                        <img src="./assets/images/bg-header.png" alt="bg-header">
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="row justify-content-center">
                     <div class="col-md-12">
                         <div class="header-content">
                             <div class="header">
                                 <div class="header-title">
+                                    <div class="frame">
+                                        <div class="image-element">
+                                            <img src="./assets/images/frame.png" alt="frame" class="img-fluid">
+                                        </div>
+                                    </div>
                                     <div class="header-title-content">
                                         <h1 class="title mb-3" data-anim="fade-up">Vidi <br> <span>&</span> <br> Hening</h1>
-                                        <div data-anim="zoom-in">
+                                        <div class="position-relative" data-anim="zoom-in">
                                             <p>We're Getting Married</p>
                                         </div>
                                         <div class="scroll-icon">
@@ -131,8 +157,22 @@
             <!-- Couple section -->
             <section class="couple-section moveable-section" data-id="1">
                 <div class="reminder-wrap">
+                    <div class="background-element">
+                        <div class="image-element">
+                            <picture>
+                                <source media="(max-width: 992px)" srcset="./assets/images/bg-reminder-sm.png">
+                                <img src="./assets/images/bg-reminder.png" alt="bg-reminder" class="img-fluid">
+                            </picture>
+                        </div>
+                        <div class="overlay-elements-gradient overlay-bottom"></div>
+                    </div>
                     <div class="reminder-content">
-                        <div class="countdown" date="12/31/2023 23:59:00" data-anim="zoom-in">
+                        <div class="countdown" date="12/31/2023 23:59:00">
+                            <div class="frame">
+                                <div class="image-element">
+                                    <img src="./assets/images/frame.png" alt="frame" class="img-fluid">
+                                </div>
+                            </div>
                             <div class="days" data-anim="zoom-out">
                                 <p class="angka">00</p>
                                 <p class="huruf">Day</p>
@@ -169,41 +209,44 @@
                     <div class="container position-relative">
                         <div class="couple-body">
                             <div class="row justify-content-evenly">
-                                <div class="col-lg-8 col-md-10 text-center mb-5 position-relative">
+                                <div class="col-lg-8 col-md-10 text-center position-relative">
                                     <div class="couple-content">
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Bride & Groom</h2>
                                         </div>
-                                        <p data-anim="zoom-in">What greater thing is there for two human souls, than to feel that
-                                            they
-                                            are
-                                            joined for life–to
-                                            strength each other in all labor, to rest on each other in all sorrow, to minister
-                                            to
-                                            each
-                                            other
-                                            in silent unspeakable memories at the moment of the last parting? Being deeply loved
-                                            by
-                                            someone
-                                            gives you strength, while loving someone deeply gives you courage.</p>
+                                        <div class="position-relative">
+                                            <p data-anim="zoom-in">What greater thing is there for two human souls, than to feel that they are joined for life–to strength each other in all labor, to rest on each other in all sorrow, to minister to each other in silent unspeakable memories at the moment of the last parting? Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <div class="row justify-content-center position-relative">
                                 <div class="col-md-6 col-xl-5">
                                     <div class="couple">
-                                        <div class="image-wrap man" data-anim="fade-down">
-                                            <div class="image-element">
-                                                <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
+                                        <div class="position-relative">
+                                            <div class="side-left">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/frame-side.png" alt="frame-side" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="side-right">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/frame-side.png" alt="frame-side" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="image-wrap man">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="couple-description">
-                                            <h3 data-anim="zoom-in" data-anim-delay="500">Vidi Dwi Saputra</h3>
-                                            <div class="couple-parent" data-anim="zoom-in" data-anim-delay="500">
+                                            <h3 data-anim="zoom-in">Vidi Dwi Saputra</h3>
+                                            <div class="couple-parent" data-anim="zoom-in">
                                                 <p>First son of <br> H. Heru Stiawan <br> and <br>
                                                     Siti Amizah</p>
                                             </div>
-                                            <div class="sosmed-wrap" data-anim="zoom-in" data-anim-delay="500">
+                                            <div class="sosmed-wrap" data-anim="zoom-in">
                                                 <a href="#" class="sosmed">
                                                     <small><i class="fab fa-instagram"></i></small>
                                                 </a>
@@ -214,18 +257,30 @@
                                 <div class="and"><span>&</span></div>
                                 <div class="col-md-6 col-xl-5">
                                     <div class="couple">
-                                        <div class="image-wrap woman" data-anim="fade-down">
-                                            <div class="image-element">
-                                                <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women">
+                                        <div class="position-relative">
+                                            <div class="side-left">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/frame-side.png" alt="frame-side" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="side-right">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/frame-side.png" alt="frame-side" class="img-fluid">
+                                                </div>
+                                            </div>
+                                            <div class="image-wrap woman">
+                                                <div class="image-element">
+                                                    <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women">
+                                                </div>
                                             </div>
                                         </div>
                                         <div class="couple-description">
-                                            <h3 data-anim="zoom-in" data-anim-delay="500">Hening Saputri</h3>
-                                            <div class="couple-parent" data-anim="zoom-in" data-anim-delay="500">
+                                            <h3 data-anim="zoom-in">Hening Saputri</h3>
+                                            <div class="couple-parent" data-anim="zoom-in">
                                                 <p>First son of <br> H. Heru Stiawan <br> and <br>
                                                     Siti Amizah</p>
                                             </div>
-                                            <div class="sosmed-wrap" data-anim="zoom-in" data-anim-delay="500">
+                                            <div class="sosmed-wrap" data-anim="zoom-in">
                                                 <a href="#" class="sosmed">
                                                     <small><i class="fab fa-instagram"></i></small>
                                                 </a>
@@ -241,11 +296,6 @@
 
             <!-- Story section -->
             <section class="story-section moveable-section" data-id="2">
-                <div class="image-wrapper">
-                    <div class="image-element">
-                        <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
-                    </div>
-                </div>
                 <div class="story">
                     <div class="container position-relative">
                         <div class="story-content">
@@ -253,13 +303,20 @@
                                 <div class="col-md-10 col-lg-8">
                                     <div class="story-description">
                                         <div class="title-section" data-anim="fade-down">
-                                            <h2 class="text-center">Our Story</h2>
+                                            <h2>Our Story</h2>
                                         </div>
-                                        <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi dolore blanditiis odio minima obcaecati atque veniam, quisquam modi adipisci perferendis dolorum deserunt tenetur commodi asperiores laudantium ab, quos fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit labore quae, assumenda dolore laborum expedita eaque. Aliquid, explicabo, doloremque ex dolor ab ipsum ut laboriosam repellendus sit, quae eligendi! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam, illum ratione consequuntur animi facere fuga dolores provident, ipsum voluptatum inventore officiis itaque tenetur, labore dignissimos doloribus dolor tempore excepturi. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero dolores autem ipsam rem odit. Deleniti quibusdam, labore, quod quae, praesentium ut voluptatem ipsa ducimus iure unde error ab. Deleniti?”</p>
+                                        <div class="position-relative">
+                                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi dolore blanditiis odio minima obcaecati atque veniam, quisquam modi adipisci perferendis dolorum deserunt tenetur commodi asperiores laudantium ab, quos fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit labore quae, assumenda dolore laborum expedita eaque. Aliquid, explicabo, doloremque ex dolor ab ipsum ut laboriosam repellendus sit, quae eligendi! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam, illum ratione consequuntur animi facere fuga dolores provident, ipsum voluptatum inventore officiis itaque tenetur, labore dignissimos doloribus dolor tempore excepturi. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero dolores autem ipsam rem odit. Deleniti quibusdam, labore, quod quae, praesentium ut voluptatem ipsa ducimus iure unde error ab. Deleniti?”</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
+                    </div>
+                </div>
+                <div class="image-wrapper">
+                    <div class="image-element">
+                        <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
                     </div>
                 </div>
             </section>
@@ -275,9 +332,8 @@
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Event & Venue</h2>
                                         </div>
-                                        <div data-anim="zoom-in">
-                                            <p>If you will be present at the event location. Please fill out
-                                                the form below</p>
+                                        <div class="position-relative" data-anim="zoom-in">
+                                            <span>If you will be present at the event location. Please fill out the form below</span>
                                         </div>
                                     </div>
                                 </div>
@@ -322,7 +378,7 @@
                                                     <p>Desember 2023</p>
                                                     <p>19.00 - 21.00 WIB</p>
                                                 </div>
-                                                <div>
+                                                <div class="event-description" data-anim="zoom-in">
                                                     <p>description of event</p>
                                                 </div>
                                                 <div class="event-place">
@@ -375,7 +431,7 @@
                                                     <p>Desember 2023</p>
                                                     <p>19.00 - 21.00 WIB</p>
                                                 </div>
-                                                <div>
+                                                <div class="event-description" data-anim="zoom-in">
                                                     <p>description of event</p>
                                                 </div>
                                                 <div class="event-place">
@@ -974,7 +1030,7 @@
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Thank You</h2>
                                         </div>
-                                        <div data-anim="zoom-in">
+                                        <div class="position-relative" data-anim="zoom-in">
                                             <p>Thank you for your presence, participation and blessing.</p>
                                         </div>
                                     </div>
