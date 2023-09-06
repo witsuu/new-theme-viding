@@ -83,6 +83,17 @@ body {
   bottom: 0;
   left: 0;
 }
+.main-app .bg-element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.main-app .bg-fluid {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 
 .logo-viding {
   height: 2.4rem;
@@ -634,6 +645,14 @@ ul li {
   animation-name: slideLeft;
 }
 
+[data-anim=slide-img-right].has-animate {
+  animation-name: slideImgRight;
+}
+
+[data-anim=slide-img-left].has-animate {
+  animation-name: slideImgLeft;
+}
+
 [data-anim=slide-up].has-animate {
   animation-name: slideUp;
 }
@@ -656,6 +675,18 @@ ul li {
   }
   100% {
     transform: translateZ(0);
+  }
+}
+@keyframes slideImgRight {
+  0% {
+    -o-object-position: 100% 50%;
+       object-position: 100% 50%;
+  }
+}
+@keyframes slideImgLeft {
+  0% {
+    -o-object-position: 0% 50%;
+       object-position: 0% 50%;
   }
 }
 @keyframes slideUp {
@@ -1114,6 +1145,26 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=flower-1] {
+  transform-origin: 45% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 60% 90%;
+}
+
+img[alt=banana] {
+  transform-origin: 48% 95%;
+}
+
+img[alt=tree-1] {
+  transform-origin: 40% 90%;
+}
+
+img[alt=tree-2] {
+  transform-origin: 70% 90%;
+}
+
 .countdown {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1249,6 +1300,25 @@ ul li {
 .reminder-wrap .background-element {
   position: relative;
   width: 100%;
+  height: 580px;
+}
+@media (max-width: 991px) {
+  .reminder-wrap .background-element {
+    height: 540px;
+  }
+  .reminder-wrap .background-element .bg-fluid {
+    -o-object-position: 45% 50%;
+       object-position: 45% 50%;
+  }
+}
+@media (max-width: 767px) {
+  .reminder-wrap .background-element {
+    height: 360px;
+  }
+  .reminder-wrap .background-element .bg-fluid {
+    -o-object-position: 45% 50%;
+       object-position: 45% 50%;
+  }
 }
 .reminder-wrap .frame {
   position: absolute;
@@ -1378,6 +1448,35 @@ ul li {
 @media (max-width: 767px) {
   .cover-section .frame-bottom {
     transform: translate(-50%, 26%) scaleY(-1);
+  }
+}
+.cover-section .orn-99 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translateY(10%);
+}
+@media (max-width: 991px) {
+  .cover-section .orn-99 {
+    height: 50%;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 767px) {
+  .cover-section .orn-99 {
+    height: 40%;
+  }
+}
+.cover-section .orn-99 .bg-fluid {
+  -o-object-position: 70% 50%;
+     object-position: 70% 50%;
+}
+@media (max-width: 991px) {
+  .cover-section .orn-99 .bg-fluid {
+    -o-object-position: 60% 50%;
+       object-position: 60% 50%;
   }
 }
 .cover-section .orn-1 {
@@ -1537,6 +1636,69 @@ ul li {
   left: 50%;
   width: 110%;
   transform: translate(-50%, -50%);
+}
+.header-section .bg-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  transform: translate(0, 25%);
+}
+@media (max-width: 991px) {
+  .header-section .bg-1 {
+    height: 60%;
+    transform: translate(0, 10%);
+  }
+}
+@media (max-width: 767px) {
+  .header-section .bg-1 {
+    height: 50%;
+    transform: translate(0, 0);
+  }
+}
+.header-section .bg-1 .fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-5%, -25%);
+}
+@media (max-width: 991px) {
+  .header-section .bg-1 .fog {
+    width: 60%;
+    transform: translate(-15%, -20%);
+  }
+}
+.header-section .bg-1 .bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -8%);
+}
+@media (max-width: 767px) {
+  .header-section .bg-1 .bg-2 {
+    transform: translate(0, -20%);
+  }
+}
+.header-section .bg-1 .bg-2 .bg-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  transform: translate(0, -55%);
+}
+@media (max-width: 991px) {
+  .header-section .bg-1 .bg-2 .bg-3 {
+    transform: translate(0, -45%);
+  }
+  .header-section .bg-1 .bg-2 .bg-3 .bg-fluid {
+    -o-object-position: 0% 50%;
+       object-position: 0% 50%;
+  }
 }
 .header-section .orn-1 {
   position: absolute;
@@ -1925,7 +2087,7 @@ ul li {
   top: 0;
   right: 0;
   width: 140px;
-  transform: translate(50%, 0);
+  transform: translate(50%, 0) scaleX(-1);
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -3088,6 +3250,13 @@ ul li {
     padding: 3rem 0;
   }
 }
+.apology-section .background-element {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
 .apology-section .appology-wrap {
   position: relative;
   padding: 3rem 2rem;
@@ -3217,6 +3386,73 @@ ul li {
 }
 .thank-section .frame .img-fluid {
   height: 100%;
+}
+.thank-section .bg-thank {
+  top: unset;
+  height: 100vh;
+}
+.thank-section .bg-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90%;
+  transform: translate(0, 25%);
+}
+@media (max-width: 991px) {
+  .thank-section .bg-1 {
+    height: 60%;
+    transform: translate(0, 10%);
+  }
+}
+@media (max-width: 767px) {
+  .thank-section .bg-1 {
+    height: 50%;
+    transform: translate(0, 0);
+  }
+}
+.thank-section .bg-1 .fog {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-5%, -25%);
+}
+@media (max-width: 991px) {
+  .thank-section .bg-1 .fog {
+    width: 60%;
+    transform: translate(-15%, -20%);
+  }
+}
+.thank-section .bg-1 .bg-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transform: translate(0, -8%);
+}
+@media (max-width: 767px) {
+  .thank-section .bg-1 .bg-2 {
+    transform: translate(0, -20%);
+  }
+}
+.thank-section .bg-1 .bg-2 .bg-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70%;
+  transform: translate(0, -55%);
+}
+@media (max-width: 991px) {
+  .thank-section .bg-1 .bg-2 .bg-3 {
+    transform: translate(0, -45%);
+  }
+  .thank-section .bg-1 .bg-2 .bg-3 .bg-fluid {
+    -o-object-position: 0% 50%;
+       object-position: 0% 50%;
+  }
 }
 .thank-section .orn-1 {
   position: absolute;
@@ -3436,6 +3672,9 @@ ul li {
   .thank-section .thank-wrapper .thank {
     padding: 2rem 1rem 5rem;
   }
+}
+.thank-section .thank-wrapper .thank-body {
+  position: relative;
 }
 
 .footer {
