@@ -927,10 +927,10 @@
             <section class="gallery-section moveable-section" data-id="3">
                 <div class="container">
                     <div class="row justify-content-center">
-                        <div class=" col-11 col-md-12">
+                        <div class="col-md-12 col-lg-10">
                             <div class="gallery-default">
                                 <div id="gallery-default" class="splide mb-1">
-                                    <div class="splide__track overflow-visible">
+                                    <div class="splide__track">
                                         <ul class="splide__list" id="zoom-gallery-default">
                                             <li class="splide__slide position-relative">
                                                 <a href="./assets/images/photo01.jfif">
@@ -981,6 +981,42 @@
                                                 <a href="./assets/images/photo02.jfif">
                                                     <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
                                                 </a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div id="thumbnail-gallery-default" class="splide">
+                                    <div class="splide__track">
+                                        <ul class="splide__list">
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo01.jfif" alt="gallery" class="img-thumbnail" />
+                                            </li>
+                                            <li class="splide__slide">
+                                                <img src="./assets/images/photo02.jfif" alt="gallery" class="img-thumbnail" />
                                             </li>
                                         </ul>
                                     </div>
@@ -1546,15 +1582,27 @@
 
     <script>
         if (document.querySelector(".gallery-default")) {
-            document.addEventListener("DOMContentLoaded", function () {
-                const gallery = new Splide("#gallery-default", {
-                    pagination: false,
-                    perPage: 3,
-                    perMove: 1,
-                });
-
-                gallery.mount();
+            const gallery = new Splide("#gallery-default", {
+                pagination: false,
             });
+
+            const thumbnails = new Splide("#thumbnail-gallery-default", {
+                pagination: false,
+                arrows: false,
+                focus: "center",
+                gap: 2.5,
+                perPage: 6,
+                isNavigation: true,
+                breakpoints: {
+                    576: {
+                        perPage: 4
+                    }
+                }
+            });
+
+            gallery.sync(thumbnails)
+            gallery.mount();
+            thumbnails.mount()
         }
     </script>
 

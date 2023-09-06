@@ -1580,7 +1580,7 @@ img[alt=tree-2] {
 }
 .cover-section .cover-wrapper .cover-content .cover-body .greeting-wrapper {
   position: relative;
-  margin-bottom: 0;
+  margin-bottom: 1.5rem;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
   position: relative;
@@ -3194,7 +3194,7 @@ img[alt=tree-2] {
 .gallery-section .img-gallery {
   height: auto;
   width: 100%;
-  aspect-ratio: 3/4;
+  aspect-ratio: 16/9;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -3208,8 +3208,8 @@ img[alt=tree-2] {
   height: auto;
   aspect-ratio: 16/9;
 }
-.gallery-section .splide .splide__slide.is-active .img-thumbnail {
-  border: 3px solid #fff;
+.gallery-section .splide.splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
+  border: 3px solid var(--color-secondary);
 }
 .gallery-section .splide .splide__arrow {
   border-radius: 0;
