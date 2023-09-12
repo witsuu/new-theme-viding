@@ -252,36 +252,41 @@
 	{
 		"name": "Doodling",
 		"path": "doodling",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Forest",
 		"path": "forest",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Picnic",
 		"path": "picnic",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Horizon",
 		"path": "horizon",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Ouranos",
 		"path": "ouranos",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Percha",
 		"path": "percha",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Costa",
 		"path": "costa",
+		"status": "DONE"
+	},
+	{
+		"name": "Forest Custom",
+		"path": "forest-custom",
 		"status": ""
 	}
 ]
