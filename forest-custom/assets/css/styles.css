@@ -1895,6 +1895,8 @@ img[alt=tree] {
 }
 .story-section .story-content {
   position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 .story-section .story-description {
   position: relative;
