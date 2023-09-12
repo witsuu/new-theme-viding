@@ -1986,6 +1986,7 @@ img[alt=tree] {
 @media (min-width: 768px) {
   .venue-section .orn-3 {
     width: 120px;
+    transform: translate(10%, -20%) scale(-1);
   }
 }
 @media (min-width: 992px) {
