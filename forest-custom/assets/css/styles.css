@@ -1994,6 +1994,22 @@ img[alt=tree] {
     width: 140px;
   }
 }
+.venue-section .orn-4 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  height: 80%;
+  transform: translate(0, -50%) scaleX(-1);
+}
+.venue-section .orn-4 .image-element {
+  width: auto;
+  height: 100%;
+}
+.venue-section .orn-4 .image-element .img-fluid {
+  width: auto;
+  height: 100%;
+  opacity: 0.2;
+}
 .venue-section .venue-wrapper {
   position: relative;
   z-index: 3;
@@ -2054,6 +2070,7 @@ img[alt=tree] {
   color: var(--color-light);
   border-radius: var(--border-radius);
   padding: 3rem 3rem 8rem;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body {
