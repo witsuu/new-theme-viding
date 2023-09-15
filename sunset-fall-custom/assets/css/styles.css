@@ -2374,14 +2374,14 @@ img[alt=tree-2] {
   height: auto;
 }
 .venue-section .venue-wrapper .venue-content .ribbon-venue svg path {
-  stroke: var(--color-dark);
+  stroke: var(--color-light);
 }
 .venue-section .venue-wrapper .venue-content .ribbon-venue .st0 {
-  fill: var(--color-secondary);
+  fill: var(--color-light);
 }
 .venue-section .venue-wrapper .venue-content .ribbon-venue .st1 {
   fill: none;
-  stroke: var(--color-secondary);
+  stroke: var(--color-light);
   stroke-width: 19;
   stroke-linecap: round;
   stroke-miterlimit: 10;
