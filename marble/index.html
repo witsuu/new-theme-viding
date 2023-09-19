@@ -19,7 +19,6 @@
 
     <!-- styles libraries -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css" integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/magnific-popup.css">
 
     <!-- styles custom -->
@@ -110,15 +109,56 @@
                             <div class="header">
                                 <div class="header-title">
                                     <div class="header-title-content">
-                                        <h1 class="title mb-3" data-anim="fade-up">Vidi <br> <span>&</span> <br> Hening</h1>
-                                        <div class="position-relative" data-anim="zoom-in">
+                                        <h1 class="title mb-3" data-anim="fade-up">Vidi & Hening</h1>
+                                        <div class="header-description" data-anim="zoom-in">
                                             <p>We're Getting Married</p>
+                                        </div>
+                                    </div>
+                                    <div class="image-wrapper">
+                                        <div class="image-element">
+                                            <img src="./assets/images/background-1.webp" alt="header-background" class="header-background">
+                                            <div class="overlay-elements-gradient overlay-bottom"></div>
                                         </div>
                                         <div class="scroll-icon">
                                             <svg data-anim="slide-down" width="28" height="42" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <rect opacity="0.6" x="0.5" y="0.5" width="27" height="41" rx="13.5" stroke="#757346" />
                                                 <rect id="scroll-animate" opacity="0.6" x="12" y="6.66699" width="4" height="9.33333" rx="2" fill="#A79E74" />
                                             </svg>
+                                        </div>
+                                        <div class="reminder-wrap">
+                                            <div class="reminder-content">
+                                                <div class="countdown color-main" date="12/31/2023 23:59:00" data-anim="zoom-in">
+                                                    <div class="days">
+                                                        <p class="angka">00</p>
+                                                        <p class="huruf">Day</p>
+                                                    </div>
+                                                    <div class="hours">
+                                                        <p class="angka">00</p>
+                                                        <p class="huruf">Hours</p>
+                                                    </div>
+                                                    <div class="minutes">
+                                                        <p class="angka">00</p>
+                                                        <p class="huruf">Mins</p>
+                                                    </div>
+                                                    <div class="seconds">
+                                                        <p class="angka">00</p>
+                                                        <p class="huruf">Secs</p>
+                                                    </div>
+                                                </div>
+                                                <a href="#" class="btn btn-custom btn-reminder" data-anim="fade-up">
+                                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_2411_134)">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_2411_134">
+                                                                <rect width="20" height="20" fill="white" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                    Save the Date
+                                                </a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -132,48 +172,34 @@
         <div class="moveable_section_wrapper position-relative">
             <!-- Couple section -->
             <section class="couple-section moveable-section" data-id="1">
-                <div class="reminder-wrap">
-                    <div class="reminder-content">
-                        <div class="countdown" date="12/31/2023 23:59:00" data-anim="zoom-in">
-                            <div class="days">
-                                <p class="angka">00</p>
-                                <p class="huruf">Day</p>
-                            </div>
-                            <div class="hours">
-                                <p class="angka">00</p>
-                                <p class="huruf">Hours</p>
-                            </div>
-                            <div class="minutes">
-                                <p class="angka">00</p>
-                                <p class="huruf">Mins</p>
-                            </div>
-                            <div class="seconds">
-                                <p class="angka">00</p>
-                                <p class="huruf">Secs</p>
+                <div class="couple-wrapper">
+                    <div class="couple-content">
+                        <div class="bg-couple">
+                            <div class="image-element">
+                                <img src="./assets/images/bg-1.png" alt="bg-1">
                             </div>
                         </div>
-                        <a href="#" class="btn btn-custom btn-reminder" data-anim="fade-up">
-                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <g clip-path="url(#clip0_2411_134)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_2411_134">
-                                        <rect width="20" height="20" fill="white" />
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            Save the Date
-                        </a>
-                    </div>
-                </div>
-                <div class="couple-wrapper">
-                    <div class="container position-relative">
-                        <div class="couple-body">
+                        <div class="container">
                             <div class="row justify-content-evenly">
                                 <div class="col-lg-8 col-md-10 text-center mb-5 position-relative">
-                                    <div class="couple-content">
+                                    <div class="couple-content-body color-primary">
                                         <div class="title-section" data-anim="fade-down">
+                                            <div class="title-section-ornament color__button__trans">
+                                                <svg class="img-fluid" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85059 33.9512C6.85059 32.6674 8.29146 31.9109 9.34827 32.6399L12.1167 34.5496C13.0096 35.1656 13.0392 36.4743 12.1751 37.13L9.40666 39.2307C8.35759 40.0267 6.85059 39.2785 6.85059 37.9616V33.9512ZM11.2121 35.861L8.44367 33.9512V37.9616L11.2121 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.2861 33.9512C53.2861 32.6674 54.727 31.9109 55.7838 32.6399L58.5522 34.5496C59.4451 35.1656 59.4747 36.4743 58.6106 37.13L55.8422 39.2307C54.7931 40.0267 53.2861 39.2785 53.2861 37.9616V33.9512ZM57.6476 35.861L54.8792 33.9512V37.9616L57.6476 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5942 33.9512C17.5942 32.6674 16.1534 31.9109 15.0965 32.6399L12.3281 34.5496C11.4352 35.1656 11.4056 36.4743 12.2698 37.13L15.0381 39.2307C16.0872 40.0267 17.5942 39.2785 17.5942 37.9616V33.9512ZM13.2327 35.861L16.0011 33.9512V37.9616L13.2327 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0308 33.9512C64.0308 32.6674 62.5899 31.9109 61.5331 32.6399L58.7647 34.5496C57.8718 35.1656 57.8422 36.4743 58.7063 37.13L61.4747 39.2307C62.5238 40.0267 64.0308 39.2785 64.0308 37.9616V33.9512ZM59.6693 35.861L62.4377 33.9512V37.9616L59.6693 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0589 19.7363C20.4903 19.8226 20.77 20.2422 20.6837 20.6736C20.2076 23.0541 18.7369 25.1238 17.1659 26.7186C15.5888 28.3196 13.844 29.5099 12.696 30.1264C12.3084 30.3345 11.8255 30.189 11.6174 29.8015C11.4093 29.4139 11.5547 28.931 11.9423 28.7229C12.961 28.1758 14.5746 27.0791 16.031 25.6006C17.4934 24.116 18.731 22.3139 19.1216 20.3611C19.2079 19.9298 19.6275 19.65 20.0589 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5203 19.7363C51.0889 19.8226 50.8092 20.2422 50.8955 20.6736C51.3716 23.0541 52.8423 25.1238 54.4133 26.7186C55.9904 28.3196 57.7352 29.5099 58.8832 30.1264C59.2708 30.3345 59.7537 30.189 59.9618 29.8015C60.1699 29.4139 60.0245 28.931 59.6369 28.7229C58.6182 28.1758 57.0046 27.0791 55.5482 25.6006C54.0858 24.116 52.8482 22.3139 52.4576 20.3611C52.3713 19.9298 51.9517 19.65 51.5203 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1442 62.407V32.7369C59.1442 19.9549 48.7824 9.59309 36.0005 9.59309C23.2186 9.59309 12.8568 19.955 12.8568 32.7369V62.407H59.1442ZM36.0005 8C22.3387 8 11.2637 19.0751 11.2637 32.7369V64.0001H60.7373V32.7369C60.7373 19.0751 49.6623 8 36.0005 8Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 34.5012C24.561 27.8475 27.9045 14.7525 28.0213 9.06641L29.6141 9.09915C29.4923 15.0234 26.1179 28.4049 13.6221 35.5294C16.2205 40.836 20.8273 52.7321 20.8273 63.1282H19.2343C19.2343 52.6253 14.3242 40.3771 11.859 35.566L11.5029 34.8711L12.1906 34.5012Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.0358 34.5012C46.6654 27.8475 43.3219 14.7525 43.205 9.06641L41.6123 9.09915C41.7341 15.0234 45.1085 28.4049 57.6043 35.5294C55.0058 40.836 50.399 52.7321 50.399 63.1282H51.9921C51.9921 52.6253 56.9022 40.3771 59.3674 35.566L59.7234 34.8711L59.0358 34.5012Z" fill="#353A40" />
+                                                    <path d="M10.8789 35.3571C10.8789 34.9171 11.2355 34.5605 11.6755 34.5605H12.9624C13.4023 34.5605 13.7589 34.9171 13.7589 35.3571V36.644C13.7589 37.0839 13.4023 37.4405 12.9624 37.4405H11.6755C11.2355 37.4405 10.8789 37.0839 10.8789 36.644V35.3571Z" fill="#353A40" />
+                                                    <path d="M57.3145 35.3571C57.3145 34.9171 57.6711 34.5605 58.111 34.5605H59.3979C59.8378 34.5605 60.1945 34.9171 60.1945 35.3571V36.644C60.1945 37.0839 59.8378 37.4405 59.3979 37.4405H58.111C57.6711 37.4405 57.3145 37.0839 57.3145 36.644V35.3571Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.56152 63.2028C3.56152 62.7629 3.91815 62.4062 4.35807 62.4062H67.6429C68.0828 62.4062 68.4394 62.7629 68.4394 63.2028C68.4394 63.6427 68.0828 63.9994 67.6429 63.9994H4.35807C3.91815 63.9994 3.56152 63.6427 3.56152 63.2028Z" fill="#353A40" />
+                                                </svg>
+                                            </div>
                                             <h2>Bride & Groom</h2>
                                         </div>
                                         <div class="position-relative" data-anim="zoom-in">
@@ -182,6 +208,10 @@
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+                    <div class="container position-relative">
+                        <div class="couple-body">
                             <div class="row justify-content-center position-relative">
                                 <div class="col-md-6 col-xl-5">
                                     <div class="couple">
@@ -198,7 +228,7 @@
                                             </div>
                                             <div class="sosmed-wrap" data-anim="zoom-in">
                                                 <a href="#" class="sosmed">
-                                                    <small><i class="fab fa-instagram"></i></small>
+                                                    <small><i class="fab fa-instagram"></i> username</small>
                                                 </a>
                                             </div>
                                         </div>
@@ -220,7 +250,7 @@
                                             </div>
                                             <div class="sosmed-wrap" data-anim="zoom-in">
                                                 <a href="#" class="sosmed">
-                                                    <small><i class="fab fa-instagram"></i></small>
+                                                    <small><i class="fab fa-instagram"></i> username</small>
                                                 </a>
                                             </div>
                                         </div>
@@ -234,18 +264,36 @@
 
             <!-- Story section -->
             <section class="story-section moveable-section" data-id="2">
-                <div class="image-wrapper">
-                    <div class="image-element">
-                        <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
-                    </div>
-                </div>
                 <div class="story">
                     <div class="container position-relative">
                         <div class="story-content">
                             <div class="row justify-content-center">
-                                <div class="col-md-10 col-lg-8">
-                                    <div class="story-description">
+                                <div class="col-12 col-md-11 col-lg-5 position-relative">
+                                    <div class="image-wrapper">
+                                        <div class="image-element">
+                                            <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-11 col-md-10 col-lg-7">
+                                    <div class="story-description color-primary">
                                         <div class="title-section" data-anim="fade-down">
+                                            <div class="title-section-ornament color__button__trans">
+                                                <svg class="img-fluid" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85059 33.9512C6.85059 32.6674 8.29146 31.9109 9.34827 32.6399L12.1167 34.5496C13.0096 35.1656 13.0392 36.4743 12.1751 37.13L9.40666 39.2307C8.35759 40.0267 6.85059 39.2785 6.85059 37.9616V33.9512ZM11.2121 35.861L8.44367 33.9512V37.9616L11.2121 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.2861 33.9512C53.2861 32.6674 54.727 31.9109 55.7838 32.6399L58.5522 34.5496C59.4451 35.1656 59.4747 36.4743 58.6106 37.13L55.8422 39.2307C54.7931 40.0267 53.2861 39.2785 53.2861 37.9616V33.9512ZM57.6476 35.861L54.8792 33.9512V37.9616L57.6476 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5942 33.9512C17.5942 32.6674 16.1534 31.9109 15.0965 32.6399L12.3281 34.5496C11.4352 35.1656 11.4056 36.4743 12.2698 37.13L15.0381 39.2307C16.0872 40.0267 17.5942 39.2785 17.5942 37.9616V33.9512ZM13.2327 35.861L16.0011 33.9512V37.9616L13.2327 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0308 33.9512C64.0308 32.6674 62.5899 31.9109 61.5331 32.6399L58.7647 34.5496C57.8718 35.1656 57.8422 36.4743 58.7063 37.13L61.4747 39.2307C62.5238 40.0267 64.0308 39.2785 64.0308 37.9616V33.9512ZM59.6693 35.861L62.4377 33.9512V37.9616L59.6693 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0589 19.7363C20.4903 19.8226 20.77 20.2422 20.6837 20.6736C20.2076 23.0541 18.7369 25.1238 17.1659 26.7186C15.5888 28.3196 13.844 29.5099 12.696 30.1264C12.3084 30.3345 11.8255 30.189 11.6174 29.8015C11.4093 29.4139 11.5547 28.931 11.9423 28.7229C12.961 28.1758 14.5746 27.0791 16.031 25.6006C17.4934 24.116 18.731 22.3139 19.1216 20.3611C19.2079 19.9298 19.6275 19.65 20.0589 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5203 19.7363C51.0889 19.8226 50.8092 20.2422 50.8955 20.6736C51.3716 23.0541 52.8423 25.1238 54.4133 26.7186C55.9904 28.3196 57.7352 29.5099 58.8832 30.1264C59.2708 30.3345 59.7537 30.189 59.9618 29.8015C60.1699 29.4139 60.0245 28.931 59.6369 28.7229C58.6182 28.1758 57.0046 27.0791 55.5482 25.6006C54.0858 24.116 52.8482 22.3139 52.4576 20.3611C52.3713 19.9298 51.9517 19.65 51.5203 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1442 62.407V32.7369C59.1442 19.9549 48.7824 9.59309 36.0005 9.59309C23.2186 9.59309 12.8568 19.955 12.8568 32.7369V62.407H59.1442ZM36.0005 8C22.3387 8 11.2637 19.0751 11.2637 32.7369V64.0001H60.7373V32.7369C60.7373 19.0751 49.6623 8 36.0005 8Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 34.5012C24.561 27.8475 27.9045 14.7525 28.0213 9.06641L29.6141 9.09915C29.4923 15.0234 26.1179 28.4049 13.6221 35.5294C16.2205 40.836 20.8273 52.7321 20.8273 63.1282H19.2343C19.2343 52.6253 14.3242 40.3771 11.859 35.566L11.5029 34.8711L12.1906 34.5012Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.0358 34.5012C46.6654 27.8475 43.3219 14.7525 43.205 9.06641L41.6123 9.09915C41.7341 15.0234 45.1085 28.4049 57.6043 35.5294C55.0058 40.836 50.399 52.7321 50.399 63.1282H51.9921C51.9921 52.6253 56.9022 40.3771 59.3674 35.566L59.7234 34.8711L59.0358 34.5012Z" fill="#353A40" />
+                                                    <path d="M10.8789 35.3571C10.8789 34.9171 11.2355 34.5605 11.6755 34.5605H12.9624C13.4023 34.5605 13.7589 34.9171 13.7589 35.3571V36.644C13.7589 37.0839 13.4023 37.4405 12.9624 37.4405H11.6755C11.2355 37.4405 10.8789 37.0839 10.8789 36.644V35.3571Z" fill="#353A40" />
+                                                    <path d="M57.3145 35.3571C57.3145 34.9171 57.6711 34.5605 58.111 34.5605H59.3979C59.8378 34.5605 60.1945 34.9171 60.1945 35.3571V36.644C60.1945 37.0839 59.8378 37.4405 59.3979 37.4405H58.111C57.6711 37.4405 57.3145 37.0839 57.3145 36.644V35.3571Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.56152 63.2028C3.56152 62.7629 3.91815 62.4062 4.35807 62.4062H67.6429C68.0828 62.4062 68.4394 62.7629 68.4394 63.2028C68.4394 63.6427 68.0828 63.9994 67.6429 63.9994H4.35807C3.91815 63.9994 3.56152 63.6427 3.56152 63.2028Z" fill="#353A40" />
+                                                </svg>
+                                            </div>
                                             <h2>Our Story</h2>
                                         </div>
                                         <div class="position-relative" data-anim="zoom-in">
@@ -263,9 +311,14 @@
                 <!-- Vanue & Event section -->
                 <section class="venue-section">
                     <div class="venue-wrapper">
+                        <div class="elements-wrapper-absolute">
+                            <div class="background-element">
+                                <img src="./assets/images/bg-1.png" alt="bg-1">
+                            </div>
+                        </div>
                         <div class="container position-relative">
                             <div class="row justify-content-center">
-                                <div class="col-md-8 col-xl-6 position-relative">
+                                <div class="col-md-8 col-xl-5 position-relative">
                                     <div class="venue-description">
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Event & Venue</h2>
@@ -277,122 +330,10 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="venue-content">
-                            <div class="container">
-                                <div class="row justify-content-center row-venue">
-                                    <div class="col-md-6 col-xl-5 position-relative">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="ribbon-venue" data-animationloop="keyframe">
-                                                    <div data-anim="zoom-in">
-                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;overflow: visible;" xml:space="preserve">
-                                                            <g id="Layer_1">
-                                                            </g>
-                                                            <g id="Layer_3">
-                                                                <g>
-                                                                    <g>
-                                                                        <path class="st0" d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
-                                                                    </g>
-                                                                    <g>
-                                                                        <path class="st0" d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                            <g id="Layer_2">
-                                                                </image>
-                                                                <ellipse class="st1" cx="272.8" cy="437.9" rx="146.4" ry="40.9" />
-                                                                <ellipse class="st0 dot" cx="273.6" cy="437.9" rx="63.1" ry="17" />
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="event-name">
-                                                    <h4>Marriage Contract</h4>
-                                                    <p>Minggu</p>
-                                                    <div class="date">
-                                                        <h5>31</h5>
-                                                        <hr>
-                                                    </div>
-                                                    <p>Desember 2023</p>
-                                                    <p>19.00 - 21.00 WIB</p>
-                                                </div>
-                                                <div class="event-description" data-anim="zoom-in">
-                                                    <p>description of event</p>
-                                                </div>
-                                                <div class="event-place">
-                                                    <h4>Groom House</h4>
-                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
-                                                        Kecamatan
-                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
-                                                        Jakarta
-                                                        10220</p>
-                                                    <div class="widget-elements">
-                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-6 col-xl-5 position-relative">
-                                        <div class="card">
-                                            <div class="card-body">
-                                                <div class="ribbon-venue" data-animationloop="keyframe">
-                                                    <div data-anim="zoom-in">
-                                                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;overflow: visible;" xml:space="preserve">
-                                                            <g id="Layer_1">
-                                                            </g>
-                                                            <g id="Layer_3">
-                                                                <g>
-                                                                    <g>
-                                                                        <path class="st0" d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
-                                                                    </g>
-                                                                    <g>
-                                                                        <path class="st0" d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
-                                                                    </g>
-                                                                </g>
-                                                            </g>
-                                                            <g id="Layer_2">
-                                                                </image>
-                                                                <ellipse class="st1" cx="272.8" cy="437.9" rx="146.4" ry="40.9" />
-                                                                <ellipse class="st0 dot" cx="273.6" cy="437.9" rx="63.1" ry="17" />
-                                                            </g>
-                                                        </svg>
-                                                    </div>
-                                                </div>
-                                                <div class="event-name">
-                                                    <h4>Marriage Contract</h4>
-                                                    <p>Minggu</p>
-                                                    <div class="date">
-                                                        <h5>31</h5>
-                                                        <hr>
-                                                    </div>
-                                                    <p>Desember 2023</p>
-                                                    <p>19.00 - 21.00 WIB</p>
-                                                </div>
-                                                <div class="event-description" data-anim="zoom-in">
-                                                    <p>description of event</p>
-                                                </div>
-                                                <div class="event-place">
-                                                    <h4>Groom House</h4>
-                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
-                                                        Kecamatan
-                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
-                                                        Jakarta
-                                                        10220</p>
-                                                    <div class="widget-elements">
-                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="container">
                             <div class="row justify-content-center">
-                                <div class="col-md-10">
-                                    <div class="prokes-wrapper" data-anim="slide-up">
+                                <div class="col-lg-10">
+                                    <div class="prokes-wrapper color-primary">
                                         <div class="title-section" data-anim="fade-down">
                                             <h3>Health Protocol</h3>
                                         </div>
@@ -557,14 +498,109 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="venue-content color-primary">
+                            <div class="container">
+                                <div class="row justify-content-center row-venue">
+                                    <div class="col-md-6 col-xl-5 position-relative">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="ribbon-venue color__button__trans">
+                                                    <svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1202_170)">
+                                                            <path d="M15.4687 52.3624C15.4833 52.3722 15.5027 52.3673 15.5173 52.3771C15.6321 52.4411 15.7604 52.4767 15.8917 52.4811C15.964 52.4809 16.0359 52.4711 16.1056 52.4518L33.7182 47.6321L51.3309 52.4518C51.4006 52.4711 51.4725 52.4809 51.5448 52.4811C51.6758 52.4771 51.8038 52.4408 51.9175 52.3754C51.9337 52.3673 51.9516 52.3706 51.9661 52.3608L66.5515 43.4233C66.7022 43.3305 66.8185 43.191 66.8829 43.0259C66.9472 42.8607 66.9561 42.6791 66.908 42.5084L58.831 14.0709C58.7979 13.9525 58.7385 13.8432 58.657 13.7512C58.5756 13.6592 58.4744 13.587 58.3611 13.54C58.2477 13.493 58.1252 13.4725 58.0028 13.4801C57.8803 13.4876 57.7612 13.5229 57.6544 13.5834L49.613 18.1074C49.4369 18.2189 49.3103 18.394 49.2593 18.5965C49.2083 18.7989 49.2368 19.0133 49.339 19.1953C49.4412 19.3773 49.6092 19.5129 49.8083 19.5742C50.0074 19.6354 50.2224 19.6176 50.4088 19.5244L57.554 15.5026L65.1821 42.3573L52.193 50.3182L49.1074 25.5678C49.0808 25.3538 48.9704 25.1592 48.8007 25.0268C48.631 24.8944 48.4157 24.835 48.2023 24.8617C47.9889 24.8885 47.7948 24.9991 47.6628 25.1693C47.5307 25.3395 47.4715 25.5553 47.4982 25.7693L50.5886 50.5652L34.5285 46.1696V41.7333C34.5285 41.5178 34.4432 41.3112 34.2912 41.1588C34.1392 41.0064 33.9331 40.9208 33.7182 40.9208C33.5033 40.9208 33.2972 41.0064 33.1453 41.1588C32.9933 41.3112 32.9079 41.5178 32.9079 41.7333V46.1696L16.8462 50.5652L19.9367 25.7693C19.9499 25.6634 19.9421 25.5558 19.9139 25.4529C19.8856 25.3499 19.8374 25.2536 19.7721 25.1693C19.7067 25.085 19.6254 25.0145 19.5328 24.9617C19.4402 24.9089 19.3382 24.875 19.2325 24.8617C19.1269 24.8485 19.0196 24.8563 18.917 24.8846C18.8143 24.9129 18.7182 24.9613 18.6341 25.0268C18.5501 25.0924 18.4798 25.1739 18.4271 25.2667C18.3745 25.3595 18.3406 25.4619 18.3274 25.5678L15.2434 50.3182L2.25435 42.3589L9.8825 15.5058L17.0277 19.5277C17.2141 19.6209 17.4291 19.6387 17.6282 19.5774C17.8273 19.5161 17.9953 19.3805 18.0975 19.1985C18.1996 19.0166 18.2282 18.8022 18.1772 18.5997C18.1262 18.3972 17.9995 18.2222 17.8234 18.1107L9.7804 13.5851C9.67387 13.5239 9.55478 13.488 9.43227 13.4802C9.30976 13.4723 9.18708 13.4927 9.07365 13.5398C8.96022 13.5868 8.85905 13.6593 8.77789 13.7517C8.69673 13.844 8.63775 13.9538 8.60547 14.0726L0.528416 42.5101C0.479564 42.6807 0.487999 42.8626 0.552424 43.0279C0.616848 43.1933 0.733687 43.3327 0.884947 43.4249L15.4687 52.3624Z" fill="#353A40" />
+                                                            <path d="M33.169 38.4535C33.3178 38.5912 33.5126 38.668 33.7151 38.6689C33.9175 38.6698 34.113 38.5947 34.2629 38.4583C34.8026 37.966 47.4935 26.2887 47.4935 14.293C47.4935 6.54659 41.4438 0.480469 33.7184 0.480469C25.993 0.480469 19.9434 6.54659 19.9434 14.293C19.9434 26.0807 32.6294 37.953 33.169 38.4535ZM33.7184 2.10547C40.6465 2.10547 45.8729 7.34447 45.8729 14.293C45.8729 24.2006 36.1607 34.3406 33.7233 36.7293C31.2908 34.313 21.564 24.0397 21.564 14.293C21.564 7.34447 26.7904 2.10547 33.7184 2.10547Z" fill="#353A40" />
+                                                            <path d="M41.0102 14.2949C41.0102 10.2633 37.7382 6.98242 33.7175 6.98242C29.6968 6.98242 26.4248 10.2633 26.4248 14.2949C26.4248 18.3265 29.6968 21.6074 33.7175 21.6074C37.7382 21.6074 41.0102 18.3265 41.0102 14.2949ZM33.7175 19.9824C30.5897 19.9824 28.0454 17.4312 28.0454 14.2949C28.0454 11.1587 30.5897 8.60742 33.7175 8.60742C36.8452 8.60742 39.3896 11.1587 39.3896 14.2949C39.3896 17.4312 36.8452 19.9824 33.7175 19.9824Z" fill="#353A40" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1202_170">
+                                                                <rect width="66.4445" height="52" fill="white" transform="translate(0.494141 0.482422)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div class="event-name">
+                                                    <h4>Marriage Contract</h4>
+                                                    <p>Minggu</p>
+                                                    <div class="date">
+                                                        <h5>31-12-2023</h5>
+                                                    </div>
+                                                    <p>19.00 - 21.00 WIB</p>
+                                                </div>
+                                                <div class="event-description" data-anim="zoom-in">
+                                                    <p>description of event</p>
+                                                </div>
+                                                <div class="event-place">
+                                                    <h4>Groom House</h4>
+                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                                                        Kecamatan
+                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                                                        Jakarta
+                                                        10220</p>
+                                                    <div class="widget-elements">
+                                                        <a class="btn btn-custom color__button__trans mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5 position-relative">
+                                        <div class="card">
+                                            <div class="card-body">
+                                                <div class="ribbon-venue color__button__trans">
+                                                    <svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                        <g clip-path="url(#clip0_1202_170)">
+                                                            <path d="M15.4687 52.3624C15.4833 52.3722 15.5027 52.3673 15.5173 52.3771C15.6321 52.4411 15.7604 52.4767 15.8917 52.4811C15.964 52.4809 16.0359 52.4711 16.1056 52.4518L33.7182 47.6321L51.3309 52.4518C51.4006 52.4711 51.4725 52.4809 51.5448 52.4811C51.6758 52.4771 51.8038 52.4408 51.9175 52.3754C51.9337 52.3673 51.9516 52.3706 51.9661 52.3608L66.5515 43.4233C66.7022 43.3305 66.8185 43.191 66.8829 43.0259C66.9472 42.8607 66.9561 42.6791 66.908 42.5084L58.831 14.0709C58.7979 13.9525 58.7385 13.8432 58.657 13.7512C58.5756 13.6592 58.4744 13.587 58.3611 13.54C58.2477 13.493 58.1252 13.4725 58.0028 13.4801C57.8803 13.4876 57.7612 13.5229 57.6544 13.5834L49.613 18.1074C49.4369 18.2189 49.3103 18.394 49.2593 18.5965C49.2083 18.7989 49.2368 19.0133 49.339 19.1953C49.4412 19.3773 49.6092 19.5129 49.8083 19.5742C50.0074 19.6354 50.2224 19.6176 50.4088 19.5244L57.554 15.5026L65.1821 42.3573L52.193 50.3182L49.1074 25.5678C49.0808 25.3538 48.9704 25.1592 48.8007 25.0268C48.631 24.8944 48.4157 24.835 48.2023 24.8617C47.9889 24.8885 47.7948 24.9991 47.6628 25.1693C47.5307 25.3395 47.4715 25.5553 47.4982 25.7693L50.5886 50.5652L34.5285 46.1696V41.7333C34.5285 41.5178 34.4432 41.3112 34.2912 41.1588C34.1392 41.0064 33.9331 40.9208 33.7182 40.9208C33.5033 40.9208 33.2972 41.0064 33.1453 41.1588C32.9933 41.3112 32.9079 41.5178 32.9079 41.7333V46.1696L16.8462 50.5652L19.9367 25.7693C19.9499 25.6634 19.9421 25.5558 19.9139 25.4529C19.8856 25.3499 19.8374 25.2536 19.7721 25.1693C19.7067 25.085 19.6254 25.0145 19.5328 24.9617C19.4402 24.9089 19.3382 24.875 19.2325 24.8617C19.1269 24.8485 19.0196 24.8563 18.917 24.8846C18.8143 24.9129 18.7182 24.9613 18.6341 25.0268C18.5501 25.0924 18.4798 25.1739 18.4271 25.2667C18.3745 25.3595 18.3406 25.4619 18.3274 25.5678L15.2434 50.3182L2.25435 42.3589L9.8825 15.5058L17.0277 19.5277C17.2141 19.6209 17.4291 19.6387 17.6282 19.5774C17.8273 19.5161 17.9953 19.3805 18.0975 19.1985C18.1996 19.0166 18.2282 18.8022 18.1772 18.5997C18.1262 18.3972 17.9995 18.2222 17.8234 18.1107L9.7804 13.5851C9.67387 13.5239 9.55478 13.488 9.43227 13.4802C9.30976 13.4723 9.18708 13.4927 9.07365 13.5398C8.96022 13.5868 8.85905 13.6593 8.77789 13.7517C8.69673 13.844 8.63775 13.9538 8.60547 14.0726L0.528416 42.5101C0.479564 42.6807 0.487999 42.8626 0.552424 43.0279C0.616848 43.1933 0.733687 43.3327 0.884947 43.4249L15.4687 52.3624Z" fill="#353A40" />
+                                                            <path d="M33.169 38.4535C33.3178 38.5912 33.5126 38.668 33.7151 38.6689C33.9175 38.6698 34.113 38.5947 34.2629 38.4583C34.8026 37.966 47.4935 26.2887 47.4935 14.293C47.4935 6.54659 41.4438 0.480469 33.7184 0.480469C25.993 0.480469 19.9434 6.54659 19.9434 14.293C19.9434 26.0807 32.6294 37.953 33.169 38.4535ZM33.7184 2.10547C40.6465 2.10547 45.8729 7.34447 45.8729 14.293C45.8729 24.2006 36.1607 34.3406 33.7233 36.7293C31.2908 34.313 21.564 24.0397 21.564 14.293C21.564 7.34447 26.7904 2.10547 33.7184 2.10547Z" fill="#353A40" />
+                                                            <path d="M41.0102 14.2949C41.0102 10.2633 37.7382 6.98242 33.7175 6.98242C29.6968 6.98242 26.4248 10.2633 26.4248 14.2949C26.4248 18.3265 29.6968 21.6074 33.7175 21.6074C37.7382 21.6074 41.0102 18.3265 41.0102 14.2949ZM33.7175 19.9824C30.5897 19.9824 28.0454 17.4312 28.0454 14.2949C28.0454 11.1587 30.5897 8.60742 33.7175 8.60742C36.8452 8.60742 39.3896 11.1587 39.3896 14.2949C39.3896 17.4312 36.8452 19.9824 33.7175 19.9824Z" fill="#353A40" />
+                                                        </g>
+                                                        <defs>
+                                                            <clipPath id="clip0_1202_170">
+                                                                <rect width="66.4445" height="52" fill="white" transform="translate(0.494141 0.482422)" />
+                                                            </clipPath>
+                                                        </defs>
+                                                    </svg>
+                                                </div>
+                                                <div class="event-name">
+                                                    <h4>Marriage Contract</h4>
+                                                    <p>Minggu</p>
+                                                    <div class="date">
+                                                        <h5>31-12-2023</h5>
+                                                    </div>
+                                                    <p>19.00 - 21.00 WIB</p>
+                                                </div>
+                                                <div class="event-description" data-anim="zoom-in">
+                                                    <p>description of event</p>
+                                                </div>
+                                                <div class="event-place">
+                                                    <h4>Groom House</h4>
+                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                                                        Kecamatan
+                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                                                        Jakarta
+                                                        10220</p>
+                                                    <div class="widget-elements">
+                                                        <a class="btn btn-custom color__button__trans mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </section>
                 <!-- rsvp section -->
                 <section class="rsvp-section">
                     <div class="container position-relative">
-                        <div class="row justify-content-center">
-                            <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
-                                <div class="rsvp-wrapper">
+                        <div class="row justify-content-center flex-lg-row-reverse">
+                            <div class="col-12 col-md-11 col-lg-5">
+                                <div class="image-wrapper">
+                                    <img src="./assets/images/background-2.webp" alt="rsvp-background" class="rsvp-background">
+                                </div>
+                            </div>
+                            <div class="col-11 col-md-10 col-lg-7 col-xl-5 position-relative">
+                                <div class="rsvp-wrapper color-primary">
                                     <div class="rsvp-form">
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>RSVP</h2>
@@ -594,8 +630,8 @@
                 <div class="wishes-form-wrapper">
                     <div class="container position-relative">
                         <div class="row justify-content-center align-items-center flex-column">
-                            <div class="col-md-8 col-lg-6 position-relative">
-                                <div class="card card-form">
+                            <div class="col-md-10 col-lg-6 position-relative">
+                                <div class="card card-form color-primary">
                                     <div class="card-body">
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Wedding Wishes</h2>
@@ -619,16 +655,18 @@
                     </div>
                 </div>
                 <div class="wishes-preview">
+                    <div class="elements-wrapper-absolute">
+                        <div class="background-element">
+                            <img src="./assets/images/bg-1.png" alt="bg-1">
+                        </div>
+                    </div>
                     <div class="container">
                         <div class="row justify-content-center">
-                            <div class="col-md-8 col-lg-6">
+                            <div class="col-md-10 col-lg-6">
                                 <div class="card">
                                     <div class="card-body text-left">
                                         <div class="wishes" data-anim="slide-up">
                                             <div class="wish">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -636,20 +674,14 @@
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione officiis ipsa reprehenderit non deserunt quis rem laborum sapiente quasi temporibus cum, in tempora omnis, obcaecati sint dicta hic iure.</p>
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -657,10 +689,7 @@
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -668,10 +697,7 @@
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -679,10 +705,7 @@
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -690,10 +713,7 @@
                                                     <small class="text-muted">3 Days ago</small>
                                                 </div>
                                             </div>
-                                            <div class="wish ">
-                                                <div class="wish-badge">
-                                                    <h6>D</h6>
-                                                </div>
+                                            <div class="wish">
                                                 <div class="wish-description">
                                                     <h6>Dewi</h6>
                                                     <p>Happy Married Guys, hope you enjoy new journey and be happy
@@ -714,9 +734,9 @@
             <section class="egift-section moveable-section" data-id="5">
                 <div class="container position-relative">
                     <div class="row justify-content-center">
-                        <div class="col-md-8 text-center position-relative">
-                            <div class="gift-wrap">
-                                <div class=" title-section" data-anim="fade-down">
+                        <div class="col-md-10 col-lg-6 text-center position-relative">
+                            <div class="gift-wrap color-primary">
+                                <div class="title-section" data-anim="fade-down">
                                     <h2>E-Gift</h2>
                                 </div>
                                 <div class="tabs-gift">
@@ -797,86 +817,6 @@
                 </div>
             </section>
 
-            <!-- Gallery Section -->
-            <section class="gallery-section moveable-section" data-id="3">
-                <div class="container">
-                    <div class="row justify-content-center">
-                        <div class=" col-11 col-md-12">
-                            <div class="gallery-default">
-                                <div id="gallery-default" class="splide mb-1">
-                                    <div class="splide__track overflow-visible">
-                                        <ul class="splide__list" id="zoom-gallery-default">
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo01.jfif">
-                                                    <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo02.jfif">
-                                                    <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo01.jfif">
-                                                    <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo02.jfif">
-                                                    <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo01.jfif">
-                                                    <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo02.jfif">
-                                                    <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo01.jfif">
-                                                    <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo02.jfif">
-                                                    <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo01.jfif">
-                                                    <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                            <li class="splide__slide position-relative">
-                                                <a href="./assets/images/photo02.jfif">
-                                                    <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="position-relative mt-3">
-                    <div class="container position-relative">
-                        <div class="row justify-content-center">
-                            <div class="col-lg-6 col-md-8 position-relative">
-                                <div class="ratio ratio-16x9" data-anim="fade-down">
-                                    <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
-                                    </iframe>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
             <!-- Apology section -->
             <section class="apology-section moveable-section" data-id="7">
                 <div class="container position-relative">
@@ -884,9 +824,25 @@
                         <div class="col-lg-8 col-md-10 text-center position-relative">
                             <div class="appology-wrap">
                                 <div class="title-section" data-anim="fade-down">
+                                    <div class="title-section-ornament color__button__trans">
+                                        <svg class="img-fluid" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85059 33.9512C6.85059 32.6674 8.29146 31.9109 9.34827 32.6399L12.1167 34.5496C13.0096 35.1656 13.0392 36.4743 12.1751 37.13L9.40666 39.2307C8.35759 40.0267 6.85059 39.2785 6.85059 37.9616V33.9512ZM11.2121 35.861L8.44367 33.9512V37.9616L11.2121 35.861Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M53.2861 33.9512C53.2861 32.6674 54.727 31.9109 55.7838 32.6399L58.5522 34.5496C59.4451 35.1656 59.4747 36.4743 58.6106 37.13L55.8422 39.2307C54.7931 40.0267 53.2861 39.2785 53.2861 37.9616V33.9512ZM57.6476 35.861L54.8792 33.9512V37.9616L57.6476 35.861Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5942 33.9512C17.5942 32.6674 16.1534 31.9109 15.0965 32.6399L12.3281 34.5496C11.4352 35.1656 11.4056 36.4743 12.2698 37.13L15.0381 39.2307C16.0872 40.0267 17.5942 39.2785 17.5942 37.9616V33.9512ZM13.2327 35.861L16.0011 33.9512V37.9616L13.2327 35.861Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0308 33.9512C64.0308 32.6674 62.5899 31.9109 61.5331 32.6399L58.7647 34.5496C57.8718 35.1656 57.8422 36.4743 58.7063 37.13L61.4747 39.2307C62.5238 40.0267 64.0308 39.2785 64.0308 37.9616V33.9512ZM59.6693 35.861L62.4377 33.9512V37.9616L59.6693 35.861Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0589 19.7363C20.4903 19.8226 20.77 20.2422 20.6837 20.6736C20.2076 23.0541 18.7369 25.1238 17.1659 26.7186C15.5888 28.3196 13.844 29.5099 12.696 30.1264C12.3084 30.3345 11.8255 30.189 11.6174 29.8015C11.4093 29.4139 11.5547 28.931 11.9423 28.7229C12.961 28.1758 14.5746 27.0791 16.031 25.6006C17.4934 24.116 18.731 22.3139 19.1216 20.3611C19.2079 19.9298 19.6275 19.65 20.0589 19.7363Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5203 19.7363C51.0889 19.8226 50.8092 20.2422 50.8955 20.6736C51.3716 23.0541 52.8423 25.1238 54.4133 26.7186C55.9904 28.3196 57.7352 29.5099 58.8832 30.1264C59.2708 30.3345 59.7537 30.189 59.9618 29.8015C60.1699 29.4139 60.0245 28.931 59.6369 28.7229C58.6182 28.1758 57.0046 27.0791 55.5482 25.6006C54.0858 24.116 52.8482 22.3139 52.4576 20.3611C52.3713 19.9298 51.9517 19.65 51.5203 19.7363Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1442 62.407V32.7369C59.1442 19.9549 48.7824 9.59309 36.0005 9.59309C23.2186 9.59309 12.8568 19.955 12.8568 32.7369V62.407H59.1442ZM36.0005 8C22.3387 8 11.2637 19.0751 11.2637 32.7369V64.0001H60.7373V32.7369C60.7373 19.0751 49.6623 8 36.0005 8Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 34.5012C24.561 27.8475 27.9045 14.7525 28.0213 9.06641L29.6141 9.09915C29.4923 15.0234 26.1179 28.4049 13.6221 35.5294C16.2205 40.836 20.8273 52.7321 20.8273 63.1282H19.2343C19.2343 52.6253 14.3242 40.3771 11.859 35.566L11.5029 34.8711L12.1906 34.5012Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M59.0358 34.5012C46.6654 27.8475 43.3219 14.7525 43.205 9.06641L41.6123 9.09915C41.7341 15.0234 45.1085 28.4049 57.6043 35.5294C55.0058 40.836 50.399 52.7321 50.399 63.1282H51.9921C51.9921 52.6253 56.9022 40.3771 59.3674 35.566L59.7234 34.8711L59.0358 34.5012Z" fill="#353A40" />
+                                            <path d="M10.8789 35.3571C10.8789 34.9171 11.2355 34.5605 11.6755 34.5605H12.9624C13.4023 34.5605 13.7589 34.9171 13.7589 35.3571V36.644C13.7589 37.0839 13.4023 37.4405 12.9624 37.4405H11.6755C11.2355 37.4405 10.8789 37.0839 10.8789 36.644V35.3571Z" fill="#353A40" />
+                                            <path d="M57.3145 35.3571C57.3145 34.9171 57.6711 34.5605 58.111 34.5605H59.3979C59.8378 34.5605 60.1945 34.9171 60.1945 35.3571V36.644C60.1945 37.0839 59.8378 37.4405 59.3979 37.4405H58.111C57.6711 37.4405 57.3145 37.0839 57.3145 36.644V35.3571Z" fill="#353A40" />
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.56152 63.2028C3.56152 62.7629 3.91815 62.4062 4.35807 62.4062H67.6429C68.0828 62.4062 68.4394 62.7629 68.4394 63.2028C68.4394 63.6427 68.0828 63.9994 67.6429 63.9994H4.35807C3.91815 63.9994 3.56152 63.6427 3.56152 63.2028Z" fill="#353A40" />
+                                        </svg>
+                                    </div>
                                     <h2>Apology</h2>
                                 </div>
-                                <div class="col-md-10 m-auto col-10" data-anim="zoom-in">
+                                <div class="col-md-10 m-auto col-12" data-anim="zoom-in">
                                     <p>Due to the limitations of the current pandemic, we apologize for not being able
                                         to
                                         directly
@@ -903,46 +859,125 @@
                 </div>
             </section>
 
+            <!-- Gallery Section -->
+            <section class="gallery-section moveable-section" data-id="3">
+                <div class="gallery-default">
+                    <div class="zoom-gallery-default">
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="position-relative mt-3">
+                    <div class="container position-relative">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8 position-relative">
+                                <div class="ratio ratio-16x9" data-anim="fade-down">
+                                    <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
             <!-- Stream Section -->
             <section class="stream-section moveable-section" data-id="8">
+                <div class="elements-wrapper-absolute">
+                    <div class="background-element">
+                        <img src="./assets/images/bg-1.png" alt="bg-1">
+                    </div>
+                </div>
                 <div class="container position-relative">
                     <div class="stream-wrapper">
                         <div class="title-section" data-anim="fade-down">
+                            <div class="title-section-ornament color__button__trans">
+                                <svg class="img-fluid" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85059 33.9512C6.85059 32.6674 8.29146 31.9109 9.34827 32.6399L12.1167 34.5496C13.0096 35.1656 13.0392 36.4743 12.1751 37.13L9.40666 39.2307C8.35759 40.0267 6.85059 39.2785 6.85059 37.9616V33.9512ZM11.2121 35.861L8.44367 33.9512V37.9616L11.2121 35.861Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.2861 33.9512C53.2861 32.6674 54.727 31.9109 55.7838 32.6399L58.5522 34.5496C59.4451 35.1656 59.4747 36.4743 58.6106 37.13L55.8422 39.2307C54.7931 40.0267 53.2861 39.2785 53.2861 37.9616V33.9512ZM57.6476 35.861L54.8792 33.9512V37.9616L57.6476 35.861Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5942 33.9512C17.5942 32.6674 16.1534 31.9109 15.0965 32.6399L12.3281 34.5496C11.4352 35.1656 11.4056 36.4743 12.2698 37.13L15.0381 39.2307C16.0872 40.0267 17.5942 39.2785 17.5942 37.9616V33.9512ZM13.2327 35.861L16.0011 33.9512V37.9616L13.2327 35.861Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0308 33.9512C64.0308 32.6674 62.5899 31.9109 61.5331 32.6399L58.7647 34.5496C57.8718 35.1656 57.8422 36.4743 58.7063 37.13L61.4747 39.2307C62.5238 40.0267 64.0308 39.2785 64.0308 37.9616V33.9512ZM59.6693 35.861L62.4377 33.9512V37.9616L59.6693 35.861Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0589 19.7363C20.4903 19.8226 20.77 20.2422 20.6837 20.6736C20.2076 23.0541 18.7369 25.1238 17.1659 26.7186C15.5888 28.3196 13.844 29.5099 12.696 30.1264C12.3084 30.3345 11.8255 30.189 11.6174 29.8015C11.4093 29.4139 11.5547 28.931 11.9423 28.7229C12.961 28.1758 14.5746 27.0791 16.031 25.6006C17.4934 24.116 18.731 22.3139 19.1216 20.3611C19.2079 19.9298 19.6275 19.65 20.0589 19.7363Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5203 19.7363C51.0889 19.8226 50.8092 20.2422 50.8955 20.6736C51.3716 23.0541 52.8423 25.1238 54.4133 26.7186C55.9904 28.3196 57.7352 29.5099 58.8832 30.1264C59.2708 30.3345 59.7537 30.189 59.9618 29.8015C60.1699 29.4139 60.0245 28.931 59.6369 28.7229C58.6182 28.1758 57.0046 27.0791 55.5482 25.6006C54.0858 24.116 52.8482 22.3139 52.4576 20.3611C52.3713 19.9298 51.9517 19.65 51.5203 19.7363Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1442 62.407V32.7369C59.1442 19.9549 48.7824 9.59309 36.0005 9.59309C23.2186 9.59309 12.8568 19.955 12.8568 32.7369V62.407H59.1442ZM36.0005 8C22.3387 8 11.2637 19.0751 11.2637 32.7369V64.0001H60.7373V32.7369C60.7373 19.0751 49.6623 8 36.0005 8Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 34.5012C24.561 27.8475 27.9045 14.7525 28.0213 9.06641L29.6141 9.09915C29.4923 15.0234 26.1179 28.4049 13.6221 35.5294C16.2205 40.836 20.8273 52.7321 20.8273 63.1282H19.2343C19.2343 52.6253 14.3242 40.3771 11.859 35.566L11.5029 34.8711L12.1906 34.5012Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.0358 34.5012C46.6654 27.8475 43.3219 14.7525 43.205 9.06641L41.6123 9.09915C41.7341 15.0234 45.1085 28.4049 57.6043 35.5294C55.0058 40.836 50.399 52.7321 50.399 63.1282H51.9921C51.9921 52.6253 56.9022 40.3771 59.3674 35.566L59.7234 34.8711L59.0358 34.5012Z" fill="#353A40" />
+                                    <path d="M10.8789 35.3571C10.8789 34.9171 11.2355 34.5605 11.6755 34.5605H12.9624C13.4023 34.5605 13.7589 34.9171 13.7589 35.3571V36.644C13.7589 37.0839 13.4023 37.4405 12.9624 37.4405H11.6755C11.2355 37.4405 10.8789 37.0839 10.8789 36.644V35.3571Z" fill="#353A40" />
+                                    <path d="M57.3145 35.3571C57.3145 34.9171 57.6711 34.5605 58.111 34.5605H59.3979C59.8378 34.5605 60.1945 34.9171 60.1945 35.3571V36.644C60.1945 37.0839 59.8378 37.4405 59.3979 37.4405H58.111C57.6711 37.4405 57.3145 37.0839 57.3145 36.644V35.3571Z" fill="#353A40" />
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.56152 63.2028C3.56152 62.7629 3.91815 62.4062 4.35807 62.4062H67.6429C68.0828 62.4062 68.4394 62.7629 68.4394 63.2028C68.4394 63.6427 68.0828 63.9994 67.6429 63.9994H4.35807C3.91815 63.9994 3.56152 63.6427 3.56152 63.2028Z" fill="#353A40" />
+                                </svg>
+                            </div>
                             <h2>Live Streaming</h2>
                         </div>
                         <div class="stream-content">
                             <div class="row justify-content-center">
-                                <div class="col-xl-6 col-md-8">
+                                <div class="col-12">
                                     <div class="stream-description">
-                                        <div class="yt-description">
-                                            <h4 class="mb-3">Live Wedding Schedule</h4>
-                                            <ul class="p-0 m-auto" style="width: fit-content;">
-                                                <ol>10.00 Live Wedding Schedule</ol>
-                                                <ol>13.00 Lunch Party</ol>
-                                                <ol>14.00 Sungkeman</ol>
-                                            </ul>
-                                            <h4 class="my-3 text-center">Live Wedding</h4>
-                                            <div>
-                                                <p>We apologize for the limitations of Zoom participants, only for invited
-                                                    guests
-                                                    who
-                                                    have
-                                                    been given a password, who can join the Room Zoom of the bride and groom
-                                                    to
-                                                    watch a
-                                                    series of wedding events and say hello Bride Live. Meanwhile, other
-                                                    invited
-                                                    guests
-                                                    can
-                                                    watch via Youtube Live Streaming.</p>
+                                        <div class="row justify-content-center">
+                                            <div class="yt-description col-md-6">
+                                                <h4 class="mb-3">Live Wedding Schedule</h4>
+                                                <ul class="p-0 m-auto" style="width: fit-content;">
+                                                    <ol>10.00 Live Wedding Schedule</ol>
+                                                    <ol>13.00 Lunch Party</ol>
+                                                    <ol>14.00 Sungkeman</ol>
+                                                </ul>
+                                                <h4 class="my-3 text-center">Live Wedding</h4>
+                                                <div>
+                                                    <p>We apologize for the limitations of Zoom participants, only for invited
+                                                        guests
+                                                        who
+                                                        have
+                                                        been given a password, who can join the Room Zoom of the bride and groom
+                                                        to
+                                                        watch a
+                                                        series of wedding events and say hello Bride Live. Meanwhile, other
+                                                        invited
+                                                        guests
+                                                        can
+                                                        watch via Youtube Live Streaming.</p>
+                                                </div>
                                             </div>
-                                        </div>
-                                        <div class="col-12 position-relative mt-4">
-                                            <div class="ratio ratio-16x9">
-                                                <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
-                                                </iframe>
+                                            <div class="col-12 col-md-6 position-relative">
+                                                <div class="ratio ratio-16x9">
+                                                    <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
+                                                    </iframe>
+                                                </div>
+                                                <a href="#" class="btn btn-custom mt-3">Join Youtube</a>
                                             </div>
-                                            <a href="#" class="btn btn-custom mt-3">Join Youtube</a>
                                         </div>
                                     </div>
                                 </div>
@@ -957,20 +992,36 @@
                 <div class="thank-wrapper">
                     <div class="container position-relative">
                         <div class="row justify-content-center">
-                            <div class="col-md-6 col-lg-5 col-xl-4 position-relative">
-                                <div class="image-wrapper">
-                                    <div class="image-element">
-                                        <img src="./assets/images/background-1.webp" alt="thank-background" class="thank-background">
-                                    </div>
-                                </div>
+                            <div class="col-md-12 position-relative">
                                 <div class="thank mt-4">
                                     <div class="thank-body">
                                         <div class="title-section" data-anim="fade-down">
+                                            <div class="title-section-ornament color__button__trans">
+                                                <svg class="img-fluid" width="72" height="72" viewBox="0 0 72 72" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.85059 33.9512C6.85059 32.6674 8.29146 31.9109 9.34827 32.6399L12.1167 34.5496C13.0096 35.1656 13.0392 36.4743 12.1751 37.13L9.40666 39.2307C8.35759 40.0267 6.85059 39.2785 6.85059 37.9616V33.9512ZM11.2121 35.861L8.44367 33.9512V37.9616L11.2121 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M53.2861 33.9512C53.2861 32.6674 54.727 31.9109 55.7838 32.6399L58.5522 34.5496C59.4451 35.1656 59.4747 36.4743 58.6106 37.13L55.8422 39.2307C54.7931 40.0267 53.2861 39.2785 53.2861 37.9616V33.9512ZM57.6476 35.861L54.8792 33.9512V37.9616L57.6476 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M17.5942 33.9512C17.5942 32.6674 16.1534 31.9109 15.0965 32.6399L12.3281 34.5496C11.4352 35.1656 11.4056 36.4743 12.2698 37.13L15.0381 39.2307C16.0872 40.0267 17.5942 39.2785 17.5942 37.9616V33.9512ZM13.2327 35.861L16.0011 33.9512V37.9616L13.2327 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M64.0308 33.9512C64.0308 32.6674 62.5899 31.9109 61.5331 32.6399L58.7647 34.5496C57.8718 35.1656 57.8422 36.4743 58.7063 37.13L61.4747 39.2307C62.5238 40.0267 64.0308 39.2785 64.0308 37.9616V33.9512ZM59.6693 35.861L62.4377 33.9512V37.9616L59.6693 35.861Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.0589 19.7363C20.4903 19.8226 20.77 20.2422 20.6837 20.6736C20.2076 23.0541 18.7369 25.1238 17.1659 26.7186C15.5888 28.3196 13.844 29.5099 12.696 30.1264C12.3084 30.3345 11.8255 30.189 11.6174 29.8015C11.4093 29.4139 11.5547 28.931 11.9423 28.7229C12.961 28.1758 14.5746 27.0791 16.031 25.6006C17.4934 24.116 18.731 22.3139 19.1216 20.3611C19.2079 19.9298 19.6275 19.65 20.0589 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M51.5203 19.7363C51.0889 19.8226 50.8092 20.2422 50.8955 20.6736C51.3716 23.0541 52.8423 25.1238 54.4133 26.7186C55.9904 28.3196 57.7352 29.5099 58.8832 30.1264C59.2708 30.3345 59.7537 30.189 59.9618 29.8015C60.1699 29.4139 60.0245 28.931 59.6369 28.7229C58.6182 28.1758 57.0046 27.0791 55.5482 25.6006C54.0858 24.116 52.8482 22.3139 52.4576 20.3611C52.3713 19.9298 51.9517 19.65 51.5203 19.7363Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.1442 62.407V32.7369C59.1442 19.9549 48.7824 9.59309 36.0005 9.59309C23.2186 9.59309 12.8568 19.955 12.8568 32.7369V62.407H59.1442ZM36.0005 8C22.3387 8 11.2637 19.0751 11.2637 32.7369V64.0001H60.7373V32.7369C60.7373 19.0751 49.6623 8 36.0005 8Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M12.1906 34.5012C24.561 27.8475 27.9045 14.7525 28.0213 9.06641L29.6141 9.09915C29.4923 15.0234 26.1179 28.4049 13.6221 35.5294C16.2205 40.836 20.8273 52.7321 20.8273 63.1282H19.2343C19.2343 52.6253 14.3242 40.3771 11.859 35.566L11.5029 34.8711L12.1906 34.5012Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M59.0358 34.5012C46.6654 27.8475 43.3219 14.7525 43.205 9.06641L41.6123 9.09915C41.7341 15.0234 45.1085 28.4049 57.6043 35.5294C55.0058 40.836 50.399 52.7321 50.399 63.1282H51.9921C51.9921 52.6253 56.9022 40.3771 59.3674 35.566L59.7234 34.8711L59.0358 34.5012Z" fill="#353A40" />
+                                                    <path d="M10.8789 35.3571C10.8789 34.9171 11.2355 34.5605 11.6755 34.5605H12.9624C13.4023 34.5605 13.7589 34.9171 13.7589 35.3571V36.644C13.7589 37.0839 13.4023 37.4405 12.9624 37.4405H11.6755C11.2355 37.4405 10.8789 37.0839 10.8789 36.644V35.3571Z" fill="#353A40" />
+                                                    <path d="M57.3145 35.3571C57.3145 34.9171 57.6711 34.5605 58.111 34.5605H59.3979C59.8378 34.5605 60.1945 34.9171 60.1945 35.3571V36.644C60.1945 37.0839 59.8378 37.4405 59.3979 37.4405H58.111C57.6711 37.4405 57.3145 37.0839 57.3145 36.644V35.3571Z" fill="#353A40" />
+                                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.56152 63.2028C3.56152 62.7629 3.91815 62.4062 4.35807 62.4062H67.6429C68.0828 62.4062 68.4394 62.7629 68.4394 63.2028C68.4394 63.6427 68.0828 63.9994 67.6429 63.9994H4.35807C3.91815 63.9994 3.56152 63.6427 3.56152 63.2028Z" fill="#353A40" />
+                                                </svg>
+                                            </div>
                                             <h2>Thank You</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-in">
+                                        <div class="thank-description" data-anim="zoom-in">
                                             <p>Thank you for your presence, participation and blessing.</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div class="image-wrapper">
+                                    <div class="image-element">
+                                        <img src="./assets/images/background-1.webp" alt="thank-background" class="thank-background">
                                     </div>
                                 </div>
                             </div>
@@ -1071,25 +1122,10 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
     </script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js" integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-
-    <script>
-        if (document.querySelector(".gallery-default")) {
-            document.addEventListener("DOMContentLoaded", function () {
-                const gallery = new Splide("#gallery-default", {
-                    pagination: false,
-                    perPage: 3,
-                    perMove: 1,
-                });
-
-                gallery.mount();
-            });
-        }
-    </script>
 
     <!-- scripts plugins -->
     <script src="./assets/js/jquery.magnific-popup.min.js"></script>
