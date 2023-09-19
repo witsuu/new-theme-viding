@@ -287,11 +287,16 @@
 	{
 		"name": "Forest Custom",
 		"path": "forest-custom",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Sunset Fall Custom",
 		"path": "sunset-fall-custom",
+		"status": "DONE"
+	},
+	{
+		"name": "Marble",
+		"path": "marble",
 		"status": ""
 	}
 ]
