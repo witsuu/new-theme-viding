@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Secret</title>
+    <title>Marble</title>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -65,33 +65,32 @@
 
         <!-- Envelope Section -->
         <section class="cover-section">
+            <div class="elements-wrapper-absolute">
+                <div class="background-element">
+                    <img src="./assets/images/bg-1.png" alt="bg-1">
+                </div>
+            </div>
             <div class="container">
                 <div class="cover-wrapper">
                     <div class="cover-content">
                         <div class="cover-body">
-                            <div class="col-lg-5 col-12">
-                                <div class="image-wrapper" data-anim="zoom-out">
-                                    <img src="./assets/images/background-1.webp" alt="cover-background" class="cover-background">
+                            <div class="cover-description">
+                                <div class="greeting-wrapper" data-anim="fade-down">
+                                    <span>Dear,</span>
+                                    <h6>Name Guest</h6>
                                 </div>
-                            </div>
-                            <div class="col-lg-7 col-12">
-                                <div class="cover-description" data-anim="fade-down">
-                                    <div class="greeting-wrapper">
-                                        <span>Dear,</span>
-                                        <h6>Name Guest</h6>
-                                    </div>
-                                    <div class="position-relative">
-                                        <p>You're Invited To Wedding</p>
-                                    </div>
-                                    <h1 class="title">Vidi & Hening</h1>
-                                    <div class="cover-event">
-                                        <p>31 May 2021</p>
-                                    </div>
-                                    <div class="elements-widget" data-anim="zoom-in">
-                                        <button class="btn btn-custom" id="btn-envelope">
-                                            <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
-                                        </button>
-                                    </div>
+                                <div class="position-relative" data-anim="zoom-out">
+                                    <p>You're Invited To Wedding</p>
+                                </div>
+                                <h1 class="title" data-anim="zoom-out">Vidi & Hening</h1>
+                                <div class="cover-event" data-anim="zoom-out">
+                                    <h6>Akad Nikah</h6>
+                                    <p>31 May 2021</p>
+                                </div>
+                                <div class="elements-widget" data-anim="fade-up">
+                                    <button class="btn btn-custom" id="btn-envelope">
+                                        <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
+                                    </button>
                                 </div>
                             </div>
                         </div>
@@ -109,13 +108,13 @@
                             <div class="header">
                                 <div class="header-title">
                                     <div class="header-title-content">
-                                        <h1 class="title mb-3" data-anim="fade-up">Vidi & Hening</h1>
-                                        <div class="header-description" data-anim="zoom-in">
+                                        <h1 class="title mb-3" data-anim="fade-down">Vidi & Hening</h1>
+                                        <div class="header-description" data-anim="zoom-out">
                                             <p>We're Getting Married</p>
                                         </div>
                                     </div>
                                     <div class="image-wrapper">
-                                        <div class="image-element">
+                                        <div class="image-element" data-anim="fade-up">
                                             <img src="./assets/images/background-1.webp" alt="header-background" class="header-background">
                                             <div class="overlay-elements-gradient overlay-bottom"></div>
                                         </div>
@@ -127,7 +126,7 @@
                                         </div>
                                         <div class="reminder-wrap">
                                             <div class="reminder-content">
-                                                <div class="countdown color-main" date="12/31/2023 23:59:00" data-anim="zoom-in">
+                                                <div class="countdown color-main" date="12/31/2023 23:59:00" data-anim="zoom-out">
                                                     <div class="days">
                                                         <p class="angka">00</p>
                                                         <p class="huruf">Day</p>
@@ -145,7 +144,7 @@
                                                         <p class="huruf">Secs</p>
                                                     </div>
                                                 </div>
-                                                <a href="#" class="btn btn-custom btn-reminder" data-anim="fade-up">
+                                                <a href="#" class="btn btn-custom btn-reminder" data-anim="zoom-out">
                                                     <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0_2411_134)">
                                                             <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
@@ -202,7 +201,7 @@
                                             </div>
                                             <h2>Bride & Groom</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-in">
+                                        <div class="position-relative" data-anim="zoom-out">
                                             <p>What greater thing is there for two human souls, than to feel that they are joined for life–to strength each other in all labor, to rest on each other in all sorrow, to minister to each other in silent unspeakable memories at the moment of the last parting? Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</p>
                                         </div>
                                     </div>
@@ -215,18 +214,18 @@
                             <div class="row justify-content-center position-relative">
                                 <div class="col-md-6 col-xl-5">
                                     <div class="couple">
-                                        <div class="image-wrap man" data-anim="fade-down">
+                                        <div class="image-wrap man">
                                             <div class="image-element">
                                                 <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
                                             </div>
                                         </div>
                                         <div class="couple-description">
-                                            <h3 data-anim="zoom-in">Vidi Dwi Saputra</h3>
-                                            <div class="couple-parent" data-anim="zoom-in">
+                                            <h3 data-anim="zoom-out">Vidi Dwi Saputra</h3>
+                                            <div class="couple-parent" data-anim="zoom-out">
                                                 <p>First son of <br> H. Heru Stiawan <br> and <br>
                                                     Siti Amizah</p>
                                             </div>
-                                            <div class="sosmed-wrap" data-anim="zoom-in">
+                                            <div class="sosmed-wrap" data-anim="fade-up">
                                                 <a href="#" class="sosmed">
                                                     <small><i class="fab fa-instagram"></i> username</small>
                                                 </a>
@@ -237,18 +236,18 @@
                                 <div class="and"><span>&</span></div>
                                 <div class="col-md-6 col-xl-5">
                                     <div class="couple">
-                                        <div class="image-wrap woman" data-anim="fade-down">
+                                        <div class="image-wrap woman">
                                             <div class="image-element">
                                                 <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women">
                                             </div>
                                         </div>
                                         <div class="couple-description">
-                                            <h3 data-anim="zoom-in">Hening Saputri</h3>
-                                            <div class="couple-parent" data-anim="zoom-in">
+                                            <h3 data-anim="zoom-out">Hening Saputri</h3>
+                                            <div class="couple-parent" data-anim="zoom-out">
                                                 <p>First son of <br> H. Heru Stiawan <br> and <br>
                                                     Siti Amizah</p>
                                             </div>
-                                            <div class="sosmed-wrap" data-anim="zoom-in">
+                                            <div class="sosmed-wrap" data-anim="fade-up">
                                                 <a href="#" class="sosmed">
                                                     <small><i class="fab fa-instagram"></i> username</small>
                                                 </a>
@@ -270,7 +269,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-12 col-md-11 col-lg-5 position-relative">
                                     <div class="image-wrapper">
-                                        <div class="image-element">
+                                        <div class="image-element" data-anim="fade-up">
                                             <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
                                         </div>
                                     </div>
@@ -296,7 +295,7 @@
                                             </div>
                                             <h2>Our Story</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-in">
+                                        <div class="position-relative" data-anim="zoom-out">
                                             <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi dolore blanditiis odio minima obcaecati atque veniam, quisquam modi adipisci perferendis dolorum deserunt tenetur commodi asperiores laudantium ab, quos fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit labore quae, assumenda dolore laborum expedita eaque. Aliquid, explicabo, doloremque ex dolor ab ipsum ut laboriosam repellendus sit, quae eligendi! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam, illum ratione consequuntur animi facere fuga dolores provident, ipsum voluptatum inventore officiis itaque tenetur, labore dignissimos doloribus dolor tempore excepturi. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero dolores autem ipsam rem odit. Deleniti quibusdam, labore, quod quae, praesentium ut voluptatem ipsa ducimus iure unde error ab. Deleniti?”</p>
                                         </div>
                                     </div>
@@ -323,7 +322,7 @@
                                         <div class="title-section" data-anim="fade-down">
                                             <h2>Event & Venue</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-in">
+                                        <div class="position-relative" data-anim="zoom-out">
                                             <p>If you will be present at the event location. Please fill out the form below</p>
                                         </div>
                                     </div>
@@ -504,7 +503,7 @@
                                     <div class="col-md-6 col-xl-5 position-relative">
                                         <div class="card">
                                             <div class="card-body">
-                                                <div class="ribbon-venue color__button__trans">
+                                                <div class="ribbon-venue color__button__trans" data-anim="zoom-out">
                                                     <svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0_1202_170)">
                                                             <path d="M15.4687 52.3624C15.4833 52.3722 15.5027 52.3673 15.5173 52.3771C15.6321 52.4411 15.7604 52.4767 15.8917 52.4811C15.964 52.4809 16.0359 52.4711 16.1056 52.4518L33.7182 47.6321L51.3309 52.4518C51.4006 52.4711 51.4725 52.4809 51.5448 52.4811C51.6758 52.4771 51.8038 52.4408 51.9175 52.3754C51.9337 52.3673 51.9516 52.3706 51.9661 52.3608L66.5515 43.4233C66.7022 43.3305 66.8185 43.191 66.8829 43.0259C66.9472 42.8607 66.9561 42.6791 66.908 42.5084L58.831 14.0709C58.7979 13.9525 58.7385 13.8432 58.657 13.7512C58.5756 13.6592 58.4744 13.587 58.3611 13.54C58.2477 13.493 58.1252 13.4725 58.0028 13.4801C57.8803 13.4876 57.7612 13.5229 57.6544 13.5834L49.613 18.1074C49.4369 18.2189 49.3103 18.394 49.2593 18.5965C49.2083 18.7989 49.2368 19.0133 49.339 19.1953C49.4412 19.3773 49.6092 19.5129 49.8083 19.5742C50.0074 19.6354 50.2224 19.6176 50.4088 19.5244L57.554 15.5026L65.1821 42.3573L52.193 50.3182L49.1074 25.5678C49.0808 25.3538 48.9704 25.1592 48.8007 25.0268C48.631 24.8944 48.4157 24.835 48.2023 24.8617C47.9889 24.8885 47.7948 24.9991 47.6628 25.1693C47.5307 25.3395 47.4715 25.5553 47.4982 25.7693L50.5886 50.5652L34.5285 46.1696V41.7333C34.5285 41.5178 34.4432 41.3112 34.2912 41.1588C34.1392 41.0064 33.9331 40.9208 33.7182 40.9208C33.5033 40.9208 33.2972 41.0064 33.1453 41.1588C32.9933 41.3112 32.9079 41.5178 32.9079 41.7333V46.1696L16.8462 50.5652L19.9367 25.7693C19.9499 25.6634 19.9421 25.5558 19.9139 25.4529C19.8856 25.3499 19.8374 25.2536 19.7721 25.1693C19.7067 25.085 19.6254 25.0145 19.5328 24.9617C19.4402 24.9089 19.3382 24.875 19.2325 24.8617C19.1269 24.8485 19.0196 24.8563 18.917 24.8846C18.8143 24.9129 18.7182 24.9613 18.6341 25.0268C18.5501 25.0924 18.4798 25.1739 18.4271 25.2667C18.3745 25.3595 18.3406 25.4619 18.3274 25.5678L15.2434 50.3182L2.25435 42.3589L9.8825 15.5058L17.0277 19.5277C17.2141 19.6209 17.4291 19.6387 17.6282 19.5774C17.8273 19.5161 17.9953 19.3805 18.0975 19.1985C18.1996 19.0166 18.2282 18.8022 18.1772 18.5997C18.1262 18.3972 17.9995 18.2222 17.8234 18.1107L9.7804 13.5851C9.67387 13.5239 9.55478 13.488 9.43227 13.4802C9.30976 13.4723 9.18708 13.4927 9.07365 13.5398C8.96022 13.5868 8.85905 13.6593 8.77789 13.7517C8.69673 13.844 8.63775 13.9538 8.60547 14.0726L0.528416 42.5101C0.479564 42.6807 0.487999 42.8626 0.552424 43.0279C0.616848 43.1933 0.733687 43.3327 0.884947 43.4249L15.4687 52.3624Z" fill="#353A40" />
@@ -518,7 +517,7 @@
                                                         </defs>
                                                     </svg>
                                                 </div>
-                                                <div class="event-name">
+                                                <div class="event-name" data-anim="zoom-out">
                                                     <h4>Marriage Contract</h4>
                                                     <p>Minggu</p>
                                                     <div class="date">
@@ -526,10 +525,10 @@
                                                     </div>
                                                     <p>19.00 - 21.00 WIB</p>
                                                 </div>
-                                                <div class="event-description" data-anim="zoom-in">
+                                                <div class="event-description" data-anim="fade-up">
                                                     <p>description of event</p>
                                                 </div>
-                                                <div class="event-place">
+                                                <div class="event-place" data-anim="zoom-out">
                                                     <h4>Groom House</h4>
                                                     <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
                                                         Kecamatan
@@ -546,7 +545,7 @@
                                     <div class="col-md-6 col-xl-5 position-relative">
                                         <div class="card">
                                             <div class="card-body">
-                                                <div class="ribbon-venue color__button__trans">
+                                                <div class="ribbon-venue color__button__trans" data-anim="zoom-out">
                                                     <svg width="67" height="53" viewBox="0 0 67 53" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                         <g clip-path="url(#clip0_1202_170)">
                                                             <path d="M15.4687 52.3624C15.4833 52.3722 15.5027 52.3673 15.5173 52.3771C15.6321 52.4411 15.7604 52.4767 15.8917 52.4811C15.964 52.4809 16.0359 52.4711 16.1056 52.4518L33.7182 47.6321L51.3309 52.4518C51.4006 52.4711 51.4725 52.4809 51.5448 52.4811C51.6758 52.4771 51.8038 52.4408 51.9175 52.3754C51.9337 52.3673 51.9516 52.3706 51.9661 52.3608L66.5515 43.4233C66.7022 43.3305 66.8185 43.191 66.8829 43.0259C66.9472 42.8607 66.9561 42.6791 66.908 42.5084L58.831 14.0709C58.7979 13.9525 58.7385 13.8432 58.657 13.7512C58.5756 13.6592 58.4744 13.587 58.3611 13.54C58.2477 13.493 58.1252 13.4725 58.0028 13.4801C57.8803 13.4876 57.7612 13.5229 57.6544 13.5834L49.613 18.1074C49.4369 18.2189 49.3103 18.394 49.2593 18.5965C49.2083 18.7989 49.2368 19.0133 49.339 19.1953C49.4412 19.3773 49.6092 19.5129 49.8083 19.5742C50.0074 19.6354 50.2224 19.6176 50.4088 19.5244L57.554 15.5026L65.1821 42.3573L52.193 50.3182L49.1074 25.5678C49.0808 25.3538 48.9704 25.1592 48.8007 25.0268C48.631 24.8944 48.4157 24.835 48.2023 24.8617C47.9889 24.8885 47.7948 24.9991 47.6628 25.1693C47.5307 25.3395 47.4715 25.5553 47.4982 25.7693L50.5886 50.5652L34.5285 46.1696V41.7333C34.5285 41.5178 34.4432 41.3112 34.2912 41.1588C34.1392 41.0064 33.9331 40.9208 33.7182 40.9208C33.5033 40.9208 33.2972 41.0064 33.1453 41.1588C32.9933 41.3112 32.9079 41.5178 32.9079 41.7333V46.1696L16.8462 50.5652L19.9367 25.7693C19.9499 25.6634 19.9421 25.5558 19.9139 25.4529C19.8856 25.3499 19.8374 25.2536 19.7721 25.1693C19.7067 25.085 19.6254 25.0145 19.5328 24.9617C19.4402 24.9089 19.3382 24.875 19.2325 24.8617C19.1269 24.8485 19.0196 24.8563 18.917 24.8846C18.8143 24.9129 18.7182 24.9613 18.6341 25.0268C18.5501 25.0924 18.4798 25.1739 18.4271 25.2667C18.3745 25.3595 18.3406 25.4619 18.3274 25.5678L15.2434 50.3182L2.25435 42.3589L9.8825 15.5058L17.0277 19.5277C17.2141 19.6209 17.4291 19.6387 17.6282 19.5774C17.8273 19.5161 17.9953 19.3805 18.0975 19.1985C18.1996 19.0166 18.2282 18.8022 18.1772 18.5997C18.1262 18.3972 17.9995 18.2222 17.8234 18.1107L9.7804 13.5851C9.67387 13.5239 9.55478 13.488 9.43227 13.4802C9.30976 13.4723 9.18708 13.4927 9.07365 13.5398C8.96022 13.5868 8.85905 13.6593 8.77789 13.7517C8.69673 13.844 8.63775 13.9538 8.60547 14.0726L0.528416 42.5101C0.479564 42.6807 0.487999 42.8626 0.552424 43.0279C0.616848 43.1933 0.733687 43.3327 0.884947 43.4249L15.4687 52.3624Z" fill="#353A40" />
@@ -560,7 +559,7 @@
                                                         </defs>
                                                     </svg>
                                                 </div>
-                                                <div class="event-name">
+                                                <div class="event-name" data-anim="zoom-out">
                                                     <h4>Marriage Contract</h4>
                                                     <p>Minggu</p>
                                                     <div class="date">
@@ -568,10 +567,10 @@
                                                     </div>
                                                     <p>19.00 - 21.00 WIB</p>
                                                 </div>
-                                                <div class="event-description" data-anim="zoom-in">
+                                                <div class="event-description" data-anim="fade-up">
                                                     <p>description of event</p>
                                                 </div>
-                                                <div class="event-place">
+                                                <div class="event-place" data-anim="zoom-out">
                                                     <h4>Groom House</h4>
                                                     <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
                                                         Kecamatan
@@ -596,7 +595,7 @@
                         <div class="row justify-content-center flex-lg-row-reverse">
                             <div class="col-12 col-md-11 col-lg-5">
                                 <div class="image-wrapper">
-                                    <img src="./assets/images/background-2.webp" alt="rsvp-background" class="rsvp-background">
+                                    <img src="./assets/images/background-2.webp" alt="rsvp-background" class="rsvp-background" data-anim="fade-up">
                                 </div>
                             </div>
                             <div class="col-11 col-md-10 col-lg-7 col-xl-5 position-relative">
@@ -756,14 +755,14 @@
                                     </button>
                                 </div>
                                 <div class="angpao">
-                                    <p class="my-3" data-anim="zoom-in">
+                                    <p class="my-3" data-anim="zoom-out">
                                         Without reducing our respect, if you intend to give wedding
                                         angpao online in various ways various payment methods, please
                                         fill out the form provided below:
                                     </p>
                                 </div>
                                 <div class="gift">
-                                    <p class="my-3" data-anim="zoom-in">
+                                    <p class="my-3" data-anim="zoom-out">
                                         Without reducing our respect, if you intend to give wedding
                                         gifts online in various ways various payment methods, please
                                         fill out the form provided below:
@@ -842,7 +841,7 @@
                                     </div>
                                     <h2>Apology</h2>
                                 </div>
-                                <div class="col-md-10 m-auto col-12" data-anim="zoom-in">
+                                <div class="col-md-10 m-auto col-12" data-anim="zoom-out">
                                     <p>Due to the limitations of the current pandemic, we apologize for not being able
                                         to
                                         directly
@@ -1014,13 +1013,13 @@
                                             </div>
                                             <h2>Thank You</h2>
                                         </div>
-                                        <div class="thank-description" data-anim="zoom-in">
+                                        <div class="thank-description" data-anim="zoom-out">
                                             <p>Thank you for your presence, participation and blessing.</p>
                                         </div>
                                     </div>
                                 </div>
                                 <div class="image-wrapper">
-                                    <div class="image-element">
+                                    <div class="image-element" data-anim="fade-up">
                                         <img src="./assets/images/background-1.webp" alt="thank-background" class="thank-background">
                                     </div>
                                 </div>
