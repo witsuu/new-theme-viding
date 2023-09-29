@@ -303,5 +303,15 @@
 		"name": "Utopia",
 		"path": "Utopia",
 		"status": ""
+	},
+	{
+		"name": "Celeste",
+		"path": "celeste",
+		"status": ""
+	},
+	{
+		"name": "Pendopo",
+		"path": "pendopo",
+		"status": ""
 	}
 ]
