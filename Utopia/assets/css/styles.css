@@ -1653,12 +1653,13 @@ img[alt=tree] {
   top: 0;
   left: 0;
   width: 100%;
-  height: 50%;
+  height: 60%;
 }
 .header-section .orn-99 .image-element {
   height: 100%;
 }
-.header-section .orn-99 .image-element .img-fluid {
+.header-section .orn-99 .image-element img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3653,7 +3654,8 @@ img[alt=tree] {
 .thank-section .orn-99 .image-element {
   height: 100%;
 }
-.thank-section .orn-99 .image-element .img-fluid {
+.thank-section .orn-99 .image-element img {
+  width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -3767,13 +3769,13 @@ img[alt=tree] {
   bottom: 0;
   left: 0;
   width: 120%;
-  transform: translate(-40%, 45%);
+  transform: translate(-40%, 50%);
   z-index: 3;
 }
 @media (min-width: 768px) {
   .thank-section .orn-7 {
     width: 100%;
-    transform: translate(-40%, 65%);
+    transform: translate(-40%, 55%);
   }
 }
 @media (min-width: 992px) {
@@ -3803,7 +3805,7 @@ img[alt=tree] {
   bottom: 0;
   right: 0;
   width: 100%;
-  transform: translate(20%, 60%);
+  transform: translate(20%, 70%);
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -3821,18 +3823,18 @@ img[alt=tree] {
   bottom: 0;
   right: 0;
   width: 100%;
-  transform: translate(20%, 30%);
+  transform: translate(20%, 50%);
   z-index: 3;
 }
 @media (min-width: 768px) {
   .thank-section .orn-10 {
     width: 80%;
-    transform: translate(20%, 50%);
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-10 {
     width: 70%;
+    transform: translate(10%, 30%);
   }
 }
 .thank-section .orn-11 {
@@ -3871,6 +3873,45 @@ img[alt=tree] {
     width: 70%;
   }
 }
+.thank-section .orn-13 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120%;
+  transform: translate(-50%, 65%);
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .thank-section .orn-13 {
+    display: none;
+  }
+}
+.thank-section .orn-14 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  transform: translate(20%, 20%);
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .thank-section .orn-14 {
+    display: none;
+  }
+}
+.thank-section .orn-15 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  transform: translate(20%, 30%);
+  z-index: 3;
+}
+@media (min-width: 768px) {
+  .thank-section .orn-15 {
+    display: none;
+  }
+}
 .thank-section .thank-wrapper {
   position: relative;
   padding: 5rem 0 3rem;
@@ -3890,7 +3931,7 @@ img[alt=tree] {
 }
 @media (max-width: 767px) {
   .thank-section .thank-wrapper .thank {
-    padding: 5rem 1rem 3rem;
+    padding: 5rem 1rem;
   }
 }
 .thank-section .thank-wrapper .thank-body {
