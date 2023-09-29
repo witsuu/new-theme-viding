@@ -664,6 +664,10 @@ ul li {
   animation-name: slideLeft;
 }
 
+[data-anim=slide-left-image].has-animate {
+  animation-name: slideLeftImage;
+}
+
 [data-anim=slide-up].has-animate {
   animation-name: slideUp;
 }
@@ -686,6 +690,12 @@ ul li {
   }
   100% {
     transform: translateZ(0);
+  }
+}
+@keyframes slideLeftImage {
+  0% {
+    -o-object-position: 0% 50%;
+       object-position: 0% 50%;
   }
 }
 @keyframes slideUp {
@@ -1142,6 +1152,42 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=tree] {
+  transform-origin: 45% 100%;
+}
+
+img[alt=tree-2] {
+  transform-origin: 60% 95%;
+}
+
+img[alt=flower-1] {
+  transform-origin: 45% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 65% 100%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 40% 80%;
+}
+
+img[alt=branch-1] {
+  transform-origin: 0% 100%;
+}
+
+img[alt=branch-2] {
+  transform-origin: 30% 100%;
+}
+
+img[alt=branch-3] {
+  transform-origin: 60% 100%;
+}
+
+img[alt=palm] {
+  transform-origin: 45% 100%;
 }
 
 .countdown {
