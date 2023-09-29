@@ -2538,12 +2538,12 @@ img[alt=tree] {
   background-color: var(--color-primary);
   color: var(--color-light);
   border-radius: var(--border-radius);
-  padding: 20rem 3rem 3rem;
+  padding: 20rem 3rem 5rem;
   overflow: hidden;
 }
 @media (max-width: 767px) {
   .rsvp-section .rsvp-wrapper {
-    padding: 18rem 2rem 2rem;
+    padding: 18rem 2rem 5rem;
   }
 }
 .rsvp-section .rsvp-wrapper .orn-99 {
@@ -2775,9 +2775,9 @@ img[alt=tree] {
 .egift-section .orn-98 {
   position: absolute;
   top: 0;
-  left: 50%;
-  width: 50%;
-  transform: translate(-40%, -30%);
+  left: 60%;
+  width: 60%;
+  transform: translate(-50%, -35%);
   opacity: 0.15;
 }
 @media (max-width: 991px) {
