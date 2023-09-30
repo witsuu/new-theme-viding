@@ -2119,24 +2119,74 @@ img[alt=palm] {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 40%;
-  transform: translate(-20%, 20%);
+  width: 60px;
+  transform: translate(0, 0);
 }
 @media (min-width: 768px) {
   .couple-section .couple-wrapper .orn-8 {
-    left: 8%;
+    width: 70px;
+    transform: translate(30%, 0);
   }
 }
 .couple-section .couple-wrapper .orn-9 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40%;
-  transform: translate(20%, 20%) scaleX(-1);
+  width: 60px;
+  transform: translate(0, 0) scaleX(-1);
 }
 @media (min-width: 768px) {
   .couple-section .couple-wrapper .orn-9 {
-    right: 8%;
+    width: 70px;
+    transform: translate(-30%, 0) scaleX(-1);
+  }
+}
+.couple-section .couple-wrapper .orn-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80px;
+  transform: translate(-20%, -70%) rotate(10deg);
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .orn-10 {
+    width: 100px;
+  }
+}
+.couple-section .couple-wrapper .orn-10 .orn-11 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  transform: translate(10%, -60%) rotate(-10deg);
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .orn-10 .orn-11 {
+    width: 70px;
+  }
+}
+.couple-section .couple-wrapper .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  transform: translate(50%, 20%);
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .orn-12 {
+    width: 70px;
+  }
+}
+.couple-section .couple-wrapper .orn-12 .orn-13 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60px;
+  transform: translate(50%, 10%) rotate(80deg);
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .orn-12 .orn-13 {
+    width: 70px;
   }
 }
 .couple-section .couple-body {
