@@ -297,21 +297,26 @@
 	{
 		"name": "Marble",
 		"path": "marble",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Utopia",
 		"path": "Utopia",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Celeste",
 		"path": "celeste",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Pendopo",
 		"path": "pendopo",
+		"status": "DONE"
+	},
+	{
+		"name": "Gallery Test",
+		"path": "gallery-test",
 		"status": ""
 	}
 ]
