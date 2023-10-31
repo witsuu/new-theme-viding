@@ -318,5 +318,15 @@
 		"name": "Gallery Test",
 		"path": "gallery-test",
 		"status": ""
+	},
+	{
+		"name": "Waterfall",
+		"path": "waterfall",
+		"status": ""
+	},
+	{
+		"name": "Capital",
+		"path": "capital",
+		"status": ""
 	}
 ]
