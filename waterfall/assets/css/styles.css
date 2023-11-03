@@ -286,7 +286,7 @@ span {
   width: 100%;
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 42px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -294,7 +294,7 @@ span {
   .title-section h2,
   .title-section p,
   .title-section span {
-    font-size: 2rem;
+    font-size: 3.2rem;
   }
 }
 
@@ -1121,16 +1121,15 @@ ul li {
   }
 }
 [data-anim=zoom-out-image].has-animate {
-  transition-duration: 1500ms;
-  transition-timing-function: ease;
+  transition-timing-function: linear !important;
   transition-delay: 200ms;
   transition-property: transform;
   transform: scale3d(1, 1, 1);
 }
 
 [data-anim=zoom-out-image] {
-  transform: scale3d(1.25, 1.25, 1.25);
-  transition-duration: 5000ms !important;
+  transition-duration: 3000ms;
+  transform: scale3d(1.1, 1.1, 1.1);
   visibility: visible !important;
 }
 
@@ -1145,6 +1144,18 @@ ul li {
     transform: translate3d(0, 100%, 0);
   }
 }
+img[alt=flower] {
+  transform-origin: 40% 100%;
+}
+
+img[alt=grass] {
+  transform-origin: 30% 100%;
+}
+
+img[alt=tree] {
+  transform-origin: 50% 95%;
+}
+
 .countdown {
   display: grid;
   text-align: center;
@@ -2548,22 +2559,12 @@ ul li {
   width: 60%;
   transform: translate(-60%, 0);
 }
-@media (min-width: 992px) {
-  .rsvp-section .orn-1 {
-    width: 40%;
-  }
-}
 .rsvp-section .orn-2 {
   position: absolute;
   bottom: 15%;
   right: 0;
   width: 60%;
   transform: translate(60%, 0) rotate(-5deg);
-}
-@media (min-width: 992px) {
-  .rsvp-section .orn-2 {
-    width: 40%;
-  }
 }
 .rsvp-section .orn-3 {
   position: absolute;
@@ -2575,11 +2576,6 @@ ul li {
 @media (min-width: 768px) {
   .rsvp-section .orn-3 {
     width: 180px;
-  }
-}
-@media (min-width: 992px) {
-  .rsvp-section .orn-3 {
-    width: 200px;
   }
 }
 .rsvp-section .orn-4 {
@@ -2611,11 +2607,6 @@ ul li {
     width: 180px;
   }
 }
-@media (min-width: 992px) {
-  .rsvp-section .orn-5 {
-    width: 200px;
-  }
-}
 .rsvp-section .orn-6 {
   position: absolute;
   bottom: 0;
@@ -2626,11 +2617,6 @@ ul li {
 @media (min-width: 768px) {
   .rsvp-section .orn-6 {
     width: 180px;
-  }
-}
-@media (min-width: 992px) {
-  .rsvp-section .orn-6 {
-    width: 200px;
   }
 }
 .rsvp-section .orn-7 {
@@ -2660,11 +2646,6 @@ ul li {
 @media (min-width: 768px) {
   .rsvp-section .orn-8 {
     width: 180px;
-  }
-}
-@media (min-width: 992px) {
-  .rsvp-section .orn-8 {
-    width: 200px;
   }
 }
 .rsvp-section .rsvp-wrapper {
@@ -3124,6 +3105,7 @@ ul li {
 @media (min-width: 992px) {
   .apology-section .orn-1 {
     width: 25%;
+    transform: translate(-75%, 0);
   }
 }
 .apology-section .orn-2 {
@@ -3141,6 +3123,7 @@ ul li {
 @media (min-width: 992px) {
   .apology-section .orn-2 {
     width: 25%;
+    transform: translate(75%, 0) scaleX(-1);
   }
 }
 .apology-section .appology-wrap {
@@ -3420,6 +3403,7 @@ ul li {
 @media (min-width: 992px) {
   .thank-section .orn-4 {
     width: 40%;
+    transform: translate(-30%, 80%);
   }
 }
 .thank-section .orn-5 {
@@ -3472,6 +3456,7 @@ ul li {
 @media (min-width: 992px) {
   .thank-section .orn-7 {
     width: 40%;
+    transform: translate(30%, 80%) scaleX(-1);
   }
 }
 .thank-section .orn-8 {
