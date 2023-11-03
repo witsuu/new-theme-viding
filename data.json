@@ -328,5 +328,10 @@
 		"name": "Capital",
 		"path": "capital",
 		"status": ""
+	},
+	{
+		"name": "Bersandiang",
+		"path": "bersandiang",
+		"status": ""
 	}
 ]
