@@ -609,7 +609,7 @@ ul li {
   visibility: hidden;
 }
 [data-anim][data-anim].has-animate {
-  animation-duration: 3000ms;
+  animation-duration: 3500ms;
   animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop {
@@ -707,7 +707,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -715,7 +715,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -723,7 +723,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 20%, 0);
   }
   100% {
     transform: translateZ(0);
@@ -731,7 +731,7 @@ ul li {
 }
 @keyframes slideDown {
   0% {
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -20%, 0);
   }
   100% {
     transform: translateZ(0);
@@ -1175,6 +1175,18 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=flower-1] {
+  transform-origin: 20% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 10% 100%;
+}
+
+img[alt=tree] {
+  transform-origin: 55% 95%;
 }
 
 .countdown {
