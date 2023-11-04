@@ -1495,11 +1495,11 @@ img[alt=tree] {
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .greeting-wrapper {
   position: relative;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .title {
   padding: 1rem 0;
@@ -2028,7 +2028,6 @@ img[alt=tree] {
 }
 .couple-section .couple {
   position: relative;
-  overflow: hidden;
 }
 .couple-section .couple.man {
   text-align: left;
@@ -2047,6 +2046,7 @@ img[alt=tree] {
   position: relative;
   aspect-ratio: 5/6;
   margin: 0 auto;
+  overflow: hidden;
 }
 .couple-section .couple .image-wrap .image-element {
   position: relative;
