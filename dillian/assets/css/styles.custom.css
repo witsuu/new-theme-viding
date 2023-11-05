@@ -53,7 +53,7 @@
   bottom: 0;
   left: 0;
   width: 240px;
-  transform: translate(-40%, 0);
+  transform: translate(-40%, 40%);
   z-index: 6;
 }
 @media (min-width: 768px) {
@@ -84,14 +84,19 @@
     width: 420px;
   }
 }
+@media (max-width: 991px) {
+  .couple-section .couple-wrapper {
+    padding-bottom: 3rem;
+  }
+}
 .couple-section .couple .couple-description::before {
   color: #edeeee;
 }
 .couple-section .couple .couple-description::after {
-  z-index: 7;
+  z-index: 8;
 }
 .couple-section .couple .couple-description * {
-  z-index: 8;
+  z-index: 10;
 }
 
 .story-section {
@@ -123,14 +128,13 @@
 }
 .venue-section .orn-2 {
   position: absolute;
-  top: 10%;
+  top: 20%;
   right: 0;
   width: 280px;
   transform: translate(35%, 0) scale(-1);
 }
 @media (min-width: 768px) {
   .venue-section .orn-2 {
-    top: 15%;
     width: 360px;
   }
 }
@@ -166,7 +170,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  width: 280px;
+  width: 240px;
   transform: translate(-40%, -10%) scaleY(-1);
 }
 @media (min-width: 768px) {
@@ -183,7 +187,7 @@
   position: absolute;
   top: 50%;
   right: 0;
-  width: 200px;
+  width: 180px;
   transform: translate(30%, -50%) scaleX(-1);
 }
 @media (min-width: 768px) {
@@ -204,7 +208,7 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 260px;
+  width: 200px;
   transform: translate(40%, -10%) scale(-1);
 }
 @media (min-width: 768px) {
@@ -315,17 +319,17 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: 180px;
+  width: 160px;
   transform: translate(45%, 0) scaleX(-1);
 }
 @media (min-width: 768px) {
   .thank-section .orn-2 {
-    width: 240px;
+    width: 200px;
   }
 }
 @media (min-width: 992px) {
   .thank-section .orn-2 {
-    width: 280px;
+    width: 240px;
   }
 }
 .thank-section .thank {
