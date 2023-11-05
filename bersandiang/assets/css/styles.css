@@ -1531,19 +1531,14 @@ img[alt=tree] {
   opacity: 0.6;
   content: "";
 }
-.reminder-wrap .reminder-content .widget-element {
+.reminder-wrap .widget-element {
   position: absolute;
-  bottom: -8rem;
+  bottom: 0;
   left: 50%;
   width: 100%;
   transform: translate(-50%, 50%);
   text-align: center;
-  z-index: 3;
-}
-@media (min-width: 768px) {
-  .reminder-wrap .reminder-content .widget-element {
-    bottom: -10rem;
-  }
+  z-index: 5;
 }
 .reminder-wrap .btn-reminder {
   z-index: 3;
@@ -1625,8 +1620,7 @@ img[alt=tree] {
 }
 @media (max-width: 991px) {
   .cover-section .cover-wrapper {
-    align-items: flex-end;
-    padding-bottom: 7.5rem;
+    padding-bottom: 8rem;
   }
 }
 .cover-section .cover-wrapper .cover-content {
@@ -2787,6 +2781,7 @@ img[alt=tree] {
   left: 0;
   width: 160px;
   transform: translate(-50%, 40%);
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .rsvp-section .orn-1 {
@@ -2804,6 +2799,7 @@ img[alt=tree] {
   right: 0;
   width: 160px;
   transform: translate(50%, 40%);
+  z-index: 3;
 }
 @media (min-width: 768px) {
   .rsvp-section .orn-2 {

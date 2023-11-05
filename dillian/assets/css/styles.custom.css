@@ -1,0 +1,341 @@
+:root {
+  --color-main: #edeeee;
+  --color-primary: #fefefc;
+  --color-secondary: #cfada6;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid var(--color-dark);
+  box-shadow: none;
+}
+
+.couple-section .orn-2 {
+  bottom: 20%;
+}
+.couple-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 180px;
+  transform: translate(35%, 0) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .couple-section .orn-4 {
+    width: 340px;
+  }
+}
+@media (min-width: 992px) {
+  .couple-section .orn-4 {
+    width: 360px;
+  }
+}
+.couple-section .orn-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 260px;
+  transform: translate(-30%, 0);
+}
+@media (min-width: 768px) {
+  .couple-section .orn-5 {
+    width: 320px;
+  }
+}
+@media (min-width: 992px) {
+  .couple-section .orn-5 {
+    width: 340px;
+    transform: translate(-20%, 0);
+  }
+}
+.couple-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-40%, 0);
+  z-index: 6;
+}
+@media (min-width: 768px) {
+  .couple-section .orn-6 {
+    width: 360px;
+    transform: translate(-35%, 0);
+  }
+}
+@media (min-width: 992px) {
+  .couple-section .orn-6 {
+    width: 420px;
+  }
+}
+.couple-section .orn-7 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(40%, 0) scale(-1);
+}
+@media (min-width: 768px) {
+  .couple-section .orn-7 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .couple-section .orn-7 {
+    width: 420px;
+  }
+}
+.couple-section .couple .couple-description::before {
+  color: #edeeee;
+}
+.couple-section .couple .couple-description::after {
+  z-index: 7;
+}
+.couple-section .couple .couple-description * {
+  z-index: 8;
+}
+
+.story-section {
+  background-color: var(--color-main);
+}
+.story-section .story .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-30%, 35%) rotate(-20deg) scaleY(-1);
+}
+@media (min-width: 768px) {
+  .story-section .story .orn-1 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .story-section .story .orn-1 {
+    width: 380px;
+    transform: translate(-30%, 15%) rotate(-20deg) scaleY(-1);
+  }
+}
+
+@media (max-width: 767px) {
+  .venue-section .orn-1 {
+    transform: translate(-50%, 20%) scaleX(-1) rotate(-45deg);
+  }
+}
+.venue-section .orn-2 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 280px;
+  transform: translate(35%, 0) scale(-1);
+}
+@media (min-width: 768px) {
+  .venue-section .orn-2 {
+    top: 15%;
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .venue-section .orn-2 {
+    top: 25%;
+    width: 420px;
+  }
+}
+.venue-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 240px;
+  transform: translate(-40%, 0) rotate(-20deg) scaleY(-1);
+}
+@media (min-width: 768px) {
+  .venue-section .orn-3 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .venue-section .orn-3 {
+    width: 420px;
+  }
+}
+
+.rsvp-section .rsvp-wrapper {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+.rsvp-section .rsvp-wrapper .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  transform: translate(-40%, -10%) scaleY(-1);
+}
+@media (min-width: 768px) {
+  .rsvp-section .rsvp-wrapper .orn-1 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .rsvp-section .rsvp-wrapper .orn-1 {
+    width: 380px;
+  }
+}
+.rsvp-section .rsvp-wrapper .orn-2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 200px;
+  transform: translate(30%, -50%) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .rsvp-section .rsvp-wrapper .orn-2 {
+    width: 240px;
+  }
+}
+@media (min-width: 992px) {
+  .rsvp-section .rsvp-wrapper .orn-2 {
+    width: 260px;
+  }
+}
+
+.wishes-section .card-form {
+  overflow: hidden;
+}
+.wishes-section .card-form .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 260px;
+  transform: translate(40%, -10%) scale(-1);
+}
+@media (min-width: 768px) {
+  .wishes-section .card-form .orn-2 {
+    width: 340px;
+  }
+}
+@media (min-width: 992px) {
+  .wishes-section .card-form .orn-2 {
+    width: 380px;
+  }
+}
+
+.egift-section .orn-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 280px;
+  transform: translate(-35%, 0) scaleY(-1);
+}
+@media (min-width: 768px) {
+  .egift-section .orn-2 {
+    width: 420px;
+  }
+}
+@media (min-width: 992px) {
+  .egift-section .orn-2 {
+    width: 460px;
+  }
+}
+.egift-section .gift-wrap {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.apology-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200px;
+  transform: translate(-40%, 0);
+}
+@media (min-width: 768px) {
+  .apology-section .orn-1 {
+    width: 280px;
+  }
+}
+@media (min-width: 992px) {
+  .apology-section .orn-1 {
+    width: 320px;
+    transform: translate(-20%, 0);
+  }
+}
+.apology-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 240px;
+  transform: translate(35%, 0) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .apology-section .orn-2 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .apology-section .orn-2 {
+    width: 420px;
+  }
+}
+
+.stream-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 200px;
+  transform: translate(40%, 0) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .stream-section .orn-1 {
+    width: 280px;
+    transform: translate(20%, 0) scaleX(-1);
+  }
+}
+@media (min-width: 992px) {
+  .stream-section .orn-1 {
+    width: 320px;
+  }
+}
+.stream-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 260px;
+  transform: translate(-35%, 0);
+}
+@media (min-width: 768px) {
+  .stream-section .orn-2 {
+    width: 360px;
+  }
+}
+@media (min-width: 992px) {
+  .stream-section .orn-2 {
+    width: 420px;
+  }
+}
+
+.thank-section .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 180px;
+  transform: translate(45%, 0) scaleX(-1);
+}
+@media (min-width: 768px) {
+  .thank-section .orn-2 {
+    width: 240px;
+  }
+}
+@media (min-width: 992px) {
+  .thank-section .orn-2 {
+    width: 280px;
+  }
+}
+.thank-section .thank {
+  overflow: hidden;
+}
+
+img[alt=rose-3] {
+  transform-origin: 2% 8%;
+}
+
+img[alt=rose-4] {
+  transform-origin: 5% 98%;
+}/*# sourceMappingURL=styles.custom.css.map */
