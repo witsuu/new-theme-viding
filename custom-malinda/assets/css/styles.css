@@ -209,9 +209,6 @@ span {
 .btn-custom:focus {
   box-shadow: none;
 }
-.btn-custom:active {
-  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
-}
 .btn-custom path {
   fill: var(--text-button);
 }
