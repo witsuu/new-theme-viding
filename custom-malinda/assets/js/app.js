@@ -53,46 +53,6 @@ ScrollTrigger.create({
 	onUpdate: (self) => (progress.style.transform = `${self.progress}`),
 })
 
-// Egift section
-const giftWrap = document.querySelector(".egift-section");
-if (giftWrap) {
-	const tabsWrap = giftWrap.querySelector(".tabs-gift");
-	const tab = tabsWrap.querySelectorAll(".tab");
-	const glider = tabsWrap.querySelector(".glider");
-	tab.forEach((el) => {
-		el.classList.forEach((c) => {
-			if (c === "active") {
-				giftWrap.querySelectorAll(el.dataset.tab).forEach((tb) => {
-					tb.classList.add("show");
-				});
-
-				ScrollTrigger.refresh();
-			}
-		});
-
-		el.addEventListener("click", (e) => {
-			const flipState = Flip.getState(glider)
-
-			if (tabsWrap.querySelector(".active")) {
-				tabsWrap.querySelector(".active").classList.remove("active");
-				giftWrap.querySelectorAll(".show").forEach((se) => {
-					se.classList.remove("show");
-				});
-			}
-
-			el.classList.add("active");
-			el.appendChild(glider)
-			giftWrap.querySelectorAll(el.dataset.tab).forEach((tb) => {
-				tb.classList.add("show");
-			});
-
-			Flip.from(flipState, { duration: .25, ease: "power1.inOut" })
-
-			ScrollTrigger.refresh();
-		});
-	});
-}
-
 const getLoadedIframe = (ifr) => {
 	return new Promise((resolve, reject) => {
 		ifr.onload = () => resolve("maps loaded!")
@@ -104,29 +64,31 @@ const getLoadedIframe = (ifr) => {
 // Modal Event Handler
 const mapModal = document.querySelectorAll(".modal");
 
-mapModal.forEach(modal => {
-	modal.addEventListener("shown.bs.modal", (e) => {
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		const iframe = e.target.querySelector("iframe")
+if (mapModal) {
+	mapModal.forEach(modal => {
+		modal.addEventListener("shown.bs.modal", (e) => {
+			const loader = e.target.querySelector(".loader-wrapper-modal")
+			const iframe = e.target.querySelector("iframe")
 
-		getLoadedIframe(iframe).then(() => {
-			loader.classList.add("loaded")
-		}).catch(err => {
-			console.log(err)
+			getLoadedIframe(iframe).then(() => {
+				loader.classList.add("loaded")
+			}).catch(err => {
+				console.log(err)
+			})
+		})
+
+		modal.addEventListener("hidden.bs.modal", (e) => {
+			const iframe = e.target.querySelector("iframe")
+			const loader = e.target.querySelector(".loader-wrapper-modal")
+			iframe.src = "";
+			loader.classList.remove("loaded");
 		})
 	})
+}
 
-	modal.addEventListener("hidden.bs.modal", (e) => {
-		const iframe = e.target.querySelector("iframe")
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		iframe.src = "";
-		loader.classList.remove("loaded");
-	})
-})
-
-if (document.querySelector("#zoom-gallery-default")) {
-	$("#zoom-gallery-default").magnificPopup({
-		delegate: "li a",
+if (document.querySelector(".grid-gallery-default")) {
+	$(".grid-gallery-default").magnificPopup({
+		delegate: "a",
 		type: "image",
 		mainClass: "mfp-with-zoom mfp-img-mobile",
 		zoom: {
