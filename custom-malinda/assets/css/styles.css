@@ -594,7 +594,7 @@ ul li {
   animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop {
-  animation-duration: 4000ms;
+  animation-duration: 3000ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
@@ -779,7 +779,7 @@ ul li {
     transform: rotateZ(0);
   }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(8deg);
   }
 }
 @keyframes rotateLeft {
@@ -787,7 +787,7 @@ ul li {
     transform: rotateZ(0);
   }
   100% {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1161,6 +1161,57 @@ ul li {
 @keyframes buttonClick {
   50% {
     transform: scale(0.8);
+  }
+}
+[data-anim=butterfly].has-animate,
+[data-anim=butterfly-2].has-animate {
+  animation-duration: 1000ms !important;
+}
+
+[data-anim=butterfly].has-animate {
+  animation-name: butterfly;
+}
+
+[data-anim=butterfly-2].has-animate {
+  animation-name: butterfly2;
+}
+
+@keyframes butterfly {
+  100% {
+    transform: scaleX(0.5);
+  }
+}
+@keyframes butterfly2 {
+  100% {
+    transform: scaleY(0.5);
+  }
+}
+.image-element {
+  transform-origin: 20% 70%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 70% 95%;
+}
+
+img[alt=butterfly-3] {
+  transform-origin: 30% 90%;
+}
+
+img[alt=butterfly-4] {
+  transform-origin: 20% 65%;
+}
+
+[data-anim=bee].has-animate {
+  animation-name: bee2;
+}
+
+@keyframes bee2 {
+  50% {
+    transform: translate3d(30px, -10px, 0);
+  }
+  100% {
+    transform: translate3d(20px, -20px, 0);
   }
 }
 .countdown {
