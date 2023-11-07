@@ -333,5 +333,20 @@
 		"name": "Bersandiang",
 		"path": "bersandiang",
 		"status": ""
+	},
+	{
+		"name": "Siger",
+		"path": "siger",
+		"status": ""
+	},
+	{
+		"name": "Bolon",
+		"path": "bolon",
+		"status": ""
+	},
+	{
+		"name": "Custom Malinda",
+		"path": "custom-malinda",
+		"status": ""
 	}
 ]
