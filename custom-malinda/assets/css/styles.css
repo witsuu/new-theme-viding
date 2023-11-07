@@ -42,7 +42,7 @@
 }
 
 body {
-  font-family: "DIN", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   color: var(--color-custom);
   -webkit-hyphens: manual;
           hyphens: manual;
@@ -224,7 +224,7 @@ span {
 }
 
 .font-primary {
-  font-family: "DIN", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
 }
 
 .font-secondary {
@@ -245,7 +245,7 @@ span {
 
 .form-control,
 .form-select {
-  font-family: "DIN", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   border: none;
   padding: 0.5rem 1rem;
   background-color: #fff;
