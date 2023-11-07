@@ -2553,33 +2553,39 @@ img[alt=butterfly-4] {
   position: relative;
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
 }
 @media (max-width: 991px) {
   .wishes-section {
     flex-direction: column;
+    align-items: center;
   }
 }
 .wishes-section .wishes-form-wrapper {
   position: relative;
   width: 50%;
   padding: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 @media (max-width: 991px) {
   .wishes-section .wishes-form-wrapper {
-    width: 60%;
-    padding: 3rem 2rem;
+    width: 100%;
+    padding: 5rem 0 3rem;
   }
-}
-@media (max-width: 767px) {
-  .wishes-section .wishes-form-wrapper {
-    width: 80%;
+  .wishes-section .wishes-form-wrapper form {
+    width: 60%;
+    margin: 0 auto;
   }
 }
 @media (max-width: 575px) {
   .wishes-section .wishes-form-wrapper {
     width: 100%;
     padding: 3rem 1.8rem 2rem;
+  }
+  .wishes-section .wishes-form-wrapper form {
+    width: 100%;
   }
 }
 .wishes-section .wishes-form-wrapper .bg {
@@ -2591,6 +2597,7 @@ img[alt=butterfly-4] {
 }
 .wishes-section .card-form {
   background-color: transparent;
+  max-width: auto 0;
 }
 .wishes-section .card-form.card {
   border: none;
