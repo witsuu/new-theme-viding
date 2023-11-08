@@ -218,9 +218,7 @@ span {
 }
 .btn-custom span {
   font-size: 16px;
-}
-.btn-custom.apple-adjust span {
-  padding-top: 0.5em;
+  font-family: "Barlow", sans-serif;
 }
 
 .overlay-image {
@@ -255,7 +253,7 @@ span {
 
 .form-control,
 .form-select {
-  font-family: "Nunito Sans", sans-serif;
+  font-family: "Barlow", sans-serif;
   border: none;
   padding: 0.5rem 1rem;
   background-color: #fff;
