@@ -229,7 +229,7 @@ const configToAppleDevices = () => {
 
 
 function checkOS(n) {
-	if (!n.userAgentData) {
+	if (n.userAgentData) {
 		const hints = ["architecture", "model", "platform", "platformVersion", "uaFullVersion"];
 		n.userAgentData.getHighEntropyValues(hints)
 			.then(ua => {
