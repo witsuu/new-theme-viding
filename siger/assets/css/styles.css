@@ -212,6 +212,12 @@ span {
 .btn-custom:hover {
   color: var(--text-button);
 }
+.btn-custom:focus {
+  box-shadow: none;
+}
+.btn-custom:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
 .btn-custom path {
   fill: var(--text-button);
 }
@@ -601,7 +607,7 @@ ul li {
   visibility: hidden;
 }
 [data-anim][data-anim].has-animate {
-  animation-duration: 3000ms;
+  animation-duration: 3500ms;
   animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop {
@@ -699,7 +705,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -707,7 +713,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -715,7 +721,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 10%, 0);
   }
   100% {
     transform: translateZ(0);
@@ -723,7 +729,7 @@ ul li {
 }
 @keyframes slideDown {
   0% {
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -10%, 0);
   }
   100% {
     transform: translateZ(0);
@@ -786,19 +792,13 @@ ul li {
 }
 
 @keyframes rotateRight {
-  0% {
-    transform: rotateZ(0);
-  }
   100% {
-    transform: rotate(10deg);
+    transform: rotate(8deg);
   }
 }
 @keyframes rotateLeft {
-  0% {
-    transform: rotateZ(0);
-  }
   100% {
-    transform: rotate(-10deg);
+    transform: rotate(-8deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1167,6 +1167,14 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=tree] {
+  transform-origin: 50% 85%;
+}
+
+img[alt=flower] {
+  transform-origin: 45% 100%;
 }
 
 .countdown {
@@ -2516,11 +2524,11 @@ ul li {
   position: relative;
   width: 50%;
   left: 50%;
-  font-size: 38px;
+  font-size: 32px;
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .event-name-header h4 {
-    font-size: 32px;
+    font-size: 28px;
   }
 }
 .venue-section .venue-wrapper .venue-content .event-name-header .elements-wrapper-absolute img {
@@ -2577,6 +2585,7 @@ ul li {
   font-family: "Derivia", cursive;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date h5 {
+  padding-top: 0.5rem;
   font-weight: 600;
   font-size: 32px;
   margin-bottom: 0;
