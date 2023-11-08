@@ -202,6 +202,10 @@ span {
   width: fit-content;
   margin: 0 auto;
   border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
 }
 .btn-custom:hover {
   color: var(--text-button);
@@ -211,6 +215,12 @@ span {
 }
 .btn-custom path {
   fill: var(--text-button);
+}
+.btn-custom span {
+  font-size: 16px;
+}
+.btn-custom.apple-adjust span {
+  padding-top: 0.5em;
 }
 
 .overlay-image {
@@ -245,7 +255,7 @@ span {
 
 .form-control,
 .form-select {
-  font-family: "DIN", sans-serif;
+  font-family: "Nunito Sans", sans-serif;
   border: none;
   padding: 0.5rem 1rem;
   background-color: #fff;
