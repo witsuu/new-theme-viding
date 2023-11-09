@@ -2386,7 +2386,7 @@ img[alt=flower] {
 .story-section .story-description {
   position: relative;
   text-align: left;
-  padding: 0 1rem;
+  padding: 0 1rem 0 0;
 }
 .story-section .story-description .title-section {
   text-align: left;
