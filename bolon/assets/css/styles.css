@@ -709,7 +709,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 10%, 0);
+    transform: translate3d(0, 30%, 0);
   }
 }
 @keyframes slideDown {
@@ -1155,6 +1155,26 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=bg] {
+  animation-timing-function: ease-in-out !important;
+}
+
+img[alt=tree] {
+  transform-origin: 65% 95%;
+}
+
+img[alt=tree-2] {
+  transform-origin: 50% 85%;
+}
+
+img[alt=flower-1] {
+  transform-origin: 40% 100%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 5% 95%;
 }
 
 .countdown {
@@ -1657,6 +1677,10 @@ ul li {
   .header-section .motif {
     height: 33px;
   }
+}
+.header-section .motif .motif-content {
+  position: relative;
+  display: flex;
 }
 .header-section .motif-1 {
   top: 0;
@@ -3214,6 +3238,11 @@ ul li {
   width: 300%;
   transform: translate(-50%, 0);
 }
+@media (min-width: 992px) {
+  .apology-section .motif {
+    width: 200%;
+  }
+}
 .apology-section .motif-1 {
   top: 0;
 }
@@ -3282,6 +3311,11 @@ ul li {
 @media (min-width: 768px) {
   .stream-section .orn-1 {
     width: 60%;
+  }
+}
+@media (min-width: 992px) {
+  .stream-section .orn-1 {
+    width: 40%;
   }
 }
 .stream-section .stream-wrapper {
@@ -3560,6 +3594,7 @@ ul li {
 .thank-section .thank-wrapper .thank {
   position: relative;
   background: linear-gradient(to bottom, var(--color-main), transparent);
+  z-index: 5;
 }
 .thank-section .thank-wrapper .thank-body {
   position: relative;
