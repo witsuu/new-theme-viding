@@ -243,6 +243,10 @@ span {
   transform: scale(-1);
 }
 
+.form-label {
+  margin-bottom: 0;
+}
+
 .form-control,
 .form-select {
   font-family: "Nunito Sans", sans-serif;
