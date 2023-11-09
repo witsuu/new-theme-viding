@@ -1537,13 +1537,13 @@ img[alt=flower-2] {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 4rem 0 3rem;
+  padding: 0 0 3rem;
   transition: opacity 1s ease;
   height: 100vh;
 }
 @media (max-width: 991px) {
   .cover-section .cover-wrapper {
-    padding: 4rem 0 7rem;
+    padding: 0 0 7rem;
     align-items: center;
   }
 }
