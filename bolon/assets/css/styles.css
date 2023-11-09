@@ -185,8 +185,8 @@ span {
 
 @media (max-width: 767px) {
   .container {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
+    padding-left: 2.25rem;
+    padding-right: 2.25rem;
   }
 }
 
@@ -2225,7 +2225,7 @@ img[alt=flower-2] {
 }
 @media (max-width: 575px) {
   .story-section .story .motif {
-    width: 1.2rem;
+    width: 1.8rem;
   }
 }
 .story-section .story .motif-1 {
@@ -2240,6 +2240,7 @@ img[alt=flower-2] {
 .story-section .story-description {
   position: relative;
   text-align: center;
+  padding: 0 0.25rem;
 }
 .story-section .image-wrapper {
   position: relative;
@@ -2281,7 +2282,7 @@ img[alt=flower-2] {
 }
 @media (max-width: 575px) {
   .venue-section .motif {
-    width: 1.2rem;
+    width: 1.8rem;
   }
 }
 .venue-section .motif-1 {
@@ -2421,7 +2422,7 @@ img[alt=flower-2] {
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper .venue-content .card .card-body {
-    padding: 3rem 2rem;
+    padding: 3rem 2.5rem;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
