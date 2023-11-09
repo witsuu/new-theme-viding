@@ -691,6 +691,14 @@ ul li {
   animation-name: slideRight;
 }
 
+[data-anim=slide-right-dove1].has-animate {
+  animation-name: slideRightDove1;
+}
+
+[data-anim=slide-right-dove2].has-animate {
+  animation-name: slideRightDove2;
+}
+
 [data-anim=slide-left].has-animate {
   animation-name: slideLeft;
 }
@@ -709,6 +717,34 @@ ul li {
   }
   100% {
     transform: translateZ(0);
+  }
+}
+@keyframes slideRightDove1 {
+  0% {
+    transform: translate3d(-100px, 0%, 0);
+  }
+  25% {
+    transform: translate3d(-75px, -20%, 0);
+  }
+  50% {
+    transform: translate3d(-50px, 0%, 0);
+  }
+  75% {
+    transform: translate3d(-25px, -20%, 0);
+  }
+}
+@keyframes slideRightDove2 {
+  0% {
+    transform: translate3d(-100px, 0%, 0);
+  }
+  25% {
+    transform: translate3d(-75px, 20%, 0);
+  }
+  50% {
+    transform: translate3d(-50px, 0%, 0);
+  }
+  75% {
+    transform: translate3d(-25px, 20%, 0);
   }
 }
 @keyframes slideLeft {
@@ -1309,13 +1345,14 @@ img[alt=flower] {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 0);
+  width: 120%;
+  transform: translate(-55%, 10%);
 }
 @media (max-width: 991px) {
   .reminder-wrap .bg-1 {
     bottom: 30%;
     width: 150%;
+    transform: translate(-50%, 10%);
   }
 }
 @media (max-width: 575px) {
@@ -1328,8 +1365,8 @@ img[alt=flower] {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 30%);
+  width: 120%;
+  transform: translate(-50%, 40%);
 }
 @media (max-width: 991px) {
   .reminder-wrap .bg-2 {
@@ -1775,14 +1812,15 @@ img[alt=flower] {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 0);
+  width: 120%;
+  transform: translate(-55%, 10%);
   z-index: 3;
 }
 @media (max-width: 991px) {
   .header-section .bg-1 {
     width: 150%;
     bottom: 30%;
+    transform: translate(-50%, 10%);
   }
 }
 @media (max-width: 575px) {
@@ -1795,8 +1833,8 @@ img[alt=flower] {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 30%);
+  width: 120%;
+  transform: translate(-50%, 40%);
   z-index: 3;
 }
 @media (max-width: 991px) {
@@ -3506,13 +3544,14 @@ img[alt=flower] {
   position: absolute;
   bottom: 5%;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 0);
+  width: 120%;
+  transform: translate(-55%, 10%);
 }
 @media (max-width: 991px) {
   .thank-section .bg-1 {
     bottom: 30%;
     width: 150%;
+    transform: translate(-50%, 10%);
   }
 }
 @media (max-width: 575px) {
@@ -3525,8 +3564,8 @@ img[alt=flower] {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 100%;
-  transform: translate(-50%, 30%);
+  width: 120%;
+  transform: translate(-50%, 40%);
 }
 @media (max-width: 991px) {
   .thank-section .bg-2 {

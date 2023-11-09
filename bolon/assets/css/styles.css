@@ -203,6 +203,12 @@ span {
 .btn-custom:hover {
   color: var(--text-button);
 }
+.btn-custom:focus {
+  box-shadow: none;
+}
+.btn-custom:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
 .btn-custom path {
   fill: var(--text-button);
 }
@@ -595,12 +601,13 @@ ul li {
 }
 [data-anim][data-anim].has-animate {
   animation-duration: 3000ms;
-  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
 }
 [data-anim][data-anim].animate-loop {
   animation-duration: 4000ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
+  animation-timing-function: ease-in-out;
 }
 [data-anim][data-anim].animate-loop.animate-paused {
   animation-play-state: paused;
