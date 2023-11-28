@@ -1,4 +1,8 @@
-window.scrollTo(0, 0)
+gsap.to(window, {
+	scrollTo: 0,
+})
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 const waitCoverLoading = (el) => {
 	return new Promise((resolve) => {
@@ -11,12 +15,28 @@ const waitCoverLoading = (el) => {
 document.body.style.overflow = "hidden"
 
 document.querySelector("#btn-envelope").addEventListener("click", () => {
-	document.body.style.overflow = "auto"
+	gsap.to(window, {
+		duration: 1,
+		scrollTo: "#main-section",
+		ease: "power1.inOut"
+	})
 
-	document.querySelector(".cover-section").classList.add("cover-opened")
+	ScrollTrigger.refresh()
 
 	runAnimationOrnament()
 	runAnimationLoop()
+})
+
+document.querySelector("#button-header").addEventListener("click", () => {
+	document.body.style.overflow = "auto"
+
+	gsap.to(window, {
+		duration: 1,
+		scrollTo: "#content",
+		ease: "power1.inOut"
+	})
+
+	ScrollTrigger.refresh()
 })
 
 var previousScroll = 70;
@@ -40,8 +60,6 @@ $(window).scroll(function (e) {
 const cd = document.querySelector(".countdown");
 
 if (cd) Countdown(cd.getAttribute("date"))
-
-gsap.registerPlugin(ScrollTrigger, Flip)
 
 // Progress Bar
 let progress = document.querySelector(".progress");
@@ -182,3 +200,34 @@ const runAnimationLoop = () => {
 		})
 	})
 }
+
+const imgArr = ["./assets/images/orn-39.png", "./assets/images/orn-40.png"]
+
+const widgetElementWithOrn = document.querySelectorAll(".widget-element.with-orn")
+
+widgetElementWithOrn.forEach(el => {
+	const ornWrap = document.createElement("div")
+	ornWrap.classList.add(`ornaments-wrapper`)
+
+	for (let i = 0; i < 2; i++) {
+		const ne = document.createElement("div")
+		ne.classList.add(`btn-orn-${i + 1}`)
+
+		const imgE = document.createElement("div")
+		imgE.classList.add("image-element")
+
+
+		const img = document.createElement('img')
+		img.classList.add("img-fluid")
+
+		img.src = imgArr[i]
+
+		imgE.appendChild(img)
+
+		ne.appendChild(imgE)
+
+		ornWrap.appendChild(ne)
+	}
+
+	el.appendChild(ornWrap)
+})

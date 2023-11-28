@@ -13,6 +13,7 @@
   --color-3: #b1ce91;
   --color-4: #cf98c5;
   --text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+  scroll-behavior: unset;
 }
 
 body {
@@ -91,6 +92,31 @@ body {
 }
 .main-app .widget-element {
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  transition: all 0.2s ease-in-out;
+}
+.main-app .widget-element:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
+.main-app .widget-element .btn-orn-1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 90px;
+  transform: translate(-40%, -60%);
+}
+.main-app .widget-element .btn-orn-2 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 100px;
+  transform: translate(42%, -47%);
+}
+.main-app .widget-element.with-orn .btn-custom {
+  padding: 0.25rem 3.5rem;
 }
 
 .logo-viding {
@@ -182,20 +208,17 @@ span {
 
 .btn-custom {
   background-color: var(--color-secondary);
-  padding: 0.25rem 1.5rem;
+  padding: 0.25rem 2.5rem;
   transition: all 0.3s ease-in-out;
   color: var(--text-button);
   width: -moz-fit-content;
   width: fit-content;
   margin: 0 auto;
-  border-radius: 50px;
+  border-radius: 20px;
   box-shadow: 2px 2px 0 rgba(0, 0, 0, 0.6) !important;
 }
 .btn-custom:hover {
   color: var(--text-button);
-}
-.btn-custom:active {
-  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
 }
 .btn-custom path {
   fill: var(--text-button);
@@ -1290,15 +1313,10 @@ ul li {
 }
 
 .cover-section {
-  position: fixed;
-  z-index: 1000;
-  transition: all 1s ease-out;
+  position: relative;
   background-color: var(--color-main);
   overflow: hidden;
   width: 100%;
-}
-.cover-section.cover-opened {
-  transform: translateY(-100%);
 }
 .cover-section .orn-1 {
   position: absolute;
@@ -1472,6 +1490,16 @@ ul li {
   width: 160px;
   margin: 0 auto 0.5rem;
 }
+@media (max-width: 1199px) {
+  .cover-section .cover-wrapper .cover-content .cover-body .cover-ornament {
+    width: 140px;
+  }
+}
+@media (max-width: 991px) {
+  .cover-section .cover-wrapper .cover-content .cover-body .cover-ornament {
+    width: 120px;
+  }
+}
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
   padding: 1rem;
   text-align: center;
@@ -1522,18 +1550,25 @@ ul li {
   width: 100px;
   transform: translate(-50%, 10%);
 }
+.header-section .orn-23 .image-element {
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+.header-section .orn-23 .image-element:active {
+  transform: matrix(0.95, 0, 0, 0.95, 0, 0);
+}
 .header-section .orn-24 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 25%;
+  width: 30%;
   transform: translate(30%, -30%);
 }
 .header-section .orn-25 {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 45%;
+  width: 50%;
   transform: translate(-10%, 60%) rotate(10deg) scaleX(-1);
 }
 .header-section .orn-26 {
@@ -1679,7 +1714,7 @@ ul li {
 }
 .couple-section {
   position: relative;
-  text-align: center;
+  overflow: hidden;
 }
 .couple-section .and {
   font-weight: 600;
@@ -1705,13 +1740,192 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
-  padding: 5rem 0 0;
+  padding: 10rem 0 0;
   background: linear-gradient(to bottom, var(--color-2), var(--color-1));
 }
 @media (max-width: 767px) {
   .couple-section .couple-wrapper {
-    padding: 3rem 0 0;
+    padding: 8rem 0 0;
   }
+}
+.couple-section .couple-wrapper .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, -20%);
+}
+.couple-section .couple-wrapper .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 56%;
+  width: 18%;
+  transform: translate(0, -55%) scale(-1);
+}
+.couple-section .couple-wrapper .orn-3 {
+  position: absolute;
+  top: 3%;
+  right: 55%;
+  width: 5%;
+}
+.couple-section .couple-wrapper .orn-4 {
+  position: absolute;
+  top: 0;
+  right: 64%;
+  width: 14%;
+  transform: scaleY(-1);
+}
+.couple-section .couple-wrapper .orn-5 {
+  position: absolute;
+  top: 0;
+  right: 75.5%;
+  width: 18%;
+  transform: translate(0, -60%) rotate(-5deg) scale(-1);
+}
+.couple-section .couple-wrapper .orn-6 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 15%;
+  transform: translate(-10%, 0);
+}
+.couple-section .couple-wrapper .orn-7 {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 70%;
+  transform: translate(-30%, 0) rotate(20deg) scale(-1);
+}
+.couple-section .couple-wrapper .orn-8 {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 150%;
+  transform: translate(-40%, 0%) rotate(20deg);
+}
+.couple-section .couple-wrapper .orn-9 {
+  position: absolute;
+  top: 0;
+  left: 58%;
+  width: 18%;
+  transform: translate(0, -40%) rotate(-10deg) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-10 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(-25%, 5%) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-11 {
+  position: absolute;
+  top: 1%;
+  left: 77%;
+  width: 10%;
+  transform: scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-12 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  transform: translate(35%, -13%) rotate(-90deg) scaleY(-1);
+}
+.couple-section .couple-wrapper .orn-13 {
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 5%;
+  transform: translate(-10%, -30%);
+}
+.couple-section .couple-wrapper .orn-14 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-52%, 20%);
+}
+.couple-section .couple-wrapper .orn-15 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 30%;
+  transform: translate(10%, -50%) rotate(-35deg) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-16 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-15%, -5%) rotate(15deg);
+}
+.couple-section .couple-wrapper .orn-17 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-20%, 0);
+}
+.couple-section .couple-wrapper .orn-18 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  transform: translate(30%, 0);
+}
+.couple-section .couple-wrapper .orn-19 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 50%;
+  transform: translate(-35%, -50%);
+}
+.couple-section .couple-wrapper .orn-20 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, 0%);
+}
+.couple-section .couple-wrapper .orn-21 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  transform: translate(-10%, 5%) rotate(-20deg) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-22 {
+  position: absolute;
+  bottom: 0;
+  left: 42%;
+  width: 35%;
+  transform: translate(-50%, 20%);
+}
+.couple-section .couple-wrapper .orn-23 {
+  position: absolute;
+  top: 10%;
+  right: 0;
+  width: 26%;
+}
+.couple-section .couple-wrapper .orn-24 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+}
+.couple-section .couple-wrapper .orn-25 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(-38%, 0) rotate(-40deg);
+}
+.couple-section .couple-wrapper .orn-26 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 80%;
+  transform: translate(23%, 5%) rotate(-10deg) scaleX(-1);
 }
 .couple-section .couple-body {
   position: relative;
@@ -1844,6 +2058,42 @@ ul li {
     padding: 3rem 0;
   }
 }
+.venue-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  transform: translate(30%, -30%);
+}
+.venue-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(-20%, 60%) rotate(10deg) scaleX(-1);
+}
+.venue-section .orn-3 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 20%;
+  transform: translate(-45%, -50%) rotate(45deg) scaleY(-1);
+}
+.venue-section .orn-4 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 60%;
+  transform: translate(40%, -40%) rotate(20deg) scaleY(-1);
+}
+.venue-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 25%;
+  transform: translate(40%, 15%);
+  z-index: 3;
+}
 .venue-section .venue-wrapper {
   position: relative;
   z-index: 3;
@@ -1882,6 +2132,7 @@ ul li {
   overflow: hidden;
   border: none;
   text-align: center;
+  z-index: 5;
 }
 @media (min-width: 768px) {
   .venue-section .venue-wrapper .venue-content .card {
@@ -2086,6 +2337,89 @@ ul li {
   position: relative;
   background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-2) 75%, var(--color-1) 100%);
 }
+.wishes-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 10%;
+  transform: translate(-10%, 0);
+}
+.wishes-section .orn-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16%;
+  transform: translate(5%, 0);
+}
+.wishes-section .orn-3 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 20%;
+  transform: translate(-15%, 0);
+}
+.wishes-section .orn-4 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20%;
+  transform: translate(22%, 0) rotate(-10deg) scaleX(-1);
+}
+.wishes-section .orn-5 {
+  position: absolute;
+  top: 1rem;
+  right: 0;
+  width: 10%;
+  transform: translate(30%, 0) rotate(-4deg);
+}
+.wishes-section .orn-6 {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  width: 120%;
+  transform: translate(-50%, -50%) scaleX(-1);
+}
+.wishes-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 200%;
+  transform: translate(-50%, 70%) rotate(20deg) scaleX(-1);
+}
+.wishes-section .orn-8 {
+  position: absolute;
+  top: 70%;
+  left: -70%;
+  width: 40%;
+}
+.wishes-section .orn-9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(0%, 50%) rotate(60deg) scaleX(-1);
+}
+.wishes-section .orn-10 {
+  position: absolute;
+  bottom: 0;
+  right: 35%;
+  width: 35%;
+  transform: translate(0, 60%);
+}
+.wishes-section .orn-11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  transform: translate(-12%, 95%);
+}
+.wishes-section .orn-12 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  transform: translate(0, 50%) rotate(30deg);
+}
 .wishes-section .wishes-form-wrapper {
   position: relative;
   padding: 5rem 0 0;
@@ -2131,7 +2465,7 @@ ul li {
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
-  max-height: 32rem;
+  max-height: 20rem;
   overflow: auto;
   padding-right: 1rem;
   padding-left: 1.5rem;
@@ -2205,6 +2539,27 @@ ul li {
   .egift-section {
     padding: 3rem 0;
   }
+}
+.egift-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-30%, 0) scaleX(-1);
+}
+.egift-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(-20%, 60%) rotate(10deg) scaleX(-1);
+}
+.egift-section .orn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 10%;
+  transform: translate(25%, -25%);
 }
 .egift-section .gift-wrap {
   position: relative;
@@ -2340,6 +2695,17 @@ ul li {
     padding: 3rem 0;
   }
 }
+.gallery-section .gallery-default {
+  position: relative;
+}
+.gallery-section .gallery-default .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 10%;
+  transform: translate(-50%, -65%);
+  z-index: 3;
+}
 .gallery-section .img-gallery {
   height: auto;
   width: 100%;
@@ -2430,6 +2796,21 @@ ul li {
   width: 100%;
   height: 100%;
 }
+.stream-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  transform: translate(30%, -20%) scaleX(-1);
+}
+.stream-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 20%;
+  transform: translate(-35%, 20%) scaleX(-1);
+  z-index: 3;
+}
 .stream-section .stream-wrapper {
   position: relative;
 }
@@ -2463,13 +2844,96 @@ ul li {
 
 .thank-section {
   position: relative;
-  padding: 5rem 0 10rem;
+  padding: 5rem 0 15rem;
   text-align: center;
 }
 @media (max-width: 767px) {
   .thank-section {
-    padding: 3rem 0 8rem;
+    padding: 3rem 0 10rem;
   }
+}
+.thank-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 37%;
+  transform: translate(-50%, -8%) scaleX(-1);
+}
+.thank-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 27%;
+  transform: translate(-50%, 40%);
+}
+.thank-section .orn-3 {
+  position: absolute;
+  left: 63%;
+  bottom: 0;
+  width: 12%;
+  transform: translate(0, 10%);
+}
+.thank-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  left: 72%;
+  width: 22%;
+  transform: translate(0, 60%);
+}
+.thank-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18%;
+  transform: translate(20%, 0) scale(-1);
+}
+.thank-section .orn-6 {
+  position: absolute;
+  top: 18%;
+  left: 0;
+  width: 65%;
+  transform: scale(-1);
+}
+.thank-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 120%;
+  transform: translate(-35%, 58%) rotate(20deg);
+}
+.thank-section .orn-8 {
+  position: absolute;
+  bottom: 0;
+  right: 67%;
+  width: 12%;
+  transform: translate(0, 10%);
+}
+.thank-section .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 76%;
+  width: 10%;
+  transform: translate(0, -10%);
+}
+.thank-section .orn-10 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 27%;
+  transform: translate(-40%, 30%) rotate(-30deg);
+}
+.thank-section .orn-11 {
+  position: absolute;
+  top: 69%;
+  right: 12%;
+  width: 25%;
+}
+.thank-section .orn-12 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(50%, -70%) rotate(45deg) scaleY(-1);
 }
 .thank-section .thank-wrapper {
   position: relative;
