@@ -317,36 +317,41 @@
 	{
 		"name": "Gallery Test",
 		"path": "gallery-test",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Waterfall",
 		"path": "waterfall",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Capital",
 		"path": "capital",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Bersandiang",
 		"path": "bersandiang",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Siger",
 		"path": "siger",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Bolon",
 		"path": "bolon",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom Malinda",
 		"path": "custom-malinda",
+		"status": "DONE"
+	},
+	{
+		"name": "Custom DD",
+		"path": "custom-dd",
 		"status": ""
 	}
 ]
