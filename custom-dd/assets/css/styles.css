@@ -1796,13 +1796,13 @@ img[alt=orn-35] {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 4rem 0 3rem;
+  padding: 3rem 0;
   transition: opacity 1s ease;
   height: 100vh;
 }
 @media (max-width: 991px) {
   .cover-section .cover-wrapper {
-    padding: 4rem 0 7rem;
+    padding: 2rem 0 7rem;
   }
 }
 .cover-section .cover-wrapper .cover-content {
@@ -1985,8 +1985,13 @@ img[alt=orn-35] {
 }
 .header-section .header-content .header {
   position: relative;
-  padding: 4rem 0 5rem;
+  padding: 3rem 0;
   height: 100%;
+}
+@media (max-width: 575px) {
+  .header-section .header-content .header {
+    padding: 1rem 0 7rem;
+  }
 }
 .header-section .header-content .header .header-title {
   position: relative;
