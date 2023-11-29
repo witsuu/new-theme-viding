@@ -1192,6 +1192,74 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=orn-1] {
+  transform-origin: 10% 80%;
+}
+
+img[alt=orn-2] {
+  transform-origin: 70% 0%;
+}
+
+img[alt=orn-4] {
+  transform-origin: 35% 10%;
+}
+
+img[alt=orn-6] {
+  transform-origin: 20% 10%;
+}
+
+img[alt=orn-9] {
+  transform-origin: 60% 90%;
+}
+
+img[alt=orn-12] {
+  transform-origin: 45% 85%;
+}
+
+img[alt=orn-13] {
+  transform-origin: 50% 100%;
+}
+
+img[alt=orn-15] {
+  transform-origin: 70% 75%;
+}
+
+img[alt=orn-16] {
+  transform-origin: 60% 90%;
+}
+
+img[alt=orn-17] {
+  transform-origin: 100% 50%;
+}
+
+img[alt=orn-20] {
+  transform-origin: 50% 80%;
+}
+
+img[alt=orn-21] {
+  transform-origin: 25% 0%;
+}
+
+img[alt=orn-24] {
+  transform-origin: 100% 0%;
+}
+
+img[alt=orn-27] {
+  transform-origin: 0% 20%;
+}
+
+img[alt=orn-30] {
+  transform-origin: 10% 80%;
+}
+
+img[alt=orn-34] {
+  transform-origin: 55% 75%;
+}
+
+img[alt=orn-35] {
+  transform-origin: 10% 100%;
+}
+
 .countdown {
   display: flex;
   text-align: center;
