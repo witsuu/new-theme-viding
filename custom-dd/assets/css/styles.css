@@ -145,6 +145,8 @@ h1 {
   line-height: 1.2;
   text-shadow: var(--text-shadow);
   font-weight: 500;
+  padding-right: 0.25rem;
+  margin-bottom: 0;
 }
 @media (max-width: 767px) {
   h1 {
@@ -174,6 +176,7 @@ small {
   font-size: 12px;
 }
 
+p,
 span {
   font-size: 16px;
   text-rendering: optimizeLegibility;
@@ -2129,9 +2132,11 @@ img[alt=orn-35] {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   position: relative;
   z-index: 3;
+  padding: 1rem 0;
 }
 @media (min-width: 768px) {
   .couple-section .and {
@@ -2145,6 +2150,9 @@ img[alt=orn-35] {
   position: relative;
   font-size: 140px;
   font-family: "Mountains of Christmas", serif;
+  padding-right: 0.25rem;
+  margin-bottom: 1rem;
+  line-height: 1;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -2402,8 +2410,8 @@ img[alt=orn-35] {
 .couple-section .couple-wrapper .orn-22 {
   position: absolute;
   bottom: 0;
-  left: 42%;
-  width: 35%;
+  left: 40%;
+  width: 25%;
   transform: translate(-50%, 20%);
 }
 .couple-section .couple-wrapper .orn-23 {
@@ -2447,6 +2455,20 @@ img[alt=orn-35] {
   .couple-section .couple-wrapper .orn-26 {
     transform: translate(26%, 5%) rotate(-10deg) scaleX(-1);
   }
+}
+.couple-section .couple-wrapper .orn-27 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  transform: translate(-30%, 10%);
+}
+.couple-section .couple-wrapper .orn-28 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 60%;
+  transform: translate(40%, 10%) scale(-1);
 }
 .couple-section .couple-body {
   position: relative;
@@ -2871,10 +2893,45 @@ img[alt=orn-35] {
 .rsvp-section {
   position: relative;
   padding: 5rem 0;
+  background: linear-gradient(to bottom, var(--color-4), var(--color-1));
 }
 @media (max-width: 767px) {
   .rsvp-section {
     padding: 3rem 0;
+  }
+}
+.rsvp-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-40%, 0) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .rsvp-section .orn-1 {
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .rsvp-section .orn-1 {
+    width: 50%;
+  }
+}
+.rsvp-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 20%;
+  transform: translate(35%, 0) scaleY(-1);
+}
+@media (max-width: 991px) {
+  .rsvp-section .orn-2 {
+    width: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .rsvp-section .orn-2 {
+    width: 45%;
   }
 }
 .rsvp-section .rsvp-wrapper {
@@ -2886,13 +2943,26 @@ img[alt=orn-35] {
     padding: 2rem 1rem;
   }
 }
+.rsvp-section .rsvp-wrapper .frame {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.rsvp-section .rsvp-wrapper .frame .image-element {
+  height: 100%;
+}
+.rsvp-section .rsvp-wrapper .frame .image-element .img-fluid {
+  height: 100%;
+}
 .rsvp-section .rsvp-wrapper .rsvp-form {
   position: relative;
 }
 
 .wishes-section {
   position: relative;
-  background: linear-gradient(to bottom, var(--color-1) 0%, var(--color-2) 75%, var(--color-1) 100%);
+  background: linear-gradient(to bottom, var(--color-2) 0%, var(--color-1) 100%);
 }
 .wishes-section .orn-1 {
   position: absolute;
@@ -3348,7 +3418,7 @@ img[alt=orn-35] {
 .gallery-section {
   position: relative;
   padding: 5rem 0;
-  background: linear-gradient(to bottom, var(--color-4), var(--color-1));
+  background: linear-gradient(to bottom, var(--color-1), var(--color-2));
 }
 @media (max-width: 767px) {
   .gallery-section {
