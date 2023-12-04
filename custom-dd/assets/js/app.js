@@ -107,6 +107,10 @@ if (document.querySelector("#zoom-gallery-default")) {
 		delegate: "li a",
 		type: "image",
 		mainClass: "mfp-with-zoom mfp-img-mobile",
+		gallery: {
+			enabled: true,
+			navigateByImgClick: true
+		},
 		zoom: {
 			enabled: true,
 			easing: "ease-in-out",
