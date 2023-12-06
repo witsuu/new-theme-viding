@@ -705,6 +705,10 @@ ul li {
   animation-name: slideDown;
 }
 
+[data-anim=dash].has-animate {
+  animation-name: dash;
+}
+
 @keyframes slideRight {
   0% {
     transform: translate3d(-30%, 0, 0);
@@ -715,7 +719,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -845,6 +849,10 @@ ul li {
   animation-name: bounce;
 }
 
+[data-anim=zoom-out-no].has-animate {
+  animation-name: zoomOutNo;
+}
+
 @keyframes zoomIn {
   0% {
     transform: scale3d(0.3, 0.3, 0.3);
@@ -916,6 +924,11 @@ ul li {
   }
   100% {
     transform: scale3d(1, 1, 1);
+  }
+}
+@keyframes zoomOutNo {
+  100% {
+    transform: scale3d(1.1, 1.1, 1.1);
   }
 }
 @keyframes zoomOutUp {
@@ -1195,6 +1208,30 @@ ul li {
   visibility: visible !important;
 }
 
+[data-anim=pulse-anim].has-animate {
+  animation-name: pulseAnim;
+  animation-direction: normal !important;
+  animation-timing-function: linear;
+}
+
+@keyframes pulseAnim {
+  0% {
+    box-shadow: 0 0 0 0px rgba(227, 101, 29, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 20px rgba(227, 101, 29, 0);
+  }
+}
+@media (min-width: 992px) {
+  @keyframes pulseAnim {
+    0% {
+      box-shadow: 0 0 0 0px rgba(227, 101, 29, 0.4);
+    }
+    100% {
+      box-shadow: 0 0 0 30px rgba(227, 101, 29, 0);
+    }
+  }
+}
 img[alt=orn-1] {
   transform-origin: 10% 80%;
 }
@@ -2059,6 +2096,62 @@ img[alt=orn-35] {
 @media (max-width: 991px) {
   .header-section .header-content .header .header-title-content {
     flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+.header-section .header-content .header .header-title-content .arrow-header {
+  position: absolute;
+  bottom: 0;
+  left: 100%;
+  width: 100px;
+}
+@media (max-width: 991px) {
+  .header-section .header-content .header .header-title-content .arrow-header {
+    bottom: 20%;
+    left: 90%;
+  }
+}
+@media (max-width: 767px) {
+  .header-section .header-content .header .header-title-content .arrow-header {
+    bottom: 0;
+    left: 80%;
+  }
+}
+@media (max-width: 991px) {
+  .header-section .header-content .header .header-title-content .arrow-header .arrow {
+    width: 70px;
+  }
+}
+@media (max-width: 767px) {
+  .header-section .header-content .header .header-title-content .arrow-header .arrow {
+    width: 50px;
+  }
+}
+.header-section .header-content .header .header-title-content .arrow-header .arrow-description {
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  width: 300px;
+  text-align: left;
+}
+@media (max-width: 767px) {
+  .header-section .header-content .header .header-title-content .arrow-header .arrow-description {
+    top: 80%;
+  }
+}
+.header-section .header-content .header .header-title-content .arrow-header .arrow-description span {
+  display: block;
+  font-family: "Mountains of Christmas", serif;
+  font-size: 32px;
+}
+@media (max-width: 991px) {
+  .header-section .header-content .header .header-title-content .arrow-header .arrow-description span {
+    font-size: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .header-section .header-content .header .header-title-content .arrow-header .arrow-description span {
+    font-size: 14px;
   }
 }
 .header-section .header-content .header #scroll-animate {
@@ -2066,7 +2159,7 @@ img[alt=orn-35] {
 }
 .header-section .header-content .header .image-wrapper {
   position: relative;
-  width: 75%;
+  width: 70%;
   height: auto;
   aspect-ratio: 6/4;
   margin: 0 auto;
@@ -2108,6 +2201,11 @@ img[alt=orn-35] {
   100% {
     transform: translate3d(0, 100%, 0);
     opacity: 0;
+  }
+}
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 100px;
   }
 }
 [data-anim=zoom-in-main].has-animate {
