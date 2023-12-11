@@ -1360,7 +1360,7 @@ img[alt=orn-35] {
 .countdown .hours .huruf,
 .countdown .minutes .huruf,
 .countdown .seconds .huruf {
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 600;
 }
 @media (max-width: 375px) {
@@ -1377,7 +1377,7 @@ img[alt=orn-35] {
 .countdown .seconds .angka {
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 46px;
+  font-size: 48px;
   font-family: "Mountains of Christmas", serif;
 }
 @media (max-width: 767px) {
@@ -3567,6 +3567,28 @@ img[alt=orn-35] {
 }
 .egift-section .gift-content {
   position: relative;
+}
+.egift-section .card {
+  background-color: transparent;
+  border: none;
+  width: -moz-fit-content;
+  width: fit-content;
+  min-width: 60%;
+  max-width: 100%;
+  margin: 3rem auto 0;
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.15));
+}
+@media (max-width: 575px) {
+  .egift-section .card {
+    width: 100%;
+  }
+}
+.egift-section .card .card-body {
+  --mask: radial-gradient(25px at 25px 25px, #0000 98%, #000) -25px -25px;
+  background-color: var(--color-3);
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+  padding: 2rem 3rem;
 }
 
 @keyframes tab {
