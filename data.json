@@ -352,6 +352,11 @@
 	{
 		"name": "Custom DD",
 		"path": "custom-dd",
+		"status": "DONE"
+	},
+	{
+		"name": "Custom SR",
+		"path": "custom-sr",
 		"status": ""
 	}
 ]
