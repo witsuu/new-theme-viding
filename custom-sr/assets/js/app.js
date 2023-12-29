@@ -243,10 +243,12 @@ const runAnimationFixed=()=>{
 const animOpenCover=()=>{
 	document.querySelectorAll('.cover-section img[alt="gadang-2"]').forEach(el=>{
 		el.classList.add("has-animate")
+		el.dataset.animDuration = '2000ms'
 		el.dataset.anim = 'slide-left2'
 	})
 	document.querySelectorAll('.cover-section img[alt="orn-3"]').forEach(el=>{
 		el.classList.add("has-animate")
+		el.dataset.animDuration = '2000ms'
 		el.dataset.anim = 'slide-down3'
 	})
 }
