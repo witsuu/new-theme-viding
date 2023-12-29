@@ -669,6 +669,10 @@ ul li {
   animation-name: slideLeft;
 }
 
+[data-anim=slide-left2].has-animate {
+  animation-name: slideLeft2;
+}
+
 [data-anim=slide-up].has-animate {
   animation-name: slideUp;
 }
@@ -685,6 +689,10 @@ ul li {
   animation-name: slideDown2;
 }
 
+[data-anim=slide-down3].has-animate {
+  animation-name: slideDown3;
+}
+
 @keyframes slideRight {
   0% {
     transform: translate3d(-10%, 0, 0);
@@ -699,6 +707,11 @@ ul li {
   }
   100% {
     transform: translateZ(0);
+  }
+}
+@keyframes slideLeft2 {
+  100% {
+    transform: translate3d(-200px, 0, 0);
   }
 }
 @keyframes slideUp {
@@ -731,6 +744,11 @@ ul li {
   }
   100% {
     transform: translateZ(0);
+  }
+}
+@keyframes slideDown3 {
+  100% {
+    transform: translate3d(0, 200px, 0);
   }
 }
 [data-anim=slide-rotate-left].has-animate {
@@ -1485,7 +1503,7 @@ ul li {
   width: 100%;
 }
 .cover-section.cover-opened {
-  transform: scale(1.5);
+  transform: scale(1.65);
   opacity: 0;
   pointer-events: none;
 }

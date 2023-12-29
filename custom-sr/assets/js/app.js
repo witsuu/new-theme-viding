@@ -15,6 +15,7 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 
 	document.querySelector(".cover-section").classList.add("cover-opened")
 
+	animOpenCover()
 	runAnimationOrnament()
 	runAnimationLoop()
 
@@ -236,5 +237,16 @@ const runAnimationFixed=()=>{
 			el.classList.add("animation-loop")
 			el.dataset.loadAnimation = true;
 		}
+	})
+}
+
+const animOpenCover=()=>{
+	document.querySelectorAll('.cover-section img[alt="gadang-2"]').forEach(el=>{
+		el.classList.add("has-animate")
+		el.dataset.anim = 'slide-left2'
+	})
+	document.querySelectorAll('.cover-section img[alt="orn-3"]').forEach(el=>{
+		el.classList.add("has-animate")
+		el.dataset.anim = 'slide-down3'
 	})
 }
