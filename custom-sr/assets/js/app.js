@@ -17,6 +17,8 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 
 	runAnimationOrnament()
 	runAnimationLoop()
+
+	document.querySelector(".ornament-fixed").style.zIndex = 8
 })
 
 var previousScroll = 70;
@@ -186,7 +188,7 @@ const runAnimationOrnamentCover = () => {
 	document.querySelectorAll(".cover-section [data-anim]").forEach(vs => {
 		ScrollTrigger.create({
 			trigger: vs,
-			start: "top bottom",
+			start: vs.dataset.animAnchor ? vs.dataset.animAnchor : "top bottom",
 			onToggle: self => {
 				if (self.isActive) {
 					if (vs.dataset.animDuration) vs.style.animationDuration = vs.dataset.animDuration
@@ -217,8 +219,22 @@ const runAnimationLoop = () => {
 	document.querySelectorAll("[data-animationloop]").forEach(al => {
 		ScrollTrigger.create({
 			trigger: al,
-			start: "-10% bottom",
 			onToggle: self => self.isActive ? al.classList.add("animation-loop") : al.classList.remove("animation-loop")
 		})
+	})
+}
+const runAnimationFixed=()=>{
+	document.querySelectorAll("[data-anim-fixed]").forEach(el=>{
+		if (el.dataset.animDelay) {
+			setTimeout(() => {
+				el.classList.add("has-animate")
+				el.classList.add("animation-loop")
+				el.dataset.loadAnimation = true;
+			}, el.dataset.animDelay)
+		} else {
+			el.classList.add("has-animate")
+			el.classList.add("animation-loop")
+			el.dataset.loadAnimation = true;
+		}
 	})
 }
