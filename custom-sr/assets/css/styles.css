@@ -572,22 +572,27 @@ ul li {
   color: var(--color-dark);
 }
 
-[data-anim][data-anim], [data-anim-fixed][data-anim-fixed] {
+[data-anim][data-anim],
+[data-anim-fixed][data-anim-fixed] {
   will-change: transform;
 }
-[data-anim][data-anim].animation-invisible, [data-anim-fixed][data-anim-fixed].animation-invisible {
+[data-anim][data-anim].animation-invisible,
+[data-anim-fixed][data-anim-fixed].animation-invisible {
   visibility: hidden;
 }
-[data-anim][data-anim].has-animate, [data-anim-fixed][data-anim-fixed].has-animate {
+[data-anim][data-anim].has-animate,
+[data-anim-fixed][data-anim-fixed].has-animate {
   animation-duration: 3000ms;
   animation-timing-function: ease-in-out;
 }
-[data-anim][data-anim].animate-loop, [data-anim-fixed][data-anim-fixed].animate-loop {
+[data-anim][data-anim].animate-loop,
+[data-anim-fixed][data-anim-fixed].animate-loop {
   animation-duration: 4000ms;
   animation-iteration-count: infinite;
   animation-direction: alternate;
 }
-[data-anim][data-anim].animate-loop.animate-paused, [data-anim-fixed][data-anim-fixed].animate-loop.animate-paused {
+[data-anim][data-anim].animate-loop.animate-paused,
+[data-anim-fixed][data-anim-fixed].animate-loop.animate-paused {
   animation-play-state: paused;
 }
 
@@ -671,6 +676,7 @@ ul li {
 
 [data-anim=slide-left2].has-animate {
   animation-name: slideLeft2;
+  animation-fill-mode: forwards;
 }
 
 [data-anim=slide-up].has-animate {
@@ -691,6 +697,7 @@ ul li {
 
 [data-anim=slide-down3].has-animate {
   animation-name: slideDown3;
+  animation-fill-mode: forwards;
 }
 
 @keyframes slideRight {
@@ -712,6 +719,13 @@ ul li {
 @keyframes slideLeft2 {
   100% {
     transform: translate3d(-200px, 0, 0);
+  }
+}
+@media (min-width: 768px) {
+  @keyframes slideLeft2 {
+    100% {
+      transform: translate3d(-300px, 0, 0);
+    }
   }
 }
 @keyframes slideUp {
@@ -749,6 +763,13 @@ ul li {
 @keyframes slideDown3 {
   100% {
     transform: translate3d(0, 200px, 0);
+  }
+}
+@media (min-width: 768px) {
+  @keyframes slideDown3 {
+    100% {
+      transform: translate3d(0, 300px, 0);
+    }
   }
 }
 [data-anim=slide-rotate-left].has-animate {
@@ -1497,18 +1518,33 @@ ul li {
 .cover-section {
   position: fixed;
   z-index: 1000;
-  transition: all 1.5s ease-out;
-  background-color: var(--color-main);
+  transition: all 1.5s linear;
   overflow: hidden;
   width: 100%;
 }
+.cover-section .bg-color {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  transition: all 1.5s linear;
+}
 .cover-section.cover-opened {
   transform: scale(1.5);
-  opacity: 0;
   pointer-events: none;
+}
+.cover-section.cover-opened .cover-content,
+.cover-section.cover-opened .with-opacity,
+.cover-section.cover-opened .bg-color {
+  opacity: 0;
 }
 .cover-section .ornaments-wrapper {
   transform: scale3d(1.3, 1.3, 1.3);
+}
+.cover-section .ornaments-wrapper.with-opacity {
+  transition: all 1.5s linear;
 }
 .cover-section .gadang-1 {
   position: absolute;
@@ -1526,7 +1562,7 @@ ul li {
 @media (max-width: 575px) {
   .cover-section .gadang-1 {
     width: 140%;
-    transform: translate(-60%, 2%);
+    transform: translate(-60%, 0);
   }
 }
 .cover-section .gadang-2 {
@@ -1545,7 +1581,7 @@ ul li {
 @media (max-width: 575px) {
   .cover-section .gadang-2 {
     width: 140%;
-    transform: translate(60%, 2%) scaleX(-1);
+    transform: translate(60%, 0) scaleX(-1);
   }
 }
 .cover-section .cloud-1 {
@@ -1563,7 +1599,6 @@ ul li {
 }
 @media (max-width: 575px) {
   .cover-section .cloud-1 {
-    top: 0;
     width: 65%;
     transform: translate(-50%, -20%);
   }
@@ -1666,7 +1701,7 @@ ul li {
   bottom: 0;
   left: 50%;
   width: 30%;
-  transform: translate(-50%, 20%);
+  transform: translate(-50%, 10%);
 }
 @media (max-width: 991px) {
   .cover-section .orn-5 {
@@ -1676,7 +1711,7 @@ ul li {
 @media (max-width: 575px) {
   .cover-section .orn-5 {
     width: 80%;
-    transform: translate(-50%, 10%);
+    transform: translate(-50%, 0);
   }
 }
 .cover-section .orn-6 {
@@ -1796,6 +1831,7 @@ ul li {
 @media (max-width: 991px) {
   .cover-section .orn-13 {
     width: 40%;
+    transform: translate(0, -25%);
   }
 }
 .cover-section .orn-14 {
@@ -1925,6 +1961,7 @@ ul li {
   position: relative;
   width: 100%;
   height: 100%;
+  transition: all 1.5s linear;
 }
 .cover-section .cover-wrapper .cover-content .cover-body {
   position: relative;
