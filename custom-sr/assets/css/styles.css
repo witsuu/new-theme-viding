@@ -1503,7 +1503,6 @@ ul li {
   width: 100%;
 }
 .cover-section.cover-opened {
-  transform: scale(1.65);
   opacity: 0;
   pointer-events: none;
 }
