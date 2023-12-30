@@ -19,6 +19,10 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 	runAnimationOrnament()
 	runAnimationLoop()
 
+	// setTimeout(() => {
+	// 	document.querySelector(".cover-opened").classList.add('with-opacity')
+	// }, 2500);
+
 	document.querySelector(".ornament-fixed").style.zIndex = 8
 })
 
@@ -241,15 +245,20 @@ const runAnimationFixed = () => {
 }
 
 const animOpenCover = () => {
-	document.querySelector(".cover-section").querySelectorAll('img[alt="gadang-2"], img[alt="orn-1"], img[alt="orn-4"], img[alt="orn-2"]').forEach(el => {
+	document.querySelector(".cover-section").querySelectorAll('img[alt="gadang-2"], img[alt="orn-4"], img[alt="orn-1"], img[alt="orn-2"]').forEach(el => {
 		el.classList.add("has-animate")
 		el.dataset.animDuration = '2000ms'
 		el.dataset.anim = 'slide-left2'
-		console.log(el)
+		setTimeout(() => {
+			el.classList.add('with-opacity')
+		}, 2000);
 	})
-	document.querySelectorAll('.cover-section img[alt="orn-3"]').forEach(el => {
+	document.querySelector(".cover-section").querySelectorAll('img[alt="orn-3"], img[alt="orn-15"],img[alt="orn-13"],img[alt="orn-14"]').forEach(el => {
 		el.classList.add("has-animate")
 		el.dataset.animDuration = '2000ms'
 		el.dataset.anim = 'slide-down3'
+		setTimeout(() => {
+			el.classList.add('with-opacity')
+		}, 2000);
 	})
 }
