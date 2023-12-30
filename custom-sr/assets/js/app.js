@@ -245,7 +245,7 @@ const runAnimationFixed = () => {
 }
 
 const animOpenCover = () => {
-	document.querySelector(".cover-section").querySelectorAll('img[alt="gadang-2"], img[alt="orn-4"], img[alt="orn-1"], img[alt="orn-2"]').forEach(el => {
+	document.querySelector(".cover-section").querySelectorAll('img[alt="gadang-2"], img[alt="orn-4"], img[alt="orn-1"], img[alt="orn-2"], img[alt="orn-5"]').forEach(el => {
 		el.classList.add("has-animate")
 		el.dataset.animDuration = '2000ms'
 		el.dataset.anim = 'slide-left2'
