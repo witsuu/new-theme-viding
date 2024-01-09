@@ -230,16 +230,12 @@ const runAnimationLoop = () => {
 }
 const runAnimationFixed = () => {
 	document.querySelectorAll("[data-anim-fixed]").forEach(el => {
+		el.classList.add("has-animate")
+		el.classList.add("animation-loop")
+		el.dataset.loadAnimation = true;
+
 		if (el.dataset.animDelay) {
-			setTimeout(() => {
-				el.classList.add("has-animate")
-				el.classList.add("animation-loop")
-				el.dataset.loadAnimation = true;
-			}, el.dataset.animDelay)
-		} else {
-			el.classList.add("has-animate")
-			el.classList.add("animation-loop")
-			el.dataset.loadAnimation = true;
+			el.style.animationDelay = `${el.dataset.animDelay}ms`
 		}
 	})
 }
