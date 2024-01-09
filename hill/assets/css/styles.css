@@ -629,10 +629,12 @@ ul li {
 }
 [data-anim=slide-right].has-animate {
   animation-name: slideRight;
+  animation-duration: 5000ms !important;
 }
 
 [data-anim=slide-left].has-animate {
   animation-name: slideLeft;
+  animation-duration: 5000ms !important;
 }
 
 [data-anim=slide-up].has-animate {
@@ -645,7 +647,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -653,7 +655,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(10%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -1107,6 +1109,40 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+[data-anim=butterfly].has-animate {
+  animation-duration: 1000ms !important;
+}
+
+[data-anim=butterfly].has-animate {
+  animation-name: butterfly;
+}
+
+@keyframes butterfly {
+  100% {
+    transform: scaleX(0.5);
+  }
+}
+[data-anim=butterfly-move].has-animate {
+  animation-name: butterflyMoveRight;
+  animation-duration: 8000ms;
+}
+
+@keyframes butterflyMoveRight {
+  50% {
+    transform: translate3d(50px, -20px, 0);
+  }
+  100% {
+    transform: translate3d(10px, -40px, 0);
+  }
+}
+img[alt=flower] {
+  transform-origin: 65% 95%;
+}
+
+img[alt=palm] {
+  transform-origin: 55% 95%;
 }
 
 .countdown {
@@ -1844,7 +1880,7 @@ ul li {
 .couple-section .couple-wrapper .ornaments-wrapper .cloud-2 {
   position: absolute;
   bottom: 0;
-  left: 0;
+  right: 0;
   width: 200%;
   transform: translate(0, 10%);
 }
@@ -1962,6 +1998,7 @@ ul li {
 .couple-section .couple .couple-description {
   position: relative;
   padding: 1rem 0 3rem;
+  z-index: 3;
 }
 .couple-section .couple .couple-description .couple-parent {
   position: relative;
@@ -2453,6 +2490,12 @@ ul li {
   left: 50%;
   width: 106%;
   transform: translate(-50%, -49%);
+}
+.rsvp-section .rsvp-wrapper .image-wrap .ornaments-wrapper .image-element {
+  height: auto;
+}
+.rsvp-section .rsvp-wrapper .image-wrap .ornaments-wrapper .image-element img {
+  border-radius: 0;
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
   position: relative;
