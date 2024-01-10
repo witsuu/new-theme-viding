@@ -4063,15 +4063,14 @@ ul li {
 }
 .venue-section .ornaments-wrapper .orn-7 {
   position: absolute;
-  bottom: 0;
-  left: 12%;
-  width: 10%;
-  transform: translate(0, 20%);
+  top: 0;
+  left: 80%;
+  width: 40%;
+  transform: translate(0, 40%);
 }
 @media (max-width: 991px) {
   .venue-section .ornaments-wrapper .orn-7 {
-    left: 15%;
-    width: 20%;
+    transform: translate(0, 10%);
   }
 }
 .venue-section .ornaments-wrapper .orn-8 {
@@ -4088,7 +4087,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .venue-section .ornaments-wrapper .orn-8 {
-    width: 45%;
+    width: 50%;
   }
 }
 .venue-section .ornaments-wrapper .orn-9 {
@@ -4162,8 +4161,13 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 10%;
-  width: 25%;
+  width: 20%;
   transform: translate(0, 30%) scaleX(-1);
+}
+@media (max-width: 575px) {
+  .venue-section .ornaments-wrapper .orn-14 {
+    left: 10%;
+  }
 }
 .venue-section .ornaments-wrapper .orn-15 {
   position: absolute;
@@ -4540,6 +4544,18 @@ ul li {
 @media (max-width: 575px) {
   .rsvp-section .orn-3 {
     width: 50%;
+  }
+}
+.rsvp-section .orn-3 .orn {
+  position: absolute;
+  top: 0;
+  left: 80%;
+  width: 40%;
+  transform: translate(0, 40%);
+}
+@media (max-width: 991px) {
+  .rsvp-section .orn-3 .orn {
+    transform: translate(0, 10%);
   }
 }
 .rsvp-section .orn-4 {
