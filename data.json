@@ -358,5 +358,20 @@
 		"name": "Custom SR",
 		"path": "custom-sr",
 		"status": ""
+	},
+	{
+		"name": "Ottoman",
+		"path": "ottoman",
+		"status": ""
+	},
+	{
+		"name": "Joglo",
+		"path": "joglo",
+		"status": ""
+	},
+	{
+		"name": "Hill",
+		"path": "hill",
+		"status": ""
 	}
 ]

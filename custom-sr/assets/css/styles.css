@@ -4142,9 +4142,9 @@ ul li {
 .venue-section .ornaments-wrapper .orn-13 {
   position: absolute;
   bottom: 0;
-  left: 50%;
+  left: 25%;
   width: 20%;
-  transform: translate(-50%, 30%) scaleX(-1);
+  transform: translate(-20%, 30%) scaleX(-1);
 }
 @media (max-width: 991px) {
   .venue-section .ornaments-wrapper .orn-13 {
@@ -4154,13 +4154,14 @@ ul li {
 @media (max-width: 575px) {
   .venue-section .ornaments-wrapper .orn-13 {
     width: 30%;
+    left: 50%;
     transform: translate(-50%, 40%) scaleX(-1);
   }
 }
 .venue-section .ornaments-wrapper .orn-14 {
   position: absolute;
   bottom: 0;
-  right: 10%;
+  right: 30%;
   width: 20%;
   transform: translate(0, 30%) scaleX(-1);
 }
