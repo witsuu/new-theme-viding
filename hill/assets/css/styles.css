@@ -266,7 +266,6 @@ span {
 .title-section p,
 .title-section span {
   margin-bottom: 0;
-  font-weight: 500;
   font-size: 32px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -2057,13 +2056,13 @@ img[alt=palm] {
   top: 0;
   left: 0;
   width: 50%;
-  transform: translate(-80%, -50%) rotate(30deg) scaleX(-1);
+  transform: translate(-80%, -70%) rotate(30deg) scaleX(-1);
   z-index: 3;
 }
 @media (min-width: 768px) {
   .story-section .story .orn-1 {
     width: 40%;
-    transform: translate(-80%, -40%) rotate(30deg) scaleX(-1);
+    transform: translate(-80%, -50%) rotate(30deg) scaleX(-1);
   }
 }
 @media (min-width: 992px) {
@@ -2184,7 +2183,7 @@ img[alt=palm] {
 }
 .venue-section .orn-2 {
   position: absolute;
-  bottom: 3rem;
+  bottom: 2.5rem;
   left: 2rem;
   width: 10%;
   transform: rotate(25deg);
@@ -2262,6 +2261,7 @@ img[alt=palm] {
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
   padding: 1rem 0;
+  font-weight: 400;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
   position: relative;
@@ -2291,7 +2291,7 @@ img[alt=palm] {
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name-body .date h5 {
   font-family: "Bodoni Moda", serif;
   font-weight: 700;
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
   font-size: 24px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name-body h4 {
@@ -2299,7 +2299,7 @@ img[alt=palm] {
   text-align: center;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name-body p {
-  margin-bottom: 0;
+  margin-bottom: 0.75rem;
   font-weight: 600;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place {

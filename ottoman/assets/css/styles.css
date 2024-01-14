@@ -2338,6 +2338,11 @@ img[alt=flower-4] {
 .venue-section .venue-wrapper .venue-content {
   position: relative;
 }
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .venue-content .container {
+    padding: 0;
+  }
+}
 .venue-section .venue-wrapper .venue-content .ribbon-venue {
   position: relative;
 }
@@ -2646,6 +2651,7 @@ img[alt=flower-4] {
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
   color: var(--color-dark);
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .rsvp-section .rsvp-wrapper {

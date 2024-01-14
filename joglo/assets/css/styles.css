@@ -1124,6 +1124,18 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=leaf] {
+  transform-origin: 90% 95%;
+}
+
+img[alt=tree] {
+  transform-origin: 35% 90%;
+}
+
+img[alt=flower] {
+  transform-origin: 30% 100%;
+}
+
 .countdown {
   position: relative;
   display: flex;
@@ -2008,7 +2020,7 @@ ul li {
 }
 @media (min-width: 992px) {
   .couple-section .couple-wrapper .orn-8 {
-    width: 30%;
+    width: 40%;
   }
 }
 .couple-section .couple-wrapper .orn-9 {
@@ -2025,7 +2037,7 @@ ul li {
 }
 @media (min-width: 992px) {
   .couple-section .couple-wrapper .orn-9 {
-    width: 30%;
+    width: 40%;
   }
 }
 .couple-section .couple-wrapper .orn-10 {
