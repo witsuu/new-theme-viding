@@ -1,3 +1,18 @@
+@font-face {
+  font-family: "Derivia";
+  src: url(../fonts/Derivia-Regular.ttf) format("ttf");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Derivia";
+  src: url(../fonts/Derivia-Regular.woff) format("woff");
+  font-display: swap;
+}
+@font-face {
+  font-family: "Derivia";
+  src: url(../fonts/Derivia-Regular.woff2) format("woff2");
+  font-display: swap;
+}
 :root {
   --color-main: #e5e3dd;
   --color-primary: #cabfa3;
@@ -2412,7 +2427,7 @@ img[alt=flower-4] {
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
   position: relative;
   padding: 0 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2.5rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description p {
   margin-bottom: 0;
