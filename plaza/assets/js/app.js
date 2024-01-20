@@ -180,6 +180,7 @@ const runAnimationOrnament = () => {
 					da.classList.remove("animation-invisible")
 					da.dataset.loadAnimation = true;
 				}
+				ScrollTrigger.refresh()
 			}
 		})
 	})
