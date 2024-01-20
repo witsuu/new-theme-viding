@@ -373,5 +373,15 @@
 		"name": "Hill",
 		"path": "hill",
 		"status": ""
+	},
+	{
+		"name": "Coloseum",
+		"path": "coloseum",
+		"status": ""
+	},
+	{
+		"name": "Plaza",
+		"path": "plaza",
+		"status": ""
 	}
 ]
