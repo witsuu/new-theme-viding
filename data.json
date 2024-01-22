@@ -383,5 +383,10 @@
 		"name": "Plaza",
 		"path": "plaza",
 		"status": ""
+	},
+	{
+		"name": "Custom A&K",
+		"path": "custom-ak",
+		"status": ""
 	}
 ]
