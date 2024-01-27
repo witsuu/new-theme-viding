@@ -2038,6 +2038,24 @@ img[alt=palm] {
     font-size: 16px;
   }
 }
+.couple-section .couple.single .and {
+  padding: 1rem 0;
+  margin-bottom: 0;
+}
+.couple-section .couple.single .couple-description {
+  padding: 1rem;
+}
+.couple-section .couple.single.man .sosmed-wrap {
+  margin: 1rem auto 0 0;
+}
+.couple-section .couple.single.women .sosmed-wrap {
+  margin: 1rem 0 0 auto;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrap {
+    aspect-ratio: 6/4;
+  }
+}
 
 .story-section {
   position: relative;

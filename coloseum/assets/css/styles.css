@@ -387,7 +387,7 @@ ul li {
 }
 
 @media (min-width: 768px) {
-  .lg {
+  .md {
     display: block;
   }
   .sm {
@@ -395,7 +395,7 @@ ul li {
   }
 }
 @media (max-width: 767px) {
-  .lg {
+  .md {
     display: none;
   }
   .sm {
@@ -2136,6 +2136,46 @@ img[alt=flower-2] {
 @media (max-width: 767px) {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single {
+    padding: 5rem 1.5rem 3rem;
+    -webkit-mask-image: url(../images/mask-single.png);
+            mask-image: url(../images/mask-single.png);
+  }
+}
+@media (max-width: 767px) {
+  .couple-section .couple.single .and {
+    display: none;
+  }
+}
+.couple-section .couple.single.for-image {
+  background-color: transparent;
+  padding: 0;
+  -webkit-mask: unset;
+          mask: unset;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single.for-image {
+    margin-bottom: -4rem;
+    z-index: 3;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single.for-image .image-wrap {
+    aspect-ratio: 6/4;
+  }
+  .couple-section .couple.single.for-image .image-wrap .image-element .couple-image {
+    -webkit-mask-image: url(../images/mask-photo-single.png);
+            mask-image: url(../images/mask-photo-single.png);
+  }
+  .couple-section .couple.single.for-image .image-wrap .orn-5 {
+    width: 40%;
+    transform: translate(-25%, 0) rotate(-20deg) scaleX(-1);
+  }
+  .couple-section .couple.single.for-image .image-wrap .orn-6 {
+    width: 20%;
   }
 }
 

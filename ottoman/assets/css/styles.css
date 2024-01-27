@@ -2170,6 +2170,13 @@ img[alt=flower-4] {
     font-size: 16px;
   }
 }
+.couple-section .couple.single .sosmed-wrap {
+  position: relative;
+  top: unset;
+  left: unset;
+  transform: none;
+  margin: 1rem auto 0;
+}
 
 .story-section {
   position: relative;

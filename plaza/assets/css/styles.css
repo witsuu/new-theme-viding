@@ -1953,7 +1953,6 @@ img[alt=flower-1] {
   align-items: center;
   width: 100%;
   position: relative;
-  margin-bottom: 1rem;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -2454,6 +2453,25 @@ img[alt=flower-1] {
 @media (max-width: 767px) {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .city {
+    width: 120%;
+  }
+  .couple-section .couple.single .orn-16, .couple-section .couple.single .orn-17, .couple-section .couple.single .orn-18 {
+    width: 40%;
+  }
+  .couple-section .couple.single .orn-19, .couple-section .couple.single .orn-20 {
+    width: 50%;
+  }
+  .couple-section .couple.single .orn-22, .couple-section .couple.single .orn-23 {
+    width: 55%;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrap {
+    aspect-ratio: 6/4;
   }
 }
 

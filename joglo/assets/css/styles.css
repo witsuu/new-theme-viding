@@ -2161,6 +2161,23 @@ img[alt=flower] {
     font-size: 16px;
   }
 }
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrap {
+    aspect-ratio: 6/4;
+  }
+  .couple-section .couple.single .image-wrap .orn-10 {
+    width: 100%;
+  }
+  .couple-section .couple.single .image-wrap .orn-12 {
+    width: 25%;
+  }
+  .couple-section .couple.single .image-wrap .orn-13, .couple-section .couple.single .image-wrap .orn-14 {
+    width: 40%;
+  }
+}
+.couple-section .couple.single .couple-description {
+  padding: 1rem;
+}
 
 .story-section {
   position: relative;
