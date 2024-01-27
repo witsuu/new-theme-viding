@@ -343,16 +343,16 @@ textarea.form-control {
 
 .title-section {
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: 100%;
   max-width: 100%;
-  margin: 0 auto;
   text-align: center;
   margin-bottom: 1.25rem;
 }
 .title-section h2,
 .title-section p,
 .title-section span {
+  display: block;
+  width: 100%;
   margin-bottom: 0;
   font-weight: 500;
   font-size: 60px;
