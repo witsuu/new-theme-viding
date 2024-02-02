@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-10">
+                <div class="grid">
+                    <div class="grid-sizer"></div>
+                    <div class="gutter-sizer"></div>
+                    <div class="grid-item">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo01.jfif" alt="photo01" class="img-full">
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo02.jfif" alt="photo02" class="img-full">
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo01.jfif" alt="photo01" class="img-full">
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo02.jfif" alt="photo02" class="img-full">
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo01.jfif" alt="photo01" class="img-full">
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo02.jfif" alt="photo02" class="img-full">
+                    </div>
+                    <div class="grid-item">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo01.jfif" alt="photo01" class="img-full">
+                    </div>
+                    <div class="grid-item grid-item--width2">
+                        <img src="https://witsuu.github.io/new-theme-viding/marble/assets/images/photo02.jfif" alt="photo02" class="img-full">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+    <script>
+        let elm = document.querySelector('.grid')
+
+        const ms = new Masonry(elm, {
+            itemSelector: '.grid-item',
+            columnWidth: '.grid-sizer',
+            percentPosition: true,
+            gutter: '.gutter-sizer',
+        })
+    </script>
+</body>
+
+</html>

@@ -388,5 +388,10 @@
 		"name": "Custom A&K",
 		"path": "custom-ak",
 		"status": ""
+	},
+	{
+		"name": "Custom C&Z",
+		"path": "custom-cz",
+		"status": ""
 	}
 ]

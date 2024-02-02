@@ -1,0 +1,23 @@
+.img-full {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.grid-sizer {
+  width: 48%;
+}
+
+.gutter-sizer {
+  width: 2%;
+}
+
+.grid-item {
+  width: 48%;
+  margin-bottom: 2%;
+  aspect-ratio: 3/4;
+}
+.grid-item--width2 {
+  aspect-ratio: 4/3;
+}/*# sourceMappingURL=styles.css.map */
