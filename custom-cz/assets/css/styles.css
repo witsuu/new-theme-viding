@@ -19,7 +19,7 @@
   --color-secondary: rgba(0, 0, 0, 0);
   --color-dark: #1e1f1e;
   --color-light: #fff;
-  --text-button: #ffffff;
+  --text-button: #1e1f1e;
   --color-button-trans: #1e1f1e;
   --vd-color-pink: #e9088a;
   --border-radius: 10px;
@@ -113,7 +113,7 @@ body {
 }
 .main-app .logo span {
   display: block;
-  font-size: 28px;
+  font-size: 18pt;
 }
 .main-app .arrow-section {
   position: absolute;
@@ -166,21 +166,17 @@ small {
   font-size: 12px;
 }
 
-span {
-  font-size: 16px;
+span,
+p {
+  font-size: 10pt;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
 
-@media (max-width: 575px) {
-  p,
-  span {
-    font-size: 14px;
-  }
-  small {
-    font-size: 10px;
-  }
+strong {
+  font-weight: 900;
 }
+
 .image-element {
   position: relative;
   width: 100%;
@@ -258,13 +254,19 @@ span {
   background-color: transparent;
   border-color: var(--color-button-trans);
   color: var(--color-button-trans);
+  text-transform: uppercase;
+  font-style: italic;
 }
 .form-control::-moz-placeholder, .form-select::-moz-placeholder {
   color: var(--color-button-trans);
+  text-transform: uppercase;
+  font-style: italic;
 }
 .form-control::placeholder,
 .form-select::placeholder {
   color: var(--color-button-trans);
+  text-transform: uppercase;
+  font-style: italic;
 }
 .form-control:focus,
 .form-select:focus {
@@ -272,6 +274,8 @@ span {
   color: var(--color-button-trans);
   box-shadow: none;
   border-color: var(--color-button-trans);
+  text-transform: uppercase;
+  font-style: italic;
 }
 
 .scrolled {
@@ -1454,11 +1458,11 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 @media (max-width: 767px) {
   .couple-section .couple-wrapper {
-    padding: 5rem 0 3rem;
+    padding: 8rem 0;
   }
   .couple-section .couple-wrapper .row-couple {
     row-gap: 3rem;
@@ -1494,10 +1498,8 @@ ul li {
 .couple-section .couple .couple-description {
   position: relative;
 }
-@media (max-width: 575px) {
-  .couple-section .couple .couple-description h5 {
-    font-size: 18px;
-  }
+.couple-section .couple .couple-description h5 {
+  font-size: 12pt;
 }
 .couple-section .couple .couple-description .couple-parent {
   width: 100%;
@@ -1537,7 +1539,7 @@ ul li {
 }
 .story-section .story {
   position: relative;
-  padding: 3rem 0;
+  padding: 5rem 0;
   height: 100vh;
 }
 @media (max-width: 991px) {
@@ -1548,6 +1550,7 @@ ul li {
 @media (max-width: 575px) {
   .story-section .story {
     height: auto;
+    padding: 3rem 0 5rem;
   }
 }
 .story-section .story .story-content {
@@ -1611,11 +1614,11 @@ ul li {
 }
 .venue-section .venue-wrapper {
   position: relative;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper {
-    padding: 5rem 0 3rem;
+    padding: 8rem 0 3rem;
   }
 }
 .venue-section .venue-wrapper .venue-description {
@@ -1806,21 +1809,15 @@ ul li {
 
 .rsvp-section {
   position: relative;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 @media (max-width: 767px) {
   .rsvp-section {
-    padding: 3rem 0;
+    padding: 8rem 0;
   }
 }
 .rsvp-section .rsvp-wrapper {
   position: relative;
-  padding: 3rem 2rem;
-}
-@media (max-width: 767px) {
-  .rsvp-section .rsvp-wrapper {
-    padding: 2rem 1rem;
-  }
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
   position: relative;
@@ -1832,11 +1829,11 @@ ul li {
 }
 .wishes-section .wishes-form-wrapper {
   position: relative;
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 @media (max-width: 767px) {
   .wishes-section .wishes-form-wrapper {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 }
 .wishes-section .card-form {
@@ -1857,11 +1854,11 @@ ul li {
 }
 .wishes-section .wishes-preview {
   position: relative;
-  padding: 0 0 5rem;
+  padding: 3rem 0 8rem;
 }
 @media (max-width: 767px) {
   .wishes-section .wishes-preview {
-    padding: 0 0 3rem;
+    padding: 2rem 0 5rem;
   }
 }
 .wishes-section .wishes-preview .card {
@@ -1928,11 +1925,11 @@ ul li {
 .egift-section {
   position: relative;
   text-align: center;
-  padding: 5rem 0;
+  padding: 10rem 0;
 }
 @media (max-width: 767px) {
   .egift-section {
-    padding: 3rem 0;
+    padding: 8rem 0;
   }
 }
 .egift-section .gift-wrap {
@@ -2029,6 +2026,8 @@ ul li {
   background-color: transparent;
   border-color: var(--color-button-trans);
   color: var(--text-button-trans);
+  text-transform: uppercase;
+  font-style: italic;
 }
 @media (max-width: 767px) {
   .egift-section form .row {
@@ -2084,49 +2083,60 @@ ul li {
 .gallery-section {
   position: relative;
   background-color: var(--color-primary);
-  padding: 0 0 3rem;
+  padding: 0 0 5rem;
 }
-.gallery-section .img-gallery {
-  height: auto;
+.gallery-section .gallery-default {
+  position: relative;
   width: 100%;
-  aspect-ratio: 3/4;
-  -o-object-fit: cover;
-     object-fit: cover;
-  margin-bottom: 1rem;
 }
-.gallery-section .splide__pagination {
+.gallery-section .gallery-default a {
+  height: 100%;
+}
+.gallery-section .gallery-default .splide {
+  padding-bottom: 1rem;
+}
+.gallery-section .gallery-default .splide__pagination {
   bottom: -0.5em;
 }
-.gallery-section .splide__pagination__page.is-active {
-  background-color: var(--color-primary);
+.gallery-section .gallery-default .splide__pagination__page {
+  background-color: #c3c3c3;
 }
-.gallery-section .splide .splide__arrow {
+.gallery-section .gallery-default .splide__pagination__page.is-active {
+  background-color: #fff;
+}
+.gallery-section .gallery-default .splide__slide img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery-section .gallery-default .splide .splide__arrow {
   border-radius: 0;
   width: 65px;
   height: 65px;
   background-color: var(--color-primary);
 }
 @media (max-width: 991px) {
-  .gallery-section .splide .splide__arrow {
+  .gallery-section .gallery-default .splide .splide__arrow {
     width: 50px;
     height: 50px;
   }
 }
-.gallery-section .splide .splide__arrow svg {
+.gallery-section .gallery-default .splide .splide__arrow svg {
   fill: var(--color-button-trans);
   width: 25px;
   height: 30px;
 }
 @media (max-width: 767px) {
-  .gallery-section .splide .splide__arrow svg {
+  .gallery-section .gallery-default .splide .splide__arrow svg {
     width: 20px;
     height: 25px;
   }
 }
-.gallery-section .splide .splide__arrow--prev {
+.gallery-section .gallery-default .splide .splide__arrow--prev {
   left: 0;
 }
-.gallery-section .splide .splide__arrow--next {
+.gallery-section .gallery-default .splide .splide__arrow--next {
   right: 0;
 }
 
@@ -2145,12 +2155,12 @@ ul li {
 
 .stream-section {
   position: relative;
-  padding: 5rem 0;
+  padding: 10rem 0;
   text-align: center;
 }
 @media (max-width: 767px) {
   .stream-section {
-    padding: 3rem 0;
+    padding: 8rem 0;
   }
 }
 .stream-section .stream-wrapper {
@@ -2165,7 +2175,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .stream-section .stream-wrapper .stream-content .stream-description {
-    padding: 2rem 1rem;
+    padding: 0 1rem 2rem;
   }
 }
 @media (max-width: 767px) {
@@ -2213,7 +2223,7 @@ ul li {
   position: relative;
   text-align: center;
   background-color: var(--color-secondary);
-  color: var(--text-button);
+  color: var(--text-dark);
 }
 .footer small {
   position: relative;
