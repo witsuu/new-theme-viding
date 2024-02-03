@@ -2153,6 +2153,26 @@ ul li {
 .gallery-section .gallery-default .splide .splide__arrow--next {
   right: 0;
 }
+.gallery-section .gallery-default-test {
+  position: relative;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.gallery-section .gallery-default-test a.grid-2fr {
+  grid-column: 1/span 2;
+}
+.gallery-section .gallery-default-test .img-gallery {
+  width: 100%;
+  height: 80vh;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 575px) {
+  .gallery-section .gallery-default-test .img-gallery {
+    height: 60vh;
+  }
+}
 
 .apology-section {
   position: relative;

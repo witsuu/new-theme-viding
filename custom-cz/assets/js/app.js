@@ -142,6 +142,15 @@ if (document.querySelector("#zoom-gallery-default")) {
 			easing: "ease-in-out",
 		},
 	});
+	$(".gallery-default-test").magnificPopup({
+		delegate: "a",
+		type: "image",
+		mainClass: "mfp-with-zoom mfp-img-mobile",
+		zoom: {
+			enabled: true,
+			easing: "ease-in-out",
+		},
+	});
 }
 
 

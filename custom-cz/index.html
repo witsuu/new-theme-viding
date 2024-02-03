@@ -318,6 +318,54 @@
                     </div>
                 </div>
             </section>
+            <!-- Gallery Section -->
+            <section class="gallery-section moveable-section" data-id="3">
+                <div class="gallery-default-test">
+                    <a href="./assets/images/photo01.jfif" class="grid-2fr">
+                        <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo02.jfif" class="grid-2fr">
+                        <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo01.jfif">
+                        <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo02.jfif">
+                        <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo01.jfif" class="grid-2fr">
+                        <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo02.jfif" class="grid-2fr">
+                        <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo01.jfif">
+                        <img src="./assets/images/photo01.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                    <a href="./assets/images/photo02.jfif">
+                        <img src="./assets/images/photo02.jfif" alt="img-gallery" class="img-gallery" />
+                    </a>
+                </div>
+                <div class="position-relative mt-3">
+                    <div class="container position-relative">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8 position-relative">
+                                <div class="ratio ratio-16x9" data-anim="fade-down">
+                                    <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="arrow-section">
+                    <div class="image-element animate-loop" data-anim="slide-down-2">
+                        <svg class="img-fluid" width="50" height="15" viewBox="0 0 50 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M25 13.8749L1.53906 0.640564H48.4609L25 13.8749Z" stroke="black" stroke-width="0.601563" />
+                        </svg>
+                    </div>
+                </div>
+            </section>
 
             <section class="moveable-section" data-id="4">
                 <!-- Vanue & Event section -->
@@ -864,27 +912,25 @@
 
     <script>
         if (document.querySelector(".gallery-default")) {
-            document.addEventListener("DOMContentLoaded", function () {
-                const gallery = new Splide("#gallery-default", {
-                    arrows:false,
-                    type:"loop",
-                    autoplay:true,
-                    interval:2000,
-                    pauseOnHover:false,
-                    pauseOnFocus:false,
-                    heightRatio: 0.6,
-                    grid: {
-                        dimensions:[[1,1],[1,1],[1,2],[1,1],[1,1],[1,1],[1,2],[1,1]]
-                    },
-                    breakpoints:{
-                        576:{
-                            heightRatio:1
-                        }
+            const gallery = new Splide("#gallery-default", {
+                arrows: false,
+                type: "loop",
+                autoplay: true,
+                interval: 2000,
+                pauseOnHover: false,
+                pauseOnFocus: false,
+                heightRatio: 0.6,
+                grid: {
+                    dimensions: [[1, 1], [1, 1], [1, 2], [1, 1], [1, 1], [1, 1], [1, 2], [1, 1]]
+                },
+                breakpoints: {
+                    576: {
+                        heightRatio: 1
                     }
-                });
-
-                gallery.mount(window.splide.Extensions);
+                }
             });
+
+            gallery.mount(window.splide.Extensions);
         }
     </script>
 
