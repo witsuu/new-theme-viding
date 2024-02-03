@@ -126,7 +126,7 @@ body {
 }
 @media (max-width: 575px) {
   .main-app .logo img {
-    width: 140px;
+    width: 160px;
   }
 }
 .main-app .arrow-section {
@@ -1362,6 +1362,14 @@ ul li {
 @media (max-width: 991px) {
   .cover-section .cover-wrapper .cover-content .cover-body {
     padding: 4rem 0 8rem;
+  }
+}
+.cover-section .cover-wrapper .cover-content .cover-body .logo img {
+  width: 200px;
+}
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper .cover-content .cover-body .logo img {
+    width: 180px;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
