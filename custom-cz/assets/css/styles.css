@@ -109,17 +109,25 @@ body {
 }
 .main-app .logo.corner {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 0;
+  right: 0;
 }
 @media (max-width: 575px) {
   .main-app .logo.corner {
-    top: 1rem;
+    transform: translateX(10%);
   }
 }
 .main-app .logo span {
   display: block;
   font-size: 18pt;
+}
+.main-app .logo img {
+  width: 180px;
+}
+@media (max-width: 575px) {
+  .main-app .logo img {
+    width: 140px;
+  }
 }
 .main-app .arrow-section {
   position: absolute;
