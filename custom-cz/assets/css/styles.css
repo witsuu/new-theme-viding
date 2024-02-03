@@ -292,6 +292,11 @@ strong {
   font-style: italic;
 }
 
+.form-select {
+  background-image: url(../images/arrow-form-select.svg);
+  background-size: 20px auto;
+}
+
 .scrolled {
   background: #fff !important;
   transition: all 1s ease-in-out;
@@ -2164,13 +2169,13 @@ ul li {
 }
 .gallery-section .gallery-default-test .img-gallery {
   width: 100%;
-  height: 80vh;
+  height: 100vh;
   -o-object-fit: cover;
      object-fit: cover;
 }
 @media (max-width: 575px) {
   .gallery-section .gallery-default-test .img-gallery {
-    height: 60vh;
+    height: 80vh;
   }
 }
 
