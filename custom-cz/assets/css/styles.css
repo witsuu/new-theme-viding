@@ -1,17 +1,23 @@
 @font-face {
   font-family: "Canela Trial";
-  src: url(../fonts/CanelaText-Regular.ttf) format("ttf");
+  font-stretch: 100%;
+  font-weight: 400;
   font-display: swap;
+  src: url(../fonts/Canela-Regular.woff2) format("woff2");
 }
 @font-face {
   font-family: "Canela Trial";
-  src: url(../fonts/CanelaText-Regular.woff) format("woff");
+  font-stretch: 100%;
+  font-weight: 600;
   font-display: swap;
+  src: url(../fonts/Canela-Medium.woff2) format("woff2");
 }
 @font-face {
   font-family: "Canela Trial";
-  src: url(../fonts/CanelaText-Regular.woff2) format("woff2");
+  font-stretch: 100%;
+  font-weight: 700;
   font-display: swap;
+  src: url(../fonts/Canela-Black.woff2) format("woff2");
 }
 :root {
   --color-main: #edeeee;
@@ -174,7 +180,7 @@ p {
 }
 
 strong {
-  font-weight: 900;
+  font-weight: 700;
 }
 
 .image-element {
