@@ -83,7 +83,7 @@
   src: url(../fonts/Canela-Black.woff2) format("woff2");
 }
 :root {
-  --color-main: #edeeee;
+  --color-main: #F7F6F1;
   --color-primary: #cdcdcb;
   --color-secondary: rgba(0, 0, 0, 0);
   --color-dark: #1e1f1e;
@@ -130,19 +130,19 @@ body {
 }
 .main-app .elements-wrapper-absolute {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  overflow: hidden;
 }
 .main-app .elements-wrapper-absolute .background-element {
-  height: 100%;
+  width: 100%;
+  height: auto;
 }
 .main-app .elements-wrapper-absolute .background-element img {
   width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
+  height: auto;
 }
 .main-app .elements-absolute {
   position: absolute;
@@ -1416,6 +1416,17 @@ ul li {
 .cover-section.cover-opened {
   transform: translateY(-100%);
 }
+.cover-section .elements-wrapper-absolute {
+  height: 100%;
+}
+.cover-section .elements-wrapper-absolute .background-element {
+  height: 100%;
+}
+.cover-section .elements-wrapper-absolute .background-element img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
 .cover-section .cover-wrapper {
   position: relative;
 }
@@ -1941,7 +1952,7 @@ ul li {
 }
 .wishes-section .wishes-form-wrapper {
   position: relative;
-  padding: 9rem 0;
+  padding: 8rem 0;
 }
 @media (max-width: 767px) {
   .wishes-section .wishes-form-wrapper {
@@ -2292,7 +2303,7 @@ ul li {
 
 .stream-section {
   position: relative;
-  padding: 12rem 0;
+  padding: 10rem 0;
   text-align: center;
 }
 @media (max-width: 767px) {
@@ -2340,6 +2351,17 @@ ul li {
   .thank-section {
     padding: 3rem 0;
   }
+}
+.thank-section .elements-wrapper-absolute {
+  height: 100%;
+}
+.thank-section .elements-wrapper-absolute .background-element {
+  height: 100%;
+}
+.thank-section .elements-wrapper-absolute .background-element img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 .thank-section .thank-wrapper {
   position: relative;
