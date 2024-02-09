@@ -1,6 +1,20 @@
 @font-face {
   font-family: "Canela Trial";
   font-stretch: 100%;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/Canela-Thin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Trial";
+  font-stretch: 100%;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Canela-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Trial";
+  font-stretch: 100%;
   font-weight: 400;
   font-display: swap;
   src: url(../fonts/Canela-Regular.woff2) format("woff2");
@@ -8,7 +22,7 @@
 @font-face {
   font-family: "Canela Trial";
   font-stretch: 100%;
-  font-weight: 600;
+  font-weight: 500;
   font-display: swap;
   src: url(../fonts/Canela-Medium.woff2) format("woff2");
 }
@@ -16,6 +30,55 @@
   font-family: "Canela Trial";
   font-stretch: 100%;
   font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Canela-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Trial";
+  font-stretch: 100%;
+  font-weight: 900;
+  font-display: swap;
+  src: url(../fonts/Canela-Black.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Thin";
+  font-stretch: 100%;
+  font-weight: 100;
+  font-display: swap;
+  src: url(../fonts/Canela-Thin.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Light";
+  font-stretch: 100%;
+  font-weight: 300;
+  font-display: swap;
+  src: url(../fonts/Canela-Light.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Regular";
+  font-stretch: 100%;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../fonts/Canela-Regular.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Medium";
+  font-stretch: 100%;
+  font-weight: 500;
+  font-display: swap;
+  src: url(../fonts/Canela-Medium.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Bold";
+  font-stretch: 100%;
+  font-weight: 700;
+  font-display: swap;
+  src: url(../fonts/Canela-Bold.woff2) format("woff2");
+}
+@font-face {
+  font-family: "Canela Black";
+  font-stretch: 100%;
+  font-weight: 900;
   font-display: swap;
   src: url(../fonts/Canela-Black.woff2) format("woff2");
 }
@@ -122,11 +185,11 @@ body {
   font-size: 18pt;
 }
 .main-app .logo img {
-  width: 180px;
+  width: 200px;
 }
 @media (max-width: 575px) {
   .main-app .logo img {
-    width: 160px;
+    width: 180px;
   }
 }
 .main-app .arrow-section {
@@ -177,7 +240,7 @@ h1 span {
 }
 
 small {
-  font-size: 12px;
+  font-size: 10pt;
 }
 
 span,
@@ -220,6 +283,7 @@ strong {
   border-color: var(--color-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 .btn-custom:hover {
   color: var(--color-button-trans);
@@ -270,17 +334,20 @@ strong {
   color: var(--color-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 .form-control::-moz-placeholder, .form-select::-moz-placeholder {
   color: var(--color-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 .form-control::placeholder,
 .form-select::placeholder {
   color: var(--color-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 .form-control:focus,
 .form-select:focus {
@@ -290,6 +357,7 @@ strong {
   border-color: var(--color-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 
 .form-select {
@@ -338,7 +406,7 @@ strong {
   width: 100%;
   margin-bottom: 0;
   font-weight: 400;
-  font-size: 26px;
+  font-size: 18pt;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -346,7 +414,7 @@ strong {
   .title-section h2,
   .title-section p,
   .title-section span {
-    font-size: 20px;
+    font-size: 16pt;
   }
 }
 
@@ -1365,11 +1433,11 @@ ul li {
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .logo img {
-  width: 200px;
+  width: 260px;
 }
 @media (max-width: 575px) {
   .cover-section .cover-wrapper .cover-content .cover-body .logo img {
-    width: 180px;
+    width: 240px;
   }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
@@ -1505,6 +1573,7 @@ ul li {
 .couple-section .couple {
   position: relative;
   text-align: left;
+  font-weight: 300;
 }
 .couple-section .couple .image-wrap {
   width: 100%;
@@ -1526,13 +1595,15 @@ ul li {
   position: relative;
 }
 .couple-section .couple .couple-description h5 {
-  font-size: 12pt;
+  font-weight: 300;
+  font-size: 14pt;
 }
 .couple-section .couple .couple-description .couple-parent {
   width: 100%;
   margin-bottom: 0.5rem;
 }
-.couple-section .couple .couple-description .couple-parent p {
+.couple-section .couple .couple-description .couple-parent p, .couple-section .couple .couple-description .couple-parent span {
+  font-weight: 300;
   margin-bottom: 0;
 }
 .couple-section .couple .couple-description .sosmed-wrap {
@@ -1559,6 +1630,9 @@ ul li {
   .couple-section .couple .couple-description .sosmed-wrap .fab {
     font-size: 16px;
   }
+}
+.couple-section .couple .title-couple span {
+  font-size: 14pt;
 }
 
 .story-section {
@@ -1591,16 +1665,21 @@ ul li {
 }
 .story-section .story .story-content .story-description {
   position: relative;
-  text-align: left;
+  text-align: justify;
 }
 @media (min-width: 768px) {
   .story-section .story .story-content .story-description {
-    padding-right: 1rem;
+    padding: 0 1rem;
   }
 }
 .story-section .story .story-content .title-section {
   text-align: left;
   margin-bottom: 0;
+}
+@media (min-width: 768px) {
+  .story-section .story .story-content .title-section {
+    padding: 0 1rem;
+  }
 }
 @media (max-width: 575px) {
   .story-section .story .story-content .title-section {
@@ -1712,15 +1791,17 @@ ul li {
 }
 @media (max-width: 575px) {
   .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
-    gap: 0.25rem;
+    gap: 0.5rem;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date .h5 {
+  font-weight: 900;
   margin-bottom: 0;
   font-size: 26px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date p {
   text-transform: uppercase;
+  font-weight: 300;
   font-size: 16px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
@@ -1843,6 +1924,10 @@ ul li {
     padding: 8rem 0;
   }
 }
+.rsvp-section .background-element img {
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
+}
 .rsvp-section .rsvp-wrapper {
   position: relative;
 }
@@ -1856,12 +1941,16 @@ ul li {
 }
 .wishes-section .wishes-form-wrapper {
   position: relative;
-  padding: 8rem 0;
+  padding: 9rem 0;
 }
 @media (max-width: 767px) {
   .wishes-section .wishes-form-wrapper {
-    padding: 5rem 0;
+    padding: 6rem 0;
   }
+}
+.wishes-section .wishes-form-wrapper .background-element img {
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
 }
 .wishes-section .card-form {
   background-color: transparent;
@@ -1872,20 +1961,15 @@ ul li {
   border: none;
 }
 .wishes-section .card-form .card-body {
-  padding: 2rem;
-}
-@media (max-width: 767px) {
-  .wishes-section .card-form .card-body {
-    padding: 2rem 1rem;
-  }
+  padding: 0;
 }
 .wishes-section .wishes-preview {
   position: relative;
-  padding: 3rem 0 8rem;
+  padding: 5rem 0;
 }
 @media (max-width: 767px) {
   .wishes-section .wishes-preview {
-    padding: 2rem 0 5rem;
+    padding: 8rem 0;
   }
 }
 .wishes-section .wishes-preview .card {
@@ -1895,17 +1979,18 @@ ul li {
 }
 .wishes-section .wishes-preview .card .card-body {
   overflow: hidden;
-  padding: 2rem 0;
+  padding: 2rem 1rem;
+  border: 1px solid var(--color-dark);
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
   max-height: 32rem;
   overflow: auto;
-  padding-right: 1rem;
   color: var(--color-dark);
 }
 .wishes-section .wishes-preview .card .card-body .wishes::-webkit-scrollbar {
   width: 5px;
+  display: none;
 }
 .wishes-section .wishes-preview .card .card-body .wishes::-webkit-scrollbar-track {
   background-color: #eee;
@@ -1917,36 +2002,28 @@ ul li {
   border-radius: 20px;
 }
 .wishes-section .wishes-preview .card .card-body .wishes .wish {
+  position: relative;
   margin-bottom: 1.5rem;
-  display: grid;
-  grid-template-columns: auto 1fr;
-  gap: 0.5rem;
 }
 .wishes-section .wishes-preview .card .card-body .wishes .wish h6 {
-  font-weight: bold;
+  font-weight: 900;
+  font-size: 14pt;
+  font-style: italic;
 }
 .wishes-section .wishes-preview .card .card-body .wishes .wish h6,
 .wishes-section .wishes-preview .card .card-body .wishes .wish p {
   margin-bottom: 0;
 }
-.wishes-section .wishes-preview .card .card-body .wishes .wish .wish-badge {
-  background-color: transparent;
-  width: 35px;
-  aspect-ratio: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 0.5rem;
-  border: 1px solid var(--color-button-trans);
-  border-radius: 50px;
+.wishes-section .wishes-preview .card .card-body .wishes .wish .text-muted {
+  color: var(--color-dark) !important;
+  float: right;
 }
 .wishes-section .wishes-preview .card .card-body .wishes .wish .wish-description {
-  padding: 1rem;
+  padding: 0.75rem;
   background-color: transparent;
-  border-radius: 5px;
-  position: relative;
   border: 1px solid var(--color-button-trans);
-  border-radius: var(--border-radius);
+  margin: 0.25rem 0;
+  min-height: 75px;
 }
 
 .egift-section {
@@ -1958,6 +2035,10 @@ ul li {
   .egift-section {
     padding: 8rem 0;
   }
+}
+.egift-section .background-element img {
+  -o-object-position: 50% 100%;
+     object-position: 50% 100%;
 }
 .egift-section .gift-wrap {
   position: relative;
@@ -2003,8 +2084,6 @@ ul li {
   color: var(--color-button-trans);
   z-index: 2;
   border: none;
-  font-style: normal;
-  text-transform: none;
 }
 @media (max-width: 767px) {
   .egift-section .tabs-gift .btn-custom {
@@ -2055,6 +2134,7 @@ ul li {
   color: var(--text-button-trans);
   text-transform: uppercase;
   font-style: italic;
+  font-weight: 300;
 }
 @media (max-width: 767px) {
   .egift-section form .row {
@@ -2172,8 +2252,18 @@ ul li {
   display: grid;
   grid-template-columns: 1fr 1fr;
 }
+@media (max-width: 575px) {
+  .gallery-section .gallery-default-test {
+    grid-template-columns: 1fr;
+  }
+}
 .gallery-section .gallery-default-test a.grid-2fr {
   grid-column: 1/span 2;
+}
+@media (max-width: 575px) {
+  .gallery-section .gallery-default-test a.grid-2fr {
+    grid-column: unset;
+  }
 }
 .gallery-section .gallery-default-test .img-gallery {
   width: 100%;
@@ -2183,7 +2273,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .gallery-section .gallery-default-test .img-gallery {
-    height: 80vh;
+    height: auto;
   }
 }
 
@@ -2202,13 +2292,17 @@ ul li {
 
 .stream-section {
   position: relative;
-  padding: 10rem 0;
+  padding: 12rem 0;
   text-align: center;
 }
 @media (max-width: 767px) {
   .stream-section {
     padding: 8rem 0;
   }
+}
+.stream-section .background-element img {
+  -o-object-position: 50% 0%;
+     object-position: 50% 0%;
 }
 .stream-section .stream-wrapper {
   position: relative;
@@ -2271,6 +2365,7 @@ ul li {
   text-align: center;
   background-color: var(--color-secondary);
   color: var(--text-dark);
+  font-family: "Nunito Sans", sans-serif;
 }
 .footer small {
   position: relative;
