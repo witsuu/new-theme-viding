@@ -1,0 +1,69 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 160px;
+		transform: scaleX(-1);
+		img:nth-child(2) {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 70%;
+		}
+		@include max-md {
+			width: 120px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 140px;
+		transform: scaleX(-1);
+		@include max-md {
+			width: 100px;
+		}
+		img:nth-child(2) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 70%;
+		}
+	}
+	.image-wrap {
+		position: relative;
+		height: 520px;
+		border-radius: 10px;
+		position: absolute;
+		top: -8rem;
+		left: 0;
+		@include max-md {
+			position: relative;
+			top: 0;
+			height: 380px;
+		}
+		.rsvp-background {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 10px;
+		}
+	}
+	.rsvp-wrap {
+		padding: 3rem 2rem;
+		position: relative;
+		border-radius: 8px;
+		background-color: var(--color-primary);
+		width: 100%;
+		z-index: 3;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+	}
+}

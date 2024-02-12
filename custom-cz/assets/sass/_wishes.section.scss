@@ -1,0 +1,130 @@
+.wishes-section {
+	position: relative;
+	.wishes-form-wrapper {
+		position: relative;
+		padding: 8rem 0;
+		@include max-md {
+			padding: 6rem 0;
+		}
+		.pola-1 {
+			position: absolute;
+			top: 0;
+			left: 2rem;
+			width: 45%;
+			transform: translate(0, -30%);
+			@include max-sm {
+				width: 85%;
+				left: 0;
+				transform: translate(-50%, -30%);
+			}
+		}
+		.pola-2 {
+			position: absolute;
+			top: 65%;
+			right: 10%;
+			width: 30%;
+			transform: translate(0, -50%);
+			@include max-sm {
+				right: 0;
+				width: 65%;
+				transform: translate(40%, -50%);
+			}
+		}
+	}
+	.card-form {
+		background-color: transparent;
+		border-radius: var(--border-radius);
+		text-align: right;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 0;
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 8rem 0;
+		}
+		.pola-1 {
+			position: absolute;
+			top: 20%;
+			left: 10%;
+			width: 30%;
+			@include max-sm {
+				left: 0;
+				width: 65%;
+				transform: translate(-20%, 0);
+			}
+		}
+		.pola-2 {
+			position: absolute;
+			top: 50%;
+			right: 5%;
+			width: 40%;
+			transform: translate(0, -50%);
+			@include max-sm {
+				top: 70%;
+				right: 0;
+				width: 90%;
+				transform: translate(40%, -50%);
+			}
+		}
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 1rem;
+				border: 1px solid var(--color-dark);
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+						display: none;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					.wish {
+						position: relative;
+						margin-bottom: 1.5rem;
+						h6 {
+							font-weight: 900;
+							font-size: 14pt;
+							font-style: italic;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.text-muted {
+							color: var(--color-dark) !important;
+							float: right;
+						}
+						.wish-description {
+							padding: 0.75rem;
+							background-color: transparent;
+							border: 1px solid var(--color-button-trans);
+							margin: 0.25rem 0;
+							min-height: 75px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

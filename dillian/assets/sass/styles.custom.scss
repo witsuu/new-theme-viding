@@ -1,0 +1,304 @@
+@import "variables", "mixins";
+
+:root {
+	--color-main: #edeeee;
+	--color-primary: #fefefc;
+	--color-secondary: #cfada6;
+}
+
+.form-control,
+.form-select {
+	border: 1px solid var(--color-dark);
+	box-shadow: none;
+}
+
+.couple-section {
+	.orn-2 {
+		bottom: 20%;
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 180px;
+		transform: translate(35%, 0) scaleX(-1);
+		@include min-md {
+			width: 340px;
+		}
+		@include min-lg {
+			width: 360px;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 260px;
+		transform: translate(-30%, 0);
+		@include min-md {
+			width: 320px;
+		}
+		@include min-lg {
+			width: 340px;
+			transform: translate(-20%, 0);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 240px;
+		transform: translate(-40%, 0);
+		z-index: 6;
+		@include min-md {
+			width: 360px;
+			transform: translate(-35%, 0);
+		}
+		@include min-lg {
+			width: 420px;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(40%, 0) scale(-1);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			width: 420px;
+		}
+	}
+	.couple-wrapper {
+		@include max-lg {
+			padding-bottom: 3rem;
+		}
+	}
+	.couple {
+		.couple-description {
+			&::before {
+				color: #edeeee;
+			}
+			&::after {
+				z-index: 8;
+			}
+			* {
+				z-index: 10;
+			}
+		}
+	}
+}
+
+.story-section {
+	background-color: var(--color-main);
+	.story {
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 240px;
+			transform: translate(-30%, 35%) rotate(-20deg) scaleY(-1);
+			@include min-md {
+				width: 360px;
+			}
+			@include min-lg {
+				width: 380px;
+				transform: translate(-30%, 15%) rotate(-20deg) scaleY(-1);
+			}
+		}
+	}
+}
+
+.venue-section {
+	.orn-1 {
+		@include max-md {
+			transform: translate(-50%, 20%) scaleX(-1) rotate(-45deg);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 280px;
+		transform: translate(35%, 0) scale(-1);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			top: 25%;
+			width: 420px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 240px;
+		transform: translate(-40%, 0) rotate(-20deg) scaleY(-1);
+		@include min-md {
+			width: 280px;
+		}
+		@include min-lg {
+			width: 420px;
+		}
+	}
+}
+
+.rsvp-section {
+	.rsvp-wrapper {
+		box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+		overflow: hidden;
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200px;
+			transform: translate(-40%, -10%) scaleY(-1);
+			@include min-md {
+				width: 280px;
+			}
+			@include min-lg {
+				width: 320px;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 160px;
+			transform: translate(30%, -50%) scaleX(-1);
+			@include min-md {
+				width: 200px;
+			}
+			@include min-lg {
+				width: 240px;
+			}
+		}
+	}
+}
+
+.wishes-section {
+	.card-form {
+		overflow: hidden;
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 200px;
+			transform: translate(40%, -10%) scale(-1);
+			@include min-md {
+				width: 280px;
+			}
+			@include min-lg {
+				width: 320px;
+			}
+		}
+	}
+}
+
+.egift-section {
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 280px;
+		transform: translate(-35%, 0) scaleY(-1);
+		@include min-md {
+			width: 420px;
+		}
+		@include min-lg {
+			width: 460px;
+		}
+	}
+	.gift-wrap {
+		box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+	}
+}
+
+.apology-section {
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 200px;
+		transform: translate(-40%, 0);
+		@include min-md {
+			width: 280px;
+		}
+		@include min-lg {
+			width: 320px;
+			transform: translate(-20%, 0);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(35%, 0) scaleX(-1);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			width: 420px;
+		}
+	}
+}
+
+.stream-section {
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 200px;
+		transform: translate(40%, 0) scaleX(-1);
+		@include min-md {
+			width: 280px;
+			transform: translate(20%, 0) scaleX(-1);
+		}
+		@include min-lg {
+			width: 320px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 260px;
+		transform: translate(-35%, 0);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			width: 420px;
+		}
+	}
+}
+
+.thank-section {
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(45%, 0) scaleX(-1);
+		@include min-md {
+			width: 180px;
+		}
+		@include min-lg {
+			width: 220px;
+		}
+	}
+	.thank {
+		overflow: hidden;
+	}
+}
+
+img[alt="rose-3"] {
+	transform-origin: 2% 8%;
+}
+img[alt="rose-4"] {
+	transform-origin: 5% 98%;
+}

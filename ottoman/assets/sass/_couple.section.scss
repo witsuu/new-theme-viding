@@ -1,0 +1,184 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	background-color: var(--color-primary);
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 36px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 5rem 0 3rem;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 1rem;
+			left: 0;
+			width: 40%;
+			transform: translate(-65%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 30%;
+			}
+			@include min-lg {
+				width: 15%;
+			}
+			.orn-2 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 80%;
+				transform: translate(0, 50%) rotate(45deg) scaleX(-1);
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(60%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 20%;
+			}
+			@include min-lg {
+				width: 10%;
+			}
+			.orn-4 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 140%;
+				transform: translate(0, 55%) scaleX(-1);
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		z-index: 3;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 3/4;
+			margin: 0 auto;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+				}
+			}
+			.bg-1 {
+				position: absolute;
+				top: -1px;
+				left: -1px;
+				width: calc(100% + 3px);
+				path {
+					fill: var(--color-primary);
+				}
+			}
+			.bg-2 {
+				position: absolute;
+				bottom: -1px;
+				left: -1px;
+				width: calc(100% + 3px);
+				transform: scaleY(-1);
+				path {
+					fill: var(--color-primary);
+				}
+			}
+			.frame {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 92%;
+				height: 92%;
+				transform: translate(-50%, -50%);
+				.image-element {
+					height: 100%;
+					.img-fluid {
+						height: 100%;
+					}
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 2rem 1rem 1rem;
+			background: linear-gradient(to bottom, var(--color-main), transparent);
+			border-radius: var(--border-radius);
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -50%);
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				max-width: 100%;
+				background: var(--color-secondary);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+		&.single{
+			.sosmed-wrap{
+				position: relative;
+				top: unset;
+				left: unset;
+				transform: none;
+				margin: 1rem auto 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,134 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.bg-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-sm {
+			top: unset;
+			bottom: 0;
+			width: 150%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-30%, 60%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(30%, 60%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-60%, 0);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(60%, 0) scaleX(-1);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(0, 70%);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(0, 70%) scaleX(-1);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.reminder-content {
+		position: relative;
+		width: fit-content;
+		max-width: 100%;
+		margin: 0 auto;
+		z-index: 2;
+		.frame {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 180%;
+			transform: translate(-50%, -50%);
+			@include max-sm {
+				width: 135%;
+			}
+		}
+	}
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 5rem;
+		@include max-sm {
+			margin-top: 3rem;
+		}
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

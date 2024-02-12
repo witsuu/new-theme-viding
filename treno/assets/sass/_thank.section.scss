@@ -1,0 +1,45 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.elements-wrapper-absolute {
+		.background-element {
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: rgba($color: #000000, $alpha: 0.3);
+				content: "";
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		min-height: 65vh;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include max-lg {
+			min-height: 50vh;
+		}
+		.thank {
+			position: relative;
+			color: var(--color-light);
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

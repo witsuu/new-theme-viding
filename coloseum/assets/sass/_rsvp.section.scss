@@ -1,0 +1,191 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0;
+		.container {
+			padding: 0;
+		}
+	}
+	.hill-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120%;
+		transform: translate(-20%, -10%);
+		@include max-sm {
+			width: 200%;
+			transform: translate(-20%, -25%);
+		}
+	}
+	.hill-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 120%;
+		transform: translate(15%, -10%) scaleX(-1);
+		@include max-sm {
+			width: 200%;
+			transform: translate(20%, -25%) scaleX(-1);
+		}
+	}
+	.land {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, 40%);
+		@include max-lg {
+			width: 200%;
+			transform: translate(-50%, 30%);
+		}
+	}
+	.coloseum {
+		position: absolute;
+		bottom: 20%;
+		transform: translate(-50%, 0);
+		left: 65%;
+		width: 60%;
+		@include max-sm {
+			left: 45%;
+			width: 50%;
+		}
+		.town-1 {
+			position: absolute;
+			bottom: 15%;
+			left: 0;
+			width: 80%;
+			transform: translate(-58%, 0);
+		}
+		.town-2 {
+			position: absolute;
+			bottom: 10%;
+			right: 0;
+			width: 80%;
+			transform: translate(30%, 0);
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 45%;
+		left: 0;
+		width: 50%;
+		transform: translate(-25%, -50%);
+		@include min-md {
+			width: 40%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 50%;
+		transform: translate(25%, -50%) scaleX(-1);
+		@include min-md {
+			width: 40%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-65%, 20%);
+		@include min-md {
+			width: 50%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(65%, 20%);
+		@include min-md {
+			width: 50%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-20%, 30%);
+		@include min-md {
+			width: 30%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		top: 30%;
+		right: 0;
+		width: 80%;
+		transform: translate(40%, 0);
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(20%, 30%) scaleX(-1);
+		@include min-md {
+			width: 30%;
+		}
+		.orn-6 {
+			top: 25%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 80%;
+		transform: translate(10%, 0);
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 2rem 2rem 8rem;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		@include max-md {
+			padding: 1rem 1.5rem 8rem;
+		}
+		.rsvp-form {
+			position: relative;
+			color: var(--color-light);
+			mask-image: url(../images/mask.png);
+			mask-size: 100% 100%;
+			mask-repeat: no-repeat;
+			box-shadow: inset 0 21px 42px rgba($color: #000000, $alpha: 0.1);
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-primary);
+				opacity: 0.4;
+				content: "";
+			}
+			&-body {
+				position: relative;
+				padding: 3rem 2rem 8rem;
+				@include max-md {
+					padding: 2rem 1rem 8rem;
+				}
+				&.with-line {
+					&::before,
+					&::after {
+						position: relative;
+						display: block;
+						top: unset;
+						bottom: unset;
+						left: unset;
+						transform: none;
+						margin: 1rem auto;
+					}
+				}
+			}
+		}
+	}
+}

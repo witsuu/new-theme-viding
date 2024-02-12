@@ -1,0 +1,311 @@
+.venue-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 1rem;
+		left: 60%;
+		width: 40px;
+		@include min-md {
+			width: 50px;
+		}
+		@include min-lg {
+			width: 60px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 3rem;
+		left: 73%;
+		width: 50px;
+		@include min-md {
+			width: 60px;
+		}
+		@include min-lg {
+			width: 70px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 30%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 30%;
+		right: 0;
+		width: 75%;
+		transform: translate(20%, 0);
+		@include min-md {
+			top: 10%;
+			width: 60%;
+		}
+		@include min-lg {
+			width: 45%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		top: 65%;
+		right: 0;
+		width: 75%;
+		transform: translate(20%, 0);
+		@include min-md {
+			top: 50%;
+			width: 60%;
+		}
+		@include min-lg {
+			width: 45%;
+		}
+	}
+	.venue-wrapper {
+		position: relative;
+		z-index: 3;
+		.venue-description {
+			position: relative;
+			margin: 0 auto 5rem;
+			text-align: left;
+			@include max-lg {
+				margin-bottom: 3rem;
+			}
+			.title-section {
+				text-align: left;
+			}
+		}
+		.venue-content {
+			position: relative;
+			.ribbon-venue {
+				position: relative;
+				text-align: center;
+				margin-bottom: 0.5rem;
+				svg {
+					width: 40px;
+					height: auto;
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+				.st0 {
+					fill: var(--color-secondary);
+				}
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+			.event-name-header {
+				position: relative;
+				padding: 10rem 2rem;
+				text-align: left;
+				font-family: $font-secondary;
+				h4 {
+					position: relative;
+					width: 50%;
+					left: 50%;
+					font-size: 32px;
+					@include max-md {
+						font-size: 28px;
+					}
+				}
+				.elements-wrapper-absolute {
+					img {
+						border-radius: 300px 300px 0 0;
+						box-shadow: inset 0 20px 38px rgba($color: #000000, $alpha: 0.1);
+					}
+				}
+			}
+			.card {
+				background-color: transparent;
+				border-radius: 300px 300px var(--border-radius) var(--border-radius);
+				color: var(--color-dark);
+				text-align: left;
+				overflow: hidden;
+				border: 3px solid var(--border-color);
+				&::before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: var(--color-main);
+					opacity: 0.6;
+					content: "";
+				}
+				.card-body {
+					position: relative;
+					padding: 3rem 2rem;
+					@include max-md {
+						padding: 2rem 1rem;
+					}
+					.event-description {
+						position: relative;
+						margin-bottom: 1rem;
+						p {
+							margin-bottom: 0;
+						}
+					}
+					.event-name {
+						position: relative;
+						width: 100%;
+						margin-bottom: 1rem;
+						.date {
+							position: relative;
+							width: 100%;
+							display: flex;
+							justify-content: flex-start;
+							align-items: center;
+							gap: 0.75rem;
+							margin: 0.5rem 0;
+							font-family: $font-secondary;
+							h5 {
+								padding-top: 0.5rem;
+								font-weight: 600;
+								font-size: 32px;
+								margin-bottom: 0;
+							}
+							.line {
+								width: 2px;
+								height: 36px;
+								background-color: var(--color-button-trans);
+							}
+							span {
+								font-weight: 600;
+							}
+						}
+						p {
+							margin-bottom: 0;
+							font-weight: 600;
+						}
+					}
+					.event-place {
+						position: relative;
+						h4 {
+							font-weight: 700;
+						}
+					}
+				}
+			}
+		}
+	}
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		text-align: center;
+		z-index: 2;
+		.title-section {
+			text-align: left;
+			&::before {
+				all: unset;
+			}
+		}
+		@include max-md {
+			padding: 2rem 0;
+		}
+		* {
+			position: relative;
+		}
+	}
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: flex-start;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+			@include max-md {
+				width: 120px;
+			}
+			@include max-xs {
+				width: 45%;
+			}
+		}
+	}
+	.row-venue {
+		row-gap: 3rem;
+	}
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+		40% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}
+
+.maps-embed {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

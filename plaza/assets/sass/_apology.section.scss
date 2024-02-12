@@ -1,0 +1,112 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.elements-wrapper-absolute {
+		top: 20%;
+		.background-element {
+			img {
+				object-position: 50% 0%;
+			}
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-75%, 0) scaleX(-1);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(-10%, 0) scaleX(-1) rotate(15deg);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(75%, 0);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+		.orn-4 {
+			position: absolute;
+			top: 60%;
+			left: 0%;
+			width: 60%;
+			transform: rotate(-20deg) scaleX(-1);
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 70%;
+		transform: translate(-25%, 80%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 30%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(45%, 80%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 30%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%, 20%);
+		@include min-md {
+			width: 20%;
+		}
+		@include min-lg {
+			width: 10%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(50%, 65%) rotate(-20deg) scaleX(-1);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+	}
+	.appology-wrap {
+		position: relative;
+	}
+}

@@ -1,0 +1,133 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 180%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.motif {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: auto;
+		height: 42px;
+		transform: translate(-50%, 0);
+		display: flex;
+		@include max-lg {
+			height: 38px;
+		}
+		@include max-sm {
+			height: 33px;
+		}
+		.image-element {
+			width: auto;
+			height: 100%;
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
+	.motif-container {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, 0%);
+		@include max-lg {
+			width: 300%;
+		}
+		@include max-sm {
+			width: 500%;
+		}
+		.motifs {
+			display: flex;
+			align-items: center;
+			opacity: 0.3;
+			path {
+				fill: var(--color-primary);
+			}
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 0 0 3rem;
+		transition: opacity 1s ease;
+		height: 100vh;
+		@include max-lg {
+			padding: 0 0 7rem;
+			align-items: center;
+		}
+		.cover-content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.cover-body {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				width: 35%;
+				height: 100%;
+				background: linear-gradient(to bottom, var(--color-primary), transparent);
+				color: var(--color-light);
+				margin: 0 auto;
+				@include max-xl {
+					width: 40%;
+				}
+				@include max-lg {
+					width: 60%;
+				}
+				@include max-sm {
+					width: 100%;
+				}
+				.cover-description {
+					padding: 2rem;
+					text-align: center;
+					.cover-event {
+						position: relative;
+						margin-bottom: 2rem;
+					}
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 2rem;
+					}
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+					p {
+						margin-bottom: 0;
+					}
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

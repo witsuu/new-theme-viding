@@ -1,0 +1,111 @@
+.story-section {
+	position: relative;
+	overflow: hidden;
+	@include min-lg {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.story {
+		position: relative;
+		width: 45%;
+		@include max-lg {
+			width: 100%;
+			margin: 0 auto;
+		}
+		.branch {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 160%;
+			transform: translate(-50%, 10%);
+			opacity: 0.1;
+			@include min-md {
+				width: 100%;
+			}
+			@include min-lg {
+				width: 80%;
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-70%, -20%) rotate(10deg);
+			@include min-md {
+				width: 30%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(70%, -20%) rotate(-10deg) scaleX(-1);
+			@include min-md {
+				width: 30%;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 3rem;
+			left: 0;
+			width: 60%;
+			transform: translate(-80%, 0);
+			@include min-md {
+				width: 50%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			width: 60%;
+			transform: translate(80%, 0) scaleX(-1);
+			@include min-md {
+				width: 50%;
+			}
+		}
+	}
+	.story-content {
+		position: relative;
+		padding: 5rem 5rem 5rem 4rem;
+		@include max-lg {
+			padding: 2rem 2.5rem 5rem;
+		}
+		@include max-sm {
+			padding: 2rem 2.5rem 3rem;
+		}
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+		@include min-lg {
+			text-align: left;
+			.title-section {
+				text-align: left;
+			}
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 55%;
+		aspect-ratio: 6/5;
+		height: auto;
+		z-index: 5;
+		@include max-lg {
+			width: 100%;
+		}
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.story-background {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

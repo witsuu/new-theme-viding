@@ -1,0 +1,77 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.waves-top {
+		z-index: 3;
+		path {
+			fill: var(--color-primary);
+		}
+	}
+	.image-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+		&::before {
+			position: absolute;
+			left: 0;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			background-color: rgba($color: #000000, $alpha: 0.4);
+			content: "";
+			z-index: 1;
+		}
+		.thank-background {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.thank {
+		position: relative;
+		color: var(--color-light);
+		z-index: 5;
+		padding: 3rem 0;
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	.orn-1 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 160px;
+		z-index: 4;
+		@include max-md {
+			width: 80px;
+		}
+		@include max-xs {
+			width: 70px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 180px;
+		z-index: 4;
+		@include max-md {
+			width: 90px;
+		}
+		@include max-xs {
+			width: 80px;
+		}
+	}
+	small {
+		position: relative;
+	}
+}

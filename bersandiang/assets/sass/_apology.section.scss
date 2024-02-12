@@ -1,0 +1,60 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	.songket {
+		position: absolute;
+		bottom: 0;
+		width: 100px;
+		@include max-lg {
+			width: 80px;
+		}
+		@include max-sm {
+			width: 60px;
+		}
+		&-1 {
+			left: 0;
+		}
+		&-2 {
+			bottom: unset;
+			top: 0;
+			right: 0;
+		}
+	}
+	.songket-horizontal {
+		position: relative;
+		width: 100%;
+		@include max-lg {
+			width: 140%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.appology-content {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.appology-wrap {
+			position: relative;
+			padding: 3rem 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-main);
+				opacity: 0.8;
+				border-radius: var(--border-radius);
+				border: 2px solid var(--border-color);
+				content: "";
+			}
+		}
+	}
+}

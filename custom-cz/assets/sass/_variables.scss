@@ -1,0 +1,30 @@
+$color-main: #F7F6F1;
+$color-primary: #cdcdcb;
+$color-secondary: #0000;
+$color-dark: #1e1f1e;
+$color-light: #fff;
+$text-button: #1e1f1e;
+$color-button-trans: #1e1f1e;
+$color-logo: #e9088a;
+$font-secondary: "Luxurious Script", cursive;
+$font-primary: "Canela Trial", serif;
+$border-radius: 10px;
+
+$breakpoints-min: (
+	xs: 325px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	4k: 2560px,
+);
+
+$breakpoints-max: (
+	xs: 375px,
+	sm: 575px,
+	md: 767px,
+	lg: 991px,
+	xl: 1199px,
+	xxl: 1399px,
+);

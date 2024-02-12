@@ -1,0 +1,31 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--color-primary);
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 8rem 2rem;
+		@include max-md {
+			padding: 5rem 1rem;
+		}
+		&::before{
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-main);
+			opacity: .3;
+			mask-image: url(../images/mask-3.png);
+			mask-size: 100% 100%;
+			mask-repeat: no-repeat;
+			content: "";
+		}
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

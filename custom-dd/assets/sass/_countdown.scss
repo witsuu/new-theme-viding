@@ -1,0 +1,82 @@
+.countdown {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+	padding: 2rem 0;
+	gap: 2rem;
+	z-index: 3;
+	@include max-lg {
+		gap: 1rem;
+	}
+	@include max-md {
+		gap: 0.5rem;
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding: 0.5rem 1rem 1rem;
+		min-width: 150px;
+		background-color: var(--color-3);
+		border-radius: var(--border-radius);
+		@include max-md {
+			min-width: 80px;
+			padding: 0.28rem 1rem 0.5rem;
+		}
+		@include max-rwd(350px) {
+			min-width: 72px;
+		}
+		.huruf {
+			font-size: 18px;
+			font-weight: 600;
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+		.angka {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 48px;
+			font-family: $font-secondary;
+			@include max-md {
+				font-size: 28px;
+				line-height: 1;
+				padding-right: 0.25rem !important;
+			}
+			@include max-xs {
+				font-size: 26px;
+			}
+		}
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+		.frame {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 110%;
+			height: 110%;
+			transform: translate(-50%, -50%);
+			@include min-lg {
+				width: 120%;
+				height: 120%;
+			}
+			.image-element {
+				height: 100%;
+				.img-fluid {
+					height: 100%;
+				}
+			}
+		}
+	}
+}

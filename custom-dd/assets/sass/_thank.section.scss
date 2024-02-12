@@ -1,0 +1,159 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0 15rem;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0 10rem;
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 37%;
+		transform: translate(-50%, -8%) scaleX(-1);
+		@include max-lg {
+			width: 60%;
+		}
+		@include max-sm {
+			width: 70%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 27%;
+		transform: translate(-50%, 40%);
+		@include max-lg {
+			width: 45%;
+		}
+		@include max-sm {
+			width: 50%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		left: 63%;
+		bottom: 0;
+		width: 12%;
+		transform: translate(0, 10%);
+		@include max-lg {
+			left: 67%;
+			width: 18%;
+			transform: translate(0, 20%);
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 72%;
+		width: 22%;
+		transform: translate(0, 60%);
+		@include max-lg {
+			left: unset;
+			right: 0;
+			width: 28%;
+			transform: translate(30%, 60%) rotate(-10deg);
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 18%;
+		transform: translate(20%, 0) scale(-1);
+		@include max-lg {
+			bottom: 3rem;
+			width: 25%;
+			transform: translate(30%, 0) scale(-1);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		top: 18%;
+		left: 0;
+		width: 65%;
+		transform: scale(-1);
+		@include max-lg {
+			transform: translate(10%, 0) scale(-1);
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120%;
+		transform: translate(-35%, 58%) rotate(20deg);
+		@include max-lg {
+			width: 140%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 67%;
+		width: 12%;
+		transform: translate(0, 10%);
+		@include max-lg {
+			right: 72%;
+			width: 15%;
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		right: 76%;
+		width: 10%;
+		transform: translate(0, -10%);
+		@include max-lg {
+			right: 77%;
+			bottom: 1rem;
+			width: 12%;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 27%;
+		transform: translate(-40%, 30%) rotate(-30deg);
+		@include max-lg {
+			width: 35%;
+			bottom: 3rem;
+			transform: translate(-45%, 30%) rotate(-30deg);
+		}
+	}
+	.orn-11 {
+		position: absolute;
+		top: 69%;
+		right: 12%;
+		width: 25%;
+		@include max-lg {
+			top: 85%;
+			right: 20%;
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(50%, -70%) rotate(45deg) scaleY(-1);
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-2);
+	color: var(--color-light);
+	small {
+		position: relative;
+	}
+}

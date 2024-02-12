@@ -1,0 +1,248 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0 10rem;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0 8rem;
+	}
+	.bg-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			top: unset;
+			bottom: 0;
+			width: 120%;
+		}
+		@include max-sm {
+			width: 150%;
+		}
+	}
+	.sky {
+		position: absolute;
+		top: 15rem;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 120%;
+		}
+		.img-element:nth-child(1) {
+			margin-bottom: -2rem;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-55%, 0);
+		z-index: 3;
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 22%;
+			width: 80%;
+			transform: translate(0, 80%);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(68%, 0);
+		z-index: 3;
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 12%;
+			width: 80%;
+			transform: translate(0, 75%) rotate(-55deg);
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-10%, 50%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(0%, 50%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 1rem;
+		left: 0;
+		width: 45%;
+		transform: translate(-65%, 0);
+		@include min-md {
+			width: 35%;
+		}
+		@include min-lg {
+			width: 18%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 1rem;
+		right: 0;
+		width: 45%;
+		transform: translate(65%, 0) scaleX(-1);
+		@include min-md {
+			width: 35%;
+		}
+		@include min-lg {
+			width: 18%;
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-15%, 20%);
+		@include min-md {
+			width: 20%;
+		}
+		@include min-lg {
+			width: 10%;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(15%, 20%) scaleX(-1);
+		@include min-md {
+			width: 20%;
+		}
+		@include min-lg {
+			width: 10%;
+		}
+	}
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(25%, 65%);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(-5%, 65%) scaleX(-1);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 15%;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/4;
+		margin: 0 auto 1.5rem;
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+		.frame {
+			position: absolute;
+			top: -2px;
+			left: -1px;
+			width: calc(100% + 3px);
+			path {
+				fill: var(--color-main);
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+			padding: 3rem 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-main);
+				border-radius: var(--border-radius);
+				border: 2px solid #fff;
+				box-shadow: inset 0 10px 20px rgba($color: #000000, $alpha: 0.25);
+				opacity: 0.6;
+				content: "";
+			}
+			.title-section {
+				width: 100%;
+				padding: 0;
+			}
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

@@ -1,0 +1,107 @@
+.story-section {
+	position: relative;
+	.story {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			transform: translate(-55%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+			.orn-2 {
+				position: absolute;
+				bottom: 0;
+				right: 22%;
+				width: 80%;
+				transform: translate(0, 80%);
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(68%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+			.orn-4 {
+				position: absolute;
+				bottom: 0;
+				left: 12%;
+				width: 80%;
+				transform: translate(0, 75%) rotate(-55deg);
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60%;
+			transform: translate(-30%, 0);
+			@include min-md {
+				width: 50%;
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 60%;
+			transform: translate(30%, 0);
+			@include min-md {
+				width: 50%;
+			}
+		}
+	}
+	.story-content {
+		position: relative;
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+		padding: 0 1rem;
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/4;
+		margin-top: 2rem;
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.story-background {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: var(--border-radius);
+			}
+		}
+		.frame {
+			position: absolute;
+			top: -2px;
+			left: -1px;
+			width: calc(100% + 3px);
+			path {
+				fill: var(--color-main);
+			}
+		}
+	}
+}

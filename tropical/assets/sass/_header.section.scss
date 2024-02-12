@@ -1,0 +1,120 @@
+.header-section {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	.orn-1 {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 150px;
+		transform: translateY(50%);
+		z-index: 3;
+		@include max-lg {
+			width: 130px;
+		}
+		@include max-md {
+			width: 90px;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+		img:nth-child(1) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 70%;
+			z-index: 2;
+		}
+	}
+	.image-wrapper {
+		position: absolute;
+		inset: 0;
+		overflow: hidden;
+		&::after {
+			position: absolute;
+			inset: 0;
+			background: rgba($color: #000000, $alpha: 0.35);
+			content: "";
+		}
+		.background-header {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			position: relative;
+		}
+	}
+	.header-content {
+		position: relative;
+		text-align: center;
+		padding: 4rem 0 0;
+		.header {
+			text-align: center;
+			width: 100%;
+			height: 100%;
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-end;
+			align-items: center;
+			.header-title {
+				color: var(--color-light);
+				z-index: 5;
+				width: 100%;
+				.title {
+					color: #fff;
+				}
+			}
+		}
+	}
+}
+
+.envelope-wrap {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	color: #fff;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.image-wrapper {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background: rgba($color: #000000, $alpha: 0.4);
+			content: "";
+		}
+		.background-header {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+	}
+	.header-content {
+		padding: 4rem 0 3rem;
+		.header {
+			display: flex;
+			flex-direction: column;
+			justify-content: space-between;
+			align-items: center;
+			padding: 2rem 0 3rem;
+			.header-title {
+				margin-bottom: 0;
+				bottom: 0;
+				@include max-md {
+					padding: 3rem 0;
+				}
+			}
+		}
+	}
+}

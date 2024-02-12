@@ -1,0 +1,95 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	@include max-lg {
+		.row {
+			gap: 1.5rem;
+		}
+	}
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		left: 0;
+		bottom: 3rem;
+		width: 140px;
+		z-index: 4;
+		@include max-md {
+			width: 80px;
+			bottom: 0;
+		}
+		@include max-xs {
+			width: 70px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		z-index: 4;
+		@include max-md {
+			width: 90px;
+		}
+		@include max-xs {
+			width: 80px;
+		}
+		img:nth-child(2) {
+			position: absolute;
+			bottom: -1rem;
+			right: 0;
+			width: 70%;
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		padding: 1rem 0;
+		border-radius: 10px;
+		height: 100%;
+		z-index: 5;
+		@include max-md {
+			padding: 1rem 0;
+		}
+		h4 {
+			@include max-md {
+				text-align: center;
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.card {
+		background-color: transparent;
+		height: 100%;
+		color: var(--color-dark);
+		border: none;
+	}
+	.btn-custom {
+		width: 50%;
+		@include max-lg {
+			width: 100%;
+		}
+		@include max-md {
+			width: fit-content;
+		}
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		width: 100%;
+		margin-top: 3rem;
+		@include max-md {
+			text-align: center;
+		}
+	}
+}

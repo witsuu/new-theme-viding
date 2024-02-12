@@ -1,0 +1,20 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.background-element {
+		img {
+			object-position: 50% 20%;
+			opacity: 0.4;
+		}
+	}
+	.appology-wrap {
+		position: relative;
+		padding: 3rem 1rem;
+		@include max-md {
+			padding: 2rem 0;
+		}
+	}
+}

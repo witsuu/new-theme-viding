@@ -1,0 +1,290 @@
+body {
+	font-family: $font-primary;
+	color: var(--color-dark);
+}
+
+.main-app {
+	background-color: var(--color-main);
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+.logo-viding {
+	height: 2.4rem;
+	@include max-md {
+		height: 2.25rem;
+	}
+	path {
+		fill: #fff;
+	}
+}
+
+.color__button__trans {
+	background-color: transparent !important;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $font-secondary;
+}
+
+h1 {
+	font-size: 48px;
+	@include max-sm {
+		font-size: 32px;
+	}
+}
+
+h2 {
+	margin-bottom: 0;
+	font-weight: 500;
+}
+
+small {
+	font-size: 12px;
+}
+
+@include max-sm {
+	p {
+		font-size: 14px;
+	}
+	small {
+		font-size: 10px;
+	}
+}
+
+img {
+	width: 100%;
+	height: auto;
+}
+
+.container {
+	@include max-md {
+		padding-left: 1.5rem;
+		padding-right: 1.5rem;
+	}
+}
+
+.btn-custom {
+	background-color: var(--color-secondary);
+	padding: 0.5rem 2rem;
+	transition: all 0.3s ease-in-out;
+	// border-color: $color-primary;
+	color: var(--text-button);
+	width: fit-content;
+	margin: auto;
+	border-radius: 10px;
+	&:hover {
+		color: var(--text-button);
+	}
+	path {
+		fill: var(--text-button);
+	}
+}
+
+.font-primary {
+	font-family: $font-primary;
+}
+
+.font-secondary {
+	font-family: $font-secondary;
+}
+
+.form-control,
+.form-select {
+	font-family: $font-primary;
+	border-color: rgba($color: #000000, $alpha: 0.3);
+	padding: 0.5rem 1rem;
+	background-color: #fff;
+	&::placeholder {
+		color: var(--color-dark);
+	}
+	&:focus {
+		box-shadow: none;
+		border-color: var(--color-dark);
+	}
+}
+
+.scrolled {
+	background: #fff !important;
+	transition: all 1s ease-in-out;
+	box-shadow: 3px 0px 15px 15px rgba(89, 89, 89, 0.2);
+	visibility: visible !important;
+	pointer-events: all !important;
+	.logo-viding {
+		path {
+			fill: var(--vd-color-pink);
+		}
+	}
+}
+
+.navbar-hide {
+	top: -70px;
+}
+
+.progress {
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 2px;
+	background-color: var(--vd-color-pink);
+	width: 0;
+	z-index: 9999;
+}
+
+.title-section {
+	position: relative;
+	// min-width: 268px;
+	width: fit-content;
+	margin: auto;
+	text-align: center;
+	margin-bottom: 1.25rem;
+	.deco-title {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.reminder-wrap {
+	position: relative;
+	transform: translateY(30%);
+	padding: 1rem 2rem 0;
+	background-color: var(--color-primary);
+	width: fit-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	border-radius: 8px;
+	margin: 0 auto;
+	z-index: 5;
+	@include max-md {
+		padding: 1rem 1rem 0;
+	}
+	@include max-xs {
+		padding: 0.5rem 0 0;
+	}
+	.couple-background {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		object-fit: cover;
+	}
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.25rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		bottom: -20px;
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
+
+.waves-bottom {
+	position: absolute;
+	width: 100%;
+	left: 0;
+	height: auto;
+	bottom: -2px;
+	z-index: 3;
+	&.reverse {
+		transform: scaleX(-1);
+	}
+}
+.waves-top {
+	position: absolute;
+	top: -2px;
+	left: 0;
+	width: 100%;
+	height: auto;
+	transform: scale(-1);
+	z-index: 3;
+}
+
+.waves-left {
+	position: absolute;
+	height: 100%;
+	left: -1px;
+	top: 0;
+}
+
+.waves-right {
+	position: absolute;
+	height: 100%;
+	right: -1px;
+	top: 0;
+	transform: scale(-1);
+}
+
+ul {
+	padding: 0;
+	li {
+		padding: 0;
+	}
+}
+
+@include min-md {
+	.lg {
+		display: block;
+	}
+	.sm {
+		display: none;
+	}
+}
+@include max-md {
+	.lg {
+		display: none;
+	}
+	.sm {
+		display: block;
+	}
+}
+
+.loader-wrapper {
+	position: fixed;
+	min-height: 100vh;
+	background-color: #fff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	z-index: 1500;
+	flex-direction: column;
+	gap: 1.25rem;
+	.spinner {
+		position: relative;
+		width: 84px;
+	}
+	span {
+		color: var(--vd-color-pink);
+		font-weight: 700;
+		animation: fade 2s linear infinite;
+		letter-spacing: 5px;
+	}
+}
+
+@keyframes fade {
+	0% {
+		opacity: 0;
+	}
+	80% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}

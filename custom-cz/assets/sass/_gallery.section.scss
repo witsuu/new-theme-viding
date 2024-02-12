@@ -1,0 +1,81 @@
+.gallery-section {
+	position: relative;
+	background-color: var(--color-primary);
+	padding: 0 0 5rem;
+	.gallery-default {
+		position: relative;
+		width: 100%;
+		a {
+			height: 100%;
+		}
+		.splide {
+			padding-bottom: 1rem;
+			&__pagination {
+				bottom: -0.5em;
+				&__page {
+					background-color: #c3c3c3;
+					&.is-active {
+						background-color: #fff;
+					}
+				}
+			}
+			&__slide {
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.splide__arrow {
+				border-radius: 0;
+				width: 65px;
+				height: 65px;
+				background-color: var(--color-primary);
+				@include max-lg {
+					width: 50px;
+					height: 50px;
+				}
+				svg {
+					fill: var(--color-button-trans);
+					width: 25px;
+					height: 30px;
+					@include max-md {
+						width: 20px;
+						height: 25px;
+					}
+				}
+				&--prev {
+					left: 0;
+				}
+				&--next {
+					right: 0;
+				}
+			}
+		}
+	}
+	.gallery-default-test {
+		position: relative;
+		width: 100%;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		@include max-lg {
+			grid-template-columns: 1fr;
+		}
+		a {
+			&.grid-2fr {
+				grid-column: 1 / span 2;
+				@include max-lg {
+					grid-column: unset;
+				}
+			}
+		}
+		.img-gallery {
+			width: 100%;
+			height: 100vh;
+			object-fit: cover;
+			@include max-lg {
+				height: auto;
+			}
+		}
+	}
+}

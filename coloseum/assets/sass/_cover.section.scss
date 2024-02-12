@@ -1,0 +1,170 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.hill-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 90%;
+		transform: translate(-20%, 10%);
+		@include max-lg {
+			width: 120%;
+			transform: translate(-20%, 0%);
+		}
+		@include max-sm {
+			width: 150%;
+		}
+	}
+	.hill-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 90%;
+		transform: translate(10%, 10%) scaleX(-1);
+		@include max-lg {
+			width: 120%;
+			transform: translate(10%, 5%) scaleX(-1);
+		}
+		@include max-sm {
+			width: 150%;
+		}
+	}
+	.town-1 {
+		position: absolute;
+		bottom: 3rem;
+		left: 50%;
+		width: 50%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			bottom: 5rem;
+			width: 90%;
+		}
+		@include max-sm {
+			width: 100%;
+		}
+	}
+	.town-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translate(-50%, -10%);
+	}
+	.town-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 100%;
+		transform: translate(70%, -10%);
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-10%, -5%);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 60%;
+			transform: translate(-20%, 0%);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		width: 20%;
+		transform: translate(10%, 0) scaleX(-1);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 60%;
+			transform: translate(20%, 0) scaleX(-1);
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 4rem 0;
+		transition: opacity 1s ease;
+		height: 100vh;
+		@include max-lg {
+			padding: 4rem 0 7rem;
+			align-items: center;
+		}
+		.cover-content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.cover-body {
+				position: relative;
+				width: 30%;
+				@include max-xl {
+					width: 35%;
+				}
+				@include max-lg {
+					width: 50%;
+				}
+				@include max-md {
+					width: 40%;
+				}
+				@include max-sm {
+					width: 100%;
+				}
+				.frame {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: 100%;
+					transform: translate(-50%, -50%);
+				}
+				.cover-description {
+					padding: 5rem 2rem;
+					text-align: center;
+					color: var(--color-light);
+					@include max-lg {
+						padding: 3rem 1rem;
+					}
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+					p {
+						margin-bottom: 0;
+					}
+					.h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

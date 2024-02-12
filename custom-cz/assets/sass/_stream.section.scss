@@ -1,0 +1,51 @@
+.stream-section {
+	position: relative;
+	padding: 10rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 8rem 0;
+	}
+	.background-element {
+		img {
+			object-position: 50% 0%;
+		}
+	}
+	.pola-1 {
+		position: absolute;
+		top: 0;
+		right: 8%;
+		width: 40%;
+		transform: translate(0, -20%);
+		@include max-sm {
+			right: 0;
+			width: 80%;
+			transform: translate(60%, -30%);
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				@include max-md {
+					padding: 0 1rem 2rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.yt-description {
+		position: relative;
+	}
+}

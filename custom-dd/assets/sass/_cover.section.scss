@@ -1,0 +1,403 @@
+.cover-section {
+	position: relative;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	.orn-1 {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		width: 20%;
+		transform: translate(-20%, 0);
+		@include max-lg {
+			top: 25%;
+			width: 40%;
+			transform: translate(-50%, 0);
+		}
+		@include max-sm {
+			transform: translate(-60%, 0);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 22%;
+		transform: translate(0, -35%);
+		@include max-lg {
+			top: 18%;
+			width: 38%;
+			transform: translate(-60%, -35%) rotate(-10deg);
+		}
+		@include max-sm {
+			transform: translate(-70%, -35%) rotate(-10deg);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 45%;
+		width: 140px;
+		transform: translate(0, -35%);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		left: 36%;
+		width: 140px;
+		transform: translate(0, -30%);
+		@include max-lg {
+			left: 19%;
+			width: 30%;
+		}
+		@include max-sm {
+			left: 16%;
+			width: 35%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		top: 0;
+		right: 64%;
+		width: 16%;
+		transform: translate(0, -20%);
+		@include max-lg {
+			width: 37%;
+			right: unset;
+			left: 0;
+			transform: translate(-40%, 10%);
+		}
+		@include max-sm {
+			width: 40%;
+			transform: translate(-50%, 10%);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		left: 54%;
+		width: 100px;
+		transform: translate(0, -40%);
+		@include max-lg {
+			left: 55%;
+			width: 12%;
+		}
+		@include max-sm {
+			left: 58%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		top: 0;
+		left: 60%;
+		width: 21%;
+		transform: translate(0, -30%);
+		@include max-lg {
+			left: 67%;
+			width: 30%;
+			transform: translate(0, -15%);
+		}
+		@include max-sm {
+			left: 70%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		top: 0;
+		left: 75%;
+		width: 22%;
+		transform: translate(0, -25%);
+		@include max-lg {
+			left: unset;
+			right: 0;
+			width: 28%;
+			transform: translate(50%, 15%);
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 28%;
+		transform: translate(35%, -15%);
+		@include max-lg {
+			top: 15%;
+			width: 40%;
+			transform: translate(40%, 0);
+		}
+		@include max-sm {
+			top: 20%;
+			transform: translate(50%, 0) rotate(-20deg);
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		top: 40%;
+		left: 20%;
+		width: 35%;
+	}
+	.orn-11 {
+		position: absolute;
+		top: 0;
+		right: 2%;
+		width: 18%;
+		@include max-lg {
+			top: 10%;
+			right: 0;
+			width: 25%;
+			transform: translate(10%, 0);
+		}
+		@include max-sm {
+			transform: translate(20%, 0);
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 24%;
+		transform: translate(27%, 30%) rotate(-10deg);
+		@include max-lg {
+			bottom: 15%;
+			width: 30%;
+			transform: translate(35%, 0) rotate(-10deg);
+		}
+		@include max-sm {
+			bottom: 25%;
+			width: 35%;
+			transform: translate(55%, 0) rotate(-10deg);
+		}
+	}
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 200px;
+		transform: translate(-50%, 35%);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-md {
+			width: 40%;
+		}
+	}
+	.orn-14 {
+		position: absolute;
+		bottom: 0;
+		left: 55%;
+		width: 80px;
+		@include max-lg {
+			left: 60%;
+		}
+		@include max-md {
+			left: 67%;
+			width: 12%;
+		}
+	}
+	.orn-15 {
+		position: absolute;
+		bottom: 0;
+		left: 59%;
+		transform: translate(0, 20%);
+		width: 14%;
+		@include max-lg {
+			width: 30%;
+			left: 67%;
+		}
+		@include max-sm {
+			left: 73%;
+		}
+	}
+	.orn-16 {
+		position: absolute;
+		bottom: 0;
+		left: 68%;
+		width: 320px;
+		transform: translate(0, 28%);
+		@include max-lg {
+			left: unset;
+			right: 0;
+			width: 40%;
+			transform: translate(40%, 10%);
+		}
+		@include max-sm {
+			bottom: 10%;
+			width: 50%;
+			transform: translate(55%, 10%);
+		}
+	}
+	.orn-17 {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		width: 16%;
+		transform: translate(0, 50%);
+		@include max-lg {
+			right: 55%;
+			width: 24%;
+		}
+		@include max-sm {
+			right: 56%;
+			width: 30%;
+		}
+	}
+	.orn-18 {
+		position: absolute;
+		bottom: 0;
+		right: 63%;
+		width: 10%;
+		transform: translate(0, 5%);
+		@include max-lg {
+			right: 70%;
+			width: 18%;
+		}
+		@include max-sm {
+			right: 75%;
+			width: 28%;
+		}
+	}
+	.orn-19 {
+		position: absolute;
+		bottom: 0;
+		right: 70%;
+		width: 18%;
+		transform: translate(0, 20%);
+		@include max-lg {
+			right: unset;
+			left: 0;
+			width: 20%;
+			transform: translate(-20%, 10%);
+		}
+		@include max-sm {
+			bottom: 10%;
+			transform: translate(-20%, 0%);
+		}
+	}
+	.orn-20 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 28%;
+		transform: translate(-30%, 10%);
+		@include max-lg {
+			bottom: 15%;
+			width: 40%;
+		}
+		@include max-sm {
+			bottom: 20%;
+			width: 50%;
+			transform: translate(-50%, 10%);
+		}
+	}
+	.orn-21 {
+		position: absolute;
+		bottom: 10%;
+		left: 8%;
+		width: 10%;
+		@include max-lg {
+			bottom: 8%;
+			left: 12%;
+			width: 12%;
+		}
+		@include max-sm {
+			left: 10%;
+			bottom: 6%;
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 3rem 0;
+		transition: opacity 1s ease;
+		height: 100vh;
+		@include max-lg {
+			padding: 2rem 0 7rem;
+		}
+		.cover-content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.cover-body {
+				position: relative;
+				.cover-ornament {
+					position: relative;
+					width: 160px;
+					margin: 0 auto 0.5rem;
+					@include max-xl {
+						width: 140px;
+					}
+				}
+				.cover-description {
+					padding: 1rem;
+					text-align: center;
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.title {
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						padding: 1rem 0;
+						margin-bottom: 0;
+						gap: 1rem;
+						@include max-lg {
+							flex-direction: column;
+						}
+						span {
+							display: block;
+							font-size: 90px;
+							@include max-md {
+								font-size: 60px;
+							}
+						}
+						.cover-logo {
+							width: 180px;
+							@include max-lg {
+								width: 160px;
+							}
+							@include max-md {
+								width: 50%;
+							}
+						}
+					}
+					p {
+						margin-bottom: 0;
+					}
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+					.cover-desc {
+						p,
+						span {
+							font-size: 20px;
+							@include max-md {
+								font-size: 16px;
+							}
+						}
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,151 @@
+.wishes-section {
+	position: relative;
+	padding: 10rem 0 5rem;
+	@include max-md {
+		padding: 8rem 0 3rem;
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		.orn-1 {
+			position: absolute;
+			top: -5rem;
+			left: 0;
+			width: 120px;
+			transform: translate(-40%, 0);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			.orn-2 {
+				position: absolute;
+				top: 60%;
+				left: 0;
+				width: 260px;
+				transform: translate(-50%, 0);
+				@include min-md {
+					width: 320px;
+				}
+				@include min-lg {
+					width: 340px;
+				}
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: -5rem;
+			right: 0;
+			width: 260px;
+			transform: translate(70%, 0);
+			@include min-md {
+				width: 320px;
+			}
+			@include min-lg {
+				width: 340px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			left: 50%;
+			top: 0;
+			width: 160px;
+			transform: translate(-50%, -50%);
+			@include min-md {
+				width: 200px;
+			}
+			@include min-lg {
+				width: 220px;
+			}
+		}
+	}
+	.card-form {
+		background: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+		border: 2px solid var(--border-color) !important;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 8rem 2rem 3rem;
+			@include max-md {
+				padding: 5rem 1rem 2rem;
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

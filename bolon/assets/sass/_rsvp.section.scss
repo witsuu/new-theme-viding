@@ -1,0 +1,96 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0 10rem;
+	@include max-md {
+		padding: 3rem 0 8rem;
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 35%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 200%;
+		}
+		@include max-sm {
+			width: 250%;
+		}
+	}
+	.bg-2 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 200%;
+		}
+		@include max-sm {
+			width: 250%;
+		}
+	}
+	.bg-3 {
+		position: absolute;
+		bottom: 1rem;
+		left: 50%;
+		width: 60%;
+		transform: translateX(-50%) scaleX(-1);
+		@include max-lg {
+			width: 90%;
+		}
+		@include max-sm {
+			width: 115%;
+			transform: translateX(-58%) scaleX(-1);
+		}
+	}
+	.motif {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: auto;
+		height: 42px;
+		transform: translate(-50%, 0);
+		display: flex;
+		@include max-lg {
+			height: 38px;
+		}
+		@include max-sm {
+			height: 33px;
+		}
+		.image-element {
+			width: auto;
+			height: 100%;
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 5rem;
+		right: 0;
+		width: 140px;
+		transform: translate(55%, 0) scaleX(-1);
+		@include min-md {
+			width: 180px;
+		}
+		@include min-lg {
+			width: 200px;
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem 2rem;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			position: relative;
+			.title-section {
+				text-align: left;
+			}
+		}
+	}
+}

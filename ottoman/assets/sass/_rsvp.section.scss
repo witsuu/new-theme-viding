@@ -1,0 +1,107 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 50%;
+		transform: translate(-65%, -50%);
+		z-index: 3;
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 12%;
+			width: 80%;
+			transform: translate(0, 80%);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 40%;
+		right: 0;
+		width: 50%;
+		transform: translate(68%, -50%);
+		z-index: 3;
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 12%;
+			width: 80%;
+			transform: translate(0, 75%) rotate(-55deg);
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 2rem;
+		background-color: var(--color-primary);
+		border-radius: var(--border-radius);
+		color: var(--color-dark);
+		overflow: hidden;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.bg-2 {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 20%);
+			@include max-sm {
+				width: 150%;
+				transform: translate(-50%, 0%);
+			}
+		}
+		.image-wrap {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 5/6;
+			@include max-lg {
+				margin-bottom: 2rem;
+			}
+			.image-element {
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+			.bg-1 {
+				position: absolute;
+				top: -2px;
+				left: -1px;
+				width: calc(100% + 3px);
+				path {
+					fill: var(--color-primary);
+				}
+			}
+		}
+		.rsvp-form {
+			position: relative;
+			z-index: 5;
+			@include min-lg {
+				padding-right: 3rem;
+			}
+			.title-section {
+				padding: 0;
+				width: 100%;
+			}
+		}
+	}
+}

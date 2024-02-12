@@ -1,0 +1,205 @@
+.wishes-section {
+	position: relative;
+	.branch {
+		position: absolute;
+		top: 2rem;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 0);
+		opacity: 0.1;
+		z-index: 3;
+		@include min-md {
+			width: 80%;
+		}
+		@include min-lg {
+			width: 60%;
+		}
+		.image-element:nth-child(2) {
+			margin-top: -3rem;
+		}
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		padding: 5rem 0 0;
+		@include max-md {
+			padding: 3rem 0 0;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 5rem;
+			left: 0;
+			width: 60%;
+			transform: translate(-65%, 0);
+			@include min-md {
+				width: 50%;
+			}
+			@include min-lg {
+				width: 25%;
+			}
+			.orn-2 {
+				position: absolute;
+				top: 0;
+				right: 5%;
+				width: 60%;
+				transform: translate(0, -20%) rotate(10deg);
+			}
+			.orn-5 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 80%;
+				transform: translate(0, 30%) rotate(5deg);
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			width: 60%;
+			transform: translate(65%, 0);
+			@include min-md {
+				width: 50%;
+			}
+			@include min-lg {
+				width: 25%;
+			}
+			.orn-4 {
+				position: absolute;
+				top: 60%;
+				left: 10%;
+				width: 60%;
+				transform: rotate(-20deg) scaleX(-1);
+			}
+		}
+	}
+	.card-form {
+		background-color: transparent;
+		z-index: 5;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 0 2rem 2rem;
+			@include max-md {
+				padding: 0 1rem 2rem;
+			}
+			.input-group {
+				.input-group-text.align-items-start {
+					padding-top: 0.75rem;
+				}
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		padding: 0 0 5rem;
+		@include max-md {
+			padding: 0 0 3rem;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 50%;
+			transform: translate(-50%, 0) rotate(10deg);
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+			.orn-2 {
+				position: absolute;
+				top: 40%;
+				right: 10%;
+				width: 80%;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(50%, 10%) rotate(-20deg) scaleX(-1);
+			@include min-md {
+				width: 30%;
+			}
+			@include min-lg {
+				width: 15%;
+			}
+		}
+		.card {
+			border: none;
+			background-color: transparent;
+			z-index: 5;
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

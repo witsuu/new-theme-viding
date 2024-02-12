@@ -1,0 +1,84 @@
+.countdown {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+	gap: 1rem;
+	z-index: 3;
+	padding: 4rem 2rem;
+	color: var(--color-dark);
+	@include max-md {
+		gap: 0.5rem;
+	}
+	&::before {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background-color: var(--color-primary);
+		border-radius: 50%;
+		opacity: 0.8;
+		content: "";
+	}
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 105%;
+		height: 120%;
+		transform: translate(-50%, -50%);
+		.image-element {
+			height: 100%;
+			.img-fluid {
+				height: 100%;
+			}
+		}
+	}
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding: 1rem;
+		min-width: 80px;
+		@include max-md {
+			min-width: 65px;
+		}
+		@include max-xs {
+			min-width: 63px;
+		}
+		@include max-rwd(350px) {
+			min-width: 72px;
+		}
+		.huruf {
+			font-size: 14px;
+			font-weight: 600;
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+		.angka {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 36px;
+			font-family: $font-secondary;
+			@include max-md {
+				font-size: 32px;
+			}
+			@include max-xs {
+				font-size: 28px;
+			}
+		}
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

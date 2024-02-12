@@ -1,0 +1,252 @@
+.header-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	width: 100%;
+	.scroll-icon {
+		position: relative;
+		margin-top: 2rem;
+	}
+	.lamp-1{
+		position: absolute;
+		top: 10%;
+		left: 10%;
+		width: 15%;
+		@include min-md{
+			width: 10%;
+		}
+		@include min-lg{
+			width: 6%;
+		}
+	}
+	.lamp-2{
+		position: absolute;
+		top: 15%;
+		right: 20%;
+		width: 15%;
+		@include min-md{
+			width: 10%;	
+		}
+		@include min-lg{
+			right: 15%;
+			width: 6%;
+		}
+	}
+	.lamp-grey{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(100%,0);
+	}
+	.orn-1{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(0,-20%);
+		@include min-md{
+			width: 30%;	
+		}
+		@include min-lg{
+			width: 20%;
+		}
+	}
+	.orn-2{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(0,-20%) scaleX(-1);
+		@include min-md{
+			width: 30%;	
+		}
+		@include min-lg{
+			width: 20%;
+		}
+	}
+	.orn-3{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(0,20%) scaleY(-1);
+		@include min-md{
+			width: 30%;	
+		}
+		@include min-lg{
+			width: 20%;
+		}
+	}
+	.orn-4{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(0,20%) scale(-1);
+		@include min-md{
+			width: 30%;	
+		}
+		@include min-lg{
+			width: 20%;
+		}
+	}
+	.orn-5{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-10%,-10%);
+		mix-blend-mode: multiply;
+		@include min-md{
+			width: 40%;	
+		}
+		@include min-lg{
+			width: 25%;
+		}
+	}
+	.orn-6{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(0%,15%) scaleX(-1);
+		mix-blend-mode: multiply;
+		@include min-md{
+			width: 40%;	
+		}
+		@include min-lg{
+			width: 25%;
+			transform: translate(0%,0) scaleX(-1);
+		}
+	}
+	.orn-7{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(0%,-15%) scaleY(-1);
+		mix-blend-mode: multiply;
+		@include min-md{
+			width: 40%;	
+		}
+		@include min-lg{
+			width: 25%;
+			transform: translate(0%,0) scaleY(-1);
+		}
+	}
+	.orn-8{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(10%,10%) scale(-1);
+		mix-blend-mode: multiply;
+		@include min-md{
+			width: 40%;	
+		}
+		@include min-lg{
+			width: 25%;
+		}
+	}
+	.orn-9{
+		position: absolute;
+		top: 48%;
+		left: 0;
+		width: 50px;
+		transform: translate(0,-50%);
+		mix-blend-mode: multiply;
+		opacity: .8;
+		@include min-md{
+			width: 60px;
+		}
+	}
+	.orn-10{
+		position: absolute;
+		top: 52%;
+		right: 0;
+		width: 50px;
+		transform: translate(0,-50%) scaleX(-1);
+		mix-blend-mode: multiply;
+		opacity: .8;
+		@include min-md{
+			width: 60px;	
+		}
+	}
+	.orn-11{
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%,-50%);
+		@include min-md{
+			width: 30%;	
+		}
+		@include min-lg{
+			width: 15%;
+		}
+	}
+	.orn-12{
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 40%;
+		transform: translate(50%,-50%) scaleX(-1);
+		@include min-md{
+			width: 30%;
+		}
+		@include min-lg{
+			width: 15%;
+		}
+	}
+	.header-content {
+		position: relative;
+		height: 100vh;
+		.header {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 35%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 1rem 0 3rem;
+			@include max-xl{
+				width: 40%;
+			}
+			@include max-lg{
+				width: 60%;
+			}
+			@include max-md{
+				width: 50%;
+			}
+			@include max-sm{
+				width: 95%;
+			}
+			.header-title {
+				position: relative;
+				text-align: center;
+				&-content {
+					position: relative;
+				}
+			}
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}

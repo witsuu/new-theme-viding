@@ -1,0 +1,44 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.elements-wrapper-absolute{
+		height: 100%;
+		.background-element{
+			height: 100%;
+			img{
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		min-height: 60vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		.thank {
+			position: relative;
+			padding: 3rem 2rem;
+			color: var(--color-light);
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-dark);
+	font-family: "Nunito Sans", sans-serif;
+	small {
+		position: relative;
+	}
+}

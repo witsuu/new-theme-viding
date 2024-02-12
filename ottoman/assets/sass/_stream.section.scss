@@ -1,0 +1,102 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, 10%);
+		opacity: 0.6;
+		@include max-sm {
+			transform: translate(-50%, 0%);
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-65%, 0);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 12%;
+			width: 80%;
+			transform: translate(0, 80%);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(68%, 0);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 12%;
+			width: 80%;
+			transform: translate(0, 75%) rotate(-55deg);
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		.title-section {
+			padding-top: 0;
+		}
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				border-radius: var(--border-radius);
+				text-align: left;
+				overflow: hidden;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+	}
+}

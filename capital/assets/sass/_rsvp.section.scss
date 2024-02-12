@@ -1,0 +1,54 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16/9;
+		z-index: 3;
+		@include max-md {
+			aspect-ratio: 6/5;
+		}
+		@include max-sm {
+			aspect-ratio: 5/6;
+		}
+		.image-element {
+			height: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 110%;
+		opacity: 0.5;
+		@include max-lg {
+			width: 180%;
+			transform: translateX(-4%);
+		}
+		@include max-sm {
+			width: 320%;
+			transform: translateX(-16.5%);
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem 2rem;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

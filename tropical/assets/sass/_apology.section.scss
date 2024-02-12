@@ -1,0 +1,39 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		left: 0;
+		top: 5rem;
+		width: 160px;
+		z-index: 4;
+		@include max-md {
+			width: 100px;
+			top: -2rem;
+		}
+		@include max-xs {
+			width: 90px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 120px;
+		z-index: 4;
+		@include max-md {
+			width: 80px;
+			bottom: -2rem;
+		}
+		@include max-xs {
+			bottom: -3rem;
+			width: 70px;
+		}
+	}
+	.appology-wrap {
+		position: relative;
+	}
+}

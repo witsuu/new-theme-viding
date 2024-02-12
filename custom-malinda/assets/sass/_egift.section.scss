@@ -1,0 +1,55 @@
+.egift-section {
+	position: relative;
+	text-align: center;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0 5rem;
+	}
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 150%;
+		}
+		@include max-sm {
+			width: 280%;
+		}
+	}
+	.gift-wrap {
+		position: relative;
+		@include max-sm {
+			.row {
+				row-gap: 2rem;
+			}
+		}
+		.title-section {
+			margin-bottom: 2.5rem;
+		}
+		.gift-content {
+			position: relative;
+			text-align: center;
+			z-index: 3;
+			.name {
+				display: block;
+				font-size: 24px;
+				letter-spacing: 0.5rem;
+				font-family: $font-secondary;
+				@include max-sm {
+					font-size: 20px;
+				}
+			}
+			.description {
+				display: block;
+				font-weight: 600;
+				letter-spacing: 0.15rem;
+				margin-bottom: 1rem;
+			}
+			.btn-custom {
+				padding: 0.25rem 3rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,41 @@
+.story-section {
+	position: relative;
+	padding: 0 0 5rem;
+	background-color: var(--color-custom-main);
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.story {
+		position: relative;
+	}
+	.story-content {
+		position: relative;
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+		background-color: var(--color-primary);
+		border-radius: var(--border-radius);
+		padding: 3rem 2rem;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+		margin-bottom: -5rem;
+		@include max-md {
+			margin-bottom: -3rem;
+			aspect-ratio: 6/4;
+		}
+		.story-background {
+			position: relative;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+}

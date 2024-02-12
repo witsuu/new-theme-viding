@@ -1,0 +1,262 @@
+.thank-section {
+	position: relative;
+	padding: 15rem 0;
+	text-align: center;
+	@include max-lg {
+		padding: 10rem 0;
+	}
+	@include max-md {
+		padding: 5rem 0;
+	}
+	.ornaments-wrapper {
+		z-index: 3;
+		.orn-left {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 200px;
+			transform: translate(-50%, 5%) scaleX(-1);
+			@include min-md {
+				width: 320px;
+				transform: translate(-40%, 5%) scaleX(-1);
+			}
+			@include min-lg {
+				width: 440px;
+				transform: translate(-25%, 5%) scaleX(-1);
+			}
+			.orn-1 {
+				position: relative;
+				width: 200px;
+				margin-top: -25%;
+				transform: translate(20%, 0);
+				@include min-md {
+					width: 360px;
+					transform: translate(10%, 5%);
+				}
+				@include min-lg {
+					width: 480px;
+				}
+			}
+			.orn-2 {
+				position: relative;
+				width: 220px;
+				margin-top: -50%;
+				transform: translate(15%, 0);
+				@include min-md {
+					width: 340px;
+				}
+				@include min-lg {
+					width: 460px;
+				}
+			}
+			.orn-3 {
+				position: relative;
+				width: 220px;
+				margin-top: -30%;
+				transform: translate(15%, 0);
+				@include min-md {
+					width: 340px;
+				}
+				@include min-lg {
+					width: 460px;
+				}
+			}
+			.orn-4 {
+				position: absolute;
+				top: 2rem;
+				left: 0;
+				width: 180px;
+				transform: translate(15%, 0) rotate(-65deg) scaleX(-1);
+				@include min-md {
+					width: 320px;
+				}
+				@include min-lg {
+					width: 460px;
+				}
+			}
+			.orn-5 {
+				position: absolute;
+				top: 42%;
+				right: 0;
+				width: 200px;
+				transform: translate(10%, 0);
+				@include min-md {
+					width: 320px;
+				}
+				@include min-lg {
+					width: 440px;
+				}
+			}
+			.orn-6 {
+				position: absolute;
+				top: 25%;
+				left: 20%;
+				width: 40px;
+				@include min-md {
+					width: 80px;
+				}
+				@include min-lg {
+					width: 120px;
+					top: 18%;
+					left: 0;
+				}
+			}
+			.orn-7 {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 80px;
+				transform: rotate(25deg) scaleY(-1);
+				@include min-md {
+					width: 120px;
+				}
+				@include min-lg {
+					width: 200px;
+				}
+			}
+		}
+		.orn-right {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 240px;
+			transform: translate(63%, 5%) scaleX(-1);
+			@include min-md {
+				width: 360px;
+				transform: translate(53%, 5%) scaleX(-1);
+			}
+			@include min-lg {
+				width: 480px;
+				transform: translate(40%, 5%) scaleX(-1);
+			}
+			.orn-1 {
+				position: relative;
+				width: 220px;
+				transform: translate(10%, 0) scale(-1);
+				margin-top: -30%;
+				@include min-md {
+					width: 360px;
+					transform: translate(0, 0) scale(-1);
+				}
+				@include min-lg {
+					width: 480px;
+				}
+			}
+			.orn-2 {
+				position: relative;
+				width: 240px;
+				margin-top: -30%;
+				transform: translate(-10%, 0);
+				@include min-md {
+					width: 380px;
+					transform: translate(-20%, 0);
+				}
+				@include min-lg {
+					width: 500px;
+				}
+			}
+			.orn-3 {
+				position: absolute;
+				top: 3rem;
+				right: 0;
+				width: 180px;
+				@include min-md {
+					width: 300px;
+				}
+				@include min-lg {
+					top: 10%;
+					width: 420px;
+				}
+				.orn-4 {
+					position: relative;
+					width: 180px;
+					margin-top: -42%;
+					transform: translate(-10%, 0) rotate(35deg);
+					@include min-md {
+						width: 300px;
+					}
+					@include min-lg {
+						width: 420px;
+						margin-top: -30%;
+					}
+				}
+				.orn-5 {
+					position: absolute;
+					top: 1rem;
+					right: 15%;
+					width: 30px;
+					@include min-md {
+						width: 40px;
+					}
+					@include min-lg {
+						top: 5%;
+						width: 50px;
+					}
+				}
+				.orn-6 {
+					position: absolute;
+					bottom: 35%;
+					right: 15%;
+					width: 40px;
+					@include min-md {
+						width: 60px;
+					}
+					@include min-lg {
+						right: 20%;
+						width: 80px;
+					}
+				}
+				.orn-7 {
+					position: absolute;
+					top: 0;
+					right: 30%;
+					width: 60px;
+					transform: rotate(-65deg);
+					@include min-md {
+						width: 120px;
+					}
+					@include min-lg {
+						width: 180px;
+					}
+				}
+			}
+		}
+	}
+	.image-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+		@include max-sm {
+			width: 120%;
+		}
+		.image-element {
+			position: relative;
+			width: 100%;
+			.thank-background {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+			padding: 3rem 2rem;
+			color: var(--color-light);
+			z-index: 5;
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

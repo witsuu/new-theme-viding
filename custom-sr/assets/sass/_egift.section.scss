@@ -1,0 +1,314 @@
+.egift-section {
+	position: relative;
+	text-align: center;
+	padding: 5rem 0 10rem;
+	@include max-md {
+		padding: 3rem 0 8rem;
+	}
+	.land {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 50%);
+		@include max-lg {
+			width: 180%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.gadang-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-10%, 0);
+		@include max-lg {
+			width: 70%;
+		}
+		@include max-sm {
+			width: 80%;
+		}
+	}
+	.gadang-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(40%, 15%);
+		@include max-lg {
+			width: 60%;
+			transform: translate(40%, 0%);
+		}
+		@include max-sm {
+			width: 70%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 12%;
+		transform: translate(-20%, -10%) scaleY(-1);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 35%;
+			transform: translate(-30%, -10%) scaleY(-1);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 12%;
+		transform: translate(20%, -10%) scale(-1);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 35%;
+			transform: translate(30%, -10%) scale(-1);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 45%;
+		width: 20%;
+		transform: translate(-50%, -20%);
+		@include max-lg {
+			width: 40%;
+		}
+		@include max-sm {
+			width: 50%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		width: 90%;
+		transform: translate(-40%, 0) scaleY(-1);
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 100%;
+		left: 0;
+		width: 90%;
+		transform: translate(-40%, 0) scaleY(-1);
+	}
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(0, -20%);
+		@include max-sm{
+			transform: translate(-20%, -20%);
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 20%;
+		width: 60%;
+		transform: translate(0, 50%);
+	}
+	.orn-8 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 30%;
+		transform: translate(30%, 0);
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: rotate(-10deg);
+		@include max-lg {
+			width: 40%;
+		}
+		@include max-sm {
+			width: 50%;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 12%;
+		transform: translate(30%, 10%) scaleX(-1);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(0%, 50%);
+		@include max-lg {
+			width: 50%;
+		}
+		@include max-sm {
+			width: 60%;
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		top: 20%;
+		left: 0;
+		width: 30%;
+		transform: translate(-40%, 0);
+	}
+	.gift-wrap {
+		position: relative;
+		z-index: 10;
+	}
+	.tabs-gift {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin: auto;
+		width: fit-content;
+		padding: 0.25rem;
+		border-radius: var(--border-radius);
+		gap: 0.5rem;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--color-secondary);
+			opacity: 0.25;
+			content: "";
+			border-radius: 50px;
+		}
+		@include max-md {
+			padding: 0.25rem;
+		}
+		.btn-custom {
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 0.5rem;
+			min-width: 140px;
+			text-align: center;
+			background-color: transparent;
+			color: var(--color-button-trans);
+			z-index: 2;
+			@include max-md {
+				min-width: 120px;
+				svg {
+					width: 25px;
+					height: 25px;
+				}
+			}
+			path {
+				fill: var(--color-button-trans);
+				transition: all 0.2s ease;
+			}
+			&.active {
+				color: var(--text-button);
+				path {
+					fill: var(--text-button);
+				}
+			}
+			&:focus {
+				box-shadow: none;
+			}
+		}
+		.glider {
+			position: absolute;
+			left: 0;
+			top: 0;
+			background: var(--color-secondary);
+			width: 100%;
+			height: 100%;
+			border-radius: 50px;
+			z-index: -1;
+		}
+	}
+	.card {
+		.card-body {
+			padding: 3rem;
+			@include max-md {
+				padding: 3rem 1.25rem;
+			}
+			@include max-xs {
+				padding: 3rem 0.75rem;
+			}
+		}
+	}
+	form {
+		position: relative;
+		z-index: 5;
+		.input-group-text {
+			background-color: var(--color-secondary);
+			border-color: var(--color-secondary);
+			color: var(--text-button);
+		}
+		@include max-md {
+			.row {
+				gap: 1rem;
+			}
+		}
+	}
+	.gift,
+	.angpao {
+		display: none;
+		transition: all 0.5s ease-in;
+		opacity: 0;
+		&.show {
+			display: block;
+			opacity: 1;
+		}
+	}
+	.gift-content {
+		position: relative;
+		padding: 2rem 0 0;
+		z-index: 10;
+		.elements-absolute {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			.background-element {
+				display: block;
+				height: 100%;
+				.background-wrapper {
+					width: 100%;
+					height: 100%;
+					display: inline-block;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes tab {
+	0% {
+		transform: scale(0.5);
+	}
+	100% {
+		transform: scale(1);
+	}
+}

@@ -1,0 +1,116 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.ornaments-wrapper {
+		z-index: 3;
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 240px;
+			transform: translate(-50%, 0);
+			@include min-md {
+				width: 260px;
+			}
+			@include min-lg {
+				width: 280px;
+			}
+			.orn-2 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 120px;
+				transform: translate(40%, 30%);
+				@include min-md {
+					width: 140px;
+				}
+				@include min-lg {
+					width: 160px;
+					transform: translate(40%, 50%);
+				}
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 240px;
+			transform: translate(50%, 0) scaleX(-1);
+			@include min-md {
+				width: 260px;
+			}
+			@include min-lg {
+				width: 280px;
+			}
+			.orn-4 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 120px;
+				transform: translate(40%, 30%) rotate(20deg);
+				@include min-md {
+					width: 140px;
+				}
+				@include min-lg {
+					width: 160px;
+					transform: translate(40%, 50%) rotate(20deg);
+				}
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 140px;
+			transform: translate(-65%, 50%) rotate(35deg);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+				transform: translate(-60%, 40%) rotate(35deg);
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(60%, 40%) scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+				transform: translate(50%, 30%) scaleX(-1);
+			}
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 8rem 3rem;
+		color: var(--color-light);
+		@include max-lg {
+			padding: 7rem 2rem;
+		}
+		.elements-wrapper-absolute {
+			.background-element {
+				img {
+					border-radius: var(--border-radius);
+					border: 2px solid $stroke-color;
+				}
+			}
+		}
+		.rsvp-form {
+			position: relative;
+			.title-section {
+				&::before {
+					all: unset;
+				}
+			}
+		}
+	}
+}

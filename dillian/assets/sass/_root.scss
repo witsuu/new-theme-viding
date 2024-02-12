@@ -1,0 +1,13 @@
+:root {
+	--color-main: #{$color-main};
+	--color-custom-main: #{$color-custom-main};
+	--color-primary: #{$color-primary};
+	--color-secondary: #{$color-secondary};
+	--color-dark: #{$color-dark};
+	--color-light: #{$color-light};
+	--text-button: #{$text-button};
+	--color-button-trans: #{$color-button-trans};
+	--vd-color-pink: #{$color-logo};
+	--color-gradient: linear-gradient(180deg, var(--color-primary) 0%, transparent 100%);
+	--border-radius: #{$border-radius};
+}

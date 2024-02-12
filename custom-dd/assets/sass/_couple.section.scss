@@ -1,0 +1,381 @@
+.couple-section {
+	position: relative;
+	overflow: hidden;
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		padding: 1rem 0;
+		span {
+			position: relative;
+			font-size: 140px;
+			font-family: $font-secondary;
+			padding-right: 0.25rem;
+			margin-bottom: 1rem;
+			line-height: 1;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 10rem 0 0;
+		background: linear-gradient(to bottom, var(--color-2), var(--color-1));
+		@include max-md {
+			padding: 8rem 0 0;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 40%;
+			transform: translate(-50%, -20%);
+			@include max-lg {
+				width: 60%;
+			}
+			@include max-sm {
+				width: 70%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 56%;
+			width: 18%;
+			transform: translate(0, -55%) scale(-1);
+			@include max-lg {
+				right: 60%;
+				width: 25%;
+			}
+			@include max-sm {
+				width: 30%;
+				transform: translate(0, -50%) scale(-1);
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 3%;
+			right: 55%;
+			width: 5%;
+			@include max-lg {
+				right: 58%;
+				width: 8%;
+			}
+			@include max-sm {
+				top: 1rem;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			top: 0;
+			right: 64%;
+			width: 14%;
+			transform: scaleY(-1);
+			@include max-lg {
+				right: 70%;
+				width: 20%;
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			top: 0;
+			right: 75.5%;
+			width: 18%;
+			transform: translate(0, -60%) rotate(-5deg) scale(-1);
+			@include max-lg {
+				right: unset;
+				left: 0;
+				width: 25%;
+				transform: translate(-40%, -55%) rotate(-25deg) scale(-1);
+			}
+			@include max-sm {
+				transform: translate(-30%, -55%) rotate(-25deg) scale(-1);
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 15%;
+			transform: translate(-10%, 0);
+			@include max-lg {
+				top: 10%;
+			}
+			@include max-sm {
+				top: 2rem;
+			}
+		}
+		.orn-7 {
+			position: absolute;
+			top: 18%;
+			left: 0;
+			width: 70%;
+			transform: translate(-30%, 0) rotate(20deg) scale(-1);
+		}
+		.orn-8 {
+			position: absolute;
+			top: 55%;
+			left: 0;
+			width: 150%;
+			transform: translate(-40%, 0%) rotate(20deg);
+		}
+		.orn-9 {
+			position: absolute;
+			top: 0;
+			left: 58%;
+			width: 18%;
+			transform: translate(0, -40%) rotate(-10deg) scaleX(-1);
+			@include max-lg {
+				left: 63%;
+				width: 25%;
+			}
+		}
+		.orn-10 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(-25%, 5%) scaleX(-1);
+			@include max-lg {
+				width: 90%;
+			}
+		}
+		.orn-11 {
+			position: absolute;
+			top: 1%;
+			left: 77%;
+			width: 10%;
+			transform: scaleX(-1);
+			@include max-lg {
+				left: 85%;
+			}
+		}
+		.orn-12 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(35%, -13%) rotate(-90deg) scaleY(-1);
+			@include max-lg {
+				top: 10%;
+				width: 35%;
+				transform: translate(50%, -15%) rotate(-90deg) scaleY(-1);
+			}
+			@include max-sm {
+				top: 3rem;
+			}
+		}
+		.orn-13 {
+			position: absolute;
+			top: 0;
+			right: 10%;
+			width: 5%;
+			transform: translate(-10%, -30%);
+			@include max-lg {
+				right: 0;
+				width: 10%;
+				transform: translate(0%, -30%);
+			}
+		}
+		.orn-14 {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-52%, 20%);
+		}
+		.orn-15 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 30%;
+			transform: translate(10%, -50%) rotate(-35deg) scaleX(-1);
+		}
+		.orn-16 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 50%;
+			transform: translate(-15%, -5%) rotate(15deg);
+		}
+		.orn-17 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 45%;
+			transform: translate(-20%, 0);
+		}
+		.orn-18 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(30%, 0);
+		}
+		.orn-19 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 50%;
+			transform: translate(-35%, -50%);
+		}
+		.orn-20 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 50%;
+			transform: translate(-50%, 0%);
+		}
+		.orn-21 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-10%, 5%) rotate(-20deg) scaleX(-1);
+		}
+		.orn-22 {
+			position: absolute;
+			bottom: 0;
+			left: 40%;
+			width: 25%;
+			transform: translate(-50%, 20%);
+		}
+		.orn-23 {
+			position: absolute;
+			top: 10%;
+			right: 0;
+			width: 26%;
+		}
+		.orn-24 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+		}
+		.orn-25 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(-38%, 0) rotate(-40deg);
+			@include max-lg {
+				width: 50%;
+			}
+			@include max-sm {
+				top: 15%;
+				width: 75%;
+			}
+		}
+		.orn-26 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(23%, 5%) rotate(-10deg) scaleX(-1);
+			@include max-sm {
+				transform: translate(26%, 5%) rotate(-10deg) scaleX(-1);
+			}
+		}
+		.orn-27 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(-30%, 10%);
+		}
+		.orn-28 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 60%;
+			transform: translate(40%, 10%) scale(-1);
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+		@include max-lg {
+			padding: 0 1rem;
+		}
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 3/4;
+			margin: 0 auto;
+			@include max-sm {
+				width: 85%;
+			}
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					object-fit: cover;
+					width: 85%;
+					height: 85%;
+					border-radius: var(--border-radius);
+				}
+				.frame {
+					position: relative;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 2rem 1rem 1rem;
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

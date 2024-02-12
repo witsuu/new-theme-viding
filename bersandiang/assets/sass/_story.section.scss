@@ -1,0 +1,78 @@
+.story-section {
+	position: relative;
+	.songket {
+		position: relative;
+		width: 100%;
+		@include max-lg {
+			width: 140%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.story {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.songket {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			@include max-lg {
+				width: 140%;
+			}
+			@include max-md {
+				width: 200%;
+			}
+			svg {
+				path {
+					fill: var(--color-primary);
+				}
+			}
+		}
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -90%);
+			@include max-lg {
+				width: 140%;
+			}
+			@include max-md {
+				width: 200%;
+			}
+		}
+	}
+	.story-content {
+		position: relative;
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+		margin-bottom: 2rem;
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 4/3;
+		@include max-sm {
+			aspect-ratio: 5/6;
+		}
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.story-background {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+}

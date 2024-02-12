@@ -1,0 +1,19 @@
+.rsvp-section {
+	position: relative;
+	padding: 10rem 0;
+	@include max-md {
+		padding: 8rem 0;
+	}
+	.background-element{
+		img{
+			object-position: 50% 0%;
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		.rsvp-form {
+			position: relative;
+			text-align: right;
+		}
+	}
+}

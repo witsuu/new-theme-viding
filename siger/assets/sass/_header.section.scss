@@ -1,0 +1,326 @@
+.header-section {
+	position: relative;
+	width: 100%;
+	.scroll-icon {
+		position: relative;
+		margin-top: 2rem;
+	}
+	.motif-container {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		width: 120%;
+		transform: translate(-55%, 10%);
+		z-index: 3;
+		@include max-lg {
+			width: 150%;
+			bottom: 30%;
+			transform: translate(-50%, 10%);
+		}
+		@include max-sm {
+			bottom: 25%;
+			width: 200%;
+		}
+	}
+	.bg-2 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 120%;
+		transform: translate(-50%, 40%);
+		z-index: 3;
+		@include max-lg {
+			width: 200%;
+		}
+		@include max-sm {
+			width: 250%;
+		}
+	}
+	.rumah {
+		position: absolute;
+		bottom: 5%;
+		z-index: 3;
+		@include max-sm {
+			bottom: 5rem;
+		}
+		&-1 {
+			left: 0;
+			width: 40%;
+			@include max-lg {
+				width: 60%;
+				transform: translateX(-20%);
+			}
+		}
+		&-2 {
+			right: 5%;
+			width: 32%;
+			transform: scaleX(-1);
+			@include max-lg {
+				width: 50%;
+				right: 0;
+				transform: translateX(10%) scaleX(-1);
+			}
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(-60%, 0) scaleX(-1);
+		z-index: 4;
+		@include min-lg {
+			width: 40%;
+			transform: translate(-60%, -10%) scaleX(-1);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 65%;
+		transform: translate(60%, 0) scaleX(-1);
+		z-index: 4;
+		@include min-lg {
+			width: 40%;
+			transform: translate(60%, -10%) scaleX(-1);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		transform: translate(-50%, 20%);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 160px;
+		transform: translate(-30%, 50%);
+		z-index: 3;
+		@include min-md {
+			width: 200px;
+		}
+		@include min-lg {
+			width: 240px;
+			transform: translate(-10%, 50%);
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 120px;
+		transform: translate(0, 50%) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			left: 8rem;
+			width: 180px;
+			transform: translate(0, 65%) scaleX(-1);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		transform: translate(50%, 20%) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 160px;
+		transform: translate(10%, 50%) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 200px;
+		}
+		@include min-lg {
+			width: 240px;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 5rem;
+		width: 120px;
+		transform: translate(0, 60%) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			right: 8rem;
+			width: 180px;
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		top: 50%;
+		left: 20%;
+		width: 80px;
+		transform: translate(-50%, -50%);
+		z-index: 3;
+		@include min-md {
+			left: 30%;
+			width: 90px;
+		}
+		@include min-lg {
+			left: 35%;
+			width: 100px;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		top: 40%;
+		right: 20%;
+		width: 70px;
+		transform: translate(50%, -50%);
+		z-index: 3;
+		@include min-md {
+			width: 80px;
+			right: 30%;
+		}
+		@include min-lg {
+			right: 35%;
+			width: 90px;
+		}
+	}
+	.header-content {
+		position: relative;
+		height: 100vh;
+		.header {
+			position: relative;
+			display: grid;
+			grid-template-rows: auto 1fr;
+			width: 30%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 6rem 0 0;
+			@include max-xl {
+				width: 35%;
+			}
+			@include max-lg {
+				width: 40%;
+			}
+			@include max-md {
+				width: 60%;
+			}
+			@include max-sm {
+				width: 70%;
+			}
+			.header-title {
+				position: relative;
+				text-align: center;
+				z-index: 5;
+				&-content {
+					position: relative;
+				}
+			}
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-in-main"].has-animate {
+	animation-name: zoomInMain;
+	animation-fill-mode: forwards;
+	animation-duration: 3500ms !important;
+}
+
+[data-anim="peafowl-right"].has-animate {
+	animation-name: peafowlRight;
+	animation-duration: 3500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+[data-anim="peafowl-left"].has-animate {
+	animation-name: peafowlLeft;
+	animation-duration: 2500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.33, 0.12, 0.61, 0.9);
+}
+
+@keyframes peafowlRight {
+	0% {
+		transform: translate3d(50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 5%, 0);
+	}
+}
+
+@keyframes peafowlLeft {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(-60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(-70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(-80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(-90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 5%, 0);
+	}
+}

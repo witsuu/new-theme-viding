@@ -1,0 +1,130 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+	}
+	.motif {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 300%;
+		transform: translate(-50%, 0);
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-70%, 0);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 35%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 20%;
+		left: 0;
+		width: 140px;
+		transform: translate(-60%, 0);
+		@include min-md {
+			width: 180px;
+		}
+		@include min-lg {
+			width: 200px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120px;
+		transform: translate(-50%, 0);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(70%, 0);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 35%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 18%;
+		right: 0;
+		width: 140px;
+		transform: translate(60%, 0) scaleX(-1);
+		@include min-md {
+			width: 180px;
+		}
+		@include min-lg {
+			width: 200px;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 120px;
+		transform: translate(50%, 0) scaleX(-1);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.reminder-content {
+		position: relative;
+		width: 100%;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		padding: 10rem 2rem 8rem;
+		overflow: hidden;
+		@include max-lg {
+			padding: 8rem 2rem;
+		}
+		@include max-md {
+			padding: 5rem 1rem;
+		}
+	}
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

@@ -1,0 +1,93 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+		.container {
+			padding: 0;
+		}
+	}
+	.elements-absolute {
+		height: 65%;
+		.background-element {
+			opacity: 0.5;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 10rem;
+		right: 0;
+		width: 120px;
+		transform: translate(60%, 0) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			top: 2rem;
+			width: 140px;
+			transform: translate(50%, 0) scaleX(-1);
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120px;
+		transform: translate(-60%, 30%);
+		z-index: 3;
+		@include min-md {
+			width: 140px;
+			transform: translate(-50%, 30%);
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/4;
+		margin: 0 auto;
+		z-index: 5;
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: var(--border-radius);
+				border: 2px solid $stroke-color;
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+			background-color: rgba($color: #fff, $alpha: 0.4);
+			color: var(--color-dark);
+			border-radius: 16px;
+			border: 2px solid $stroke-color;
+			padding: 12rem 2rem 3rem;
+			margin-top: -8rem;
+			@include max-md {
+				padding: 10rem 1.5rem 2rem;
+			}
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

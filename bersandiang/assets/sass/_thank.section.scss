@@ -1,0 +1,213 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0 10rem;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0 10rem;
+	}
+	.bg {
+		position: absolute;
+		bottom: 35%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			bottom: 20%;
+			width: 150%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 150%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.songket {
+		position: absolute;
+		top: 0;
+		width: 100px;
+		@include max-lg {
+			width: 80px;
+		}
+		@include max-sm {
+			width: 60px;
+		}
+		&-1 {
+			left: 0;
+		}
+		&-2 {
+			right: 0;
+		}
+	}
+	.gadang {
+		position: absolute;
+		bottom: 10%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		@include min-md {
+			bottom: 0;
+			width: 80%;
+			transform: translate(-50%, 5%);
+		}
+		@include min-lg {
+			width: 60%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 12%;
+		left: 0;
+		width: 70%;
+		transform: translate(-60%, 0);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 35%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 12%;
+		right: 0;
+		width: 70%;
+		transform: translate(60%, 0);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 35%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 200px;
+		transform: translate(-45%, 50%);
+		@include min-md {
+			width: 240px;
+			transform: translate(-40%, 40%);
+		}
+		@include min-lg {
+			width: 260px;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 200px;
+		transform: translate(-5%, 75%);
+		@include min-md {
+			width: 240px;
+			transform: translate(-5%, 65%);
+		}
+		@include min-lg {
+			width: 260px;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120px;
+		transform: translate(-10%, 50%);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 200px;
+		transform: translate(45%, 50%) scaleX(-1);
+		@include min-md {
+			width: 240px;
+			transform: translate(40%, 40%) scaleX(-1);
+		}
+		@include min-lg {
+			width: 260px;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 200px;
+		transform: translate(5%, 75%) scaleX(-1);
+		@include min-md {
+			width: 240px;
+			transform: translate(5%, 65%) scaleX(-1);
+		}
+		@include min-lg {
+			width: 260px;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 120px;
+		transform: translate(10%, 50%) scaleX(-1);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/4;
+		margin: 0 auto;
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+			padding: 3rem 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

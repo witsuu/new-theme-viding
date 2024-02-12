@@ -1,0 +1,65 @@
+.stream-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	.songket {
+		position: relative;
+		width: 100%;
+		@include max-lg {
+			width: 140%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.tanjung {
+		position: relative;
+		width: 160px;
+		margin: 0 auto -80px;
+	}
+	.stream-wrapper {
+		position: relative;
+		padding: 5rem 0;
+		text-align: center;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				background-color: var(--color-main);
+				border-radius: var(--border-radius);
+				color: var(--color-dark);
+				padding: 3rem 2rem;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		width: 100%;
+	}
+}

@@ -1,0 +1,14 @@
+.rsvp-section {
+	position: relative;
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem 2rem;
+		z-index: 5;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

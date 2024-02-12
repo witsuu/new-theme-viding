@@ -1,0 +1,117 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		margin-bottom: 1rem;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 36px;
+			font-family: $font-secondary;
+		}
+	}
+	.pola-1 {
+		position: absolute;
+		bottom: 0;
+		left: 8%;
+		width: 45%;
+		transform: translate(0, 20%);
+		@include max-sm {
+			width: 80%;
+			left: 0;
+			transform: translate(-30%, 20%);
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 10rem 0;
+		@include max-md {
+			padding: 8rem 0;
+			.row-couple {
+				row-gap: 3rem;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+	}
+	.couple {
+		position: relative;
+		text-align: left;
+		font-weight: 300;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 3/4;
+			z-index: 3;
+			.image-element {
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			h5 {
+				font-weight: 300;
+				font-size: 14pt;
+			}
+			.couple-parent {
+				width: 100%;
+				margin-bottom: 0.5rem;
+				p,
+				span {
+					font-weight: 300;
+					margin-bottom: 0;
+				}
+			}
+			.sosmed-wrap {
+				position: relative;
+				max-width: 100%;
+				.sosmed {
+					color: var(--color-button-trans);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+				.fab {
+					font-size: 18px;
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+		.title-couple {
+			span {
+				font-size: 14pt;
+			}
+		}
+	}
+}

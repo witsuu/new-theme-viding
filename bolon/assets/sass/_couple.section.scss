@@ -1,0 +1,219 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		margin-bottom: 1rem;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 36px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 5rem 0 3rem;
+		}
+		.bg-1 {
+			position: absolute;
+			bottom: 20rem;
+			left: 50%;
+			width: 150%;
+			transform: translate(-50%, 0);
+			@include max-lg {
+				width: 180%;
+			}
+			@include max-sm {
+				width: 200%;
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			bottom: 5rem;
+			left: 0;
+			width: 60%;
+			transform: translate(-65%, 0);
+			@include min-md {
+				width: 50%;
+			}
+			@include min-lg {
+				width: 35%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 140px;
+			transform: translate(-60%, 0);
+			@include min-md {
+				width: 180px;
+			}
+			@include min-lg {
+				width: 200px;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 5rem;
+			right: 0;
+			width: 60%;
+			transform: translate(65%, 0);
+			@include min-md {
+				width: 50%;
+			}
+			@include min-lg {
+				width: 35%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(60%, 0) scaleX(-1);
+			@include min-md {
+				width: 180px;
+			}
+			@include min-lg {
+				width: 200px;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+		@include max-sm {
+			.container {
+				padding: 0;
+			}
+		}
+	}
+	.couple-content {
+		position: relative;
+		color: var(--color-light);
+		margin-bottom: 3rem;
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-color: var(--color-primary);
+			border-radius: var(--border-radius);
+			opacity: 0.8;
+			content: "";
+		}
+		&-body {
+			position: relative;
+			padding: 3rem 2rem;
+		}
+		.image-wrapper {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 4/3;
+			@include max-sm {
+				aspect-ratio: 3/4;
+			}
+			.image-element {
+				height: 100%;
+				padding: 1rem 1rem 0;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+	}
+	.couple {
+		position: relative;
+		overflow: hidden;
+		padding: 3rem 1.8rem 1.8rem;
+		.motif {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 300%;
+		}
+		.motif-opacity {
+			position: absolute;
+			bottom: 2.8rem;
+			left: 0;
+			width: 200%;
+			opacity: 0.3;
+			path {
+				fill: var(--color-primary);
+			}
+			.image-element {
+				display: flex;
+				align-items: center;
+			}
+		}
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 7/8;
+			margin: 0 auto;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			text-align: left;
+			padding-top: 1rem;
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

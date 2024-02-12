@@ -1,0 +1,22 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	overflow: hidden;
+	.orn-1 {
+		width: 50%;
+		margin: -6rem auto 0;
+		@include max-lg {
+			width: 80%;
+		}
+		@include max-md {
+			width: 100%;
+		}
+	}
+	.appology-wrap {
+		position: relative;
+		padding: 3rem 0 5rem;
+		@include max-md {
+			padding: 1rem 0 3rem;
+		}
+	}
+}

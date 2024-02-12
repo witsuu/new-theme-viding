@@ -1,0 +1,371 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+	.and {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0 2rem;
+		@include min-md{
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			width: fit-content;
+			transform: translate(-50%,-50%);
+		}
+		span {
+			position: relative;
+			display: block;
+			font-size: 18px;
+		}
+	}
+	.orn-1{
+		position: absolute;
+		bottom: 0;
+		left: 2%;
+		width: 30%;
+		@include max-lg{
+			width: 55%;	
+		}
+	}
+	.orn-2{
+		position: absolute;
+		bottom: 0;
+		right: 4%;
+		width: 30%;
+		@include max-lg{
+			width: 55%;
+		}
+	}
+	.orn-3{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 12%;
+		transform: translate(0,20%);
+		@include max-lg{
+			width: 23%;	
+		}
+	}
+	.orn-4{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 12%;
+		transform: translate(0,20%);
+		@include max-lg{
+			width: 23%;	
+		}
+	}
+	.orn-5{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-10%,30%);
+		z-index: 3;
+		@include max-lg{
+			width: 60%;	
+			transform: translate(-10%,20%);
+		}
+	}
+	.orn-6{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(10%,30%) scaleX(-1);
+		z-index: 3;
+		@include max-lg{
+			width: 60%;	
+			transform: translate(10%,20%) scaleX(-1);
+		}
+	}
+	.orn-7{
+		position: absolute;
+		bottom: 0;
+		right: 20%;
+		width: 50%;
+		transform: translate(0 , -50%);
+		@include max-lg{
+			transform: translate(15% , -45%);
+		}
+	}
+	.orn-8{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 65%;
+		transform: translate(58%,20%);
+		@include max-lg{
+			width: 95%;
+			transform: translate(55%,10%);
+		}
+	}
+	.orn-9{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(-60%,-20%) scale(-1);
+		@include max-lg{
+			width: 95%;	
+		}
+	}
+	.orn-10{
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%,0) scaleY(-1);
+		@include max-lg{
+			top: 0;
+			width: 50%;	
+		}
+	}
+	.orn-11{
+		position: absolute;
+		top: 5rem;
+		right: 0;
+		width: 25%;
+		transform: translate(50%,0) scale(-1);
+		@include max-lg{
+			top: 0;
+			width: 50%;	
+		}
+	}
+	.orn-12{
+		position: absolute;
+		bottom: 15%;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%,0);
+		@include max-lg{
+			width: 45%;	
+		}
+		@include max-sm{
+			bottom: 7%;
+		}
+	}
+	.orn-13{
+		position: absolute;
+		bottom: 15%;
+		right: 0;
+		width: 20%;
+		transform: translate(50%,0) scaleX(-1);
+		@include max-lg{
+			width: 45%;	
+		}
+		@include max-sm{
+			bottom: 7%;
+		}
+	}
+	.orn-14{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(0%,-30%) scaleY(-1);
+		z-index: 3;
+		@include max-lg{
+			width: 50%;	
+		}
+	}
+	.orn-15{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(5%,-30%) scale(-1);
+		z-index: 3;
+		@include max-lg{
+			width: 50%;	
+		}
+	}
+	.orn-16{
+		position: absolute;
+		top: 25%;
+		left: 0;
+		width: 40%;
+		transform: translate(-30%,0) scale(-1);
+	}
+	.orn-17{
+		position: absolute;
+		top: 45%;
+		right: 0;
+		width: 40%;
+		transform: translate(20%,0);
+		@include max-sm{
+			top: 55%;
+			transform: translate(30%,0);
+		}
+	}
+	.orn-18{
+		position: absolute;
+		bottom: 12%;
+		right: 2%;
+		width: 30%;
+		transform: rotate(20deg);
+		@include max-sm{
+			bottom: 10%;
+			width: 50%;
+		}
+	}
+	.orn-19{
+		position: absolute;
+		top: 20%;
+		left: 30%;
+		width: 35%;
+		transform: translate(-50%,0);
+		@include max-lg{
+			width: 25%;	
+		}
+	}
+	.orn-20{
+		position: absolute;
+		top: 55%;
+		left: 0;
+		width: 30%;
+		transform: translate(-40%,0);
+		@include max-lg{
+			top: 50%;
+			width: 65%;	
+			transform: translate(-60%,0);
+		}
+	}
+	.orn-21{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 30%;
+		transform: translate(-50%,50%);
+		opacity: .8;
+		@include max-lg{
+			width: 45%;	
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		.gadang-top {
+			position: relative;
+			width: 65%;
+			margin: -9.5rem auto -2rem;
+			transform: scaleY(-1);
+			@include max-lg {
+				margin: -9rem auto -2rem;
+				left: 50%;
+				width: 120%;
+				transform: translate(-50%, 0) scaleY(-1);
+			}
+			@include max-sm{
+				margin: -4rem auto -2rem;
+			}
+			.orn {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 35%;
+				transform: translate(-50%, 30%) rotate(15deg) scale(-1);
+				@include max-lg{
+					width: 42%;
+					transform: translate(-50%, 15%) rotate(15deg) scale(-1);
+				}
+			}
+		}
+		.gadang-bottom {
+			position: relative;
+			width: 65%;
+			margin: -2rem auto -5rem;
+			@include max-lg {
+				left: 50%;
+				width: 120%;
+				transform: translate(-50%, 0);
+			}
+			@include max-sm{
+				margin: -2rem auto -3rem;
+			}
+			.orn {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 35%;
+				transform: translate(-50%, 20%);
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+		@include max-sm{
+			padding: 2rem 0;	
+		}
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+		z-index: 10;
+	}
+	.couple {
+		position: relative;
+		z-index: 10;
+		.image-wrap {
+			width: 60%;
+			position: relative;
+			aspect-ratio: 5/6;
+			margin: 0 auto 1rem;
+			@include max-sm{
+				width: 70%;
+			}
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+					border-radius: 300px;
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 1rem;
+			text-align: center;
+		}
+		.couple-parent {
+			position: relative;
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

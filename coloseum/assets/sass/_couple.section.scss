@@ -1,0 +1,236 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 28px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 0 0 5rem;
+		@include max-md {
+			padding: 0 0 3rem;
+			.couple-container {
+				padding: 0;
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			top: 1rem;
+			left: 0;
+			width: 40%;
+			transform: translate(-50%, 0);
+			@include min-md {
+				width: 30%;
+			}
+			@include min-lg {
+				width: 15%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 2rem;
+			right: 0;
+			width: 40%;
+			transform: translate(50%, 0) scaleX(-1);
+			@include min-md {
+				width: 30%;
+			}
+			@include min-lg {
+				width: 15%;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 50%;
+			transform: translate(-30%, -50%);
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 50%;
+			transform: translate(30%, -50%) scaleX(-1);
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(-35%, 0) rotate(-20deg) scaleX(-1);
+		}
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(15%, 0) rotate(10deg) scaleX(-1);
+		}
+		.orn-7 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(35%, 0) rotate(20deg);
+		}
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-15%, 0) rotate(-10deg);
+		}
+	}
+	.couple-body {
+		position: relative;
+		&.with-line {
+			--color-button-trans: #1e1f1e;
+			padding: 3rem 0 2rem;
+		}
+		.background-element {
+			img {
+				object-position: 50% 25%;
+				opacity: 0.4;
+			}
+		}
+	}
+	.couple-content {
+		position: relative;
+		padding: 0 1rem;
+	}
+	.couple {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		padding: 8rem 1.5rem 5rem;
+		mask-image: url(../images/mask.png);
+		mask-size: 100% 100%;
+		mask-repeat: no-repeat;
+		@include max-sm {
+			padding: 8rem 1.8rem 5rem;
+		}
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 3/4;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+					mask-image: url(../images/mask-photo.png);
+					mask-size: 100% 100%;
+					mask-repeat: no-repeat;
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			text-align: center;
+			padding: 1rem;
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+		&.single {
+			@include min-md {
+				padding: 5rem 1.5rem 3rem;
+				mask-image: url(../images/mask-single.png);
+			}
+			.and{
+				@include max-md{
+					display: none;
+				}
+			}
+			&.for-image {
+				background-color: transparent;
+				padding: 0;
+				mask: unset;
+				@include min-md {
+					margin-bottom: -4rem;
+					z-index: 3;
+				}
+				.image-wrap {
+					@include min-md {
+						aspect-ratio: 6/4;
+						.image-element {
+							.couple-image {
+								mask-image: url(../images/mask-photo-single.png);
+							}
+						}
+						.orn-5 {
+							width: 40%;
+							transform: translate(-25%, 0) rotate(-20deg) scaleX(-1);
+						}
+						.orn-6 {
+							width: 20%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

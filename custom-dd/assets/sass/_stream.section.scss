@@ -1,0 +1,82 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	background: linear-gradient(to bottom, var(--color-1), var(--color-4));
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 95%;
+		height: calc(100% - 3rem);
+		transform: translate(-50%, -50%);
+		.image-element {
+			height: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(30%, -20%) scaleX(-1);
+		@include max-lg {
+			width: 35%;
+			transform: translate(30%, -10%) scaleX(-1);
+		}
+		@include max-sm {
+			width: 40%;
+			transform: translate(45%, -10%) scaleX(-1);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-35%, 20%) scaleX(-1);
+		z-index: 3;
+		@include max-lg {
+			width: 30%;
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		min-width: 50%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+	}
+}

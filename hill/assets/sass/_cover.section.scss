@@ -1,0 +1,117 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: #d1e3ec;
+	overflow: hidden;
+	width: 100%;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.bg-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -15%);
+		@include max-lg {
+			top: unset;
+			bottom: 0;
+			width: 120%;
+			transform: translate(-50%, 0%);
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-10%, 30%);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(10%, 30%) scaleX(-1);
+		@include min-md {
+			width: 30%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 4rem 0 3rem;
+		transition: opacity 1s ease;
+		height: 100vh;
+		@include max-lg {
+			padding: 4rem 0 8rem;
+			align-items: center;
+		}
+		.cover-content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.cover-body {
+				position: relative;
+				padding: 2rem 0;
+				&::before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: var(--color-primary);
+					border-radius: 50%;
+					opacity: 0.8;
+					filter: blur(20px);
+					content: "";
+				}
+				.cover-description {
+					padding: 3rem 2rem;
+					text-align: center;
+					@include max-sm {
+						padding: 2rem 1rem;
+					}
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+					p {
+						margin-bottom: 0;
+					}
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,229 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0 8rem;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0 5rem;
+	}
+	.orn-1{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%,-10%) rotate(24deg);
+		@include max-lg{
+			width: 50%;
+		}
+		@include max-sm{
+			width: 60%;
+		}
+	}
+	.orn-2{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(60%,-10%) rotate(-65deg);
+		@include max-lg{
+			width: 50%;
+		}
+		@include max-sm{
+			width: 60%;
+
+		}
+	}
+	.orn-3{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 12%;
+		transform: translate(-40%,10%);
+		@include max-lg{
+			width: 25%;
+		}
+		@include max-sm{
+			width: 35%;
+		}
+		.orn-5{
+			bottom: 90%;
+		}
+	}
+	.orn-4{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 12%;
+		transform: translate(45%,10%) scaleX(-1);
+		@include max-lg{
+			width: 25%;
+		}
+		@include max-sm{
+			width: 35%;
+		}
+	}
+	.orn-5{
+		position: absolute;
+		bottom: 80%;
+		right: 15%;
+		width: 80%;
+	}
+	.orn-6{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(0,20%);
+		@include max-lg{
+			width: 40%;
+		}
+		@include max-sm{
+			width: 50%;
+		}
+	}
+	.orn-7{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(20%,20%);
+		@include max-lg{
+			width: 40%;
+		}
+		@include max-sm{
+			width: 50%;
+		}
+	}
+	.orn-8{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(0,50%);
+		@include max-lg{
+			width: 50%;
+		}
+		@include max-sm{
+			width: 60%;
+		}
+	}
+	.orn-9{
+		position: absolute;
+		bottom: 0;
+		right: 5%;
+		width: 25%;
+		transform: translate(0,50%);
+		@include max-lg{
+			width: 50%;
+		}
+		@include max-sm{
+			width: 60%;
+		}
+	}
+	.orn-10{
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 10%;
+		transform: translate(0,40%) rotate(-10deg) scaleX(-1);
+		@include max-lg{
+			width: 20%;
+		}
+		@include max-sm{
+			width: 30%;
+		}
+	}
+	.orn-11{
+		position: absolute;
+		bottom: 0;
+		left: 8%;
+		width: 8%;
+		transform: translate(0,50%);
+		@include max-lg{
+			width: 15%;
+		}
+		@include max-sm{
+			width: 25%;
+		}
+	}
+	.orn-12{
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(35%,25%) rotate(-15deg);
+		@include max-lg{
+			width: 30%;
+		}
+		@include max-sm{
+			width: 40%;
+		}
+	}
+	.orn-13{
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 25%;
+		transform: translate(-50%,30%);
+		@include max-lg{
+			width: 50%;
+		}
+		@include max-sm{
+			width: 60%;
+		}
+	}
+	.orn-14{
+		position: absolute;
+		bottom: 95%;
+		left: 5%;
+		width: 30%;
+	}
+	.orn-15{
+		position: absolute;
+		bottom: 95%;
+		right: 5%;
+		width: 30%;
+		transform: scaleX(-1);
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				background-color: var(--color-primary);
+				border-radius: 10px;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+			iframe {
+				z-index: 10;
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		z-index: 10;
+	}
+}

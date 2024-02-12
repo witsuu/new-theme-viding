@@ -1,0 +1,174 @@
+.venue-section {
+	position: relative;
+	padding: 5rem 0 8rem;
+	@include max-md {
+		padding: 3rem 0 5rem;
+	}
+	.image-wrapper {
+		position: absolute;
+		left: 0;
+		bottom: 0;
+		width: 100%;
+		height: 80%;
+		&::after {
+			position: absolute;
+			inset: 0;
+			content: "";
+			background-color: rgba($color: #000000, $alpha: 0.15);
+		}
+		.venue-background {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			object-position: center center;
+		}
+	}
+	.venue-wrapper {
+		position: relative;
+		z-index: 3;
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translate(-50%, -40%);
+			width: 300px;
+			@include max-md {
+				width: 230px;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			transform: translateX(-70%) scaleX(-1);
+			width: 180px;
+			z-index: -1;
+			@include max-md {
+				width: 140px;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 3rem;
+			right: 0;
+			width: 180px;
+			transform: translateX(50%);
+			z-index: -1;
+			@include max-md {
+				width: 140px;
+			}
+		}
+		.venue-description {
+			position: relative;
+			padding: 3rem 2rem;
+			background-color: var(--color-primary);
+			border-radius: 8px;
+			margin: 0 auto 3rem;
+			z-index: 2;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+		.venue-content {
+			position: relative;
+			text-align: center;
+			.card {
+				border: none;
+				background-color: var(--color-primary);
+				height: 100%;
+				border-radius: 10px;
+				.card-body {
+					padding: 3rem 2rem;
+					@include max-md {
+						padding: 2rem 1rem;
+					}
+					h4 {
+						font-weight: 600;
+					}
+					.ribbon-venue {
+						position: relative;
+						width: fit-content;
+						margin: 0 auto 1.5rem;
+						svg {
+							width: 35px;
+							height: auto;
+							path {
+								stroke: var(--color-button-trans);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+		@include max-xs {
+			gap: 0;
+		}
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+			@include max-md {
+				width: 120px;
+			}
+			@include max-xs {
+				margin-bottom: 0.5rem;
+			}
+		}
+	}
+	.row-venue {
+		gap: 3rem;
+		&-sm {
+			@include max-md {
+				gap: 3rem;
+			}
+		}
+	}
+	.event-name {
+		position: relative;
+		.date {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			text-align: left;
+			h5 {
+				font-weight: 700;
+				margin-bottom: 0;
+				font-size: 38px;
+			}
+			p {
+				margin-top: 0.2rem;
+				font-size: 12px;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.btn-custom {
+		background-color: transparent;
+		border-color: var(--color-button-trans);
+		color: var(--color-button-trans);
+		transition: all 0.25 ease-in-out;
+		&:hover {
+			background-color: var(--color-secondary) !important;
+			border-color: var(--color-secondary);
+			color: var(--text-button);
+		}
+	}
+	.maps-embed {
+		width: 100%;
+		height: auto;
+		position: relative;
+		aspect-ratio: 16/9;
+	}
+}

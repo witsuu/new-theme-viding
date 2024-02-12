@@ -1,0 +1,50 @@
+.gallery-section {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--color-primary);
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.img-gallery {
+		height: auto;
+		width: 100%;
+		aspect-ratio: 5/6;
+		object-fit: cover;
+		margin-bottom: 1rem;
+	}
+	iframe{
+		z-index: 10;
+	}
+	.splide {
+		z-index: 10;
+		&__pagination {
+			bottom: -0.5em;
+			&__page.is-active {
+				background-color: var(--color-secondary);
+			}
+		}
+		.splide__arrow {
+			border-radius: 0;
+			width: 70px;
+			height: 65px;
+			background-color: var(--color-secondary);
+			@include max-lg {
+				width: 50px;
+				height: 40px;
+			}
+			svg {
+				fill: var(--text-button);
+				width: 25px;
+				height: 30px;
+			}
+			&--prev {
+				left: 0;
+				transform: translate(-50%, -62%);
+			}
+			&--next {
+				right: 0;
+				transform: translate(50%, -62%);
+			}
+		}
+	}
+}

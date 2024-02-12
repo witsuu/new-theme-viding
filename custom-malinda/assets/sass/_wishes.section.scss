@@ -1,0 +1,158 @@
+.wishes-section {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: stretch;
+	@include max-lg {
+		flex-direction: column;
+		align-items: center;
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		width: 50%;
+		padding: 5rem;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		@include max-lg {
+			width: 100%;
+			padding: 5rem 0 3rem;
+			form {
+				width: 60%;
+				margin: 0 auto;
+			}
+		}
+		@include max-sm {
+			width: 100%;
+			padding: 3rem 1.8rem 2rem;
+			form {
+				width: 100%;
+			}
+		}
+		.bg {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 190%;
+			transform: translate(-50%, 0);
+		}
+	}
+	.card-form {
+		background-color: transparent;
+		max-width: auto 0;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 0;
+			.form-control {
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		width: 50%;
+		padding: 5rem 5rem 5rem 0;
+		display: flex;
+		justify-content: center;
+		@include max-lg {
+			padding: 3rem 1.8rem;
+			width: 100%;
+		}
+		.paper {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 105%;
+			height: 100%;
+			@include max-lg {
+				left: -2rem;
+				width: calc(100% + 4rem);
+			}
+			.image-element {
+				height: 100%;
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					object-position: 0% 50%;
+				}
+			}
+		}
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				overflow: hidden;
+				padding: 0 0 0 2rem;
+				@include max-lg {
+					padding: 0;
+				}
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

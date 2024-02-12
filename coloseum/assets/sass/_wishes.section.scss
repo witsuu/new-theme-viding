@@ -1,0 +1,138 @@
+.wishes-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		.coloseum {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 115%;
+			transform: translate(-50%, -15%);
+			opacity: 0.2;
+			@include min-md {
+				transform: translate(-50%, -20%);
+			}
+		}
+		.overlay-elements-gradient {
+			&.overlay-bottom {
+				background: linear-gradient(to top, var(--color-primary) 30%, transparent 100%);
+			}
+		}
+	}
+	.card-form {
+		background-color: transparent;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 2rem;
+			@include max-lg {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				padding: 0;
+				.splide {
+					@include max-md {
+						&__track {
+							overflow: visible;
+						}
+					}
+					&__pagination {
+						bottom: -1.75em;
+						padding: 0 3rem;
+						@include min-md {
+							right: unset;
+						}
+						@include max-lg {
+							bottom: -1.4em;
+						}
+						&__page.is-active {
+							background-color: var(--color-secondary);
+						}
+					}
+					&__arrows {
+						position: absolute;
+						top: 100%;
+						left: 0;
+						.splide__arrow {
+							border-radius: 0;
+							width: 40px;
+							height: 40px;
+							background-color: var(--color-secondary);
+							transform: translate(0);
+							@include max-lg {
+								width: 30px;
+								height: 30px;
+							}
+							svg {
+								fill: var(--text-button);
+								width: 20px;
+							}
+							&--prev {
+								left: 0;
+								top: 0;
+							}
+							&--next {
+								right: 0;
+								top: 0;
+							}
+						}
+					}
+				}
+				.wishes {
+					text-align: left;
+					.wish {
+						color: var(--color-dark);
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-description {
+							position: relative;
+							background-color: rgba($color: #fff, $alpha: 1);
+							border-radius: 5px;
+							display: flex;
+							justify-content: space-between;
+							flex-direction: column;
+							height: 12rem;
+							margin-bottom: 1rem;
+							padding-top: 0.5rem;
+							.wish-body {
+								padding: 0 1rem;
+								height: 100%;
+								overflow: auto;
+								&::-webkit-scrollbar {
+									display: none;
+								}
+							}
+							.wish-footer,
+							.wish-header {
+								padding: 0.5rem 1rem;
+								background-color: rgba($color: #fff, $alpha: 1);
+								border-radius: 5px;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

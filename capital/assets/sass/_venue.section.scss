@@ -1,0 +1,325 @@
+.venue-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		.image-element {
+			height: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				object-position: 50% 95%;
+				border-radius: var(--border-radius);
+				opacity: 0.6;
+			}
+		}
+	}
+	.bg-2 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 180%;
+		}
+		@include max-md {
+			width: 220%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-75%, -5%) rotate(10deg) scaleX(-1);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 140px;
+		transform: translate(-50%, 0);
+		@include min-md {
+			width: 180px;
+			top: 3rem;
+		}
+		@include min-lg {
+			top: 5rem;
+			width: 200px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(75%, -5%) rotate(-10deg);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 25%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 1rem;
+		right: 0;
+		width: 140px;
+		transform: translate(50%, 0) scaleX(-1);
+		@include min-md {
+			top: 3rem;
+			width: 180px;
+		}
+		@include min-lg {
+			top: 5rem;
+			width: 200px;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 120px;
+		transform: translateX(-15%) scaleX(-1);
+	}
+	.orn-6 {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		width: 120px;
+		transform: translateX(15%);
+	}
+	.venue-wrapper {
+		position: relative;
+		z-index: 3;
+		.venue-description {
+			position: relative;
+			margin: 0 auto 5rem;
+			text-align: center;
+			padding: 0 1rem;
+			@include max-lg {
+				margin-bottom: 3rem;
+			}
+		}
+		.venue-content {
+			position: relative;
+			.ribbon-venue {
+				position: relative;
+				svg {
+					width: 40px;
+					height: auto;
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+				.st0 {
+					fill: var(--color-secondary);
+				}
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+			.card {
+				background-color: var(--color-main);
+				border-radius: var(--border-radius);
+				z-index: 5;
+				text-align: center;
+				overflow: hidden;
+				border: none;
+				.card-body {
+					position: relative;
+					padding: 0;
+					h4 {
+						padding: 0.5rem 0;
+						position: relative;
+					}
+					.event-description {
+						position: relative;
+						margin-bottom: 1.5rem;
+						p {
+							margin-bottom: 0;
+						}
+					}
+					.event-name {
+						position: relative;
+						width: 100%;
+						&-body {
+							position: relative;
+							width: 100%;
+							padding: 5rem 1rem 8rem;
+							border-radius: var(--border-radius);
+							margin-top: -1rem;
+						}
+						.date {
+							position: relative;
+							width: 100%;
+							padding: 1rem 0;
+							h5 {
+								font-family: $font-secondary;
+								font-weight: 700;
+								margin-bottom: 0;
+								font-size: 28px;
+							}
+						}
+						h4 {
+							font-family: $font-secondary;
+							position: relative;
+							z-index: 5;
+						}
+						p {
+							margin-bottom: 0;
+							font-weight: 600;
+						}
+					}
+					.event-place {
+						position: relative;
+						padding: 0 2rem;
+						@include max-lg {
+							padding: 0 1rem;
+						}
+						&-body {
+							position: relative;
+							background-color: var(--color-primary);
+							color: var(--color-light);
+							border-radius: var(--border-radius);
+							padding: 2rem;
+							margin-top: -3rem;
+							@include max-md {
+								padding: 1rem;
+							}
+						}
+						&-content {
+							position: relative;
+						}
+					}
+				}
+			}
+		}
+	}
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+		@include max-md {
+			padding: 2rem 0;
+		}
+		* {
+			position: relative;
+		}
+	}
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+			@include max-md {
+				width: 120px;
+			}
+			@include max-xs {
+				width: 45%;
+			}
+		}
+	}
+	.row-venue {
+		row-gap: 3rem;
+	}
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+		40% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}
+
+.maps-embed {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

@@ -1,0 +1,109 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50%, 0);
+		@include max-lg {
+			width: 150%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.songket {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		@include max-lg {
+			width: 140%;
+		}
+		@include max-sm {
+			width: 200%;
+		}
+	}
+	.motif-sudut {
+		width: 80px;
+		@include min-md {
+			width: 100px;
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: opacity 1s ease;
+		padding: 4.5rem 0 5rem;
+		width: 100%;
+		height: 100vh;
+		@include max-lg {
+			padding-bottom: 8rem;
+		}
+		.cover-content {
+			position: relative;
+			width: 30%;
+			min-height: 80%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: var(--border-radius);
+			box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: 0.1);
+			@include max-xl {
+				width: 40%;
+			}
+			@include max-lg {
+				width: 60%;
+				min-height: 70%;
+			}
+			@include max-md {
+				width: 80%;
+			}
+			@include max-sm {
+				width: 100%;
+			}
+			.cover-body {
+				position: relative;
+				width: 100%;
+				.cover-description {
+					padding: 2rem;
+					text-align: center;
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+					p {
+						margin-bottom: 0;
+					}
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}

@@ -1,0 +1,138 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			display: none;
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 24px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 5rem 0 3rem;
+		}
+		.bg {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+			@include max-lg {
+				width: 150%;
+			}
+			@include max-sm {
+				width: 200%;
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 80px;
+			transform: translate(-60%, 45%) rotate(-90deg) scaleX(-1);
+			@include min-md {
+				width: 120px;
+			}
+			@include min-lg {
+				width: 160px;
+				transform: translate(-80%, 45%) rotate(-90deg) scaleX(-1);
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80px;
+			transform: translate(50%, -50%);
+			@include min-md {
+				width: 120px;
+			}
+			@include min-lg {
+				width: 140px;
+				transform: translate(60%, -60%);
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 5rem;
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 1;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 2rem 1rem 0;
+			h3 {
+				font-size: 24px;
+				@include max-sm {
+					font-size: 22px;
+				}
+			}
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

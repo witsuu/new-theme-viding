@@ -1,0 +1,95 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(60%, 0) rotate(10deg) scaleX(-1);
+		@include min-md {
+			width: 260px;
+		}
+		@include min-lg {
+			width: 280px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		width: 120px;
+		transform: translate(-60%, 0);
+		z-index: 3;
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100px;
+		transform: translate(45%, 60%);
+		@include min-md {
+			width: 120px;
+		}
+		@include min-lg {
+			width: 140px;
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: 16px;
+				padding: 3rem 2rem;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		width: 100%;
+	}
+}

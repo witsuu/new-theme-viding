@@ -1,0 +1,34 @@
+$color-main: #e7e2dc;
+$color-custom-main: #fefefc;
+$color-primary: #ffffff;
+$color-secondary: #777570;
+$color-dark: #1e1f1e;
+$color-light: #fff;
+$text-button: #ffffff;
+$color-button-trans: #1e1f1e;
+$color-logo: #e9088a;
+$font-secondary: "Derivia", cursive;
+$font-primary: "Mulish", sans-serif;
+$font-name: "Roustel", cursive;
+$border-radius: 8px;
+$stroke-gradient: linear-gradient(110deg, #c6a058, #ffda92);
+$color-custom: #7c6e13;
+
+$breakpoints-min: (
+	xs: 325px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	4k: 2560px,
+);
+
+$breakpoints-max: (
+	xs: 375px,
+	sm: 575px,
+	md: 767px,
+	lg: 991px,
+	xl: 1199px,
+	xxl: 1399px,
+);
