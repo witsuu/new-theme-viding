@@ -1,6 +1,9 @@
 .couple-section {
 	position: relative;
 	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
 	.and {
 		@include min-md {
 			position: absolute;
@@ -8,7 +11,7 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
-		font-weight: 600;
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
@@ -16,36 +19,78 @@
 		position: relative;
 		margin-bottom: 1rem;
 		z-index: 3;
+
 		span {
 			position: relative;
 			font-size: 36px;
 			font-family: $font-secondary;
 		}
 	}
+
 	.couple-wrapper {
 		position: relative;
 		padding: 5rem 0;
+
 		@include max-md {
-			padding: 5rem 0 3rem;
+			padding: 3rem 0;
 		}
 	}
+
 	.couple-body {
 		position: relative;
 	}
+
 	.couple-content {
 		position: relative;
-		margin-bottom: 3rem;
+		text-align: left;
+		margin-bottom: 5rem;
+
+		@include max-sm {
+			margin-bottom: 3rem;
+		}
+
+		.title-section {
+			--color-button-trans: #fff;
+			text-align: left;
+
+			&::before {
+				position: relative;
+				display: block;
+				height: 2px;
+				width: 150px;
+				background-color: var(--color-button-trans);
+				margin-bottom: 1.5rem;
+				content: "";
+			}
+		}
+
+		p {
+			margin-bottom: 0;
+		}
 	}
+
 	.couple {
 		position: relative;
 		text-align: center;
+
 		.image-wrap {
 			width: 100%;
 			position: relative;
 			aspect-ratio: 3/4;
-			margin: 0 auto;
+
 			.image-element {
 				height: 100%;
+
+				&::after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: rgba($color: #000000, $alpha: .3);
+					content: "";
+				}
+
 				.couple-image {
 					height: 100%;
 					object-fit: cover;
@@ -53,27 +98,53 @@
 				}
 			}
 		}
+
 		.couple-description {
-			position: relative;
-			padding: 1rem;
-		}
-		.couple-parent {
+			position: absolute;
+			bottom: 0;
+			left: 0;
 			width: 100%;
+			padding: 2rem;
+			text-align: left;
+			color: var(--color-light);
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
 		}
+
+
 		.sosmed-wrap {
-			position: relative;
+			position: absolute;
+			top: 2.5rem;
+			left: 2rem;
 			width: fit-content;
 			max-width: 100%;
-			background: var(--color-secondary);
-			padding: 0.5rem 0.6rem;
-			border-radius: 50px;
-			margin: 0 auto;
+
+			&::before {
+				position: relative;
+				display: block;
+				height: 2px;
+				width: 150px;
+				background-color: var(--color-light);
+				margin-bottom: 1.5rem;
+				content: "";
+			}
+
 			.sosmed {
+				background: var(--color-secondary);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
 				color: var(--text-button);
 				text-decoration: none;
 				display: block;
 				width: fit-content;
-				margin: 0 auto;
+
 				small {
 					align-items: center;
 					gap: 0.25rem;
@@ -81,11 +152,19 @@
 					justify-content: center;
 				}
 			}
+
 			.fab {
 				font-size: 18px;
+
 				@include max-md {
 					font-size: 16px;
 				}
+			}
+		}
+
+		&.woman {
+			@include min-md {
+				margin-top: 40%;
 			}
 		}
 	}

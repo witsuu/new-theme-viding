@@ -2,20 +2,35 @@
 	position: relative;
 	padding: 5rem 0;
 	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
 	@include max-md {
 		padding: 3rem 0;
 	}
+
 	.stream-wrapper {
 		position: relative;
+
+		.title-section {
+			text-align: left;
+		}
+
 		.stream-content {
 			position: relative;
+
 			.stream-description {
 				position: relative;
+				background-color: var(--color-main);
+				color: var(--color-dark);
+				border-radius: var(--border-radius) var(--border-radius) 0 0;
 				padding: 3rem 2rem;
+
 				@include max-md {
 					padding: 2rem 1rem;
 				}
 			}
+
 			h4 {
 				@include max-md {
 					text-align: center;
@@ -23,14 +38,17 @@
 			}
 		}
 	}
+
 	ul {
 		ol {
 			padding: 0;
 		}
 	}
+
 	.btn-custom {
 		width: 100%;
 	}
+
 	.yt-description {
 		position: relative;
 	}

@@ -1,28 +1,52 @@
 .reminder-wrap {
 	position: relative;
 	display: block;
-	padding: 5rem 0 0;
-	@include max-md {
-		padding: 3rem 0 0;
+	margin-bottom: 5rem;
+
+	@include max-sm {
+		margin-bottom: 3rem;
 	}
+
 	.reminder-content {
 		position: relative;
-		width: fit-content;
-		max-width: 100%;
-		margin: 0 auto;
-		z-index: 2;
+		display: grid;
+		grid-template-columns: 1fr auto;
+		width: 100%;
+		align-content: stretch;
+
+		.image-wrapper {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 6/5;
+
+			.image-element {
+				height: 100%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+		}
 	}
+
+	.widget-element {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		transform: translate(0, 50%);
+	}
+
 	.btn-reminder {
-		z-index: 3;
 		position: relative;
-		margin: 0 auto;
 		display: flex;
 		align-items: center;
 		position: relative;
 		gap: 0.5rem;
 		transition: all 0.2s ease-in-out;
 		text-decoration: none;
-		margin-top: 1.5rem;
+
 		path {
 			fill: var(--text-button);
 			transition: all 0.3s ease-in-out;

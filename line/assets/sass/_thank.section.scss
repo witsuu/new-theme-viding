@@ -2,43 +2,80 @@
 	position: relative;
 	padding: 5rem 0;
 	text-align: center;
+	min-height: 80vh;
+
 	@include max-md {
 		padding: 3rem 0;
 	}
-	.image-wrapper {
-		position: relative;
-		width: 100%;
-		height: auto;
-		aspect-ratio: 3/4;
-		margin: 0 auto;
-		.image-element {
-			position: relative;
-			width: 100%;
-			height: 100%;
-			.thank-background {
-				width: 100%;
-				height: 100%;
-				object-fit: cover;
-			}
+
+	.background-element {
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($color: #000000, $alpha: .4);
+			content: "";
 		}
 	}
+
 	.thank-wrapper {
 		position: relative;
+		width: 100%;
+		min-height: 80vh;
+
+		&::before {
+			position: absolute;
+			display: block;
+			top: 0;
+			right: 0;
+			width: 150px;
+			height: 2px;
+			background-color: var(--color-light);
+			content: "";
+		}
+
 		.thank {
-			position: relative;
-			padding: 3rem 2rem;
-			@include max-md {
-				padding: 2rem 1rem;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			color: var(--color-light);
+			text-align: left;
+
+			@include min-md {
+				width: 50%;
+			}
+
+			@include min-lg {
+				width: 40%;
+			}
+
+			&-body {
+				display: flex;
+				align-items: flex-start;
+				justify-content: space-between;
+				flex-direction: column;
+				height: 100%;
+
+				.title-section {
+					text-align: left;
+				}
+
 			}
 		}
 	}
 }
+
 .footer {
 	padding: 1rem 0;
 	position: relative;
 	text-align: center;
 	background-color: var(--color-secondary);
 	color: var(--text-button);
+
 	small {
 		position: relative;
 	}
