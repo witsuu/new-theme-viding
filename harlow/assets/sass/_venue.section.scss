@@ -1,0 +1,187 @@
+.venue-section {
+	position: relative;
+	padding: 3rem 0;
+	background: url(../images/bg-trans-venue.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	@include max-lg {
+		padding: 5rem 0;
+	}
+	@include max-md {
+		padding: 3rem 0;
+	}
+	&::before {
+		position: absolute;
+		width: 100%;
+		height: 10rem;
+		top: 0;
+		left: 0;
+		content: "";
+		background: linear-gradient(to bottom, var(--color-main) 20%, transparent 100%);
+	}
+	&::after {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100%;
+		height: 20%;
+		background: linear-gradient(to top, var(--color-main) 30%, transparent 100%);
+		content: "";
+	}
+	.orn-1 {
+		position: absolute;
+		right: 0;
+		top: 10%;
+		width: 120px;
+	}
+	.orn-2 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 100px;
+	}
+	.venue-wrapper {
+		position: relative;
+		.venue-content {
+			position: relative;
+			text-align: center;
+			padding-top: 3rem;
+			.card {
+				border: none;
+				background-color: transparent;
+				border-radius: 20px;
+				color: var(--color-dark);
+				&::before {
+					position: absolute;
+					inset: 0;
+					background-color: var(--color-primary);
+					border-radius: 20px;
+					opacity: 0.7;
+					content: "";
+				}
+				.card-body {
+					padding: 0 2rem 3rem;
+					position: relative;
+					@include min-lg {
+						padding: 0 2rem 2rem;
+					}
+					@include max-md {
+						padding: 0 1rem 2rem;
+					}
+					.ribbon-venue {
+						position: relative;
+						width: fit-content;
+						padding: 1rem;
+						background-color: var(--color-primary);
+						border-radius: 10px;
+						transform: translateY(-50%);
+						margin: 0 auto;
+						svg {
+							width: 40px;
+							height: auto;
+							path {
+								stroke: var(--text-button);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.prokes-wrapper {
+		margin-top: 3rem;
+		position: relative;
+		padding: 2rem;
+		border-radius: 10px;
+		background-color: transparent;
+		color: var(--color-dark);
+		text-align: center;
+		z-index: 2;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		* {
+			position: relative;
+		}
+		&::before {
+			position: absolute;
+			inset: 0;
+			background-color: var(--color-primary);
+			border-radius: 20px;
+			opacity: 0.7;
+			content: "";
+		}
+	}
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+			@include max-md {
+				width: 120px;
+			}
+		}
+	}
+	.row-venue {
+		gap: 3.5rem;
+		@include max-lg {
+			gap: 0;
+		}
+		@include max-md {
+			gap: 3.75rem;
+		}
+		&-sm {
+			@include max-md {
+				gap: 3rem;
+			}
+		}
+	}
+	.event-name {
+		position: relative;
+		.date {
+			display: flex;
+			align-items: center;
+			gap: 0.5rem;
+			text-align: left;
+			h5 {
+				font-weight: 700;
+				margin-bottom: 0;
+				font-size: 38px;
+			}
+			p {
+				margin-top: 0.2rem;
+				font-size: 12px;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.btn-custom {
+		background-color: transparent;
+		border-color: var(--color-button-trans);
+		color: var(--color-button-trans);
+		transition: all 0.25 ease-in-out;
+		&:hover {
+			background-color: var(--color-secondary) !important;
+			border-color: var(--color-secondary);
+			color: var(--text-button);
+		}
+	}
+}
+
+.maps-embed {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	inset: 0;
+}

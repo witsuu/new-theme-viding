@@ -1,0 +1,136 @@
+.couple-section {
+	position: relative;
+	padding: 3rem 0;
+	text-align: center;
+	@include max-lg {
+		padding: 5rem 0;
+	}
+	@include max-md {
+		padding: 3rem 0;
+	}
+	&::before {
+		position: absolute;
+		inset: 0;
+		content: "";
+		background: url(../images/bg-trans-couple.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 25%;
+		content: "";
+		background: linear-gradient(to bottom, var(--color-main) 20%, transparent 100%);
+	}
+	.orn-1 {
+		position: absolute;
+		right: 0;
+		top: 30%;
+		width: 120px;
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 100px;
+	}
+	.and {
+		@include max-lg {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+		}
+		@include max-md {
+			position: relative;
+			inset: unset;
+			transform: none;
+		}
+		margin: 2.5rem 0;
+		font-weight: 600;
+		color: var(--color-dark);
+	}
+	.bg-trans-couple {
+		position: absolute;
+		inset: 0;
+		object-fit: cover;
+	}
+	.couple-wrap {
+		position: relative;
+		background-color: transparent;
+		border-radius: 20px;
+		padding: 2rem;
+		z-index: 2;
+		@include max-lg {
+			padding: 3rem 2rem;
+		}
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		&::before {
+			position: absolute;
+			inset: 0;
+			border-radius: 20px;
+			background-image: url(../images/bg-trans-card-couple.png);
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center;
+			content: "";
+		}
+	}
+	.couple {
+		position: relative;
+		z-index: 2;
+		.layer-blur {
+			position: relative;
+			* {
+				position: relative;
+			}
+		}
+		.image-wrap {
+			width: 70%;
+			margin: auto;
+			position: relative;
+			margin-bottom: 1.25rem;
+			aspect-ratio: 3/3.5;
+			border-radius: 1000px 1000px 20px 20px;
+			@include max-md {
+				width: 80%;
+			}
+			.couple-image {
+				height: 100%;
+				object-fit: cover;
+				position: relative;
+				width: 100%;
+				border-radius: 1000px 1000px 20px 20px;
+				z-index: 5;
+			}
+		}
+		.couple-parent {
+			width: 80%;
+			margin: auto;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: 100%;
+			.sosmed {
+				color: var(--color-dark);
+				text-decoration: none;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

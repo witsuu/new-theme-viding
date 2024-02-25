@@ -1,0 +1,49 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+	@include max-lg {
+		padding: 5rem 0;
+	}
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 20%;
+		width: 100px;
+		left: 0;
+		@include max-lg {
+			width: 80px;
+		}
+		@include max-md {
+			width: 70px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		right: 0;
+		top: 60%;
+		width: 160px;
+		@include max-lg {
+			width: 120px;
+		}
+		@include max-md {
+			width: 100px;
+		}
+	}
+	.appology-wrap {
+		position: relative;
+		border-radius: 20px;
+		background: url(../images/bg-trans-card.png);
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 2rem 1rem;
+		@include max-lg {
+			padding: 3rem 2rem;
+		}
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+	}
+}
