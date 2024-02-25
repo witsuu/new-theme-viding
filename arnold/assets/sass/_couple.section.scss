@@ -1,0 +1,171 @@
+.couple-section {
+	position: relative;
+	padding: 3rem 0 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	@include ipad {
+		padding: 5rem 0 0;
+	}
+
+	.and {
+		@include max-lg {
+			position: absolute;
+			top: 40%;
+			left: 50%;
+			transform: translate(-50%, -40%);
+		}
+
+		@include max-md {
+			position: relative;
+			top: unset;
+			left: unset;
+			transform: none;
+		}
+
+		display: none;
+		padding: 1rem 0;
+		font-weight: 600;
+	}
+
+	.couple-wrapper {
+		position: relative;
+
+		.container {
+			@include min-lg {
+				padding: 0;
+			}
+
+			@include min-sm {
+				padding: 0;
+			}
+		}
+
+		.couple-content {
+			position: relative;
+			margin-bottom: 3rem;
+
+			@include min-lg {
+				padding: 0 1.8rem;
+			}
+
+			@include min-sm {
+				padding: 0 1.8rem;
+			}
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			position: relative;
+			width: 100%;
+			margin: auto;
+			aspect-ratio: 4/6;
+
+			.image-element {
+				height: 100%;
+
+				&::after {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: rgba($color: #000000, $alpha: .3);
+					content: "";
+				}
+
+				.couple-image {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+			}
+
+		}
+
+		.couple-description {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: calc(100% - 1rem);
+			padding: 2rem 1.5rem;
+			text-align: left;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background-color: var(--color-primary);
+				opacity: .6;
+				content: "";
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: .5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				--color-button-trans: #fff;
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				border: 1px solid var(--color-button-trans);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+
+				.sosmed {
+					color: var(--color-button-trans);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.title-couple {
+			position: absolute;
+			top: -1.5rem;
+			left: 0;
+			width: 100%;
+			text-align: center;
+
+			span {
+				font-size: 90px;
+				font-family: $font-secondary;
+			}
+		}
+
+	}
+}

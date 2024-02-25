@@ -1,20 +1,39 @@
 .wishes-section {
 	position: relative;
-	padding: 5rem 0;
-	@include max-md {
-		padding: 3rem 0;
-	}
+	background-color: var(--color-primary);
+
 	.wishes-form-wrapper {
 		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
 	}
+
 	.card-form {
 		background-color: transparent;
 		border-radius: var(--border-radius);
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-main);
+			opacity: .7;
+			content: "";
+			border-radius: var(--border-radius);
+		}
+
 		&.card {
 			border: none;
 		}
+
 		.card-body {
 			padding: 2rem;
+
 			@include max-md {
 				padding: 2rem 1rem;
 			}
@@ -23,31 +42,43 @@
 
 	.wishes-preview {
 		position: relative;
+		padding: 3rem 0 5rem;
+
+		@include max-md {
+			padding: 1rem 0 3rem;
+		}
+
 		.card {
 			position: relative;
 			border: none;
 			background-color: transparent;
+
 			.card-body {
 				overflow: hidden;
 				padding: 2rem 0;
+
 				.wishes {
 					text-align: left;
 					max-height: 32rem;
 					overflow: auto;
 					padding-right: 1rem;
 					color: var(--color-dark);
+
 					&::-webkit-scrollbar {
 						width: 5px;
 					}
+
 					&::-webkit-scrollbar-track {
 						background-color: #eee;
 						border-radius: 20px;
 						opacity: 0.15;
 					}
+
 					&::-webkit-scrollbar-thumb {
 						background-color: var(--color-secondary);
 						border-radius: 20px;
 					}
+
 					// .text-muted {
 					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
 					// }
@@ -56,13 +87,16 @@
 						display: grid;
 						grid-template-columns: auto 1fr;
 						gap: 1rem;
+
 						h6 {
 							font-weight: bold;
 						}
+
 						h6,
 						p {
 							margin-bottom: 0;
 						}
+
 						.wish-badge {
 							background-color: var(--color-light);
 							width: 35px;
@@ -72,11 +106,13 @@
 							align-items: center;
 							border-radius: 50px;
 						}
+
 						.wish-description {
 							padding: 1rem;
 							background-color: rgba($color: #fff, $alpha: 0.8);
 							border-radius: 5px;
 							position: relative;
+
 							&::before {
 								position: absolute;
 								top: 15px;

@@ -1,28 +1,63 @@
 .header-section {
 	position: relative;
 	width: 100%;
+	overflow: hidden;
+
 	.scroll-icon {
-		position: relative;
-		margin-top: 2rem;
+		position: absolute;
+		bottom: 12%;
+		left: 50%;
+		transform: translate(-50%, 0);
 	}
+
 	.header-content {
 		position: relative;
 		height: 100vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
+		padding: 4.5rem 0 0;
+		color: var(--color-dark);
+
 		.header {
 			position: relative;
-			display: grid;
-			grid-template-rows: auto 1fr;
-			width: 50%;
-			height: 100%;
+			width: 40%;
+			min-height: 90%;
 			margin: 0 auto;
-			padding: 4.5rem 0 0;
+
+			@include min-lg {
+				transform: translate(0, 2rem);
+			}
+
+			@include max-lg {
+				width: 80%;
+			}
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-primary);
+				opacity: .7;
+				content: "";
+			}
+
 			.header-title {
 				position: relative;
-				text-align: center;
+				text-align: left;
+				padding: 4.5rem;
+
 				&-content {
 					position: relative;
 				}
 			}
+
 			#scroll-animate {
 				animation: scrollAnim 1500ms ease infinite;
 			}
@@ -35,9 +70,11 @@
 		opacity: 0;
 		transform: translate3d(0, -20%, 0);
 	}
+
 	50% {
 		opacity: 1;
 	}
+
 	100% {
 		transform: translate3d(0, 100%, 0);
 		opacity: 0;

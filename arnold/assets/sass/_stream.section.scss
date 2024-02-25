@@ -1,0 +1,63 @@
+.stream-section {
+	position: relative;
+	padding: 2rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.title-section {
+		text-align: left;
+		padding: 0 1.8rem;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				text-align: left;
+				color: var(--color-light);
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: calc(100% - 1.8rem);
+					height: 100%;
+					background-color: var(--color-primary);
+					opacity: .6;
+					content: "";
+				}
+			}
+
+			h4 {
+				@include ipad {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}
