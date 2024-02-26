@@ -1,0 +1,164 @@
+.venue-section {
+	position: relative;
+	padding: 3rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.venue-wrapper {
+		position: relative;
+
+		.venue-description {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.venue-content {
+			position: relative;
+
+			.card {
+				background-color: var(--color-main);
+				color: var(--color-light);
+				border: none;
+				border-radius: var(--border-radius) var(--border-radius) 0 0;
+				text-align: center;
+				box-shadow: 0 10px 30px rgba($color: #000000, $alpha: 0.15);
+
+				.card-body {
+					padding: 0;
+
+					h4 {
+						padding: 0 0 1rem;
+					}
+
+					.event-name {
+						position: relative;
+						width: 100%;
+						padding: 5rem 1.8rem;
+
+						.date {
+							position: relative;
+							width: 100%;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							flex-direction: column;
+							gap: 0.75rem;
+							padding: 0.5rem 0;
+
+							h5 {
+								line-height: 1;
+								font-family: $font-secondary;
+								margin-bottom: 0;
+								font-size: 32px;
+							}
+
+							.line {
+								--color-button-trans: #fff;
+								width: 45px;
+								height: 1px;
+								background-color: var(--color-button-trans);
+								margin-bottom: 0.75rem;
+							}
+						}
+
+						h4 {
+							font-family: $font-secondary;
+						}
+
+						p {
+							margin-bottom: 0;
+							font-weight: 600;
+						}
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 1.5rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-place {
+						position: relative;
+
+						&-body {
+							position: relative;
+							padding: 2rem 1.8rem;
+
+							.widget-elements {
+								width: 100%;
+								margin-top: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+
+		@include max-md {
+			padding: 2rem 0;
+		}
+
+		@include min-lg {
+			padding: 2rem 0;
+		}
+
+		* {
+			position: relative;
+		}
+
+		.prokes-wrap {
+			display: flex;
+			gap: 0.75rem;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			text-align: center;
+
+			.prokes {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				width: 132px;
+
+				@include min-lg {
+					width: 120px;
+				}
+
+				@include max-md {
+					width: 120px;
+				}
+
+				@include max-xs {
+					width: 45%;
+				}
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 0;
+	}
+}

@@ -1,0 +1,20 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 2rem 1rem;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+
+		@include ipad {
+			padding: 3rem 2rem;
+		}
+	}
+}

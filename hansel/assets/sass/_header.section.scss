@@ -1,0 +1,60 @@
+.header-section {
+	position: relative;
+
+	.header-content {
+		position: relative;
+		text-align: center;
+		padding: 5rem 2rem;
+		min-height: 80vh;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		@include max-sm {
+			padding: 5rem 1rem;
+		}
+
+		.header {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			@include ipad {
+				width: 60%;
+			}
+			.image-wrapper {
+				position: relative;
+				width: 80%;
+				margin: 0 auto;
+				aspect-ratio: 3/4;
+				z-index: 3;
+				.image-element {
+					background-color: var(--color-primary);
+					border: 1px solid var(--color-light);
+					height: 100%;
+					border-radius: 300px;
+					padding: 0.75rem;
+					img {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 300px;
+					}
+				}
+			}
+
+			.header-title {
+				position: relative;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: var(--border-radius);
+				text-align: center;
+				padding: 11rem 1rem 1rem;
+				margin-top: -10rem;
+
+				&-content {
+					color: var(--color-light);
+				}
+			}
+		}
+	}
+}

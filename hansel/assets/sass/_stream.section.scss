@@ -1,0 +1,54 @@
+.stream-section {
+	position: relative;
+	padding: 2rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.title-section {
+		text-align: left;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				text-align: center;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: var(--border-radius);
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+
+			h4 {
+				@include ipad {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		margin: 0 auto;
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}
