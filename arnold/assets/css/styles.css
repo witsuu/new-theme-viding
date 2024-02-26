@@ -1525,7 +1525,7 @@ ul li {
     padding: 0;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 575px) {
   .couple-section .couple-wrapper .container {
     padding: 0;
   }
@@ -1539,7 +1539,7 @@ ul li {
     padding: 0 1.8rem;
   }
 }
-@media (min-width: 576px) {
+@media (max-width: 575px) {
   .couple-section .couple-wrapper .couple-content {
     padding: 0 1.8rem;
   }
@@ -1640,9 +1640,19 @@ ul li {
   width: 100%;
   text-align: center;
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .couple-section .couple .title-couple {
+    top: 0;
+  }
+}
 .couple-section .couple .title-couple span {
   font-size: 90px;
   font-family: "NewYork", serif;
+}
+@media (max-width: 991px) {
+  .couple-section .couple .title-couple span {
+    font-size: 60px;
+  }
 }
 
 .story-section {
@@ -1754,6 +1764,11 @@ ul li {
   width: 100%;
   padding: 2rem 1.8rem;
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name {
+    padding: 2rem 1rem;
+  }
+}
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
   position: relative;
   width: 100%;
@@ -1802,9 +1817,19 @@ ul li {
   background-color: var(--color-main);
   content: "";
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-place::before {
+    width: calc(100% - 1rem);
+  }
+}
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body {
   position: relative;
   padding: 2rem 2rem 2rem 1.8rem;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body {
+    padding: 2rem 1rem;
+  }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body .widget-elements {
   position: absolute;
@@ -1812,6 +1837,11 @@ ul li {
   left: 2rem;
   width: 100%;
   transform: translateY(50%);
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body .widget-elements {
+    left: 1rem;
+  }
 }
 .venue-section .prokes-wrapper {
   margin: 3rem 0 0;
@@ -2181,7 +2211,7 @@ ul li {
 }
 @media (min-width: 992px) {
   .gallery-section .splide .splide__arrow {
-    width: 40px;
+    width: 35px;
     height: 40px;
   }
 }
@@ -2189,12 +2219,6 @@ ul li {
   fill: var(--text-button);
   width: 25px;
   height: 30px;
-}
-@media (max-width: 767px) {
-  .gallery-section .splide .splide__arrow svg {
-    width: 15px;
-    height: 20px;
-  }
 }
 .gallery-section .splide .splide__arrow--prev {
   left: 0;
@@ -2246,6 +2270,11 @@ ul li {
   text-align: left;
   padding: 0 1.8rem;
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .stream-section .title-section {
+    padding: 0;
+  }
+}
 .stream-section .stream-wrapper {
   position: relative;
 }
@@ -2254,11 +2283,11 @@ ul li {
 }
 .stream-section .stream-wrapper .stream-content .stream-description {
   position: relative;
-  padding: 3rem 2rem;
+  padding: 3rem 2rem 3rem 1.8rem;
   text-align: left;
   color: var(--color-light);
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .stream-section .stream-wrapper .stream-content .stream-description {
     padding: 2rem 1rem;
   }
@@ -2274,8 +2303,8 @@ ul li {
   content: "";
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .stream-section .stream-wrapper .stream-content h4 {
-    text-align: center;
+  .stream-section .stream-wrapper .stream-content .stream-description::before {
+    width: 100%;
   }
 }
 .stream-section ul ol {

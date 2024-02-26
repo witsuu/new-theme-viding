@@ -72,6 +72,9 @@
 						position: relative;
 						width: 100%;
 						padding: 2rem 1.8rem;
+						@include ipad {
+							padding: 2rem 1rem;
+						}
 
 						.date {
 							position: relative;
@@ -79,7 +82,7 @@
 							display: flex;
 							justify-content: start;
 							align-items: flex-end;
-							gap: .5rem;
+							gap: 0.5rem;
 
 							h5 {
 								line-height: 1;
@@ -93,7 +96,7 @@
 								width: 45px;
 								height: 1px;
 								background-color: var(--color-button-trans);
-								margin-bottom: .75rem;
+								margin-bottom: 0.75rem;
 							}
 						}
 
@@ -128,11 +131,17 @@
 							height: 100%;
 							background-color: var(--color-main);
 							content: "";
+							@include ipad {
+								width: calc(100% - 1rem);
+							}
 						}
 
 						&-body {
 							position: relative;
 							padding: 2rem 2rem 2rem 1.8rem;
+							@include ipad {
+								padding: 2rem 1rem;
+							}
 
 							.widget-elements {
 								position: absolute;
@@ -140,6 +149,9 @@
 								left: 2rem;
 								width: 100%;
 								transform: translateY(50%);
+								@include ipad {
+									left: 1rem;
+								}
 							}
 						}
 					}

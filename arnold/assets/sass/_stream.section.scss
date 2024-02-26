@@ -9,6 +9,9 @@
 	.title-section {
 		text-align: left;
 		padding: 0 1.8rem;
+		@include ipad {
+			padding: 0;
+		}
 	}
 
 	.stream-wrapper {
@@ -19,11 +22,11 @@
 
 			.stream-description {
 				position: relative;
-				padding: 3rem 2rem;
+				padding: 3rem 2rem 3rem 1.8rem;
 				text-align: left;
 				color: var(--color-light);
 
-				@include max-md {
+				@include ipad {
 					padding: 2rem 1rem;
 				}
 
@@ -34,14 +37,11 @@
 					width: calc(100% - 1.8rem);
 					height: 100%;
 					background-color: var(--color-primary);
-					opacity: .6;
+					opacity: 0.6;
 					content: "";
-				}
-			}
-
-			h4 {
-				@include ipad {
-					text-align: center;
+					@include ipad {
+						width: 100%;
+					}
 				}
 			}
 		}

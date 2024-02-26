@@ -37,7 +37,7 @@
 			border-radius: 50px;
 
 			@include min-lg {
-				width: 40px;
+				width: 35px;
 				height: 40px;
 			}
 
@@ -45,11 +45,6 @@
 				fill: var(--text-button);
 				width: 25px;
 				height: 30px;
-
-				@include max-md {
-					width: 15px;
-					height: 20px;
-				}
 			}
 
 			&--prev {
