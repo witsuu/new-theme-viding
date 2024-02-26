@@ -17,7 +17,7 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-color: rgba($color: #000000, $alpha: .4);
+			background-color: rgba($color: #000000, $alpha: 0.4);
 			content: "";
 		}
 	}
@@ -40,6 +40,15 @@
 			display: flex;
 			justify-content: flex-start;
 			align-items: flex-end;
+			@include max-xl {
+				width: 40%;
+			}
+			@include max-lg {
+				width: 60%;
+			}
+			@include max-sm {
+				width: 100%;
+			}
 
 			.cover-body {
 				position: relative;
@@ -87,6 +96,12 @@
 					background-color: var(--color-light);
 					transform: translate(calc(100% + 2rem), -50%);
 					content: "";
+					@include max-sm {
+						transform: translate(calc(100% + 1rem), -50%);
+					}
+				}
+				.btn-custom {
+					padding: 0.5rem 1rem;
 				}
 			}
 		}

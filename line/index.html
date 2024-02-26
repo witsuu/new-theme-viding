@@ -131,7 +131,7 @@
             <!-- Couple section -->
             <section class="couple-section color-primary moveable-section" data-id="1">
                 <div class="couple-wrapper">
-                    <div class="container position-relative">
+                    <div class="container container-custom position-relative">
                         <div class="couple-body">
                             <div class="row justify-content-center">
                                 <div class="col-md-12 col-lg-10">
@@ -1119,9 +1119,18 @@
         if (document.querySelector(".gallery-default")) {
             document.addEventListener("DOMContentLoaded", function () {
                 const gallery = new Splide("#gallery-default", {
-                    pagination: false,
-                    perPage: 3,
+                    pagination: true,
+                    type: 'loop',
+                    perPage: 4,
                     perMove: 1,
+                    breakpoints: {
+                        992: {
+                            perPage: 3
+                        },
+                        576: {
+                            perPage: 1
+                        }
+                    }
                 });
 
                 gallery.mount();

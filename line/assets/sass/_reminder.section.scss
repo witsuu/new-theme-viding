@@ -18,6 +18,9 @@
 			position: relative;
 			width: 100%;
 			aspect-ratio: 6/5;
+			@include max-sm {
+				aspect-ratio: 4/6;
+			}
 
 			.image-element {
 				height: 100%;

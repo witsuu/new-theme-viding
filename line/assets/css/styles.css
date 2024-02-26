@@ -157,6 +157,9 @@ span {
     padding-left: 1.5rem;
     padding-right: 1.5rem;
   }
+  .container-custom {
+    padding: 0;
+  }
 }
 
 .btn-custom {
@@ -1246,6 +1249,11 @@ ul li {
   width: 100%;
   aspect-ratio: 6/5;
 }
+@media (max-width: 575px) {
+  .reminder-wrap .reminder-content .image-wrapper {
+    aspect-ratio: 4/6;
+  }
+}
 .reminder-wrap .reminder-content .image-wrapper .image-element {
   height: 100%;
 }
@@ -1315,6 +1323,21 @@ ul li {
   justify-content: flex-start;
   align-items: flex-end;
 }
+@media (max-width: 1199px) {
+  .cover-section .cover-wrapper .cover-content {
+    width: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .cover-section .cover-wrapper .cover-content {
+    width: 60%;
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper .cover-content {
+    width: 100%;
+  }
+}
 .cover-section .cover-wrapper .cover-content .cover-body {
   position: relative;
 }
@@ -1355,6 +1378,14 @@ ul li {
   transform: translate(calc(100% + 2rem), -50%);
   content: "";
 }
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper .cover-content .elements-widget::before {
+    transform: translate(calc(100% + 1rem), -50%);
+  }
+}
+.cover-section .cover-wrapper .cover-content .elements-widget .btn-custom {
+  padding: 0.5rem 1rem;
+}
 
 .header-section {
   position: relative;
@@ -1386,6 +1417,21 @@ ul li {
   height: 100%;
   padding: 4.5rem 0;
 }
+@media (max-width: 1199px) {
+  .header-section .header-content .header {
+    width: 40%;
+  }
+}
+@media (max-width: 991px) {
+  .header-section .header-content .header {
+    width: 50%;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .header-content .header {
+    width: 70%;
+  }
+}
 .header-section .header-content .header .header-title {
   position: relative;
   text-align: left;
@@ -1406,6 +1452,11 @@ ul li {
   background-color: var(--color-light);
   transform: translate(3rem, -50%);
   content: "";
+}
+@media (max-width: 575px) {
+  .header-section .header-content .header .header-title-content .header-description::before {
+    transform: translate(2rem, -50%);
+  }
 }
 .header-section .header-content .header #scroll-animate {
   animation: scrollAnim 1500ms ease infinite;
@@ -1447,6 +1498,11 @@ ul li {
     transform: translate(-50%, -50%);
   }
 }
+@media (max-width: 575px) {
+  .couple-section .and {
+    display: none;
+  }
+}
 .couple-section .and span {
   position: relative;
   font-size: 36px;
@@ -1458,7 +1514,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .couple-section .couple-wrapper {
-    padding: 3rem 0;
+    padding: 3rem 0 0;
   }
 }
 .couple-section .couple-body {
@@ -1471,6 +1527,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .couple-section .couple-content {
+    padding: 0 1.5rem;
     margin-bottom: 3rem;
   }
 }
@@ -1788,7 +1845,7 @@ ul li {
   }
 }
 .venue-section .row-venue {
-  row-gap: 3rem;
+  row-gap: 2rem;
 }
 .venue-section .animation-loop .st1 {
   will-change: transform;
@@ -1905,13 +1962,24 @@ ul li {
   grid-template-columns: auto 1fr;
 }
 .wishes-section .wishes-form-wrapper .title-section h2 {
-  width: 70%;
+  width: 100%;
+}
+@media (min-width: 992px) {
+  .wishes-section .wishes-form-wrapper .title-section h2 {
+    width: 80%;
+  }
 }
 .wishes-section .wishes-form-wrapper .title-section .line {
   display: block;
-  width: 100%;
+  width: 110px;
   height: 2px;
   background-color: var(--color-button-trans);
+  margin-top: 0.5rem;
+}
+@media (min-width: 992px) {
+  .wishes-section .wishes-form-wrapper .title-section .line {
+    width: 100%;
+  }
 }
 .wishes-section .card-form {
   background-color: transparent;
@@ -1924,7 +1992,7 @@ ul li {
 .wishes-section .card-form .card-body {
   padding: 2rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .wishes-section .card-form .card-body {
     padding: 2rem 1rem;
   }
@@ -1940,6 +2008,11 @@ ul li {
 .wishes-section .wishes-preview .card .card-body {
   overflow: hidden;
   padding: 0;
+}
+@media (max-width: 767px) {
+  .wishes-section .wishes-preview .card .card-body {
+    padding-top: 2rem;
+  }
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
@@ -2348,7 +2421,7 @@ ul li {
 .thank-section .thank-wrapper::before {
   position: absolute;
   display: block;
-  top: 0;
+  top: 0.5rem;
   right: 0;
   width: 150px;
   height: 2px;

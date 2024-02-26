@@ -23,14 +23,21 @@
 			grid-template-columns: auto 1fr;
 
 			h2 {
-				width: 70%;
+				width: 100%;
+				@include min-lg {
+					width: 80%;
+				}
 			}
 
 			.line {
 				display: block;
-				width: 100%;
+				width: 110px;
 				height: 2px;
 				background-color: var(--color-button-trans);
+				margin-top: 0.5rem;
+				@include min-lg {
+					width: 100%;
+				}
 			}
 		}
 	}
@@ -47,7 +54,7 @@
 		.card-body {
 			padding: 2rem;
 
-			@include max-md {
+			@include max-lg {
 				padding: 2rem 1rem;
 			}
 		}
@@ -64,6 +71,9 @@
 			.card-body {
 				overflow: hidden;
 				padding: 0;
+				@include max-md {
+					padding-top: 2rem;
+				}
 
 				.wishes {
 					text-align: left;
