@@ -9,6 +9,27 @@
 		@include max-md {
 			padding: 3rem 0;
 		}
+		.elements-wrapper-absolute {
+			.background-element {
+				img {
+					object-position: 50% 100%;
+				}
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			top: 30%;
+			left: 0;
+			width: 15%;
+			transform: translate(-50%, -50%) rotate(15deg);
+		}
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 15%;
+			transform: translate(50%, -50%) rotate(-15deg) scaleX(-1);
+		}
 	}
 
 	.card-form {
@@ -22,7 +43,7 @@
 			bottom: 0;
 			left: 0;
 			background-color: var(--color-main);
-			opacity: .7;
+			opacity: 0.7;
 			content: "";
 			border-radius: var(--border-radius);
 		}
@@ -46,6 +67,18 @@
 
 		@include max-md {
 			padding: 1rem 0 3rem;
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 60%;
+			transform: translate(-50%, 30%) rotate(-15deg);
+			opacity: 0.1;
+			@include max-lg {
+				width: 80%;
+			}
 		}
 
 		.card {

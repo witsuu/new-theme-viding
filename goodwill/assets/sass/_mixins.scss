@@ -76,6 +76,12 @@
 	}
 }
 
+@mixin max-xxl {
+	@media (max-width: map-get($breakpoints-max,xxl)) {
+		@content;
+	}
+}
+
 @mixin max-rwd($screen) {
 	@media (max-width: $screen) {
 		@content;

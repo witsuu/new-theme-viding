@@ -6,6 +6,20 @@
 		padding: 3rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 12%;
+		transform: translate(50%, 0) rotate(-15deg);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+
 	.appology-wrap {
 		position: relative;
 		padding: 3rem 2rem;
@@ -22,7 +36,7 @@
 			bottom: 0;
 			left: 0;
 			background-color: var(--color-primary);
-			opacity: .7;
+			opacity: 0.7;
 			border-radius: var(--border-radius);
 			content: "";
 		}

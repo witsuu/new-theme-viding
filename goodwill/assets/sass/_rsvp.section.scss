@@ -1,9 +1,124 @@
 .rsvp-section {
 	position: relative;
-	padding: 5rem 0;
+	padding: 0 0 calc(100vw - 90%);
 
-	@include max-md {
-		padding: 3rem 0;
+	.elements-absolute {
+		&.with-sea {
+			.image-element {
+				@include max-lg {
+					margin-bottom: -20%;
+				}
+				@include max-sm {
+					margin-bottom: -10%;
+				}
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-20%, -30%) scaleX(-1);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-10%, 50%);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-20%, 10%) rotate(25deg);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(50%, -30%) rotate(-10deg);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(50%, 15%) scaleX(-1);
+		@include max-lg {
+			width: 30%;
+		}
+		@include max-sm {
+			width: 35%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 30%;
+		width: 12%;
+		transform: translate(-50%, 50%);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 30%;
+		width: 12%;
+		transform: translate(50%, 50%);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 12%;
+		transform: translate(-50%, 60%);
+		@include max-lg {
+			left: 58%;
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
 	}
 
 	.image-wrapper {
@@ -39,7 +154,7 @@
 			bottom: 0;
 			left: 0;
 			background-color: var(--color-primary);
-			opacity: .7;
+			opacity: 0.7;
 			border-radius: var(--border-radius);
 			content: "";
 		}

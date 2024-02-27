@@ -1,9 +1,63 @@
 .venue-section {
 	position: relative;
-	padding: 5rem 0 0;
+	padding: 5rem 0;
 
 	@include max-md {
-		padding: 3rem 0 0;
+		padding: 3rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 12%;
+		transform: translate(50%, 0) rotate(-15deg);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translate(-66%, -10%) rotate(15deg);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 90%;
+		transform: translate(50%, 0) rotate(-15deg);
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 120%;
+		transform: translate(-40%, 20%) rotate(-15deg);
+		opacity: 0.1;
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 50%;
+		transform: translate(-50%, 40%) rotate(-15deg) scaleX(-1);
+		opacity: 0.1;
+		@include max-lg {
+			width: 80%;
+		}
+		@include max-sm {
+			width: 100%;
+		}
 	}
 
 	.venue-wrapper {
@@ -63,10 +117,10 @@
 
 				.card-body {
 					position: relative;
-					padding: 3rem 2rem;
+					padding: 2rem;
 
 					@include max-md {
-						padding: 2rem 1rem;
+						padding: 1rem;
 					}
 
 					h4 {
@@ -90,13 +144,13 @@
 
 						&-body {
 							position: relative;
-							padding: 3rem;
+							padding: 4rem 3rem;
 						}
 
 						.date {
 							position: relative;
 							width: 100%;
-							padding: .5rem 0 1rem;
+							padding: 0.5rem 0 1rem;
 
 							h5 {
 								margin-bottom: 0;
