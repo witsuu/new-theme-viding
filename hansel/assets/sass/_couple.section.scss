@@ -29,15 +29,120 @@
 	.couple-wrapper {
 		position: relative;
 
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(50%, -25%) scaleX(-1);
+			@include ipad {
+				width: 40%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 65%;
+			transform: translate(-60%, -50%) rotate(-40deg);
+			@include ipad {
+				top: 30%;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 60%;
+			left: 0;
+			width: 35%;
+			transform: translate(-60%, -50%) rotate(15deg);
+			@include ipad {
+				top: 70%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30%;
+			transform: translate(-40%, 0);
+		}
+		.orn-5 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 60%;
+			transform: translate(70%, -50%) rotate(-30deg) scaleX(-1);
+			@include ipad {
+				top: 40%;
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			top: 55%;
+			right: 0;
+			width: 30%;
+			transform: translate(50%, -50%);
+			@include ipad {
+				top: 65%;
+			}
+		}
+		.orn-7 {
+			position: absolute;
+			top: 1rem;
+			right: 0;
+			width: 18%;
+			transform: translate(35%, 0);
+		}
+		.orn-8 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 45%;
+			transform: translate(-45%, -10%) rotate(30deg);
+		}
+		.orn-9 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 20%;
+			transform: translate(-10%, 30%);
+		}
+		.orn-10 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(15%, -15%) rotate(-20deg);
+		}
+		.orn-11 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45%;
+			transform: translate(18%, -10%) rotate(-50deg) scaleX(-1);
+			.orn-12 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 40%;
+				transform: translate(-20%, 50%);
+			}
+		}
+
 		.couple-content {
 			position: relative;
 			background-color: var(--color-primary);
 			color: var(--color-light);
 			border-radius: var(--border-radius);
 			margin-bottom: 3rem;
-			padding: 2rem 1rem;
+			padding: 2rem 1.5rem;
+			text-align: left;
 			@include ipad {
 				padding: 3rem 2rem;
+			}
+
+			.title-section {
+				text-align: left;
 			}
 
 			p {
@@ -65,9 +170,9 @@
 			position: relative;
 			width: 100%;
 			margin: auto;
-			aspect-ratio: 1;
+			aspect-ratio: 7/8;
 
-			.image-element {
+			.image-element.with-border {
 				border: 1px solid var(--color-light);
 				padding: 0.75rem;
 				height: 100%;

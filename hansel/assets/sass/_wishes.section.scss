@@ -5,6 +5,26 @@
 		background-color: var(--color-primary);
 		color: var(--color-light);
 		padding: 3rem 0;
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-40%, 0%) rotate(65deg);
+			@include ipad {
+				width: 30%;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(50%, 0) scaleX(-1);
+			@include ipad {
+				width: 45%;
+			}
+		}
 	}
 	.card-form {
 		background-color: transparent;
@@ -14,12 +34,20 @@
 		}
 		.card-body {
 			padding: 0 2rem;
+			.title-section {
+				text-align: left;
+			}
 		}
 	}
 
 	.wishes-preview {
 		position: relative;
 		padding: 0 0 3rem;
+		.bg-2 {
+			top: 60%;
+			left: 30%;
+			width: 200%;
+		}
 		.card {
 			position: relative;
 			border: none;

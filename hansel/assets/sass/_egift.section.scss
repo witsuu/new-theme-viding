@@ -7,6 +7,27 @@
 		padding: 5rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%, 0) rotate(25deg);
+		@include ipad {
+			width: 15%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 1rem;
+		right: 0;
+		width: 35%;
+		transform: translate(50%, 0) rotate(-15deg);
+		@include ipad {
+			width: 25%;
+		}
+	}
+
 	.gift-wrap {
 		position: relative;
 		padding: 0 1rem;

@@ -8,6 +8,133 @@
 		padding: 5rem 0;
 	}
 
+	.ornaments-wrapper {
+		.bg.bg-2 {
+			width: 160%;
+			transform: translate(-60%, -45%);
+			@include ipad {
+				width: 200%;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 55%;
+		transform: translate(-60%, -50%);
+	}
+	.orn-2 {
+		position: absolute;
+		top: 60%;
+		left: 0;
+		width: 28%;
+		transform: translate(-50%, -50%) scale(-1);
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 15%;
+		transform: translate(-20%, 0);
+	}
+	.orn-4 {
+		position: absolute;
+		top: 45%;
+		right: 0;
+		width: 55%;
+		transform: translate(60%, -50%) scaleX(-1);
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 4rem;
+		right: 0;
+		width: 35%;
+		transform: translate(40%, 0) rotate(-30deg) scaleX(-1);
+		@include ipad {
+			bottom: 3rem;
+			width: 40%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 15%;
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 5rem;
+		left: 0;
+		width: 50%;
+		transform: translate(-65%, 0);
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-60%, 0) rotate(30deg);
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-35%, 35%) rotate(35deg);
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 28%;
+		transform: translate(0, 50%) scaleX(-1);
+	}
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 28%;
+		transform: translate(50%, 0) rotate(-15deg);
+	}
+	.orn-12 {
+		position: absolute;
+		bottom: 3rem;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0) rotate(-30deg) scaleX(-1);
+	}
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		right: 3rem;
+		width: 28%;
+		transform: translate(0, 50%);
+	}
+	.orn-14 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 28%;
+		transform: translate(-50%, 60%);
+	}
+	.orn-15 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-20%, 5%) scaleX(-1);
+	}
+	.orn-16 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(20%, 15%) scaleX(-1);
+	}
+
 	.venue-wrapper {
 		position: relative;
 
@@ -38,41 +165,49 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 5rem 1.8rem;
-
-						.date {
+						padding: 6.5rem 1.8rem;
+						@include min-xl {
+							padding: 7rem 1.8rem;
+						}
+						@include max-sm {
+							padding: 5.5rem 1.8rem;
+						}
+						&-body {
 							position: relative;
-							width: 100%;
-							display: flex;
-							justify-content: center;
-							align-items: center;
-							flex-direction: column;
-							gap: 0.75rem;
-							padding: 0.5rem 0;
+							.date {
+								position: relative;
+								width: 100%;
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								flex-direction: column;
+								gap: 0.75rem;
+								padding: 0.5rem 0;
 
-							h5 {
-								line-height: 1;
+								h5 {
+									line-height: 1;
+									font-family: $font-secondary;
+									margin-bottom: 0;
+									font-size: 32px;
+								}
+
+								.line {
+									--color-button-trans: #fff;
+									width: 45px;
+									height: 1px;
+									background-color: var(--color-button-trans);
+									margin-bottom: 0.75rem;
+								}
+							}
+
+							h4 {
 								font-family: $font-secondary;
+							}
+
+							p {
 								margin-bottom: 0;
-								font-size: 32px;
+								font-weight: 600;
 							}
-
-							.line {
-								--color-button-trans: #fff;
-								width: 45px;
-								height: 1px;
-								background-color: var(--color-button-trans);
-								margin-bottom: 0.75rem;
-							}
-						}
-
-						h4 {
-							font-family: $font-secondary;
-						}
-
-						p {
-							margin-bottom: 0;
-							font-weight: 600;
 						}
 					}
 

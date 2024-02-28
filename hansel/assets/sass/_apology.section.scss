@@ -1,9 +1,18 @@
 .apology-section {
 	position: relative;
 	padding: 3rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
 
 	@include ipad {
 		padding: 5rem 0;
+	}
+
+	.elements-wrapper-absolute {
+		top: 50%;
+		left: 50%;
+		width: 220%;
+		transform: translate(-50%, -45%);
 	}
 
 	.appology-wrap {

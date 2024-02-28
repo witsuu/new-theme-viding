@@ -6,6 +6,17 @@
 		padding: 5rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(40%, 0) rotate(-50deg) scaleX(-1);
+		@include ipad {
+			width: 25%;
+		}
+	}
+
 	.title-section {
 		text-align: left;
 	}
