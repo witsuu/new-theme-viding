@@ -86,7 +86,9 @@
 				}
 
 				.cover-description {
+					position: relative;
 					padding: 3rem 2rem;
+					width: 100%;
 					text-align: left;
 					@include max-sm {
 						padding: 2rem 1rem;
