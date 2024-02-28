@@ -393,5 +393,25 @@
 		"name": "Custom C&Z",
 		"path": "custom-cz",
 		"status": ""
+	},
+	{
+		"name": "Line",
+		"path": "line",
+		"status": ""
+	},
+	{
+		"name": "Goodwill",
+		"path": "goodwill",
+		"status": ""
+	},
+	{
+		"name": "Hansel",
+		"path": "hansel",
+		"status": ""
+	},
+	{
+		"name": "Arnold",
+		"path": "arnold",
+		"status": ""
 	}
 ]

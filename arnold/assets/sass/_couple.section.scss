@@ -43,6 +43,7 @@
 
 		.couple-content {
 			position: relative;
+			text-align: left;
 			margin-bottom: 3rem;
 
 			@include min-lg {
@@ -51,6 +52,10 @@
 
 			@include max-sm {
 				padding: 0 1.8rem;
+			}
+
+			.title-section {
+				text-align: left;
 			}
 
 			p {
@@ -107,6 +112,10 @@
 				background-color: var(--color-primary);
 				opacity: 0.6;
 				content: "";
+			}
+
+			h3 {
+				position: relative;
 			}
 
 			.couple-parent {

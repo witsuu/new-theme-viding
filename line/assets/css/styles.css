@@ -1121,7 +1121,7 @@ ul li {
 
 .countdown {
   display: flex;
-  text-align: center;
+  text-align: left;
   justify-content: center;
   flex-direction: column;
   position: relative;
@@ -1156,7 +1156,6 @@ ul li {
   .countdown .minutes,
   .countdown .seconds {
     min-width: 65px;
-    padding: 1rem 0.75rem;
   }
 }
 @media (max-width: 375px) {
@@ -1223,6 +1222,8 @@ ul li {
 .countdown .minutes .angka,
 .countdown .seconds .huruf,
 .countdown .seconds .angka {
+  display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -1550,6 +1551,7 @@ ul li {
 .couple-section .couple {
   position: relative;
   text-align: center;
+  overflow: hidden;
 }
 .couple-section .couple .image-wrap {
   width: 100%;

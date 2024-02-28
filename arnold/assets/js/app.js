@@ -141,23 +141,35 @@ const runAnimationOrnament = () => {
 	document.querySelectorAll("[data-anim]").forEach(da => {
 		ScrollTrigger.create({
 			trigger: da,
-			start: "top bottom",
+			start: da.dataset.animAnchor ? da.dataset.animAnchor : "top bottom",
 			onToggle: self => {
-				if (!self.isActive) return null;
-				if (da.dataset.loadAnimation) return self.kill();
+				if (!self.isActive) {
+					if (da.classList.contains("animate-loop")) {
+						return da.classList.add("animate-paused")
+					} else {
+						return null;
+					}
+				}
+				if (da.dataset.loadAnimation) {
+					if (da.classList.contains("animate-loop")) {
+						return da.classList.remove("animate-paused")
+					} else {
+						return self.kill()
+					}
+				}
+
+				if (da.dataset.animDuration) da.style.animationDuration = da.dataset.animDuration
 
 				if (da.dataset.animDelay) {
 					setTimeout(() => {
 						da.classList.add("has-animate")
 						da.classList.remove("animation-invisible")
 						da.dataset.loadAnimation = true;
-						self.kill()
 					}, da.dataset.animDelay)
 				} else {
 					da.classList.add("has-animate")
 					da.classList.remove("animation-invisible")
 					da.dataset.loadAnimation = true;
-					self.kill()
 				}
 			}
 		})
@@ -171,10 +183,23 @@ const runAnimationOrnamentCover = () => {
 			start: "top bottom",
 			onToggle: self => {
 				if (self.isActive) {
-					vs.classList.add("has-animate")
-					vs.classList.remove("animation-invisible")
-					vs.dataset.loadAnimation = true;
+					if (vs.dataset.animDuration) vs.style.animationDuration = vs.dataset.animDuration
+
+					if (vs.dataset.animDelay) {
+						setTimeout(() => {
+							vs.classList.add("has-animate")
+							vs.classList.remove("animation-invisible")
+							vs.dataset.loadAnimation = true;
+							self.kill()
+						}, vs.dataset.animDelay)
+					} else {
+						vs.classList.add("has-animate")
+						vs.classList.remove("animation-invisible")
+						vs.dataset.loadAnimation = true;
+						self.kill()
+					}
 				} else {
+					vs.classList.add("animation-invisible")
 					self.kill()
 				}
 			}
