@@ -16,6 +16,7 @@
 			width: 25%;
 		}
 		@include max-sm {
+			top: 0;
 			width: 30%;
 		}
 	}

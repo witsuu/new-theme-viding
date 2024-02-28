@@ -92,6 +92,11 @@
 			.elements-widget {
 				position: relative;
 				width: 100%;
+				opacity: 0;
+				animation-fill-mode: forwards;
+				.has-animate {
+					opacity: 1;
+				}
 			}
 		}
 	}

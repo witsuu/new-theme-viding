@@ -115,6 +115,32 @@
 			width: 30%;
 		}
 	}
+	.orn-9 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 12%;
+		transform: translate(-45%, 0%) rotate(20deg);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 12%;
+		transform: translate(50%, 0%) rotate(-10deg);
+		@include max-lg {
+			width: 25%;
+		}
+		@include max-sm {
+			width: 30%;
+		}
+	}
 
 	.header-content {
 		position: relative;

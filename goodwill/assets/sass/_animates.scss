@@ -114,7 +114,7 @@
 }
 @keyframes slideUp {
 	0% {
-		transform: translate3d(0, 50%, 0);
+		transform: translate3d(0, 150px, 0);
 	}
 	100% {
 		transform: translateZ(0);
@@ -220,6 +220,9 @@
 [data-anim="zoom-out"].has-animate {
 	animation-name: zoomOut;
 }
+[data-anim="zoom-out2"].has-animate {
+	animation-name: zoomOut2;
+}
 [data-anim="zoom-out-up"].has-animate {
 	animation-name: zoomOutUp;
 }
@@ -236,6 +239,7 @@
 	}
 	100% {
 		transform: scale3d(1, 1, 1);
+		opacity: 1;
 	}
 }
 @keyframes zoomInUp {
@@ -284,6 +288,16 @@
 	}
 	100% {
 		transform: translateZ(0) scale3d(1, 1, 1);
+	}
+}
+@keyframes zoomOut {
+	0% {
+		transform: scale3d(1.3, 1.3, 1.3);
+		opacity: 0;
+	}
+	100% {
+		transform: scale3d(1, 1, 1);
+		opacity: 1;
 	}
 }
 @keyframes zoomOut {
@@ -544,4 +558,14 @@
 	transform: scale3d(1.25, 1.25, 1.25);
 	transition-duration: 5000ms !important;
 	visibility: visible !important;
+}
+
+img[alt="leaf"] {
+	transform-origin: 60% 95%;
+}
+img[alt="flower"] {
+	transform-origin: 40% 95%;
+}
+img[alt="rose"] {
+	transform-origin: 50% 95%;
 }

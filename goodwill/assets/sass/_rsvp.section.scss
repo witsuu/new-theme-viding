@@ -126,6 +126,9 @@
 		width: 100%;
 		aspect-ratio: 6/4;
 		margin: 3rem 0;
+		@include max-sm {
+			aspect-ratio: 5/6;
+		}
 
 		.image-element {
 			height: 100%;

@@ -22,6 +22,12 @@
 			left: 0;
 			width: 15%;
 			transform: translate(-50%, -50%) rotate(15deg);
+			@include max-lg {
+				width: 30%;
+			}
+			@include max-sm {
+				width: 40%;
+			}
 		}
 		.orn-2 {
 			position: absolute;
@@ -29,6 +35,12 @@
 			right: 0;
 			width: 15%;
 			transform: translate(50%, -50%) rotate(-15deg) scaleX(-1);
+			@include max-lg {
+				width: 30%;
+			}
+			@include max-sm {
+				width: 40%;
+			}
 		}
 	}
 

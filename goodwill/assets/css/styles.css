@@ -756,7 +756,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 150px, 0);
   }
   100% {
     transform: translateZ(0);
@@ -866,6 +866,10 @@ ul li {
   animation-name: zoomOut;
 }
 
+[data-anim=zoom-out2].has-animate {
+  animation-name: zoomOut2;
+}
+
 [data-anim=zoom-out-up].has-animate {
   animation-name: zoomOutUp;
 }
@@ -884,6 +888,7 @@ ul li {
   }
   100% {
     transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 }
 @keyframes zoomInUp {
@@ -932,6 +937,16 @@ ul li {
   }
   100% {
     transform: translateZ(0) scale3d(1, 1, 1);
+  }
+}
+@keyframes zoomOut {
+  0% {
+    transform: scale3d(1.3, 1.3, 1.3);
+    opacity: 0;
+  }
+  100% {
+    transform: scale3d(1, 1, 1);
+    opacity: 1;
   }
 }
 @keyframes zoomOut {
@@ -1210,6 +1225,18 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=leaf] {
+  transform-origin: 60% 95%;
+}
+
+img[alt=flower] {
+  transform-origin: 40% 95%;
+}
+
+img[alt=rose] {
+  transform-origin: 50% 95%;
+}
+
 .countdown {
   display: flex;
   text-align: center;
@@ -1221,9 +1248,11 @@ ul li {
   color: var(--color-dark);
   z-index: 3;
 }
-@media (max-width: 767px) {
+@media (max-width: 575px) {
   .countdown {
     gap: 0.5rem;
+    text-align: left;
+    padding: 1rem 0;
   }
 }
 .countdown::before {
@@ -1245,7 +1274,7 @@ ul li {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 1rem;
+  padding: 1rem 2rem;
   min-width: 80px;
 }
 @media (max-width: 767px) {
@@ -1254,7 +1283,6 @@ ul li {
   .countdown .minutes,
   .countdown .seconds {
     min-width: 65px;
-    padding: 1rem 0.75rem;
   }
 }
 @media (max-width: 375px) {
@@ -1321,6 +1349,8 @@ ul li {
 .countdown .minutes .angka,
 .countdown .seconds .huruf,
 .countdown .seconds .angka {
+  display: block;
+  width: 100%;
   margin: 0;
   padding: 0;
 }
@@ -1596,6 +1626,11 @@ ul li {
 .cover-section .cover-wrapper .cover-content .elements-widget {
   position: relative;
   width: 100%;
+  opacity: 0;
+  animation-fill-mode: forwards;
+}
+.cover-section .cover-wrapper .cover-content .elements-widget .has-animate {
+  opacity: 1;
 }
 
 .header-section {
@@ -1743,6 +1778,40 @@ ul li {
 }
 @media (max-width: 575px) {
   .header-section .orn-8 {
+    width: 30%;
+  }
+}
+.header-section .orn-9 {
+  position: absolute;
+  top: 10%;
+  left: 0;
+  width: 12%;
+  transform: translate(-45%, 0%) rotate(20deg);
+}
+@media (max-width: 991px) {
+  .header-section .orn-9 {
+    width: 25%;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .orn-9 {
+    width: 30%;
+  }
+}
+.header-section .orn-10 {
+  position: absolute;
+  top: 15%;
+  right: 0;
+  width: 12%;
+  transform: translate(50%, 0%) rotate(-10deg);
+}
+@media (max-width: 991px) {
+  .header-section .orn-10 {
+    width: 25%;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .orn-10 {
     width: 30%;
   }
 }
@@ -2086,6 +2155,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .venue-section .orn-1 {
+    top: 0;
     width: 30%;
   }
 }
@@ -2492,6 +2562,11 @@ ul li {
   aspect-ratio: 6/4;
   margin: 3rem 0;
 }
+@media (max-width: 575px) {
+  .rsvp-section .image-wrapper {
+    aspect-ratio: 5/6;
+  }
+}
 .rsvp-section .image-wrapper .image-element {
   height: 100%;
 }
@@ -2550,12 +2625,32 @@ ul li {
   width: 15%;
   transform: translate(-50%, -50%) rotate(15deg);
 }
+@media (max-width: 991px) {
+  .wishes-section .wishes-form-wrapper .orn-1 {
+    width: 30%;
+  }
+}
+@media (max-width: 575px) {
+  .wishes-section .wishes-form-wrapper .orn-1 {
+    width: 40%;
+  }
+}
 .wishes-section .wishes-form-wrapper .orn-2 {
   position: absolute;
   top: 50%;
   right: 0;
   width: 15%;
   transform: translate(50%, -50%) rotate(-15deg) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .wishes-section .wishes-form-wrapper .orn-2 {
+    width: 30%;
+  }
+}
+@media (max-width: 575px) {
+  .wishes-section .wishes-form-wrapper .orn-2 {
+    width: 40%;
+  }
 }
 .wishes-section .card-form {
   background-color: transparent;
