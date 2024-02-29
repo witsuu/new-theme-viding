@@ -7,23 +7,23 @@
 	}
 
 	.and {
-		@include max-lg {
+		@include ipad {
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -40%);
+			transform: translate(-50%, -50%);
 		}
-
-		@include max-md {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		span {
 			position: relative;
-			top: unset;
-			left: unset;
-			transform: none;
+			font-size: 28px;
+			font-family: $font-secondary;
 		}
-
-		display: none;
-		padding: 1rem 0;
-		font-weight: 600;
 	}
 
 	.couple-wrapper {

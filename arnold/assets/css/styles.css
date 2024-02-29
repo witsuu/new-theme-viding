@@ -375,7 +375,7 @@ span {
   width: 100%;
   margin-bottom: 0;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 38px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -1476,6 +1476,9 @@ ul li {
 .header-section {
   position: relative;
 }
+.header-section .scroll-icon {
+  margin-bottom: 1rem;
+}
 .header-section .header-content {
   position: relative;
   text-align: center;
@@ -1536,25 +1539,25 @@ ul li {
   }
 }
 .couple-section .and {
-  display: none;
-  padding: 1rem 0;
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 3;
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .couple-section .and {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
   }
 }
-@media (max-width: 767px) {
-  .couple-section .and {
-    position: relative;
-    top: unset;
-    left: unset;
-    transform: none;
-  }
+.couple-section .and span {
+  position: relative;
+  font-size: 28px;
+  font-family: "NewYork", serif;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -1699,6 +1702,38 @@ ul li {
   .couple-section .couple .title-couple span {
     font-size: 60px;
   }
+}
+.couple-section .couple.single {
+  padding-bottom: 2rem;
+}
+.couple-section .couple.single .title-couple {
+  top: -1rem;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .couple-section .couple.single .title-couple {
+    text-align: left;
+  }
+}
+.couple-section .couple.single .title-couple span {
+  font-size: 60px;
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .title-couple span {
+    font-size: 48px;
+  }
+}
+.couple-section .couple.single .image-wrap {
+  margin-bottom: 1rem;
+  aspect-ratio: 3/4;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .couple-section .couple.single .image-wrap {
+    aspect-ratio: 6/4;
+  }
+}
+.couple-section .couple.single .couple-description {
+  position: relative;
+  padding: 1rem;
 }
 
 .story-section {

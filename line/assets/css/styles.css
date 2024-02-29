@@ -1757,6 +1757,44 @@ ul li {
     margin-top: 40%;
   }
 }
+.couple-section .couple.single .image-wrap {
+  aspect-ratio: 6/4;
+  margin-bottom: 1rem;
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .image-wrap {
+    aspect-ratio: 5/6;
+  }
+}
+.couple-section .couple.single .image-wrap::after {
+  position: absolute;
+  display: block;
+  top: 3rem;
+  left: 3rem;
+  height: 2px;
+  width: 150px;
+  background-color: var(--color-light);
+  content: "";
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .image-wrap::after {
+    top: 2rem;
+    left: 2rem;
+  }
+}
+.couple-section .couple.single .couple-description {
+  position: relative;
+  padding: 1rem;
+}
+.couple-section .couple.single .sosmed-wrap {
+  position: relative;
+  top: unset;
+  left: unset;
+  margin-top: 0.75rem;
+}
+.couple-section .couple.single .sosmed-wrap::before {
+  display: none;
+}
 
 .story-section {
   position: relative;

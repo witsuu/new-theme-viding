@@ -171,5 +171,42 @@
 				margin-top: 40%;
 			}
 		}
+
+		&.single {
+			.image-wrap {
+				aspect-ratio: 6/4;
+				margin-bottom: 1rem;
+				@include max-sm{
+					aspect-ratio: 5/6;
+				}
+				&::after {
+					position: absolute;
+					display: block;
+					top: 3rem;
+					left: 3rem;
+					height: 2px;
+					width: 150px;
+					background-color: var(--color-light);
+					content: "";
+					@include max-sm{
+						top: 2rem;
+						left: 2rem;
+					}
+				}
+			}
+			.couple-description{
+				position: relative;
+				padding: 1rem;
+			}
+			.sosmed-wrap {
+				position: relative;
+				top: unset;
+				left: unset;
+				margin-top: 0.75rem;
+				&::before {
+					display: none;
+				}
+			}
+		}
 	}
 }

@@ -1913,25 +1913,25 @@ img[alt=branch-grey] {
   }
 }
 .couple-section .and {
-  display: none;
-  padding: 1rem 0;
-  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: relative;
+  z-index: 3;
 }
-@media (max-width: 991px) {
+@media (max-width: 991px) and (min-width: 768px) {
   .couple-section .and {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, -40%);
+    transform: translate(-50%, -50%);
   }
 }
-@media (max-width: 767px) {
-  .couple-section .and {
-    position: relative;
-    top: unset;
-    left: unset;
-    transform: none;
-  }
+.couple-section .and span {
+  position: relative;
+  font-size: 28px;
+  font-family: "NewYork", serif;
 }
 .couple-section .couple-wrapper {
   position: relative;

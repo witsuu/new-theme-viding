@@ -9,23 +9,23 @@
 	}
 
 	.and {
-		@include max-lg {
+		@include ipad {
 			position: absolute;
-			top: 40%;
+			top: 50%;
 			left: 50%;
-			transform: translate(-50%, -40%);
+			transform: translate(-50%, -50%);
 		}
-
-		@include max-md {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		span {
 			position: relative;
-			top: unset;
-			left: unset;
-			transform: none;
+			font-size: 28px;
+			font-family: $font-secondary;
 		}
-
-		display: none;
-		padding: 1rem 0;
-		font-weight: 600;
 	}
 
 	.couple-wrapper {
@@ -178,6 +178,32 @@
 				@include max-lg {
 					font-size: 60px;
 				}
+			}
+		}
+		&.single {
+			padding-bottom: 2rem;
+			.title-couple {
+				top: -1rem;
+				@include ipad {
+					text-align: left;
+				}
+				span {
+					font-size: 60px;
+					@include max-sm {
+						font-size: 48px;
+					}
+				}
+			}
+			.image-wrap {
+				margin-bottom: 1rem;
+				aspect-ratio: 3/4;
+				@include ipad {
+					aspect-ratio: 6/4;
+				}
+			}
+			.couple-description {
+				position: relative;
+				padding: 1rem;
 			}
 		}
 	}
