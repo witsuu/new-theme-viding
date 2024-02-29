@@ -22,9 +22,12 @@
 		position: relative;
 		padding: 0 1rem;
 		color: var(--color-light);
+		@include max-sm{
+			padding: 0;
+		}
 
 		.title-section {
-			margin-bottom: 10rem;
+			margin-bottom: 20rem;
 		}
 	}
 }

@@ -585,3 +585,128 @@ ul {
 		}
 	}
 }
+
+/** mouse scroll **/
+.mouse_scroll {
+	display: block;
+	margin: 0 auto;
+	width: 20px;
+	position: relative;
+	margin: 0 auto;
+}
+
+.m_scroll_arrows {
+	display: block;
+	width: 5px;
+	height: 5px;
+	transform: rotate(45deg);
+
+	border-right: 2px solid var(--color-light);
+	border-bottom: 2px solid var(--color-light);
+	margin: 0 0 3px 4px;
+
+	width: 20px;
+	height: 20px;
+}
+
+@media (max-width: 767px) {
+	.m_scroll_arrows {
+		width: 16px;
+		height: 16px;
+	}
+}
+
+.unu {
+	margin-top: 1px;
+}
+
+.unu,
+.doi,
+.trei {
+	animation: mouse-scroll 1s infinite;
+}
+
+.unu {
+	animation-direction: alternate;
+	animation-delay: 0.1s;
+}
+
+.doi {
+	animation-delay: 0.2s;
+	animation-direction: alternate;
+
+	margin-top: -6px;
+}
+
+.trei {
+	animation-delay: 0.3s;
+	animation-direction: alternate;
+
+	margin-top: -6px;
+}
+
+.mouse {
+	height: 42px;
+	width: 24px;
+	border-radius: 14px;
+	transform: none;
+	border: 2px solid var(--color-light);
+	top: 170px;
+}
+
+.wheel {
+	height: 5px;
+	width: 2px;
+	display: block;
+	margin: 5px auto;
+	background: #fff;
+	position: relative;
+
+	height: 4px;
+	width: 4px;
+	border: 2px solid #fff;
+	-webkit-border-radius: 8px;
+	border-radius: 8px;
+}
+
+.wheel {
+	-webkit-animation: mouse-wheel 0.6s linear infinite;
+	-moz-animation: mouse-wheel 0.6s linear infinite;
+	animation: mouse-wheel 0.6s linear infinite;
+}
+
+@keyframes mouse-wheel {
+	0% {
+		top: 1px;
+	}
+
+	25% {
+		top: 2px;
+	}
+
+	50% {
+		top: 3px;
+	}
+
+	75% {
+		top: 2px;
+	}
+
+	100% {
+		top: 1px;
+	}
+}
+
+@keyframes mouse-scroll {
+	0% {
+		opacity: 0;
+	}
+
+	50% {
+		opacity: 0.5;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}

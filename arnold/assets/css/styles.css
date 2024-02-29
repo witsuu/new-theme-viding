@@ -1703,11 +1703,11 @@ ul li {
 
 .story-section {
   position: relative;
-  padding: 3rem 0;
+  padding: 20rem 0 3rem;
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .story-section {
-    padding: 5rem 0;
+    padding: 20rem 0 5rem;
   }
 }
 .story-section .story-description {
@@ -1974,8 +1974,13 @@ ul li {
   padding: 0 1rem;
   color: var(--color-light);
 }
+@media (max-width: 575px) {
+  .rsvp-section .rsvp-wrapper {
+    padding: 0;
+  }
+}
 .rsvp-section .rsvp-wrapper .title-section {
-  margin-bottom: 10rem;
+  margin-bottom: 20rem;
 }
 
 .wishes-section {
