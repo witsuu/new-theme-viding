@@ -2,15 +2,47 @@
 	position: relative;
 	.story {
 		position: relative;
-		padding: 5rem 0;
+		padding: 0 0 3rem;
 		@include max-md {
-			padding: 3rem 0;
+			padding: 0 0 2rem;
+		}
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 25%;
+			transform: translate(-30%, 20%) scaleX(-1);
+			@include min-md {
+				width: 20%;
+				transform: translate(-25%, 30%) rotate(-25deg) scaleX(-1);
+			}
 		}
 		.story-content {
 			position: relative;
+			background-color: var(--color-gold);
+			mask-image: url(../images/mask.png);
+			mask-size: 100%;
+			mask-repeat: no-repeat;
+			mask-position: 50% 100%;
+			&::before {
+				position: absolute;
+				bottom: 2px;
+				left: 50%;
+				width: calc(100% - 4px);
+				height: 100%;
+				transform: translate(-50%, 0);
+				background-color: var(--color-main);
+				mask-image: url(../images/mask.png);
+				mask-size: 100%;
+				mask-repeat: no-repeat;
+				mask-position: 50% 100%;
+				content: "";
+			}
 			.story-description {
 				position: relative;
 				text-align: center;
+				padding: 5rem 1.5rem 3rem;
+				z-index: 5;
 			}
 		}
 	}

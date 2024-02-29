@@ -1,5 +1,6 @@
 .countdown {
 	display: flex;
+	flex-direction: column;
 	text-align: center;
 	justify-content: center;
 	position: relative;
@@ -44,10 +45,7 @@
 			font-size: 38px;
 			font-family: $font-secondary;
 			@include max-md {
-				font-size: 32px;
-			}
-			@include max-xs {
-				font-size: 28px;
+				font-size: 36px;
 			}
 		}
 		.huruf,

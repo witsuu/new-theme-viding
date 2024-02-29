@@ -1,22 +1,105 @@
 .wishes-section {
 	position: relative;
-	padding: 5rem 0;
+	padding: 0 0 5rem;
 	@include max-md {
-		padding: 3rem 0;
+		padding: 0 0 3rem;
 	}
 	.wishes-form-wrapper {
 		position: relative;
+		.orn-1 {
+			position: absolute;
+			top: -1rem;
+			left: 0;
+			width: 50%;
+			transform: translate(-60%, 0) rotate(35deg);
+			@include min-md {
+				width: 40%;
+			}
+			@include min-lg {
+				width: 20%;
+			}
+			.orn-2 {
+				position: absolute;
+				top: 1rem;
+				right: 10%;
+				width: 75%;
+				transform: rotate(-35deg);
+				@include min-md {
+					top: 1.5rem;
+					transform: rotate(-35deg);
+				}
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(30%, -5%);
+			@include min-md {
+				width: 15%;
+			}
+			@include min-lg {
+				width: 10%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			top: 0.5rem;
+			right: 0;
+			width: 30%;
+			transform: translate(50%, 0);
+			@include min-md {
+				width: 25%;
+			}
+			@include min-lg {
+				width: 15%;
+			}
+		}
 	}
 	.card-form {
 		background-color: transparent;
 		border-radius: var(--border-radius);
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: calc(100% + 10rem);
+			background-color: var(--color-gold);
+			mask-image: url(../images/mask.png);
+			mask-size: 100%;
+			mask-position: 50% 100%;
+			content: "";
+			@include max-sm {
+				height: calc(100% + 1rem);
+			}
+		}
+		&::after {
+			position: absolute;
+			bottom: 2px;
+			left: 50%;
+			width: calc(100% - 4px);
+			height: calc(100% + 10rem);
+			background-color: var(--color-main);
+			transform: translate(-50%, 0);
+			mask-image: url(../images/mask.png);
+			mask-size: 100%;
+			mask-position: 50% 100%;
+			content: "";
+			@include max-sm {
+				height: calc(100% + 1rem);
+			}
+		}
 		&.card {
 			border: none;
 		}
 		.card-body {
-			padding: 2rem;
+			position: relative;
+			padding: 5rem 2rem 3rem;
+			z-index: 5;
 			@include max-md {
-				padding: 2rem 1rem;
+				padding: 5rem 1.5rem 3rem;
 			}
 		}
 	}

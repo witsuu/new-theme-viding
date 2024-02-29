@@ -4,6 +4,13 @@
 	@include max-md {
 		padding: 3rem 0;
 	}
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 43%;
+			}
+		}
+	}
 	.appology-wrap {
 		position: relative;
 	}

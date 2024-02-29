@@ -14,7 +14,7 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		margin-bottom: 1rem;
+		padding: 1rem 0;
 		z-index: 3;
 		span {
 			position: relative;
@@ -22,11 +22,38 @@
 			font-family: $font-secondary;
 		}
 	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16/9;
+		@include max-sm {
+			aspect-ratio: 6/5;
+		}
+		.image-element {
+			height: 100%;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
 	.couple-wrapper {
 		position: relative;
-		padding: 5rem 0;
-		@include max-md {
-			padding: 5rem 0 3rem;
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 95%;
+			transform: translate(-30%, -10%);
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(32%, -3%);
+			z-index: 3;
 		}
 	}
 	.couple-body {
@@ -34,28 +61,59 @@
 	}
 	.couple-content {
 		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		mask-image: url(../images/mask.png);
+		mask-size: 100%;
+		mask-position: 50% 100%;
+		mask-repeat: no-repeat;
+		padding: 5rem 1.5rem 3rem;
 		margin-bottom: 3rem;
+		p {
+			margin-bottom: 0;
+		}
 	}
 	.couple {
 		position: relative;
 		text-align: center;
-		.image-wrap {
+		color: var(--color-light);
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
 			width: 100%;
+			height: 65%;
+			background-color: var(--color-primary);
+			border-radius: var(--border-radius);
+			mask-image: url(../images/mask.png);
+			mask-size: 100%;
+			mask-repeat: no-repeat;
+			mask-position: 50% 100%;
+			content: "";
+		}
+		.frame-photo {
 			position: relative;
-			aspect-ratio: 3/4;
+			width: 80%;
 			margin: 0 auto;
-			.image-element {
-				height: 100%;
-				.couple-image {
+			.image-wrap {
+				position: absolute;
+				inset: 0.6rem 0.2rem;
+				.image-element {
 					height: 100%;
-					object-fit: cover;
-					width: 100%;
+					.couple-image {
+						height: 100%;
+						object-fit: cover;
+						width: 100%;
+						mask-image: url(../images/mask-photo.png);
+						mask-size: 100% 100%;
+						mask-repeat: no-repeat;
+					}
 				}
 			}
 		}
 		.couple-description {
 			position: relative;
-			padding: 1rem;
+			padding: 1rem 1rem 2rem;
 		}
 		.couple-parent {
 			width: 100%;

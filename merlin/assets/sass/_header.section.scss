@@ -4,23 +4,125 @@
 	.scroll-icon {
 		position: relative;
 		margin-top: 2rem;
+		rect {
+			stroke: var(--color-button-trans);
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 15%;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%, 0);
+		@include min-md {
+			width: 20%;
+		}
+		@include min-lg {
+			width: 10%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 25%;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0) scaleX(-1);
+		@include min-md {
+			width: 20%;
+		}
+		@include min-lg {
+			width: 10%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-40%, 20%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+		.orn-4 {
+			position: absolute;
+			top: 0;
+			right: 18%;
+			width: 80%;
+			transform: translate(0, -60%);
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 60%;
+			transform: translate(45%, -20%);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 55%;
+		transform: translate(40%, 20%);
+		@include min-md {
+			width: 45%;
+		}
+		@include min-lg {
+			width: 23%;
+		}
+		.orn-7 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 65%;
+			transform: translate(-55%, -5%);
+		}
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			left: 30%;
+			width: 50%;
+			transform: translate(0, -80%);
+		}
 	}
 	.header-content {
 		position: relative;
-		height: 100vh;
 		.header {
 			position: relative;
 			display: grid;
 			grid-template-rows: auto 1fr;
-			width: 50%;
-			height: 100%;
+			width: 35%;
+			min-height: 80vh;
 			margin: 0 auto;
-			padding: 4.5rem 0 0;
+			padding: 4.5rem 0 3rem;
+			@include max-xl {
+				width: 40%;
+			}
+			@include max-lg {
+				width: 80%;
+			}
+			@include max-sm {
+				padding: 0;
+				width: 100%;
+			}
 			.header-title {
 				position: relative;
 				text-align: center;
-				&-content {
+				.frame {
 					position: relative;
+					width: 100%;
+					@include max-sm {
+						width: calc(100% + 3rem);
+						margin: -1.5rem;
+					}
+				}
+				&-content {
+					position: absolute;
+					inset: 0;
+					padding: 8rem 2.5rem 6rem;
 				}
 			}
 			#scroll-animate {
