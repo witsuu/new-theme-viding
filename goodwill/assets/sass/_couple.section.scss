@@ -140,6 +140,13 @@
 			position: relative;
 			aspect-ratio: 3/4;
 			margin: 0 auto;
+			&.man {
+				.ornaments-wrapper {
+					@include min-md {
+						transform: scaleX(-1);
+					}
+				}
+			}
 
 			.image-element {
 				height: 100%;

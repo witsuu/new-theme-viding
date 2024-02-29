@@ -2033,6 +2033,11 @@ img[alt=rose] {
   aspect-ratio: 3/4;
   margin: 0 auto;
 }
+@media (min-width: 768px) {
+  .couple-section .couple .image-wrap.man .ornaments-wrapper {
+    transform: scaleX(-1);
+  }
+}
 .couple-section .couple .image-wrap .image-element {
   height: 100%;
 }
