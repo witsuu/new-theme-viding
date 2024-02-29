@@ -2024,8 +2024,6 @@ img[alt=rose] {
 }
 .couple-section .couple {
   position: relative;
-  text-align: center;
-  z-index: 3;
 }
 .couple-section .couple .image-wrap {
   width: 100%;
@@ -2033,10 +2031,8 @@ img[alt=rose] {
   aspect-ratio: 3/4;
   margin: 0 auto;
 }
-@media (min-width: 768px) {
-  .couple-section .couple .image-wrap.man .ornaments-wrapper {
-    transform: scaleX(-1);
-  }
+.couple-section .couple .image-wrap.man .ornaments-wrapper {
+  transform: scaleX(-1);
 }
 .couple-section .couple .image-wrap .image-element {
   height: 100%;
@@ -2086,6 +2082,12 @@ img[alt=rose] {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
   }
+}
+.couple-section .couple.man .couple-description {
+  text-align: right;
+}
+.couple-section .couple.man .sosmed-wrap {
+  margin-left: auto;
 }
 
 .story-section {

@@ -132,8 +132,6 @@
 
 	.couple {
 		position: relative;
-		text-align: center;
-		z-index: 3;
 
 		.image-wrap {
 			width: 100%;
@@ -142,9 +140,7 @@
 			margin: 0 auto;
 			&.man {
 				.ornaments-wrapper {
-					@include min-md {
 						transform: scaleX(-1);
-					}
 				}
 			}
 
@@ -199,6 +195,15 @@
 				@include max-md {
 					font-size: 16px;
 				}
+			}
+		}
+
+		&.man{
+			.couple-description{
+				text-align: right;
+			}
+			.sosmed-wrap{
+				margin-left: auto;
 			}
 		}
 	}
