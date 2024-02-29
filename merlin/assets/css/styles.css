@@ -1239,6 +1239,22 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=flower-1] {
+  transform-origin: 25% 95%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 48% 95%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 40% 75%;
+}
+
+img[alt=flower-5] {
+  transform-origin: 80% 95%;
+}
+
 .countdown {
   display: flex;
   flex-direction: column;
