@@ -1,13 +1,12 @@
 body {
 	font-family: $font-primary;
-	color: var(--color-dark);
+	color: var(--color-light);
 	-webkit-font-smoothing: antialiased;
 	text-rendering: optimizeLegibility;
 }
 
 .main-app {
 	background-color: var(--color-main);
-	color: var(--color-dark);
 	display: flex;
 	flex-direction: column;
 	width: 100%;
@@ -23,7 +22,6 @@ body {
 			width: 63%;
 		}
 	}
-
 }
 
 .elements-wrapper-absolute {
@@ -87,7 +85,7 @@ body {
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background-color: rgba($color: #000000, $alpha: .3);
+			background-color: rgba($color: #000000, $alpha: 0.3);
 			content: "";
 		}
 
@@ -118,11 +116,41 @@ body {
 	@include max-lg {
 		width: 100% !important;
 	}
+
+	.fixed-background {
+		position: fixed;
+		top: 0;
+		right: 0;
+		width: 37%;
+		height: 100vh;
+		@include max-lg {
+			width: 100% !important;
+		}
+		.background-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			&::after {
+				position: absolute;
+				top: 0;
+				bottom: 0;
+				right: 0;
+				left: 0;
+				background-color: rgba($color: #000000, $alpha: 0.3);
+				content: "";
+			}
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
 }
 
 .logo-viding {
 	height: 2.4rem;
-	transition: transform .5s ease-in-out;
+	transition: transform 0.5s ease-in-out;
 
 	@include max-md {
 		height: 2.25rem;
@@ -178,7 +206,6 @@ span {
 }
 
 @include max-sm {
-
 	p,
 	span {
 		font-size: 14px;
@@ -274,7 +301,7 @@ span {
 	font-family: $font-primary;
 	border: none;
 	padding: 0.5rem 1rem;
-	background-color: rgba($color: #fff, $alpha: .8);
+	background-color: rgba($color: #fff, $alpha: 0.8);
 	color: var(--color-dark);
 	border-radius: 8px;
 
@@ -289,7 +316,7 @@ span {
 }
 
 .navbar {
-	transition: all .5s ease-in-out;
+	transition: all 0.5s ease-in-out;
 }
 
 .scrolled {
@@ -636,7 +663,6 @@ ul {
 			}
 
 			@keyframes lds-default {
-
 				0%,
 				20%,
 				80%,
@@ -656,7 +682,6 @@ ul {
 		}
 	}
 }
-
 
 /** mouse scroll **/
 .mouse_scroll {

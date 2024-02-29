@@ -73,15 +73,16 @@ body {
 	.frame-top {
 		position: absolute;
 		top: 0;
-		left: 0;
-		width: 100%;
+		left: 50%;
+		width: calc(100% + 1rem);
+		transform: translateX(-50%);
 	}
 	.frame-bottom {
 		position: absolute;
 		bottom: 0;
-		left: 0;
-		width: 100%;
-		transform: scaleY(-1);
+		left: 50%;
+		width: calc(100% + 1rem);
+		transform: translateX(-50%) scaleY(-1);
 	}
 	.swamp {
 		position: absolute;

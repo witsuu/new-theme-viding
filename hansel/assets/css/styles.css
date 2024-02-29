@@ -87,15 +87,16 @@ body {
 .ornaments-wrapper .frame-top {
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
+  left: 50%;
+  width: calc(100% + 1rem);
+  transform: translateX(-50%);
 }
 .ornaments-wrapper .frame-bottom {
   position: absolute;
   bottom: 0;
-  left: 0;
-  width: 100%;
-  transform: scaleY(-1);
+  left: 50%;
+  width: calc(100% + 1rem);
+  transform: translateX(-50%) scaleY(-1);
 }
 .ornaments-wrapper .swamp {
   position: absolute;
@@ -1883,7 +1884,7 @@ img[alt=branch-grey] {
 @media (max-width: 575px) {
   .reminder-wrap .reminder-content {
     width: 100%;
-    padding: 5rem 1.5rem;
+    padding: 3rem 1.5rem;
   }
 }
 .reminder-wrap .btn-reminder {
@@ -1949,10 +1950,10 @@ img[alt=branch-grey] {
 }
 .couple-section .couple-wrapper .orn-2 {
   position: absolute;
-  top: 50%;
+  top: 45%;
   left: 0;
-  width: 65%;
-  transform: translate(-60%, -50%) rotate(-40deg);
+  width: 68%;
+  transform: translate(-55%, -50%) rotate(-40deg);
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .couple-section .couple-wrapper .orn-2 {
@@ -1961,10 +1962,10 @@ img[alt=branch-grey] {
 }
 .couple-section .couple-wrapper .orn-3 {
   position: absolute;
-  top: 60%;
+  top: 70%;
   left: 0;
   width: 35%;
-  transform: translate(-60%, -50%) rotate(15deg);
+  transform: translate(-55%, -50%) rotate(15deg);
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .couple-section .couple-wrapper .orn-3 {
@@ -1975,14 +1976,14 @@ img[alt=branch-grey] {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30%;
+  width: 40%;
   transform: translate(-40%, 0);
 }
 .couple-section .couple-wrapper .orn-5 {
   position: absolute;
-  top: 50%;
+  top: 55%;
   right: 0;
-  width: 60%;
+  width: 65%;
   transform: translate(70%, -50%) rotate(-30deg) scaleX(-1);
 }
 @media (max-width: 991px) and (min-width: 768px) {
@@ -2006,7 +2007,7 @@ img[alt=branch-grey] {
   position: absolute;
   top: 1rem;
   right: 0;
-  width: 18%;
+  width: 20%;
   transform: translate(35%, 0);
 }
 .couple-section .couple-wrapper .orn-8 {

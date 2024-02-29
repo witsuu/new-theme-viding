@@ -413,5 +413,10 @@
 		"name": "Arnold",
 		"path": "arnold",
 		"status": ""
+	},
+	{
+		"name": "Merlin",
+		"path": "merlin",
+		"status": ""
 	}
 ]

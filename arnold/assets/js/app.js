@@ -39,10 +39,11 @@ const setSizeLayout = (mww) => {
 
 		const layoutView = document.querySelector(".layout__views");
 		const bgView = document.querySelector(".background__views");
+		const fixedBg = document.querySelector(".fixed-background");
 
 		layoutView.style.width = `${widthLayout}%`;
-
 		bgView.style.width = `${widthBg}%`;
+		fixedBg.style.width = `${widthLayout}%`;
 
 		// Image Transition
 		let isActive = "cover";

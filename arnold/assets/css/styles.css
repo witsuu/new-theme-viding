@@ -16,14 +16,13 @@
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  color: var(--color-dark);
+  color: var(--color-light);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
 
 .main-app {
   background-color: var(--color-main);
-  color: var(--color-dark);
   display: flex;
   flex-direction: column;
   width: 100%;
@@ -128,6 +127,38 @@ body {
   .layout__views {
     width: 100% !important;
   }
+}
+.layout__views .fixed-background {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 37%;
+  height: 100vh;
+}
+@media (max-width: 991px) {
+  .layout__views .fixed-background {
+    width: 100% !important;
+  }
+}
+.layout__views .fixed-background .background-element {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.layout__views .fixed-background .background-element::after {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  content: "";
+}
+.layout__views .fixed-background .background-element img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .logo-viding {
@@ -1445,15 +1476,6 @@ ul li {
 .header-section {
   position: relative;
 }
-.header-section .background-element::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
-}
 .header-section .header-content {
   position: relative;
   text-align: center;
@@ -2382,6 +2404,7 @@ ul li {
   text-align: center;
   background-color: var(--color-secondary);
   color: var(--text-button);
+  z-index: 5;
 }
 .footer small {
   position: relative;
