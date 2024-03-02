@@ -55,9 +55,12 @@
 			font-size: 52px;
 			font-family: $font-secondary;
 			line-height: 1;
-			padding-top: 0.5rem;
-			@supports (-webkit-touch-callout: none) {
+			&.ios {
 				padding-top: 0.5rem !important;
+				@include max-md {
+					font-size: 46px;
+					padding-top: 0.5rem !important;
+				}
 			}
 			@include max-md {
 				font-size: 46px;
@@ -67,7 +70,6 @@
 		.huruf,
 		.angka {
 			margin: 0;
-			padding: 0;
 			font-family: $font-primary;
 		}
 	}

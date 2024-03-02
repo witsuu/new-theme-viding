@@ -1380,13 +1380,19 @@ ul li {
   font-size: 52px;
   font-family: "Luxurious Script", cursive;
   line-height: 1;
-  padding-top: 0.5rem;
 }
-@supports (-webkit-touch-callout: none) {
-  .countdown .days .angka,
-  .countdown .hours .angka,
-  .countdown .minutes .angka,
-  .countdown .seconds .angka {
+.countdown .days .angka.ios,
+.countdown .hours .angka.ios,
+.countdown .minutes .angka.ios,
+.countdown .seconds .angka.ios {
+  padding-top: 0.5rem !important;
+}
+@media (max-width: 767px) {
+  .countdown .days .angka.ios,
+  .countdown .hours .angka.ios,
+  .countdown .minutes .angka.ios,
+  .countdown .seconds .angka.ios {
+    font-size: 46px;
     padding-top: 0.5rem !important;
   }
 }
@@ -1408,7 +1414,6 @@ ul li {
 .countdown .seconds .huruf,
 .countdown .seconds .angka {
   margin: 0;
-  padding: 0;
   font-family: "Canela Trial", serif;
 }
 

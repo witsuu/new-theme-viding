@@ -246,3 +246,15 @@ const runAnimationLoop = () => {
 		})
 	})
 }
+
+function isIOS(){
+	const expression = /(Mac|iPhone|iPod|iPad)/i;
+
+	return expression.test(window.navigator.userAgent)
+}
+
+if(isIOS()){
+	document.querySelectorAll('.angka-wrap .angka').forEach(element => {
+		element.classList.add('ios');
+	});
+}
