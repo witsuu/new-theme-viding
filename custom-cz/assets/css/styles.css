@@ -1425,7 +1425,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .reminder-wrap {
-    padding: 8rem 0;
+    padding: 6rem 0;
   }
 }
 .reminder-wrap .row {
@@ -1434,6 +1434,7 @@ ul li {
 .reminder-wrap .reminder-description {
   position: relative;
   margin-bottom: 5rem;
+  font-weight: 300;
 }
 @media (max-width: 575px) {
   .reminder-wrap .reminder-description {
@@ -1618,6 +1619,7 @@ ul li {
 }
 .header-section .header-content .header .header-title-content .header-description {
   width: 70%;
+  font-weight: 300;
 }
 @media (max-width: 575px) {
   .header-section .header-content .header .header-title-content .header-description {

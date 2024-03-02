@@ -4,7 +4,7 @@
 	padding: 5rem 0;
 	text-align: center;
 	@include max-sm {
-		padding: 8rem 0;
+		padding: 6rem 0;
 	}
 	.row {
 		min-height: 80vh;
@@ -12,6 +12,7 @@
 	.reminder-description {
 		position: relative;
 		margin-bottom: 5rem;
+		font-weight: 300;
 		@include max-sm {
 			margin-bottom: 3rem;
 		}
