@@ -1357,16 +1357,11 @@ ul li {
     font-size: 14px;
   }
 }
-.countdown .days .angka,
-.countdown .hours .angka,
-.countdown .minutes .angka,
-.countdown .seconds .angka {
-  display: inline-block;
-  margin-bottom: 0;
-  font-weight: 400;
-  font-size: 52px;
-  font-family: "Luxurious Script", cursive;
-  line-height: 1;
+.countdown .days .angka-wrap,
+.countdown .hours .angka-wrap,
+.countdown .minutes .angka-wrap,
+.countdown .seconds .angka-wrap {
+  position: relative;
   background-color: #7f7f7f;
   border-radius: 100px;
   color: var(--color-light);
@@ -1375,6 +1370,16 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.countdown .days .angka,
+.countdown .hours .angka,
+.countdown .minutes .angka,
+.countdown .seconds .angka {
+  margin-bottom: 0;
+  font-weight: 400;
+  font-size: 52px;
+  font-family: "Luxurious Script", cursive;
+  line-height: 1;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,

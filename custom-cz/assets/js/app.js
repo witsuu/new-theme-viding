@@ -8,7 +8,10 @@ const waitCoverLoading = (el) => {
 	return new Promise((resolve) => {
 		el.classList.add('cover-opening')
 
-		setTimeout(() => resolve(el), 2500)
+		const coverTime = setTimeout(() => {
+			resolve(el)
+			clearTimeout(coverTime)
+		}, 2500)
 	})
 }
 
@@ -29,10 +32,10 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 	runAnimationLoop()
 })
 
-var previousScroll = 70;
+let previousScroll = 70;
 $(window).scroll(function (e) {
 	// add/remove class to navbar when scrolling to hide/show
-	var scroll = $(window).scrollTop();
+	let scroll = $(window).scrollTop();
 	if (scroll >= previousScroll) {
 		$("nav").addClass("navbar-hide");
 	} else if (scroll < previousScroll) {
@@ -52,7 +55,7 @@ const cd = document.querySelector(".countdown");
 if (cd) Countdown(cd.getAttribute("date"))
 
 // Progress Bar
-let progress = document.querySelector(".progress");
+const progress = document.querySelector(".progress");
 
 ScrollTrigger.create({
 	trigger: "body",
@@ -110,27 +113,31 @@ const getLoadedIframe = (ifr) => {
 }
 
 // Modal Event Handler
-const mapModal = document.querySelectorAll(".modal");
-
-mapModal.forEach(modal => {
-	modal.addEventListener("shown.bs.modal", (e) => {
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		const iframe = e.target.querySelector("iframe")
-
-		getLoadedIframe(iframe).then(() => {
-			loader.classList.add("loaded")
-		}).catch(err => {
-			console.log(err)
+function mapModalFn(){
+	const mapModal = document.querySelectorAll(".modal");
+	
+	mapModal.forEach(modal => {
+		modal.addEventListener("shown.bs.modal", (e) => {
+			const loader = e.target.querySelector(".loader-wrapper-modal")
+			const iframe = e.target.querySelector("iframe")
+	
+			getLoadedIframe(iframe).then(() => {
+				loader.classList.add("loaded")
+			}).catch(err => {
+				console.log(err)
+			})
+		})
+	
+		modal.addEventListener("hidden.bs.modal", (e) => {
+			const iframe = e.target.querySelector("iframe")
+			const loader = e.target.querySelector(".loader-wrapper-modal")
+			iframe.src = "";
+			loader.classList.remove("loaded");
 		})
 	})
+}
 
-	modal.addEventListener("hidden.bs.modal", (e) => {
-		const iframe = e.target.querySelector("iframe")
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		iframe.src = "";
-		loader.classList.remove("loaded");
-	})
-})
+mapModalFn()
 
 if (document.querySelector("#zoom-gallery-default")) {
 	$("#zoom-gallery-default").magnificPopup({

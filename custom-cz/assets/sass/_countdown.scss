@@ -38,13 +38,8 @@
 				font-size: 14px;
 			}
 		}
-		.angka {
-			display: inline-block;
-			margin-bottom: 0;
-			font-weight: 400;
-			font-size: 52px;
-			font-family: $font-secondary;
-			line-height: 1;
+		.angka-wrap{
+			position: relative;
 			background-color: #7f7f7f;
 			border-radius: 100px;
 			color: var(--color-light);
@@ -53,6 +48,13 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
+		}
+		.angka {
+			margin-bottom: 0;
+			font-weight: 400;
+			font-size: 52px;
+			font-family: $font-secondary;
+			line-height: 1;
 			@include max-md {
 				font-size: 46px;
 			}
