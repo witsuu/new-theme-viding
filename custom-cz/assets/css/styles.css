@@ -1322,24 +1322,7 @@ ul li {
   align-items: center;
   position: relative;
   padding: 1rem;
-  min-width: 160px;
   gap: 1rem;
-}
-@media (max-width: 991px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 140px;
-  }
-}
-@media (max-width: 575px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 70px;
-  }
 }
 .countdown .days .huruf,
 .countdown .hours .huruf,
@@ -1370,6 +1353,23 @@ ul li {
   display: flex;
   align-items: center;
   justify-content: center;
+  min-width: 130px;
+}
+@media (max-width: 991px) {
+  .countdown .days .angka-wrap,
+  .countdown .hours .angka-wrap,
+  .countdown .minutes .angka-wrap,
+  .countdown .seconds .angka-wrap {
+    min-width: 115px;
+  }
+}
+@media (max-width: 575px) {
+  .countdown .days .angka-wrap,
+  .countdown .hours .angka-wrap,
+  .countdown .minutes .angka-wrap,
+  .countdown .seconds .angka-wrap {
+    min-width: 80px;
+  }
 }
 .countdown .days .angka,
 .countdown .hours .angka,
