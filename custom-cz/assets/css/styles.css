@@ -1374,7 +1374,7 @@ ul li {
 .countdown .seconds .angka {
   display: inline-block;
   margin-bottom: 0;
-  font-weight: 500;
+  font-weight: 400;
   font-size: 38px;
   font-family: "Luxurious Script", cursive;
   line-height: 1;
@@ -1634,6 +1634,7 @@ ul li {
   width: 100%;
   margin-top: 3rem;
   margin-bottom: 0;
+  font-weight: 400;
 }
 @media (min-width: 992px) {
   .header-section .header-content .header .header-title-content .title h1 {
