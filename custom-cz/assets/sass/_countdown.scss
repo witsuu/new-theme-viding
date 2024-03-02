@@ -1,21 +1,16 @@
 .countdown {
 	display: flex;
 	text-align: center;
-	justify-content: center;
+	justify-content: space-between;
 	position: relative;
 	margin: 0 auto;
-	width: fit-content;
-	gap: 3rem;
+	width: 100%;
+	gap: 1rem;
 	z-index: 3;
-	@include max-lg {
-		gap: 2rem;
-	}
-	@include max-md {
-		gap: 1rem;
-	}
 	@include max-sm {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
+		justify-content: center;
 	}
 	.days,
 	.hours,
@@ -27,40 +22,39 @@
 		align-items: center;
 		position: relative;
 		padding: 1rem;
-		min-width: 80px;
+		min-width: 160px;
 		gap: 1rem;
-		@include max-md {
-			min-width: 65px;
-			padding: 1rem 0.75rem;
+		@include max-lg {
+			min-width: 140px;
 		}
-		@include max-xs {
-			min-width: 63px;
-		}
-		@include max-rwd(350px) {
-			min-width: 72px;
+		@include max-sm {
+			min-width: 70px;
 		}
 		.huruf {
-			font-size: 14px;
+			font-size: 16px;
 			font-weight: 600;
 			text-transform: uppercase;
+			@include max-sm {
+				font-size: 14px;
+			}
 		}
 		.angka {
 			display: inline-block;
 			margin-bottom: 0;
 			font-weight: 400;
-			font-size: 38px;
+			font-size: 52px;
 			font-family: $font-secondary;
 			line-height: 1;
 			background-color: #7f7f7f;
 			border-radius: 100px;
 			color: var(--color-light);
-			width: 100px;
+			width: 100%;
 			aspect-ratio: 1;
 			display: flex;
 			align-items: center;
 			justify-content: center;
 			@include max-md {
-				font-size: 36px;
+				font-size: 46px;
 			}
 		}
 		.huruf,

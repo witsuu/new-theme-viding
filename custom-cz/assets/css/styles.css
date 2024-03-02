@@ -274,7 +274,7 @@ small {
 
 span,
 p {
-  font-size: 10pt;
+  font-size: 12pt;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -1298,28 +1298,18 @@ ul li {
 .countdown {
   display: flex;
   text-align: center;
-  justify-content: center;
+  justify-content: space-between;
   position: relative;
   margin: 0 auto;
-  width: -moz-fit-content;
-  width: fit-content;
-  gap: 3rem;
+  width: 100%;
+  gap: 1rem;
   z-index: 3;
-}
-@media (max-width: 991px) {
-  .countdown {
-    gap: 2rem;
-  }
-}
-@media (max-width: 767px) {
-  .countdown {
-    gap: 1rem;
-  }
 }
 @media (max-width: 575px) {
   .countdown {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    justify-content: center;
   }
 }
 .countdown .days,
@@ -1332,41 +1322,40 @@ ul li {
   align-items: center;
   position: relative;
   padding: 1rem;
-  min-width: 80px;
+  min-width: 160px;
   gap: 1rem;
 }
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .countdown .days,
   .countdown .hours,
   .countdown .minutes,
   .countdown .seconds {
-    min-width: 65px;
-    padding: 1rem 0.75rem;
+    min-width: 140px;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 575px) {
   .countdown .days,
   .countdown .hours,
   .countdown .minutes,
   .countdown .seconds {
-    min-width: 63px;
-  }
-}
-@media (max-width: 350px) {
-  .countdown .days,
-  .countdown .hours,
-  .countdown .minutes,
-  .countdown .seconds {
-    min-width: 72px;
+    min-width: 70px;
   }
 }
 .countdown .days .huruf,
 .countdown .hours .huruf,
 .countdown .minutes .huruf,
 .countdown .seconds .huruf {
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
+}
+@media (max-width: 575px) {
+  .countdown .days .huruf,
+  .countdown .hours .huruf,
+  .countdown .minutes .huruf,
+  .countdown .seconds .huruf {
+    font-size: 14px;
+  }
 }
 .countdown .days .angka,
 .countdown .hours .angka,
@@ -1375,13 +1364,13 @@ ul li {
   display: inline-block;
   margin-bottom: 0;
   font-weight: 400;
-  font-size: 38px;
+  font-size: 52px;
   font-family: "Luxurious Script", cursive;
   line-height: 1;
   background-color: #7f7f7f;
   border-radius: 100px;
   color: var(--color-light);
-  width: 100px;
+  width: 100%;
   aspect-ratio: 1;
   display: flex;
   align-items: center;
@@ -1392,7 +1381,7 @@ ul li {
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
-    font-size: 36px;
+    font-size: 46px;
   }
 }
 .countdown .days .huruf,
@@ -1433,9 +1422,7 @@ ul li {
 }
 .reminder-wrap .reminder-content {
   position: relative;
-  width: -moz-fit-content;
-  width: fit-content;
-  max-width: 100%;
+  width: 100%;
   margin: 0 auto;
 }
 .reminder-wrap .btn-reminder {
@@ -1587,12 +1574,6 @@ ul li {
 .header-section .header-content .header .header-title {
   position: relative;
   width: 100%;
-  padding: 4.5rem 0;
-}
-@media (max-width: 575px) {
-  .header-section .header-content .header .header-title {
-    padding: 6rem 0;
-  }
 }
 .header-section .header-content .header .header-title-content {
   position: relative;
@@ -1603,10 +1584,16 @@ ul li {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  padding: 8rem 0;
 }
 @media (max-width: 991px) {
   .header-section .header-content .header .header-title-content {
     min-height: 80vh;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .header-content .header .header-title-content {
+    padding: 6rem 0;
   }
 }
 .header-section .header-content .header .header-title-content .header-description {
@@ -1620,8 +1607,9 @@ ul li {
 .header-section .header-content .header .header-title-content .title {
   position: relative;
   width: 100%;
+  margin: 5rem 0;
 }
-@media (max-width: 575px) {
+@media (max-width: 991px) {
   .header-section .header-content .header .header-title-content .title {
     margin: 3rem 0;
   }
@@ -1632,7 +1620,7 @@ ul li {
 .header-section .header-content .header .header-title-content .title h1 {
   display: block;
   width: 100%;
-  margin-top: 3rem;
+  margin-top: 2.5rem;
   margin-bottom: 0;
   font-weight: 400;
 }
@@ -1647,6 +1635,11 @@ ul li {
   }
   .header-section .header-content .header .header-title-content .title h1.man-first {
     transform: translate(2%, 0);
+  }
+}
+@media (max-width: 991px) {
+  .header-section .header-content .header .header-title-content .title h1 {
+    margin-top: 2rem;
   }
 }
 @media (max-width: 575px) {

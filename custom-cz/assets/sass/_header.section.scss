@@ -43,10 +43,6 @@
 			.header-title {
 				position: relative;
 				width: 100%;
-				padding: 4.5rem 0;
-				@include max-sm {
-					padding: 6rem 0;
-				}
 				&-content {
 					position: relative;
 					width: 100%;
@@ -56,8 +52,12 @@
 					align-items: center;
 					justify-content: space-between;
 					text-align: center;
+					padding: 8rem 0;
 					@include max-lg {
 						min-height: 80vh;
+					}
+					@include max-sm {
+						padding: 6rem 0;
 					}
 					.header-description {
 						width: 70%;
@@ -68,7 +68,8 @@
 					.title {
 						position: relative;
 						width: 100%;
-						@include max-sm {
+						margin: 5rem 0;
+						@include max-lg {
 							margin: 3rem 0;
 						}
 						.sub-title {
@@ -77,7 +78,7 @@
 						h1 {
 							display: block;
 							width: 100%;
-							margin-top: 3rem;
+							margin-top: 2.5rem;
 							margin-bottom: 0;
 							font-weight: 400;
 							@include min-lg {
@@ -90,6 +91,9 @@
 								&.man-first {
 									transform: translate(2%, 0);
 								}
+							}
+							@include max-lg {
+								margin-top: 2rem;
 							}
 							@include max-sm {
 								margin-top: 1rem;
