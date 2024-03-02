@@ -32,7 +32,7 @@ body {
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 110%;
 		height: 100%;
 		overflow: hidden;
 		z-index: -1;
@@ -124,16 +124,24 @@ h3 {
 }
 
 h1 {
-	font-size: 46px;
+	font-size: 72px;
 	line-height: 1.2;
 	@include max-md {
-		font-size: 42px;
+		font-size: 48px;
 	}
 	span {
-		font-size: 32px;
-		display: block;
+		font-size: 18pt;
+		font-family: $font-primary;
+		font-weight: 300;
+		font-style: italic;
+		margin-bottom: 0.5rem;
+		@include max-lg {
+			display: block;
+			margin-bottom: 0;
+			padding: 1.25rem 0 1rem;
+		}
 		@include max-md {
-			font-size: 28px;
+			font-size: 16pt;
 		}
 	}
 }

@@ -5,22 +5,96 @@
 		position: relative;
 		margin-top: 2rem;
 	}
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 66%;
+		transform: translate(-2%, 0) rotate(-20deg) scaleX(-1);
+		@include max-lg {
+			width: 135%;
+			transform: translate(-35%, 0) rotate(-20deg) scaleX(-1);
+		}
+		@include max-sm {
+			top: 4rem;
+			width: 180%;
+			transform: translate(-50%, 0) rotate(-20deg) scaleX(-1);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 54%;
+		transform: translate(-5%, -20%) rotate(-20deg);
+		@include max-lg {
+			width: 105%;
+			transform: translate(50%, -25%) rotate(-20deg);
+		}
+		@include max-sm {
+			width: 180%;
+			transform: translate(58%, -20%) rotate(-20deg);
+		}
+	}
 	.header-content {
 		position: relative;
-		height: 100vh;
 		.header {
 			position: relative;
-			display: grid;
-			grid-template-rows: auto 1fr;
-			width: 50%;
-			height: 100%;
-			margin: 0 auto;
-			padding: 4.5rem 0 0;
 			.header-title {
 				position: relative;
-				text-align: center;
+				width: 100%;
+				padding: 4.5rem 0;
+				@include max-sm {
+					padding: 6rem 0;
+				}
 				&-content {
 					position: relative;
+					width: 100%;
+					min-height: 100vh;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: space-between;
+					text-align: center;
+					@include max-lg {
+						min-height: 80vh;
+					}
+					.header-description {
+						width: 70%;
+						@include max-sm {
+							width: 100%;
+						}
+					}
+					.title {
+						position: relative;
+						width: 100%;
+						@include max-sm {
+							margin: 3rem 0;
+						}
+						.sub-title {
+							font-size: 16pt;
+						}
+						h1 {
+							display: block;
+							width: 100%;
+							margin-top: 3rem;
+							margin-bottom: 0;
+							@include min-lg {
+								display: flex;
+								align-items: center;
+								justify-content: space-between;
+								&.woman-first {
+									transform: translate(-2%, 0);
+								}
+								&.man-first {
+									transform: translate(2%, 0);
+								}
+							}
+							@include max-sm {
+								margin-top: 1rem;
+							}
+						}
+					}
 				}
 			}
 			#scroll-animate {

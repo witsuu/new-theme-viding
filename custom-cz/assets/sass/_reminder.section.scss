@@ -1,31 +1,32 @@
 .reminder-wrap {
 	position: relative;
 	display: block;
-	padding: 5rem 0 0;
-	@include max-md {
-		padding: 3rem 0 0;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-sm {
+		padding: 8rem 0;
+	}
+	.row {
+		min-height: 80vh;
+	}
+	.reminder-description {
+		position: relative;
+		margin-bottom: 5rem;
+		@include max-sm {
+			margin-bottom: 3rem;
+		}
 	}
 	.reminder-content {
 		position: relative;
 		width: fit-content;
 		max-width: 100%;
 		margin: 0 auto;
-		z-index: 2;
 	}
 	.btn-reminder {
-		z-index: 3;
-		position: relative;
-		margin: 0 auto;
-		display: flex;
-		align-items: center;
-		position: relative;
-		gap: 0.5rem;
-		transition: all 0.2s ease-in-out;
-		text-decoration: none;
-		margin-top: 1.5rem;
-		path {
-			fill: var(--text-button);
-			transition: all 0.3s ease-in-out;
+		margin-top: 5rem;
+		font-style: normal;
+		@include max-sm {
+			margin-top: 3rem;
 		}
 	}
 }

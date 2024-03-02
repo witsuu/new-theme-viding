@@ -5,10 +5,17 @@
 	position: relative;
 	margin: 0 auto;
 	width: fit-content;
-	gap: 1rem;
+	gap: 3rem;
 	z-index: 3;
+	@include max-lg {
+		gap: 2rem;
+	}
 	@include max-md {
-		gap: 0.5rem;
+		gap: 1rem;
+	}
+	@include max-sm {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
 	}
 	.days,
 	.hours,
@@ -21,6 +28,7 @@
 		position: relative;
 		padding: 1rem;
 		min-width: 80px;
+		gap: 1rem;
 		@include max-md {
 			min-width: 65px;
 			padding: 1rem 0.75rem;
@@ -34,26 +42,32 @@
 		.huruf {
 			font-size: 14px;
 			font-weight: 600;
-			@include max-xs {
-				font-size: 12px;
-			}
+			text-transform: uppercase;
 		}
 		.angka {
+			display: inline-block;
 			margin-bottom: 0;
 			font-weight: 500;
 			font-size: 38px;
 			font-family: $font-secondary;
+			line-height: 1;
+			background-color: #7f7f7f;
+			border-radius: 100px;
+			color: var(--color-light);
+			width: 100px;
+			aspect-ratio: 1;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 			@include max-md {
-				font-size: 32px;
-			}
-			@include max-xs {
-				font-size: 28px;
+				font-size: 36px;
 			}
 		}
 		.huruf,
 		.angka {
 			margin: 0;
 			padding: 0;
+			font-family: $font-primary;
 		}
 	}
 }
