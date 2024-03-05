@@ -1307,9 +1307,8 @@ ul li {
 }
 @media (max-width: 575px) {
   .countdown {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
     justify-content: center;
+    gap: 0;
   }
 }
 .countdown .days,
@@ -1323,6 +1322,16 @@ ul li {
   position: relative;
   padding: 1rem;
   gap: 1rem;
+}
+@media (max-width: 575px) {
+  .countdown .days,
+  .countdown .hours,
+  .countdown .minutes,
+  .countdown .seconds {
+    width: 25%;
+    min-width: 25%;
+    padding: 0.25rem;
+  }
 }
 .countdown .days .huruf,
 .countdown .hours .huruf,
@@ -1368,7 +1377,8 @@ ul li {
   .countdown .hours .angka-wrap,
   .countdown .minutes .angka-wrap,
   .countdown .seconds .angka-wrap {
-    min-width: 80px;
+    width: 100%;
+    min-width: unset;
   }
 }
 .countdown .days .angka,
@@ -1392,7 +1402,6 @@ ul li {
   .countdown .hours .angka.ios,
   .countdown .minutes .angka.ios,
   .countdown .seconds .angka.ios {
-    font-size: 46px;
     padding-top: 0.5rem !important;
   }
 }
@@ -1401,8 +1410,16 @@ ul li {
   .countdown .hours .angka,
   .countdown .minutes .angka,
   .countdown .seconds .angka {
-    font-size: 46px;
+    font-size: 32px;
     padding-top: 0.5rem !important;
+  }
+}
+@media (max-width: 390px) {
+  .countdown .days .angka,
+  .countdown .hours .angka,
+  .countdown .minutes .angka,
+  .countdown .seconds .angka {
+    font-size: 28px;
   }
 }
 .countdown .days .huruf,
