@@ -418,5 +418,10 @@
 		"name": "Merlin",
 		"path": "merlin",
 		"status": ""
+	},
+	{
+		"name": "Custom DR",
+		"path": "custom-dr",
+		"status": ""
 	}
 ]
