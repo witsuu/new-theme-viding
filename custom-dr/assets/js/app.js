@@ -1,9 +1,10 @@
 gsap.registerPlugin(ScrollTrigger, Flip, ScrollToPlugin)
 
 function to_top() {
-	gsap.to(window, {
+	const toTop = gsap.to(window, {
 		scrollTo: 0,
 	})
+	return
 }
 
 to_top()
@@ -12,11 +13,15 @@ $("body").css("overflow-y", "hidden");
 
 $("#btn-envelope").on("click", function () {
 	$("body").css("overflow-y", "auto");
-	gsap.to(window, {
+	const cover_move = gsap.to(window, {
 		duration: 1,
 		scrollTo: ".main-section",
 		ease: "power1.inOut"
 	})
+
+	runAnimationOrnament();
+
+	return
 });
 
 let previousScroll = 70;
@@ -125,6 +130,8 @@ const runAnimationOrnament = () => {
 			}
 		})
 	})
+
+	return
 }
 
 const runAnimationOrnamentCover = () => {
@@ -156,6 +163,8 @@ const runAnimationOrnamentCover = () => {
 			}
 		})
 	})
+
+	return
 }
 
 const runAnimationLoop = () => {
@@ -166,6 +175,8 @@ const runAnimationLoop = () => {
 			onToggle: self => self.isActive ? al.classList.add("animation-loop") : al.classList.remove("animation-loop")
 		})
 	})
+
+	return
 }
 
 const getLoadedIframe = (ifr) => {
