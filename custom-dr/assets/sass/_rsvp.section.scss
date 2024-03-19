@@ -1,0 +1,64 @@
+.rsvp-section {
+	position: relative;
+	padding: 3rem 0 8rem;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+	@include max-sm {
+		padding-bottom: 5rem;
+	}
+
+	.ornaments-wrapper {
+		border-radius: var(--border-radius);
+		.orn-1 {
+			position: absolute;
+			bottom: 1rem;
+			left: 0;
+			width: 60%;
+			transform: translate(-35%, 0) scaleX(-1);
+		}
+		.orn-2 {
+			position: absolute;
+			top: 1rem;
+			right: 0;
+			width: 60%;
+			transform: translate(35%, 0);
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 2rem;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		@include min-lg {
+			padding: 2rem 3rem;
+		}
+		&::before {
+			position: absolute;
+			bottom: 99%;
+			left: 50%;
+			width: calc(100% - 6rem);
+			height: 3rem;
+			transform: translate(-50%, 0);
+			background-color: var(--color-primary);
+			border-top-left-radius: var(--border-radius);
+			border-top-right-radius: var(--border-radius);
+			content: "";
+		}
+		&::after {
+			position: absolute;
+			top: 99%;
+			left: 50%;
+			width: calc(100% - 6rem);
+			height: 3rem;
+			transform: translate(-50%, 0);
+			background-color: var(--color-primary);
+			border-bottom-left-radius: var(--border-radius);
+			border-bottom-right-radius: var(--border-radius);
+			content: "";
+		}
+	}
+}

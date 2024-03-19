@@ -1,0 +1,34 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-75%, 0) rotate(12deg);
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(50%, 25%) rotate(30deg) scaleX(-1);
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 2rem 1rem;
+
+		@include ipad {
+			padding: 3rem 2rem;
+		}
+	}
+}

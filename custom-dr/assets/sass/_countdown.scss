@@ -1,0 +1,43 @@
+.countdown {
+	display: flex;
+	text-align: center;
+	justify-content: center;
+	position: relative;
+	width: fit-content;
+	gap: 1.5rem;
+	z-index: 3;
+
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		.angka {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 90px;
+			font-family: $font-secondary;
+			padding-right: .25rem !important;
+			line-height: 1;
+
+			@include max-md {
+				font-size: 68px;
+			}
+
+			@include max-xs {
+				font-size: 48px;
+			}
+		}
+
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

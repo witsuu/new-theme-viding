@@ -1,3 +1,5 @@
+gsap.registerPlugin(ScrollTrigger, Flip)
+
 window.scrollTo(0, 0)
 
 const waitCoverLoading = (el) => {
@@ -40,8 +42,6 @@ $(window).scroll(function (e) {
 const cd = document.querySelector(".countdown");
 
 if (cd) Countdown(cd.getAttribute("date"))
-
-gsap.registerPlugin(ScrollTrigger, Flip)
 
 // Progress Bar
 let progress = document.querySelector(".progress");

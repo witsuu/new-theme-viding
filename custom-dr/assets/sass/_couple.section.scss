@@ -1,0 +1,217 @@
+.couple-section {
+	position: relative;
+
+	&::before {
+		position: relative;
+		display: block;
+		width: 100%;
+		height: 20px;
+		background-color: #baa67e;
+		content: "";
+		z-index: 5;
+	}
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 43px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 8rem 0 0;
+
+		@include ipad {
+			padding: 5rem 0 0;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-50%, -45%);
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(38%, -20%);
+		}
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 90%;
+			transform: translate(40%, -35%) rotate(11deg);
+		}
+		.orn-4 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 90%;
+			transform: translate(-40%, -35%) rotate(-12deg) scaleX(-1);
+		}
+
+		.couple-content {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.couple {
+		position: relative;
+		padding: 3rem 1rem;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		@include ipad {
+			padding: 3rem 2rem;
+		}
+		@include max-sm {
+			padding: 2rem 1rem;
+		}
+
+		.image-wrap {
+			position: relative;
+			width: 90%;
+			margin: 0 auto;
+			@include aspect-ratio(7, 8);
+			@include max-sm {
+				width: 100%;
+			}
+
+			.image-element {
+				height: 100%;
+
+				.couple-image {
+					position: relative;
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					mask-image: url(../images/mask-couple.png);
+					mask-size: 100% 100%;
+					mask-repeat: no-repeat;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 1rem 1rem 0;
+			text-align: center;
+
+			h3 {
+				position: relative;
+				font-size: 42px;
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: 0.5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				--color-button-trans: #fff;
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				margin: 0 auto;
+
+				.sosmed {
+					color: var(--color-button-trans);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.title-couple {
+			position: absolute;
+			top: -1.5rem;
+			left: 0;
+			width: 100%;
+			text-align: center;
+			@include ipad {
+				top: 0;
+			}
+
+			span {
+				font-size: 90px;
+				font-family: $font-secondary;
+				@include max-lg {
+					font-size: 60px;
+				}
+			}
+		}
+		&.single {
+			padding-bottom: 2rem;
+			.title-couple {
+				top: -1rem;
+				@include ipad {
+					text-align: left;
+				}
+				span {
+					font-size: 60px;
+					@include max-sm {
+						font-size: 48px;
+					}
+				}
+			}
+			.image-wrap {
+				margin-bottom: 1rem;
+				aspect-ratio: 3/4;
+				@include ipad {
+					aspect-ratio: 6/4;
+				}
+			}
+			.couple-description {
+				position: relative;
+				padding: 1rem;
+			}
+		}
+	}
+}
