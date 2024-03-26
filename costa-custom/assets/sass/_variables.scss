@@ -1,17 +1,17 @@
-$color-main: #E6EAEA;
-$color-primary: #D4D2CD;
-$color-secondary: #473828;
+$color-main: #f1eee9;
+$color-primary: #ad7f95;
+$color-secondary: #6a503e;
 $color-dark: #1e1f1e;
 $color-light: #fff;
 $text-button: #ffffff;
-$color-button-trans: #1e1f1e;
+$color-button-trans: #fff;
 $color-logo: #e9088a;
-$font-secondary: "FogtwoNo5", cursive;
+$font-secondary: "Prata", serif;
 $font-primary: "Nunito Sans", sans-serif;
-$border-radius: 12px;
+$border-radius: 500px;
 
 $breakpoints-min: (
-	xs: 325px,
+	xs: 390px,
 	sm: 576px,
 	md: 768px,
 	lg: 992px,
@@ -21,7 +21,7 @@ $breakpoints-min: (
 );
 
 $breakpoints-max: (
-	xs: 375px,
+	xs: 390px,
 	sm: 575px,
 	md: 767px,
 	lg: 991px,

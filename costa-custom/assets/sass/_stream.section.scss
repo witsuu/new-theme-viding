@@ -1,0 +1,96 @@
+.stream-section {
+	position: relative;
+	padding: 0 0 5rem;
+	text-align: center;
+	overflow: hidden;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.bg-stream {
+		position: relative;
+		width: 100%;
+		opacity: 0.2;
+		margin-top: -15rem;
+		@include max-lg {
+			margin-top: 0;
+		}
+	}
+	.frame-top {
+		position: relative;
+		width: 110%;
+		transform: translateX(-5%);
+		@include max-md {
+			width: 120%;
+			transform: translateX(-8.5%);
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 320px;
+		transform: translate(-70%, -10%) rotate(10deg) scaleX(-1);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 360px;
+		transform: translate(82%, -20%) rotate(-25deg) scaleX(-1);
+		@include min-md {
+			width: 70%;
+			transform: translate(80%, -10%) rotate(-25deg) scaleX(-1);
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.stream-wrapper {
+		position: relative;
+		margin-top: -5rem;
+		z-index: 5;
+		@include max-sm {
+			margin-top: 0;
+		}
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		width: 100%;
+	}
+}

@@ -1,0 +1,231 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 35%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 500;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 38px;
+			font-family: $font-secondary;
+			@include max-md {
+				font-size: 32px;
+			}
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 3rem 0 5rem;
+		@include max-md {
+			padding: 3rem 0;
+			.container {
+				padding: 0;
+			}
+		}
+		.side-left {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			height: 90%;
+			transform: translateY(-50%);
+			z-index: 5;
+			.image-element {
+				width: auto;
+				height: 100%;
+				.img-fluid {
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
+		.side-right {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			height: 90%;
+			transform: translateY(-50%) scaleX(-1);
+			z-index: 5;
+			.image-element {
+				width: auto;
+				height: 100%;
+				.img-fluid {
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 140px;
+			transform: translate(-50%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 180px;
+			}
+			@include min-lg {
+				width: 220px;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(50%, 0) scaleX(-1);
+			z-index: 3;
+			@include min-md {
+				width: 180px;
+			}
+			@include min-lg {
+				width: 220px;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 120px;
+			transform: translate(-45%, 0) rotate(45deg) scaleX(-1);
+			z-index: 5;
+			@include min-md {
+				width: 160px;
+				transform: translate(-45%, 20%) rotate(45deg) scaleX(-1);
+			}
+			@include min-lg {
+				width: 180px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 120px;
+			transform: translate(45%, 0) rotate(-45deg);
+			z-index: 5;
+			@include min-md {
+				width: 160px;
+				transform: translate(45%, 20%) rotate(-45deg);
+			}
+			@include min-lg {
+				width: 180px;
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 320px;
+			transform: translate(-72%, 10%) rotate(10deg) scaleX(-1);
+			@include min-md {
+				width: 360px;
+			}
+			@include min-lg {
+				width: 380px;
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 320px;
+			transform: translate(72%, 10%) rotate(-10deg);
+			@include min-md {
+				width: 360px;
+			}
+			@include min-lg {
+				width: 380px;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+	}
+	.couple {
+		position: relative;
+		overflow: hidden;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 7/8;
+			margin: 0 auto;
+			padding-top: 2rem;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				&::before {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					width: calc(100% + 4rem);
+					height: calc(100% + 4rem);
+					transform: translate(-50%, -50%);
+					background-color: var(--color-primary);
+					border-radius: var(--border-radius);
+					content: "";
+				}
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 3rem 1rem 1rem;
+		}
+		.couple-parent {
+			position: relative;
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

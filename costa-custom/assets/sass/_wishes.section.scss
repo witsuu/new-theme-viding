@@ -1,0 +1,172 @@
+.wishes-section {
+	position: relative;
+	padding: 5rem 0 0;
+	@include max-md {
+		padding: 3rem 0 0;
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		.side-ornament-left {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80px;
+			@include max-sm {
+				width: 50px;
+			}
+		}
+		.side-ornament-right {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80px;
+			transform: scaleX(-1);
+			@include max-sm {
+				width: 50px;
+			}
+		}
+		.frame-top {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+			@include max-md {
+				width: 110%;
+				transform: translate(-50%, -45%);
+			}
+		}
+		.orn-1 {
+			position: absolute;
+			top: 10%;
+			left: 0;
+			width: 360px;
+			transform: translate(-70%, 0) rotate(10deg) scaleX(-1);
+			@include min-md {
+				top: 0;
+				width: 70%;
+			}
+			@include min-lg {
+				width: 40%;
+				transform: translate(-65%, 0) rotate(10deg) scaleX(-1);
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 10%;
+			right: 0;
+			width: 360px;
+			transform: translate(75%, 0) rotate(10deg) scaleX(-1);
+			@include min-md {
+				top: 0;
+				width: 70%;
+				transform: translate(70%, 0) rotate(10deg) scaleX(-1);
+			}
+			@include min-lg {
+				width: 40%;
+				transform: translate(65%, 0) rotate(10deg) scaleX(-1);
+			}
+		}
+	}
+	.card-form {
+		position: relative;
+		background-color: transparent;
+		padding-top: 3rem;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		padding: 0 0 5rem;
+		@include max-md {
+			padding: 0 0 3rem;
+		}
+		&::before {
+			position: absolute;
+			top: -3.25rem;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+			content: "";
+		}
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

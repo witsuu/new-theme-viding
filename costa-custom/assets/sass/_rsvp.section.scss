@@ -1,0 +1,116 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.side-ornament-left {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80px;
+		@include max-sm {
+			width: 50px;
+		}
+	}
+	.side-ornament-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80px;
+		transform: scaleX(-1);
+		@include max-sm {
+			width: 50px;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 360px;
+		transform: translate(-63%, 0) rotate(18deg);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(20%, 75%) rotate(-15deg);
+			z-index: 5;
+			@include min-md {
+				width: 180px;
+				transform: translate(0, 50%) rotate(-15deg);
+			}
+			@include min-lg {
+				width: 220px;
+				transform: translate(10%, 50%) rotate(-15deg);
+			}
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 360px;
+		transform: translate(63%, 0) rotate(-18deg) scaleX(-1);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 3/4;
+		margin-bottom: 3rem;
+		.rsvp-background {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 150px;
+			@include max-md {
+				border-radius: 115px;
+			}
+		}
+		.frame-top {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 110%;
+			transform: translate(-50%, -33%);
+		}
+		.frame-bottom {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 110%;
+			transform: translate(-50%, 33%) scaleY(-1);
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem 2rem;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			position: relative;
+			.title-section {
+				&::before {
+					all: unset;
+				}
+			}
+			.form-control,
+			.form-select {
+				background-color: rgba($color: #fff, $alpha: 0.7);
+			}
+		}
+	}
+}
