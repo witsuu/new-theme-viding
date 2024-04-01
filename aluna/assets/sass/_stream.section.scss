@@ -1,16 +1,41 @@
 .stream-section {
 	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
 	padding: 2rem 0;
 
 	@include ipad {
 		padding: 5rem 0;
 	}
 
-	.title-section {
-		text-align: left;
-		padding: 0 1.8rem;
-		@include ipad {
-			padding: 0;
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-30%, 0);
+
+		@include max-sm {
+			width: 30%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			right: 10%;
+			width: 110%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0) rotate(-40deg);
+
+		@include max-sm {
+			width: 35%;
 		}
 	}
 
@@ -22,26 +47,15 @@
 
 			.stream-description {
 				position: relative;
-				padding: 3rem 2rem 3rem 1.8rem;
-				text-align: left;
-				color: var(--color-light);
+				padding: 3rem 1.5rem;
+				background-color: var(--color-main);
+				color: var(--color-dark);
+				border-radius: 20px;
+				overflow: hidden;
+				text-align: center;
 
 				@include ipad {
-					padding: 2rem 1rem;
-				}
-
-				&::before {
-					position: absolute;
-					top: 0;
-					left: 0;
-					width: calc(100% - 1.8rem);
-					height: 100%;
-					background-color: var(--color-primary);
-					opacity: 0.6;
-					content: "";
-					@include ipad {
-						width: 100%;
-					}
+					padding: 3rem 2rem;
 				}
 			}
 		}

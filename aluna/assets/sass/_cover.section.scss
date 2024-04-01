@@ -2,8 +2,7 @@
 	position: fixed;
 	z-index: 1000;
 	transition: all 1s ease-out;
-	background-color: var(--color-main);
-	color: var(--color-light);
+	background-color: var(--color-primary);
 	overflow: hidden;
 	width: 100%;
 
@@ -11,39 +10,272 @@
 		transform: translateY(-100%);
 	}
 
-	.elements-wrapper-absolute {
-		&::after {
-			position: absolute;
+	.frame {
+		position: absolute;
+		left: 50%;
+		width: 110%;
+
+		&-top {
 			top: 0;
-			right: 0;
+			transform: translate(-50%, -15%);
+		}
+
+		&-bottom {
 			bottom: 0;
+			transform: translate(-50%, 15%) scaleY(-1);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 35%;
+		transform: translate(-55%, 0);
+
+		@include max-lg {
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-10%, -70%) scale(-1);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(-40%, -60%) scale(-1);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 15%;
+		width: 35%;
+		transform: translate(0, -68%);
+
+		@include max-lg {
 			left: 0;
-			background-color: rgba($color: #000000, $alpha: .3);
-			content: "";
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		left: 45%;
+		width: 35%;
+		transform: translate(0, -68%) scaleY(-1);
+
+		@include max-lg {
+			width: 45%;
+			transform: translate(0, -65%) scaleY(-1);
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(10%, -65%) scale(-1);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(40%, -55%) scale(-1);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(50%, -40%) scale(-1);
+
+		@include max-lg {
+			width: 45%;
+			transform: translate(60%, -30%) scale(-1);
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-10%, 65%);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(-40%, 60%);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-65%, 45%);
+
+		@include max-lg {
+			width: 45%;
+			transform: translate(-65%, 25%);
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 20%;
+		width: 35%;
+		transform: translate(0, 65%) scaleX(-1);
+
+		@include max-lg {
+			left: 5%;
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(45%, -5%) scale(-1);
+
+		@include max-lg {
+			width: 45%;
+			transform: translate(50%, -15%) scale(-1);
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(-10%, 68%);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(20%, 65%);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 15%;
+		width: 35%;
+		transform: translate(0, 65%) scale(-1);
+
+		@include max-lg {
+			right: 8%;
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 50%;
 		}
 	}
 
 	.cover-wrapper {
 		position: relative;
-		padding: 5rem 0 3rem;
-		transition: opacity 1s ease;
-		height: 100vh;
-
-		@include max-lg {
-			padding: 5rem 0 8rem;
-		}
 
 		.cover-content {
 			position: relative;
 			width: 100%;
-			height: 100%;
+			height: 100vh;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			padding: 5rem 0 3rem;
+
+			@include max-lg {
+				padding: 5rem 0 10rem;
+			}
 
 			.cover-body {
 				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				width: 35%;
+				min-height: 95%;
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				border-radius: 300px;
+				box-shadow: .5rem .5rem 1.5rem rgba($color: #000000, $alpha: .15);
+
+				@include max-xl {
+					width: 40%;
+				}
+
+				@include max-lg {
+					width: 60%;
+					min-height: 80%;
+				}
+
+				@include max-sm {
+					width: 100%;
+					min-height: 100%;
+				}
 
 				.cover-description {
+					position: relative;
 					padding: 1rem;
-					text-align: left;
+					text-align: center;
 
 					.cover-event {
 						position: relative;

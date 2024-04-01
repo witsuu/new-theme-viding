@@ -4,9 +4,9 @@
 	justify-content: center;
 	position: relative;
 	width: fit-content;
+	margin: 0 auto;
 	gap: 1.5rem;
 	z-index: 3;
-	color: var(--color-light);
 
 	.days,
 	.hours,
@@ -30,7 +30,7 @@
 		.angka {
 			margin-bottom: 0;
 			font-weight: 500;
-			font-size: 38px;
+			font-size: 34px;
 			font-family: $font-secondary;
 
 			@include max-md {

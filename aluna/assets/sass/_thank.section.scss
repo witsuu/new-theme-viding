@@ -1,38 +1,128 @@
 .thank-section {
 	position: relative;
-	padding: 3rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
 	text-align: center;
 
-	@include ipad {
-		padding: 5rem 0;
+	.pilar {
+		position: absolute;
+		bottom: 0;
+		height: 100%;
+
+		&-left {
+			left: 0;
+			transform: translate(-58%, 0);
+		}
+
+		&-right {
+			right: 0;
+			transform: translate(58%, 0);
+		}
+
+		.image-element {
+			width: auto;
+			height: 100%;
+
+			img {
+				width: auto;
+				height: 100%;
+			}
+		}
+	}
+
+	.frame {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -25%);
+
+		.image-element {
+			.img-fluid {
+				border-radius: 0;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 12rem;
+		left: 0;
+		width: 35%;
+		transform: translate(-50%, -50%) rotate(35deg) scaleX(-1);
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 25%;
+			width: 85%;
+			transform: translate(0%, -50%) rotate(15deg) scale(-1);
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(10%, 70%) rotate(-25deg) scale(-1);
+		}
+
+		.image-element {
+			img {
+				border-radius: 0 !important;
+			}
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 12rem;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, -50%) scale(-1);
+
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(0, 60%) rotate(-60deg) scale(-1);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(25%, -45%) rotate(-10deg);
+		}
+
+		.image-element {
+			img {
+				border-radius: 0 !important;
+			}
+		}
 	}
 
 	.image-wrapper {
-		position: absolute;
-		inset: 0;
-		overflow: hidden;
+		position: relative;
+		width: 100%;
+		@include aspect-ratio(1, 1);
+		margin-top: 5rem;
 
-		&::before {
-			position: absolute;
-			inset: 0;
-			background-color: rgba($color: #000000, $alpha: 0.4);
-			content: "";
-			z-index: 2;
-		}
-
-		.thank-background {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+		.image-element {
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 300px 300px 0 0;
+			}
 		}
 	}
 
 	.thank {
 		position: relative;
-
-		.title-section {
-			margin-bottom: 20rem;
-		}
+		padding: 3rem 2rem 5rem;
 	}
 }
 

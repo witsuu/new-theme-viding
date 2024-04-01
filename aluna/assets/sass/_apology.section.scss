@@ -1,29 +1,125 @@
 .apology-section {
 	position: relative;
+	background-color: var(--color-primary);
 	padding: 3rem 0;
 
 	@include ipad {
 		padding: 5rem 0;
 	}
 
-	.appology-wrap {
-		position: relative;
-		padding: 2rem 1rem;
-		color: var(--color-light);
+	.orn-1 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 33%;
+		transform: translate(0%, -65%) scale(-1);
 
-		@include ipad {
-			padding: 3rem 2rem;
-		}
-
-		&::before {
+		.orn-2 {
 			position: absolute;
 			top: 0;
-			right: 0;
-			bottom: 0;
+			left: 45%;
+			width: 110%;
+			transform: translate(0, -80%) scale(-1);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 32%;
 			left: 0;
-			background-color: var(--color-primary);
-			opacity: .6;
-			content: "";
+			width: 110%;
+			transform: translate(-45%, 0) scale(-1);
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 10%;
+		right: 0;
+		width: 33%;
+		transform: translate(0%, -65%) scaleY(-1);
+
+		.orn-5 {
+			position: absolute;
+			top: 30%;
+			left: 0;
+			quotes: 120%;
+			transform: translate(-70%, 5%);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 110%;
+			transform: translate(0, -40%) scaleX(-1);
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		width: 33%;
+		transform: translate(0%, 65%);
+
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			left: -60%;
+			width: 110%;
+			transform: translate(0, -55%);
+		}
+
+		.orn-9 {
+			position: absolute;
+			top: 32%;
+			left: 0;
+			width: 110%;
+			transform: translate(35%, 0) scaleY(-1);
+		}
+	}
+
+	.orn-10 {
+		position: absolute;
+		bottom: 10%;
+		right: 0;
+		width: 33%;
+		transform: translate(0%, 65%);
+
+		.orn-11 {
+			position: absolute;
+			top: 30%;
+			left: 0;
+			quotes: 120%;
+			transform: translate(-70%, 5%);
+		}
+
+		.orn-12 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 110%;
+			transform: translate(0, -40%) scaleX(-1);
+		}
+	}
+
+	.appology-wrap {
+		position: relative;
+		background-color: var(--color-main);
+		color: var(--color-dark);
+		border-radius: 300px;
+		padding: 8rem 2rem;
+		overflow: hidden;
+		min-height: 85vh;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		text-align: center;
+
+		@include ipad {
+			padding: 10rem 2rem;
+			min-height: 60vh;
 		}
 	}
 }

@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger,Flip)
+gsap.registerPlugin(ScrollTrigger, Flip)
 
 window.scrollTo(0, 0);
 
@@ -12,6 +12,7 @@ $("#btn-envelope").on("click", function () {
 	$(".cover-section").addClass("cover-opened")
 
 	runAnimationOrnament();
+	runAnimationLoop()
 
 	const coverTime = setTimeout(() => {
 		$(".cover-section").hide()
@@ -47,6 +48,7 @@ const giftWrap = document.querySelector(".egift-section");
 if (giftWrap) {
 	const tabsWrap = giftWrap.querySelector(".tabs-gift");
 	const tab = tabsWrap.querySelectorAll(".tab");
+	const glider = tabsWrap.querySelector(".glider");
 	tab.forEach((el) => {
 		el.classList.forEach((c) => {
 			if (c === "active") {
@@ -59,6 +61,8 @@ if (giftWrap) {
 		});
 
 		el.addEventListener("click", (e) => {
+			const flipState = Flip.getState(glider)
+
 			if (tabsWrap.querySelector(".active")) {
 				tabsWrap.querySelector(".active").classList.remove("active");
 				giftWrap.querySelectorAll(".show").forEach((se) => {
@@ -67,9 +71,12 @@ if (giftWrap) {
 			}
 
 			el.classList.add("active");
+			el.appendChild(glider)
 			giftWrap.querySelectorAll(el.dataset.tab).forEach((tb) => {
 				tb.classList.add("show");
 			});
+
+			Flip.from(flipState, { duration: .25, ease: "power1.inOut" })
 
 			ScrollTrigger.refresh();
 		});

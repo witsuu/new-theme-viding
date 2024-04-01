@@ -1,31 +1,159 @@
 .header-section {
 	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
 
-	.scroll-icon{
+	.scroll-icon {
 		margin-bottom: 1rem;
+	}
+
+	.ornaments-wrapper {
+		overflow: hidden;
+
+		.frame {
+			position: absolute;
+			left: 50%;
+			width: 100%;
+
+			&-top {
+				top: 0;
+				transform: translate(-50%, -20%);
+			}
+
+			&-bottom {
+				bottom: 0;
+				transform: translate(-50%, 20%) scale(-1);
+			}
+		}
+
+		.pilar {
+			position: absolute;
+			top: 50%;
+			height: 55%;
+
+			&-left {
+				left: 0;
+				transform: translate(-50%, -50%);
+			}
+
+			&-right {
+				right: 0;
+				transform: translate(50%, -50%);
+			}
+
+			.image-element {
+				width: auto;
+				height: 100%;
+
+				.img-fluid {
+					width: auto;
+					height: 100%;
+				}
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(0, -80%);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 120%;
+			transform: translate(10%, -45%);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 120%;
+			transform: translate(0, -50%);
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 110%;
+			transform: translate(0, 45%) scaleY(-1);
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 120%;
+			transform: translate(-15%, -55%) rotate(-50deg);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(0, -30%) scale(-1);
+		}
+
+		.orn-7 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 110%;
+			transform: translate(0%, -50%) rotate(-20deg);
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			transform: translate(-5%, 20%) scale(-1);
+		}
 	}
 
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 5rem 2rem 3rem;
-		height: 100vh;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex-direction: column;
+		padding: 5rem 3rem 3rem;
+		min-height: 88vh;
+
+		@include ipad {
+			min-height: 100vh;
+		}
 
 		.header {
 			position: relative;
 			width: 100%;
-			height: 100%;
-			text-align: left;
+			text-align: center;
+
+			@include ipad {
+				width: 60%;
+				margin: 0 auto;
+			}
 
 			.header-title {
 				position: relative;
 
-				&-content {
-					color: var(--color-light);
+				.image-wrapper {
+					position: relative;
+					width: 90%;
+					margin: 1.5rem auto;
+					@include aspect-ratio(5, 6);
+
+					.image-element {
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							border-radius: 300px;
+						}
+					}
 				}
 			}
 		}

@@ -1,11 +1,41 @@
 .reminder-wrap {
 	position: relative;
 	width: 100%;
+	margin-bottom: 3rem;
 
 	.reminder-content {
 		position: relative;
 		width: 100%;
-		text-align: left;
+		text-align: center;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: 300px 300px 20px 20px;
+		padding: 0 0 2rem;
+
+		.image-wrapper {
+			position: relative;
+			width: 100%;
+			@include aspect-ratio(1, 1);
+
+			.image-element {
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 300px 300px 5px 5px;
+				}
+			}
+
+			.overlay-elements-gradient {
+				top: unset;
+				bottom: -1px;
+
+				&.overlay-bottom {
+					height: 20%;
+					background: linear-gradient(to top, var(--color-primary) 5%, transparent 100%);
+				}
+			}
+		}
 	}
 
 	.btn-reminder {
@@ -17,7 +47,7 @@
 		gap: 0.5rem;
 		transition: all 0.2s ease-in-out;
 		text-decoration: none;
-		margin: 1.5rem 0 0;
+		margin: 1.5rem auto 0;
 
 		path {
 			fill: var(--text-button);

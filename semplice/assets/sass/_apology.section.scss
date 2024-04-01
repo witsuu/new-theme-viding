@@ -1,9 +1,13 @@
 .apology-section {
 	position: relative;
 	padding: 5rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
 	@include max-md {
 		padding: 3rem 0;
 	}
+
 	.appology-wrap {
 		position: relative;
 	}

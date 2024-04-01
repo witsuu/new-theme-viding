@@ -1,6 +1,7 @@
 .couple-section {
 	position: relative;
 	text-align: center;
+
 	.and {
 		@include min-md {
 			position: absolute;
@@ -8,44 +9,65 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+
 		font-weight: 600;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		position: relative;
-		margin-bottom: 1rem;
+		padding: 2rem 0 1rem;
 		z-index: 3;
+
 		span {
 			position: relative;
 			font-size: 36px;
 			font-family: $font-secondary;
 		}
 	}
+
 	.couple-wrapper {
 		position: relative;
-		padding: 5rem 0;
+		padding: 5rem 0 0;
+
 		@include max-md {
-			padding: 5rem 0 3rem;
+			padding: 3rem 0 0;
 		}
 	}
+
 	.couple-body {
 		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		padding: 5rem 0;
+
+		@include max-sm {
+			padding: 3rem 0;
+		}
 	}
+
 	.couple-content {
 		position: relative;
 		margin-bottom: 3rem;
+		text-align: left;
+
+		.title-section {
+			text-align: left;
+		}
 	}
+
 	.couple {
 		position: relative;
-		text-align: center;
+
 		.image-wrap {
 			width: 100%;
 			position: relative;
-			aspect-ratio: 3/4;
+			@include aspect-ratio(4, 6);
 			margin: 0 auto;
+
 			.image-element {
 				height: 100%;
+
 				.couple-image {
 					height: 100%;
 					object-fit: cover;
@@ -53,40 +75,56 @@
 				}
 			}
 		}
+
 		.couple-description {
 			position: relative;
-			padding: 1rem;
-		}
-		.couple-parent {
-			width: 100%;
-		}
-		.sosmed-wrap {
-			position: relative;
-			width: fit-content;
-			max-width: 100%;
-			background: var(--color-secondary);
-			padding: 0.5rem 0.6rem;
-			border-radius: 50px;
-			margin: 0 auto;
-			.sosmed {
-				color: var(--text-button);
-				text-decoration: none;
-				display: block;
+			padding: 1rem 0 2rem;
+			text-align: left;
+
+			p {
+				margin-bottom: 0;
+			}
+
+			.couple-parent {
+				width: 100%;
+			}
+
+			.sosmed-wrap {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				transform: translate(0, 50%);
 				width: fit-content;
-				margin: 0 auto;
-				small {
-					align-items: center;
-					gap: 0.25rem;
-					display: flex;
-					justify-content: center;
+				max-width: 100%;
+				background: var(--color-secondary);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				z-index: 3;
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
 				}
-			}
-			.fab {
-				font-size: 18px;
-				@include max-md {
-					font-size: 16px;
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
 				}
 			}
 		}
+
 	}
 }

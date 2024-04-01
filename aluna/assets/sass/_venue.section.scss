@@ -1,12 +1,91 @@
 .venue-section {
 	position: relative;
 	padding: 3rem 0;
-	background-color: var(--color-primary);
-	color: var(--color-light);
 
 	@include ipad {
 		padding: 5rem 0;
 	}
+
+	.frame {
+		position: absolute;
+		left: 50%;
+		width: 110%;
+
+		&-top {
+			top: 0;
+			transform: translate(-50%, -25%);
+		}
+
+		&-bottom {
+			bottom: 0;
+			transform: translate(-50%, 25%) scaleY(-1);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 8rem;
+		left: 0;
+		width: 25%;
+		transform: translate(-40%, 0) rotate(-20deg);
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 110%;
+			transform: translate(35%, -60%) rotate(20deg) scaleY(-1);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 10rem;
+		right: 0;
+		width: 30%;
+		transform: translate(40%, 0) rotate(-30deg);
+
+		.orn-4 {
+			position: absolute;
+			top: 0;
+			left: 40%;
+			width: 80%;
+			transform: translate(0, -65%);
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 5rem;
+		left: 0;
+		width: 30%;
+		transform: translate(-60%, 0) rotate(-20deg) scaleY(-1);
+
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(40%, 65%) rotate(10deg) scaleY(-1);
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 6rem;
+		right: 0;
+		width: 25%;
+		transform: translate(50%, 0) rotate(-25deg);
+
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(30%, -65%) rotate(30deg) scaleX(-1);
+		}
+	}
+
 
 	.venue-wrapper {
 		position: relative;
@@ -19,16 +98,6 @@
 
 		.venue-content {
 			position: relative;
-
-			.container {
-				@include max-sm {
-					padding: 0;
-				}
-
-				@include min-lg {
-					padding: 0;
-				}
-			}
 
 			.ribbon-venue {
 				position: relative;
@@ -58,11 +127,19 @@
 			}
 
 			.card {
-				background-color: transparent;
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				text-align: center;
 				border: none;
+				border-radius: 300px;
+				margin: 4rem 0;
 
 				.card-body {
-					padding: 0;
+					padding: 8rem 1.5rem;
+
+					@include ipad {
+						padding: 8rem 2rem;
+					}
 
 					h4 {
 						padding: 0 0 1rem;
@@ -71,32 +148,20 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 2rem 1.8rem;
-						@include ipad {
-							padding: 2rem 1rem;
-						}
+						font-weight: 700;
+						margin-bottom: 1rem;
 
 						.date {
 							position: relative;
 							width: 100%;
-							display: flex;
-							justify-content: start;
-							align-items: flex-end;
-							gap: 0.5rem;
+							padding: .75rem 0;
 
 							h5 {
 								line-height: 1;
 								font-family: $font-secondary;
 								margin-bottom: 0;
-								font-size: 48px;
-							}
-
-							.line {
-								--color-button-trans: #fff;
-								width: 45px;
-								height: 1px;
-								background-color: var(--color-button-trans);
-								margin-bottom: 0.75rem;
+								font-size: 32px;
+								font-weight: 600;
 							}
 						}
 
@@ -112,7 +177,7 @@
 
 					.event-description {
 						position: relative;
-						margin-bottom: 1rem;
+						padding: 1rem 0;
 
 						p {
 							margin-bottom: 0;
@@ -121,37 +186,14 @@
 
 					.event-place {
 						position: relative;
-						color: var(--color-dark);
-
-						&::before {
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: calc(100% - 1.8rem);
-							height: 100%;
-							background-color: var(--color-main);
-							content: "";
-							@include ipad {
-								width: calc(100% - 1rem);
-							}
-						}
+						padding-top: 1rem;
 
 						&-body {
 							position: relative;
-							padding: 2rem 2rem 2rem 1.8rem;
-							@include ipad {
-								padding: 2rem 1rem;
-							}
 
 							.widget-elements {
-								position: absolute;
-								bottom: 0;
-								left: 2rem;
-								width: 100%;
-								transform: translateY(50%);
-								@include ipad {
-									left: 1rem;
-								}
+								position: relative;
+								margin-top: 1rem;
 							}
 						}
 					}

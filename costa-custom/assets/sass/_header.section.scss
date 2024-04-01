@@ -1,6 +1,7 @@
 .header-section {
 	position: relative;
 	width: 100%;
+	background-color: var(--color-main);
 	.scroll-icon {
 		position: relative;
 		margin-top: 2rem;
@@ -22,6 +23,95 @@
 		left: 50%;
 		width: 110%;
 		transform: translate(-50%, -50%);
+	}
+	.awan{
+		position: absolute;
+		mix-blend-mode: multiply;
+		&-1{
+			top: 8%;
+			left: 25%;
+			width: 15%;
+			@include max-lg{
+				top: 3%;
+				left: 25%;
+				width: 30%;
+			}
+			@include max-sm{
+				left: 15%;
+				width: 40%;
+			}
+			.img-fluid{
+				transform: scaleX(-1);
+			}
+		}
+		&-2{
+			top: 5%;
+			left: 70%;
+			width: 15%;
+			@include max-lg{
+				top: 10%;
+				left: 60%;
+				width: 30%;
+			}
+			@include max-sm{
+				width: 40%;
+			}
+		}
+		&-3{
+			top: 20%;
+			left: 15%;
+			width: 18%;
+			@include max-lg{
+				top: 10%;
+				left: 5%;
+				width: 35%;
+			}
+			@include max-sm{
+				left: 0;
+				width: 45%;
+			}
+		}
+		&-4{
+			top: 35%;
+			left: 35%;
+			width: 12%;
+			@include max-lg{
+				display: none;
+			}
+			@include max-sm{
+				width: 35%;
+			}
+		}
+		&-5{
+			top:45%;
+			left: 58%;
+			width: 10%;
+			@include max-lg{
+				display: none;
+			}
+			@include max-sm{
+				width: 30%;
+			}
+			.img-fluid{
+				transform: scaleX(-1);
+			}
+		}
+		&-6{
+			top: 20%;
+			left: 65%;
+			width: 13%;
+			@include max-lg{
+				top: 22%;
+				left: 50%;
+				width: 28%;
+			}
+			@include max-sm{
+				width: 38%;
+			}
+			.img-fluid{
+				transform: scaleX(-1);
+			}
+		}
 	}
 	.bg-1 {
 		position: absolute;

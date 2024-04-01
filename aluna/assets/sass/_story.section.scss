@@ -1,39 +1,77 @@
 .story-section {
 	position: relative;
-	padding: 20rem 0 3rem;
+	padding: 3rem 0;
 
 	@include ipad {
-		padding: 20rem 0 5rem;
+		padding: 5rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-20%, -30%);
+
+		@include max-lg {
+			width: 30%;
+			transform: translate(-20%, -50%);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 50%;
+		right: 20%;
+		width: 110%;
+		transform: translate(0, 0);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(45%, -10%) scale(-1);
+
+		@include max-lg {
+			width: 35%;
+		}
+	}
+
+	.story-content {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: 300px 300px 20px 20px;
 	}
 
 	.story-description {
 		position: relative;
-		text-align: left;
-		padding: 0 1rem;
-
-		.title-section {
-			text-align: left;
-		}
+		text-align: center;
+		padding: 3rem 1.8rem;
 	}
 
 	.image-wrapper {
 		position: relative;
 		width: 100%;
-		aspect-ratio: 1;
-		overflow: hidden;
+		@include aspect-ratio(1, 1);
 
-		@include max-xl {
-			aspect-ratio: 16/9;
-		}
-
-		@include max-md {
-			aspect-ratio: 3/4;
-		}
-
-		.story-background {
+		img {
 			width: 100%;
 			height: 100%;
 			object-fit: cover;
+			border-radius: 300px 300px 0 0;
+		}
+
+		.overlay-elements-gradient {
+			top: unset;
+			bottom: -1px;
+
+			&.overlay-bottom {
+				height: 20%;
+				background: linear-gradient(to top, var(--color-primary) 5%, transparent 100%);
+			}
 		}
 	}
 }

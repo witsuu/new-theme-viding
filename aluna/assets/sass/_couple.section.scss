@@ -1,26 +1,165 @@
 .couple-section {
 	position: relative;
-	padding: 3rem 0 0;
-	background-color: var(--color-primary);
-	color: var(--color-light);
+	padding: 3rem 0;
 
 	@include ipad {
-		padding: 5rem 0 0;
+		padding: 5rem 0;
+	}
+
+	.frame {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50%, 24%) scaleY(-1);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 33%;
+		transform: translate(-10%, -65%) scale(-1);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(-40%, -65%) scale(-1);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 35%;
+			width: 110%;
+			transform: translate(0, -80%) scale(-1);
+
+			@include max-lg {
+				left: 20%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(-45%, 0) scale(-1);
+
+			@include max-lg {
+				transform: translate(-40%, 10%) scale(-1);
+			}
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 33%;
+		transform: translate(10%, -65%) scaleY(-1);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(30%, -65%) scaleY(-1);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(-85%, 5%);
+
+			@include max-lg {
+				transform: translate(-60%, 5%);
+			}
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 40%;
+			width: 110%;
+			transform: translate(0, -40%) scaleX(-1);
+
+			@include max-lg {
+				left: 30%;
+			}
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		top: 70%;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%, -50%) rotate(35deg) scaleX(-1);
+
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			left: 55%;
+			width: 85%;
+			transform: translate(0%, -50%) rotate(35deg) scale(-1);
+		}
+
+		.orn-9 {
+			position: absolute;
+			bottom: 0;
+			right: 5%;
+			width: 80%;
+			transform: translate(0, 70%) rotate(-25deg) scale(-1);
+		}
+	}
+
+	.orn-10 {
+		position: absolute;
+		top: 70%;
+		right: 0;
+		width: 35%;
+		transform: translate(50%, -50%) scale(-1);
+
+		.orn-11 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(0, 60%) rotate(-30deg) scale(-1);
+		}
+
+		.orn-12 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(30%, -70%) rotate(-10deg);
+		}
 	}
 
 	.and {
 		@include ipad {
 			position: absolute;
-			top: 50%;
+			top: 40%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		position: relative;
+		padding: 1.5rem 0;
 		z-index: 3;
+
 		span {
 			position: relative;
 			font-size: 28px;
@@ -31,32 +170,10 @@
 	.couple-wrapper {
 		position: relative;
 
-		.container {
-			@include min-lg {
-				padding: 0;
-			}
-
-			@include max-sm {
-				padding: 0;
-			}
-		}
-
 		.couple-content {
 			position: relative;
-			text-align: left;
-			margin-bottom: 3rem;
-
-			@include min-lg {
-				padding: 0 1.8rem;
-			}
-
-			@include max-sm {
-				padding: 0 1.8rem;
-			}
-
-			.title-section {
-				text-align: left;
-			}
+			text-align: center;
+			margin-bottom: 5rem;
 
 			p {
 				margin-bottom: 0;
@@ -69,50 +186,26 @@
 
 		.image-wrap {
 			position: relative;
-			width: 100%;
-			margin: auto;
-			aspect-ratio: 4/6;
+			width: 85%;
+			margin: 0 auto 5rem;
+			@include aspect-ratio(5, 6);
 
 			.image-element {
 				height: 100%;
 
-				&::after {
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					background-color: rgba($color: #000000, $alpha: 0.3);
-					content: "";
-				}
-
 				.couple-image {
-					position: relative;
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					border-radius: 300px;
 				}
 			}
 		}
 
 		.couple-description {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: calc(100% - 1rem);
-			padding: 2rem 1.5rem;
-			text-align: left;
-
-			&::before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: var(--color-primary);
-				opacity: 0.6;
-				content: "";
-			}
+			position: relative;
+			padding: 0 1rem 1.5rem;
+			text-align: center;
 
 			h3 {
 				position: relative;
@@ -121,7 +214,6 @@
 			.couple-parent {
 				position: relative;
 				width: 100%;
-				margin-bottom: 0.5rem;
 
 				p {
 					margin-bottom: 0;
@@ -130,15 +222,19 @@
 
 			.sosmed-wrap {
 				--color-button-trans: #fff;
-				position: relative;
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translate(-50%, 50%);
 				width: fit-content;
 				max-width: 100%;
-				border: 1px solid var(--color-button-trans);
+				background-color: var(--color-secondary);
 				padding: 0.5rem 0.6rem;
 				border-radius: 50px;
+				z-index: 3;
 
 				.sosmed {
-					color: var(--color-button-trans);
+					color: var(--text-button);
 					text-decoration: none;
 					display: block;
 					width: fit-content;
@@ -162,48 +258,23 @@
 			}
 		}
 
-		.title-couple {
-			position: absolute;
-			top: -1.5rem;
-			left: 0;
-			width: 100%;
-			text-align: center;
-			@include ipad {
-				top: 0;
-			}
-
-			span {
-				font-size: 90px;
-				font-family: $font-secondary;
-				@include max-lg {
-					font-size: 60px;
-				}
+		&.single {
+			.sosmed-wrap {
+				position: relative;
+				bottom: unset;
+				left: unset;
+				transform: none;
+				margin: .5rem auto 0;
 			}
 		}
-		&.single {
-			padding-bottom: 2rem;
-			.title-couple {
-				top: -1rem;
-				@include ipad {
-					text-align: left;
-				}
-				span {
-					font-size: 60px;
-					@include max-sm {
-						font-size: 48px;
-					}
-				}
-			}
-			.image-wrap {
-				margin-bottom: 1rem;
-				aspect-ratio: 3/4;
-				@include ipad {
-					aspect-ratio: 6/4;
-				}
-			}
-			.couple-description {
+
+		&.no-image {
+			.sosmed-wrap {
 				position: relative;
-				padding: 1rem;
+				bottom: unset;
+				left: unset;
+				transform: none;
+				margin: .5rem auto 0;
 			}
 		}
 	}
