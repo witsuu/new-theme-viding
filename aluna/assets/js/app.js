@@ -187,6 +187,7 @@ mapModal.forEach(modal => {
 
 		getLoadedIframe(iframe).then(() => {
 			loader.classList.add("loaded")
+			iframe.classList.add("loaded")
 		}).catch(err => {
 			console.log(err)
 		})
@@ -197,6 +198,7 @@ mapModal.forEach(modal => {
 		const loader = e.target.querySelector(".loader-wrapper-modal")
 		iframe.src = "";
 		loader.classList.remove("loaded");
+		iframe.classList.remove("loaded");
 	})
 })
 
