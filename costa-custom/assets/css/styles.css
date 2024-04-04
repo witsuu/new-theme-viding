@@ -1193,7 +1193,7 @@ img[alt=tree-2] {
   width: -moz-fit-content;
   width: fit-content;
   gap: 0.5rem;
-  color: var(--color-light);
+  color: var(--color-dark);
   padding: 3rem 1rem;
 }
 @media (max-width: 767px) {
@@ -2676,13 +2676,39 @@ img[alt=tree-2] {
     transform: translate(35%, -55%) rotate(-23deg);
   }
 }
-.venue-section .ornaments-wrapper .rumah {
+.venue-section .ornaments-wrapper .bg-1 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background-position: 50% 50%;
+  transform: translate(-50%, 0);
+  opacity: 0.6;
+}
+.venue-section .ornaments-wrapper .bg-1 .rumah {
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 100%;
   transform: translate(-50%, 0.5rem);
-  opacity: 0.8;
+}
+.venue-section .ornaments-wrapper .awan {
+  position: absolute;
+  mix-blend-mode: multiply;
+}
+.venue-section .ornaments-wrapper .awan-1 {
+  top: 20%;
+  left: 5%;
+  width: 35%;
+}
+.venue-section .ornaments-wrapper .awan-1 .img-fluid {
+  transform: scaleX(-1);
+}
+.venue-section .ornaments-wrapper .awan-2 {
+  top: 15%;
+  left: 70%;
+  width: 35%;
 }
 .venue-section .venue-wrapper {
   position: relative;
@@ -2740,8 +2766,10 @@ img[alt=tree-2] {
   padding: 0;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
+  position: relative;
   font-family: "Prata", serif;
   padding: 1rem 0;
+  z-index: 3;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
   position: relative;
@@ -2868,10 +2896,12 @@ img[alt=tree-2] {
   min-width: 30%;
 }
 .venue-section .event-name .line {
+  position: relative;
   width: 2px;
   height: 40px;
   background-color: var(--color-button-trans);
   margin: 0.5rem auto;
+  z-index: 3;
 }
 .venue-section .event-name h4 {
   font-family: "Prata", serif;

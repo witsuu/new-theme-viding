@@ -157,7 +157,7 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		padding: 1.5rem 0;
+		padding: 1rem 0;
 		z-index: 3;
 
 		span {
@@ -260,12 +260,15 @@
 		}
 
 		&.single {
-			.sosmed-wrap {
-				position: relative;
-				bottom: unset;
-				left: unset;
-				transform: none;
-				margin: .5rem auto 0;
+			.couple-description{
+				padding: 1rem;
+				.sosmed-wrap {
+					position: relative;
+					bottom: unset;
+					left: unset;
+					transform: none;
+					margin: .5rem auto 0;
+				}
 			}
 		}
 

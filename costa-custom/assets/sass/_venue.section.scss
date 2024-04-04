@@ -1,132 +1,190 @@
 .venue-section {
 	position: relative;
 	padding: 5rem 0;
+
 	@include max-md {
 		padding: 3rem 0;
 	}
+
 	.ornaments-wrapper {
 		z-index: 3;
+
 		.orn-1 {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 120px;
 			transform: translate(-50%, -20%);
+
 			@include min-md {
 				width: 1px;
 			}
+
 			@include min-lg {
 				width: 200px;
 			}
 		}
+
 		.orn-2 {
 			position: absolute;
 			top: 0;
 			right: 0;
 			width: 120px;
 			transform: translate(50%, -20%) rotate(-35deg);
+
 			@include min-md {
 				width: 160px;
 			}
+
 			@include min-lg {
 				width: 200px;
 			}
 		}
+
 		.orn-3 {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			width: 320px;
 			transform: translate(-75%, 0) rotate(12deg) scaleX(-1);
+
 			@include min-md {
 				width: 340px;
 			}
+
 			@include min-lg {
 				width: 360px;
 			}
+
 			.orn-4 {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 120px;
 				transform: translate(43%, -55%) rotate(-23deg);
+
 				@include min-md {
 					width: 140px;
 				}
+
 				@include min-lg {
 					width: 160px;
 					transform: translate(35%, -55%) rotate(-23deg);
 				}
 			}
 		}
+
 		.orn-5 {
 			position: absolute;
 			bottom: 0;
 			right: 0;
 			width: 320px;
 			transform: translate(75%, 0) rotate(-12deg);
+
 			@include min-md {
 				width: 340px;
 			}
+
 			@include min-lg {
 				width: 360px;
 			}
+
 			.orn-6 {
 				position: absolute;
 				top: 0;
 				left: 0;
 				width: 120px;
 				transform: translate(43%, -55%) rotate(-23deg);
+
 				@include min-md {
 					width: 140px;
 				}
+
 				@include min-lg {
 					width: 160px;
 					transform: translate(35%, -55%) rotate(-23deg);
 				}
 			}
 		}
-		.rumah {
+
+		.bg-1 {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
 			width: 100%;
-			transform: translate(-50%, 0.5rem);
-			opacity: 0.8;
+			height: 100%;
+			background-position: 50% 50%;
+			transform: translate(-50%, 0);
+			opacity: 0.6;
+			.rumah {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: 100%;
+				transform: translate(-50%, 0.5rem);
+			}
+		}
+
+		.awan{
+			position: absolute;
+			mix-blend-mode: multiply;
+			&-1{
+				top: 20%;
+				left: 5%;
+				width: 35%;
+				.img-fluid{
+					transform: scaleX(-1);
+				}
+			}
+			&-2{
+				top: 15%;
+				left: 70%;
+				width: 35%;
+			}
 		}
 	}
+
 	.venue-wrapper {
 		position: relative;
 		z-index: 3;
+
 		@include max-md {
 			.container {
 				padding: 0;
 			}
 		}
+
 		.venue-description {
 			position: relative;
 			margin: 0 auto 5rem;
 			z-index: 2;
 			text-align: center;
+
 			@include max-lg {
 				margin-bottom: 3rem;
 			}
 		}
+
 		.venue-content {
 			position: relative;
+
 			.ribbon-venue {
 				position: relative;
 				padding-top: 1rem;
+
 				svg {
 					width: 40px;
 					height: auto;
+
 					path {
 						stroke: var(--color-dark);
 					}
 				}
+
 				.st0 {
 					fill: var(--color-secondary);
 				}
+
 				.st1 {
 					fill: none;
 					stroke: var(--color-secondary);
@@ -136,29 +194,38 @@
 					transform-origin: 50% 75%;
 				}
 			}
+
 			.card {
 				background-color: transparent;
 				text-align: center;
 				overflow: hidden;
 				border: none;
+
 				.card-body {
 					position: relative;
 					padding: 0;
+
 					h4 {
+						position: relative;
 						font-family: $font-secondary;
 						padding: 1rem 0;
+						z-index: 3;
 					}
+
 					.event-description {
 						position: relative;
 						padding: 0 0 1rem;
+
 						p {
 							margin-bottom: 0;
 						}
 					}
+
 					.event-place {
 						position: relative;
 						padding: 0 3rem;
 						z-index: 5;
+
 						h4 {
 							font-family: $font-primary;
 						}
@@ -167,24 +234,29 @@
 			}
 		}
 	}
+
 	.prokes-wrapper {
 		margin: 3rem 0 0;
 		position: relative;
 		padding: 2rem;
 		text-align: center;
 		z-index: 2;
+
 		.title-section {
 			&::before {
 				all: unset;
 			}
 		}
+
 		@include max-md {
 			padding: 2rem 0;
 		}
+
 		* {
 			position: relative;
 		}
 	}
+
 	.prokes-wrap {
 		display: flex;
 		gap: 0.75rem;
@@ -192,23 +264,28 @@
 		align-items: flex-start;
 		flex-wrap: wrap;
 		text-align: center;
+
 		.prokes {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: flex-start;
 			width: 132px;
+
 			@include max-md {
 				width: 120px;
 			}
+
 			@include max-xs {
 				width: 45%;
 			}
 		}
 	}
+
 	.row-venue {
 		row-gap: 3rem;
 	}
+
 	.event-name {
 		position: relative;
 		width: 100%;
@@ -217,36 +294,44 @@
 		padding: 3rem 1rem;
 		border-radius: 100px;
 		margin: 4rem 0 5rem;
+
 		.ornaments-wrapper {
 			z-index: unset;
 			border-radius: 100px;
 		}
+
 		.frame-top {
 			position: absolute;
 			top: 0;
 			left: 50%;
 			width: 110%;
 			transform: translate(-50%, -35%);
+
 			@include max-lg {
 				transform: translate(-50%, -30%);
 			}
+
 			@include max-md {
 				transform: translate(-50%, -35%);
 			}
 		}
+
 		.frame-bottom {
 			position: absolute;
 			bottom: 0;
 			left: 50%;
 			width: 110%;
 			transform: translate(-50%, 35%) scaleY(-1);
+
 			@include max-lg {
 				transform: translate(-50%, 30%) scaleY(-1);
 			}
+
 			@include max-md {
 				transform: translate(-50%, 35%) scaleY(-1);
 			}
 		}
+
 		.date {
 			position: relative;
 			width: 100%;
@@ -255,6 +340,7 @@
 			justify-content: center;
 			align-items: center;
 			padding: 1rem 0;
+
 			h5 {
 				font-family: $font-secondary;
 				font-weight: 700;
@@ -263,31 +349,39 @@
 				min-width: 30%;
 			}
 		}
+
 		.line {
+			position: relative;
 			width: 2px;
 			height: 40px;
 			background-color: var(--color-button-trans);
 			margin: 0.5rem auto;
+			z-index: 3;
 		}
+
 		h4 {
 			font-family: $font-secondary;
 		}
+
 		p,
 		span {
 			margin-bottom: 0;
 			position: relative;
 		}
 	}
+
 	.animation-loop {
 		.st1 {
 			will-change: transform;
 			animation: zoomInRing 2000ms ease-out infinite;
 		}
+
 		.dot {
 			will-change: transform;
 			animation: fadeBoing 2000ms ease-out infinite;
 			transform-origin: 50% 75%;
 		}
+
 		#Layer_3 {
 			will-change: transform;
 			animation: boing 1000ms ease-out infinite alternate;
@@ -299,13 +393,16 @@
 			opacity: 0;
 			transform: scale3d(0.5, 0.5, 0.5);
 		}
+
 		40% {
 			opacity: 1;
 		}
+
 		70% {
 			opacity: 0;
 			transform: scale3d(1.25, 1.25, 1.25);
 		}
+
 		100% {
 			opacity: 0;
 		}
@@ -315,6 +412,7 @@
 		0% {
 			transform: translate3d(0, 0, 0);
 		}
+
 		100% {
 			transform: translate3d(0, -5rem, 0);
 		}
@@ -324,10 +422,12 @@
 		0% {
 			opacity: 1;
 		}
+
 		50% {
 			transform: scale3d(0.25, 0.25, 0.25);
 			opacity: 0;
 		}
+
 		100% {
 			transform: scale3d(1, 1, 1);
 			opacity: 1;

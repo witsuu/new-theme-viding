@@ -125,6 +125,51 @@
 				}
 			}
 		}
+		&.single{
+			.and{
+				padding: 1rem
+			}
+			.image-wrap{
+				@include min-md{
+					@include aspect-ratio(16,9);
+				}
+			}
+			.couple-description{
+				text-align: center;
+				@include max-sm{
+					padding: .5rem 1rem;
+				}
+				.sosmed-wrap{
+					right: unset;
+					left: 50%;
+					transform: translate(-50%,50%);
+					@include max-sm{
+						position: relative;
+						bottom: unset;
+						right: unset;
+						left: unset;
+						transform: none;
+						margin: .5rem auto 0;
+					}
+				}
+			}
+		}
+		&.no-image{
+			.and{
+				padding: 1rem 0;
+			}
+			.couple-description{
+				text-align: center;
+				padding: .5rem 1rem;
+			}
+			.sosmed-wrap{
+				position: relative;
+				bottom: unset;
+				right: unset;
+				transform: none;
+				margin: .5rem auto 0;
+			}
+		}
 
 	}
 }
