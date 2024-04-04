@@ -26,6 +26,7 @@
 
 			.ribbon-venue {
 				position: relative;
+				margin-bottom: 1rem;
 
 				svg {
 					width: 40px;
@@ -52,15 +53,12 @@
 
 			.card {
 				background-color: transparent;
+				text-align: center;
 				border: none;
 
 				.card-body {
 					position: relative;
-					padding: 3rem 2rem;
-
-					@include max-md {
-						padding: 2rem 1rem;
-					}
+					padding: 0;
 
 					h4 {
 						padding: 0 0 1rem;
@@ -75,7 +73,7 @@
 
 					.event-description {
 						position: relative;
-						margin-bottom: 1rem;
+						margin-bottom: 2rem;
 
 						p {
 							margin-bottom: 0;
@@ -85,6 +83,7 @@
 					.event-name {
 						position: relative;
 						width: 100%;
+						padding: 5rem 2rem 3rem;
 
 						.date {
 							position: relative;
@@ -99,7 +98,7 @@
 								font-weight: 700;
 								margin-bottom: 0;
 								font-size: 36px;
-								min-width: 30%;
+								padding: .5rem 0;
 							}
 						}
 
@@ -115,6 +114,22 @@
 
 					.event-place {
 						position: relative;
+
+						&-body {
+							position: relative;
+							background-color: var(--color-primary);
+							color: var(--color-light);
+							mask: var(--mask);
+							padding: 4rem 1rem 2.25rem;
+						}
+
+						.widget-elements {
+							position: absolute;
+							bottom: 0;
+							left: 50%;
+							width: 100%;
+							transform: translate(-50%, 50%);
+						}
 					}
 				}
 			}

@@ -1,17 +1,24 @@
 .reminder-wrap {
 	position: relative;
 	display: block;
-	padding: 5rem 0 0;
+	padding: 0 0 5rem;
+
 	@include max-md {
-		padding: 3rem 0 0;
+		padding: 0 0 3rem;
 	}
+
 	.reminder-content {
 		position: relative;
 		width: fit-content;
 		max-width: 100%;
 		margin: 0 auto;
 		z-index: 2;
+
+		@include max-sm {
+			width: 100%;
+		}
 	}
+
 	.btn-reminder {
 		z-index: 3;
 		position: relative;
@@ -23,6 +30,7 @@
 		transition: all 0.2s ease-in-out;
 		text-decoration: none;
 		margin-top: 1.5rem;
+
 		path {
 			fill: var(--text-button);
 			transition: all 0.3s ease-in-out;
