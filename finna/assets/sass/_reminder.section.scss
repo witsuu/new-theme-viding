@@ -1,0 +1,43 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 0 0 5rem;
+
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+
+	.reminder-content {
+		position: relative;
+		width: fit-content;
+		min-width: 65%;
+		max-width: 100%;
+		margin: 0 auto;
+		z-index: 2;
+		box-shadow: var(--shadow);
+		border-radius: 300px 300px 20px 20px;
+		padding: 8rem 3rem 3rem;
+
+		@include max-sm {
+			width: 100%;
+		}
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

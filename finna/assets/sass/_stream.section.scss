@@ -1,0 +1,63 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+		padding: 3rem 1rem;
+
+		@include max-sm {
+			padding: 2rem 1rem;
+		}
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 1px;
+				background-color: var(--color-main);
+				color: var(--color-dark);
+				border-radius: 0 var(--border-radius) 0 0;
+				margin-bottom: -20px;
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	iframe {
+		border-radius: var(--border-radius);
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+		padding: 3rem 2rem;
+
+		@include max-sm {
+			padding: 3rem 1.5rem 2rem;
+		}
+	}
+}
