@@ -7,6 +7,71 @@
 		bottom: 4rem;
 		left: 50%;
 		transform: translate(-50%, 0);
+
+		rect {
+			stroke: var(--color-light);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		right: 50%;
+		width: 40%;
+		transform: translate(0, 40%);
+
+		.orn-4 {
+			position: absolute;
+			bottom: 30%;
+			left: 0;
+			width: 130%;
+			transform: translate(-35%, 0);
+
+			.orn-5 {
+				position: absolute;
+				bottom: 60%;
+				right: 60%;
+				width: 50%;
+
+				.orn-6 {
+					position: absolute;
+					bottom: 80%;
+					left: 25%;
+					width: 120%;
+					transform: rotate(-5deg);
+				}
+			}
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 40%;
+		transform: translate(-10%, 40%);
+
+		.orn-8 {
+			position: absolute;
+			bottom: 28%;
+			left: 55%;
+			width: 85%;
+
+			.orn-9 {
+				position: absolute;
+				bottom: 55%;
+				left: 30%;
+				width: 120%;
+
+				.orn-10 {
+					position: absolute;
+					bottom: 85%;
+					left: 0;
+					width: 65%;
+					transform: translate(-5%, 0) rotate(5deg);
+				}
+			}
+		}
 	}
 
 	.header-content {
@@ -15,12 +80,12 @@
 
 		.header {
 			position: relative;
-			width: 35%;
+			width: 30%;
 			margin: 0 auto;
 			padding: 4.5rem 0;
 
 			@include max-xl {
-				width: 40%;
+				width: 35%;
 			}
 
 			@include max-lg {
@@ -44,7 +109,7 @@
 						@include aspect-ratio(3, 4);
 						margin-bottom: 3rem;
 
-						.image-element {
+						.image-element.bg-element {
 							height: 100%;
 							background-color: var(--color-primary);
 							border-radius: 300px;

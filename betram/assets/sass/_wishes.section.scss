@@ -10,6 +10,22 @@
 		@include max-sm {
 			padding: 3rem 0 1rem;
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 12%;
+			transform: translate(-20%, 0) scaleX(-1);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 10rem;
+			right: 0;
+			width: 15%;
+			transform: translate(30%, 0) scaleX(-1);
+		}
 	}
 
 	.card-form {

@@ -35,6 +35,70 @@
 		@include max-md {
 			padding: 3rem 0;
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 3rem;
+			left: 0;
+			width: 15%;
+			transform: translate(-20%, 0);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			width: 15%;
+			transform: translate(20%, 0);
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 25%;
+			transform: translate(-25%, 10%) rotate(-25deg);
+
+			.orn-4 {
+				position: absolute;
+				bottom: 50%;
+				right: -5%;
+				width: 110%;
+				transform: rotate(25deg);
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(0, 30%) rotate(-80deg);
+		}
+
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(35%, 10%);
+
+			.orn-7 {
+				position: absolute;
+				bottom: 60%;
+				left: 5%;
+				width: 80%;
+				transform: rotate(5deg) scaleX(-1);
+			}
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(-10%, 35%) rotate(35deg) scaleX(-1);
+		}
 	}
 
 	.couple-body {
@@ -66,11 +130,20 @@
 
 	.couple {
 		position: relative;
-		background-color: var(--color-main);
 		color: var(--color-dark);
 		padding: 2rem;
 		text-align: center;
-		mask: var(--mask);
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-main);
+			mask: var(--mask);
+			content: "";
+		}
 
 		.image-wrap {
 			width: 100%;

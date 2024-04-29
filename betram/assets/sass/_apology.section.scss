@@ -8,6 +8,22 @@
 		padding: 3rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 8%;
+		transform: translate(-40%, 0) rotate(20deg);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 3rem;
+		right: 0;
+		width: 15%;
+		transform: translate(40%, 0) rotate(-45deg);
+	}
+
 	.appology-wrap {
 		position: relative;
 	}

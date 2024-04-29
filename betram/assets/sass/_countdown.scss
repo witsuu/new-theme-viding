@@ -41,10 +41,10 @@
 		.angka {
 			margin-bottom: 0;
 			font-weight: 500;
-			font-size: 38px;
+			font-size: 34px;
 			font-family: $font-secondary;
 			@include max-md {
-				font-size: 32px;
+				font-size: 30px;
 			}
 			@include max-xs {
 				font-size: 28px;

@@ -75,6 +75,55 @@ body {
 		bottom: 0;
 		left: 0;
 		pointer-events: none;
+
+		&.orn-front {
+			z-index: 3;
+		}
+	}
+
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: calc(100% - 1rem);
+		height: calc(100% - 2rem);
+		transform: translate(-50%, -50%);
+
+		@include max-lg {
+			width: 100%;
+			height: calc(100% - 2rem);
+		}
+
+		.image-element {
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+			}
+		}
+
+		&-couple {
+			width: calc(100% + 3.25rem);
+			height: calc(100% + 2.5rem);
+		}
+
+		&-countdown {
+			width: 100%;
+			height: calc(100% + 2.5rem);
+
+			@include min-md {
+				width: auto;
+
+				.image-element {
+					width: auto;
+
+					img {
+						width: auto;
+					}
+				}
+			}
+		}
 	}
 }
 
@@ -100,11 +149,11 @@ h3 {
 }
 
 h1 {
-	font-size: 46px;
+	font-size: 42px;
 	line-height: 1.2;
 
 	@include max-md {
-		font-size: 42px;
+		font-size: 38px;
 	}
 
 	span {
