@@ -10,6 +10,28 @@
 		transform: translateY(-100%);
 	}
 
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-30%, 65%);
+
+		.orn-2 {
+			position: absolute;
+			bottom: 75%;
+			right: 35%;
+			width: 50%;
+
+			.orn-3 {
+				position: absolute;
+				bottom: 65%;
+				left: 0;
+				width: 140%;
+			}
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 		display: flex;

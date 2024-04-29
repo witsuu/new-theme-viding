@@ -7,6 +7,38 @@
 		margin-top: 1rem;
 	}
 
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-30%, 65%);
+
+		.orn-2 {
+			position: absolute;
+			bottom: 75%;
+			right: 35%;
+			width: 50%;
+
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-20%, -20%);
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 12%;
+		transform: translate(-40%, -50%);
+	}
+
 	.header-content {
 		position: relative;
 
@@ -28,22 +60,26 @@
 
 			.header-title {
 				position: relative;
-				padding: 8rem 1rem 3rem;
-				min-height: calc(100vh - 5rem);
 				border-radius: 300px 300px 0 0;
-				box-shadow: var(--shadow);
 				text-align: center;
+				overflow: hidden;
 
-				@include max-lg {
-					min-height: calc(100vh - 10rem);
-				}
-
-				@include max-sm {
-					min-height: calc(100vh - 5rem);
-				}
 
 				&-content {
 					position: relative;
+					padding: 8rem 1rem 3rem;
+					border-radius: 300px 300px 0 0;
+					box-shadow: var(--shadow);
+					min-height: calc(100vh - 5rem);
+					color: var(--color-dark);
+
+					@include max-lg {
+						min-height: calc(100vh - 10rem);
+					}
+
+					@include max-sm {
+						min-height: calc(100vh - 5rem);
+					}
 
 					.image-wrapper {
 						position: relative;

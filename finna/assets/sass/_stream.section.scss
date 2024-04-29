@@ -7,6 +7,14 @@
 		padding: 3rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%, -15%) rotate(45deg);
+	}
+
 	.stream-wrapper {
 		position: relative;
 		background-color: var(--color-primary);
@@ -28,6 +36,7 @@
 				color: var(--color-dark);
 				border-radius: 0 var(--border-radius) 0 0;
 				margin-bottom: -20px;
+				overflow: hidden;
 			}
 
 			h4 {

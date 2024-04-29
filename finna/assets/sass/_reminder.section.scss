@@ -13,13 +13,25 @@
 		min-width: 65%;
 		max-width: 100%;
 		margin: 0 auto;
-		z-index: 2;
-		box-shadow: var(--shadow);
 		border-radius: 300px 300px 20px 20px;
 		padding: 8rem 3rem 3rem;
+		overflow: hidden;
 
 		@include max-sm {
 			width: 100%;
+		}
+
+		.elements-wrapper-absolute {
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				border-radius: 300px 300px 20px 20px;
+				box-shadow: var(--shadow);
+				content: "";
+			}
 		}
 	}
 

@@ -7,6 +7,7 @@
 	width: fit-content;
 	gap: 1rem;
 	z-index: 3;
+	color: var(--color-dark);
 
 	@include max-md {
 		gap: 0.5rem;

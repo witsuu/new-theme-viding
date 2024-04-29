@@ -28,10 +28,46 @@
 
 	.couple-wrapper {
 		position: relative;
-		padding: 5rem 0;
+		padding: 15rem 0 5rem;
 
 		@include max-md {
 			padding: 3rem 0;
+		}
+
+		.orn-gold {
+			position: absolute;
+			top: 10rem;
+			width: 10%;
+
+			&.start-0 {
+				transform: translate(-40%, 0);
+			}
+
+			&.end-0 {
+				transform: translate(40%, 0);
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 60%;
+			transform: translate(-30%, 65%);
+
+			.orn-2 {
+				position: absolute;
+				bottom: 70%;
+				right: 16%;
+				width: 80%;
+
+				.orn-3 {
+					position: absolute;
+					bottom: 70%;
+					left: 0;
+					width: 60%;
+				}
+			}
 		}
 	}
 
@@ -54,11 +90,12 @@
 			@include aspect-ratio(3, 4);
 			margin: 0 auto;
 
-			.image-element {
+			.image-element.couple-element {
 				height: 100%;
 				background-color: var(--color-primary);
 				padding: 3rem;
 				border-radius: 300px 300px 20px 20px;
+				overflow: hidden;
 
 				@include max-lg {
 					padding: 2rem;

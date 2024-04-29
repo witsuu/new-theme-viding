@@ -84,6 +84,16 @@ body {
   left: 0;
   pointer-events: none;
 }
+.main-app .ornaments-wrapper.orn-front {
+  z-index: 3;
+}
+.main-app .curtain {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -58%);
+}
 
 .logo-viding {
   height: 2.4rem;
@@ -1128,6 +1138,7 @@ ul li {
   width: fit-content;
   gap: 1rem;
   z-index: 3;
+  color: var(--color-dark);
 }
 @media (max-width: 767px) {
   .countdown {
@@ -1240,15 +1251,24 @@ ul li {
   min-width: 65%;
   max-width: 100%;
   margin: 0 auto;
-  z-index: 2;
-  box-shadow: var(--shadow);
   border-radius: 300px 300px 20px 20px;
   padding: 8rem 3rem 3rem;
+  overflow: hidden;
 }
 @media (max-width: 575px) {
   .reminder-wrap .reminder-content {
     width: 100%;
   }
+}
+.reminder-wrap .reminder-content .elements-wrapper-absolute::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 300px 300px 20px 20px;
+  box-shadow: var(--shadow);
+  content: "";
 }
 .reminder-wrap .btn-reminder {
   z-index: 3;
@@ -1277,6 +1297,25 @@ ul li {
 }
 .cover-section.cover-opened {
   transform: translateY(-100%);
+}
+.cover-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  transform: translate(-30%, 65%);
+}
+.cover-section .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 75%;
+  right: 35%;
+  width: 50%;
+}
+.cover-section .orn-1 .orn-2 .orn-3 {
+  position: absolute;
+  bottom: 65%;
+  left: 0;
+  width: 140%;
 }
 .cover-section .cover-wrapper {
   position: relative;
@@ -1367,6 +1406,33 @@ ul li {
   position: relative;
   margin-top: 1rem;
 }
+.header-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  transform: translate(-30%, 65%);
+}
+.header-section .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 75%;
+  right: 35%;
+  width: 50%;
+}
+.header-section .orn-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-20%, -20%);
+}
+.header-section .orn-4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12%;
+  transform: translate(-40%, -50%);
+}
 .header-section .header-content {
   position: relative;
 }
@@ -1390,24 +1456,27 @@ ul li {
 }
 .header-section .header-content .header .header-title {
   position: relative;
+  border-radius: 300px 300px 0 0;
+  text-align: center;
+  overflow: hidden;
+}
+.header-section .header-content .header .header-title-content {
+  position: relative;
   padding: 8rem 1rem 3rem;
-  min-height: calc(100vh - 5rem);
   border-radius: 300px 300px 0 0;
   box-shadow: var(--shadow);
-  text-align: center;
+  min-height: calc(100vh - 5rem);
+  color: var(--color-dark);
 }
 @media (max-width: 991px) {
-  .header-section .header-content .header .header-title {
+  .header-section .header-content .header .header-title-content {
     min-height: calc(100vh - 10rem);
   }
 }
 @media (max-width: 575px) {
-  .header-section .header-content .header .header-title {
+  .header-section .header-content .header .header-title-content {
     min-height: calc(100vh - 5rem);
   }
-}
-.header-section .header-content .header .header-title-content {
-  position: relative;
 }
 .header-section .header-content .header .header-title-content .image-wrapper {
   position: relative;
@@ -1481,12 +1550,42 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
-  padding: 5rem 0;
+  padding: 15rem 0 5rem;
 }
 @media (max-width: 767px) {
   .couple-section .couple-wrapper {
     padding: 3rem 0;
   }
+}
+.couple-section .couple-wrapper .orn-gold {
+  position: absolute;
+  top: 10rem;
+  width: 10%;
+}
+.couple-section .couple-wrapper .orn-gold.start-0 {
+  transform: translate(-40%, 0);
+}
+.couple-section .couple-wrapper .orn-gold.end-0 {
+  transform: translate(40%, 0);
+}
+.couple-section .couple-wrapper .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  transform: translate(-30%, 65%);
+}
+.couple-section .couple-wrapper .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 70%;
+  right: 16%;
+  width: 80%;
+}
+.couple-section .couple-wrapper .orn-1 .orn-2 .orn-3 {
+  position: absolute;
+  bottom: 70%;
+  left: 0;
+  width: 60%;
 }
 .couple-section .couple-body {
   position: relative;
@@ -1512,18 +1611,19 @@ ul li {
   width: 100%;
   height: 100%;
 }
-.couple-section .couple .image-wrap .image-element {
+.couple-section .couple .image-wrap .image-element.couple-element {
   height: 100%;
   background-color: var(--color-primary);
   padding: 3rem;
   border-radius: 300px 300px 20px 20px;
+  overflow: hidden;
 }
 @media (max-width: 991px) {
-  .couple-section .couple .image-wrap .image-element {
+  .couple-section .couple .image-wrap .image-element.couple-element {
     padding: 2rem;
   }
 }
-.couple-section .couple .image-wrap .image-element .couple-image {
+.couple-section .couple .image-wrap .image-element.couple-element .couple-image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
@@ -1572,6 +1672,13 @@ ul li {
 
 .story-section {
   position: relative;
+}
+.story-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-20%, 0%);
 }
 .story-section .story {
   position: relative;
@@ -1640,6 +1747,30 @@ ul li {
   .venue-section {
     padding: 3rem 0;
   }
+}
+.venue-section .curtain {
+  width: 120%;
+  transform: translate(-50%, -30%);
+}
+.venue-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 55%;
+  transform: translate(-20%, -10%);
+}
+.venue-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 85%;
+  transform: translate(-20%, 50%);
+}
+.venue-section .orn-2 .orn-3 {
+  position: absolute;
+  bottom: 60%;
+  right: 50%;
+  width: 80%;
 }
 .venue-section .venue-wrapper {
   position: relative;
@@ -1722,10 +1853,11 @@ ul li {
   color: var(--color-dark);
   border: none;
   border-radius: 300px 300px 20px 20px;
+  overflow: hidden;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
   position: relative;
-  padding: 8rem 2rem 3rem;
+  padding: 10rem 2rem 3rem;
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body {
@@ -1903,12 +2035,43 @@ ul li {
     padding: 0 0 3rem;
   }
 }
+.rsvp-section .curtain {
+  transform: translate(-50%, -25%);
+}
+.rsvp-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  transform: translate(-30%, 65%);
+}
+.rsvp-section .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 75%;
+  right: 35%;
+  width: 60%;
+}
+.rsvp-section .orn-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-20%, 0%);
+}
+.rsvp-section .orn-4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 20%;
+  transform: translate(-50%, -50%);
+}
 .rsvp-section .rsvp-wrapper {
   position: relative;
   padding: 8rem 3rem;
   background-color: var(--color-primary);
   color: var(--color-dark);
   border-radius: 300px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .rsvp-section .rsvp-wrapper {
@@ -1952,6 +2115,20 @@ ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+}
+.wishes-section .wishes-form-wrapper .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 18%;
+  transform: translate(-45%, 40%) rotate(30deg);
+}
+.wishes-section .wishes-form-wrapper .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 18%;
+  transform: translate(45%, 40%) rotate(-30deg) scaleX(-1);
 }
 .wishes-section .card-form {
   background-color: var(--color-primary);
@@ -2289,11 +2466,11 @@ ul li {
 
 .apology-section {
   position: relative;
-  padding: 5rem 0;
+  padding: 15rem 0 5rem;
 }
 @media (max-width: 767px) {
   .apology-section {
-    padding: 3rem 0;
+    padding: 12rem 0 3rem;
   }
 }
 .apology-section .appology-wrap {
@@ -2309,6 +2486,13 @@ ul li {
   .stream-section {
     padding: 3rem 0;
   }
+}
+.stream-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  transform: translate(-50%, -15%) rotate(45deg);
 }
 .stream-section .stream-wrapper {
   position: relative;
@@ -2332,6 +2516,7 @@ ul li {
   color: var(--color-dark);
   border-radius: 0 var(--border-radius) 0 0;
   margin-bottom: -20px;
+  overflow: hidden;
 }
 @media (max-width: 767px) {
   .stream-section .stream-wrapper .stream-content h4 {
@@ -2367,6 +2552,33 @@ ul li {
     padding: 3rem 0 0;
   }
 }
+.thank-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 30%;
+  transform: translate(-30%, 65%);
+}
+.thank-section .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 75%;
+  right: 35%;
+  width: 50%;
+}
+.thank-section .orn-3 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-20%, -5%);
+}
+.thank-section .orn-4 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 12%;
+  transform: translate(-40%, -50%);
+}
 .thank-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -2396,12 +2608,23 @@ ul li {
 }
 .thank-section .thank-wrapper .thank {
   position: relative;
+  border-radius: 300px 300px 0 0;
+  overflow: hidden;
+}
+.thank-section .thank-wrapper .thank::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
   box-shadow: var(--shadow);
   border-radius: 300px 300px 0 0;
+  content: "";
 }
 .thank-section .thank-wrapper .thank-body {
   position: relative;
   padding: 8rem 2rem 5rem;
+  color: var(--color-dark);
 }
 @media (max-width: 767px) {
   .thank-section .thank-wrapper .thank-body {
