@@ -1228,6 +1228,30 @@ ul li {
   visibility: visible !important;
 }
 
+img[alt=tree-1] {
+  transform-origin: 50% 90%;
+}
+
+img[alt=tree-2] {
+  transform-origin: 45% 90%;
+}
+
+img[alt=tree-3] {
+  transform-origin: 52% 90%;
+}
+
+img[alt=leaf] {
+  transform-origin: 60% 95%;
+}
+
+img[alt=orchied] {
+  transform-origin: 20% 95%;
+}
+
+img[alt=tulip] {
+  transform-origin: 45% 95%;
+}
+
 .countdown {
   display: flex;
   text-align: center;
@@ -2980,7 +3004,7 @@ ul li {
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 40%;
+  width: 45%;
   transform: translate(15%, 10%);
 }
 @media (max-width: 991px) {
@@ -3151,6 +3175,8 @@ ul li {
   position: relative;
   width: 100%;
   height: auto;
+  border-radius: var(--border-radius);
+  overflow: hidden;
   padding-top: 133.3333333333%;
 }
 .thank-section .image-wrapper > * {
@@ -3168,7 +3194,6 @@ ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: var(--border-radius);
 }
 .thank-section .ornaments-wrapper {
   top: unset;
