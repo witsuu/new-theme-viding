@@ -17,6 +17,14 @@
 			left: 0;
 			width: 12%;
 			transform: translate(-20%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 25%;
+			}
+
+			@include max-sm {
+				width: 35%;
+			}
 		}
 
 		.orn-2 {
@@ -25,6 +33,14 @@
 			right: 0;
 			width: 15%;
 			transform: translate(30%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
 		}
 	}
 

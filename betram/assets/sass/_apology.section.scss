@@ -14,6 +14,14 @@
 		left: 0;
 		width: 8%;
 		transform: translate(-40%, 0) rotate(20deg);
+
+		@include max-lg {
+			width: 15%;
+		}
+
+		@include max-sm {
+			width: 25%;
+		}
 	}
 
 	.orn-2 {
@@ -22,6 +30,15 @@
 		right: 0;
 		width: 15%;
 		transform: translate(40%, 0) rotate(-45deg);
+
+		@include max-lg {
+			bottom: 0;
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
 	}
 
 	.appology-wrap {

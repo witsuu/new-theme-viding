@@ -13,6 +13,10 @@
 		left: 0;
 		width: 35%;
 		transform: translate(-60%, -10%) rotate(120deg) scaleX(-1);
+
+		@include max-sm {
+			transform: translate(-30%, -10%) rotate(120deg) scaleX(-1);
+		}
 	}
 
 	.orn-2 {
@@ -29,6 +33,10 @@
 		left: 0;
 		width: 35%;
 		transform: translate(-80%, 0) scaleY(-1);
+
+		@include max-sm {
+			transform: translate(-50%, 0) scaleY(-1);
+		}
 	}
 
 	.orn-4 {
@@ -37,6 +45,10 @@
 		right: 0;
 		width: 35%;
 		transform: translate(45%, 20%) rotate(-30deg);
+
+		@include max-sm {
+			transform: translate(20%, 20%) rotate(-30deg);
+		}
 
 		.orn-5 {
 			position: absolute;

@@ -9,4 +9,9 @@
 	--vd-color-pink: #{$color-logo};
 	--border-radius: #{$border-radius};
 	--mask: radial-gradient(30px at 30px 30px, #0000 98%, #000) -30px -30px;
+
+	@include max-sm {
+		--mask: radial-gradient(23px at 23px 23px, #0000 98%, #000) -23px -23px;
+
+	}
 }

@@ -2,6 +2,7 @@
 	position: relative;
 	padding: 5rem 0;
 	text-align: center;
+	min-height: 100vh;
 
 	@include max-md {
 		padding: 3rem 0;
@@ -72,13 +73,18 @@
 		position: relative;
 		width: 100%;
 		height: auto;
-		@include aspect-ratio(3, 4);
+		background-color: var(--color-primary);
+		border-radius: 300px;
+		padding: 1rem;
+
+		@include max-sm {
+			width: 90%;
+			margin: 0 auto;
+		}
 
 		.image-element.bg-element {
 			height: 100%;
-			background-color: var(--color-primary);
-			border-radius: 300px;
-			padding: 1rem;
+			@include aspect-ratio(3, 4);
 
 			.thank-background {
 				width: 100%;
@@ -94,7 +100,7 @@
 
 		.thank {
 			position: relative;
-			padding-top: 3rem;
+			padding: 3rem 1rem;
 		}
 	}
 }
