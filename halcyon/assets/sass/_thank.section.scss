@@ -1,0 +1,279 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	overflow: hidden;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		@include aspect-ratio(3, 4);
+
+		.image-element {
+			height: 100%;
+
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+
+	.ornaments-wrapper {
+		top: unset;
+		bottom: 0;
+		height: calc(100% - 25rem);
+	}
+
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 200%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-20%, -25%);
+
+		@include max-lg {
+			width: 60%;
+			transform: translate(-50%, -25%);
+		}
+
+		@include max-sm {
+			width: 70%;
+			transform: translate(-65%, -25%);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 100%;
+
+			.orn-3 {
+				position: absolute;
+				top: 60%;
+				right: 0;
+				width: 85%;
+			}
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(25%, -25%);
+
+		@include max-lg {
+			width: 60%;
+			transform: translate(55%, -25%);
+		}
+
+		@include max-sm {
+			width: 70%;
+			transform: translate(70%, -25%);
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 65%;
+			left: 0;
+			width: 100%;
+
+			.orn-6 {
+				position: absolute;
+				top: 65%;
+				left: 0;
+				width: 85%;
+			}
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 5rem;
+		left: 0;
+		width: 15%;
+		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 18%;
+		transform: translate(-20%, 50%);
+
+		@include max-lg {
+			width: 35%;
+			transform: translate(-40%, 50%);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+
+	}
+
+	.orn-9 {
+		position: absolute;
+		top: 12%;
+		right: 0;
+		width: 50%;
+		transform: translateX(120%);
+
+		@include max-sm {
+			transform: translateX(80%);
+		}
+
+		.orn-10 {
+			position: absolute;
+			top: 30%;
+			right: 0;
+			width: 80%;
+			transform: translateX(120%);
+
+			@include max-lg {
+				transform: translateX(100%);
+			}
+		}
+	}
+
+	.orn-11 {
+		position: absolute;
+		bottom: 3rem;
+		right: 0;
+		width: 15%;
+		transform: translate(50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 3rem;
+		width: 20%;
+		transform: translate(0, 60%);
+
+		@include max-lg {
+			right: 2rem;
+			width: 30%;
+		}
+
+		@include max-sm {
+			right: 0;
+			width: 40%;
+		}
+
+		.orn-13 {
+			position: absolute;
+			top: 12%;
+			left: 0;
+			width: 50%;
+			transform: translateX(-100%) scaleX(-1);
+
+			@include max-lg {
+				transform: translateX(-60%) scaleX(-1);
+			}
+		}
+	}
+
+	.orn-14 {
+		position: absolute;
+		top: 0;
+		left: 10%;
+		width: 40%;
+		transform: translate(0, -15%);
+
+		@include max-lg {
+			left: 0;
+			width: 60%;
+			transform: translate(-20%, 0);
+		}
+
+		@include max-sm {
+			width: 80%;
+			transform: translate(-45%, 0);
+		}
+	}
+
+	.orn-15 {
+		position: absolute;
+		top: 0;
+		right: 5%;
+		width: 40%;
+		transform: translate(0, -20%) scaleX(-1);
+
+		@include max-lg {
+			right: 0;
+			width: 60%;
+			transform: translate(25%, -10%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 80%;
+			transform: translate(45%, -10%) scaleX(-1);
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+
+		.thank {
+			position: relative;
+			width: 80%;
+			text-align: left;
+			margin: 2rem auto 10rem;
+
+			.title-section {
+				text-align: left;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}
