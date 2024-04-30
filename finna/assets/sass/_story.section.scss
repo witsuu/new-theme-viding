@@ -7,14 +7,22 @@
 		left: 0;
 		width: 25%;
 		transform: translate(-20%, 0%);
+
+		@include max-lg {
+			width: 35%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
 	}
 
 	.story {
 		position: relative;
-		padding: 5rem 0;
+		padding: 5rem 0 0;
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 3rem 0 0;
 		}
 
 		.story-content {
@@ -28,7 +36,7 @@
 				padding: 3rem 2rem;
 
 				@include max-sm {
-					padding: 3rem 1rem 2rem;
+					padding: 3rem 1.8rem 2rem;
 				}
 			}
 		}
@@ -40,7 +48,7 @@
 		height: auto;
 		@include aspect-ratio(16, 9);
 
-		@include max-md {
+		@include max-lg {
 			@include aspect-ratio(5, 6);
 		}
 

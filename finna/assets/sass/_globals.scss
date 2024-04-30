@@ -87,6 +87,15 @@ body {
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%, -58%);
+
+		@include max-lg {
+			width: 110%;
+			transform: translate(-50%, -45%);
+		}
+
+		@include max-sm {
+			transform: translate(-50%, -35%);
+		}
 	}
 }
 
@@ -167,6 +176,11 @@ span {
 	@include max-md {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
+
+		&-custom {
+			padding-left: 0;
+			padding-right: 0;
+		}
 	}
 }
 

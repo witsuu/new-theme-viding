@@ -14,12 +14,24 @@
 		width: 30%;
 		transform: translate(-30%, 65%);
 
+		@include max-lg {
+			width: 60%;
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+
 		.orn-2 {
 			position: absolute;
 			bottom: 75%;
 			right: 35%;
 			width: 50%;
 
+			@include max-lg {
+				right: 30%;
+				width: 65%;
+			}
 		}
 	}
 
@@ -29,6 +41,14 @@
 		left: 0;
 		width: 25%;
 		transform: translate(-20%, -20%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
 	}
 
 	.orn-4 {
@@ -37,6 +57,14 @@
 		left: 0;
 		width: 12%;
 		transform: translate(-40%, -50%);
+
+		@include max-lg {
+			width: 20%;
+		}
+
+		@include max-sm {
+			width: 30%;
+		}
 	}
 
 	.header-content {
@@ -72,6 +100,7 @@
 					box-shadow: var(--shadow);
 					min-height: calc(100vh - 5rem);
 					color: var(--color-dark);
+					z-index: 5;
 
 					@include max-lg {
 						min-height: calc(100vh - 10rem);

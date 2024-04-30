@@ -31,7 +31,7 @@
 		padding: 15rem 0 5rem;
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 10rem 0 3rem;
 		}
 
 		.orn-gold {
@@ -39,12 +39,28 @@
 			top: 10rem;
 			width: 10%;
 
+			@include max-lg {
+				width: 15%;
+			}
+
+			@include max-sm {
+				width: 20%;
+			}
+
 			&.start-0 {
 				transform: translate(-40%, 0);
+
+				@include max-sm {
+					transform: translate(-50%, 0);
+				}
 			}
 
 			&.end-0 {
 				transform: translate(40%, 0);
+
+				@include max-sm {
+					transform: translate(50%, 0);
+				}
 			}
 		}
 
@@ -77,6 +93,7 @@
 
 	.couple-content {
 		position: relative;
+		padding: 0 1rem;
 		margin-bottom: 3rem;
 	}
 

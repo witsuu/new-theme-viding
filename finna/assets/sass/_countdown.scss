@@ -54,11 +54,11 @@
 			font-family: $font-secondary;
 
 			@include max-md {
-				font-size: 32px;
+				font-size: 36px;
 			}
 
 			@include max-xs {
-				font-size: 28px;
+				font-size: 32px;
 			}
 		}
 

@@ -17,11 +17,24 @@
 		width: 30%;
 		transform: translate(-30%, 65%);
 
+		@include max-lg {
+			width: 60%;
+			transform: translate(-30%, 50%);
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+
 		.orn-2 {
 			position: absolute;
 			bottom: 75%;
 			right: 35%;
 			width: 50%;
+
+			@include max-sm {
+				width: 65%;
+			}
 
 			.orn-3 {
 				position: absolute;
@@ -72,6 +85,8 @@
 
 				@include max-lg {
 					width: 60%;
+					height: auto;
+					min-height: 80%;
 				}
 
 				@include max-sm {
@@ -81,7 +96,7 @@
 
 				.cover-description {
 					position: relative;
-					padding: 1rem;
+					padding: 6rem 2rem;
 					text-align: center;
 
 					.cover-event {
