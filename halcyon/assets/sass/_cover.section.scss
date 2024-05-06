@@ -2,12 +2,15 @@
 	position: fixed;
 	z-index: 1000;
 	transition: all 1s ease-out;
-	background-color: var(--color-main);
 	overflow: hidden;
 	width: 100%;
 
 	&.cover-opened {
-		transform: translateY(-100%);
+		pointer-events: none;
+		.cover-wrapper{
+			transform: scale(1.5);
+			opacity: 0;
+		}
 	}
 
 	.orn-1 {
@@ -88,7 +91,7 @@
 		justify-content: center;
 		align-items: flex-start;
 		padding: 4rem 0 3rem;
-		transition: opacity 1s ease;
+		transition: all .5s ease-in-out;
 		height: 100vh;
 
 		@include max-lg {

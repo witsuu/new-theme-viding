@@ -1252,6 +1252,47 @@ img[alt=tulip] {
   transform-origin: 45% 95%;
 }
 
+[data-anim=bird-move].has-animate {
+  animation-name: birdMove;
+  animation-duration: 10000ms !important;
+  animation-direction: normal !important;
+}
+
+@keyframes birdMove {
+  0% {
+    transform: translateZ(0);
+  }
+  10% {
+    transform: translate3d(1rem, 0.25rem, 0);
+  }
+  20% {
+    transform: translate3d(0rem, 1rem, 0);
+  }
+  30% {
+    transform: translate3d(-1rem, 0.75rem, 0);
+  }
+  40% {
+    transform: translate3d(-2rem, 0.75rem, 0);
+  }
+  50% {
+    transform: translate3d(-1.5rem, 0.5rem, 0);
+  }
+  60% {
+    transform: translate3d(-1.5rem, 0rem, 0);
+  }
+  70% {
+    transform: translate3d(-1rem, -0.5rem, 0);
+  }
+  80% {
+    transform: translate3d(-0.5rem, -0.75rem, 0);
+  }
+  90% {
+    transform: translate3d(0rem, -0.25rem, 0);
+  }
+  100% {
+    transform: translateZ(0);
+  }
+}
 .countdown {
   display: flex;
   text-align: center;
@@ -1423,12 +1464,15 @@ img[alt=tulip] {
   position: fixed;
   z-index: 1000;
   transition: all 1s ease-out;
-  background-color: var(--color-main);
   overflow: hidden;
   width: 100%;
 }
 .cover-section.cover-opened {
-  transform: translateY(-100%);
+  pointer-events: none;
+}
+.cover-section.cover-opened .cover-wrapper {
+  transform: scale(1.5);
+  opacity: 0;
 }
 .cover-section .orn-1 {
   position: absolute;
@@ -1512,7 +1556,7 @@ img[alt=tulip] {
   justify-content: center;
   align-items: flex-start;
   padding: 4rem 0 3rem;
-  transition: opacity 1s ease;
+  transition: all 0.5s ease-in-out;
   height: 100vh;
 }
 @media (max-width: 991px) {
@@ -1605,6 +1649,19 @@ img[alt=tulip] {
   .header-section .bg-1 {
     width: 200%;
   }
+}
+.header-section .bird-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+}
+.header-section .bird-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: scaleX(-1);
 }
 .header-section .orn-1 {
   position: absolute;
@@ -3211,6 +3268,19 @@ img[alt=tulip] {
   .thank-section .bg-1 {
     width: 200%;
   }
+}
+.thank-section .bird-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+}
+.thank-section .bird-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: scaleX(-1);
 }
 .thank-section .orn-1 {
   position: absolute;

@@ -689,3 +689,55 @@ img[alt="orchied"] {
 img[alt="tulip"] {
 	transform-origin: 45% 95%;
 }
+
+[data-anim="bird-move"].has-animate{
+	animation-name: birdMove;
+	animation-duration: 10000ms !important;
+	animation-direction: normal !important;
+}
+
+@keyframes birdMove {
+	0% {
+		transform: translateZ(0);
+	}
+
+	10% {
+		transform: translate3d(1rem, .25rem, 0);
+	}
+
+	20% {
+		transform: translate3d(0rem, 1rem, 0);
+	}
+
+	30% {
+		transform: translate3d(-1rem, .75rem, 0);
+	}
+
+	40% {
+		transform: translate3d(-2rem, .75rem, 0);
+	}
+
+	50% {
+		transform: translate3d(-1.5rem, .5rem, 0);
+	}
+
+	60% {
+		transform: translate3d(-1.5rem, 0rem, 0);
+	}
+
+	70% {
+		transform: translate3d(-1rem, -.5rem, 0);
+	}
+
+	80% {
+		transform: translate3d(-.5rem, -.75rem, 0);
+	}
+
+	90% {
+		transform: translate3d(0rem, -.25rem, 0);
+	}
+
+	100% {
+		transform: translateZ(0);
+	}
+}

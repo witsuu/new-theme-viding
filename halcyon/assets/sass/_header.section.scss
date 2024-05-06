@@ -19,6 +19,20 @@
 		}
 	}
 
+	.bird-1{
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+	}
+	.bird-2{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: scaleX(-1);
+	}
+
 	.orn-1 {
 		position: absolute;
 		top: 0;

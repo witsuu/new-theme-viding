@@ -13,13 +13,45 @@ const waitCoverLoading = (el) => {
 document.body.style.overflow = "hidden"
 
 document.querySelector("#btn-envelope").addEventListener("click", () => {
-	document.body.style.overflow = "auto"
-
 	document.querySelector(".cover-section").classList.add("cover-opened")
 
+	animOpenCover()
 	runAnimationOrnament()
 	runAnimationLoop()
 })
+
+function animOpenCover() {
+	const animCover = document.querySelectorAll("[data-anim-cover]")
+
+	gsap.defaults({
+		duration: 2.5,
+		ease: 'power1.in',
+		opacity: 0,
+	})
+
+	animCover.forEach(ac => {
+		if (ac.dataset.animCover === "slide-left") {
+			gsap.to("[data-anim-cover='slide-left']", {
+				x: "-100%"
+			})
+		} else if (ac.dataset.animCover === "slide-left-delay") {
+			gsap.to("[data-anim-cover='slide-left-delay']", {
+				x: "-100%",
+				delay: 0.3,
+				onComplete: () => document.body.style.overflow = "auto"
+			})
+		} else if (ac.dataset.animCover === "slide-right") {
+			gsap.to("[data-anim-cover='slide-right']", {
+				x: "100%"
+			})
+		} else if (ac.dataset.animCover === "slide-right-delay") {
+			gsap.to("[data-anim-cover='slide-right-delay']", {
+				x: "100%",
+				delay: 0.3
+			})
+		}
+	})
+}
 
 var previousScroll = 70;
 $(window).scroll(function (e) {
