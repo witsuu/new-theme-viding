@@ -423,5 +423,30 @@
 		"name": "Custom DR",
 		"path": "custom-dr",
 		"status": ""
+	},
+	{
+		"name": "Semplice",
+		"path": "semplice",
+		"status": ""
+	},
+	{
+		"name": "Aluna",
+		"path": "aluna",
+		"status": ""
+	},
+	{
+		"name": "Betram",
+		"path": "betram",
+		"status": ""
+	},
+	{
+		"name": "Halcyon",
+		"path": "halcyon",
+		"status": ""
+	},
+	{
+		"name": "Finna",
+		"path": "finna",
+		"status": ""
 	}
 ]
