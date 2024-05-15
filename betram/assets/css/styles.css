@@ -1740,7 +1740,7 @@ img[alt=flower-8] {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 1rem;
+  padding: 0.5rem 0;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -1953,6 +1953,61 @@ img[alt=flower-8] {
 @media (max-width: 767px) {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+@media (max-width: 1400px) {
+  .couple-section .couple.single {
+    --mask: radial-gradient(23px at 23px 23px, #0000 98%, #000) -23px -23px;
+  }
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single {
+    --mask: radial-gradient(26px at 26px 26px, #0000 98%, #000) -26px -26px;
+  }
+}
+.couple-section .couple.single .elements-wrapper-absolute {
+  -webkit-mask: var(--mask);
+          mask: var(--mask);
+}
+.couple-section .couple.single .orn-3 {
+  width: 26%;
+}
+@media (min-width: 576px) {
+  .couple-section .couple.single .orn-3 {
+    width: 18%;
+  }
+}
+@media (min-width: 576px) {
+  .couple-section .couple.single .orn-5 {
+    width: 25%;
+  }
+}
+.couple-section .couple.single .orn-6 {
+  width: 36.5%;
+}
+@media (min-width: 576px) {
+  .couple-section .couple.single .orn-6 {
+    width: 25%;
+  }
+}
+.couple-section .couple.single .frame-couple {
+  width: calc(100% + 2.5rem);
+  height: calc(100% + 2.5rem);
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .frame-couple {
+    width: calc(100% + 3rem);
+    height: calc(100% + 3rem);
+  }
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .image-wrap {
+    margin-bottom: 1rem;
+  }
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .couple-description {
+    padding: 0 1rem;
   }
 }
 

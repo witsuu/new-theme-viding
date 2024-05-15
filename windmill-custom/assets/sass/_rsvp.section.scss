@@ -1,0 +1,67 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 8rem;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%, 0) rotate(45deg) scaleX(-1);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 25%;
+		transform: translate(60%, -50%) rotate(-30deg);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 8rem 3rem 3rem;
+		background-color: var(--color-light);
+		border-radius: 300px 300px 20px 20px;
+		overflow: hidden;
+
+		@include max-md {
+			padding: 5rem 2rem 2rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+
+			.title-section {
+				&::before {
+					all: unset;
+				}
+			}
+
+			.form-control,
+			.form-select {
+				background-color: rgba($color: #fff, $alpha: 0.7);
+			}
+		}
+	}
+}

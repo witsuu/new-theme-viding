@@ -1,0 +1,91 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 20%;
+		transform: translate(-60%, 0) rotate(20deg) scaleX(-1);
+
+		@include max-lg {
+			width: 35%;
+		}
+
+		@include max-sm {
+			width: 40px;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 70%;
+			transform: translate(-15%, 0) scaleX(-1);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 13%;
+		transform: translate(50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 25%;
+		}
+
+		@include max-sm {
+			width: 30%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 85%;
+			right: 0;
+			width: 130%;
+			transform: translate(30%, -30%) rotate(45deg) scaleX(-1);
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-40%, -8%) scaleX(-1);
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(40%, -8%);
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 5rem 2rem;
+		background: var(--color-primary);
+		border-radius: 500px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		min-height: 640px;
+		text-align: center;
+		overflow: hidden;
+
+		@include max-md {
+			padding: 3rem 1rem;
+			min-height: 480px;
+		}
+	}
+}

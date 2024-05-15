@@ -1470,6 +1470,22 @@ img[alt=tulip] {
 .cover-section.cover-opened {
   pointer-events: none;
 }
+.cover-section.cover-opened .orn-1 .image-element {
+  transform: translateX(-100%);
+  transition: all 2s ease-in;
+}
+.cover-section.cover-opened .orn-2 .image-element {
+  transform: translateX(100%);
+  transition: all 2s ease-in 400ms;
+}
+.cover-section.cover-opened .orn-3 .image-element {
+  transform: translateX(-100%);
+  transition: all 2s ease-in 400ms;
+}
+.cover-section.cover-opened .orn-4 .image-element {
+  transform: translateX(100%);
+  transition: all 2s ease-in;
+}
 .cover-section.cover-opened .cover-wrapper {
   transform: scale(1.5);
   opacity: 0;
@@ -1492,6 +1508,9 @@ img[alt=tulip] {
     width: 120%;
     transform: translate(-40%, -10%);
   }
+}
+.cover-section .orn-1 .image-element {
+  transition: all 2s ease-in;
 }
 .cover-section .orn-2 {
   position: absolute;
@@ -1959,7 +1978,6 @@ img[alt=tulip] {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 1rem;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -2178,6 +2196,31 @@ img[alt=tulip] {
 @media (max-width: 767px) {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+.couple-section .couple.single .image-wrap {
+  width: 100%;
+}
+.couple-section .couple.single .image-wrap .image-element {
+  padding-top: 56.25%;
+}
+.couple-section .couple.single .image-wrap .image-element > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+@media (max-width: 575px) {
+  .couple-section .couple.single .image-wrap .image-element {
+    padding-top: 120%;
+  }
+  .couple-section .couple.single .image-wrap .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
   }
 }
 

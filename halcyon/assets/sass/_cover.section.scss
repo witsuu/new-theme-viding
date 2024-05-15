@@ -7,7 +7,36 @@
 
 	&.cover-opened {
 		pointer-events: none;
-		.cover-wrapper{
+
+		.orn-1 {
+			.image-element {
+				transform: translateX(-100%);
+				transition: all 2s ease-in;
+			}
+		}
+
+		.orn-2 {
+			.image-element {
+				transform: translateX(100%);
+				transition: all 2s ease-in 400ms;
+			}
+		}
+
+		.orn-3 {
+			.image-element {
+				transform: translateX(-100%);
+				transition: all 2s ease-in 400ms;
+			}
+		}
+
+		.orn-4 {
+			.image-element {
+				transform: translateX(100%);
+				transition: all 2s ease-in;
+			}
+		}
+
+		.cover-wrapper {
 			transform: scale(1.5);
 			opacity: 0;
 		}
@@ -28,6 +57,10 @@
 		@include max-sm {
 			width: 120%;
 			transform: translate(-40%, -10%);
+		}
+
+		.image-element {
+			transition: all 2s ease-in;
 		}
 	}
 

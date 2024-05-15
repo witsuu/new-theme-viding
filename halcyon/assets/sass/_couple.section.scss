@@ -17,7 +17,6 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		padding: 1rem;
 		z-index: 3;
 
 		span {
@@ -232,6 +231,20 @@
 
 				@include max-md {
 					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+				width: 100%;
+
+				.image-element {
+					@include aspect-ratio(16, 9);
+
+					@include max-sm {
+						@include aspect-ratio(5, 6)
+					}
 				}
 			}
 		}

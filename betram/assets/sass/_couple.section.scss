@@ -17,7 +17,7 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		padding: 1rem;
+		padding: .5rem 0;
 		z-index: 3;
 
 		span {
@@ -224,6 +224,64 @@
 
 				@include max-md {
 					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			@include max-xxl {
+				--mask: radial-gradient(23px at 23px 23px, #0000 98%, #000) -23px -23px;
+			}
+
+			@include max-sm {
+				--mask: radial-gradient(26px at 26px 26px, #0000 98%, #000) -26px -26px;
+			}
+
+			.elements-wrapper-absolute {
+				mask: var(--mask);
+			}
+
+			.orn-3 {
+				width: 26%;
+
+				@include min-sm {
+					width: 18%;
+				}
+			}
+
+			.orn-5 {
+				@include min-sm {
+					width: 25%;
+				}
+			}
+
+			.orn-6 {
+				width: 36.5%;
+
+				@include min-sm {
+					width: 25%;
+				}
+			}
+
+			.frame-couple {
+				width: calc(100% + 2.5rem);
+				height: calc(100% + 2.5rem);
+
+				@include max-sm {
+					width: calc(100% + 3rem);
+					height: calc(100% + 3rem);
+				}
+			}
+
+			.image-wrap {
+				@include max-sm {
+					margin-bottom: 1rem;
+				}
+			}
+
+			.couple-description {
+				@include max-sm {
+					padding: 0 1rem;
 				}
 			}
 		}

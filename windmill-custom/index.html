@@ -1,0 +1,1359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Windmill</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Preconnect -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdn.jsdelivr.net">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+
+    <!-- fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Prata&family=Nunito+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css" integrity="sha512-10/jx2EXwxxWqCLX/hHth/vu2KY3jCF70dCQB8TSgNjbCVAC/8vai53GfMDrO2Emgwccf2pJqxct9ehpzG+MTw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- styles libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/css/splide.min.css" integrity="sha256-sB1O2oXn5yaSW1T/92q2mGU86IDhZ0j1Ya8eSv+6QfM=" crossorigin="anonymous">
+    <link rel="stylesheet" href="./assets/css/magnific-popup.css">
+
+    <!-- styles custom -->
+    <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+
+<body>
+    <div class="main-app">
+        <!-- Loader -->
+        <div class="loader-wrapper">
+            <img src="./assets/images/spinner.gif" alt="loading" class="spinner">
+            <span>Loading</span>
+        </div>
+        <script>
+            document.onreadystatechange = () => {
+                if (document.readyState !== "complete") {
+                    document.querySelector(".loader-wrapper").style.visibility = "visible";
+                } else {
+                    document.querySelector(".loader-wrapper").style.visibility = "hidden";
+                    runAnimationOrnamentCover();
+                }
+            };
+        </script>
+
+        <!-- progress -->
+        <div class="progress"></div>
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg navbar-light bg-transparent fixed-top">
+            <div class="container d-flex justify-content-center">
+                <a href="#navbar" class="navbar-brand m-auto p-0">
+                    <svg class="logo-viding" width="4404" height="2583" viewBox="0 0 4404 2583" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1760.01 9.05267C1708.72 36.9635 1692.12 64.8744 1631.77 218.761C1579.72 353.789 1537.48 506.167 1502.78 686.456C1488.45 763.4 1474.87 835.063 1472.6 846.378C1468.83 864.482 1464.31 867.5 1433.38 871.271C1376.05 878.06 1339.84 890.13 1307.4 912.76C1259.88 945.952 1158.8 1047.79 1127.87 1093.8C1032.07 1234.87 1047.91 1470.22 1156.53 1526.8C1221.41 1560.74 1328.52 1541.89 1445.45 1476.26C1467.32 1464.19 1486.94 1455.89 1489.2 1458.15C1491.46 1460.42 1503.53 1507.94 1514.85 1564.52C1566.14 1808.92 1603.11 1870.03 1702.68 1872.29C1799.99 1874.55 1862.6 1787.05 1960.67 1511.71L2001.4 1397.05L2009.7 1448.35C2014.98 1477.01 2024.79 1510.2 2031.58 1522.27C2059.49 1569.04 2124.36 1580.36 2209.6 1553.96C2304.65 1524.54 2395.17 1443.82 2446.47 1342.74C2457.78 1319.35 2452.5 1323.13 2404.22 1369.89C2282.77 1485.31 2177.92 1530.57 2132.66 1485.31C2109.27 1461.93 2115.31 1435.52 2177.92 1277.86C2240.53 1122.47 2250.34 1071.17 2227.71 1004.04C2214.88 964.056 2199.8 950.478 2168.87 950.478C2138.69 950.478 2112.29 991.212 2084.38 1082.49C2070.8 1126.24 2067.03 1132.28 2062.5 1117.94C2059.49 1108.89 2054.21 1101.35 2050.43 1101.35C2046.66 1101.35 2035.35 1108.89 2024.03 1117.94C2008.95 1131.52 1999.14 1156.41 1978.77 1234.11C1930.49 1418.93 1884.48 1557.73 1846.76 1633.16C1809.8 1706.33 1769.06 1765.17 1760.77 1756.87C1753.98 1750.09 1711.73 1530.57 1699.66 1434.77C1692.87 1383.47 1684.58 1291.44 1681.56 1231.09C1674.02 1099.84 1678.54 1076.45 1733.61 956.513C1779.62 856.939 1816.59 740.769 1850.53 588.391C1887.5 424.698 1897.3 309.283 1885.99 163.694C1881.46 99.5743 1875.43 42.2439 1873.16 35.4548C1867.88 21.8766 1817.34 0.000509673 1791.69 0.000509673C1782.64 0.000509673 1768.31 4.52659 1760.01 9.05267ZM1821.87 105.609C1867.13 297.968 1863.36 480.52 1812.06 660.054C1793.96 722.665 1710.22 955.004 1696.65 979.143C1667.23 1031.19 1694.38 452.609 1730.59 248.935C1741.15 187.079 1766.05 101.837 1780.38 73.1722C1793.2 47.5244 1812.06 61.857 1821.87 105.609ZM1479.39 1291.44C1482.41 1300.49 1468.08 1314.83 1432.62 1341.23C1369.26 1388 1354.93 1395.54 1327.77 1395.54C1280.25 1395.54 1247.05 1323.13 1252.34 1231.09C1257.62 1131.52 1343.61 995.739 1425.84 955.004L1465.82 934.636L1471.1 1106.63C1474.11 1200.92 1477.89 1283.9 1479.39 1291.44ZM2063.26 1201.68C2061 1227.32 2049.68 1274.09 2038.36 1305.02C1996.88 1419.68 1996.12 1378.19 2036.86 1234.87C2049.68 1190.36 2061.75 1154.15 2064.01 1154.15C2066.28 1154.15 2065.52 1175.27 2063.26 1201.68Z" fill="#DA0F7A" />
+                        <path d="M814.814 717.382C795.955 727.189 777.096 743.784 770.307 757.363C755.22 785.274 753.712 848.639 766.536 872.778C788.412 912.004 854.794 880.321 882.705 816.956C897.038 784.519 902.318 725.68 893.266 709.839C884.968 697.015 850.268 700.032 814.814 717.382Z" fill="#DA0F7A" />
+                        <path d="M2217.9 716.63C2163.59 741.523 2140.96 819.221 2171.89 875.797C2182.45 896.164 2217.9 893.901 2245.06 871.271C2280.51 841.851 2300.88 792.819 2297.86 745.295C2295.6 706.823 2294.85 705.314 2272.97 703.051C2260.9 702.297 2236.01 708.332 2217.9 716.63Z" fill="#DA0F7A" />
+                        <path d="M513.83 825.255C495.726 841.096 494.217 844.868 502.515 862.972C507.041 873.533 516.093 882.585 521.373 882.585C527.408 882.585 537.215 888.62 544.004 896.163C555.319 908.987 555.319 915.022 538.723 977.633C487.428 1167.73 402.941 1302 276.211 1394.03C263.387 1403.08 261.124 1400.82 247.545 1370.65C239.248 1351.79 220.389 1267.3 206.056 1182.82C170.602 973.107 148.726 908.987 102.711 883.339C84.6064 872.779 80.0803 872.779 56.6955 884.094C34.0651 894.655 28.7847 902.198 21.9955 936.144C-15.7218 1112.66 -3.65225 1356.32 48.3977 1470.98C72.5368 1523.78 98.1846 1551.69 145.708 1573.57C244.528 1620.34 302.613 1584.88 408.221 1413.65C485.919 1288.42 491.954 1275.6 541.741 1128.5C608.123 934.635 614.912 873.533 578.704 826.763C559.845 802.624 540.986 801.87 513.83 825.255Z" fill="#DA0F7A" />
+                        <path d="M2916.42 938.407C2859.09 961.792 2816.1 994.983 2780.64 1042.51C2748.2 1086.26 2714.26 1123.98 2707.47 1123.98C2705.21 1123.98 2704.45 1101.35 2705.21 1074.19C2710.49 982.914 2691.63 942.934 2643.35 942.934C2592.05 942.934 2572.44 985.177 2514.36 1216.76C2473.62 1375.93 2472.11 1388 2474.38 1464.94C2476.64 1558.48 2485.69 1575.08 2539.25 1581.87C2610.16 1591.67 2636.56 1558.48 2656.93 1438.54C2662.96 1398.56 2673.52 1353.3 2679.56 1338.97C2699.17 1292.95 2816.1 1121.71 2856.08 1080.22C2891.53 1044.02 2959.42 1003.28 2985.07 1003.28C2999.4 1003.28 2992.61 1043.26 2951.12 1192.62C2894.55 1401.58 2884.74 1455.14 2883.99 1569.04C2883.99 1663.33 2885.5 1673.9 2903.6 1713.12C2948.11 1806.66 3055.98 1838.34 3157.82 1787.05C3219.67 1756.87 3262.67 1707.09 3312.46 1608.27C3372.8 1491.34 3391.66 1403.09 3367.52 1358.58C3356.96 1338.97 3356.96 1338.97 3211.37 1602.99C3160.83 1693.51 3104.26 1724.44 3083.13 1672.39C3066.54 1633.92 3071.82 1568.29 3105.01 1412.14C3144.24 1230.34 3154.8 1148.87 3148.76 1086.26C3141.97 1015.35 3132.92 987.44 3101.99 951.986L3074.84 920.303H3017.51C2974.51 920.303 2948.11 924.829 2916.42 938.407Z" fill="#DA0F7A" />
+                        <path d="M3786.94 939.161C3764.31 944.441 3722.07 961.037 3692.65 976.124C3526.69 1060.61 3448.24 1169.24 3439.94 1324.63C3435.42 1415.15 3449.75 1460.41 3498.03 1508.69C3574.97 1584.88 3673.79 1587.9 3805.05 1516.99C3836.73 1499.64 3863.89 1486.82 3865.39 1488.33C3866.9 1489.83 3859.36 1541.13 3848.8 1602.23C3826.92 1732.73 3845.03 1702.56 3642.11 1946.21C3472.38 2150.64 3429.38 2217.02 3402.98 2318.11C3390.16 2367.14 3387.89 2480.29 3398.45 2526.31C3409.01 2568.55 3447.49 2583.64 3540.27 2582.88C3636.83 2582.88 3685.11 2564.78 3746.96 2508.2C3820.13 2440.31 3853.32 2352.05 3894.81 2115.19C3905.37 2053.33 3929.51 1943.95 3948.37 1871.53C3967.23 1799.12 3987.6 1705.58 3993.63 1664.09L4004.95 1587.9L4089.44 1502.66C4189.01 1401.58 4249.36 1356.31 4323.28 1326.14C4388.91 1299.74 4404 1286.91 4404 1257.5V1234.87L4363.26 1239.39C4341.39 1241.65 4309.7 1249.95 4293.11 1258.25C4258.41 1276.35 4143.75 1370.65 4094.72 1421.94C4075.86 1440.8 4050.96 1461.92 4038.89 1468.71L4017.02 1480.03L4022.3 1454.38C4045.68 1325.39 4051.72 1170.75 4035.88 1100.59C4028.33 1068.15 4018.53 1049.3 3994.39 1023.65C3977.04 1004.79 3955.16 979.141 3945.36 966.318C3917.44 929.355 3864.64 920.302 3786.94 939.161ZM3900.09 1022.89C3911.41 1028.93 3922.72 1037.23 3924.99 1041C3931.02 1050.8 3834.47 1263.53 3790.71 1337.46C3756.77 1395.54 3734.89 1415.91 3697.93 1422.7C3581.76 1444.57 3622.49 1149.62 3749.22 1046.28C3800.52 1004.79 3849.55 997.246 3900.09 1022.89ZM3774.12 1902.46C3768.84 1924.34 3748.47 2008.83 3729.61 2089.54C3679.07 2304.53 3663.23 2346.02 3605.14 2419.19C3576.48 2456.15 3519.15 2492.36 3479.92 2498.4C3459.56 2501.41 3448.99 2441.07 3461.06 2379.96C3470.87 2327.16 3533.48 2198.92 3594.58 2104.63C3645.12 2026.93 3769.59 1863.24 3777.89 1863.24C3780.91 1863.24 3779.4 1881.34 3774.12 1902.46Z" fill="#DA0F7A" />
+                        <path d="M731.08 969.334C700.152 1009.31 622.454 1254.48 608.876 1354.81C599.824 1421.94 608.122 1489.83 629.243 1521.52C660.172 1569.04 721.274 1580.36 806.515 1553.95C895.528 1526.8 983.786 1452.12 1031.31 1363.86L1056.96 1316.33L1001.14 1369.89C909.106 1457.4 835.934 1500.39 777.85 1501.15C733.343 1501.15 712.221 1480.03 717.502 1440.8C719.765 1424.96 745.413 1351.79 775.587 1277.86C818.584 1173.01 831.408 1132.27 833.671 1093.8C838.197 1037.98 826.882 986.684 805.006 964.808C784.639 944.441 749.939 945.95 731.08 969.334Z" fill="#DA0F7A" />
+                    </svg>
+                </a>
+            </div>
+        </nav>
+
+        <!-- Envelope Section -->
+        <section class="cover-section">
+            <div class="elements-wrapper-absolute">
+                <div class="background-element">
+                    <img src="./assets/images/bg-1.png" alt="bg-1">
+                </div>
+            </div>
+            <div class="ornaments-wrapper">
+                <div class="ornaments-wrapper">
+                    <div class="orn-1">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-3">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-4">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-5">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                        <div class="orn-6">
+                            <div class="image-element" data-anim="fade-up">
+                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-7">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-8">
+                            <div class="image-element" data-anim="fade-up">
+                                <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container h-100">
+                <div class="cover-wrapper h-100">
+                    <div class="cover-content">
+                        <div class="cover-body">
+                            <div class="image-wrapper" data-anim="zoom-out">
+                                <img src="./assets/images/background-2.webp" alt="cover-background" class="cover-background">
+                            </div>
+                            <div class="cover-description" data-anim="fade-down">
+                                <div class="greeting-wrapper">
+                                    <span>Dear,</span>
+                                    <h6>Name Guest</h6>
+                                </div>
+                                <p>You're Invited To Wedding</p>
+                                <h1 class="title">Vidi & Hening</h1>
+                                <div class="cover-event">
+                                    <p>31 May 2021</p>
+                                </div>
+                                <div class="elements-widget" data-anim="zoom-in">
+                                    <button class="btn btn-custom" id="btn-envelope">
+                                        <strong>Open The Invitation <i class="fas fa-envelope-open-text"></i></strong>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Header section -->
+        <section class="header-section">
+            <div class="elements-wrapper-absolute">
+                <div class="background-element">
+                    <img src="./assets/images/bg-1.png" alt="bg-1">
+                </div>
+            </div>
+            <div class="ornaments-wrapper">
+                <div class="ornaments-wrapper">
+                    <div class="orn-1">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-3">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-4">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-5">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                        <div class="orn-6">
+                            <div class="image-element" data-anim="fade-up">
+                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-7">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-8">
+                            <div class="image-element" data-anim="fade-up">
+                                <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container h-100">
+                <div class="row justify-content-center h-100">
+                    <div class="col-md-12">
+                        <div class="header-content">
+                            <div class="header">
+                                <div class="header-title">
+                                    <div class="header-title-content">
+                                        <div class="logo">
+                                            <div class="image-element">
+                                                <img src="./assets/images/logo.png" alt="logo" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <h1 class="title mb-3" data-anim="fade-left">Vidi <span>&</span> Hening</h1>
+                                        <div data-anim="zoom-out">
+                                            <p>We're Getting Married</p>
+                                        </div>
+                                        <div class="scroll-icon">
+                                            <svg data-anim="slide-up" width="28" height="42" viewBox="0 0 28 42" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <rect opacity="0.6" x="0.5" y="0.5" width="27" height="41" rx="13.5" stroke="#757346" />
+                                                <rect id="scroll-animate" opacity="0.6" x="12" y="6.66699" width="4" height="9.33333" rx="2" fill="#A79E74" />
+                                            </svg>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="moveable_section_wrapper position-relative">
+            <!-- Couple section -->
+            <section class="couple-section moveable-section" data-id="1">
+                <div class="reminder-wrap">
+                    <div class="ornaments-wrapper">
+                        <div class="elements-wrapper-absolute">
+                            <div class="background-element">
+                                <img src="./assets/images/bg-2.png" alt="bg-2">
+                            </div>
+                            <div class="orn-1">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                                <div class="orn-2">
+                                    <div class="image-element" data-anim="fade-right">
+                                        <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orn-3">
+                                <div class="orn-4">
+                                    <div class="image-element" data-anim="fade-left">
+                                        <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                                    </div>
+                                </div>
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="reminder-content">
+                        <div class="countdown" date="12/31/2024 23:59:00" data-anim="slide-left">
+                            <div class="days">
+                                <p class="angka">00</p>
+                                <p class="huruf">Day</p>
+                            </div>
+                            <div class="hours">
+                                <p class="angka">00</p>
+                                <p class="huruf">Hours</p>
+                            </div>
+                            <div class="minutes">
+                                <p class="angka">00</p>
+                                <p class="huruf">Mins</p>
+                            </div>
+                            <div class="seconds">
+                                <p class="angka">00</p>
+                                <p class="huruf">Secs</p>
+                            </div>
+                        </div>
+                        <a href="#" class="btn btn-custom btn-reminder" data-anim="fade-up">
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <g clip-path="url(#clip0_2411_134)">
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
+                                </g>
+                                <defs>
+                                    <clipPath id="clip0_2411_134">
+                                        <rect width="20" height="20" fill="white" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                            Save the Date
+                        </a>
+                    </div>
+                </div>
+                <div class="couple-wrapper">
+                    <div class="container">
+                        <div class="row justify-content-evenly">
+                            <div class="col-lg-6 col-md-8 text-center position-relative">
+                                <div class="orn-1">
+                                    <div class="image-element" data-anim="fade-right">
+                                        <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-2">
+                                        <div class="image-element" data-anim="fade-right">
+                                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orn-3">
+                                    <div class="image-element" data-anim="fade-right">
+                                        <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-4">
+                                        <div class="image-element" data-anim="fade-right">
+                                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orn-5">
+                                    <div class="image-element" data-anim="fade-up">
+                                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                </div>
+                                <div class="orn-6">
+                                    <div class="image-element" data-anim="fade-up">
+                                        <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                </div>
+                                <div class="couple-content">
+                                    <div class="elements-wrapper-absolute">
+                                        <div class="background-element">
+                                            <img src="./assets/images/bg-1.png" alt="bg-1">
+                                        </div>
+                                    </div>
+                                    <div class="title-section" data-anim="slide-left">
+                                        <h2>Bride & Groom</h2>
+                                    </div>
+                                    <div class="position-relative" data-anim="zoom-out">
+                                        <p>What greater thing is there for two human souls, than to feel that
+                                            they
+                                            are
+                                            joined for life–to
+                                            strength each other in all labor, to rest on each other in all sorrow, to minister
+                                            to
+                                            each
+                                            other
+                                            in silent unspeakable memories at the moment of the last parting? Being deeply loved
+                                            by
+                                            someone
+                                            gives you strength, while loving someone deeply gives you courage.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="couple-body">
+                        <div class="container position-relative">
+                            <div class="row justify-content-evenly position-relative">
+                                <div class="col-md-6 col-xl-5 position-relative">
+                                    <div class="orn-8">
+                                        <div class="image-element" data-anim="fade-left" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="orn-9">
+                                        <div class="image-element" data-anim="fade-right" data-anim-delay="3000">
+                                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000" data-anim-duration="5000ms">
+                                        </div>
+                                    </div>
+                                    <div class="orn-10">
+                                        <div class="image-element" data-anim="fade-left" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="orn-11">
+                                        <div class="image-element" data-anim="fade-right" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="couple">
+                                        <div class="elements-wrapper-absolute">
+                                            <div class="background-element" data-anim="slide-left">
+                                                <img src="./assets/images/bg-1.png" alt="bg-1">
+                                            </div>
+                                        </div>
+                                        <div class="couple-description" data-anim="zoom-out">
+                                            <h3>Vidi Dwi Saputra</h3>
+                                            <div class="couple-parent">
+                                                <p>First son of <br> H. Heru Stiawan <br> and <br>
+                                                    Siti Amizah</p>
+                                            </div>
+                                            <div class="sosmed-wrap">
+                                                <a href="#" class="sosmed">
+                                                    <small><i class="fab fa-instagram"></i></small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="image-wrap man" data-anim="zoom-out">
+                                            <div class="image-element">
+                                                <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="and"><span>&</span></div>
+                                <div class="col-md-6 col-xl-5 position-relative">
+                                    <div class="orn-8">
+                                        <div class="image-element" data-anim="fade-left" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="orn-12">
+                                        <div class="image-element" data-anim="fade-right" data-anim-delay="3000">
+                                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000" data-anim-duration="5000ms">
+                                        </div>
+                                    </div>
+                                    <div class="orn-10">
+                                        <div class="image-element" data-anim="fade-left" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="orn-11">
+                                        <div class="image-element" data-anim="fade-right" data-anim-delay="3000">
+                                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="3000">
+                                        </div>
+                                    </div>
+                                    <div class="couple">
+                                        <div class="elements-wrapper-absolute">
+                                            <div class="background-element" data-anim="slide-left">
+                                                <img src="./assets/images/bg-1.png" alt="bg-1">
+                                            </div>
+                                        </div>
+                                        <div class="couple-description" data-anim="zoom-out">
+                                            <h3>Hening Saputri</h3>
+                                            <div class="couple-parent">
+                                                <p>First son of <br> H. Heru Stiawan <br> and <br>
+                                                    Siti Amizah</p>
+                                            </div>
+                                            <div class="sosmed-wrap">
+                                                <a href="#" class="sosmed">
+                                                    <small><i class="fab fa-instagram"></i></small>
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <div class="image-wrap woman" data-anim="zoom-out">
+                                            <div class="image-element">
+                                                <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Story section -->
+            <section class="story-section moveable-section" data-id="2">
+                <div class="orn-1">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                </div>
+                <div class="orn-2">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                </div>
+                <div class="story">
+                    <div class="container position-relative">
+                        <div class="story-content">
+                            <div class="row justify-content-between align-items-center flex-column flex-lg-row">
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="image-wrapper">
+                                        <div class="orn-3">
+                                            <div class="image-element" data-anim="fade-up">
+                                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-right">
+                                            </div>
+                                        </div>
+                                        <div class="orn-4">
+                                            <div class="image-element" data-anim="fade-right">
+                                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                                            </div>
+                                        </div>
+                                        <div class="orn-5">
+                                            <div class="image-element" data-anim="fade-up">
+                                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                            </div>
+                                        </div>
+                                        <div class="orn-6">
+                                            <div class="image-element" data-anim="fade-right">
+                                                <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                                            </div>
+                                        </div>
+                                        <div class="image-element">
+                                            <img src="./assets/images/background-2.webp" alt="story-background" class="story-background">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-12 col-lg-6">
+                                    <div class="story-description">
+                                        <div class="elements-wrapper-absolute">
+                                            <div class="background-element">
+                                                <img src="./assets/images/bg-story.png" alt="bg-story">
+                                            </div>
+                                        </div>
+                                        <div class="title-section" data-anim="slide-left">
+                                            <h2 class="text-center">Our Story</h2>
+                                        </div>
+                                        <div class="position-relative" data-anim="zoom-out">
+                                            <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi dolore blanditiis odio minima obcaecati atque veniam, quisquam modi adipisci perferendis dolorum deserunt tenetur commodi asperiores laudantium ab, quos fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit labore quae, assumenda dolore laborum expedita eaque. Aliquid, explicabo, doloremque ex dolor ab ipsum ut laboriosam repellendus sit, quae eligendi! <br> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos ullam, illum ratione consequuntur animi facere fuga dolores provident, ipsum voluptatum inventore officiis itaque tenetur, labore dignissimos doloribus dolor tempore excepturi. <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat libero dolores autem ipsam rem odit. Deleniti quibusdam, labore, quod quae, praesentium ut voluptatem ipsa ducimus iure unde error ab. Deleniti?”</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="moveable-section" data-id="4">
+                <!-- Vanue & Event section -->
+                <section class="venue-section">
+                    <div class="orn-1">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-left">
+                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-3">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-4">
+                            <div class="image-element" data-anim="fade-left">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="venue-wrapper">
+                        <div class="container position-relative">
+                            <div class="row justify-content-center">
+                                <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
+                                    <div class="venue-description">
+                                        <div class="title-section" data-anim="slide-left">
+                                            <h2>Event & Venue</h2>
+                                        </div>
+                                        <div data-anim="zoom-out">
+                                            <p>If you will be present at the event location. Please fill out
+                                                the form below</p>
+                                        </div>
+                                        <div class="image-wrapper">
+                                            <img data-src="./assets/images/background-2.webp" alt="venue-background" class="venue-background lazyload">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="venue-content">
+                            <div class="container">
+                                <div class="row justify-content-center row-venue">
+                                    <div class="col-md-6 col-xl-5 position-relative">
+                                        <div class="card">
+                                            <div class="elements-wrapper-absolute">
+                                                <div class="background-element">
+                                                    <img src="./assets/images/bg-1.png" alt="bg-1">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="event-name" data-anim="zoom-in">
+                                                    <h4>Marriage Contract</h4>
+                                                    <p>Minggu</p>
+                                                    <div class="date">
+                                                        <hr>
+                                                        <h5>31</h5>
+                                                        <hr>
+                                                    </div>
+                                                    <p>Desember 2023</p>
+                                                    <p>19.00 - 21.00 WIB</p>
+                                                </div>
+                                                <div class="mt-3" data-anim="zoom-in">
+                                                    <p>description of event</p>
+                                                </div>
+                                                <div class="event-place">
+                                                    <div class="ribbon-venue" data-animationloop="keyframe">
+                                                        <div data-anim="zoom-in">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;overflow: visible;" xml:space="preserve">
+                                                                <g id="Layer_1">
+                                                                </g>
+                                                                <g id="Layer_3">
+                                                                    <g>
+                                                                        <g>
+                                                                            <path class="st0" d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
+                                                                        </g>
+                                                                        <g>
+                                                                            <path class="st0" d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                                <g id="Layer_2">
+                                                                    </image>
+                                                                    <ellipse class="st1" cx="272.8" cy="437.9" rx="146.4" ry="40.9" />
+                                                                    <ellipse class="st0 dot" cx="273.6" cy="437.9" rx="63.1" ry="17" />
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <h4>Groom House</h4>
+                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                                                        Kecamatan
+                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                                                        Jakarta
+                                                        10220</p>
+                                                    <div class="widget-elements" data-anim="zoom-in">
+                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-6 col-xl-5 position-relative">
+                                        <div class="card">
+                                            <div class="elements-wrapper-absolute">
+                                                <div class="background-element">
+                                                    <img src="./assets/images/bg-1.png" alt="bg-1">
+                                                </div>
+                                            </div>
+                                            <div class="card-body">
+                                                <div class="event-name" data-anim="zoom-in">
+                                                    <h4>Marriage Contract</h4>
+                                                    <p>Minggu</p>
+                                                    <div class="date">
+                                                        <hr>
+                                                        <h5>31</h5>
+                                                        <hr>
+                                                    </div>
+                                                    <p>Desember 2023</p>
+                                                    <p>19.00 - 21.00 WIB</p>
+                                                </div>
+                                                <div class="mt-3" data-anim="zoom-in">
+                                                    <p>description of event</p>
+                                                </div>
+                                                <div class="event-place">
+                                                    <div class="ribbon-venue" data-animationloop="keyframe">
+                                                        <div data-anim="zoom-in">
+                                                            <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 560 560" style="enable-background:new 0 0 560 560;overflow: visible;" xml:space="preserve">
+                                                                <g id="Layer_1">
+                                                                </g>
+                                                                <g id="Layer_3">
+                                                                    <g>
+                                                                        <g>
+                                                                            <path class="st0" d="M273.3,48.3c34.1,0,66.1,13.3,90.3,37.4c24.1,24.1,37.4,56.2,37.4,90.3c0,93.4-63.7,165.3-105.8,212.8c-4.4,4.9-8.5,9.6-12.3,14c-2.9,3.4-6.3,5.2-9.5,5.2c-4.1,0-7.4-2.8-9.4-5.2c-4.6-5.3-9.4-10.7-14.5-16.5c-20.4-23-43.5-49.1-63-80c-22.1-35-34.9-69.1-39.2-104.3c-4.8-39.7,6.8-79.6,31.9-109.4c22.5-26.7,53.5-42.4,87.3-44.2C268.7,48.4,271.1,48.3,273.3,48.3 M273.3,29.3c-2.6,0-5.2,0.1-7.8,0.2c-87.5,4.6-147.7,87.9-137.1,174.9c11.7,96.3,80.1,163.3,121.1,210.8c6.8,7.8,15.3,11.8,23.8,11.8c8.6,0,17.1-3.9,23.9-11.8C338.4,367.6,420,286.7,420,176C420,95,354.3,29.3,273.3,29.3L273.3,29.3z" />
+                                                                        </g>
+                                                                        <g>
+                                                                            <path class="st0" d="M275.1,118c30.6,0,55.5,24.9,55.5,55.5S305.7,229,275.1,229s-55.5-24.9-55.5-55.5S244.5,118,275.1,118 M275.1,99c-41.1,0-74.5,33.3-74.5,74.5S234,248,275.1,248s74.5-33.3,74.5-74.5S316.2,99,275.1,99L275.1,99z" />
+                                                                        </g>
+                                                                    </g>
+                                                                </g>
+                                                                <g id="Layer_2">
+                                                                    </image>
+                                                                    <ellipse class="st1" cx="272.8" cy="437.9" rx="146.4" ry="40.9" />
+                                                                    <ellipse class="st0 dot" cx="273.6" cy="437.9" rx="63.1" ry="17" />
+                                                                </g>
+                                                            </svg>
+                                                        </div>
+                                                    </div>
+                                                    <h4>Groom House</h4>
+                                                    <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
+                                                        Kecamatan
+                                                        Tanah Abang, Kota Jakarta Pusat, Daerah Khusus Ibukota
+                                                        Jakarta
+                                                        10220</p>
+                                                    <div class="widget-elements" data-anim="zoom-in">
+                                                        <a class="btn btn-custom mt-3" aria-label="button maps" href="#" data-bs-toggle="modal" data-bs-target="#event1">See Location</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- rsvp section -->
+                <section class="rsvp-section">
+                    <div class="elements-wrapper-absolute">
+                        <div class="background-element">
+                            <img src="./assets/images/bg-2.png" alt="bg-2">
+                        </div>
+                    </div>
+                    <div class="ornaments-wrapper">
+                        <div class="orn-1">
+                            <div class="image-element" data-anim="fade-left">
+                                <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element" data-anim="fade-left">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-delay="4500ms">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container position-relative">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6 col-xl-5 position-relative">
+                                <div class="rsvp-wrapper">
+                                    <div class="elements-wrapper-absolute">
+                                        <div class="background-element">
+                                            <img src="./assets/images/bg-1.png" alt="bg-1">
+                                        </div>
+                                    </div>
+                                    <div class="rsvp-form">
+                                        <div class="title-section" data-anim="slide-left">
+                                            <h2>RSVP</h2>
+                                        </div>
+                                        <form action="#" data-anim="fade" data-anim-delay="500">
+                                            <input type="text" class="form-control mb-4" placeholder="Name" data-anim="zoom-in-up">
+                                            <input type="text" class="form-control mb-4" placeholder="E-Mail" data-anim="zoom-in-up">
+                                            <input type="text" class="form-control mb-4" placeholder="Phone Number" data-anim="zoom-in-up">
+                                            <input type="number" class="form-control mb-4" placeholder="The Number of Guest" data-anim="zoom-in-up">
+                                            <select name="" class="form-select mb-4" id="" data-anim="zoom-in-up">
+                                                <option disabled selected>Confirmation Attendance</option>
+                                                <option value="1">Yes</option>
+                                                <option value="0">No</option>
+                                            </select>
+                                            <button class="btn btn-custom w-100" data-anim="zoom-in-up">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </section>
+
+            <!-- Wishes section -->
+            <section class="wishes-section moveable-section" data-id="6">
+                <div class="wishes-form-wrapper">
+                    <div class="elements-wrapper-absolute">
+                        <div class="background-element">
+                            <img src="./assets/images/bg-1.png" alt="bg-1">
+                        </div>
+                        <div class="orn-1">
+                            <div class="image-element" data-anim="fade-left">
+                                <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-3">
+                            <div class="orn-4">
+                                <div class="image-element" data-anim="fade-left">
+                                    <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                                </div>
+                            </div>
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container position-relative">
+                        <div class="row justify-content-center align-items-center flex-column">
+                            <div class="col-md-8 col-lg-6 position-relative" style="z-index: 3;">
+                                <div class="card card-form">
+                                    <div class="card-body">
+                                        <div class="title-section" data-anim="slide-left">
+                                            <h2>Wedding Wishes</h2>
+                                        </div>
+                                        <form action="#" class="text-center" data-anim="fade-up">
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Name">
+                                            </div>
+                                            <div class="mb-4">
+                                                <input type="text" class="form-control" placeholder="Address">
+                                            </div>
+                                            <div class="mb-4">
+                                                <textarea name="" id="" rows="5" class="form-control" placeholder="Write your wishes"></textarea>
+                                            </div>
+                                            <button class="btn btn-custom m-auto w-100">Send</button>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wishes-preview">
+                    <div class="elements-wrapper-absolute">
+                        <div class="background-element">
+                            <img src="./assets/images/bg-2.png" alt="bg-2">
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-md-8 col-lg-6">
+                                <div class="card">
+                                    <div class="card-body text-left">
+                                        <div class="wishes" data-anim="slide-up">
+                                            <div class="wish">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit ratione officiis ipsa reprehenderit non deserunt quis rem laborum sapiente quasi temporibus cum, in tempora omnis, obcaecati sint dicta hic iure.</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                            <div class="wish ">
+                                                <div class="wish-badge">
+                                                    <h6>D</h6>
+                                                </div>
+                                                <div class="wish-description">
+                                                    <h6>Dewi</h6>
+                                                    <p>Happy Married Guys, hope you enjoy new journey and be happy
+                                                        family!</p>
+                                                    <small class="text-muted">3 Days ago</small>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Egift section -->
+            <section class="egift-section moveable-section" data-id="5">
+                <div class="orn-1">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                    <div class="orn-2">
+                        <div class="image-element" data-anim="fade-left">
+                            <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                        </div>
+                    </div>
+                </div>
+                <div class="orn-3">
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/tree.png" alt="tree" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                    <div class="orn-4">
+                        <div class="image-element" data-anim="fade-left">
+                            <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                        </div>
+                    </div>
+                </div>
+                <div class="container position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-md-8 text-center position-relative">
+                            <div class="gift-wrap">
+                                <div class=" title-section" data-anim="slide-left">
+                                    <h2>E-Gift</h2>
+                                </div>
+                                <div class="tabs-gift">
+                                    <button class="btn btn-custom tab active" data-tab=".angpao">
+                                        <div class="glider"></div>
+                                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M31.668 8.75H8.33464C7.56244 8.75438 6.82311 9.06307 6.27708 9.60911C5.73104 10.1551 5.42234 10.8945 5.41797 11.6667V28.3333C5.42234 29.1055 5.73104 29.8449 6.27708 30.3909C6.82311 30.9369 7.56244 31.2456 8.33464 31.25H31.668C32.4402 31.2456 33.1795 30.9369 33.7255 30.3909C34.2716 29.8449 34.5803 29.1055 34.5846 28.3333V11.6667C34.5803 10.8945 34.2716 10.1551 33.7255 9.60911C33.1795 9.06307 32.4402 8.75438 31.668 8.75ZM32.0846 11.6667V14.45H31.7346C31.5354 14.4749 31.3339 14.4749 31.1346 14.45H30.918C30.7297 14.4122 30.5455 14.3564 30.368 14.2833H30.168C29.93 14.1681 29.7152 14.0099 29.5346 13.8167C29.2874 13.5726 29.0909 13.282 28.9564 12.9616C28.822 12.6412 28.7523 12.2974 28.7513 11.95C28.7518 11.7186 28.7854 11.4885 28.8513 11.2667H31.668C31.7756 11.2666 31.8792 11.3082 31.9569 11.3828C32.0345 11.4573 32.0803 11.5591 32.0846 11.6667ZM8.33464 11.25H11.1513C11.2172 11.4718 11.2509 11.7019 11.2513 11.9333C11.2503 12.2808 11.1806 12.6246 11.0462 12.9449C10.9117 13.2653 10.7152 13.5559 10.468 13.8C10.283 13.9882 10.0692 14.1458 9.83464 14.2667H9.61797C9.45479 14.3471 9.28073 14.4033 9.1013 14.4333H8.86797C8.66875 14.4583 8.46719 14.4583 8.26797 14.4333H7.91797V11.6667C7.91797 11.5562 7.96187 11.4502 8.04001 11.372C8.11815 11.2939 8.22413 11.25 8.33464 11.25ZM7.91797 28.3333V25.55H8.26797C8.46719 25.5251 8.66875 25.5251 8.86797 25.55H9.08464C9.27474 25.5801 9.45981 25.6362 9.63464 25.7167H9.83464C10.0692 25.8376 10.283 25.9951 10.468 26.1833C10.7152 26.4274 10.9117 26.718 11.0462 27.0384C11.1806 27.3588 11.2503 27.7026 11.2513 28.05C11.2509 28.2814 11.2172 28.5115 11.1513 28.7333H8.33464C8.22696 28.7334 8.12343 28.6918 8.04575 28.6172C7.96807 28.5427 7.92228 28.4409 7.91797 28.3333ZM13.7013 28.75C13.7184 28.5225 13.7184 28.2941 13.7013 28.0667C13.7076 27.3899 13.5763 26.719 13.3156 26.0944C13.0549 25.4699 12.6702 24.9048 12.1846 24.4333C11.9393 24.1849 11.6651 23.9667 11.368 23.7833L11.0846 23.6C10.89 23.4996 10.6896 23.4105 10.4846 23.3333L10.1513 23.2C9.86232 23.115 9.5669 23.0537 9.26797 23.0167C9.09617 22.9995 8.9231 22.9995 8.7513 23.0167H7.91797V17.0333H9.33464C9.56077 16.9948 9.78363 16.9391 10.0013 16.8667L10.368 16.75C10.6227 16.663 10.8683 16.5514 11.1013 16.4167L11.368 16.2667C11.679 16.0622 11.9693 15.8277 12.2346 15.5667C12.7202 15.0952 13.1049 14.5301 13.3656 13.9056C13.6263 13.281 13.7575 12.6101 13.7513 11.9333C13.7684 11.7059 13.7684 11.4775 13.7513 11.25H26.3513C26.3342 11.4775 26.3342 11.7059 26.3513 11.9333C26.3451 12.6101 26.4763 13.281 26.737 13.9056C26.9977 14.5301 27.3824 15.0952 27.868 15.5667C28.1289 15.8326 28.4197 16.0675 28.7346 16.2667L29.0013 16.4167C29.2343 16.5514 29.4799 16.663 29.7346 16.75L30.1013 16.8667C30.3249 16.9343 30.5533 16.9844 30.7846 17.0167H32.1846V22.95H31.3513C31.1795 22.9335 31.0065 22.9335 30.8346 22.95C30.5357 22.987 30.2403 23.0484 29.9513 23.1333L29.618 23.2667C29.3952 23.3528 29.1781 23.453 28.968 23.5667L28.6846 23.75C28.3875 23.9334 28.1133 24.1516 27.868 24.4C27.3824 24.8715 26.9977 25.4366 26.737 26.0611C26.4763 26.6856 26.3451 27.3566 26.3513 28.0333C26.3342 28.2608 26.3342 28.4892 26.3513 28.7167L13.7013 28.75ZM31.668 28.75H28.8513C28.7854 28.5282 28.7518 28.2981 28.7513 28.0667C28.7523 27.7192 28.822 27.3754 28.9564 27.0551C29.0909 26.7347 29.2874 26.4441 29.5346 26.2C29.7152 26.0068 29.93 25.8486 30.168 25.7333H30.368C30.5463 25.6626 30.7303 25.6068 30.918 25.5667H31.1346C31.3339 25.5417 31.5354 25.5417 31.7346 25.5667H32.0846V28.3333C32.0846 28.4438 32.0407 28.5498 31.9626 28.628C31.8845 28.7061 31.7785 28.75 31.668 28.75Z" fill="#353A40" />
+                                            <path d="M20.0013 14.167C18.8476 14.167 17.7198 14.5091 16.7605 15.1501C15.8012 15.7911 15.0535 16.7021 14.612 17.768C14.1705 18.8339 14.055 20.0068 14.2801 21.1384C14.5051 22.2699 15.0607 23.3093 15.8765 24.1251C16.6923 24.9409 17.7317 25.4965 18.8633 25.7216C19.9948 25.9467 21.1677 25.8311 22.2336 25.3896C23.2995 24.9481 24.2106 24.2004 24.8515 23.2412C25.4925 22.2819 25.8346 21.154 25.8346 20.0003C25.8346 18.4532 25.2201 16.9695 24.1261 15.8755C23.0321 14.7816 21.5484 14.167 20.0013 14.167ZM20.0013 23.3337C19.342 23.3337 18.6976 23.1382 18.1494 22.7719C17.6012 22.4056 17.174 21.885 16.9217 21.2759C16.6694 20.6668 16.6034 19.9966 16.732 19.35C16.8606 18.7034 17.1781 18.1095 17.6443 17.6433C18.1105 17.1771 18.7044 16.8597 19.351 16.731C19.9976 16.6024 20.6678 16.6684 21.2769 16.9207C21.886 17.173 22.4066 17.6003 22.7729 18.1484C23.1391 18.6966 23.3346 19.3411 23.3346 20.0003C23.3346 20.8844 22.9834 21.7322 22.3583 22.3573C21.7332 22.9825 20.8854 23.3337 20.0013 23.3337Z" fill="#353A40" />
+                                        </svg>
+                                        E-Angpao
+                                    </button>
+                                    <button class="btn btn-custom tab" data-tab=".gift">
+                                        <svg width="30" height="30" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M5.625 12.1094L11.3906 12.1094C10.8594 11.2734 10.5469 10.2813 10.5469 9.21875C10.5469 6.2461 12.9648 3.82813 15.9375 3.82813C17.5547 3.82813 19.0117 4.54688 20 5.67969C20.9883 4.54688 22.4453 3.82813 24.0625 3.82813C27.0352 3.82813 29.4531 6.24609 29.4531 9.21875C29.4531 10.2813 29.1445 11.2734 28.6094 12.1094L34.375 12.1094C35.0664 12.1094 35.625 12.668 35.625 13.3594L35.625 21.1719C35.625 21.3438 35.4844 21.4844 35.3125 21.4844L33.75 21.4844L33.75 34.9219C33.75 35.6133 33.1914 36.1719 32.5 36.1719L7.5 36.1719C6.8086 36.1719 6.25 35.6133 6.25 34.9219L6.25 21.4844L4.6875 21.4844C4.51563 21.4844 4.375 21.3438 4.375 21.1719L4.375 13.3594C4.375 12.668 4.93359 12.1094 5.625 12.1094ZM18.6719 9.21875C18.6719 7.71094 17.4453 6.48438 15.9375 6.48438C14.4297 6.48438 13.2031 7.71094 13.2031 9.21875C13.2031 10.7266 14.4297 11.9531 15.9375 11.9531L18.6719 11.9531L18.6719 9.21875ZM24.0625 6.48438C22.5547 6.48438 21.3281 7.71094 21.3281 9.21875L21.3281 11.9531L24.0625 11.9531C25.5703 11.9531 26.7969 10.7266 26.7969 9.21875C26.7969 7.71094 25.5703 6.48438 24.0625 6.48438ZM32.9688 18.8281L32.9688 14.7656L21.3281 14.7656L21.3281 18.8281L32.9688 18.8281ZM31.0938 21.4844L21.3281 21.4844L21.3281 33.5156L31.0938 33.5156L31.0938 21.4844ZM8.90625 33.5156L18.6719 33.5156L18.6719 21.4844L8.90625 21.4844L8.90625 33.5156ZM7.03125 18.8281L18.6719 18.8281L18.6719 14.7656L7.03125 14.7656L7.03125 18.8281Z" fill="#F9FDF9" />
+                                        </svg>
+                                        Gift Registry
+                                    </button>
+                                </div>
+                                <div class="angpao">
+                                    <p class="my-3" data-anim="zoom-in">
+                                        Without reducing our respect, if you intend to give wedding
+                                        angpao online in various ways various payment methods, please
+                                        fill out the form provided below:
+                                    </p>
+                                </div>
+                                <div class="gift">
+                                    <p class="my-3" data-anim="zoom-in">
+                                        Without reducing our respect, if you intend to give wedding
+                                        gifts online in various ways various payment methods, please
+                                        fill out the form provided below:
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gift-content">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-10 angpao">
+                                <form action="#">
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col-md-6" data-anim="fade-down">
+                                            <input type="text" class="form-control" placeholder="Name" />
+                                        </div>
+                                        <div class="col-md-6" data-anim="fade-down" data>
+                                            <input type="text" class="form-control" placeholder="E-Mail" />
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col-md-6" data-anim="fade-down" data-anim-delay="100">
+                                            <input type="text" class="form-control" placeholder="Phone Number" />
+                                        </div>
+                                        <div class="col-md-6" data-anim="fade-down" data-anim-delay="100">
+                                            <input type="text" class="form-control" placeholder="Adress" />
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center mb-3">
+                                        <div class="col-md-12" data-anim="fade-down" data-anim-delay="200">
+                                            <div class="input-group">
+                                                <span class="input-group-text" id="basic-addon1">Rp</span>
+                                                <input type="text" class="form-control" placeholder="Amount" name="payment" />
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-md-6" data-anim="fade-down" data-anim-delay="300">
+                                            <button class="btn btn-custom w-100">Send</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div class="col-md-12 gift">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Apology section -->
+            <section class="apology-section moveable-section" data-id="7">
+                <div class="orn-1">
+                    <div class="image-element" data-anim="fade-left">
+                        <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                    </div>
+                    <div class="orn-2">
+                        <div class="image-element" data-anim="fade-right">
+                            <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                        </div>
+                    </div>
+                </div>
+                <div class="orn-3">
+                    <div class="orn-4">
+                        <div class="image-element" data-anim="fade-left">
+                            <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                        </div>
+                    </div>
+                    <div class="image-element" data-anim="fade-right">
+                        <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-right">
+                    </div>
+                </div>
+                <div class="container position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-8 text-center position-relative">
+                            <div class="orn-5">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree.png" alt="tree" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-6">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree.png" alt="tree" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="appology-wrap">
+                                <div class="elements-wrapper-absolute">
+                                    <div class="background-element">
+                                        <img src="./assets/images/bg-1.png" alt="bg-1">
+                                    </div>
+                                </div>
+                                <div class="title-section" data-anim="slide-left">
+                                    <h2>Apology</h2>
+                                </div>
+                                <div class="col-md-10 mx-auto col-10 position-relative" data-anim="zoom-out">
+                                    <p>allow us to expect your virtual presence and give us your blessing.
+                                        <br>Thank you
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Gallery Section -->
+            <section class="gallery-section moveable-section" data-id="3">
+                <div class="gallery-default">
+                    <div class="zoom-gallery-default">
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-1.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-1.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/mempelai-2.webp" data-anim="flip-left">
+                            <img src="./assets/images/mempelai-2.webp" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo01.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo01.jfif" alt="photo" class="photo" />
+                        </a>
+                        <a href="./assets/images/photo02.jfif" data-anim="flip-left">
+                            <img src="./assets/images/photo02.jfif" alt="photo" class="photo" />
+                        </a>
+                    </div>
+                </div>
+                <div class="position-relative mt-3">
+                    <div class="container position-relative">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-6 col-md-8 position-relative">
+                                <div class="ratio ratio-16x9" data-anim="fade-down">
+                                    <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
+                                    </iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stream Section -->
+            <section class="stream-section moveable-section" data-id="8">
+                <div class="elements-wrapper-absolute">
+                    <div class="background-element">
+                        <img src="./assets/images/bg-2.png" alt="bg-2">
+                    </div>
+                </div>
+                <div class="container position-relative">
+                    <div class="stream-wrapper">
+                        <div class="title-section" data-anim="slide-left">
+                            <h2>Live Streaming</h2>
+                        </div>
+                        <div class="stream-content">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8 col-md-10 col-xl-6">
+                                    <div class="stream-description" data-anim="zoom-out">
+                                        <h4 class="mb-3">Live Wedding Schedule</h4>
+                                        <ul class="p-0 m-auto" style="width: fit-content;">
+                                            <ol>10.00 Live Wedding Schedule</ol>
+                                            <ol>13.00 Lunch Party</ol>
+                                            <ol>14.00 Sungkeman</ol>
+                                        </ul>
+                                        <div class="yt-description">
+                                            <h4 class="mb-3 text-center">Live Wedding</h4>
+                                            <div>
+                                                <p>We apologize for the limitations of Zoom participants, only for invited
+                                                    guests
+                                                    who
+                                                    have
+                                                    been given a password, who can join the Room Zoom of the bride and groom
+                                                    to
+                                                    watch a
+                                                    series of wedding events and say hello Bride Live. Meanwhile, other
+                                                    invited
+                                                    guests
+                                                    can
+                                                    watch via Youtube Live Streaming.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 position-relative mt-3">
+                                        <div class="ratio ratio-16x9">
+                                            <iframe data-src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen class="lazyload">
+                                            </iframe>
+                                        </div>
+                                        <a href="#" class="btn btn-custom mt-3">Join Youtube</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Tanks Section -->
+            <section class="thank-section moveable-section" data-id="9">
+                <div class="elements-wrapper-absolute">
+                    <div class="background-element">
+                        <img src="./assets/images/bg-1.png" alt="bg-1">
+                    </div>
+                </div>
+                <div class="ornaments-wrapper">
+                    <div class="ornaments-wrapper">
+                        <div class="orn-1">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-3">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="4500ms">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-4">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-5">
+                                <div class="image-element" data-anim="fade-right">
+                                    <img src="./assets/images/flower-2.png" alt="flower-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-6">
+                                <div class="image-element" data-anim="fade-up">
+                                    <img src="./assets/images/flower-1.png" alt="flower-1" class="img-fluid animate-loop" data-anim="rotate-left" data-anim-duration="5000ms">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-7">
+                            <div class="image-element" data-anim="fade-right">
+                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-8">
+                                <div class="image-element" data-anim="fade-up">
+                                    <img src="./assets/images/flower-3.png" alt="flower-3" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container position-relative">
+                    <div class="row justify-content-center">
+                        <div class="col-md-6 col-lg-5 col-xl-4 position-relative">
+                            <div class="thank-wrapper">
+                                <div class="image-wrapper">
+                                    <div class="image-element">
+                                        <img src="./assets/images/background-1.webp" alt="thank-background" class="thank-background">
+                                    </div>
+                                </div>
+                                <div class="thank">
+                                    <div class="title-section" data-anim="slide-left">
+                                        <h2>Thank You</h2>
+                                    </div>
+                                    <div class="position-relative" data-anim="zoom-out">
+                                        <p>Thank you for your presence, participation and blessing.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <footer class="footer color-secondary">
+            <small>Copyright 2021 Created with ❤️ by viding.co</small>
+        </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade show-maps" id="event1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class=" btn-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                    <div class="modal-actions">
+                        <h3>Event I</h3>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="maps-element">
+                            <div class="loader-wrapper-modal">
+                                <div class="lds-default">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?q=Gedung+Pemuda+Pamekasan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <a href="#" class="btn btn-custom mt-3">Location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade show-maps" id="event2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body text-center">
+                    <button type="button" class=" btn-modal" data-bs-dismiss="modal" aria-label="Close">
+                        <i class="fas fa-xmark"></i>
+                    </button>
+                    <div class="modal-actions">
+                        <h3>Event I</h3>
+                    </div>
+                    <div class="col-12 mt-3">
+                        <div class="maps-element">
+                            <div class="loader-wrapper-modal">
+                                <div class="lds-default">
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                    <div></div>
+                                </div>
+                            </div>
+                            <iframe class="maps-embed" width="100%" height="328" id="gmap_canvas" data-src="https://maps.google.com/maps?q=Gedung+Pemuda+Pamekasan&t=&z=15&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                        </div>
+                        <a href="#" class="btn btn-custom mt-3">Location</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <svg style="position: absolute;pointer-events: none;" width="0" height="0" xmlns="http://www.w3.org/2000/svg" version="1.1">
+        <defs>
+            <clipPath id="wishes-polygon" clipPathUnits="objectBoundingBox">
+                <polygon points="0 0, 1 1, 1 0" />
+            </clipPath>
+        </defs>
+    </svg>
+
+
+    <!-- script libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@3.6.8/dist/js/splide.js" integrity="sha256-6EroBTJT/xoE+Qu93lvN4L6xstdeTcwE0UEgNmPGWjA=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/Flip.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js" integrity="sha512-q583ppKrCRc7N5O0n2nzUiJ+suUv7Et1JGels4bXOaMFQcamPk9HjdUknZuuFjBNs7tsMuadge5k9RzdmO+1GQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!-- scripts plugins -->
+    <script src="./assets/js/jquery.magnific-popup.min.js"></script>
+
+    <!-- scripts custom -->
+    <script src="./assets/js/countdown.js"></script>
+    <script src="./assets/js/app.js?v="></script>
+</body>
+
+</html>

@@ -867,7 +867,6 @@ ul li {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 1.5rem;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -989,7 +988,7 @@ ul li {
 }
 .couple-section .couple .couple-description {
   position: relative;
-  padding: 1rem 1rem 0;
+  padding: 1rem;
 }
 .couple-section .couple .couple-parent {
   width: 100%;
