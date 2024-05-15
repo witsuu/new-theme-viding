@@ -1,0 +1,80 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	color: var(--color-light);
+	overflow: hidden;
+	width: 100%;
+
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+
+	.elements-wrapper-absolute {
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: rgba($color: #000000, $alpha: .3);
+			content: "";
+		}
+	}
+
+	.cover-wrapper {
+		position: relative;
+		padding: 5rem 0 3rem;
+		transition: opacity 1s ease;
+		height: 100vh;
+
+		@include max-lg {
+			padding: 5rem 0 8rem;
+		}
+
+		.cover-content {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			.cover-body {
+				position: relative;
+
+				.cover-description {
+					padding: 1rem;
+					text-align: left;
+
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}
