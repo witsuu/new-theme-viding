@@ -3,24 +3,11 @@
 	z-index: 1000;
 	transition: all 1s ease-out;
 	background-color: var(--color-main);
-	color: var(--color-light);
 	overflow: hidden;
 	width: 100%;
 
 	&.cover-opened {
 		transform: translateY(-100%);
-	}
-
-	.elements-wrapper-absolute {
-		&::after {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($color: #000000, $alpha: .3);
-			content: "";
-		}
 	}
 
 	.cover-wrapper {
@@ -30,20 +17,37 @@
 		height: 100vh;
 
 		@include max-lg {
-			padding: 5rem 0 8rem;
+			padding: 4rem 0 10rem;
 		}
 
 		.cover-content {
 			position: relative;
 			width: 100%;
 			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
 
 			.cover-body {
 				position: relative;
+				width: 35%;
+
+				@include max-xl {
+					width: 40%;
+				}
+
+				@include max-lg {
+					width: 60%;
+				}
+
+				@include max-sm {
+					width: 100%;
+				}
 
 				.cover-description {
+					position: relative;
 					padding: 1rem;
-					text-align: left;
+					text-align: center;
 
 					.cover-event {
 						position: relative;

@@ -2,7 +2,7 @@
 	position: relative;
 	padding: 3rem 0;
 	background-color: var(--color-primary);
-	color: var(--color-light);
+	color: var(--color-dark);
 
 	@include ipad {
 		padding: 5rem 0;
@@ -19,16 +19,6 @@
 
 		.venue-content {
 			position: relative;
-
-			.container {
-				@include max-sm {
-					padding: 0;
-				}
-
-				@include min-lg {
-					padding: 0;
-				}
-			}
 
 			.ribbon-venue {
 				position: relative;
@@ -58,46 +48,60 @@
 			}
 
 			.card {
-				background-color: transparent;
+				background-color: var(--color-main);
+				color: var(--color-dark);
 				border: none;
+				border-radius: 300px 300px 0 0;
+				text-align: center;
 
 				.card-body {
-					padding: 0;
-
-					h4 {
-						padding: 0 0 1rem;
-					}
+					padding: 8rem 2rem 3rem;
 
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 2rem 1.8rem;
-						@include ipad {
-							padding: 2rem 1rem;
+
+						h4 {
+							margin-bottom: 2rem;
 						}
 
 						.date {
 							position: relative;
-							width: 100%;
-							display: flex;
-							justify-content: start;
-							align-items: flex-end;
-							gap: 0.5rem;
+							width: fit-content;
+							max-width: 100%;
+							margin: 0 auto;
+							text-align: left;
 
-							h5 {
-								line-height: 1;
-								font-family: $font-secondary;
-								margin-bottom: 0;
-								font-size: 48px;
+							&>p {
+								font-size: 16px;
 							}
 
-							.line {
-								--color-button-trans: #fff;
-								width: 45px;
-								height: 1px;
-								background-color: var(--color-button-trans);
-								margin-bottom: 0.75rem;
+							&-body {
+								display: flex;
+								justify-content: center;
+								align-items: center;
+								gap: 1rem;
+								margin-top: .25rem;
+
+								h5 {
+									font-family: $font-secondary;
+									margin-bottom: 0;
+									font-size: 48px;
+								}
+
+								.line {
+									width: 1.5px;
+									height: 48px;
+									background-color: var(--color-button-trans);
+								}
+
+								p {
+									font-size: 14px;
+									margin-bottom: 0;
+									padding: .15rem 0;
+								}
 							}
+
 						}
 
 						h4 {
@@ -112,7 +116,7 @@
 
 					.event-description {
 						position: relative;
-						margin-bottom: 1rem;
+						padding: 2rem 0;
 
 						p {
 							margin-bottom: 0;
@@ -121,38 +125,14 @@
 
 					.event-place {
 						position: relative;
-						color: var(--color-dark);
-
-						&::before {
-							position: absolute;
-							top: 0;
-							left: 0;
-							width: calc(100% - 1.8rem);
-							height: 100%;
-							background-color: var(--color-main);
-							content: "";
-							@include ipad {
-								width: calc(100% - 1rem);
-							}
-						}
+						margin-top: 1rem;
 
 						&-body {
 							position: relative;
-							padding: 2rem 2rem 2rem 1.8rem;
-							@include ipad {
-								padding: 2rem 1rem;
-							}
+						}
 
-							.widget-elements {
-								position: absolute;
-								bottom: 0;
-								left: 2rem;
-								width: 100%;
-								transform: translateY(50%);
-								@include ipad {
-									left: 1rem;
-								}
-							}
+						.widget-elements {
+							margin-top: 1rem;
 						}
 					}
 				}

@@ -1,12 +1,13 @@
 .countdown {
+	position: relative;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	position: relative;
+	flex-direction: column;
 	width: fit-content;
 	gap: 1.5rem;
 	z-index: 3;
-	color: var(--color-light);
+	margin: 0 auto;
 
 	.days,
 	.hours,

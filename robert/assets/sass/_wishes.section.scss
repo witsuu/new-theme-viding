@@ -1,40 +1,26 @@
 .wishes-section {
 	position: relative;
-	padding: 3rem 0 0;
 
-	@include ipad {
-		padding: 5rem 0 0;
+	.wishes-form-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		padding: 3rem 0 2rem;
+
+		@include ipad {
+			padding: 5rem 0 2rem;
+		}
 	}
 
 	.card-form {
 		background-color: transparent;
-		color: var(--color-light);
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: var(--color-primary);
-			opacity: .6;
-			content: "";
-		}
 
 		&.card {
 			border: none;
 		}
 
 		.card-body {
-			padding: 2rem 1rem 0;
-
-			@include ipad {
-				padding: 3rem 2rem 0;
-			}
-
-			.btn-custom {
-				margin-bottom: -1rem;
-			}
+			padding: 0 1rem;
 		}
 	}
 

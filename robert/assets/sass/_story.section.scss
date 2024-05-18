@@ -1,15 +1,18 @@
 .story-section {
 	position: relative;
-	padding: 20rem 0 3rem;
-
-	@include ipad {
-		padding: 20rem 0 5rem;
-	}
 
 	.story-description {
 		position: relative;
 		text-align: left;
-		padding: 0 1rem;
+		padding: 10rem 0 3rem;
+
+		@include ipad {
+			padding: 10rem 0 5rem;
+		}
+
+		@include max-sm {
+			padding: 8rem 0 2rem;
+		}
 
 		.title-section {
 			text-align: left;
@@ -19,21 +22,19 @@
 	.image-wrapper {
 		position: relative;
 		width: 100%;
-		aspect-ratio: 1;
-		overflow: hidden;
 
-		@include max-xl {
-			aspect-ratio: 16/9;
-		}
+		.image-element {
+			@include aspect-ratio(1, 1);
 
-		@include max-md {
-			aspect-ratio: 3/4;
-		}
+			@include ipad {
+				@include aspect-ratio(16, 9);
+			}
 
-		.story-background {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 	}
 }

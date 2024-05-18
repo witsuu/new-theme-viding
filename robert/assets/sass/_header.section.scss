@@ -1,31 +1,46 @@
 .header-section {
 	position: relative;
 
-	.scroll-icon{
+	.scroll-icon {
 		margin-bottom: 1rem;
 	}
 
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 5rem 2rem 3rem;
-		height: 100vh;
+		padding: 4rem 2rem 3rem;
+		min-height: 100vh;
 		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
+		justify-content: flex-start;
+		align-items: center;
 		flex-direction: column;
 
 		.header {
 			position: relative;
 			width: 100%;
 			height: 100%;
-			text-align: left;
 
 			.header-title {
 				position: relative;
 
-				&-content {
-					color: var(--color-light);
+				.image-wrapper {
+					position: relative;
+					margin: 2rem auto;
+					width: 65%;
+
+					@include max-sm {
+						width: 75%;
+					}
+
+					.image-element {
+						@include aspect-ratio(3, 4);
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+						}
+					}
 				}
 			}
 		}
