@@ -6,54 +6,72 @@
 		padding: 3rem 0;
 	}
 
-	.img-gallery {
-		width: 100%;
-		object-fit: cover;
-		aspect-ratio: 9/10;
-		margin-bottom: 0.75rem;
-	}
+	.gallery-default {
 
-	.splide {
-		.splide__track {
-			overflow: visible;
+		a {
+			position: relative;
+			display: block;
+			width: 100%;
+			@include aspect-ratio(3, 4);
+
+			.img-gallery {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
 		}
 
-		.splide__pagination {
-			bottom: -1rem;
 
-			&__page {
-				&.is-active {
-					background: var(--color-secondary);
+		.splide {
+			padding-bottom: 1rem;
+
+			.splide__track {
+				overflow: visible;
+			}
+
+			.splide__pagination {
+				bottom: -.5rem;
+
+				&__page {
+					&.is-active {
+						background: var(--color-secondary);
+					}
+				}
+			}
+
+			.splide__arrow {
+				border-radius: 0;
+				width: 50px;
+				height: 50px;
+				background-color: var(--color-secondary);
+				transform: translate3d(0, -65%, 0);
+				border-radius: 50px;
+
+				@include ipad {
+					width: 60px;
+					height: 60px;
+				}
+
+				svg {
+					fill: var(--text-button);
+					width: 25px;
+					height: 30px;
+
+					@include ipad {
+						width: 30px;
+						height: 35px;
+					}
+				}
+
+				&--prev {
+					left: 0;
+				}
+
+				&--next {
+					right: 0;
 				}
 			}
 		}
-
-		.splide__arrow {
-			border-radius: 0;
-			width: 70px;
-			height: 65px;
-			background-color: var(--color-secondary);
-			transform: translate3d(0, -65%, 0);
-			border-radius: 50px;
-
-			@include min-lg {
-				width: 35px;
-				height: 40px;
-			}
-
-			svg {
-				fill: var(--text-button);
-				width: 25px;
-				height: 30px;
-			}
-
-			&--prev {
-				left: 0;
-			}
-
-			&--next {
-				right: 0;
-			}
-		}
 	}
+
 }

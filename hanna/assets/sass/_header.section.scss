@@ -1,31 +1,52 @@
 .header-section {
 	position: relative;
 
-	.scroll-icon{
-		margin-bottom: 1rem;
+	.scroll-icon {
+		margin-top: 1rem;
 	}
 
 	.header-content {
 		position: relative;
 		text-align: center;
 		padding: 5rem 2rem 3rem;
-		height: 100vh;
-		display: flex;
-		justify-content: space-between;
-		align-items: flex-start;
-		flex-direction: column;
+		min-height: 100vh;
 
 		.header {
 			position: relative;
 			width: 100%;
-			height: 100%;
-			text-align: left;
+			text-align: center;
 
 			.header-title {
 				position: relative;
 
 				&-content {
-					color: var(--color-light);
+					position: relative;
+
+					.brand-name {
+						position: relative;
+						padding: 1rem 1.5rem;
+						border-radius: 300px;
+						background-color: var(--color-light);
+						width: fit-content;
+						margin: 0 auto 2rem;
+
+						span {
+							display: block;
+							font-family: $font-secondary;
+							font-size: 60px;
+							line-height: 1.2;
+							color: var(--color-main);
+
+							&.man {
+								transform: translate(-20%, 0);
+							}
+
+							&.woman {
+								margin-top: -80%;
+								transform: translate(-20%, 0);
+							}
+						}
+					}
 				}
 			}
 		}

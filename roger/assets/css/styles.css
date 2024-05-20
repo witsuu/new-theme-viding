@@ -1,22 +1,23 @@
 @font-face {
-  font-family: "NewYork";
-  src: url(../fonts/NewYork.woff2) format(woff2);
+  font-family: "Carmilla";
+  src: url(../fonts/CarmillaRegular.woff2) format(woff2);
   font-display: swap;
 }
 :root {
-  --color-main: #C6BAAB;
-  --color-primary: #39291C;
+  --color-main: #B1BFC6;
+  --color-primary: #91A3AB;
   --color-secondary: #746354;
   --color-dark: #1e1f1e;
   --color-light: #ffffff;
   --text-button: #ffffff;
   --color-button-trans: #fff;
   --vd-color-pink: #e9088a;
+  --border-radius: 20px;
 }
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  color: var(--color-light);
+  color: var(--color-dark);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -35,7 +36,7 @@ body {
     right: 0;
     bottom: 0;
     left: 0;
-    width: 63%;
+    width: 61%;
   }
 }
 
@@ -103,12 +104,21 @@ body {
 .background__views .background__frames .header-title {
   color: var(--color-light);
   position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+}
+.background__views .background__frames .background__image {
+  position: absolute;
   top: 0;
   left: 0;
-  padding: 5rem 3rem;
   width: 100%;
-  text-align: left;
-  z-index: 5;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
 }
 
 .layout__views {
@@ -120,45 +130,13 @@ body {
 @media (min-width: 992px) {
   .layout__views {
     margin-left: auto;
-    width: 37%;
+    width: 39%;
   }
 }
 @media (max-width: 991px) {
   .layout__views {
     width: 100% !important;
   }
-}
-.layout__views .fixed-background {
-  position: fixed;
-  top: 0;
-  right: 0;
-  width: 37%;
-  height: 100vh;
-}
-@media (max-width: 991px) {
-  .layout__views .fixed-background {
-    width: 100% !important;
-  }
-}
-.layout__views .fixed-background .background-element {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.layout__views .fixed-background .background-element::after {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  right: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.3);
-  content: "";
-}
-.layout__views .fixed-background .background-element img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 
 .logo-viding {
@@ -182,7 +160,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -287,7 +265,7 @@ span {
 }
 
 .font-secondary {
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
 }
 
 .scaleX-reverse {
@@ -1341,7 +1319,6 @@ ul li {
   width: fit-content;
   gap: 1.5rem;
   z-index: 3;
-  color: var(--color-light);
 }
 .countdown .days,
 .countdown .hours,
@@ -1375,7 +1352,7 @@ ul li {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 38px;
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
@@ -1410,7 +1387,6 @@ ul li {
   z-index: 1000;
   transition: all 1s ease-out;
   background-color: var(--color-main);
-  color: var(--color-light);
   overflow: hidden;
   width: 100%;
 }
@@ -1499,7 +1475,7 @@ ul li {
   position: relative;
 }
 .header-section .header-content .header .header-title-content {
-  color: var(--color-light);
+  position: relative;
 }
 
 .reminder-wrap {
@@ -1557,7 +1533,7 @@ ul li {
 .couple-section .and span {
   position: relative;
   font-size: 28px;
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -1696,7 +1672,7 @@ ul li {
 }
 .couple-section .couple .title-couple span {
   font-size: 90px;
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
 }
 @media (max-width: 991px) {
   .couple-section .couple .title-couple span {
@@ -1860,7 +1836,7 @@ ul li {
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date h5 {
   line-height: 1;
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
   margin-bottom: 0;
   font-size: 48px;
 }
@@ -1872,7 +1848,7 @@ ul li {
   margin-bottom: 0.75rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name h4 {
-  font-family: "NewYork", serif;
+  font-family: "Carmilla", cursive;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
   margin-bottom: 0;
@@ -2268,48 +2244,66 @@ ul li {
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .gallery-section {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 }
-.gallery-section .img-gallery {
+.gallery-section .gallery-default a {
+  position: relative;
+  display: block;
+  width: 100%;
+  margin-bottom: 1rem;
+  padding-top: 133.3333333333%;
+}
+.gallery-section .gallery-default a > * {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.gallery-section .gallery-default a .img-gallery {
   width: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  aspect-ratio: 9/10;
-  margin-bottom: 0.75rem;
 }
-.gallery-section .splide .splide__track {
+.gallery-section .gallery-default .splide .splide__track {
   overflow: visible;
 }
-.gallery-section .splide .splide__pagination {
+.gallery-section .gallery-default .splide .splide__pagination {
   bottom: -1rem;
 }
-.gallery-section .splide .splide__pagination__page.is-active {
+.gallery-section .gallery-default .splide .splide__pagination__page.is-active {
   background: var(--color-secondary);
 }
-.gallery-section .splide .splide__arrow {
+.gallery-section .gallery-default .splide .splide__arrow {
   border-radius: 0;
-  width: 70px;
-  height: 65px;
+  width: 50px;
+  height: 50px;
   background-color: var(--color-secondary);
   transform: translate3d(0, -65%, 0);
   border-radius: 50px;
 }
-@media (min-width: 992px) {
-  .gallery-section .splide .splide__arrow {
-    width: 35px;
-    height: 40px;
+@media (max-width: 991px) and (min-width: 768px) {
+  .gallery-section .gallery-default .splide .splide__arrow {
+    width: 60px;
+    height: 60px;
   }
 }
-.gallery-section .splide .splide__arrow svg {
+.gallery-section .gallery-default .splide .splide__arrow svg {
   fill: var(--text-button);
   width: 25px;
   height: 30px;
 }
-.gallery-section .splide .splide__arrow--prev {
+@media (max-width: 991px) and (min-width: 768px) {
+  .gallery-section .gallery-default .splide .splide__arrow svg {
+    width: 30px;
+    height: 35px;
+  }
+}
+.gallery-section .gallery-default .splide .splide__arrow--prev {
   left: 0;
 }
-.gallery-section .splide .splide__arrow--next {
+.gallery-section .gallery-default .splide .splide__arrow--next {
   right: 0;
 }
 

@@ -8,22 +8,13 @@
 
 	.appology-wrap {
 		position: relative;
-		padding: 2rem 1rem;
+		background-color: var(--color-primary);
 		color: var(--color-light);
+		padding: 8rem 2rem;
+		border-radius: 300px;
 
-		@include ipad {
-			padding: 3rem 2rem;
-		}
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: var(--color-primary);
-			opacity: .6;
-			content: "";
+		@include max-sm {
+			padding: 6rem 2rem;
 		}
 	}
 }

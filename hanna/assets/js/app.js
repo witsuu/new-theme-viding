@@ -12,6 +12,7 @@ $("#btn-envelope").on("click", function () {
 	$(".cover-section").addClass("cover-opened")
 
 	runAnimationOrnament();
+	runAnimationLoop()
 
 	const coverTime = setTimeout(() => {
 		$(".cover-section").hide()

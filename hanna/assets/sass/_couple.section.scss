@@ -1,11 +1,11 @@
 .couple-section {
 	position: relative;
-	padding: 3rem 0 0;
+	padding: 3rem 0;
 	background-color: var(--color-primary);
 	color: var(--color-light);
 
 	@include ipad {
-		padding: 5rem 0 0;
+		padding: 5rem 0;
 	}
 
 	.and {
@@ -15,15 +15,18 @@
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
+
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
 		position: relative;
+		padding: 1.5rem 0;
 		z-index: 3;
+
 		span {
 			position: relative;
-			font-size: 28px;
+			font-size: 32px;
 			font-family: $font-secondary;
 		}
 	}
@@ -31,31 +34,17 @@
 	.couple-wrapper {
 		position: relative;
 
-		.container {
-			@include min-lg {
-				padding: 0;
-			}
-
-			@include max-sm {
-				padding: 0;
-			}
-		}
-
 		.couple-content {
 			position: relative;
-			text-align: left;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			border-radius: 300px;
+			padding: 8rem 3rem;
+			text-align: center;
 			margin-bottom: 3rem;
 
-			@include min-lg {
-				padding: 0 1.8rem;
-			}
-
 			@include max-sm {
-				padding: 0 1.8rem;
-			}
-
-			.title-section {
-				text-align: left;
+				padding: 6rem 2rem;
 			}
 
 			p {
@@ -67,52 +56,55 @@
 	.couple {
 		position: relative;
 
+		&.man {
+			.image-wrap {
+				margin-right: auto;
+				margin-left: 2rem;
+			}
+
+			.couple-description {
+				text-align: left;
+			}
+
+			.sosmed-wrap {
+				margin-right: auto;
+			}
+		}
+
+		&.woman {
+			.image-wrap {
+				margin-left: auto;
+				margin-right: 2rem;
+			}
+
+			.couple-description {
+				text-align: right;
+			}
+
+			.sosmed-wrap {
+				margin-left: auto;
+			}
+		}
+
 		.image-wrap {
 			position: relative;
-			width: 100%;
-			margin: auto;
-			aspect-ratio: 4/6;
+			width: 65%;
 
 			.image-element {
-				height: 100%;
-
-				&::after {
-					position: absolute;
-					top: 0;
-					right: 0;
-					bottom: 0;
-					left: 0;
-					background-color: rgba($color: #000000, $alpha: 0.3);
-					content: "";
-				}
+				@include aspect-ratio(5, 6);
 
 				.couple-image {
-					position: relative;
 					width: 100%;
 					height: 100%;
 					object-fit: cover;
+					border-radius: 300px;
 				}
 			}
 		}
 
 		.couple-description {
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			width: calc(100% - 1rem);
-			padding: 2rem 1.5rem;
-			text-align: left;
-
-			&::before {
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				bottom: 0;
-				background-color: var(--color-primary);
-				opacity: 0.6;
-				content: "";
-			}
+			position: relative;
+			padding: 2rem 2rem 0;
 
 			h3 {
 				position: relative;
@@ -136,6 +128,7 @@
 				border: 1px solid var(--color-button-trans);
 				padding: 0.5rem 0.6rem;
 				border-radius: 50px;
+				margin-top: 1rem;
 
 				.sosmed {
 					color: var(--color-button-trans);
@@ -159,51 +152,6 @@
 						font-size: 16px;
 					}
 				}
-			}
-		}
-
-		.title-couple {
-			position: absolute;
-			top: -1.5rem;
-			left: 0;
-			width: 100%;
-			text-align: center;
-			@include ipad {
-				top: 0;
-			}
-
-			span {
-				font-size: 90px;
-				font-family: $font-secondary;
-				@include max-lg {
-					font-size: 60px;
-				}
-			}
-		}
-		&.single {
-			padding-bottom: 2rem;
-			.title-couple {
-				top: -1rem;
-				@include ipad {
-					text-align: left;
-				}
-				span {
-					font-size: 60px;
-					@include max-sm {
-						font-size: 48px;
-					}
-				}
-			}
-			.image-wrap {
-				margin-bottom: 1rem;
-				aspect-ratio: 3/4;
-				@include ipad {
-					aspect-ratio: 6/4;
-				}
-			}
-			.couple-description {
-				position: relative;
-				padding: 1rem;
 			}
 		}
 	}
