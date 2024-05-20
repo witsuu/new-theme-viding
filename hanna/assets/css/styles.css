@@ -5,14 +5,14 @@
   --color-dark: #1e1f1e;
   --color-light: #ffffff;
   --text-button: #ffffff;
-  --color-button-trans: #1e1f1e;
+  --color-button-trans: #fff;
   --vd-color-pink: #e9088a;
   --border-radius: 300px;
 }
 
 body {
   font-family: "Nunito Sans", sans-serif;
-  color: var(--color-dark);
+  color: var(--color-light);
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
 }
@@ -1791,7 +1791,7 @@ ul li {
 }
 .venue-section .venue-wrapper .venue-content .card {
   background-color: var(--color-main);
-  color: var(--color-dark);
+  color: var(--color-light);
   border: none;
   border-radius: 300px;
   text-align: center;
