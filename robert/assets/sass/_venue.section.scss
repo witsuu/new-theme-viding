@@ -8,6 +8,23 @@
 		padding: 5rem 0;
 	}
 
+	.ornaments-wrapper {
+		&.radius-circle {
+			border-radius: 300px 300px 0 0;
+			overflow: hidden;
+		}
+
+		.gate {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 160%;
+			transform: translate(-50%, 0);
+			opacity: .1;
+		}
+	}
+
+
 	.venue-wrapper {
 		position: relative;
 
@@ -60,9 +77,11 @@
 					.event-name {
 						position: relative;
 						width: 100%;
+						padding: 2rem 0 1rem;
 
 						h4 {
-							margin-bottom: 2rem;
+							margin-bottom: 3rem;
+							font-size: 32px;
 						}
 
 						.date {
@@ -202,6 +221,70 @@
 			@include max-md {
 				row-gap: 3rem;
 			}
+		}
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
 		}
 	}
 }

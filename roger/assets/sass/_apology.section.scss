@@ -8,22 +8,5 @@
 
 	.appology-wrap {
 		position: relative;
-		padding: 2rem 1rem;
-		color: var(--color-light);
-
-		@include ipad {
-			padding: 3rem 2rem;
-		}
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: var(--color-primary);
-			opacity: .6;
-			content: "";
-		}
 	}
 }

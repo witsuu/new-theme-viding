@@ -5,6 +5,18 @@
 		margin-top: 1rem;
 	}
 
+	.frame {
+		width: 135%;
+
+		&-top {
+			transform: translate(-50%, -10%);
+		}
+
+		&-bottom {
+			transform: translate(-50%, 10%) scaleY(-1);
+		}
+	}
+
 	.header-content {
 		position: relative;
 		text-align: center;
@@ -24,7 +36,7 @@
 
 					.brand-name {
 						position: relative;
-						padding: 1rem 1.5rem;
+						padding: 2rem;
 						border-radius: 300px;
 						background-color: var(--color-light);
 						width: fit-content;

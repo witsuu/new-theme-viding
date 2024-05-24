@@ -1,16 +1,36 @@
 .reminder-wrap {
 	position: relative;
 	width: 100%;
-	padding: 3rem 0;
+	padding: 5rem 0 3rem;
 
 	@include ipad {
-		padding: 5rem 0;
+		padding: 8rem 0 3rem;
+	}
+
+	.gate {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50.5%, 0);
+		opacity: .1;
+	}
+
+	.frame {
+		top: 0;
+		width: 190%;
+		transform: translate(-50%, -7%);
+
+		@include max-sm {
+			width: 170%;
+		}
 	}
 
 	.reminder-content {
 		position: relative;
-		width: 100%;
-		text-align: center;
+		width: fit-content;
+		max-width: 100%;
+		margin: 0 auto;
 	}
 
 	.btn-reminder {
@@ -22,7 +42,7 @@
 		gap: 0.5rem;
 		transition: all 0.2s ease-in-out;
 		text-decoration: none;
-		margin: 1.5rem auto 0;
+		margin: 2rem auto 0;
 
 		path {
 			fill: var(--text-button);

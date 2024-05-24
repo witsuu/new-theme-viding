@@ -10,6 +10,18 @@
 		transform: translateY(-100%);
 	}
 
+	.frame {
+		width: 115%;
+
+		&-top {
+			transform: translate(-50%, -38%);
+		}
+
+		&-bottom {
+			transform: translate(-50%, 38%) scaleY(-1);
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 		padding: 5rem 0 3rem;

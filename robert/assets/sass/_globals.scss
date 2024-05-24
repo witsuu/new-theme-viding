@@ -67,6 +67,14 @@ body {
 	bottom: 0;
 	left: 0;
 	pointer-events: none;
+
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
 }
 
 .background__views {
@@ -167,6 +175,7 @@ h1 {
 	span {
 		font-size: 26px;
 		display: block;
+		margin: -.5rem 0;
 
 		@include max-md {
 			font-size: 20px;
@@ -197,7 +206,8 @@ span {
 	}
 }
 
-.image-element {
+.image-element,
+.background-element {
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -669,7 +679,7 @@ ul {
 .mouse_scroll {
 	display: block;
 	margin: 0 auto;
-	width: 20px;
+	width: 16px;
 	position: relative;
 	margin: 0 auto;
 }
@@ -684,14 +694,18 @@ ul {
 	border-bottom: 2px solid var(--color-button-trans);
 	margin: 0 0 3px 4px;
 
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 }
 
 @media (max-width: 767px) {
+	.mouse_scroll {
+		width: 14px;
+	}
+
 	.m_scroll_arrows {
-		width: 16px;
-		height: 16px;
+		width: 14px;
+		height: 14px;
 	}
 }
 

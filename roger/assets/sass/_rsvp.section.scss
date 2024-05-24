@@ -6,28 +6,18 @@
 		padding: 5rem 0;
 	}
 
-	.elements-wrapper-absolute {
-		&::after {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($color: #000000, $alpha: .3);
-			content: "";
-		}
-	}
-
 	.rsvp-wrapper {
 		position: relative;
-		padding: 0 1rem;
+		background-color: var(--color-primary);
 		color: var(--color-light);
-		@include max-sm{
-			padding: 0;
-		}
+		border-radius: 300px;
 
-		.title-section {
-			margin-bottom: 20rem;
+		.rsvp-form {
+			padding: 8rem 3rem;
+
+			@include max-sm {
+				padding: 8rem 2rem;
+			}
 		}
 	}
 }

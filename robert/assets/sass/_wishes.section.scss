@@ -10,6 +10,15 @@
 		@include ipad {
 			padding: 5rem 0 2rem;
 		}
+
+		.gate {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 150%;
+			transform: translate(-50.5%, 0);
+			opacity: .1;
+		}
 	}
 
 	.card-form {

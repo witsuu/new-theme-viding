@@ -1,45 +1,39 @@
 .wishes-section {
 	position: relative;
-	padding: 3rem 0 0;
 
-	@include ipad {
-		padding: 5rem 0 0;
+	.wishes-wrapper-form {
+		position: relative;
+		padding: 3rem 0 0;
+
+		@include ipad {
+			padding: 5rem 0 0;
+		}
+
+		.gazebo {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 140%;
+			transform: translate(-50%, 0);
+			opacity: .2;
+		}
 	}
 
 	.card-form {
 		background-color: transparent;
-		color: var(--color-light);
-
-		&::before {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: var(--color-primary);
-			opacity: .6;
-			content: "";
-		}
 
 		&.card {
 			border: none;
 		}
 
 		.card-body {
-			padding: 2rem 1rem 0;
-
-			@include ipad {
-				padding: 3rem 2rem 0;
-			}
-
-			.btn-custom {
-				margin-bottom: -1rem;
-			}
+			padding: 0 2rem 2rem;
 		}
 	}
 
 	.wishes-preview {
 		position: relative;
+		background-color: var(--color-primary);
 
 		.card {
 			position: relative;

@@ -67,6 +67,10 @@ body {
 	bottom: 0;
 	left: 0;
 	pointer-events: none;
+
+	&.orn-front {
+		z-index: 3;
+	}
 }
 
 .background__views {
@@ -275,6 +279,10 @@ span {
 
 .scale-reverse {
 	transform: scale(-1);
+}
+
+.form-label {
+	margin-bottom: 0;
 }
 
 .form-control,
@@ -669,7 +677,7 @@ ul {
 .mouse_scroll {
 	display: block;
 	margin: 0 auto;
-	width: 20px;
+	width: 16px;
 	position: relative;
 	margin: 0 auto;
 }
@@ -684,14 +692,18 @@ ul {
 	border-bottom: 2px solid var(--color-light);
 	margin: 0 0 3px 4px;
 
-	width: 20px;
-	height: 20px;
+	width: 16px;
+	height: 16px;
 }
 
 @media (max-width: 767px) {
+	.mouse_scroll {
+		width: 14px;
+	}
+
 	.m_scroll_arrows {
-		width: 16px;
-		height: 16px;
+		width: 14px;
+		height: 14px;
 	}
 }
 

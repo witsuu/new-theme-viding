@@ -51,6 +51,10 @@
 				margin-bottom: 0;
 			}
 		}
+
+		.frame {
+			width: 110%;
+		}
 	}
 
 	.couple {
@@ -90,7 +94,9 @@
 			position: relative;
 			width: 65%;
 
-			.image-element {
+			.couple-image-element {
+				position: relative;
+				width: 100%;
 				@include aspect-ratio(5, 6);
 
 				.couple-image {

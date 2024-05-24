@@ -7,12 +7,24 @@
 		padding: 0 0 5rem;
 	}
 
+	.frame {
+		width: 115%;
+
+		&-top {
+			transform: translate(-50%, -12%);
+		}
+
+		&-bottom {
+			transform: translate(-50%, 12%) scaleY(-1);
+		}
+	}
+
 	.image-wrapper {
 		position: relative;
 		width: 100%;
-		margin-bottom: 3rem;
+		margin: 3rem 0;
 
-		.image-element {
+		.image-element.background-element {
 			@include aspect-ratio(3, 4);
 
 			img {

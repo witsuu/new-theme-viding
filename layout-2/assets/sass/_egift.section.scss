@@ -2,26 +2,15 @@
 	position: relative;
 	text-align: center;
 	padding: 3rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
 
 	@include ipad {
 		padding: 5rem 0;
 	}
 
-	.container-custom {
-		@include max-sm {
-			padding: 0;
-		}
-
-		@include min-lg {
-			padding: 0;
-		}
-	}
-
 	.gift-wrap {
 		position: relative;
-		padding: 3rem 2rem;
-		background-color: var(--color-primary);
-		color: var(--color-light);
 		margin-bottom: 2rem;
 	}
 

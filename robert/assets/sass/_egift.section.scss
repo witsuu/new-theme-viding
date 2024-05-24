@@ -7,6 +7,15 @@
 		padding: 0 0 5rem;
 	}
 
+	.gate {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 180%;
+		transform: translate(-50.5%, 0);
+		opacity: .1;
+	}
+
 	.image-wrapper {
 		position: relative;
 

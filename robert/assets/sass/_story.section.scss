@@ -1,23 +1,37 @@
 .story-section {
 	position: relative;
 
-	.story-description {
+	.gate {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120%;
+		transform: translate(-20%, 40%);
+		opacity: .1;
+	}
+
+	.story {
 		position: relative;
-		text-align: left;
-		padding: 10rem 0 3rem;
 
-		@include ipad {
-			padding: 10rem 0 5rem;
-		}
-
-		@include max-sm {
-			padding: 8rem 0 2rem;
-		}
-
-		.title-section {
+		.story-description {
+			position: relative;
 			text-align: left;
+			padding: 10rem 0 3rem;
+
+			@include ipad {
+				padding: 10rem 0 5rem;
+			}
+
+			@include max-sm {
+				padding: 8rem 0 2rem;
+			}
+
+			.title-section {
+				text-align: left;
+			}
 		}
 	}
+
 
 	.image-wrapper {
 		position: relative;

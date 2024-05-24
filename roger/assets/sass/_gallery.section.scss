@@ -11,7 +11,6 @@
 			position: relative;
 			display: block;
 			width: 100%;
-			margin-bottom: 1rem;
 			@include aspect-ratio(3, 4);
 
 			.img-gallery {
@@ -21,12 +20,14 @@
 		}
 
 		.splide {
+			padding-bottom: 1em;
+
 			.splide__track {
 				overflow: visible;
 			}
 
 			.splide__pagination {
-				bottom: -1rem;
+				bottom: -.5em;
 
 				&__page {
 					&.is-active {

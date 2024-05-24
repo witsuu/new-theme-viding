@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger,Flip)
+gsap.registerPlugin(ScrollTrigger, Flip)
 
 window.scrollTo(0, 0);
 
@@ -12,6 +12,7 @@ $("#btn-envelope").on("click", function () {
 	$(".cover-section").addClass("cover-opened")
 
 	runAnimationOrnament();
+	runAnimationLoop();
 
 	const coverTime = setTimeout(() => {
 		$(".cover-section").hide()

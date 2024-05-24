@@ -5,10 +5,48 @@
 		margin-bottom: 1rem;
 	}
 
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 75%;
+			}
+		}
+	}
+
+	.frame-background {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 105%;
+		transform: translate(-50%, 0);
+	}
+
+	.frame {
+		width: 110%;
+	}
+
+	.gate {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 45%;
+		transform: translate(-49%, 45%);
+
+		&-left {
+			left: 0;
+		}
+
+		&-right {
+			left: unset;
+			right: 0;
+			transform: translate(50%, 45%);
+		}
+	}
+
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 4rem 2rem 3rem;
+		padding: 4rem 2rem 5rem;
 		min-height: 100vh;
 		display: flex;
 		justify-content: flex-start;
@@ -26,13 +64,13 @@
 				.image-wrapper {
 					position: relative;
 					margin: 2rem auto;
-					width: 65%;
+					width: 50%;
 
 					@include max-sm {
 						width: 75%;
 					}
 
-					.image-element {
+					.background-element {
 						@include aspect-ratio(3, 4);
 
 						img {

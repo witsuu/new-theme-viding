@@ -10,39 +10,63 @@
 		transform: translateY(-100%);
 	}
 
-	.elements-wrapper-absolute {
-		&::after {
-			position: absolute;
-			top: 0;
-			right: 0;
-			bottom: 0;
-			left: 0;
-			background-color: rgba($color: #000000, $alpha: .3);
-			content: "";
-		}
+	.mountain {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 10%);
 	}
 
 	.cover-wrapper {
 		position: relative;
-		padding: 5rem 0 3rem;
+		padding: 5rem 0 0;
 		transition: opacity 1s ease;
 		height: 100vh;
 
 		@include max-lg {
-			padding: 5rem 0 8rem;
+			padding: 5rem 0 0;
 		}
 
 		.cover-content {
 			position: relative;
-			width: 100%;
+			width: 40%;
 			height: 100%;
+			padding-top: 5rem;
+			padding-bottom: 3rem;
+			margin: 0 auto;
+			color: var(--color-light);
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: var(--color-primary);
+				border-radius: 300px 300px 0 0;
+				opacity: .6;
+				content: "";
+			}
+
+			@include max-lg {
+				width: 60%;
+				padding-bottom: 10rem;
+			}
+
+			@include max-sm {
+				width: 100%;
+			}
 
 			.cover-body {
 				position: relative;
 
 				.cover-description {
+					position: relative;
+					width: 100%;
 					padding: 1rem;
-					text-align: left;
+					text-align: center;
+					z-index: 5;
 
 					.cover-event {
 						position: relative;
