@@ -1,0 +1,142 @@
+.couple-section {
+	position: relative;
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 28px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 3rem 0 0;
+
+		@include ipad {
+			padding: 5rem 0 0;
+		}
+
+		.couple-content {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.couple-body {
+			position: relative;
+			background-color: var(--color-primary);
+			padding-bottom: 3rem;
+
+			@include ipad {
+				padding-bottom: 5rem;
+			}
+
+			.rebung-horizontal {
+				margin-bottom: 1.5rem;
+			}
+		}
+	}
+
+	.couple {
+		position: relative;
+		overflow: hidden;
+
+		.rebung-horizontal {
+			margin-bottom: 1.5rem;
+
+			@include ipad {
+				display: none;
+			}
+		}
+
+		.image-wrap {
+			position: relative;
+			width: 60%;
+			margin: 0 auto;
+
+			.image-element {
+				@include aspect-ratio(5, 6);
+
+				.couple-image {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 6px;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			text-align: center;
+			padding: 1rem 1rem 0;
+
+			h3 {
+				position: relative;
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: 0.5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				background-color: var(--color-secondary);
+				margin: 1rem auto 0;
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

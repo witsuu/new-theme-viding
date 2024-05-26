@@ -1,0 +1,31 @@
+.rsvp-section {
+	position: relative;
+	padding: 3rem 0;
+	background-color: var(--color-primary);
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.ampera {
+		position: relative;
+		width: 50%;
+		margin: 0 auto 1rem;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		background-color: var(--color-main);
+		color: var(--color-light);
+		border-radius: 300px;
+
+		.rsvp-form {
+			padding: 3rem 3rem 10rem;
+			z-index: 5;
+
+			@include max-lg {
+				padding: 3rem 2rem 9rem;
+			}
+		}
+	}
+}

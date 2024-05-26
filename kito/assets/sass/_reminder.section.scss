@@ -1,0 +1,59 @@
+.reminder-wrap {
+	position: relative;
+	width: 100%;
+	min-height: 80vh;
+	padding-top: 3rem;
+	background-color: var(--color-main);
+
+	@include max-lg {
+		min-height: 60vh;
+	}
+
+	.sky {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50%, 0);
+	}
+
+	.mountain {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, -10%);
+
+		.land {
+			position: absolute;
+			bottom: -10%;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.reminder-content {
+		position: absolute;
+		top: 60%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin: 1.5rem auto 0;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

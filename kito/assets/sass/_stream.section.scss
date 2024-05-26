@@ -1,0 +1,74 @@
+.stream-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	.sky {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 0%);
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(1, 1);
+
+			@include ipad {
+				@include aspect-ratio(16, 9);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.stream-wrapper {
+		position: relative;
+		padding: 3rem 0;
+
+		@include ipad {
+			padding: 3rem 0 5rem;
+		}
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				background-color: var(--color-main);
+				color: var(--color-light);
+				border-radius: 300px 300px 20px 20px;
+				padding: 8rem 1.5rem 1.5rem;
+				text-align: center;
+
+				iframe {
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+
+	ul {
+		margin: 0 auto;
+
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}
