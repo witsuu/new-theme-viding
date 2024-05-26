@@ -1,0 +1,30 @@
+$color-main: #C6BAAB;
+$color-primary: #fff;
+$color-secondary: #365666;
+$color-dark: #1e1f1e;
+$color-light: #ffffff;
+$text-button: #ffffff;
+$color-button-trans: #1e1f1e;
+$color-logo: #e9088a;
+$font-secondary: "Prata", serif;
+$font-primary: "Nunito Sans", sans-serif;
+$border-radius: 20px;
+
+$breakpoints-min: (
+	xs: 325px,
+	sm: 576px,
+	md: 768px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1440px,
+	4k: 2560px,
+);
+
+$breakpoints-max: (
+	xs: 410px,
+	sm: 576px,
+	md: 767px,
+	lg: 992px,
+	xl: 1200px,
+	xxl: 1400px,
+);

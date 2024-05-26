@@ -1,0 +1,72 @@
+.thank-section {
+	position: relative;
+	padding: 3rem 0 0;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	@include ipad {
+		padding: 5rem 0 0;
+	}
+
+	.frame {
+		&-topLeft {
+			transform: translate(-5%, -9%);
+		}
+
+		&-topRight {
+			transform: translate(5%, -9%) scaleX(-1);
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 300px;
+			}
+		}
+	}
+
+	.thank {
+		position: relative;
+		padding: 1.5rem 1.5rem 10rem;
+		text-align: center;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+			border-radius: 300px 300px 0 0;
+			border: 2px solid $color-secondary;
+			opacity: .4;
+			content: "";
+		}
+
+		.thank-body {
+			padding-top: 2rem;
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	z-index: 5;
+
+	small {
+		position: relative;
+	}
+}

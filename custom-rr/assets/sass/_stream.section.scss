@@ -1,0 +1,69 @@
+.stream-section {
+	position: relative;
+	padding: 3rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.frame {
+		&-topLeft {
+			transform: translate(-5%, -9%);
+		}
+
+		&-topRight {
+			transform: translate(5%, -9%) scaleX(-1);
+		}
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				border-radius: 300px;
+				padding: 8rem 1.5rem;
+				text-align: center;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: var(--color-primary);
+					border-radius: 300px;
+					border: 2px solid $color-secondary;
+					opacity: .4;
+					box-shadow: inset .5rem .5rem 1rem rgba($color: #000000, $alpha: .1);
+					content: "";
+				}
+			}
+		}
+	}
+
+	ul {
+		margin: 0 auto;
+
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+
+	iframe {
+		border-radius: 8px;
+	}
+}

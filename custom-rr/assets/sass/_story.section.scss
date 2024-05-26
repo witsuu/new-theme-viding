@@ -1,0 +1,12 @@
+.story-section {
+	position: relative;
+	padding: 5rem 0 8rem;
+	background-color: var(--color-custom);
+	color: var(--color-dark);
+
+	.story-description {
+		position: relative;
+		text-align: center;
+		padding: 0 1rem;
+	}
+}

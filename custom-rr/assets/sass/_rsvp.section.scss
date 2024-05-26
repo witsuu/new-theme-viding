@@ -1,0 +1,18 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0 8rem;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	@include ipad {
+		padding: 5rem 0 10rem;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.rsvp-form {
+			padding: 0 2rem;
+		}
+	}
+}

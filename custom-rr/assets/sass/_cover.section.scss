@@ -1,0 +1,129 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+
+	.cover-wrapper {
+		position: relative;
+		padding: 3rem 0 0;
+		transition: opacity 1s ease;
+		height: 100vh;
+
+		@include max-lg {
+			padding: 3.2rem 0 10rem;
+		}
+
+		.cover-content {
+			position: relative;
+			width: 35%;
+			min-height: 50%;
+			padding-bottom: 2rem;
+			margin: 0 auto;
+			color: var(--color-dark);
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+			}
+
+			@include max-sm {
+				width: 95%;
+			}
+
+			@include max-xs {
+				width: 100%;
+				transform: translate(0, -10%) scale(.85);
+			}
+
+			&::before {
+				position: absolute;
+				top: 10rem;
+				left: 0;
+				bottom: 0;
+				right: 0;
+				background-color: var(--color-primary);
+				border-radius: var(--border-radius);
+				opacity: .6;
+				content: "";
+
+				@include max-sm {
+					top: 6rem;
+				}
+			}
+
+			.cover-body {
+				position: relative;
+
+				.image-wrapper {
+					position: relative;
+					width: 70%;
+					margin: 0 auto 1rem;
+					padding: .5rem;
+					border-radius: 300px;
+					border: 2px solid var(--color-custom);
+
+					.image-element {
+						@include aspect-ratio(3, 4);
+
+						img {
+							width: 100%;
+							height: 100%;
+							object-fit: cover;
+							border-radius: 300px;
+						}
+					}
+				}
+
+				.cover-description {
+					position: relative;
+					width: 100%;
+					padding: 0 1rem;
+					text-align: center;
+					z-index: 5;
+
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.title {
+						padding: 1rem 0;
+
+						h1 {
+							margin-bottom: 0;
+						}
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+}
