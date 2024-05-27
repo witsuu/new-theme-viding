@@ -1421,6 +1421,68 @@ ul li {
   width: 100%;
   transform: translate(-50%, 10%);
 }
+.cover-section .gazebo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  transform: translate(13%, 18%);
+}
+.cover-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0);
+}
+.cover-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(50%, 0);
+}
+.cover-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28%;
+  transform: translate(-28%, 35%);
+}
+.cover-section .orn-4 {
+  position: absolute;
+  bottom: 80%;
+  right: 30%;
+  width: 60%;
+}
+.cover-section .orn-5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 100%;
+}
+.cover-section .orn-5 .orn-6 {
+  position: absolute;
+  top: 20%;
+  left: 70%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.cover-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 28%;
+  transform: translate(-50%, 25%);
+}
+.cover-section .orn-7 .orn-4 {
+  bottom: 90%;
+  right: 18%;
+}
+.cover-section .orn-7 .orn-5 {
+  top: 30%;
+  width: 110%;
+}
 .cover-section .cover-wrapper {
   position: relative;
   padding: 5rem 0 0;
@@ -1499,16 +1561,17 @@ ul li {
 
 .header-section {
   position: relative;
+  overflow: hidden;
 }
 .header-section .scroll-icon {
   margin-top: 1rem;
 }
 .header-section .arch {
   position: absolute;
-  bottom: 0;
+  top: 0;
   left: 50%;
-  width: 110%;
-  transform: translate(-50%, 8%);
+  width: 104%;
+  transform: translate(-50%, 0);
 }
 .header-section .mountain {
   position: absolute;
@@ -1517,11 +1580,72 @@ ul li {
   width: 150%;
   transform: translate(-50%, 0);
 }
+.header-section .gazebo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  transform: translate(13%, 0%);
+}
+.header-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  transform: translate(-55%, 0);
+}
+.header-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  transform: translate(55%, 0);
+}
+.header-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(-50%, 10%);
+}
+.header-section .orn-4 {
+  position: absolute;
+  bottom: 90%;
+  right: 25%;
+  width: 60%;
+}
+.header-section .orn-5 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 110%;
+}
+.header-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 55%;
+  width: 35%;
+  transform: translate(-50%, 65%);
+}
+.header-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-50%, 15%);
+}
+.header-section .orn-7 .orn-4 {
+  bottom: 90%;
+  right: 18%;
+}
+.header-section .orn-7 .orn-5 {
+  top: 30%;
+  width: 110%;
+}
 .header-section .header-content {
   position: relative;
   text-align: center;
-  padding: 5rem 0 0;
-  height: 100vh;
+  padding: 10rem 0 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -1529,8 +1653,8 @@ ul li {
 }
 .header-section .header-content .header {
   position: relative;
-  width: 80%;
-  min-height: 80%;
+  width: 70%;
+  min-height: calc(100vh - 10rem);
   text-align: center;
   color: var(--color-light);
   padding: 5rem 1rem 3rem;
