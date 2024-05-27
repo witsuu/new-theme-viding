@@ -56,11 +56,77 @@
 			transform: translate(80%, 0);
 			opacity: .2;
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 32%;
+			transform: translate(60%, 0) rotate(-10deg) scaleX(-1);
+
+			.orn-2 {
+				position: absolute;
+				top: 90%;
+				right: -20%;
+				width: 100%;
+			}
+
+			.orn-3 {
+				position: absolute;
+				top: 55%;
+				right: 10%;
+				width: 65%;
+			}
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: -1rem;
+			left: 0;
+			width: 65%;
+			transform: translate(-65%, 0) rotate(10deg);
+
+			.orn-5 {
+				position: absolute;
+				top: 65%;
+				right: 10%;
+				width: 60%;
+
+				.orn-6 {
+					position: absolute;
+					top: 50%;
+					right: -20%;
+					width: 100%;
+				}
+			}
+		}
+
+		.orn-7 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-30%, 50%);
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(50%, 25%);
+		}
 	}
 
 	.couple {
 		position: relative;
 		width: 65%;
+
+		.ornaments-wrapper {
+			&.ornaments {
+				width: 165%;
+			}
+		}
 
 		&.man {
 			margin-right: auto;
@@ -89,6 +155,7 @@
 		.image-wrap {
 			position: relative;
 			width: 100%;
+			margin-bottom: 1rem;
 
 			.background-element {
 				height: 100%;
@@ -106,9 +173,10 @@
 		.couple-description {
 			position: relative;
 			padding: 2rem 0;
+			z-index: 5;
 
 			h3 {
-				position: relative;
+				font-size: 2.2rem;
 			}
 
 			.couple-parent {
@@ -173,40 +241,6 @@
 				@include max-lg {
 					font-size: 60px;
 				}
-			}
-		}
-
-		&.single {
-			padding-bottom: 2rem;
-
-			.title-couple {
-				top: -1rem;
-
-				@include ipad {
-					text-align: left;
-				}
-
-				span {
-					font-size: 60px;
-
-					@include max-sm {
-						font-size: 48px;
-					}
-				}
-			}
-
-			.image-wrap {
-				margin-bottom: 1rem;
-				aspect-ratio: 3/4;
-
-				@include ipad {
-					aspect-ratio: 6/4;
-				}
-			}
-
-			.couple-description {
-				position: relative;
-				padding: 1rem;
 			}
 		}
 	}

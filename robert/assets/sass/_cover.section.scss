@@ -10,6 +10,12 @@
 		transform: translateY(-100%);
 	}
 
+	.ornaments-wrapper {
+		@include max-lg {
+			height: calc(100% - 3rem);
+		}
+	}
+
 	.elements-wrapper-absolute {
 		.background-element {
 			img {
@@ -20,6 +26,99 @@
 
 	.frame {
 		width: 110%;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 10%;
+		transform: translate(-20%, 0);
+
+		@include max-lg {
+			width: 23%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 40%;
+			right: 0;
+			width: 120%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 12%;
+		transform: translate(30%, 0)scaleX(-1);
+
+		@include max-lg {
+			width: 28%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		left: 0;
+		bottom: 1rem;
+		width: 10%;
+		transform: translate(-30%, 0);
+
+		@include max-lg {
+			width: 23%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 3.5rem;
+		width: 10%;
+		transform: translate(0, 45%);
+
+		@include max-lg {
+			width: 23%;
+			left: 2rem;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 12%;
+		transform: translate(30%, 15%) scaleX(-1);
+
+		@include max-lg {
+			width: 28%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 4rem;
+		width: 10%;
+		transform: translate(0, 40%);
+
+		@include max-lg {
+			width: 23%;
+			right: 2rem;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 10%;
+		transform: translate(45%, 0%) scaleX(-1);
+
+		@include max-lg {
+			width: 23%;
+		}
 	}
 
 	.cover-wrapper {

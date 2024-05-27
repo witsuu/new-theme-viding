@@ -10,17 +10,28 @@
 		opacity: .1;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(35%, 0) rotate(-45deg) scaleX(-1);
+
+		.orn-2 {
+			position: absolute;
+			top: 30%;
+			right: 30%;
+			width: 50%;
+		}
+	}
+
 	.story {
 		position: relative;
 
 		.story-description {
 			position: relative;
 			text-align: left;
-			padding: 10rem 0 3rem;
-
-			@include ipad {
-				padding: 10rem 0 5rem;
-			}
+			padding: 8rem 0 3rem;
 
 			@include max-sm {
 				padding: 8rem 0 2rem;

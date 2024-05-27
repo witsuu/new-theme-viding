@@ -7,12 +7,129 @@
 		padding: 5rem 0;
 	}
 
+	.frame {
+		width: 120%;
+	}
+
+	.gate {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 50%;
+		transform: translate(-49%, 22%);
+
+		&-left {
+			left: 0;
+		}
+
+		&-right {
+			left: unset;
+			right: 0;
+			transform: translate(50%, 22%);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 23%;
+		transform: translate(-20%, 0);
+
+		.orn-2 {
+			position: absolute;
+			top: 40%;
+			right: 0;
+			width: 120%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 28%;
+		transform: translate(30%, 0)scaleX(-1);
+	}
+
+	.orn-4 {
+		position: absolute;
+		left: 0;
+		bottom: 1rem;
+		width: 23%;
+		transform: translate(-35%, 0);
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 23%;
+		transform: translate(0, 50%);
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 28%;
+		transform: translate(30%, 15%) scaleX(-1);
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 4rem;
+		width: 23%;
+		transform: translate(0, 35%);
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 23%;
+		transform: translate(45%, 0%) scaleX(-1);
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 28%;
+		transform: translate(-50%, 60%);
+	}
+
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-30%, 40%);
+	}
+
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 40%;
+		transform: translate(-50%, 60%);
+	}
+
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(20%, 50%);
+	}
+
 	.image-wrapper {
 		position: relative;
 		width: 70%;
-		margin: 0 auto 2rem;
+		margin: 3rem auto;
 
-		.image-element {
+		.background-element {
 			@include aspect-ratio(3, 4);
 
 			img {
@@ -27,7 +144,7 @@
 		position: relative;
 
 		&-body {
-			padding: 1rem 1rem 10rem;
+			padding: 1rem 1rem 13rem;
 		}
 	}
 }
