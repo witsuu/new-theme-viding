@@ -1,25 +1,31 @@
 .egift-section {
 	position: relative;
 	text-align: center;
-	padding: 3rem 0;
+	padding: 0 0 3rem;
 
 	@include ipad {
-		padding: 5rem 0;
+		padding: 0 0 5rem;
 	}
 
-	.container-custom {
-		@include max-sm {
-			padding: 0;
-		}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-40%, -58%) scaleY(-1);
 
-		@include min-lg {
-			padding: 0;
+		.orn-2 {
+			position: absolute;
+			top: 20%;
+			right: -40%;
+			width: 80%;
+			transform: scaleY(-1);
 		}
 	}
 
 	.gift-wrap {
 		position: relative;
-		padding: 3rem 2rem;
+		padding: 5rem 2rem 3rem;
 		background-color: var(--color-primary);
 		color: var(--color-light);
 		margin-bottom: 2rem;

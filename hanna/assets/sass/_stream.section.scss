@@ -1,9 +1,40 @@
 .stream-section {
 	position: relative;
-	padding: 3rem 0;
+	padding: 5rem 0 3rem;
 
 	@include ipad {
 		padding: 5rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-40%, 0);
+
+		.orn-2 {
+			position: absolute;
+			top: 30%;
+			right: 25%;
+			width: 80%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(40%, 0) scaleX(-1);
+
+		.orn-4 {
+			position: absolute;
+			top: 30%;
+			right: 35%;
+			width: 85%;
+			transform: rotate(10deg) scaleX(-1);
+		}
 	}
 
 	.stream-wrapper {

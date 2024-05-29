@@ -19,6 +19,35 @@
 		}
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 50%;
+		transform: translate(-70%, -50%);
+
+		.orn-2 {
+			position: relative;
+			width: 80%;
+			transform: translate(20%, -20%);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 38%;
+		right: 0;
+		width: 50%;
+		transform: translate(65%, -50%);
+
+		.orn-4 {
+			position: relative;
+			width: 80%;
+			margin-top: -35%;
+			transform: rotate(-10deg);
+		}
+	}
+
 	.image-wrapper {
 		position: relative;
 		width: 100%;

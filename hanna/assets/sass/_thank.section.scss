@@ -1,6 +1,6 @@
 .thank-section {
 	position: relative;
-	padding: 3rem 0;
+	padding: 5rem 0 3rem;
 	text-align: center;
 
 	@include ipad {
@@ -17,6 +17,83 @@
 		&-bottom {
 			transform: translate(-50%, 15%) scaleY(-1);
 		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-30%, 0%);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(30%, 0%) scaleX(-1);
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-40%, 50%);
+
+		.orn-4 {
+			position: absolute;
+			top: 10%;
+			left: 85%;
+			width: 60%;
+		}
+
+		.orn-7 {
+			position: absolute;
+			bottom: 85%;
+			right: 40%;
+			width: 80%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(50%, 40%);
+
+		.orn-6 {
+			position: absolute;
+			top: 20%;
+			right: 70%;
+			width: 120%;
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 85%;
+			left: 30%;
+			width: 80%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-60%, -30%);
+	}
+
+	.orn-10 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(60%, -30%) scaleX(-1);
 	}
 
 	.image-wrapper {

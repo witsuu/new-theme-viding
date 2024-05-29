@@ -17,11 +17,92 @@
 		}
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-30%, -5%);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(30%, -5%) scaleX(-1);
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-40%, 50%);
+
+		.orn-4 {
+			position: absolute;
+			top: 10%;
+			left: 85%;
+			width: 60%;
+		}
+
+		.orn-7 {
+			position: absolute;
+			bottom: 85%;
+			right: 40%;
+			width: 80%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(50%, 40%);
+
+		.orn-6 {
+			position: absolute;
+			top: 20%;
+			right: 65%;
+			width: 120%;
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 85%;
+			left: 30%;
+			width: 80%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-60%, -30%);
+	}
+
+	.orn-10 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(60%, -30%) scaleX(-1);
+	}
+
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 5rem 2rem 3rem;
+		padding: 5rem 2rem 8rem;
 		min-height: 100vh;
+
+		@include max-lg {
+			min-height: 80vh;
+		}
 
 		.header {
 			position: relative;

@@ -10,6 +10,14 @@
 		transform: translateY(-100%);
 	}
 
+	.ornaments-wrapper {
+		&.cover-ornament-wrapper {
+			@include max-lg {
+				height: calc(100% - 5rem);
+			}
+		}
+	}
+
 	.frame {
 		width: 115%;
 
@@ -22,6 +30,70 @@
 		}
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-30%, -5%);
+
+		@include max-lg {
+			width: 60%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(30%, -5%) scaleX(-1);
+
+		@include max-lg {
+			width: 60%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-35%, 50%);
+
+		@include max-lg {
+			width: 50%;
+			transform: translate(-40%, 50%);
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 10%;
+			left: 85%;
+			width: 60%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(50%, 30%);
+
+		@include max-lg {
+			width: 45%;
+			transform: translate(50%, 40%);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 20%;
+			right: 70%;
+			width: 120%;
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 		padding: 5rem 0 3rem;
@@ -29,7 +101,7 @@
 		height: 100vh;
 
 		@include max-lg {
-			padding: 5rem 0 8rem;
+			padding: 5rem 0 10rem;
 		}
 
 		.cover-content {
