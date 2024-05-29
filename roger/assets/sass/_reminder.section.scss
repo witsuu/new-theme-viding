@@ -8,6 +8,52 @@
 		margin: 0 -20%;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 65%;
+		transform: translate(-65%, -50%);
+
+		.orn-2 {
+			position: absolute;
+			bottom: 50%;
+			right: -10%;
+			width: 65%;
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 85%;
+			right: -5%;
+			width: 60%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 55%;
+		right: 0;
+		width: 60%;
+		transform: translate(50%, -50%) rotate(-35deg) scaleX(-1);
+
+		.orn-5 {
+			position: absolute;
+			bottom: 75%;
+			right: 35%;
+			width: 60%;
+			transform: rotate(-35deg);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 70%;
+			left: 50%;
+			width: 60%;
+			transform: rotate(-35deg) scaleY(-1);
+		}
+	}
+
 	.reminder-content {
 		position: absolute;
 		top: 60%;

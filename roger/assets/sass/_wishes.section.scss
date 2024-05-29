@@ -3,7 +3,7 @@
 
 	.wishes-wrapper-form {
 		position: relative;
-		padding: 3rem 0 0;
+		padding: 5rem 0 0;
 
 		@include ipad {
 			padding: 5rem 0 0;
@@ -13,9 +13,40 @@
 			position: absolute;
 			top: 0;
 			left: 50%;
-			width: 140%;
+			width: 160%;
 			transform: translate(-50%, 0);
 			opacity: .2;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-40%, 0);
+
+			.orn-2 {
+				position: absolute;
+				top: 70%;
+				right: 20%;
+				width: 100%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(55%, 0) rotate(-10deg) scaleX(-1);
+
+			.orn-4 {
+				position: absolute;
+				top: 80%;
+				right: -25%;
+				width: 120%;
+				transform: rotate(30deg);
+			}
 		}
 	}
 

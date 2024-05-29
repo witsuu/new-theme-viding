@@ -1,12 +1,7 @@
 .couple-section {
 	position: relative;
-	padding: 3rem 0 0;
 	background-color: var(--color-primary);
 	color: var(--color-light);
-
-	@include ipad {
-		padding: 5rem 0 0;
-	}
 
 	.and {
 		@include ipad {
@@ -33,10 +28,16 @@
 
 	.couple-wrapper {
 		position: relative;
+		padding: 8rem 0 3rem;
+
+		@include ipad {
+			padding: 5rem 0;
+		}
 
 		.couple-content {
 			position: relative;
 			text-align: center;
+			padding: 0 1.5rem;
 			margin-bottom: 3rem;
 
 			p {
@@ -48,8 +49,63 @@
 			position: absolute;
 			top: 50%;
 			left: 50%;
-			width: 125%;
+			width: 130%;
 			transform: translate(-50%, -50%);
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 1rem;
+			left: 0;
+			width: 40%;
+			transform: translate(-45%, 0);
+
+			.orn-2 {
+				position: absolute;
+				bottom: 35%;
+				left: 0%;
+				width: 100%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(50%, 0) scaleX(-1);
+
+			.orn-4 {
+				position: absolute;
+				top: 60%;
+				right: 28%;
+				width: 100%;
+				transform: rotate(20deg);
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(10%, 30%);
+
+			.orn-6 {
+				position: absolute;
+				bottom: 40%;
+				left: 35%;
+				width: 120%;
+				transform: rotate(-10deg) scaleX(-1);
+
+				.orn-7 {
+					position: absolute;
+					bottom: 40%;
+					left: 0;
+					width: 70%;
+					transform: scaleX(-1);
+				}
+			}
 		}
 	}
 
@@ -65,7 +121,7 @@
 				margin: 3rem auto;
 			}
 
-			.image-element {
+			.background-element {
 				@include aspect-ratio(5, 6);
 
 				.couple-image {

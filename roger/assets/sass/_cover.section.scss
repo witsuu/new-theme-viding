@@ -10,12 +10,23 @@
 		transform: translateY(-100%);
 	}
 
+	.ornaments-wrapper {
+		@include max-lg {
+			height: calc(100% - 5rem);
+		}
+	}
+
 	.mountain {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%, 10%);
+
+		@include max-sm {
+			width: 180%;
+			transform: translate(-50%, 0%);
+		}
 	}
 
 	.gazebo {
@@ -24,6 +35,11 @@
 		right: 0;
 		width: 55%;
 		transform: translate(13%, 18%);
+
+		@include max-sm {
+			width: 85%;
+			transform: translate(13%, 0%);
+		}
 	}
 
 	.orn-1 {
@@ -32,6 +48,15 @@
 		left: 0;
 		width: 35%;
 		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 80%;
+		}
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(-65%, 0);
+		}
 	}
 
 	.orn-2 {
@@ -40,6 +65,15 @@
 		right: 0;
 		width: 35%;
 		transform: translate(50%, 0);
+
+		@include max-lg {
+			width: 80%;
+		}
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(65%, 0);
+		}
 	}
 
 	.orn-3 {
@@ -49,6 +83,10 @@
 		width: 28%;
 		transform: translate(-28%, 35%);
 
+		@include max-sm {
+			width: 65%;
+			transform: translate(-50%, 10%);
+		}
 	}
 
 	.orn-4 {
@@ -56,6 +94,11 @@
 		bottom: 80%;
 		right: 30%;
 		width: 60%;
+
+		@include max-sm {
+			bottom: 90%;
+			right: 25%;
+		}
 	}
 
 	.orn-5 {
@@ -64,12 +107,24 @@
 		left: 50%;
 		width: 100%;
 
+		@include max-sm {
+			top: 30%;
+			left: 10%;
+			width: 110%;
+		}
+
 		.orn-6 {
 			position: absolute;
 			top: 20%;
 			left: 70%;
 			width: 60%;
 			transform: scaleX(-1);
+
+			@include max-sm {
+				top: 40%;
+				left: 80%;
+				width: 50%;
+			}
 		}
 	}
 
@@ -80,14 +135,30 @@
 		width: 28%;
 		transform: translate(-50%, 25%);
 
+		@include max-sm {
+			width: 65%;
+			transform: translate(-50%, 30%);
+		}
+
 		.orn-4 {
 			bottom: 90%;
 			right: 18%;
+
+			@include max-sm {
+				right: 25%;
+				width: 65%;
+			}
 		}
 
 		.orn-5 {
 			top: 30%;
 			width: 110%;
+
+			@include max-sm {
+				top: 22%;
+				left: 16%;
+				width: 100%;
+			}
 		}
 
 	}

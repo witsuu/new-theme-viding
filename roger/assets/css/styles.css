@@ -76,9 +76,9 @@ body {
 .ornaments-wrapper {
   position: absolute;
   top: 0;
-  right: 0;
-  bottom: 0;
   left: 0;
+  width: 100%;
+  height: 100%;
   pointer-events: none;
 }
 .ornaments-wrapper.orn-front {
@@ -122,6 +122,46 @@ body {
   height: 100%;
   background-size: cover;
   background-position: center;
+}
+.background__views .background__frames .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-35%, 25%);
+}
+.background__views .background__frames .orn-4 {
+  position: absolute;
+  bottom: 90%;
+  right: 40%;
+  width: 40%;
+}
+.background__views .background__frames .orn-5 {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  width: 90%;
+}
+.background__views .background__frames .orn-5 .orn-6 {
+  position: absolute;
+  top: 30%;
+  left: 80%;
+  width: 60%;
+}
+.background__views .background__frames .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-50%, 15%);
+}
+.background__views .background__frames .orn-7 .orn-4 {
+  bottom: 90%;
+  right: 30%;
+}
+.background__views .background__frames .orn-7 .orn-5 {
+  top: 30%;
+  width: 100%;
 }
 
 .layout__views {
@@ -191,7 +231,8 @@ small {
   font-size: 12px;
 }
 
-span {
+span,
+p {
   font-size: 16px;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
@@ -206,7 +247,8 @@ span {
     font-size: 10px;
   }
 }
-.image-element {
+.image-element,
+.background-element {
   position: relative;
   width: 100%;
   height: auto;
@@ -850,7 +892,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-60px, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -858,7 +900,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(60px, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -866,7 +908,7 @@ ul li {
 }
 @keyframes slideUp {
   0% {
-    transform: translate3d(0, 50%, 0);
+    transform: translate3d(0, 60px, 0);
   }
   100% {
     transform: translateZ(0);
@@ -874,7 +916,7 @@ ul li {
 }
 @keyframes slideDown {
   0% {
-    transform: translate3d(0, -100px, 0);
+    transform: translate3d(0, -60px, 0);
   }
   100% {
     transform: translateZ(0);
@@ -1414,12 +1456,23 @@ ul li {
 .cover-section.cover-opened {
   transform: translateY(-100%);
 }
+@media (max-width: 991px) {
+  .cover-section .ornaments-wrapper {
+    height: calc(100% - 5rem);
+  }
+}
 .cover-section .mountain {
   position: absolute;
   bottom: 0;
   left: 50%;
   width: 100%;
   transform: translate(-50%, 10%);
+}
+@media (max-width: 575px) {
+  .cover-section .mountain {
+    width: 180%;
+    transform: translate(-50%, 0%);
+  }
 }
 .cover-section .gazebo {
   position: absolute;
@@ -1428,12 +1481,29 @@ ul li {
   width: 55%;
   transform: translate(13%, 18%);
 }
+@media (max-width: 575px) {
+  .cover-section .gazebo {
+    width: 85%;
+    transform: translate(13%, 0%);
+  }
+}
 .cover-section .orn-1 {
   position: absolute;
   bottom: 0;
   left: 0;
   width: 35%;
   transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .cover-section .orn-1 {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .orn-1 {
+    width: 120%;
+    transform: translate(-65%, 0);
+  }
 }
 .cover-section .orn-2 {
   position: absolute;
@@ -1442,6 +1512,17 @@ ul li {
   width: 35%;
   transform: translate(50%, 0);
 }
+@media (max-width: 991px) {
+  .cover-section .orn-2 {
+    width: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .orn-2 {
+    width: 120%;
+    transform: translate(65%, 0);
+  }
+}
 .cover-section .orn-3 {
   position: absolute;
   bottom: 0;
@@ -1449,17 +1530,36 @@ ul li {
   width: 28%;
   transform: translate(-28%, 35%);
 }
+@media (max-width: 575px) {
+  .cover-section .orn-3 {
+    width: 65%;
+    transform: translate(-50%, 10%);
+  }
+}
 .cover-section .orn-4 {
   position: absolute;
   bottom: 80%;
   right: 30%;
   width: 60%;
 }
+@media (max-width: 575px) {
+  .cover-section .orn-4 {
+    bottom: 90%;
+    right: 25%;
+  }
+}
 .cover-section .orn-5 {
   position: absolute;
   top: 20%;
   left: 50%;
   width: 100%;
+}
+@media (max-width: 575px) {
+  .cover-section .orn-5 {
+    top: 30%;
+    left: 10%;
+    width: 110%;
+  }
 }
 .cover-section .orn-5 .orn-6 {
   position: absolute;
@@ -1468,6 +1568,13 @@ ul li {
   width: 60%;
   transform: scaleX(-1);
 }
+@media (max-width: 575px) {
+  .cover-section .orn-5 .orn-6 {
+    top: 40%;
+    left: 80%;
+    width: 50%;
+  }
+}
 .cover-section .orn-7 {
   position: absolute;
   bottom: 0;
@@ -1475,13 +1582,32 @@ ul li {
   width: 28%;
   transform: translate(-50%, 25%);
 }
+@media (max-width: 575px) {
+  .cover-section .orn-7 {
+    width: 65%;
+    transform: translate(-50%, 30%);
+  }
+}
 .cover-section .orn-7 .orn-4 {
   bottom: 90%;
   right: 18%;
 }
+@media (max-width: 575px) {
+  .cover-section .orn-7 .orn-4 {
+    right: 25%;
+    width: 65%;
+  }
+}
 .cover-section .orn-7 .orn-5 {
   top: 30%;
   width: 110%;
+}
+@media (max-width: 575px) {
+  .cover-section .orn-7 .orn-5 {
+    top: 22%;
+    left: 16%;
+    width: 100%;
+  }
 }
 .cover-section .cover-wrapper {
   position: relative;
@@ -1577,8 +1703,8 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 50%;
-  width: 150%;
-  transform: translate(-50%, 0);
+  width: 180%;
+  transform: translate(-55%, 0);
 }
 .header-section .gazebo {
   position: absolute;
@@ -1594,12 +1720,24 @@ ul li {
   width: 95%;
   transform: translate(-55%, 0);
 }
+@media (max-width: 575px) {
+  .header-section .orn-1 {
+    width: 120%;
+    transform: translate(-60%, 0);
+  }
+}
 .header-section .orn-2 {
   position: absolute;
   bottom: 0;
   right: 0;
   width: 95%;
   transform: translate(55%, 0);
+}
+@media (max-width: 575px) {
+  .header-section .orn-2 {
+    width: 120%;
+    transform: translate(60%, 0);
+  }
 }
 .header-section .orn-3 {
   position: absolute;
@@ -1623,24 +1761,40 @@ ul li {
 .header-section .orn-6 {
   position: absolute;
   bottom: 0;
-  left: 55%;
+  left: 52%;
   width: 35%;
-  transform: translate(-50%, 65%);
+  transform: translate(-50%, 55%);
 }
 .header-section .orn-7 {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 50%;
-  transform: translate(-50%, 15%);
+  width: 65%;
+  transform: translate(-50%, 30%);
 }
 .header-section .orn-7 .orn-4 {
   bottom: 90%;
-  right: 18%;
+  right: 25%;
+  width: 65%;
 }
 .header-section .orn-7 .orn-5 {
-  top: 30%;
-  width: 110%;
+  top: 22%;
+  left: 16%;
+  width: 100%;
+}
+.header-section .orn-8 {
+  position: absolute;
+  bottom: 50%;
+  left: 0;
+  width: 50%;
+  transform: translate(-35%, 0);
+}
+.header-section .orn-9 {
+  position: absolute;
+  bottom: 45%;
+  right: 0;
+  width: 50%;
+  transform: translate(45%, 0) scaleX(-1);
 }
 .header-section .header-content {
   position: relative;
@@ -1687,6 +1841,46 @@ ul li {
   width: 140%;
   margin: 0 -20%;
 }
+.reminder-wrap .orn-1 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 65%;
+  transform: translate(-65%, -50%);
+}
+.reminder-wrap .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 50%;
+  right: -10%;
+  width: 65%;
+}
+.reminder-wrap .orn-1 .orn-3 {
+  position: absolute;
+  top: 85%;
+  right: -5%;
+  width: 60%;
+}
+.reminder-wrap .orn-4 {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  width: 60%;
+  transform: translate(50%, -50%) rotate(-35deg) scaleX(-1);
+}
+.reminder-wrap .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 75%;
+  right: 35%;
+  width: 60%;
+  transform: rotate(-35deg);
+}
+.reminder-wrap .orn-4 .orn-6 {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  width: 60%;
+  transform: rotate(-35deg) scaleY(-1);
+}
 .reminder-wrap .reminder-content {
   position: absolute;
   top: 60%;
@@ -1712,14 +1906,8 @@ ul li {
 
 .couple-section {
   position: relative;
-  padding: 3rem 0 0;
   background-color: var(--color-primary);
   color: var(--color-light);
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .couple-section {
-    padding: 5rem 0 0;
-  }
 }
 .couple-section .and {
   display: flex;
@@ -1745,10 +1933,17 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
+  padding: 8rem 0 3rem;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .couple-section .couple-wrapper {
+    padding: 5rem 0;
+  }
 }
 .couple-section .couple-wrapper .couple-content {
   position: relative;
   text-align: center;
+  padding: 0 1.5rem;
   margin-bottom: 3rem;
 }
 .couple-section .couple-wrapper .couple-content p {
@@ -1758,8 +1953,56 @@ ul li {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 125%;
+  width: 130%;
   transform: translate(-50%, -50%);
+}
+.couple-section .couple-wrapper .orn-1 {
+  position: absolute;
+  top: 1rem;
+  left: 0;
+  width: 40%;
+  transform: translate(-45%, 0);
+}
+.couple-section .couple-wrapper .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 35%;
+  left: 0%;
+  width: 100%;
+}
+.couple-section .couple-wrapper .orn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(50%, 0) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-3 .orn-4 {
+  position: absolute;
+  top: 60%;
+  right: 28%;
+  width: 100%;
+  transform: rotate(20deg);
+}
+.couple-section .couple-wrapper .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  transform: translate(10%, 30%);
+}
+.couple-section .couple-wrapper .orn-5 .orn-6 {
+  position: absolute;
+  bottom: 40%;
+  left: 35%;
+  width: 120%;
+  transform: rotate(-10deg) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-5 .orn-6 .orn-7 {
+  position: absolute;
+  bottom: 40%;
+  left: 0;
+  width: 70%;
+  transform: scaleX(-1);
 }
 .couple-section .couple {
   position: relative;
@@ -1774,17 +2017,17 @@ ul li {
     margin: 3rem auto;
   }
 }
-.couple-section .couple .image-wrap .image-element {
+.couple-section .couple .image-wrap .background-element {
   padding-top: 120%;
 }
-.couple-section .couple .image-wrap .image-element > * {
+.couple-section .couple .image-wrap .background-element > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.couple-section .couple .image-wrap .image-element .couple-image {
+.couple-section .couple .image-wrap .background-element .couple-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1842,12 +2085,40 @@ ul li {
 
 .story-section {
   position: relative;
+}
+.story-section .story-content {
+  position: relative;
   padding: 3rem 0 0;
 }
 @media (max-width: 991px) and (min-width: 768px) {
-  .story-section {
+  .story-section .story-content {
     padding: 5rem 0 0;
   }
+}
+.story-section .story-content .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(45%, 110%) rotate(-90deg);
+}
+.story-section .story-content .orn-1 .orn-2 {
+  position: absolute;
+  top: -10%;
+  right: 0;
+  width: 60%;
+}
+.story-section .story-content .orn-1 .orn-3 {
+  position: absolute;
+  top: -20%;
+  right: 0;
+  width: 60%;
+}
+.story-section .story-content .orn-1 .orn-4 {
+  position: absolute;
+  top: -15%;
+  left: -15%;
+  width: 50%;
 }
 .story-section .story-description {
   position: relative;
@@ -1863,7 +2134,7 @@ ul li {
   margin-top: 1rem;
 }
 .story-section .image-wrapper .image-element {
-  padding-top: 120%;
+  padding-top: 100%;
 }
 .story-section .image-wrapper .image-element > * {
   position: absolute;
@@ -1900,13 +2171,87 @@ ul li {
     padding: 5rem 0;
   }
 }
+.venue-section .bingkai {
+  position: relative;
+  width: 180%;
+  transform: translate(-23.5%, -8%);
+}
+.venue-section .gazebo {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 180%;
+  opacity: 0.2;
+  transform: translate(0, -14%);
+}
+.venue-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-65%, -65%);
+}
+.venue-section .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(90%, -50%) scaleX(-1);
+}
+.venue-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-50%, -20%);
+}
+.venue-section .orn-3 .orn-4 {
+  position: absolute;
+  bottom: 80%;
+  right: 15%;
+  width: 125%;
+  transform: rotate(20deg);
+}
+.venue-section .orn-3 .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 40%;
+  right: 35%;
+  width: 65%;
+}
+.venue-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(40%, 0) scale(-1);
+}
+.venue-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(90%, 20%);
+}
+.venue-section .orn-8 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(72%, -60%) rotate(-30deg) scaleX(-1);
+}
+.venue-section .orn-8 .orn-9 {
+  position: absolute;
+  bottom: 80%;
+  right: 38%;
+  width: 60%;
+}
 .venue-section .venue-wrapper {
   position: relative;
 }
 .venue-section .venue-wrapper .venue-description {
   position: relative;
   text-align: center;
-  margin-bottom: 3rem;
+  margin-bottom: 6rem;
 }
 .venue-section .venue-wrapper .venue-content {
   position: relative;
@@ -1941,7 +2286,7 @@ ul li {
   border-radius: var(--border-radius);
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
-  padding: 2rem;
+  padding: 0 2rem 2rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
   padding: 0 0 1rem;
@@ -1949,7 +2294,15 @@ ul li {
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name {
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: -1rem;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name-body {
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  width: 100%;
+  padding: 0 2rem;
+  transform: translate(-50%, -50%);
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
   position: relative;
@@ -2046,7 +2399,7 @@ ul li {
   }
 }
 .venue-section .row-venue {
-  row-gap: 3rem;
+  row-gap: 5rem;
 }
 @media (max-width: 767px) {
   .venue-section .row-venue-sm {
@@ -2063,6 +2416,49 @@ ul li {
     padding: 5rem 0;
   }
 }
+.rsvp-section .bingkai {
+  position: absolute;
+  left: 50%;
+  width: 115%;
+}
+.rsvp-section .bingkai-top {
+  position: absolute;
+  top: 0;
+  transform: translate(-50%, -30%);
+}
+.rsvp-section .bingkai-bottom {
+  position: absolute;
+  bottom: 0;
+  transform: translate(-50%, 30%) scaleY(-1);
+}
+.rsvp-section .orn-1 {
+  position: absolute;
+  top: 6rem;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0) rotate(10deg);
+}
+.rsvp-section .orn-1 .orn-2 {
+  position: absolute;
+  top: 65%;
+  right: -10%;
+  width: 110%;
+  transform: rotate(-20deg);
+}
+.rsvp-section .orn-3 {
+  position: absolute;
+  bottom: 5rem;
+  left: 0;
+  width: 50%;
+  transform: translate(-50%, 0) rotate(20deg);
+}
+.rsvp-section .orn-3 .orn-4 {
+  position: absolute;
+  bottom: 80%;
+  right: 30%;
+  width: 60%;
+  transform: rotate(-45deg);
+}
 .rsvp-section .rsvp-wrapper {
   position: relative;
   background-color: var(--color-primary);
@@ -2071,6 +2467,11 @@ ul li {
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
   padding: 8rem 3rem;
+}
+@media (min-width: 1200px) {
+  .rsvp-section .rsvp-wrapper .rsvp-form {
+    padding: 8rem 4rem;
+  }
 }
 @media (max-width: 575px) {
   .rsvp-section .rsvp-wrapper .rsvp-form {
@@ -2083,7 +2484,7 @@ ul li {
 }
 .wishes-section .wishes-wrapper-form {
   position: relative;
-  padding: 3rem 0 0;
+  padding: 5rem 0 0;
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .wishes-section .wishes-wrapper-form {
@@ -2094,9 +2495,36 @@ ul li {
   position: absolute;
   top: 0;
   left: 50%;
-  width: 140%;
+  width: 160%;
   transform: translate(-50%, 0);
   opacity: 0.2;
+}
+.wishes-section .wishes-wrapper-form .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-40%, 0);
+}
+.wishes-section .wishes-wrapper-form .orn-1 .orn-2 {
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  width: 100%;
+}
+.wishes-section .wishes-wrapper-form .orn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(55%, 0) rotate(-10deg) scaleX(-1);
+}
+.wishes-section .wishes-wrapper-form .orn-3 .orn-4 {
+  position: absolute;
+  top: 80%;
+  right: -25%;
+  width: 120%;
+  transform: rotate(30deg);
 }
 .wishes-section .card-form {
   background-color: transparent;
@@ -2191,6 +2619,33 @@ ul li {
   .egift-section {
     padding: 5rem 0;
   }
+}
+.egift-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0);
+}
+.egift-section .orn-1 .orn-2 {
+  position: absolute;
+  top: 20%;
+  right: 10%;
+  width: 100%;
+}
+.egift-section .orn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(50%, 0) scaleX(-1);
+}
+.egift-section .orn-3 .orn-4 {
+  position: absolute;
+  top: 70%;
+  right: 20%;
+  width: 85%;
+  transform: rotate(20deg);
 }
 .egift-section .gift-wrap {
   position: relative;
@@ -2384,6 +2839,39 @@ ul li {
     padding: 5rem 0;
   }
 }
+.apology-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-70%, 0);
+}
+.apology-section .orn-1 .orn-2 {
+  position: absolute;
+  bottom: 50%;
+  right: -20%;
+  width: 100%;
+  transform: rotate(20deg);
+}
+.apology-section .orn-1 .orn-2 .orn-3 {
+  position: absolute;
+  bottom: 10%;
+  right: 30%;
+  width: 80%;
+}
+.apology-section .orn-4 {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  width: 40%;
+  transform: translate(50%, 0) rotate(-20deg) scaleX(-1);
+}
+.apology-section .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 80%;
+  right: 35%;
+  width: 65%;
+}
 .apology-section .appology-wrap {
   position: relative;
 }
@@ -2397,13 +2885,41 @@ ul li {
     padding: 0 0 5rem;
   }
 }
+.stream-section .bingkai {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 120%;
+  transform: translate(-50%, -30%);
+}
+.stream-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(65%, -65%) scaleX(-1);
+}
+.stream-section .orn-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48%;
+  transform: translate(-30%, 0) rotate(-5deg) scaleX(-1);
+}
+.stream-section .orn-2 .orn-3 {
+  position: absolute;
+  bottom: -10%;
+  right: 5%;
+  width: 60%;
+  transform: rotate(85deg);
+}
 .stream-section .image-wrapper {
   position: relative;
   width: 100%;
   margin-bottom: 2rem;
 }
 .stream-section .image-wrapper .image-element {
-  padding-top: 120%;
+  padding-top: 100%;
 }
 .stream-section .image-wrapper .image-element > * {
   position: absolute;
@@ -2435,6 +2951,7 @@ ul li {
 }
 .stream-section .stream-wrapper .stream-content {
   position: relative;
+  padding-top: 2.5rem;
 }
 .stream-section .stream-wrapper .stream-content .stream-description {
   position: relative;
@@ -2477,32 +2994,130 @@ ul li {
   width: 150%;
   transform: translate(-50%, 0);
 }
+.thank-section .frame {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 120%;
+  transform: translate(-50%, -50%);
+}
+.thank-section .gazebo {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 85%;
+  transform: translate(13%, 0%);
+}
+.thank-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 95%;
+  transform: translate(-55%, 0);
+}
+@media (max-width: 575px) {
+  .thank-section .orn-1 {
+    width: 120%;
+    transform: translate(-60%, 0);
+  }
+}
+.thank-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 95%;
+  transform: translate(55%, 0);
+}
+@media (max-width: 575px) {
+  .thank-section .orn-2 {
+    width: 120%;
+    transform: translate(60%, 0);
+  }
+}
+.thank-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(-50%, 10%);
+}
+.thank-section .orn-4 {
+  position: absolute;
+  bottom: 90%;
+  right: 25%;
+  width: 60%;
+}
+.thank-section .orn-5 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  width: 110%;
+}
+.thank-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  left: 52%;
+  width: 35%;
+  transform: translate(-50%, 55%);
+}
+.thank-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(-50%, 30%);
+}
+.thank-section .orn-7 .orn-4 {
+  bottom: 90%;
+  right: 25%;
+  width: 65%;
+}
+.thank-section .orn-7 .orn-5 {
+  top: 22%;
+  left: 16%;
+  width: 100%;
+}
+.thank-section .orn-8 {
+  position: absolute;
+  bottom: 30%;
+  left: 0;
+  width: 50%;
+  transform: translate(-35%, 0);
+}
+.thank-section .orn-9 {
+  position: absolute;
+  bottom: 25%;
+  right: 0;
+  width: 50%;
+  transform: translate(45%, 0) scaleX(-1);
+}
 .thank-section .image-wrapper {
   position: relative;
-  width: 80%;
+  width: 100%;
   margin: 0 auto 5rem;
 }
-.thank-section .image-wrapper .image-element {
+.thank-section .image-wrapper .background-element {
   padding-top: 120%;
 }
-.thank-section .image-wrapper .image-element > * {
+.thank-section .image-wrapper .background-element > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.thank-section .image-wrapper .image-element img {
+.thank-section .image-wrapper .background-element img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: 300px;
 }
 .thank-section .thank {
   position: relative;
-  padding: 1.5rem 1.5rem 8rem;
+  padding: 1.5rem 1.5rem 10rem;
   color: var(--color-light);
-  margin-bottom: 8rem;
+  margin-bottom: 5rem;
 }
 .thank-section .thank:before {
   position: absolute;
@@ -2511,12 +3126,14 @@ ul li {
   bottom: 0;
   left: 0;
   background-color: var(--color-primary);
-  border-radius: 20px 20px 300px 300px;
+  border-radius: 300px;
   opacity: 0.6;
   content: "";
 }
 .thank-section .thank .thank-body {
+  position: relative;
   padding-top: 2rem;
+  z-index: 5;
 }
 
 .footer {

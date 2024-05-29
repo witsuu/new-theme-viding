@@ -15,27 +15,138 @@
 		transform: translate(-50%, 0);
 	}
 
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 120%;
+		transform: translate(-50%, -50%);
+	}
+
+	.gazebo {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 85%;
+		transform: translate(13%, 0%);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 95%;
+		transform: translate(-55%, 0);
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(-60%, 0);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 95%;
+		transform: translate(55%, 0);
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(60%, 0);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(-50%, 10%);
+
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 90%;
+		right: 25%;
+		width: 60%;
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 30%;
+		left: 10%;
+		width: 110%;
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 52%;
+		width: 35%;
+		transform: translate(-50%, 55%);
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(-50%, 30%);
+
+		.orn-4 {
+			bottom: 90%;
+			right: 25%;
+			width: 65%;
+		}
+
+		.orn-5 {
+			top: 22%;
+			left: 16%;
+			width: 100%;
+		}
+
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 30%;
+		left: 0;
+		width: 50%;
+		transform: translate(-35%, 0);
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 25%;
+		right: 0;
+		width: 50%;
+		transform: translate(45%, 0) scaleX(-1);
+	}
+
 	.image-wrapper {
 		position: relative;
-		width: 80%;
+		width: 100%;
 		margin: 0 auto 5rem;
 
-		.image-element {
+		.background-element {
 			@include aspect-ratio(5, 6);
 
 			img {
 				width: 100%;
 				height: 100%;
 				object-fit: cover;
+				border-radius: 300px;
 			}
 		}
 	}
 
 	.thank {
 		position: relative;
-		padding: 1.5rem 1.5rem 8rem;
+		padding: 1.5rem 1.5rem 10rem;
 		color: var(--color-light);
-		margin-bottom: 8rem;
+		margin-bottom: 5rem;
 
 		&:before {
 			position: absolute;
@@ -44,13 +155,15 @@
 			bottom: 0;
 			left: 0;
 			background-color: var(--color-primary);
-			border-radius: 20px 20px 300px 300px;
+			border-radius: 300px;
 			opacity: .6;
 			content: "";
 		}
 
 		.thank-body {
+			position: relative;
 			padding-top: 2rem;
+			z-index: 5;
 		}
 	}
 }

@@ -6,13 +6,45 @@
 		padding: 0 0 5rem;
 	}
 
+	.bingkai {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 120%;
+		transform: translate(-50%, -30%);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(65%, -65%) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 48%;
+		transform: translate(-30%, 0) rotate(-5deg) scaleX(-1);
+
+		.orn-3 {
+			position: absolute;
+			bottom: -10%;
+			right: 5%;
+			width: 60%;
+			transform: rotate(85deg);
+		}
+	}
+
 	.image-wrapper {
 		position: relative;
 		width: 100%;
 		margin-bottom: 2rem;
 
 		.image-element {
-			@include aspect-ratio(5, 6);
+			@include aspect-ratio(1, 1);
 
 			@include ipad {
 				@include aspect-ratio(16, 9);
@@ -31,6 +63,7 @@
 
 		.stream-content {
 			position: relative;
+			padding-top: 2.5rem;
 
 			.stream-description {
 				position: relative;

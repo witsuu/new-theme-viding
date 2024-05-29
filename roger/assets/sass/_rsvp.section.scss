@@ -6,6 +6,58 @@
 		padding: 5rem 0;
 	}
 
+	.bingkai {
+		position: absolute;
+		left: 50%;
+		width: 115%;
+
+		&-top {
+			position: absolute;
+			top: 0;
+			transform: translate(-50%, -30%);
+		}
+
+		&-bottom {
+			position: absolute;
+			bottom: 0;
+			transform: translate(-50%, 30%) scaleY(-1);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 6rem;
+		left: 0;
+		width: 35%;
+		transform: translate(-50%, 0) rotate(10deg);
+
+		@include max-sm {}
+
+		.orn-2 {
+			position: absolute;
+			top: 65%;
+			right: -10%;
+			width: 110%;
+			transform: rotate(-20deg);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 5rem;
+		left: 0;
+		width: 50%;
+		transform: translate(-50%, 0) rotate(20deg);
+
+		.orn-4 {
+			position: absolute;
+			bottom: 80%;
+			right: 30%;
+			width: 60%;
+			transform: rotate(-45deg);
+		}
+	}
+
 	.rsvp-wrapper {
 		position: relative;
 		background-color: var(--color-primary);
@@ -14,6 +66,10 @@
 
 		.rsvp-form {
 			padding: 8rem 3rem;
+
+			@include min-xl {
+				padding: 8rem 4rem;
+			}
 
 			@include max-sm {
 				padding: 8rem 2rem;

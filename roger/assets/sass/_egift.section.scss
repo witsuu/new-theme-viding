@@ -9,6 +9,37 @@
 		padding: 5rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-50%, 0);
+
+		.orn-2 {
+			position: absolute;
+			top: 20%;
+			right: 10%;
+			width: 100%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(50%, 0) scaleX(-1);
+
+		.orn-4 {
+			position: absolute;
+			top: 70%;
+			right: 20%;
+			width: 85%;
+			transform: rotate(20deg);
+		}
+	}
+
 	.gift-wrap {
 		position: relative;
 		margin-bottom: 2rem;
