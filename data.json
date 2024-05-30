@@ -357,96 +357,116 @@
 	{
 		"name": "Custom SR",
 		"path": "custom-sr",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Ottoman",
 		"path": "ottoman",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Joglo",
 		"path": "joglo",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Hill",
 		"path": "hill",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Coloseum",
 		"path": "coloseum",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Plaza",
 		"path": "plaza",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom A&K",
 		"path": "custom-ak",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom C&Z",
 		"path": "custom-cz",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Line",
 		"path": "line",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Goodwill",
 		"path": "goodwill",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Hansel",
 		"path": "hansel",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Arnold",
 		"path": "arnold",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Merlin",
 		"path": "merlin",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom DR",
 		"path": "custom-dr",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Semplice",
 		"path": "semplice",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Aluna",
 		"path": "aluna",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Betram",
 		"path": "betram",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Halcyon",
 		"path": "halcyon",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Finna",
 		"path": "finna",
+		"status": "DONE"
+	},
+	{
+		"name": "Robert",
+		"path": "robert",
+		"status": ""
+	},
+	{
+		"name": "Hanna",
+		"path": "hanna",
+		"status": ""
+	},
+	{
+		"name": "Roger",
+		"path": "roger",
+		"status": ""
+	},
+	{
+		"name": "Kito",
+		"path": "kito",
 		"status": ""
 	}
 ]
