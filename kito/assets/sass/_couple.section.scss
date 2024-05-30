@@ -3,13 +3,14 @@
 
 	.and {
 		@include ipad {
+			display: flex;
 			position: absolute;
 			top: 50%;
 			left: 50%;
 			transform: translate(-50%, -50%);
 		}
 
-		display: flex;
+		display: none;
 		justify-content: center;
 		align-items: center;
 		width: 100%;
@@ -35,6 +36,7 @@
 		.couple-content {
 			position: relative;
 			text-align: center;
+			padding: 0 2rem;
 			margin-bottom: 3rem;
 
 			p {
@@ -45,7 +47,6 @@
 		.couple-body {
 			position: relative;
 			background-color: var(--color-primary);
-			padding-bottom: 3rem;
 
 			@include ipad {
 				padding-bottom: 5rem;
@@ -53,6 +54,37 @@
 
 			.rebung-horizontal {
 				margin-bottom: 1.5rem;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 3rem;
+			left: 0;
+			width: 35%;
+			transform: translate(-50%, 0);
+
+			.orn-2 {
+				position: absolute;
+				top: -30%;
+				right: 15%;
+				width: 100%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(50%, 0);
+
+			.orn-4 {
+				position: absolute;
+				top: 35%;
+				left: 10%;
+				width: 100%;
+				transform: rotate(-45deg);
 			}
 		}
 	}
@@ -89,7 +121,7 @@
 		.couple-description {
 			position: relative;
 			text-align: center;
-			padding: 1rem 1rem 0;
+			padding: 1rem 1rem 2rem;
 
 			h3 {
 				position: relative;

@@ -9,6 +9,10 @@
 		transform: translateX(-25%);
 	}
 
+	.ornaments-wrapper.with-bg {
+		background-color: var(--color-main);
+	}
+
 	.sky {
 		position: absolute;
 		top: 0;
@@ -22,13 +26,106 @@
 		bottom: 0;
 		left: 50%;
 		width: 150%;
-		transform: translate(-50%, -10%);
+		transform: translate(-50%, -30%);
+
+		@include max-sm {
+			width: 180%;
+			transform: translate(-50%, -40%);
+		}
 
 		.land {
 			position: absolute;
-			bottom: -10%;
+			bottom: -30%;
 			left: 0;
+			width: 120%;
+
+			@include max-sm {
+				bottom: -40%;
+				width: 180%;
+			}
+		}
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 115%;
+		transform: translate(-50%, -10%);
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(-50%, -15%);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		width: 65%;
+		transform: translate(-45%, 0);
+		opacity: .5;
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 50%;
+		right: 0;
+		width: 65%;
+		transform: translate(45%, 0);
+		opacity: .5;
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 38%;
+		transform: translate(-50%, 10%);
+
+		.orn-4 {
+			position: absolute;
+			top: 45%;
+			left: 90%;
 			width: 100%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 50%;
+	}
+
+	.orn-8 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 50%;
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 43%;
+		transform: translate(40%, 50%);
+
+		.orn-5 {
+			position: absolute;
+			top: 10%;
+			right: 65%;
+			width: 85%;
+			transform: scaleX(-1);
 		}
 	}
 
@@ -38,6 +135,7 @@
 		.image-wrapper {
 			position: relative;
 			width: 100%;
+			z-index: 5;
 
 			.image-element {
 				@include aspect-ratio(5, 6);
@@ -73,7 +171,9 @@
 			}
 
 			.thank-body {
-				padding: 3rem 1.8rem;
+				position: relative;
+				padding: 3rem 1.8rem 10rem;
+				z-index: 5;
 			}
 		}
 	}

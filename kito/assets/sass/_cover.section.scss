@@ -10,6 +10,19 @@
 		transform: translateY(-100%);
 	}
 
+	.ornaments-wrapper {
+		&.with-bg {
+			background-color: var(--color-main);
+		}
+
+		&.cover-ornament-wrapper {
+
+			@include max-lg {
+				height: calc(100% - 5rem);
+			}
+		}
+	}
+
 	.ornament {
 		@include min-lg {
 			width: 8%;
@@ -33,7 +46,104 @@
 
 		@include max-lg {
 			width: 180%;
-			transform: translate(-50%, 0%);
+			transform: translate(-50%, -30%);
+		}
+
+		.land {
+			position: absolute;
+			bottom: -30%;
+			left: 0;
+			width: 120%;
+
+			@include max-sm {
+				bottom: -40%;
+				width: 180%;
+			}
+		}
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 60%;
+		transform: translate(-50%, 20%);
+
+		@include max-lg {
+			width: 120%;
+			transform: translate(-50%, -15%);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 25%;
+		left: 0;
+		width: 50%;
+		transform: translate(-40%, 0);
+
+		@include max-lg {
+			bottom: 40%;
+			width: 65%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 10%;
+		right: 0;
+		width: 50%;
+		transform: translate(40%, 0);
+
+		@include max-lg {
+			bottom: 30%;
+			width: 65%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%, 10%);
+
+		@include max-lg {
+			width: 38%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 40%;
+			left: 90%;
+			width: 100%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 45%;
+			left: 50%;
+			width: 100%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(40%, 50%);
+
+		@include max-lg {
+			width: 43%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 10%;
+			right: 70%;
+			width: 80%;
+			transform: scaleX(-1);
 		}
 	}
 
@@ -56,7 +166,7 @@
 			margin: 0 auto;
 			color: var(--color-light);
 
-			&::before {
+			.cover-content-bg {
 				position: absolute;
 				top: 0;
 				left: 0;
@@ -79,13 +189,13 @@
 
 			.cover-body {
 				position: relative;
+				z-index: 5;
 
 				.cover-description {
 					position: relative;
 					width: 100%;
 					padding: 1rem;
 					text-align: center;
-					z-index: 5;
 
 					.cover-event {
 						position: relative;

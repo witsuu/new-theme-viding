@@ -1,9 +1,12 @@
 .header-section {
 	position: relative;
-	background-color: var(--color-main);
 
 	.scroll-icon {
 		margin-top: 1rem;
+	}
+
+	.ornaments-wrapper.with-bg {
+		background-color: var(--color-main);
 	}
 
 	.sky {
@@ -19,13 +22,114 @@
 		bottom: 0;
 		left: 50%;
 		width: 150%;
-		transform: translate(-50%, -10%);
+		transform: translate(-50%, -30%);
+
+		@include max-sm {
+			width: 180%;
+			transform: translate(-50%, -40%);
+		}
 
 		.land {
 			position: absolute;
-			bottom: -10%;
+			bottom: -30%;
 			left: 0;
+			width: 120%;
+
+			@include max-sm {
+				bottom: -40%;
+				width: 180%;
+			}
+		}
+	}
+
+	.ampera {
+		position: absolute;
+		bottom: 70%;
+		left: 50%;
+		width: 80%;
+		transform: translate(-58%, 0);
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 115%;
+		transform: translate(-50%, -10%);
+
+		@include max-sm {
+			width: 120%;
+			transform: translate(-50%, -15%);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		width: 65%;
+		transform: translate(-45%, 0);
+		opacity: .5;
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 50%;
+		right: 0;
+		width: 65%;
+		transform: translate(45%, 0);
+		opacity: .5;
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 38%;
+		transform: translate(-50%, 10%);
+
+		.orn-4 {
+			position: absolute;
+			top: 45%;
+			left: 90%;
 			width: 100%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 50%;
+	}
+
+	.orn-8 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 50%;
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 43%;
+		transform: translate(40%, 50%);
+
+		.orn-5 {
+			position: absolute;
+			top: 10%;
+			right: 65%;
+			width: 85%;
+			transform: scaleX(-1);
 		}
 	}
 
@@ -39,15 +143,34 @@
 		align-items: center;
 		flex-direction: column;
 
+		@include max-sm {
+			min-height: 85vh;
+		}
+
 		.header {
 			position: relative;
 			width: 80%;
 			min-height: calc(100vh - 5rem);
 			text-align: center;
 			color: var(--color-light);
-			padding: 3rem 1rem 10rem;
+			padding: 3rem 1rem 13rem;
 
-			&::before {
+			@include ipad {
+				width: 60%;
+				min-height: calc(100vh - 10rem);
+			}
+
+			@include max-sm {
+				width: 90%;
+				min-height: calc(100vh - 10rem);
+				padding: 3rem 1rem 20rem;
+			}
+
+			@include max-xs {
+				padding: 3rem 1rem 10rem;
+			}
+
+			.header-bg {
 				position: absolute;
 				top: 0;
 				right: 0;
@@ -57,14 +180,6 @@
 				border-radius: 300px 300px 0 0;
 				opacity: .6;
 				content: "";
-			}
-
-			@include ipad {
-				width: 60%;
-			}
-
-			@include max-sm {
-				width: 90%;
 			}
 
 			.header-title {

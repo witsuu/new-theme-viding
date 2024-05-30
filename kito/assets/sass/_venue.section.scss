@@ -6,6 +6,110 @@
 		padding: 5rem 0;
 	}
 
+	.sky {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 180%;
+		transform: translate(-50%, -12%);
+	}
+
+	.ampera {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-60%, 0);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-55%, 0);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(55%, 0);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-55%, 60%);
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(55%, 60%);
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-5%, 95%);
+	}
+
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(5%, 95%);
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-40%, 50%);
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(25%, 55%);
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 42%;
+		transform: translate(-50%, 72%);
+	}
+
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-45%, 80%);
+	}
+
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(20%, 85%);
+	}
+
 	.venue-wrapper {
 		position: relative;
 
@@ -77,11 +181,16 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 3rem 0;
 						margin-bottom: 1rem;
 						border-radius: 0 0 var(--border-radius) var(--border-radius);
 						text-align: center;
 						overflow: hidden;
+
+						&-body {
+							position: relative;
+							padding: 3rem 1rem 5rem;
+							z-index: 5;
+						}
 
 						.date {
 							position: relative;

@@ -9,6 +9,18 @@
 		min-height: 60vh;
 	}
 
+	@include max-sm {
+		min-height: 50vh;
+	}
+
+	@include max-xs {
+		min-height: 60vh;
+	}
+
+	.ornaments-wrapper.with-bg {
+		background-color: var(--color-main);
+	}
+
 	.sky {
 		position: absolute;
 		top: 0;
@@ -22,22 +34,101 @@
 		bottom: 0;
 		left: 50%;
 		width: 150%;
-		transform: translate(-50%, -10%);
+		transform: translate(-50%, 0%);
 
 		.land {
 			position: absolute;
-			bottom: -10%;
+			bottom: 0%;
 			left: 0;
+			width: 120%;
+		}
+	}
+
+	.ampera {
+		position: absolute;
+		bottom: 70%;
+		left: 50%;
+		width: 80%;
+		transform: translate(-58%, 0);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 10%;
+		left: 0;
+		width: 65%;
+		transform: translate(-45%, 0);
+		opacity: .5;
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 50%;
+		right: 0;
+		width: 65%;
+		transform: translate(45%, 0);
+		opacity: .5;
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 38%;
+		transform: translate(-50%, 10%);
+
+		.orn-4 {
+			position: absolute;
+			top: 45%;
+			left: 90%;
 			width: 100%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 100%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		top: 10%;
+		left: 0;
+		width: 50%;
+	}
+
+	.orn-8 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 50%;
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 43%;
+		transform: translate(40%, 50%);
+
+		.orn-5 {
+			position: absolute;
+			top: 10%;
+			right: 65%;
+			width: 85%;
+			transform: scaleX(-1);
 		}
 	}
 
 	.reminder-content {
 		position: absolute;
-		top: 60%;
+		top: 50%;
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%, -50%);
+		z-index: 5;
 	}
 
 	.btn-reminder {

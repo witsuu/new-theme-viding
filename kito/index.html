@@ -66,7 +66,7 @@
 
     <!-- Envelope Section -->
     <section class="cover-section trigger-section">
-        <div class="ornaments-wrapper">
+        <div class="ornaments-wrapper with-bg" data-anim="zoom-out">
             <div class="elements-wrapper-absolute">
                 <div class="background-element">
                     <img src="./assets/images/texture.png" alt="texture">
@@ -77,9 +77,24 @@
                     <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
                 </div>
             </div>
+            <div class="orn-1">
+                <div class="image-element">
+                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                </div>
+            </div>
+            <div class="orn-2">
+                <div class="image-element">
+                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid">
+                </div>
+            </div>
             <div class="mountain">
                 <div class="image-element">
                     <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
+                </div>
+                <div class="land">
+                    <div class="image-element">
+                        <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                    </div>
                 </div>
             </div>
             <div class="ornament ornament-left">
@@ -95,10 +110,43 @@
                 </div>
             </div>
         </div>
+        <div class="ornaments-wrapper orn-front cover-ornament-wrapper" data-anim="zoom-out">
+            <div class="rumah">
+                <div class="image-element">
+                    <img src="./assets/images/rumah-limas.png" alt="rumah-limas" class="img-fluid">
+                </div>
+            </div>
+            <div class="orn-3">
+                <div class="image-element">
+                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                </div>
+                <div class="orn-4">
+                    <div class="image-element">
+                        <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                </div>
+                <div class="orn-5">
+                    <div class="image-element">
+                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                </div>
+            </div>
+            <div class="orn-6">
+                <div class="image-element">
+                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                </div>
+                <div class="orn-5">
+                    <div class="image-element">
+                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
             <div class="cover-wrapper">
                 <div class="cover-content color-primary">
-                    <div class="cover-body">
+                    <div class="cover-content-bg" data-anim="slide-up"></div>
+                    <div class="cover-body" data-anim="zoom-out" data-anim-delay="2500">
                         <div class="cover-description">
                             <div class="greeting-wrapper">
                                 <span>Dear,</span>
@@ -114,7 +162,7 @@
                                 <h6>Akad Nikah</h6>
                                 <p>31 May 2021</p>
                             </div>
-                            <div class="elements-widget" data-anim="fade">
+                            <div class="elements-widget">
                                 <button class="btn btn-custom" id="btn-envelope">
                                     <i class="fas fa-envelope-open-text"></i> <strong>Open The Invitation</strong>
                                 </button>
@@ -130,7 +178,7 @@
         <div class="background__views">
             <div class="background__frames">
                 <div class="header-title">
-                    <h1 class="title mb-3" data-anim="fade-right">Vidi <span>&</span> Hening</h1>
+                    <h1 class="title mb-3" data-anim="zoom-out">Vidi <span>&</span> Hening</h1>
                 </div>
                 <div class="background__image" data-anim="zoom-out-image" style="background-image: url(./assets/images/background-1.webp);"></div>
                 <div class="ornaments-wrapper">
@@ -140,53 +188,142 @@
                         </div>
                     </div>
                 </div>
+                <div class="ornaments-wrapper orn-front">
+                    <div class="orn-3">
+                        <div class="image-element">
+                            <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-4">
+                            <div class="image-element">
+                                <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                        <div class="orn-5">
+                            <div class="image-element">
+                                <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="orn-6">
+                        <div class="image-element">
+                            <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                        </div>
+                        <div class="orn-5">
+                            <div class="image-element">
+                                <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="layout__views">
             <!-- Header section -->
             <section class="header-section main-section">
                 <div class="ornaments-wrapper overflow-hidden">
-                    <div class="elements-wrapper-absolute">
-                        <div class="background-element">
-                            <img src="./assets/images/texture.png" alt="texture">
+                    <div class="ornaments-wrapper with-bg" data-anim="zoom-out">
+                        <div class="elements-wrapper-absolute">
+                            <div class="background-element">
+                                <img src="./assets/images/texture.png" alt="texture">
+                            </div>
                         </div>
-                    </div>
-                    <div class="sky">
-                        <div class="image-element">
-                            <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
-                        </div>
-                    </div>
-                    <div class="mountain">
-                        <div class="image-element">
-                            <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
-                        </div>
-                        <div class="land">
+                        <div class="sky">
                             <div class="image-element">
-                                <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                                <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="mountain">
+                            <div class="ampera">
+                                <div class="image-element" data-anim="slide-up">
+                                    <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-1">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-7">
+                                <div class="image-element" data-anim="slide-up">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-8" data-anim="slide-up">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="image-element" data-anim="slide-left">
+                                <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
+                            </div>
+                            <div class="land">
+                                <div class="image-element" data-anim="slide-left">
+                                    <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="ornament ornament-left">
-                        <div class="image-element">
-                            <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                </div>
+                <div class="ornaments-wrapper orn-front overflow-hidden">
+                    <div class="ornaments-wrapper" data-anim="zoom-out" data-anim-duration="4500ms">
+                        <div class="rumah">
+                            <div class="image-element">
+                                <img src="./assets/images/rumah-limas.png" alt="rumah-limas" class="img-fluid">
+                            </div>
                         </div>
-                    </div>
-                    <div class="ornament ornament-right">
-                        <div class="image-element">
-                            <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                        <div class="ornament ornament-left">
+                            <div class="image-element">
+                                <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="ornament ornament-right">
+                            <div class="image-element">
+                                <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                            </div>
+                        </div>
+                        <div class="orn-3">
+                            <div class="image-element">
+                                <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-4">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-5">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="orn-6">
+                            <div class="image-element">
+                                <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                            <div class="orn-5">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
                 <div class="container">
                     <div class="header-content">
                         <div class="header color-primary">
+                            <div class="header-bg" data-anim="slide-up"></div>
                             <div class="header-title">
-                                <div class="header-title-content">
+                                <div class="header-title-content" data-anim="zoom-out" data-anim-delay="2500">
                                     <div class="brand-name">
                                         <span class="man">V</span>
                                         <span class="woman">H</span>
                                     </div>
-                                    <h1 class="title mb-3" data-anim="fade-right">Vidi <span>&</span> Hening</h1>
+                                    <h1 class="title mb-3" data-anim="zoom-out">Vidi <span>&</span> Hening</h1>
                                     <div class="position-relative" data-anim="zoom-out">
                                         <p>We're Getting Married</p>
                                     </div>
@@ -215,14 +352,36 @@
                         </div>
                     </div>
                     <div class="couple-wrapper">
+                        <div class="ornaments-wrapper">
+                            <div class="orn-1">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                                <div class="orn-2">
+                                    <div class="image-element">
+                                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-right">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orn-3">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                                <div class="orn-4">
+                                    <div class="image-element">
+                                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-right" data-anim-duration="4500ms">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                         <div class="container position-relative">
                             <div class="row justify-content-evenly">
                                 <div class="col-lg-12 col-md-10 text-center position-relative">
                                     <div class="couple-content">
-                                        <div class="title-section" data-anim="fade-right">
+                                        <div class="title-section" data-anim="zoom-out">
                                             <h2>Bride & Groom</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-out">
+                                        <div class="position-relative" data-anim="fade-up">
                                             <p>What greater thing is there for two human souls, than to feel that they are joined for life–to strength each other in all labor, to rest on each other in all sorrow, to minister to each other in silent unspeakable memories at the moment of the last parting? Being deeply loved by someone gives you strength, while loving someone deeply gives you courage.</p>
                                         </div>
                                     </div>
@@ -240,7 +399,7 @@
                                 </div>
                             </div>
                             <div class="rebung-horizontal ipad">
-                                <div class="image-element">
+                                <div class="image-element" data-anim="slide-right">
                                     <img src="./assets/images/rebung-horizontal-2.png" alt="rebung-horizontal-2">
                                 </div>
                             </div>
@@ -249,16 +408,16 @@
                                     <div class="col-md-6 col-lg-12">
                                         <div class="couple">
                                             <div class="rebung-horizontal">
-                                                <div class="image-element">
+                                                <div class="image-element" data-anim="slide-right">
                                                     <img src="./assets/images/rebung-horizontal-2.png" alt="rebung-horizontal-2">
                                                 </div>
                                             </div>
                                             <div class="image-wrap man">
-                                                <div class="image-element">
+                                                <div class="image-element" data-anim="zoom-out">
                                                     <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man">
                                                 </div>
                                             </div>
-                                            <div class="couple-description">
+                                            <div class="couple-description" data-anim="fade-up">
                                                 <h3>Vidi Dwi Saputra</h3>
                                                 <div class="couple-parent">
                                                     <p>First son of <br> H. Heru Stiawan <br> and <br>
@@ -276,16 +435,16 @@
                                     <div class="col-md-6 col-lg-12">
                                         <div class="couple">
                                             <div class="rebung-horizontal">
-                                                <div class="image-element">
+                                                <div class="image-element" data-anim="slide-right">
                                                     <img src="./assets/images/rebung-horizontal-2.png" alt="rebung-horizontal-2">
                                                 </div>
                                             </div>
                                             <div class="image-wrap woman">
-                                                <div class="image-element">
+                                                <div class="image-element" data-anim="zoom-out">
                                                     <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image woman">
                                                 </div>
                                             </div>
-                                            <div class="couple-description">
+                                            <div class="couple-description" data-anim="fade-up">
                                                 <h3>Hening Saputri</h3>
                                                 <div class="couple-parent">
                                                     <p>First son of <br> H. Heru Stiawan <br> and <br>
@@ -305,39 +464,95 @@
                     </div>
                     <div class="reminder-wrap">
                         <div class="ornaments-wrapper overflow-hidden">
-                            <div class="elements-wrapper-absolute">
-                                <div class="background-element">
-                                    <img src="./assets/images/texture.png" alt="texture">
+                            <div class="ornaments-wrapper with-bg" data-anim="zoom-out">
+                                <div class="elements-wrapper-absolute">
+                                    <div class="background-element">
+                                        <img src="./assets/images/texture.png" alt="texture">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="sky">
-                                <div class="image-element">
-                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
-                                </div>
-                            </div>
-                            <div class="mountain">
-                                <div class="image-element">
-                                    <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
-                                </div>
-                                <div class="land">
+                                <div class="sky">
                                     <div class="image-element">
-                                        <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                                        <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="mountain">
+                                    <div class="ampera">
+                                        <div class="image-element" data-anim="slide-up">
+                                            <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="orn-1">
+                                        <div class="image-element">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-2">
+                                        <div class="image-element">
+                                            <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-7">
+                                        <div class="image-element" data-anim="slide-up">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="orn-8">
+                                        <div class="image-element" data-anim="slide-up">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="image-element" data-anim="slide-left">
+                                        <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
+                                    </div>
+                                    <div class="land">
+                                        <div class="image-element" data-anim="slide-left">
+                                            <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="ornament ornament-left">
-                                <div class="image-element">
-                                    <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                        </div>
+                        <div class="ornaments-wrapper orn-front overflow-hidden">
+                            <div class="ornaments-wrapper" data-anim="zoom-out" data-anim-duration="4500ms">
+                                <div class="ornament ornament-left">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                                    </div>
                                 </div>
-                            </div>
-                            <div class="ornament ornament-right">
-                                <div class="image-element">
-                                    <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                                <div class="ornament ornament-right">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="orn-3">
+                                    <div class="image-element">
+                                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-4">
+                                        <div class="image-element">
+                                            <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-5">
+                                        <div class="image-element">
+                                            <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orn-6">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-5">
+                                        <div class="image-element">
+                                            <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <div class="reminder-content">
-                            <div class="countdown color-primary" date="09/11/2024 07:00:00" data-anim="fade-down">
+                            <div class="countdown color-primary" date="09/11/2024 07:00:00" data-anim="zoom-out">
                                 <div class="days">
                                     <p class="angka">00</p>
                                     <p class="huruf">Day</p>
@@ -355,7 +570,7 @@
                                     <p class="huruf">Secs</p>
                                 </div>
                             </div>
-                            <a href="#" class="btn btn-custom btn-reminder" data-anim="zoom-out">
+                            <a href="#" class="btn btn-custom btn-reminder" data-anim="fade-up">
                                 <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <g clip-path="url(#clip0_2411_134)">
                                         <path fill-rule="evenodd" clip-rule="evenodd" d="M5 0.625C5 0.45924 4.93415 0.300269 4.81694 0.183058C4.69973 0.065848 4.54076 0 4.375 0C4.20924 0 4.05027 0.065848 3.93306 0.183058C3.81585 0.300269 3.75 0.45924 3.75 0.625V1.25H2.5C1.83696 1.25 1.20107 1.51339 0.732233 1.98223C0.263392 2.45107 0 3.08696 0 3.75L0 17.5C0 18.163 0.263392 18.7989 0.732233 19.2678C1.20107 19.7366 1.83696 20 2.5 20H17.5C18.163 20 18.7989 19.7366 19.2678 19.2678C19.7366 18.7989 20 18.163 20 17.5V3.75C20 3.08696 19.7366 2.45107 19.2678 1.98223C18.7989 1.51339 18.163 1.25 17.5 1.25H16.25V0.625C16.25 0.45924 16.1842 0.300269 16.0669 0.183058C15.9497 0.065848 15.7908 0 15.625 0C15.4592 0 15.3003 0.065848 15.1831 0.183058C15.0658 0.300269 15 0.45924 15 0.625V1.25H5V0.625ZM1.25 17.5V5H18.75V17.5C18.75 17.8315 18.6183 18.1495 18.3839 18.3839C18.1495 18.6183 17.8315 18.75 17.5 18.75H2.5C2.16848 18.75 1.85054 18.6183 1.61612 18.3839C1.3817 18.1495 1.25 17.8315 1.25 17.5ZM10 9.36625C12.08 7.2275 17.2812 10.97 10 15.7812C2.71875 10.9688 7.92 7.2275 10 9.36625Z" fill="#F9FDF9" />
@@ -398,10 +613,10 @@
                             <div class="row">
                                 <div class="col-md-8 col-lg-11 position-relative">
                                     <div class="story-description">
-                                        <div class="title-section" data-anim="fade-right">
+                                        <div class="title-section" data-anim="zoom-out">
                                             <h2>Our Story</h2>
                                         </div>
-                                        <div class="position-relative" data-anim="zoom-out">
+                                        <div class="position-relative" data-anim="fade-up">
                                             <p>“Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus eligendi dolore blanditiis odio minima obcaecati atque veniam, quisquam modi adipisci perferendis dolorum deserunt tenetur commodi asperiores laudantium ab, quos fuga? Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus impedit labore quae, assumenda dolore laborum expedita eaque. Aliquid, explicabo, doloremque ex dolor ab ipsum ut laboriosam repellendus sit, quae eligendi!”</p>
                                         </div>
                                     </div>
@@ -414,6 +629,23 @@
                 <section class="moveable-section" data-id="4">
                     <!-- Vanue & Event section -->
                     <section class="venue-section ">
+                        <div class="ornaments-wrapper">
+                            <div class="sky">
+                                <div class="image-element">
+                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-1">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
                         <div class="venue-wrapper">
                             <div class="container position-relative">
                                 <div class="row justify-content-center">
@@ -422,7 +654,7 @@
                                             <div class="title-section" data-anim="zoom-out">
                                                 <h2>Event & Venue</h2>
                                             </div>
-                                            <div class="position-relative" data-anim="zoom-out">
+                                            <div class="position-relative" data-anim="fade-up">
                                                 <p>If you will be present at the event location. Please fill out the form below</p>
                                             </div>
                                         </div>
@@ -439,27 +671,88 @@
                                                         <img src="./assets/images/rebung-horizontal.png" alt="rebung-horizontal">
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="event-name" data-anim="fade-right">
-                                                        <h4>Marriage Contract</h4>
-                                                        <span>Minggu,</span>
-                                                        <div class="date">
-                                                            <h5>11</h5>
-                                                            <div class="line color__button__trans"></div>
+                                                <div class="ornaments-wrapper">
+                                                    <div class="orn-10">
+                                                        <div class="image-element" data-anim="fade-up">
+                                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
                                                         </div>
-                                                        <span>September 2024</span>
-                                                        <p>07.00 - 10.00 WIB</p>
+                                                    </div>
+                                                    <div class="orn-11">
+                                                        <div class="image-element" data-anim="fade-up">
+                                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="event-name">
+                                                        <div class="ornaments-wrapper" data-anim="zoom-out">
+                                                            <div class="sky">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="ampera">
+                                                                <div class="image-element" data-anim="slide-up">
+                                                                    <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-3">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-4">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-5">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-6">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-7">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-8">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-9">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event-name-body" data-anim="zoom-out" data-anim-delay="2000">
+                                                            <h4>Marriage Contract</h4>
+                                                            <span>Minggu,</span>
+                                                            <div class="date">
+                                                                <h5>11</h5>
+                                                                <div class="line color__button__trans"></div>
+                                                            </div>
+                                                            <span>September 2024</span>
+                                                            <p>07.00 - 10.00 WIB</p>
+                                                        </div>
                                                     </div>
                                                     <div class="event-place">
                                                         <div class="ornaments-wrapper overflow-hidden">
                                                             <div class="ornament ornament-right">
-                                                                <div class="image-element">
+                                                                <div class="image-element" data-anim="fade-right">
                                                                     <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="event-place-body" data-anim="fade-right">
-                                                            <div class="event-description" data-anim="zoom-out">
+                                                            <div class="event-description">
                                                                 <p>description of event</p>
                                                             </div>
                                                             <div class="ribbon-venue" data-animationloop="keyframe">
@@ -506,27 +799,88 @@
                                                         <img src="./assets/images/rebung-horizontal.png" alt="rebung-horizontal">
                                                     </div>
                                                 </div>
-                                                <div class="card-body">
-                                                    <div class="event-name" data-anim="fade-right">
-                                                        <h4>Marriage Contract</h4>
-                                                        <span>Minggu,</span>
-                                                        <div class="date">
-                                                            <h5>11</h5>
-                                                            <div class="line color__button__trans"></div>
+                                                <div class="ornaments-wrapper">
+                                                    <div class="orn-10">
+                                                        <div class="image-element" data-anim="fade-up">
+                                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
                                                         </div>
-                                                        <span>September 2024</span>
-                                                        <p>07.00 - 10.00 WIB</p>
+                                                    </div>
+                                                    <div class="orn-11">
+                                                        <div class="image-element" data-anim="fade-up">
+                                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="card-body">
+                                                    <div class="event-name">
+                                                        <div class="ornaments-wrapper" data-anim="zoom-out">
+                                                            <div class="sky">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="ampera">
+                                                                <div class="image-element" data-anim="slide-up">
+                                                                    <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-3">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-4">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-5">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-6">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-7">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-8">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                            <div class="orn-9">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="event-name-body" data-anim="zoom-out" data-anim-delay="2000">
+                                                            <h4>Marriage Contract</h4>
+                                                            <span>Minggu,</span>
+                                                            <div class="date">
+                                                                <h5>11</h5>
+                                                                <div class="line color__button__trans"></div>
+                                                            </div>
+                                                            <span>September 2024</span>
+                                                            <p>07.00 - 10.00 WIB</p>
+                                                        </div>
                                                     </div>
                                                     <div class="event-place">
                                                         <div class="ornaments-wrapper overflow-hidden">
                                                             <div class="ornament ornament-right">
-                                                                <div class="image-element">
+                                                                <div class="image-element" data-anim="fade-right">
                                                                     <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
                                                                 </div>
                                                             </div>
                                                         </div>
                                                         <div class="event-place-body" data-anim="fade-right">
-                                                            <div class="event-description" data-anim="zoom-out">
+                                                            <div class="event-description">
                                                                 <p>description of event</p>
                                                             </div>
                                                             <div class="ribbon-venue" data-animationloop="keyframe">
@@ -573,7 +927,7 @@
                                 <div class="row justify-content-center">
                                     <div class="col-md-10 col-lg-12">
                                         <div class="prokes-wrapper" data-anim="slide-up">
-                                            <div class="title-section" data-anim="fade-right">
+                                            <div class="title-section" data-anim="zoom-out">
                                                 <h3>Health Protocol</h3>
                                             </div>
                                             <div class="col-12 mx-auto mt-4">
@@ -741,7 +1095,81 @@
                     </section>
                     <!-- rsvp section -->
                     <section class="rsvp-section">
-                        <div class="container container-custom position-relative">
+                        <div class="ornaments-wrapper">
+                            <div class="orn-1">
+                                <div class="image-element" data-anim="slide-right">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element" data-anim="slide-left">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-3">
+                                <div class="image-element" data-anim="slide-right">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-4">
+                                <div class="image-element" data-anim="slide-left">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ornaments-wrapper orn-front">
+                            <div class="rumah">
+                                <div class="orn-5">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-6">
+                                        <div class="image-element">
+                                            <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-element">
+                                    <img src="./assets/images/rumah-limas.png" alt="rumah-limas" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-11">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-12">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-7">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-8">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                                <div class="orn-9">
+                                    <div class="image-element">
+                                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="orn-10">
+                                <div class="image-element">
+                                    <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-13">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container position-relative">
                             <div class="row justify-content-center">
                                 <div class="col-md-7 col-lg-12 position-relative">
                                     <div class="rsvp-wrapper">
@@ -777,9 +1205,51 @@
                 <!-- Wishes section -->
                 <section class="wishes-section moveable-section" data-id="6">
                     <div class="wishes-wrapper-form color-primary">
+                        <div class="ornaments-wrapper overflow-hidden">
+                            <div class="sky">
+                                <div class="image-element">
+                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="ampera">
+                                <div class="image-element" data-anim="slide-up">
+                                    <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-1">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-3">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-4">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="orn-5">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-6">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                        </div>
                         <div class="container position-relative">
                             <div class="row justify-content-center">
-                                <div class="col-md-8 col-lg-12 position-relative" style="z-index: 3;">
+                                <div class="col-md-8 col-lg-12 position-relative">
                                     <div class="card card-form ">
                                         <div class="card-body">
                                             <div class="title-section" data-anim="zoom-out">
@@ -922,13 +1392,25 @@
                         </div>
                     </div>
                     <div class="appology-wrap color-primary">
+                        <div class="ornaments-wrapper overflow-hidden">
+                            <div class="sky">
+                                <div class="image-element">
+                                    <img src="./assets/images/sky.png" alt="sky" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="mountain">
+                                <div class="image-element" data-anim="slide-left">
+                                    <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
+                                </div>
+                            </div>
+                        </div>
                         <div class="container position-relative">
                             <div class="row justify-content-center">
                                 <div class="col-lg-12 col-md-8 text-center position-relative">
                                     <div class="title-section" data-anim="zoom-out">
                                         <h2>Apology</h2>
                                     </div>
-                                    <div class="col-lg-12 m-auto" data-anim="zoom-out">
+                                    <div class="col-lg-12 m-auto" data-anim="fade-up">
                                         <p>Due to the limitations of the current pandemic, we apologize for not being able
                                             to
                                             directly
@@ -952,6 +1434,24 @@
 
                 <!-- Egift section -->
                 <section class="egift-section moveable-section" data-id="5">
+                    <div class="ornaments-wrapper overflow-hidden">
+                        <div class="ornament ornament-right">
+                            <div class="image-element">
+                                <img data-src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid lazyload">
+                                <img data-src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid lazyload">
+                            </div>
+                        </div>
+                        <div class="orn-1">
+                            <div class="image-element">
+                                <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                        <div class="orn-2">
+                            <div class="image-element">
+                                <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                            </div>
+                        </div>
+                    </div>
                     <div class="container position-relative">
                         <div class="row">
                             <div class="col-lg-12 col-md-8 text-center position-relative">
@@ -976,14 +1476,14 @@
                                         </button>
                                     </div>
                                     <div class="angpao">
-                                        <p class="my-3" data-anim="zoom-out">
+                                        <p class="my-3" data-anim="fade-up">
                                             Without reducing our respect, if you intend to give wedding
                                             angpao online in various ways various payment methods, please
                                             fill out the form provided below:
                                         </p>
                                     </div>
                                     <div class="gift">
-                                        <p class="my-3" data-anim="zoom-out">
+                                        <p class="my-3" data-anim="fade-up">
                                             Without reducing our respect, if you intend to give wedding
                                             gifts online in various ways various payment methods, please
                                             fill out the form provided below:
@@ -999,23 +1499,23 @@
                                 <div class="col-lg-12 angpao">
                                     <form action="#">
                                         <div class="row justify-content-center mb-3">
-                                            <div class="col-sm-6" data-anim="fade-right">
+                                            <div class="col-sm-6" data-anim="zoom-out">
                                                 <input type="text" class="form-control" placeholder="Name" />
                                             </div>
-                                            <div class="col-sm-6" data-anim="fade-right" data>
+                                            <div class="col-sm-6" data-anim="zoom-out" data>
                                                 <input type="text" class="form-control" placeholder="E-Mail" />
                                             </div>
                                         </div>
                                         <div class="row justify-content-center mb-3">
-                                            <div class="col-sm-6" data-anim="fade-right" data-anim-delay="100">
+                                            <div class="col-sm-6" data-anim="zoom-out" data-anim-delay="100">
                                                 <input type="text" class="form-control" placeholder="Phone Number" />
                                             </div>
-                                            <div class="col-sm-6" data-anim="fade-right" data-anim-delay="100">
+                                            <div class="col-sm-6" data-anim="zoom-out" data-anim-delay="100">
                                                 <input type="text" class="form-control" placeholder="Adress" />
                                             </div>
                                         </div>
                                         <div class="row justify-content-center mb-3">
-                                            <div class="col-sm-12" data-anim="fade-right" data-anim-delay="200">
+                                            <div class="col-sm-12" data-anim="zoom-out" data-anim-delay="200">
                                                 <div class="input-group">
                                                     <span class="input-group-text" id="basic-addon1">Rp</span>
                                                     <input type="text" class="form-control" placeholder="Amount" name="payment" />
@@ -1023,7 +1523,7 @@
                                             </div>
                                         </div>
                                         <div class="row justify-content-center">
-                                            <div class="col-sm-6" data-anim="fade-right" data-anim-delay="300">
+                                            <div class="col-sm-6" data-anim="zoom-out" data-anim-delay="300">
                                                 <button class="btn btn-custom w-100">Send</button>
                                             </div>
                                         </div>
@@ -1057,16 +1557,53 @@
                                     <img data-src="./assets/images/motif-flower.png" alt="motif-flower" class="lazyload">
                                 </div>
                             </div>
+                            <div class="orn-1">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-2">
+                                <div class="image-element">
+                                    <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-3">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
+                            <div class="orn-4">
+                                <div class="image-element">
+                                    <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                </div>
+                            </div>
                         </div>
                         <div class="container position-relative">
                             <div class="row justify-content-center">
                                 <div class="col-md-8 col-lg-12">
                                     <div class="title-section">
-                                        <h2 data-anim="fade-right">Live Streaming</h2>
+                                        <h2 data-anim="zoom-out">Live Streaming</h2>
                                     </div>
-                                    <div class="stream-content">
-                                        <div class="stream-description color-main">
-                                            <div class="yt-description" data-anim="fade-right">
+                                    <div class="stream-content color-main">
+                                        <div class="stream-description">
+                                            <div class="ornaments-wrapper">
+                                                <div class="orn-5">
+                                                    <div class="image-element" data-anim="fade-right">
+                                                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                    </div>
+                                                </div>
+                                                <div class="orn-6">
+                                                    <div class="image-element" data-anim="fade-right">
+                                                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                                    </div>
+                                                </div>
+                                                <div class="rumah">
+                                                    <div class="image-element">
+                                                        <img src="./assets/images/rumah-limas.png" alt="rumah-limas" class="img-fluid">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="yt-description" data-anim="fade-up">
                                                 <h4 class="mb-3">Live Wedding Schedule</h4>
                                                 <ul class="p-0" style="width: fit-content;">
                                                     <ol>10.00 Live Wedding Schedule</ol>
@@ -1089,13 +1626,13 @@
                                                         watch via Youtube Live Streaming.</p>
                                                 </div>
                                             </div>
-                                            <div class="col-12 position-relative mt-4">
-                                                <div class="ratio ratio-16x9">
-                                                    <iframe src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen>
-                                                    </iframe>
-                                                </div>
-                                                <a href="#" class="btn btn-custom mt-3">Join Youtube</a>
+                                        </div>
+                                        <div class="col-12 position-relative mt-4">
+                                            <div class="ratio ratio-16x9">
+                                                <iframe src="https://www.youtube.com/embed/z2oKzxplzEY" allowfullscreen>
+                                                </iframe>
                                             </div>
+                                            <a href="#" class="btn btn-custom mt-3">Join Youtube</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1208,25 +1745,96 @@
                         </div>
                     </div>
                     <div class="rebung-horizontal">
-                        <div class="image-element">
+                        <div class="image-element" data-anim="slide-right">
                             <img src="./assets/images/rebung-horizontal.png" alt="rebung-horizontal" class="lazyload">
                         </div>
                     </div>
                     <div class="ampera">
-                        <div class="image-element">
+                        <div class="image-element" data-anim="slide-up">
                             <img src="./assets/images/ampera.png" alt="ampera" class="img-fluid">
                         </div>
                     </div>
                     <div class="thank-wrapper">
                         <div class="ornaments-wrapper overflow-hidden">
-                            <div class="ornament ornament-left">
-                                <div class="image-element">
-                                    <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                            <div class="ornaments-wrapper with-bg" data-anim="zoom-out">
+                                <div class="elements-wrapper-absolute">
+                                    <div class="background-element">
+                                        <img src="./assets/images/texture.png" alt="texture">
+                                    </div>
+                                </div>
+                                <div class="mountain">
+                                    <div class="orn-1">
+                                        <div class="image-element">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-2">
+                                        <div class="image-element">
+                                            <img src="./assets/images/tree-2.png" alt="tree-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-7">
+                                        <div class="image-element" data-anim="slide-up">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="orn-8">
+                                        <div class="image-element" data-anim="slide-up">
+                                            <img src="./assets/images/tree-1.png" alt="tree-1" class="img-fluid">
+                                        </div>
+                                    </div>
+                                    <div class="image-element" data-anim="slide-left">
+                                        <img src="./assets/images/mountain.png" alt="mountain" class="img-fluid">
+                                    </div>
+                                    <div class="land">
+                                        <div class="image-element" data-anim="slide-left">
+                                            <img src="./assets/images/land.png" alt="land" class="img-fluid">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="ornament ornament-right">
-                                <div class="image-element">
-                                    <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                        </div>
+                        <div class="ornaments-wrapper orn-front overflow-hidden">
+                            <div class="ornaments-wrapper" data-anim="zoom-out" data-anim-duration="4500ms">
+                                <div class="rumah">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rumah-limas.png" alt="rumah-limas" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="ornament ornament-left">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="ornament ornament-right">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rebung-vertical-2.png" alt="rebung-vertical-2" class="img-fluid">
+                                    </div>
+                                </div>
+                                <div class="orn-3">
+                                    <div class="image-element">
+                                        <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-4">
+                                        <div class="image-element">
+                                            <img src="./assets/images/lotus-2.png" alt="lotus-2" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                    <div class="orn-5">
+                                        <div class="image-element">
+                                            <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="orn-6">
+                                    <div class="image-element">
+                                        <img src="./assets/images/rose.png" alt="rose" class="img-fluid animate-loop" data-anim="rotate-left">
+                                    </div>
+                                    <div class="orn-5">
+                                        <div class="image-element">
+                                            <img src="./assets/images/lotus-1.png" alt="lotus-1" class="img-fluid animate-loop" data-anim="rotate-left">
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
