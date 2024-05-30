@@ -941,6 +941,10 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=lambai].has-animate {
+  animation-name: lambai;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -955,6 +959,14 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes lambai {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1326,11 +1338,19 @@ ul li {
 }
 
 img[alt=flower-1] {
-  transform-origin: 65% 95%;
+  transform-origin: 26% 95%;
 }
 
-img[alt=flower-3] {
-  transform-origin: 78% 90%;
+img[alt=flower-2] {
+  transform-origin: 43% 95%;
+}
+
+img[alt=leaf] {
+  transform-origin: 5% 90%;
+}
+
+img[alt=branch] {
+  transform-origin: 50% 90%;
 }
 
 .countdown {
@@ -1341,9 +1361,10 @@ img[alt=flower-3] {
   flex-direction: column;
   width: -moz-fit-content;
   width: fit-content;
-  gap: 1.5rem;
+  gap: 1rem;
   z-index: 3;
   margin: 0 auto;
+  padding-top: 2rem;
 }
 .countdown .days,
 .countdown .hours,
@@ -1377,7 +1398,6 @@ img[alt=flower-3] {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 38px;
-  font-family: "Marla Griselda Demo", cursive;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
@@ -1710,6 +1730,27 @@ img[alt=flower-3] {
   left: 50%;
   width: 28%;
   transform: translate(-50%, 60%);
+}
+.header-section .orn-10 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  transform: translate(-30%, 40%);
+}
+.header-section .orn-11 {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 40%;
+  transform: translate(-50%, 60%);
+}
+.header-section .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(20%, 50%);
 }
 .header-section .header-content {
   position: relative;
