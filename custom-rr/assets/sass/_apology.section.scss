@@ -7,6 +7,22 @@
 		padding: 5rem 0;
 	}
 
+	.motif {
+		position: absolute;
+		left: 50%;
+		width: 200%;
+		transform: translate(-50%, 0);
+
+		&-top {
+			top: 0;
+		}
+
+		&-bottom {
+			bottom: 0;
+			transform: translate(-50%, 0) scaleY(-1);
+		}
+	}
+
 	.orn-1 {
 		position: absolute;
 		top: 0;

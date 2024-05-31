@@ -19,6 +19,14 @@
 		}
 	}
 
+	.motif {
+		position: absolute;
+		top: .5rem;
+		left: 50%;
+		width: 50%;
+		transform: translate(-50%, 0);
+	}
+
 	.orn-1 {
 		position: absolute;
 		top: 0;

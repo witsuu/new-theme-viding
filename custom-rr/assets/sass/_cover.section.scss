@@ -10,6 +10,14 @@
 		transform: translateY(-100%);
 	}
 
+	.ornaments-wrapper {
+		&.cover-ornaments-wrapper {
+			@include max-lg {
+				height: calc(100% - 5rem);
+			}
+		}
+	}
+
 	.frame {
 		@include min-lg {
 			width: 18%;
@@ -40,6 +48,10 @@
 		left: 0;
 		width: 30%;
 		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 65%;
+		}
 	}
 
 	.orn-2 {
@@ -48,6 +60,10 @@
 		right: 0;
 		width: 30%;
 		transform: translate(50%, 0);
+
+		@include max-lg {
+			width: 65%;
+		}
 	}
 
 	.orn-3 {
@@ -56,6 +72,10 @@
 		left: 0;
 		width: 10%;
 		transform: translate(-30%, 0%);
+
+		@include max-lg {
+			width: 30%;
+		}
 
 		.orn-4 {
 			position: absolute;
@@ -79,6 +99,10 @@
 		right: 0;
 		width: 15%;
 		transform: translate(40%, 30%);
+
+		@include max-lg {
+			width: 35%;
+		}
 
 		.orn-7 {
 			position: absolute;

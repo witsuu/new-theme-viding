@@ -4,6 +4,10 @@
 	min-height: 65vh;
 	background-color: var(--color-custom);
 
+	@include max-lg {
+		min-height: 50vh;
+	}
+
 	.orn-1 {
 		position: absolute;
 		bottom: 0;

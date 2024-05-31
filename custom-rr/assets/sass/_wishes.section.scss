@@ -55,6 +55,21 @@
 	.wishes-preview {
 		position: relative;
 
+		.motif {
+			position: absolute;
+			top: 0;
+			width: 25%;
+
+			&-left {
+				left: 0;
+			}
+
+			&-right {
+				right: 0;
+				transform: scaleX(-1);
+			}
+		}
+
 		.card {
 			position: relative;
 			border: none;
@@ -66,7 +81,7 @@
 
 				.wishes {
 					text-align: left;
-					max-height: 32rem;
+					max-height: 38rem;
 					overflow: auto;
 					padding-right: 1rem;
 					color: var(--color-dark);
@@ -105,7 +120,7 @@
 						}
 
 						.wish-badge {
-							background-color: var(--color-light);
+							background-color: #FCF6F8;
 							width: 35px;
 							aspect-ratio: 1;
 							display: flex;
@@ -116,7 +131,7 @@
 
 						.wish-description {
 							padding: 1rem;
-							background-color: rgba($color: #fff, $alpha: 0.8);
+							background-color: rgba($color: #FCF6F8, $alpha: 0.8);
 							border-radius: 5px;
 							position: relative;
 
@@ -129,7 +144,7 @@
 								transform: translateX(-100%);
 								clip-path: url(#wishes-polygon);
 								content: "";
-								background-color: rgba($color: #fff, $alpha: 0.8);
+								background-color: rgba($color: #FCF6F8, $alpha: 0.8);
 							}
 						}
 					}
