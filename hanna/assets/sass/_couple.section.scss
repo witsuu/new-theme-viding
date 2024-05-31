@@ -29,6 +29,10 @@
 			font-size: 32px;
 			font-family: $font-secondary;
 		}
+
+		&.single {
+			padding: 1.5rem 0 0;
+		}
 	}
 
 	.couple-wrapper {
@@ -214,6 +218,16 @@
 					@include max-md {
 						font-size: 16px;
 					}
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+				margin: 0 auto 1rem;
+
+				@include ipad {
+					width: 90%;
 				}
 			}
 		}

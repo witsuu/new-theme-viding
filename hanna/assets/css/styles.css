@@ -507,6 +507,12 @@ ul li {
     display: block;
   }
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .ipad-dnone {
+    display: none;
+  }
+}
+
 .loader-wrapper {
   position: fixed;
   min-height: 100vh;
@@ -1875,6 +1881,9 @@ img[alt=leaf] {
   font-size: 32px;
   font-family: "MonteCarlo", cursive;
 }
+.couple-section .and.single {
+  padding: 1.5rem 0 0;
+}
 .couple-section .couple-wrapper {
   position: relative;
 }
@@ -2040,6 +2049,14 @@ img[alt=leaf] {
 @media (max-width: 767px) {
   .couple-section .couple .couple-description .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+.couple-section .couple.single .image-wrap {
+  margin: 0 auto 1rem;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .couple-section .couple.single .image-wrap {
+    width: 90%;
   }
 }
 

@@ -131,6 +131,29 @@ body {
   left: 50%;
   transform: translateX(-50%);
 }
+.ornaments-wrapper .corner {
+  position: absolute;
+  width: 25%;
+}
+.ornaments-wrapper .corner-top-left {
+  top: 0.5rem;
+  left: -0.2rem;
+}
+.ornaments-wrapper .corner-top-right {
+  top: 0.5rem;
+  right: -0.2rem;
+  transform: scaleX(-1);
+}
+.ornaments-wrapper .corner-bottom-left {
+  bottom: 0.5rem;
+  left: -0.2rem;
+  transform: scaleY(-1);
+}
+.ornaments-wrapper .corner-bottom-right {
+  bottom: 0.5rem;
+  right: -0.2rem;
+  transform: scale(-1);
+}
 
 .background__views {
   display: none;
@@ -154,11 +177,11 @@ body {
 .background__views .background__frames .header-title {
   color: var(--color-light);
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 45%;
+  left: 5rem;
   width: 100%;
-  text-align: center;
-  transform: translate(-50%, -50%);
+  text-align: left;
+  transform: translate(0, -50%);
   z-index: 5;
 }
 .background__views .background__frames .background__image {
@@ -172,6 +195,69 @@ body {
 }
 .background__views .background__frames .gebyok-top {
   width: 102%;
+}
+.background__views .background__frames .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 36%;
+  transform: translate(-10%, 45%);
+}
+.background__views .background__frames .orn-1 .orn-2 {
+  position: absolute;
+  left: 30%;
+  bottom: 55%;
+  width: 40%;
+}
+.background__views .background__frames .orn-1 .orn-3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  width: 50%;
+}
+.background__views .background__frames .orn-1 .orn-4 {
+  position: absolute;
+  right: 60%;
+  bottom: 10%;
+  width: 65%;
+}
+.background__views .background__frames .orn-1 .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 75%;
+  right: -5%;
+  width: 100%;
+}
+.background__views .background__frames .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 36%;
+  transform: translate(10%, 45%);
+}
+.background__views .background__frames .orn-6 .orn-7 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  width: 45%;
+}
+.background__views .background__frames .orn-6 .orn-8 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 80%;
+}
+.background__views .background__frames .orn-6 .orn-8 .orn-9 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 60%;
+}
+.background__views .background__frames .orn-6 .orn-10 {
+  position: absolute;
+  bottom: 85%;
+  left: 48%;
+  width: 60%;
+  transform: scaleX(-1);
 }
 
 .layout__views {
@@ -404,6 +490,11 @@ span {
   width: 100%;
   text-align: center;
   margin-bottom: 1.25rem;
+}
+.title-section .title-ornament {
+  position: relative;
+  width: 75px;
+  margin: 0 auto 1.5rem;
 }
 .title-section h2,
 .title-section p,
@@ -1479,6 +1570,75 @@ ul li {
 .cover-section.cover-opened {
   transform: translateY(-100%);
 }
+@media (min-width: 992px) {
+  .cover-section .frame {
+    width: 18%;
+  }
+}
+.cover-section .frame-topLeft {
+  transform: translate(-5%, -9%);
+}
+.cover-section .frame-topRight {
+  transform: translate(5%, -9%) scaleX(-1);
+}
+.cover-section .gebyok-top {
+  transform: translate(-50%, -65%);
+}
+.cover-section .gebyok-bottom {
+  transform: translate(-50%, 65%) scaleY(-1);
+}
+.cover-section .orn-1 {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  width: 30%;
+  transform: translate(-50%, 0);
+}
+.cover-section .orn-2 {
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+  width: 30%;
+  transform: translate(50%, 0);
+}
+.cover-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 10%;
+  transform: translate(-30%, 0%);
+}
+.cover-section .orn-3 .orn-4 {
+  position: absolute;
+  top: 35%;
+  left: 20%;
+  width: 180%;
+}
+.cover-section .orn-3 .orn-4 .orn-5 {
+  position: absolute;
+  top: 5%;
+  left: 80%;
+  width: 60%;
+}
+.cover-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 15%;
+  transform: translate(40%, 30%);
+}
+.cover-section .orn-6 .orn-7 {
+  position: absolute;
+  top: 30%;
+  right: 30%;
+  width: 150%;
+}
+.cover-section .orn-6 .orn-7 .orn-8 {
+  position: absolute;
+  top: 10%;
+  right: 70%;
+  width: 50%;
+}
 .cover-section .cover-wrapper {
   position: relative;
   padding: 3rem 0 0;
@@ -1546,17 +1706,17 @@ ul li {
   border-radius: 300px;
   border: 2px solid var(--color-custom);
 }
-.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .image-element {
+.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .background-element {
   padding-top: 133.3333333333%;
 }
-.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .image-element > * {
+.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .background-element > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .image-element img {
+.cover-section .cover-wrapper .cover-content .cover-body .image-wrapper .background-element img {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1609,6 +1769,95 @@ ul li {
 .header-section .frame-topRight {
   transform: translate(5%, -9%) scaleX(-1);
 }
+.header-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  transform: translate(-10%, 45%);
+}
+.header-section .orn-1 .orn-2 {
+  position: absolute;
+  left: 30%;
+  bottom: 55%;
+  width: 40%;
+}
+.header-section .orn-1 .orn-3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  width: 50%;
+}
+.header-section .orn-1 .orn-4 {
+  position: absolute;
+  right: 60%;
+  bottom: 10%;
+  width: 65%;
+}
+.header-section .orn-1 .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 75%;
+  right: -5%;
+  width: 100%;
+}
+.header-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  transform: translate(10%, 45%);
+}
+.header-section .orn-6 .orn-7 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  width: 45%;
+}
+.header-section .orn-6 .orn-8 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 80%;
+}
+.header-section .orn-6 .orn-8 .orn-9 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 60%;
+}
+.header-section .orn-6 .orn-10 {
+  position: absolute;
+  bottom: 85%;
+  left: 48%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.header-section .orn-11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(-60%, 0);
+}
+.header-section .orn-11 .orn-12 {
+  position: absolute;
+  bottom: 60%;
+  right: -15%;
+  width: 120%;
+}
+.header-section .orn-13 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(60%, 0);
+}
+.header-section .orn-13 .orn-14 {
+  position: absolute;
+  bottom: 60%;
+  left: -5%;
+  width: 120%;
+}
 .header-section .header-content {
   position: relative;
   min-height: 100vh;
@@ -1617,13 +1866,18 @@ ul li {
   align-items: center;
   flex-direction: column;
 }
+@media (max-width: 576px) {
+  .header-section .header-content {
+    min-height: 85vh;
+  }
+}
 .header-section .header-content .header {
   position: relative;
   width: 80%;
   min-height: calc(100vh - 4.5rem);
   text-align: center;
   color: var(--color-dark);
-  padding: 5rem 1rem 3rem;
+  padding: 5rem 1rem 10rem;
 }
 @media (max-width: 992px) {
   .header-section .header-content .header {
@@ -1632,6 +1886,7 @@ ul li {
 }
 @media (max-width: 576px) {
   .header-section .header-content .header {
+    min-height: calc(85vh - 4.5rem);
     width: 90%;
   }
 }
@@ -1654,12 +1909,31 @@ ul li {
   position: relative;
   z-index: 5;
 }
+.header-section .header-content .header .header-title-content .logo {
+  position: relative;
+  width: 85px;
+  margin: 0 auto 1.8rem;
+}
 
 .reminder-wrap {
   position: relative;
   width: 100%;
   min-height: 65vh;
   background-color: var(--color-custom);
+}
+.reminder-wrap .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 75%;
+  transform: translate(-70%, 15%);
+}
+.reminder-wrap .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(70%, 0);
 }
 .reminder-wrap .reminder-content {
   position: absolute;
@@ -1695,7 +1969,6 @@ ul li {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 2rem 0;
   z-index: 3;
 }
 @media (max-width: 992px) and (min-width: 768px) {
@@ -1724,7 +1997,7 @@ ul li {
   position: relative;
   text-align: center;
   margin-bottom: 3rem;
-  padding: 8rem 2rem;
+  padding: 5rem 2rem 8rem;
 }
 .couple-section .couple-wrapper .couple-content::before {
   position: absolute;
@@ -1734,7 +2007,7 @@ ul li {
   height: 100%;
   background-color: var(--color-primary);
   border: 2px solid #365666;
-  opacity: 0.4;
+  opacity: 0.6;
   border-radius: 300px;
   box-shadow: inset 0.5rem 1rem 1rem rgba(0, 0, 0, 0.15);
   content: "";
@@ -1742,12 +2015,84 @@ ul li {
 .couple-section .couple-wrapper .couple-content p {
   margin-bottom: 0;
 }
+.couple-section .couple-wrapper .couple-content .position-relative {
+  z-index: 5;
+}
 .couple-section .couple-wrapper .frame {
   position: absolute;
   top: 50%;
   left: 50%;
   width: 125%;
   transform: translate(-50%, -50%);
+}
+.couple-section .couple-wrapper .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 75%;
+  transform: translate(-70%, 0);
+}
+.couple-section .couple-wrapper .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(70%, 0);
+}
+.couple-section .couple-wrapper .orn-3 {
+  position: absolute;
+  top: 15rem;
+  left: 0;
+  width: 35%;
+  transform: translate(-60%, 0);
+}
+.couple-section .couple-wrapper .orn-3 .orn-4 {
+  position: absolute;
+  top: 45%;
+  right: -5%;
+  width: 150%;
+  transform: scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-5 {
+  position: absolute;
+  top: 16rem;
+  right: 0;
+  width: 35%;
+  transform: translate(60%, 0) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-5 .orn-6 {
+  position: absolute;
+  top: 45%;
+  right: -5%;
+  width: 150%;
+  transform: scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-7 {
+  position: absolute;
+  top: 45%;
+  left: 0;
+  width: 35%;
+  transform: translate(-45%, -50%);
+}
+.couple-section .couple-wrapper .orn-8 {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 35%;
+  transform: translate(78%, -50%) rotate(-30deg) scaleX(-1);
+}
+.couple-section .couple-body {
+  position: relative;
+}
+.couple-section .couple-body .orn-1 {
+  top: 50%;
+  left: 0;
+  transform: translate(-70%, -50%);
+}
+.couple-section .couple-body .orn-2 {
+  top: 50%;
+  right: 0;
+  transform: translate(70%, -50%) scaleX(-1);
 }
 .couple-section .couple {
   position: relative;
@@ -1784,27 +2129,28 @@ ul li {
 .couple-section .couple .image-wrap {
   position: relative;
   width: 70%;
-  margin: 0 auto 1rem;
+  margin: 1rem auto;
   padding: 0.5rem;
   border: 2px solid var(--color-custom);
   border-radius: 300px;
+  z-index: 5;
 }
 @media (max-width: 992px) {
   .couple-section .couple .image-wrap {
     width: 80%;
   }
 }
-.couple-section .couple .image-wrap .image-element {
-  padding-top: 133.3333333333%;
+.couple-section .couple .image-wrap .background-element {
+  padding-top: 150%;
 }
-.couple-section .couple .image-wrap .image-element > * {
+.couple-section .couple .image-wrap .background-element > * {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
 }
-.couple-section .couple .image-wrap .image-element .couple-image {
+.couple-section .couple .image-wrap .background-element .couple-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -1814,7 +2160,8 @@ ul li {
 .couple-section .couple .couple-description {
   position: relative;
   text-align: center;
-  padding: 1rem 1rem 0;
+  padding: 0 1rem 1rem;
+  z-index: 5;
 }
 .couple-section .couple .couple-description h3 {
   position: relative;
@@ -1866,6 +2213,82 @@ ul li {
   background-color: var(--color-custom);
   color: var(--color-dark);
 }
+.story-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  transform: translate(-20%, 65%);
+}
+.story-section .orn-1 .orn-2 {
+  position: absolute;
+  left: 30%;
+  bottom: 55%;
+  width: 40%;
+}
+.story-section .orn-1 .orn-3 {
+  position: absolute;
+  top: 10%;
+  left: 85%;
+  width: 50%;
+}
+.story-section .orn-1 .orn-4 {
+  position: absolute;
+  right: 60%;
+  bottom: 10%;
+  width: 65%;
+}
+.story-section .orn-1 .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 75%;
+  right: -5%;
+  width: 100%;
+}
+.story-section .orn-1 .orn-4 .orn-5 .orn-12 {
+  position: absolute;
+  bottom: 60%;
+  right: 0%;
+  width: 140%;
+  transform: rotate(18deg) scaleX(-1);
+}
+.story-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  transform: translate(20%, 65%);
+}
+.story-section .orn-6 .orn-7 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  width: 45%;
+}
+.story-section .orn-6 .orn-8 {
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  width: 80%;
+}
+.story-section .orn-6 .orn-8 .orn-9 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+  width: 60%;
+}
+.story-section .orn-6 .orn-10 {
+  position: absolute;
+  bottom: 85%;
+  left: 48%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.story-section .orn-6 .orn-10 .orn-11 {
+  position: absolute;
+  bottom: 60%;
+  right: -8%;
+  width: 140%;
+}
 .story-section .story-description {
   position: relative;
   text-align: center;
@@ -1893,6 +2316,75 @@ ul li {
     width: 140%;
     transform: translateX(-14%);
   }
+}
+.venue-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-65%, -20%);
+}
+.venue-section .orn-2 {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  width: 35%;
+  transform: translate(65%, 0) scaleX(-1);
+}
+.venue-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 60%;
+  transform: translate(-70%, 50%) scaleX(-1);
+}
+.venue-section .orn-3 .orn-5 {
+  position: absolute;
+  top: 35%;
+  right: 90%;
+  width: 60%;
+}
+.venue-section .orn-4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 60%;
+  transform: translate(60%, 60%);
+}
+.venue-section .orn-4 .orn-6 {
+  position: absolute;
+  top: 0%;
+  right: 75%;
+  width: 65%;
+  transform: rotate(25deg) scaleX(-1);
+}
+.venue-section .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-60%, 0) scaleX(-1);
+}
+.venue-section .orn-7 .orn-8 {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.venue-section .orn-9 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  transform: translate(60%, 0);
+}
+.venue-section .orn-9 .orn-10 {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  width: 60%;
+  transform: scaleX(-1);
 }
 .venue-section .venue-wrapper {
   position: relative;
@@ -1932,6 +2424,7 @@ ul li {
   border: none;
   text-align: center;
   border-radius: var(--border-radius);
+  overflow: hidden;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
   padding: 0 2rem 3rem;
@@ -2116,6 +2609,72 @@ ul li {
     padding: 5rem 0 10rem;
   }
 }
+.rsvp-section .ornaments-wrapper .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 55%);
+}
+.rsvp-section .ornaments-wrapper .orn-1 .orn-2 {
+  position: absolute;
+  top: 25%;
+  left: 85%;
+  width: 60%;
+}
+.rsvp-section .ornaments-wrapper .orn-1 .orn-3 {
+  position: absolute;
+  bottom: 80%;
+  right: 10%;
+  width: 100%;
+}
+.rsvp-section .ornaments-wrapper .orn-1 .orn-3 .orn-4 {
+  position: absolute;
+  bottom: 0;
+  right: -5%;
+  width: 120%;
+  transform: scaleX(-1);
+}
+.rsvp-section .ornaments-wrapper .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(10%, 75%);
+}
+.rsvp-section .ornaments-wrapper .orn-5 .orn-6 {
+  position: absolute;
+  top: -10%;
+  left: 35%;
+  width: 60%;
+}
+.rsvp-section .ornaments-wrapper .orn-5 .orn-7 {
+  position: absolute;
+  bottom: 100%;
+  left: 40%;
+  width: 80%;
+  transform: scaleX(-1);
+}
+.rsvp-section .ornaments-wrapper .orn-5 .orn-7 .orn-8 {
+  position: absolute;
+  bottom: 20%;
+  right: -5%;
+  width: 120%;
+}
+.rsvp-section .ornaments-wrapper .orn-9 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 70%;
+  transform: translate(-75%, 0) scaleX(-1);
+}
+.rsvp-section .ornaments-wrapper .orn-10 {
+  position: absolute;
+  top: 3rem;
+  right: 0;
+  width: 70%;
+  transform: translate(75%, 0);
+}
 .rsvp-section .rsvp-wrapper {
   position: relative;
 }
@@ -2140,6 +2699,20 @@ ul li {
 .wishes-section .wishes-wrapper-form .elements-wrapper-absolute .background-element img {
   -o-object-position: 50% 0%;
      object-position: 50% 0%;
+}
+.wishes-section .wishes-wrapper-form .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%;
+  transform: translate(-75%, 0) scaleX(-1);
+}
+.wishes-section .wishes-wrapper-form .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  transform: translate(75%, 0);
 }
 .wishes-section .card-form {
   background-color: transparent;
@@ -2236,6 +2809,34 @@ ul li {
   .egift-section {
     padding: 5rem 0;
   }
+}
+.egift-section .orn-1 {
+  position: absolute;
+  top: 8rem;
+  left: 0;
+  width: 70%;
+  transform: translate(-75%, 0) scaleX(-1);
+}
+.egift-section .orn-1 .orn-3 {
+  position: absolute;
+  top: -20%;
+  left: 5%;
+  width: 30%;
+  transform: scaleX(-1);
+}
+.egift-section .orn-2 {
+  position: absolute;
+  top: 8rem;
+  right: 0;
+  width: 70%;
+  transform: translate(75%, 0);
+}
+.egift-section .orn-2 .orn-3 {
+  position: absolute;
+  top: 0;
+  left: 5%;
+  width: 50%;
+  transform: scaleX(-1);
 }
 .egift-section .gift-wrap {
   position: relative;
@@ -2365,6 +2966,7 @@ ul li {
 
 .gallery-section {
   position: relative;
+  background-color: var(--color-primary);
   padding: 3rem 0;
 }
 @media (max-width: 992px) and (min-width: 768px) {
@@ -2444,6 +3046,48 @@ ul li {
     padding: 5rem 0;
   }
 }
+.apology-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0);
+}
+.apology-section .orn-2 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 35%;
+  transform: translate(70%, 0) rotate(-35deg) scaleX(-1);
+}
+.apology-section .orn-3 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-60%, 0) scaleX(-1);
+}
+.apology-section .orn-3 .orn-4 {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.apology-section .orn-5 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  transform: translate(60%, 0);
+}
+.apology-section .orn-5 .orn-6 {
+  position: absolute;
+  bottom: 80%;
+  left: 10%;
+  width: 60%;
+  transform: scaleX(-1);
+}
 .apology-section .appology-wrap {
   position: relative;
   padding: 8rem 1.8rem;
@@ -2458,7 +3102,7 @@ ul li {
   border-radius: 300px;
   border: 2px solid #365666;
   box-shadow: inset 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
-  opacity: 0.4;
+  opacity: 0.6;
   content: "";
 }
 
@@ -2478,6 +3122,62 @@ ul li {
 }
 .stream-section .frame-topRight {
   transform: translate(5%, -9%) scaleX(-1);
+}
+.stream-section .orn-1 {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 65%;
+  transform: translate(-75%, 0) scaleX(-1);
+}
+.stream-section .orn-1 .orn-3 {
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.stream-section .orn-2 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 65%;
+  transform: translate(75%, 0);
+}
+.stream-section .orn-2 .orn-3 {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 60%;
+  transform: rotate(-35deg) scaleX(-1);
+}
+.stream-section .orn-4 {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 65%;
+  transform: translate(-75%, 0) scaleX(-1);
+}
+.stream-section .orn-4 .orn-6 {
+  position: absolute;
+  left: 15%;
+  top: 50%;
+  width: 60%;
+  transform: rotate(-35deg) scaleX(-1);
+}
+.stream-section .orn-5 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 65%;
+  transform: translate(75%, 0);
+}
+.stream-section .orn-5 .orn-6 {
+  position: absolute;
+  left: -5%;
+  bottom: 0;
+  width: 60%;
+  transform: scaleX(-1);
 }
 .stream-section .stream-wrapper {
   position: relative;
@@ -2500,7 +3200,7 @@ ul li {
   background-color: var(--color-primary);
   border-radius: 300px;
   border: 2px solid #365666;
-  opacity: 0.4;
+  opacity: 0.6;
   box-shadow: inset 0.5rem 0.5rem 1rem rgba(0, 0, 0, 0.1);
   content: "";
 }
@@ -2537,6 +3237,95 @@ ul li {
 .thank-section .frame-topRight {
   transform: translate(5%, -9%) scaleX(-1);
 }
+.thank-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 55%;
+  transform: translate(-10%, 45%);
+}
+.thank-section .orn-1 .orn-2 {
+  position: absolute;
+  left: 30%;
+  bottom: 55%;
+  width: 40%;
+}
+.thank-section .orn-1 .orn-3 {
+  position: absolute;
+  top: 15%;
+  left: 80%;
+  width: 50%;
+}
+.thank-section .orn-1 .orn-4 {
+  position: absolute;
+  right: 60%;
+  bottom: 10%;
+  width: 65%;
+}
+.thank-section .orn-1 .orn-4 .orn-5 {
+  position: absolute;
+  bottom: 75%;
+  right: -5%;
+  width: 100%;
+}
+.thank-section .orn-6 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 55%;
+  transform: translate(10%, 45%);
+}
+.thank-section .orn-6 .orn-7 {
+  position: absolute;
+  bottom: 50%;
+  left: 30%;
+  width: 45%;
+}
+.thank-section .orn-6 .orn-8 {
+  position: absolute;
+  top: 5%;
+  left: 25%;
+  width: 80%;
+}
+.thank-section .orn-6 .orn-8 .orn-9 {
+  position: absolute;
+  top: 10%;
+  left: 40%;
+  width: 60%;
+}
+.thank-section .orn-6 .orn-10 {
+  position: absolute;
+  bottom: 85%;
+  left: 48%;
+  width: 60%;
+  transform: scaleX(-1);
+}
+.thank-section .orn-11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 65%;
+  transform: translate(-60%, 0);
+}
+.thank-section .orn-11 .orn-12 {
+  position: absolute;
+  bottom: 60%;
+  right: -15%;
+  width: 120%;
+}
+.thank-section .orn-13 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 65%;
+  transform: translate(60%, 0);
+}
+.thank-section .orn-13 .orn-14 {
+  position: absolute;
+  bottom: 60%;
+  left: -5%;
+  width: 120%;
+}
 .thank-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -2560,7 +3349,7 @@ ul li {
 }
 .thank-section .thank {
   position: relative;
-  padding: 1.5rem 1.5rem 10rem;
+  padding: 1.5rem 1.5rem 12rem;
   text-align: center;
 }
 .thank-section .thank:before {
@@ -2572,11 +3361,13 @@ ul li {
   background-color: var(--color-primary);
   border-radius: 300px 300px 0 0;
   border: 2px solid #365666;
-  opacity: 0.4;
+  opacity: 0.6;
   content: "";
 }
 .thank-section .thank .thank-body {
+  position: relative;
   padding-top: 2rem;
+  z-index: 5;
 }
 
 .footer {

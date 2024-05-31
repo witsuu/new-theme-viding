@@ -458,6 +458,12 @@ ul li {
     display: block;
   }
 }
+@media (max-width: 991px) and (min-width: 768px) {
+  .ipad-dnone {
+    display: none;
+  }
+}
+
 .loader-wrapper {
   position: fixed;
   min-height: 100vh;
@@ -1902,6 +1908,9 @@ img[alt=branch] {
   font-size: 28px;
   font-family: "Marla Griselda Demo", cursive;
 }
+.couple-section .and.single {
+  padding-bottom: 0;
+}
 .couple-section .couple-wrapper {
   position: relative;
   padding: 3rem 0;
@@ -2078,26 +2087,14 @@ img[alt=branch] {
     font-size: 16px;
   }
 }
-.couple-section .couple .title-couple {
-  position: absolute;
-  top: -1.5rem;
-  left: 0;
+.couple-section .couple.single {
+  width: 70%;
+}
+.couple-section .couple.single.man, .couple-section .couple.single.woman {
   width: 100%;
-  text-align: center;
 }
-@media (max-width: 991px) and (min-width: 768px) {
-  .couple-section .couple .title-couple {
-    top: 0;
-  }
-}
-.couple-section .couple .title-couple span {
-  font-size: 90px;
-  font-family: "Marla Griselda Demo", cursive;
-}
-@media (max-width: 991px) {
-  .couple-section .couple .title-couple span {
-    font-size: 60px;
-  }
+.couple-section .couple.single .image-wrap.man {
+  margin: 0 auto 1rem;
 }
 
 .story-section {

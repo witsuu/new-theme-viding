@@ -1,5 +1,6 @@
 .gallery-section {
 	position: relative;
+	background-color: var(--color-primary);
 	padding: 3rem 0;
 
 	@include ipad {

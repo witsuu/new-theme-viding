@@ -24,6 +24,10 @@
 			font-size: 28px;
 			font-family: $font-secondary;
 		}
+
+		&.single {
+			padding: 1rem 0 0;
+		}
 	}
 
 	.couple-wrapper {

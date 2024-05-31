@@ -1969,6 +1969,9 @@ img[alt=tree] {
   font-size: 28px;
   font-family: "Carmilla", cursive;
 }
+.couple-section .and.single {
+  padding: 1rem 0 0;
+}
 .couple-section .couple-wrapper {
   position: relative;
   padding: 8rem 0 3rem;

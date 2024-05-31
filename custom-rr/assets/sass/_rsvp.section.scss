@@ -8,6 +8,84 @@
 		padding: 5rem 0 10rem;
 	}
 
+	.ornaments-wrapper {
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-50%, 55%);
+
+			.orn-2 {
+				position: absolute;
+				top: 25%;
+				left: 85%;
+				width: 60%;
+			}
+
+			.orn-3 {
+				position: absolute;
+				bottom: 80%;
+				right: 10%;
+				width: 100%;
+
+				.orn-4 {
+					position: absolute;
+					bottom: 0;
+					right: -5%;
+					width: 120%;
+					transform: scaleX(-1);
+				}
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(10%, 75%);
+
+			.orn-6 {
+				position: absolute;
+				top: -10%;
+				left: 35%;
+				width: 60%;
+			}
+
+			.orn-7 {
+				position: absolute;
+				bottom: 100%;
+				left: 40%;
+				width: 80%;
+				transform: scaleX(-1);
+
+				.orn-8 {
+					position: absolute;
+					bottom: 20%;
+					right: -5%;
+					width: 120%;
+				}
+			}
+		}
+
+		.orn-9 {
+			position: absolute;
+			top: 3rem;
+			left: 0;
+			width: 70%;
+			transform: translate(-75%, 0) scaleX(-1);
+		}
+
+		.orn-10 {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			width: 70%;
+			transform: translate(75%, 0);
+		}
+	}
+
 	.rsvp-wrapper {
 		position: relative;
 

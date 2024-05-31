@@ -464,6 +464,12 @@ ul {
 	}
 }
 
+.ipad-dnone {
+	@include ipad {
+		display: none;
+	}
+}
+
 .loader-wrapper {
 	position: fixed;
 	min-height: 100vh;

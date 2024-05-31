@@ -18,6 +18,22 @@
 				}
 			}
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(-75%, 0) scaleX(-1);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 70%;
+			transform: translate(75%, 0);
+		}
 	}
 
 	.card-form {

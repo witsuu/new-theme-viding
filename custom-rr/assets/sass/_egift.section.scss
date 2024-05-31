@@ -9,6 +9,38 @@
 		padding: 5rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 8rem;
+		left: 0;
+		width: 70%;
+		transform: translate(-75%, 0) scaleX(-1);
+
+		.orn-3 {
+			position: absolute;
+			top: -20%;
+			left: 5%;
+			width: 30%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 8rem;
+		right: 0;
+		width: 70%;
+		transform: translate(75%, 0);
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			left: 5%;
+			width: 50%;
+			transform: scaleX(-1);
+		}
+	}
+
 	.gift-wrap {
 		position: relative;
 		margin-bottom: 2rem;

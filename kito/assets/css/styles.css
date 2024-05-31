@@ -2106,6 +2106,10 @@ img[alt=rose] {
   font-size: 28px;
   font-family: "YOUKISS", serif;
 }
+.couple-section .and.single {
+  display: flex;
+  padding: 0 0 1rem;
+}
 .couple-section .couple-wrapper {
   position: relative;
   padding: 3rem 0 0;

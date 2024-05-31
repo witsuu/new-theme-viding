@@ -24,6 +24,10 @@
 			font-size: 28px;
 			font-family: $font-secondary;
 		}
+
+		&.single {
+			padding-bottom: 0;
+		}
 	}
 
 	.couple-wrapper {
@@ -223,24 +227,16 @@
 			}
 		}
 
-		.title-couple {
-			position: absolute;
-			top: -1.5rem;
-			left: 0;
-			width: 100%;
-			text-align: center;
+		&.single {
+			width: 70%;
 
-			@include ipad {
-				top: 0;
+			&.man,
+			&.woman {
+				width: 100%;
 			}
 
-			span {
-				font-size: 90px;
-				font-family: $font-secondary;
-
-				@include max-lg {
-					font-size: 60px;
-				}
+			.image-wrap.man {
+				margin: 0 auto 1rem;
 			}
 		}
 	}

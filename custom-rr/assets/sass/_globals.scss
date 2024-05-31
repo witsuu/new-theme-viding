@@ -125,6 +125,34 @@ body {
 			transform: translateX(-50%);
 		}
 	}
+
+	.corner {
+		position: absolute;
+		width: 25%;
+
+		&-top-left {
+			top: .5rem;
+			left: -.2rem;
+		}
+
+		&-top-right {
+			top: .5rem;
+			right: -.2rem;
+			transform: scaleX(-1);
+		}
+
+		&-bottom-left {
+			bottom: .5rem;
+			left: -.2rem;
+			transform: scaleY(-1);
+		}
+
+		&-bottom-right {
+			bottom: .5rem;
+			right: -.2rem;
+			transform: scale(-1);
+		}
+	}
 }
 
 .background__views {
@@ -150,11 +178,11 @@ body {
 		.header-title {
 			color: var(--color-light);
 			position: absolute;
-			top: 50%;
-			left: 50%;
+			top: 45%;
+			left: 5rem;
 			width: 100%;
-			text-align: center;
-			transform: translate(-50%, -50%);
+			text-align: left;
+			transform: translate(0, -50%);
 			z-index: 5;
 		}
 
@@ -170,6 +198,79 @@ body {
 
 		.gebyok-top {
 			width: 102%;
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 36%;
+			transform: translate(-10%, 45%);
+
+			.orn-2 {
+				position: absolute;
+				left: 30%;
+				bottom: 55%;
+				width: 40%;
+			}
+
+			.orn-3 {
+				position: absolute;
+				top: 15%;
+				left: 80%;
+				width: 50%;
+			}
+
+			.orn-4 {
+				position: absolute;
+				right: 60%;
+				bottom: 10%;
+				width: 65%;
+
+				.orn-5 {
+					position: absolute;
+					bottom: 75%;
+					right: -5%;
+					width: 100%;
+				}
+			}
+		}
+
+		.orn-6 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 36%;
+			transform: translate(10%, 45%);
+
+			.orn-7 {
+				position: absolute;
+				bottom: 50%;
+				left: 30%;
+				width: 45%;
+			}
+
+			.orn-8 {
+				position: absolute;
+				top: 5%;
+				left: 25%;
+				width: 80%;
+
+				.orn-9 {
+					position: absolute;
+					top: 10%;
+					left: 40%;
+					width: 60%;
+				}
+			}
+
+			.orn-10 {
+				position: absolute;
+				bottom: 85%;
+				left: 48%;
+				width: 60%;
+				transform: scaleX(-1);
+			}
 		}
 	}
 }
@@ -408,6 +509,12 @@ span {
 	width: 100%;
 	text-align: center;
 	margin-bottom: 1.25rem;
+
+	.title-ornament {
+		position: relative;
+		width: 75px;
+		margin: 0 auto 1.5rem;
+	}
 
 	h2,
 	p,
