@@ -20,6 +20,10 @@
 		left: 50%;
 		width: 150%;
 		transform: translate(-60%, 0);
+
+		@include max-sm {
+			bottom: 1rem;
+		}
 	}
 
 	.orn-1 {
@@ -40,34 +44,34 @@
 
 	.orn-3 {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		width: 50%;
-		transform: translate(-55%, 60%);
+		transform: translate(-55%, 50%);
 	}
 
 	.orn-4 {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		right: 0;
 		width: 50%;
-		transform: translate(55%, 60%);
+		transform: translate(55%, 50%);
 	}
 
 	.orn-5 {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		left: 0;
 		width: 50%;
-		transform: translate(-5%, 95%);
+		transform: translate(-5%, 75%);
 	}
 
 	.orn-6 {
 		position: absolute;
-		top: 0;
+		bottom: 0;
 		right: 0;
 		width: 50%;
-		transform: translate(5%, 95%);
+		transform: translate(5%, 75%);
 	}
 
 	.orn-7 {
@@ -217,8 +221,11 @@
 							font-size: 32px;
 						}
 
-						p {
+						p,
+						span {
 							margin-bottom: 0;
+							font-size: 16px;
+							font-weight: 600;
 						}
 					}
 

@@ -2342,6 +2342,11 @@ img[alt=rose] {
   width: 150%;
   transform: translate(-60%, 0);
 }
+@media (max-width: 575px) {
+  .venue-section .ampera {
+    bottom: 1rem;
+  }
+}
 .venue-section .orn-1 {
   position: absolute;
   top: 0;
@@ -2358,31 +2363,31 @@ img[alt=rose] {
 }
 .venue-section .orn-3 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 50%;
-  transform: translate(-55%, 60%);
+  transform: translate(-55%, 50%);
 }
 .venue-section .orn-4 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 50%;
-  transform: translate(55%, 60%);
+  transform: translate(55%, 50%);
 }
 .venue-section .orn-5 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   left: 0;
   width: 50%;
-  transform: translate(-5%, 95%);
+  transform: translate(-5%, 75%);
 }
 .venue-section .orn-6 {
   position: absolute;
-  top: 0;
+  bottom: 0;
   right: 0;
   width: 50%;
-  transform: translate(5%, 95%);
+  transform: translate(5%, 75%);
 }
 .venue-section .orn-7 {
   position: absolute;
@@ -2513,8 +2518,11 @@ img[alt=rose] {
   font-family: "YOUKISS", serif;
   font-size: 32px;
 }
-.venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
   margin-bottom: 0;
+  font-size: 16px;
+  font-weight: 600;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
   position: relative;
