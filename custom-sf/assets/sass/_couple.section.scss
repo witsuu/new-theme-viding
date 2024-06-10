@@ -1,0 +1,209 @@
+.couple-section {
+	position: relative;
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 28px;
+			font-weight: 700;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 0 0 3rem;
+
+		@include ipad {
+			padding: 0 0 5rem;
+		}
+
+		.couple-content {
+			padding: 3rem 0;
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+
+			.elements-wrapper-absolute {
+				.background-element {
+					img {
+						object-position: 50% 0%;
+					}
+				}
+			}
+
+			&-body {
+				position: relative;
+				padding: 8rem 1.8rem 3rem;
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				border-radius: 300px 300px 10px 10px;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+		}
+
+		.ch-1 {
+			position: absolute;
+			bottom: 2rem;
+			right: 3rem;
+			width: 13%;
+		}
+
+		.ch-2 {
+			position: absolute;
+			bottom: 2rem;
+			left: 3rem;
+			width: 18%;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 27%;
+			transform: translate(-40%, -20%) scaleX(-1);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 27%;
+			transform: translate(40%, -20%);
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 25%;
+			transform: translate(-50%, 0) scaleX(-1);
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(30%, 0) scaleX(-1);
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 30%;
+			transform: translate(-50%, 0);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: 3rem;
+			right: 0;
+			width: 45%;
+			transform: translate(40%, 0) rotate(-20deg);
+		}
+	}
+
+	.couple {
+		position: relative;
+		padding: 2rem 0 3rem;
+		border-radius: 6px;
+		overflow: hidden;
+
+		&-name {
+			position: relative;
+			width: 115px;
+			margin: 0 auto 1rem;
+		}
+
+		.image-wrap {
+			position: relative;
+			width: 75%;
+			margin: 0 auto;
+
+			.image-element {
+				@include aspect-ratio(3, 4);
+
+				.couple-image {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 300px 300px 20px 20px;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			text-align: center;
+			padding: 1rem 1rem 0;
+
+			h3 {
+				position: relative;
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: 0.5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				background-color: var(--color-secondary);
+				margin: 1rem auto 0;
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+	background-color: var(--color-custom);
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-60%, -20%) rotate(10deg) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(50%, 0);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(30%, 0) scaleX(-1);
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%, 0);
+	}
+
+	.appology-wrap {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		min-height: 40vh;
+
+		@include max-lg {
+			min-height: 35vh;
+		}
+	}
+}

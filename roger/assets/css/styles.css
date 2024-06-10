@@ -2365,7 +2365,10 @@ img[alt=tree] {
   font-family: "Carmilla", cursive;
   font-size: 32px;
 }
-.venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
+  font-size: 16px;
+  font-weight: 600;
   margin-bottom: 0;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {

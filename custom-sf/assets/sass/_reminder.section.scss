@@ -1,0 +1,65 @@
+.reminder-wrap {
+	position: relative;
+	width: 100%;
+	min-height: 60vh;
+	padding-top: 3rem;
+
+	@include max-lg {
+		min-height: 40vh;
+	}
+
+	.ch-1 {
+		position: absolute;
+		top: 70%;
+		left: 38%;
+		width: 12%;
+	}
+
+	.ch-2 {
+		position: absolute;
+		top: 70%;
+		left: 52%;
+		width: 20%;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 60%;
+		left: 0;
+		width: 25%;
+		transform: translate(-40%, -50%) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 60%;
+		right: 0;
+		width: 25%;
+		transform: translate(30%, -50%) scaleX(-1);
+	}
+
+	.reminder-content {
+		position: absolute;
+		top: 40%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin: 1.5rem auto 0;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

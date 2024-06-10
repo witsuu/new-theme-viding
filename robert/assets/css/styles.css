@@ -2113,12 +2113,12 @@ img[alt=branch] {
   top: 0;
   right: 0;
   width: 35%;
-  transform: translate(35%, 0) rotate(-45deg) scaleX(-1);
+  transform: translate(75%, 0) rotate(-45deg) scaleX(-1);
 }
 .story-section .orn-1 .orn-2 {
   position: absolute;
   top: 30%;
-  right: 30%;
+  right: 0%;
   width: 50%;
 }
 .story-section .story {
@@ -2127,11 +2127,11 @@ img[alt=branch] {
 .story-section .story .story-description {
   position: relative;
   text-align: left;
-  padding: 8rem 0 3rem;
+  padding: 3rem 0;
 }
 @media (max-width: 575px) {
   .story-section .story .story-description {
-    padding: 8rem 0 2rem;
+    padding: 3rem 0 2rem;
   }
 }
 .story-section .story .story-description .title-section {
@@ -2407,8 +2407,10 @@ img[alt=branch] {
   font-family: "Marla Griselda Demo", cursive;
   font-size: 36px;
 }
-.venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
   margin-bottom: 0;
+  font-size: 16px;
   font-weight: 600;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
