@@ -1846,6 +1846,19 @@ img[alt=tree] {
 .header-section .frame-topRight {
   transform: translate(5%, -9%) scaleX(-1);
 }
+.header-section .mawar {
+  position: absolute;
+  top: 45%;
+  width: 8%;
+}
+.header-section .mawar-left {
+  left: 0;
+  transform: translate(-45%, -50%);
+}
+.header-section .mawar-right {
+  right: 0;
+  transform: translate(45%, -50%);
+}
 .header-section .orn-1 {
   position: absolute;
   bottom: 0;
@@ -1973,10 +1986,18 @@ img[alt=tree] {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.header-section .header-content .header-bg::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   background-color: var(--color-primary);
   border-radius: 300px 300px 0 0;
   border: 2px solid #365666;
   opacity: 0.6;
+  content: "";
 }
 .header-section .header-content .header .header-title {
   position: relative;
@@ -2409,15 +2430,15 @@ img[alt=tree] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 35%;
-  transform: translate(-65%, -20%);
+  width: 25%;
+  transform: translate(-60%, -15%);
 }
 .venue-section .orn-2 {
   position: absolute;
-  top: 8rem;
+  top: 0;
   right: 0;
-  width: 35%;
-  transform: translate(65%, 0) scaleX(-1);
+  width: 25%;
+  transform: translate(60%, -100%) scaleX(-1);
 }
 .venue-section .orn-3 {
   position: absolute;
@@ -2481,6 +2502,7 @@ img[alt=tree] {
   position: relative;
   text-align: center;
   margin-bottom: 3rem;
+  z-index: 5;
 }
 .venue-section .venue-wrapper .venue-content {
   position: relative;
@@ -3350,6 +3372,19 @@ img[alt=tree] {
 .thank-section .frame-topRight {
   transform: translate(5%, -9%) scaleX(-1);
 }
+.thank-section .mawar {
+  position: absolute;
+  top: 40%;
+  width: 8%;
+}
+.thank-section .mawar-left {
+  left: 0;
+  transform: translate(-45%, -50%);
+}
+.thank-section .mawar-right {
+  right: 0;
+  transform: translate(45%, -50%);
+}
 .thank-section .orn-1 {
   position: absolute;
   bottom: 0;
@@ -3415,29 +3450,31 @@ img[alt=tree] {
 }
 .thank-section .orn-11 {
   position: absolute;
-  bottom: 0;
+  bottom: 4rem;
   left: 0;
   width: 65%;
   transform: translate(-60%, 0);
 }
-.thank-section .orn-11 .orn-12 {
+.thank-section .orn-12 {
   position: absolute;
-  bottom: 60%;
-  right: -15%;
-  width: 120%;
+  top: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(-60%, -10%);
 }
 .thank-section .orn-13 {
   position: absolute;
-  bottom: 0;
+  bottom: 4rem;
   right: 0;
   width: 65%;
   transform: translate(60%, 0);
 }
-.thank-section .orn-13 .orn-14 {
+.thank-section .orn-14 {
   position: absolute;
-  bottom: 60%;
-  left: -5%;
-  width: 120%;
+  top: 0;
+  right: 0;
+  width: 80%;
+  transform: translate(60%, -10%);
 }
 .thank-section .image-wrapper {
   position: relative;
@@ -3470,7 +3507,19 @@ img[alt=tree] {
     padding: 1.5rem 1.5rem 16rem;
   }
 }
+@media (max-width: 576px) {
+  .thank-section .thank {
+    padding: 2rem 2rem 8.5rem;
+  }
+}
 .thank-section .thank-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.thank-section .thank-bg::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -3480,6 +3529,7 @@ img[alt=tree] {
   border-radius: 300px 300px 0 0;
   border: 2px solid #365666;
   opacity: 0.6;
+  content: "";
 }
 .thank-section .thank .thank-body {
   position: relative;

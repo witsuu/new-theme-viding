@@ -18,6 +18,22 @@
 		}
 	}
 
+	.mawar {
+		position: absolute;
+		top: 40%;
+		width: 8%;
+
+		&-left {
+			left: 0;
+			transform: translate(-45%, -50%);
+		}
+
+		&-right {
+			right: 0;
+			transform: translate(45%, -50%);
+		}
+	}
+
 	.orn-1 {
 		position: absolute;
 		bottom: 0;
@@ -93,32 +109,36 @@
 
 	.orn-11 {
 		position: absolute;
-		bottom: 0;
+		bottom: 4rem;
 		left: 0;
 		width: 65%;
 		transform: translate(-60%, 0);
 
-		.orn-12 {
-			position: absolute;
-			bottom: 60%;
-			right: -15%;
-			width: 120%;
-		}
+	}
+
+	.orn-12 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-60%, -10%);
 	}
 
 	.orn-13 {
 		position: absolute;
-		bottom: 0;
+		bottom: 4rem;
 		right: 0;
 		width: 65%;
 		transform: translate(60%, 0);
 
-		.orn-14 {
-			position: absolute;
-			bottom: 60%;
-			left: -5%;
-			width: 120%;
-		}
+	}
+
+	.orn-14 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(60%, -10%);
 	}
 
 	.image-wrapper {
@@ -146,16 +166,29 @@
 			padding: 1.5rem 1.5rem 16rem;
 		}
 
+		@include max-sm {
+			padding: 2rem 2rem 8.5rem;
+		}
+
 		&-bg {
 			position: absolute;
 			top: 0;
 			left: 0;
 			width: 100%;
 			height: 100%;
-			background-color: var(--color-primary);
-			border-radius: 300px 300px 0 0;
-			border: 2px solid $color-secondary;
-			opacity: .6;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: var(--color-primary);
+				border-radius: 300px 300px 0 0;
+				border: 2px solid $color-secondary;
+				opacity: .6;
+				content: "";
+			}
 		}
 
 		.thank-body {
