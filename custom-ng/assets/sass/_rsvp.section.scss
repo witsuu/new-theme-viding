@@ -1,0 +1,26 @@
+.rsvp-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.title-ornament {
+		path {
+			fill: var(--color-primary);
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.rsvp-form {
+			padding: 0 3rem;
+
+			@include max-sm {
+				padding: 0 2rem;
+			}
+		}
+	}
+}

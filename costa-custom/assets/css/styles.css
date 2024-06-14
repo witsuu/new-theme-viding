@@ -1193,7 +1193,7 @@ img[alt=tree-2] {
   width: -moz-fit-content;
   width: fit-content;
   gap: 0.5rem;
-  color: var(--color-dark);
+  color: var(--color-light);
   padding: 3rem 1rem;
 }
 @media (max-width: 767px) {

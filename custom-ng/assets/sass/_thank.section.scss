@@ -1,0 +1,53 @@
+.thank-section {
+	position: relative;
+	padding: 4rem 0 3rem;
+	text-align: center;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 60%;
+		transform: translate(-70%, 0);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 60%;
+		transform: translate(50%, 0);
+	}
+
+	.thank {
+		--color-button-trans: #fff;
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+
+		.thank-body {
+			padding: 3rem;
+
+			@include max-sm {
+				padding: 2rem;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	z-index: 5;
+
+	small {
+		position: relative;
+	}
+}

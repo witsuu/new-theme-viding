@@ -1,0 +1,133 @@
+.couple-section {
+	position: relative;
+	padding: 3rem 0 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	@include ipad {
+		padding: 5rem 0 0;
+	}
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 28px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+
+		.couple-content {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.frame {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 125%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			position: relative;
+			width: 70%;
+			margin: 3rem auto 4rem;
+
+			@include ipad {
+				margin: 3rem auto;
+			}
+
+			.image-element {
+				@include aspect-ratio(5, 6);
+
+				.couple-image {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 300px;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			text-align: center;
+			padding: 1rem 1rem 0;
+
+			h3 {
+				position: relative;
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: 0.5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				background-color: var(--color-secondary);
+				margin: 1rem auto 0;
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,65 @@
+.header-section {
+	position: relative;
+
+	.scroll-icon {
+		margin-top: 1rem;
+	}
+
+	.header-content {
+		position: relative;
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 5rem 0 3rem;
+		min-height: 100vh;
+
+		@include max-lg {
+			min-height: 85vh;
+		}
+
+		.header {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			.header-title {
+				position: relative;
+
+				&-content {
+					position: relative;
+					z-index: 5;
+
+					.figure {
+						position: relative;
+						width: 100%;
+						margin: 0 auto 1rem;
+
+						@include ipad {
+							width: 70%;
+							margin-bottom: 2rem;
+						}
+					}
+
+					.date {
+						position: relative;
+						width: 80%;
+						margin: 0 auto;
+
+						@include ipad {
+							width: 60%;
+						}
+
+						path {
+							fill: var(--color-primary);
+						}
+					}
+				}
+			}
+		}
+	}
+}
