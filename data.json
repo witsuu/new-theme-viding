@@ -468,5 +468,20 @@
 		"name": "Kito",
 		"path": "kito",
 		"status": ""
+	},
+	{
+		"name": "Custom SF",
+		"path": "custom-sf",
+		"status": ""
+	},
+	{
+		"name": "Custom NG",
+		"path": "custom-ng",
+		"status": ""
+	},
+	{
+		"name": "Custom RR",
+		"path": "custom-rr",
+		"status": ""
 	}
 ]

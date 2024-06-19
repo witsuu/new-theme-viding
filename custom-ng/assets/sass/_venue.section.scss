@@ -96,39 +96,52 @@
 						width: 100%;
 						margin-bottom: 2rem;
 
-						.line {
-							width: 45px;
-							height: 2px;
-							background-color: var(--color-button-trans);
-							margin: 0 auto 1rem;
-						}
-
 						.date {
 							position: relative;
 							width: 100%;
+							display: grid;
+							grid-template-columns: 1fr auto 1fr;
+							align-items: center;
+							gap: 0.5rem;
+							margin: .15rem 0;
 
 							h5 {
-								font-family: $font-secondary;
+								font-weight: 700;
 								margin-bottom: 0;
-								font-size: 42px;
+								font-size: 34px;
+								text-align: right;
+
+								@include max-sm {
+									font-size: 32px;
+								}
 							}
 
+							p {
+								text-align: left;
+								margin-bottom: 0;
+								font-weight: 400;
+								font-size: 12px;
+							}
+
+							.line {
+								height: 30px;
+								width: 2px;
+								background-color: var(--color-dark);
+							}
 						}
 
 						h4 {
 							font-family: $font-secondary;
-							font-size: 28px;
+						}
+
+						span {
+							font-size: 16px;
 						}
 
 						p,
 						span {
 							margin-bottom: 0;
-							font-size: 18px;
-							font-weight: 500;
-
-							@include max-sm {
-								font-size: 16px;
-							}
+							font-weight: 600;
 						}
 					}
 

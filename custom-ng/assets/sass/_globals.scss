@@ -355,9 +355,9 @@ span {
 	transition: all 0.5s ease-in-out;
 }
 
-.scrolled {
-	background: #fff !important;
-	box-shadow: 3px 0px 15px 15px rgba(89, 89, 89, 0.2);
+.navbar.scrolled {
+	background: transparent !important;
+	box-shadow: none;
 	visibility: visible !important;
 	pointer-events: all !important;
 
