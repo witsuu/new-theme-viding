@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger,Flip)
+gsap.registerPlugin(ScrollTrigger, Flip)
 
 window.scrollTo(0, 0);
 
@@ -16,7 +16,7 @@ $("#btn-envelope").on("click", function () {
 	const coverTime = setTimeout(() => {
 		$(".cover-section").hide()
 		clearTimeout(coverTime)
-	}, 1200)
+	}, 2500)
 });
 
 let previousScroll = 70;

@@ -8,7 +8,15 @@
 	.elements-wrapper-absolute {
 		.background-element {
 			img {
-				object-position: 50% 60%;
+				object-position: 50% 40%;
+
+				@include max-lg {
+					object-position: 50% 70%;
+				}
+
+				@include max-sm {
+					object-position: 50% 10%;
+				}
 			}
 		}
 	}
@@ -145,11 +153,11 @@
 					z-index: 5;
 
 					.logo {
-						width: 64px;
+						width: 68px;
 						margin: 0 auto 1rem;
 
 						@include max-sm {
-							width: 54px;
+							width: 60px;
 						}
 					}
 
