@@ -1,0 +1,51 @@
+.story-section {
+	position: relative;
+
+	.story {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+
+		.story-content {
+			position: relative;
+			background-color: var(--color-primary);
+			color: var(--color-light);
+			border-radius: var(--border-radius);
+
+			.story-description {
+				position: relative;
+				text-align: left;
+				padding: 3rem 2rem 3rem 3rem;
+
+				@include max-sm {
+					padding: 3rem 1.8rem 1.8rem;
+				}
+
+				.title-section {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(4, 6);
+
+			.story-background {
+				object-fit: cover;
+				border-radius: 0 20px 20px 0;
+
+				@include max-sm {
+					border-radius: 0 0 20px 20px;
+				}
+			}
+		}
+	}
+}

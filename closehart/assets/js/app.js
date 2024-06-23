@@ -1,31 +1,32 @@
 gsap.registerPlugin(ScrollTrigger, Flip)
 
-window.scrollTo(0, 0);
+window.scrollTo(0, 0)
 
-$("body").css("overflow-y", "hidden");
+const waitCoverLoading = (el) => {
+	return new Promise((resolve) => {
+		el.classList.add('cover-opening')
 
-$("#btn-envelope").on("click", function () {
-	$("body").css("overflow-y", "auto");
+		setTimeout(() => resolve(el), 2500)
+	})
+}
 
-	$(".logo-viding").addClass("custom-position");
+document.body.style.overflow = "hidden"
 
-	$(".cover-section").addClass("cover-opened")
+document.querySelector("#btn-envelope").addEventListener("click", () => {
+	document.body.style.overflow = "auto"
 
-	runAnimationOrnament();
+	document.querySelector(".cover-section").classList.add("cover-opened")
 
-	const coverTime = setTimeout(() => {
-		$(".cover-section").hide()
-		clearTimeout(coverTime)
-	}, 1200)
-});
+	runAnimationOrnament()
+	runAnimationLoop()
+})
 
-let previousScroll = 70;
+var previousScroll = 70;
 $(window).scroll(function (e) {
 	// add/remove class to navbar when scrolling to hide/show
 	var scroll = $(window).scrollTop();
 	if (scroll >= previousScroll) {
 		$("nav").addClass("navbar-hide");
-		$("nav").removeClass("scrolled");
 	} else if (scroll < previousScroll) {
 		$("nav").removeClass("navbar-hide");
 		$("nav").addClass("scrolled");
@@ -40,7 +41,17 @@ $(window).scroll(function (e) {
 
 const cd = document.querySelector(".countdown");
 
-if (cd) Countdown(cd.getAttribute("date"));
+if (cd) Countdown(cd.getAttribute("date"))
+
+// Progress Bar
+let progress = document.querySelector(".progress");
+
+ScrollTrigger.create({
+	trigger: "body",
+	start: "top top",
+	end: "bottom bottom",
+	onUpdate: (self) => (progress.style.transform = `${self.progress}`),
+})
 
 // Egift section
 const giftWrap = document.querySelector(".egift-section");
@@ -81,6 +92,50 @@ if (giftWrap) {
 		});
 	});
 }
+
+const getLoadedIframe = (ifr) => {
+	return new Promise((resolve, reject) => {
+		ifr.onload = () => resolve("maps loaded!")
+		ifr.onerror = () => reject("Iframe Load Failed: Please Check Again Your URL!")
+		ifr.src = ifr.dataset.src
+	})
+}
+
+// Modal Event Handler
+const mapModal = document.querySelectorAll(".modal");
+
+mapModal.forEach(modal => {
+	modal.addEventListener("shown.bs.modal", (e) => {
+		const loader = e.target.querySelector(".loader-wrapper-modal")
+		const iframe = e.target.querySelector("iframe")
+
+		getLoadedIframe(iframe).then(() => {
+			loader.classList.add("loaded")
+		}).catch(err => {
+			console.log(err)
+		})
+	})
+
+	modal.addEventListener("hidden.bs.modal", (e) => {
+		const iframe = e.target.querySelector("iframe")
+		const loader = e.target.querySelector(".loader-wrapper-modal")
+		iframe.src = "";
+		loader.classList.remove("loaded");
+	})
+})
+
+if (document.querySelector("#zoom-gallery-default")) {
+	$("#zoom-gallery-default").magnificPopup({
+		delegate: "li a",
+		type: "image",
+		mainClass: "mfp-with-zoom mfp-img-mobile",
+		zoom: {
+			enabled: true,
+			easing: "ease-in-out",
+		},
+	});
+}
+
 
 if (document.querySelectorAll("[data-anim]")) {
 	document.querySelectorAll("[data-anim]").forEach(ada => {
@@ -131,7 +186,7 @@ const runAnimationOrnamentCover = () => {
 	document.querySelectorAll(".cover-section [data-anim]").forEach(vs => {
 		ScrollTrigger.create({
 			trigger: vs,
-			start: vs.dataset.animAnchor ? vs.dataset.animAnchor : "top bottom",
+			start: "top bottom",
 			onToggle: self => {
 				if (self.isActive) {
 					if (vs.dataset.animDuration) vs.style.animationDuration = vs.dataset.animDuration
@@ -166,50 +221,4 @@ const runAnimationLoop = () => {
 			onToggle: self => self.isActive ? al.classList.add("animation-loop") : al.classList.remove("animation-loop")
 		})
 	})
-}
-
-const getLoadedIframe = (ifr) => {
-	return new Promise((resolve, reject) => {
-		ifr.onload = () => resolve("maps loaded!")
-		ifr.onerror = () => reject("Iframe Load Failed: Please Check Again Your URL!")
-		ifr.src = ifr.dataset.src
-	})
-}
-
-// Modal Event Handler
-const mapModal = document.querySelectorAll(".modal");
-
-mapModal.forEach(modal => {
-	modal.addEventListener("shown.bs.modal", (e) => {
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		const iframe = e.target.querySelector("iframe")
-
-		getLoadedIframe(iframe).then(() => {
-			loader.classList.add("loaded")
-		}).catch(err => {
-			console.log(err)
-		})
-	})
-
-	modal.addEventListener("hidden.bs.modal", (e) => {
-		const iframe = e.target.querySelector("iframe")
-		const loader = e.target.querySelector(".loader-wrapper-modal")
-		iframe.src = "";
-		loader.classList.remove("loaded");
-	})
-})
-
-if (document.querySelector("#zoom-gallery-default")) {
-	$("#zoom-gallery-default").magnificPopup({
-		delegate: "li a",
-		type: "image",
-		mainClass: "mfp-with-zoom mfp-img-mobile",
-		gallery: {
-			enabled: true,
-		},
-		zoom: {
-			enabled: true,
-			easing: "ease-in-out",
-		},
-	});
 }

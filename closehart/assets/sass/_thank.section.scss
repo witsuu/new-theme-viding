@@ -1,0 +1,65 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+
+			.thank-background {
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+
+		.thank {
+			position: relative;
+			color: var(--color-light);
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: var(--color-primary);
+				border-radius: var(--border-radius);
+				opacity: .6;
+				content: "";
+			}
+
+			&-body {
+				position: relative;
+				padding: 3rem 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}
