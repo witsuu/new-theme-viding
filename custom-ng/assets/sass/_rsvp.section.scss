@@ -6,10 +6,13 @@
 		padding: 5rem 0;
 	}
 
-	.title-ornament {
-		path {
-			fill: var(--color-primary);
-		}
+	.figure {
+		position: relative;
+		display: block;
+		width: 85%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-bottom: 1rem;
 	}
 
 	.rsvp-wrapper {

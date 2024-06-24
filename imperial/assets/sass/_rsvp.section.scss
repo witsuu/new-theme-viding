@@ -1,0 +1,24 @@
+.rsvp-section {
+	position: relative;
+	background-color: var(--color-primary);
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem;
+		background: var(--background-linear-main);
+		border-radius: var(--border-radius);
+
+		@include max-md {
+			padding: 2rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

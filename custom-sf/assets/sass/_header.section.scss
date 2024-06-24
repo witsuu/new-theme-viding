@@ -15,7 +15,7 @@
 				}
 
 				@include max-sm {
-					object-position: 50% 10%;
+					object-position: 50% 85%;
 				}
 			}
 		}
@@ -82,6 +82,13 @@
 		}
 	}
 
+	.daun {
+		position: absolute;
+		top: 42%;
+		left: 1.5rem;
+		width: 12%;
+	}
+
 	.ch-1 {
 		position: absolute;
 		top: 20%;
@@ -139,10 +146,14 @@
 			position: relative;
 			width: 80%;
 			margin: 0 auto;
-			min-height: 100vh;
+			min-height: 120vh;
 
 			@include max-sm {
 				min-height: 80vh;
+			}
+
+			@include max-rwd(420px) {
+				min-height: 95vh;
 			}
 
 			.header-title {

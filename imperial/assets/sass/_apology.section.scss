@@ -1,0 +1,20 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+		background: var(--background-linear-main);
+		border-radius: var(--border-radius);
+		padding: 3rem 2rem;
+
+		@include max-sm {
+			padding: 2rem 1.8rem;
+		}
+	}
+}

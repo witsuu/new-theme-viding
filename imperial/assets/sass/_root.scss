@@ -1,0 +1,14 @@
+:root {
+	--color-main: #{$color-main};
+	--color-primary: #{$color-primary};
+	--color-secondary: #{$color-secondary};
+	--color-dark: #{$color-dark};
+	--color-light: #{$color-light};
+	--text-button: #{$text-button};
+	--color-button-trans: #{$color-button-trans};
+	--vd-color-pink: #{$color-logo};
+	--border-radius: #{$border-radius};
+	--mask: radial-gradient(30px at 30px 30px, #0000 98%, #000) -30px -30px;
+	--background-linear-main: linear-gradient(to bottom, var(--color-main) 0%, transparent 100%);
+	--background-linear-primary: linear-gradient(to bottom, var(--color-primary) 0%, transparent 100%);
+}

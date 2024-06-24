@@ -1,0 +1,121 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	background-color: var(--color-primary);
+
+	.and {
+		@include min-md {
+			display: none;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem;
+		z-index: 3;
+		color: var(--color-light);
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-weight: 400;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+	}
+
+	.couple-body {
+		position: relative;
+	}
+
+	.couple-content {
+		position: relative;
+		padding: 3rem 2rem;
+		background: var(--background-linear-main);
+		margin-bottom: 3rem;
+		border-radius: var(--border-radius);
+
+		@include max-sm {
+			padding: 2rem 1rem;
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+
+			.image-element {
+				@include aspect-ratio(3, 4);
+
+				.couple-image {
+					object-fit: cover;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 2rem 3.5rem 2rem 1.5rem;
+			text-align: left;
+			background-color: var(--color-main);
+			border-radius: var(--border-radius);
+		}
+
+		.couple-parent {
+			width: 100%;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.sosmed-wrap {
+			position: absolute;
+			top: 2rem;
+			right: 1.5rem;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+
+			.fab {
+				font-size: 18px;
+
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

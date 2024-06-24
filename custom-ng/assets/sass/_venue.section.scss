@@ -39,14 +39,6 @@
 		.venue-content {
 			position: relative;
 
-			.figure {
-				position: relative;
-				width: 85%;
-				margin-left: auto;
-				margin-right: auto;
-				padding-bottom: 1rem;
-			}
-
 			.ribbon-venue {
 				position: relative;
 				margin-bottom: 1rem;
@@ -94,7 +86,7 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						margin-bottom: 1rem;
+						padding: 2rem 0;
 
 						.date {
 							position: relative;

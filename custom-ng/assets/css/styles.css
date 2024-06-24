@@ -1914,13 +1914,6 @@ ul li {
 .venue-section .venue-wrapper .venue-content {
   position: relative;
 }
-.venue-section .venue-wrapper .venue-content .figure {
-  position: relative;
-  width: 85%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-bottom: 1rem;
-}
 .venue-section .venue-wrapper .venue-content .ribbon-venue {
   position: relative;
   margin-bottom: 1rem;
@@ -1963,7 +1956,7 @@ ul li {
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name {
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 2rem 0;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
   position: relative;
@@ -2142,8 +2135,13 @@ ul li {
     padding: 5rem 0;
   }
 }
-.rsvp-section .title-ornament path {
-  fill: var(--color-primary);
+.rsvp-section .figure {
+  position: relative;
+  display: block;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-bottom: 1rem;
 }
 .rsvp-section .rsvp-wrapper {
   position: relative;
