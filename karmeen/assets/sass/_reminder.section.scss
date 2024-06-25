@@ -1,0 +1,54 @@
+.reminder-wrap {
+	position: relative;
+	width: 100%;
+
+	@include min-lg {
+		width: 50%;
+	}
+
+	.reminder-content {
+		position: relative;
+		width: 70%;
+		margin-left: auto;
+		z-index: 2;
+
+		@include max-lg {
+			width: fit-content;
+			margin-left: 0;
+			margin-right: auto;
+		}
+	}
+
+	.widget-element {
+		position: relative;
+
+		@include min-lg {
+			position: absolute;
+			bottom: 0;
+			right: 90%;
+			width: max-content;
+			margin-bottom: .6rem;
+		}
+
+		@include max-lg {
+			margin-top: 2rem;
+		}
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		// margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		margin: 0;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

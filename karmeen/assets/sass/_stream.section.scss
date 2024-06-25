@@ -1,0 +1,60 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				background-color: var(--color-main);
+				color: var(--color-dark);
+				border-radius: var(--border-radius);
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		min-width: 60%;
+		background-color: #fff;
+		color: var(--color-dark);
+		border: none;
+		margin-bottom: -1.25rem;
+		box-shadow: 0 .5rem 1rem rgba($color: #000000, $alpha: .1);
+	}
+
+	.z-5 {
+		z-index: 5;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}
