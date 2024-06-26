@@ -1,0 +1,69 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+
+	@include max-md {
+		padding: 5rem 0 3rem;
+	}
+
+	&::before {
+		position: absolute;
+		top: 2.5rem;
+		left: 50%;
+		transform: translate(-50%, 0);
+		width: 50%;
+		height: 2px;
+		background-color: var(--color-button-trans);
+		content: "";
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.title-section {
+			margin-bottom: 2rem;
+		}
+
+		.stream-content {
+			position: relative;
+
+			@include max-lg {
+				margin-bottom: 2rem;
+			}
+
+			.stream-description {
+				position: relative;
+				text-align: left;
+
+				@include max-lg {
+					text-align: center;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}

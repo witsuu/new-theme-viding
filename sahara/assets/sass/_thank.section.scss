@@ -1,0 +1,78 @@
+.thank-section {
+	position: relative;
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(4, 3);
+
+			.thank-background {
+				object-fit: cover;
+			}
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+
+		@include max-sm {
+			flex-direction: column;
+		}
+
+		.thank {
+			position: relative;
+			text-align: center;
+			padding: 5rem 5rem 3rem 3rem;
+
+			@include min-md {
+				text-align: left;
+			}
+
+			@include max-lg {
+				padding: 5rem 3rem 3rem;
+			}
+
+			@include max-md {
+				padding: 5rem 2rem 3rem;
+			}
+
+			&::before {
+				position: absolute;
+				top: 2.5rem;
+				left: 3rem;
+				width: 65%;
+				height: 2px;
+				background-color: var(--color-button-trans);
+				content: "";
+
+				@include max-sm {
+					left: 50%;
+					transform: translate(-50%, 0);
+				}
+			}
+
+			.title-section {
+				@include min-md {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}

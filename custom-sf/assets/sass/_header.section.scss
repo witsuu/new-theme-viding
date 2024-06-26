@@ -87,6 +87,11 @@
 		top: 42%;
 		left: 1.5rem;
 		width: 12%;
+
+		@include max-xs {
+			left: 1rem;
+			top: 45%;
+		}
 	}
 
 	.ch-1 {
@@ -121,6 +126,10 @@
 		left: 3rem;
 		width: 22%;
 		transform: scaleX(-1);
+
+		@include max-sm {
+			bottom: 16%;
+		}
 	}
 
 	.ch-5 {

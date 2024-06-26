@@ -1,0 +1,12 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+	}
+}

@@ -1,0 +1,39 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+
+			img {
+				object-fit: cover;
+				border-radius: 300px;
+			}
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem;
+
+		@include max-lg {
+			padding: 0 1rem;
+		}
+
+		@include max-sm {
+			padding: 2rem 1rem 0;
+		}
+
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}
