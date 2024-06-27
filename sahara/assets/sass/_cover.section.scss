@@ -10,6 +10,18 @@
 		transform: translateY(-100%);
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, -2%) scaleX(-1);
+
+		@include max-lg {
+			width: 50%;
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 

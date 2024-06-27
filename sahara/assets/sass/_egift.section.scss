@@ -7,6 +7,23 @@
 		padding: 3rem 0;
 	}
 
+	.orn-1 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(26%, 0) scaleX(-1);
+
+		@include max-lg {
+			top: 0;
+			width: 45%;
+		}
+
+		@include max-sm {
+			transform: translate(30%, 0) scaleX(-1);
+		}
+	}
+
 	.gift-wrap {
 		position: relative;
 		margin-bottom: 2rem;

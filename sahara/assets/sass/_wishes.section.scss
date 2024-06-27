@@ -4,7 +4,7 @@
 	align-items: center;
 	justify-content: center;
 	background-color: var(--color-primary);
-	color: var(--color-light);
+	color: var(--color-dark);
 
 	@include max-lg {
 		flex-direction: column;
@@ -21,6 +21,14 @@
 
 		@include max-sm {
 			padding: 3rem 2rem 2rem;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 60%;
+			right: 0;
+			width: 40%;
+			transform: translate(26%, -50%) scaleX(-1);
 		}
 	}
 

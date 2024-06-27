@@ -11,6 +11,15 @@
 		padding: 1rem;
 		z-index: 3;
 
+		&.single {
+			@include min-md {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
+
 		span {
 			position: relative;
 			font-size: 36px;
@@ -21,7 +30,6 @@
 
 	.couple-wrapper {
 		position: relative;
-		padding: 5rem 0 0;
 
 		.couple-content-wrapper {
 			position: relative;
@@ -33,20 +41,36 @@
 		padding: 5rem 0;
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 5rem 0 3rem;
+		}
+
+		&::before {
+			position: absolute;
+			top: 2.5rem;
+			left: 50%;
+			width: 50%;
+			height: 1px;
+			transform: translate(-50%, 0);
+			background-color: var(--color-button-trans);
+			content: "";
+
+			@include max-sm {
+				width: 65%;
+			}
 		}
 	}
 
 	.couple-content {
 		position: relative;
 		padding: 3rem 2rem;
-		background-color: var(--color-primary);
-		color: var(--color-dark);
+		background-color: var(--color-main);
 		border-radius: var(--border-radius);
 		text-align: center;
+		margin: 5rem 0;
 
 		@include max-sm {
 			padding: 2rem 1.8rem;
+			margin: 5rem 0 3rem;
 		}
 
 		&::before {
@@ -54,7 +78,7 @@
 			top: -2.5rem;
 			left: 50%;
 			width: 80%;
-			height: 2px;
+			height: 1px;
 			transform: translate(-50%, 0);
 			background-color: var(--color-button-trans);
 			content: "";
@@ -126,6 +150,16 @@
 
 				@include max-md {
 					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.image-wrapper {
+				.image-element {
+					@include min-md {
+						@include aspect-ratio(6, 4);
+					}
 				}
 			}
 		}

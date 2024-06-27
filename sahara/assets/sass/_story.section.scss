@@ -1,6 +1,14 @@
 .story-section {
 	position: relative;
 
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0) scaleX(-1);
+	}
+
 	.story {
 		position: relative;
 		display: flex;

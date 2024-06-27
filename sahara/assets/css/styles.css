@@ -5,7 +5,7 @@
 }
 :root {
   --color-main: #F8F0ED;
-  --color-primary: #6D848C;
+  --color-primary: #EADED2;
   --color-secondary: #AC9D8A;
   --color-dark: #1e1f1e;
   --color-light: #fff;
@@ -1227,11 +1227,11 @@ ul li {
 
 .reminder-wrap {
   position: relative;
-  padding: 5rem 0;
+  padding: 8rem 0;
 }
 @media (max-width: 767px) {
   .reminder-wrap {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
 }
 .reminder-wrap .reminder-content {
@@ -1277,6 +1277,18 @@ ul li {
 }
 .cover-section.cover-opened {
   transform: translateY(-100%);
+}
+.cover-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 70%;
+  transform: translate(30%, -2%) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .cover-section .orn-1 {
+    width: 50%;
+  }
 }
 .cover-section .cover-wrapper {
   position: relative;
@@ -1385,6 +1397,20 @@ ul li {
 .header-section .scroll-icon {
   position: relative;
   margin-top: 1rem;
+}
+.header-section .orn-1 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  width: 65%;
+  transform: translate(-26%, 0);
+}
+@media (max-width: 991px) {
+  .header-section .orn-1 {
+    top: 0;
+    width: 50%;
+    transform: translate(-35%, 0);
+  }
 }
 .header-section .header-content {
   position: relative;
@@ -1520,6 +1546,14 @@ ul li {
   padding: 1rem;
   z-index: 3;
 }
+@media (min-width: 768px) {
+  .couple-section .and.single {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
 .couple-section .and span {
   position: relative;
   font-size: 36px;
@@ -1528,7 +1562,6 @@ ul li {
 }
 .couple-section .couple-wrapper {
   position: relative;
-  padding: 5rem 0 0;
 }
 .couple-section .couple-wrapper .couple-content-wrapper {
   position: relative;
@@ -1539,20 +1572,36 @@ ul li {
 }
 @media (max-width: 767px) {
   .couple-section .couple-body {
-    padding: 3rem 0;
+    padding: 5rem 0 3rem;
+  }
+}
+.couple-section .couple-body::before {
+  position: absolute;
+  top: 2.5rem;
+  left: 50%;
+  width: 50%;
+  height: 1px;
+  transform: translate(-50%, 0);
+  background-color: var(--color-button-trans);
+  content: "";
+}
+@media (max-width: 575px) {
+  .couple-section .couple-body::before {
+    width: 65%;
   }
 }
 .couple-section .couple-content {
   position: relative;
   padding: 3rem 2rem;
-  background-color: var(--color-primary);
-  color: var(--color-dark);
+  background-color: var(--color-main);
   border-radius: var(--border-radius);
   text-align: center;
+  margin: 5rem 0;
 }
 @media (max-width: 575px) {
   .couple-section .couple-content {
     padding: 2rem 1.8rem;
+    margin: 5rem 0 3rem;
   }
 }
 .couple-section .couple-content::before {
@@ -1560,7 +1609,7 @@ ul li {
   top: -2.5rem;
   left: 50%;
   width: 80%;
-  height: 2px;
+  height: 1px;
   transform: translate(-50%, 0);
   background-color: var(--color-button-trans);
   content: "";
@@ -1638,9 +1687,28 @@ ul li {
     font-size: 16px;
   }
 }
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrapper .image-element {
+    padding-top: 66.6666666667%;
+  }
+  .couple-section .couple.single .image-wrapper .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 
 .story-section {
   position: relative;
+}
+.story-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(40%, 0) scaleX(-1);
 }
 .story-section .story {
   position: relative;
@@ -1718,8 +1786,7 @@ ul li {
   padding: 3rem 2rem;
   margin: 0 auto 2rem;
   text-align: center;
-  background-color: var(--color-primary);
-  color: var(--color-dark);
+  background-color: var(--color-main);
   border-radius: var(--border-radius);
 }
 @media (max-width: 575px) {
@@ -1732,7 +1799,7 @@ ul li {
   top: -2.5rem;
   left: 50%;
   width: 80%;
-  height: 2px;
+  height: 1px;
   transform: translate(-50%, 0);
   background-color: var(--color-button-trans);
   content: "";
@@ -1768,8 +1835,7 @@ ul li {
   transform-origin: 50% 75%;
 }
 .venue-section .venue-wrapper .venue-content .card {
-  background-color: var(--color-primary);
-  color: var(--color-dark);
+  background-color: var(--color-main);
   text-align: center;
   border: none;
   border-radius: 300px 300px 20px 20px;
@@ -1939,6 +2005,13 @@ ul li {
     padding: 3rem 0;
   }
 }
+.rsvp-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  transform: translate(20%, -10%);
+}
 .rsvp-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -1982,7 +2055,7 @@ ul li {
   align-items: center;
   justify-content: center;
   background-color: var(--color-primary);
-  color: var(--color-light);
+  color: var(--color-dark);
 }
 @media (max-width: 991px) {
   .wishes-section {
@@ -2003,6 +2076,13 @@ ul li {
   .wishes-section .wishes-form-wrapper {
     padding: 3rem 2rem 2rem;
   }
+}
+.wishes-section .wishes-form-wrapper .orn-1 {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 40%;
+  transform: translate(26%, -50%) scaleX(-1);
 }
 .wishes-section .card-form {
   background-color: transparent;
@@ -2108,6 +2188,24 @@ ul li {
 @media (max-width: 767px) {
   .egift-section {
     padding: 3rem 0;
+  }
+}
+.egift-section .orn-1 {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 15%;
+  transform: translate(26%, 0) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .egift-section .orn-1 {
+    top: 0;
+    width: 45%;
+  }
+}
+@media (max-width: 575px) {
+  .egift-section .orn-1 {
+    transform: translate(30%, 0) scaleX(-1);
   }
 }
 .egift-section .gift-wrap {
@@ -2372,6 +2470,24 @@ ul li {
 .thank-section {
   position: relative;
 }
+.thank-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 15%;
+  transform: translate(30%, 0) rotate(-10deg) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .thank-section .orn-1 {
+    width: 25%;
+  }
+}
+@media (max-width: 575px) {
+  .thank-section .orn-1 {
+    top: 17rem;
+    width: 40%;
+  }
+}
 .thank-section .image-wrapper {
   position: relative;
   width: 100%;
@@ -2426,7 +2542,7 @@ ul li {
   top: 2.5rem;
   left: 3rem;
   width: 65%;
-  height: 2px;
+  height: 1px;
   background-color: var(--color-button-trans);
   content: "";
 }
