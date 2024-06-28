@@ -10,6 +10,31 @@
 		@include max-sm {
 			padding: 3rem 0 1rem;
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 18%;
+			transform: translate(-45%, 0) rotate(20deg);
+
+			@include max-lg {
+				width: 30%;
+				transform: translate(-50%, 0) rotate(20deg);
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+
+			.orn-2 {
+				position: absolute;
+				top: 65%;
+				right: -18%;
+				width: 140%;
+				transform: rotate(-10deg) scaleX(-1);
+			}
+		}
 	}
 
 	.card-form {
@@ -35,6 +60,22 @@
 
 		@include max-sm {
 			padding: 1rem 0 3rem;
+		}
+
+		.bg {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0%);
+
+			@include max-lg {
+				width: 140%;
+			}
+
+			@include max-sm {
+				width: 160%;
+			}
 		}
 
 		.card {

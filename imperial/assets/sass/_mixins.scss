@@ -89,7 +89,7 @@
 }
 
 @mixin aspect-ratio($w, $h) {
-	padding-top: #{($h / $w) * 100%};
+	padding-top: calc(($h / $w) * 100%);
 
 	&>* {
 		position: absolute;

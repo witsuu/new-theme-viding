@@ -9,17 +9,72 @@
 			padding: 0 0 3rem;
 		}
 
+		.house {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -30%) scaleX(-1);
+
+			@include max-lg {
+				width: 140%;
+			}
+
+			@include max-sm {
+				width: 180%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(50%, -10%) scaleX(-1);
+
+			@include max-lg {
+				width: 40%;
+				transform: translate(60%, -10%) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 50%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 20%;
+			transform: translate(40%, -60%) scaleX(-1);
+
+			@include max-lg {
+				width: 35%;
+				transform: translate(50%, -60%) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 45%;
+			}
+		}
+
 		.story-content {
 			position: relative;
+			background-color: var(--color-primary);
+			color: var(--color-light);
+			border-radius: var(--border-radius);
 			margin-top: -5rem;
+
+			@include max-sm {
+				margin-top: -3rem;
+			}
 
 			.story-description {
 				position: relative;
 				text-align: left;
-				background-color: var(--color-primary);
-				color: var(--color-light);
 				padding: 3rem;
-				border-radius: var(--border-radius);
+				z-index: 5;
 
 				@include max-sm {
 					padding: 2rem 1.8rem;

@@ -1,20 +1,51 @@
 .apology-section {
 	position: relative;
 	background-color: var(--color-primary);
-	padding: 5rem 0;
+	padding: 0 0 5rem;
 
 	@include max-md {
-		padding: 3rem 0;
+		padding: 0 0 3rem;
+	}
+
+	.overlay-elements-gradient {
+		&.overlay-bottom {
+			background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
+		}
+	}
+
+	.house {
+		position: relative;
+		width: 100%;
+		transform: scaleX(-1);
+		margin-bottom: -5rem;
+
+		@include max-lg {
+			width: 140%;
+			transform: translateX(-20%) scaleX(-1);
+		}
+	}
+
+	.mountain {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50%, 0);
 	}
 
 	.appology-wrap {
 		position: relative;
 		background: var(--background-linear-main);
 		border-radius: var(--border-radius);
-		padding: 3rem 2rem;
+		overflow: hidden;
 
-		@include max-sm {
-			padding: 2rem 1.8rem;
+		.appology-body {
+			position: relative;
+			padding: 3rem 2rem;
+
+			@include max-sm {
+				padding: 2rem 1.8rem;
+			}
 		}
 	}
 }

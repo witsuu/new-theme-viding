@@ -10,6 +10,38 @@
 		transform: translateY(-100%);
 	}
 
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 30%);
+
+		@include max-lg {
+			width: 200%;
+			transform: translate(-50%, 0%);
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 60%;
+		transform: translate(-50%, -10%);
+
+		@include max-lg {
+			top: unset;
+			bottom: 0;
+			width: 80%;
+		}
+
+		@include max-sm {
+			width: 100%;
+			bottom: 5%;
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 		display: flex;
@@ -46,11 +78,11 @@
 
 				.cover-description {
 					position: relative;
-					padding: 3rem 2rem;
+					padding: 5rem 2rem;
 					text-align: center;
 
 					@include max-sm {
-						padding: 2rem 1.8rem;
+						padding: 3rem 1.8rem;
 					}
 
 					.cover-event {

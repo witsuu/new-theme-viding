@@ -9,6 +9,16 @@
 		padding: 0 0 3rem;
 	}
 
+	.house {
+		position: relative;
+		width: 120%;
+		transform: translate(-10%, 0%);
+
+		@include min-md {
+			margin-top: -10%;
+		}
+	}
+
 	.image-wrapper {
 		position: relative;
 		width: 100%;
@@ -36,16 +46,17 @@
 
 		.stream-content {
 			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			border-radius: var(--border-radius);
+			overflow: hidden;
 
 			.stream-description {
 				position: relative;
-				padding: 3rem 2rem;
-				background-color: var(--color-main);
-				color: var(--color-dark);
-				border-radius: var(--border-radius);
+				padding: 0 2rem 3rem;
 
 				@include max-md {
-					padding: 2rem 1.8rem;
+					padding: 0 1.8rem 2rem;
 				}
 			}
 

@@ -18,6 +18,52 @@
 		}
 	}
 
+	.house {
+		position: absolute;
+		top: 3rem;
+		left: 50%;
+		width: 150%;
+		transform: translate(-54%, 0) scaleX(-1);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 40%;
+		transform: translate(63%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 45%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-65%, 2rem);
+
+		@include max-sm {
+			transform: translate(-65%, 1rem);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: -20%;
+			right: 0;
+			width: 80%;
+
+			.orn-4 {
+				position: absolute;
+				top: -45%;
+				right: 5%;
+				width: 80%;
+			}
+		}
+	}
+
 	.venue-wrapper {
 		position: relative;
 		padding: 0 0 5rem;
@@ -80,10 +126,12 @@
 				background-color: transparent;
 				text-align: center;
 				border: none;
+				overflow: hidden;
+				border-radius: var(--border-radius);
 
 				.card-body {
 					position: relative;
-					padding: 2rem 1rem 0;
+					padding: 2rem 0 0;
 
 					h4 {
 						padding: 0 0 1rem;
@@ -101,12 +149,17 @@
 					.event-name {
 						position: relative;
 						width: 100%;
+						padding-right: 2rem;
+						padding-left: 20%;
 						margin-bottom: 2rem;
+
+						@include max-sm {
+							padding-right: 1rem;
+						}
 
 						&-body {
 							position: relative;
 							text-align: left;
-							padding-left: 1rem;
 						}
 
 						.date {
@@ -144,7 +197,12 @@
 
 					.event-place {
 						position: relative;
-						padding-left: 1rem;
+						padding-left: 20%;
+						padding-right: 2rem;
+
+						@include max-sm {
+							padding-right: 1rem;
+						}
 
 						&-body {
 							position: relative;
