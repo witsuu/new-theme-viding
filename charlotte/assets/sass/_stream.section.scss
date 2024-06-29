@@ -1,0 +1,74 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		padding: 5rem 1rem;
+		border-radius: 12px;
+		overflow: hidden;
+
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+
+		.stream-content {
+			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-light);
+			border-radius: var(--border-radius);
+
+			.stream-description {
+				position: relative;
+				padding: 2rem;
+
+				@include max-md {
+					padding: 2rem 1.5rem;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 85%;
+		transform: translate(-50%, 5%);
+
+		@include max-lg {
+			width: 120%;
+		}
+
+		@include max-sm {
+			width: 160%;
+		}
+	}
+}

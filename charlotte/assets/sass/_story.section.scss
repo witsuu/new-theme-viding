@@ -1,0 +1,87 @@
+.story-section {
+	position: relative;
+
+	.story {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 5rem 0 3rem;
+		}
+
+		.story-content {
+			position: relative;
+
+			.story-description {
+				position: relative;
+				text-align: center;
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-bottom: 2rem;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+			;
+
+			.story-background {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: 300px 300px 10px 10px;
+			}
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 35%;
+		transform: translate(-60%, 0) rotate(15deg);
+
+		@include max-lg {
+			width: 60%;
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 35%;
+		transform: translate(35%, 0);
+
+		@include max-lg {
+			width: 60%;
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.bird {
+		position: absolute;
+		top: 2rem;
+		left: 25%;
+		width: 12%;
+
+		@include max-lg {
+			left: 15%;
+			width: 20%;
+		}
+
+		@include max-sm {
+			width: 25%;
+		}
+	}
+}

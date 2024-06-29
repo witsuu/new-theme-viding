@@ -1,0 +1,198 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 4rem 0 0;
+		transition: opacity 1s ease;
+		height: 100vh;
+
+		@include max-lg {
+			padding: 4rem 0 10rem;
+			align-items: center;
+		}
+
+		.cover-content {
+			position: relative;
+			width: 35%;
+			background-color: var(--color-main);
+			border-radius: 300px 300px 15px 15px;
+			overflow: hidden;
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+			}
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			.cover-body {
+				position: relative;
+				width: 100%;
+				padding: 3rem 1rem;
+				border-radius: 300px 300px 15px 15px;
+				box-shadow: inset .25rem 1rem 2rem rgba($color: #000000, $alpha: .15);
+
+				@include max-lg {
+					padding: 3rem 1.5rem 1.5rem;
+				}
+
+				.cover-description {
+					position: relative;
+					text-align: center;
+
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1.5rem;
+					}
+
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+
+					.image-wrapper {
+						position: relative;
+						width: 100%;
+
+						.image-element {
+							@include aspect-ratio(6, 5);
+
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								border-radius: var(--border-radius);
+							}
+						}
+					}
+				}
+			}
+
+			.elements-widget {
+				position: relative;
+				width: 100%;
+				margin-bottom: 1rem;
+			}
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 55%;
+		transform: translate(-20%, 5%);
+
+		@include max-lg {
+			width: 110%;
+			transform: translate(-45%, 5%);
+		}
+
+		@include max-sm {
+			width: 160%;
+			transform: translate(-65%, 2%);
+		}
+
+		.tree {
+			position: absolute;
+			top: 20%;
+			right: 38%;
+			width: 60%;
+
+			@include max-sm {
+				right: 20%;
+			}
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 55%;
+		transform: translate(-5%, 5%);
+
+		@include max-lg {
+			width: 110%;
+			transform: translate(30%, 5%);
+		}
+
+		@include max-sm {
+			width: 160%;
+			transform: translate(30%, 2%);
+		}
+
+		.tree {
+			position: absolute;
+			top: 15%;
+			left: 56%;
+			width: 60%;
+
+			@include max-lg {
+				left: 40%;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0%;
+		right: 0;
+		width: 80%;
+		transform: translate(50%, 0);
+
+		.orn {
+			position: absolute;
+			bottom: 90%;
+			left: 20%;
+			width: 100%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 30%;
+		left: 0;
+		width: 60%;
+		transform: translate(-65%, 0);
+
+		.orn {
+			position: absolute;
+			bottom: 70%;
+			right: -15%;
+			width: 120%;
+		}
+	}
+}
