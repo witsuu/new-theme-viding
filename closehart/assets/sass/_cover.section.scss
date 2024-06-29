@@ -100,4 +100,56 @@
 			}
 		}
 	}
+
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 0);
+
+		@include min-md {
+			width: 120%;
+			transform: translate(-50%, 10%);
+		}
+
+		@include min-lg {
+			top: 25%;
+			bottom: unset;
+			width: 100%;
+			transform: translate(-50%, 0);
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-60%, -10%);
+
+		@include min-md {
+			width: 65%;
+		}
+
+		@include min-lg {
+			width: 35%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(60%, -10%);
+
+		@include min-md {
+			width: 65%;
+		}
+
+		@include min-lg {
+			width: 35%;
+		}
+	}
 }

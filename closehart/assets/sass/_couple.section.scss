@@ -29,124 +29,231 @@
 
 	.couple-wrapper {
 		position: relative;
-	}
 
-	.couple-body {
-		position: relative;
-		background-color: var(--color-primary);
-		padding: 5rem 0;
-
-		@include max-md {
-			padding: 3rem 0;
-		}
-	}
-
-	.couple-content-wrapper {
-		position: relative;
-		padding: 5rem 0;
-
-		@include max-md {
-			padding: 3rem 0;
-		}
-	}
-
-	.couple-content {
-		position: relative;
-		padding: 3rem 2rem;
-		color: var(--color-light);
-
-		@include max-sm {
-			padding: 2rem 1rem;
-		}
-
-		&::before {
-			position: absolute;
-			top: 0;
-			left: 0;
-			width: 100%;
-			height: 100%;
-			background-color: var(--color-primary);
-			border-radius: var(--border-radius);
-			opacity: .6;
-			content: "";
-		}
-	}
-
-	.couple {
-		position: relative;
-		background-color: var(--color-main);
-		border-radius: var(--border-radius);
-
-		&.man {
-			text-align: left;
-
-			.sosmed-wrap {
-				margin-right: auto;
-			}
-		}
-
-		&.woman {
-			text-align: right;
-
-			.sosmed-wrap {
-				margin-left: auto;
-			}
-		}
-
-		.image-wrap {
-			width: 100%;
+		.couple-body {
 			position: relative;
+			background-color: var(--color-primary);
+			padding: 5rem 0;
+
+			@include max-md {
+				padding: 3rem 0;
+			}
+
+			&>.ornaments-wrapper.orn-front {
+				@include min-md {
+					z-index: unset;
+				}
+			}
+
+			.elements-wrapper-absolute {
+				.background-element {
+					img {
+						opacity: .25;
+						object-position: 50% 0%;
+					}
+				}
+			}
+		}
+
+		.couple-content-wrapper {
+			position: relative;
+			padding: 5rem 0;
+
+			@include max-md {
+				padding: 3rem 0;
+			}
+
+			.couple-content {
+				position: relative;
+				color: var(--color-light);
+				border-radius: var(--border-radius);
+				overflow: hidden;
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: var(--color-primary);
+					border-radius: var(--border-radius);
+					opacity: .8;
+					content: "";
+				}
+
+				&-body {
+					position: relative;
+					padding: 3rem;
+
+					@include max-sm {
+						padding: 2rem 1rem;
+					}
+				}
+			}
+		}
+
+		.couple {
+			position: relative;
+			background-color: var(--color-main);
+			border-radius: var(--border-radius);
+
+			&.man {
+				text-align: left;
+
+				.sosmed-wrap {
+					margin-right: auto;
+				}
+			}
+
+			&.woman {
+				text-align: right;
+
+				.sosmed-wrap {
+					margin-left: auto;
+				}
+			}
+
+			.image-wrap {
+				width: 100%;
+				position: relative;
+
+				.image-element {
+					@include aspect-ratio(3, 4);
+
+					.couple-image {
+						object-fit: cover;
+						border-radius: var(--border-radius);
+					}
+				}
+			}
+
+			.couple-description {
+				position: relative;
+				padding: 1.8rem 1.8rem 0;
+				z-index: 5;
+
+				&.without-sosmed {
+					padding: 1.8rem;
+				}
+			}
+
+			.couple-parent {
+				width: 100%;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				background: var(--color-secondary);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				margin-top: -0.25rem;
+				transform: translateY(50%);
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.bg {
+			position: absolute;
+			top: 9rem;
+			left: 50%;
+			width: 140%;
+			transform: translate(-50%, 0);
+
+			@include min-md {
+				top: 14rem;
+				width: 120%;
+			}
+
+			@include min-lg {
+				top: 5rem;
+				width: 100%;
+			}
 
 			.image-element {
-				@include aspect-ratio(3, 4);
+				height: 100%;
 
-				.couple-image {
+				.img-fluid {
+					height: 100%;
 					object-fit: cover;
-					border-radius: var(--border-radius);
+					object-position: 50% 0%;
 				}
 			}
 		}
 
-		.couple-description {
-			position: relative;
-			padding: 1.8rem;
-		}
+		.tree-1 {
+			position: absolute;
+			top: 1rem;
+			left: 0;
+			width: 80%;
+			transform: translate(-65%, 0);
 
-		.couple-parent {
-			width: 100%;
-		}
-
-		.sosmed-wrap {
-			position: relative;
-			width: fit-content;
-			max-width: 100%;
-			background: var(--color-secondary);
-			padding: 0.5rem 0.6rem;
-			border-radius: 50px;
-			margin-top: 1rem;
-
-			.sosmed {
-				color: var(--text-button);
-				text-decoration: none;
-				display: block;
-				width: fit-content;
-				margin: 0 auto;
-
-				small {
-					align-items: center;
-					gap: 0.25rem;
-					display: flex;
-					justify-content: center;
-				}
+			@include min-md {
+				width: 65%;
 			}
 
-			.fab {
-				font-size: 18px;
-
-				@include max-md {
-					font-size: 16px;
-				}
+			@include min-lg {
+				width: 35%;
 			}
+		}
+
+		.tree-2 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 80%;
+			transform: translate(65%, 0);
+
+			@include min-md {
+				width: 65%;
+			}
+
+			@include min-lg {
+				width: 35%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 45%;
+			transform: translate(50%, 0) rotate(-10deg) scaleX(-1);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 45%;
+			transform: translate(-60%, 0) rotate(10deg) scaleX(-1);
 		}
 	}
 }

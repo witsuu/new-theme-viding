@@ -5,10 +5,10 @@
 		position: relative;
 		background-color: var(--color-primary);
 		color: var(--color-light);
-		padding: 5rem 0 2rem;
+		padding: 3rem 0 2rem;
 
 		@include max-sm {
-			padding: 3rem 0 1rem;
+			padding: 2rem 0 1rem;
 		}
 
 		.line {
@@ -17,6 +17,38 @@
 			height: 50px;
 			background-color: var(--color-button-trans);
 			margin: 0 auto 1rem;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-60%, 0);
+
+			@include min-md {
+				width: 30%;
+			}
+
+			@include min-lg {
+				width: 15%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(75%, -10%);
+
+			@include min-md {
+				width: 65%;
+			}
+
+			@include min-lg {
+				width: 35%;
+			}
 		}
 	}
 

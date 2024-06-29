@@ -1,9 +1,9 @@
 .stream-section {
 	position: relative;
-	padding: 5rem 0;
 	background-color: var(--color-primary);
 	color: var(--color-light);
 	text-align: center;
+	padding: 5rem 0;
 
 	@include max-md {
 		padding: 3rem 0;
@@ -51,5 +51,21 @@
 
 	.yt-description {
 		position: relative;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 40%;
+		transform: translate(65%, 0) rotate(-10deg);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 15%;
+		}
 	}
 }

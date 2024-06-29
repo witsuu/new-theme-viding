@@ -2,15 +2,16 @@
 	position: relative;
 	background-color: var(--color-primary);
 	color: var(--color-light);
-	padding: 5rem 0;
-
-	@include max-md {
-		padding: 3rem 0;
-	}
+	border-radius: var(--border-radius);
+	overflow: hidden;
 
 	.venue-wrapper {
 		position: relative;
-		z-index: 3;
+		padding: 2rem 0 5rem;
+
+		@include max-md {
+			padding: 2rem 0 3rem;
+		}
 
 		.venue-description {
 			position: relative;
@@ -94,7 +95,7 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 2rem 0;
+						padding: 0 0 2rem;
 
 						.line {
 							--color-button-trans: #1e1f1e;
@@ -127,9 +128,13 @@
 						}
 
 						p {
-							font-size: 16px;
+							font-size: 18px;
 							margin-bottom: 0;
 							font-weight: 700;
+
+							@include max-sm {
+								font-size: 16px;
+							}
 						}
 					}
 
@@ -271,6 +276,69 @@
 			opacity: 1;
 		}
 	}
+
+	&>.frame-standard {
+		@include min-md {
+			margin-top: -2rem;
+		}
+
+		@include min-lg {
+			margin-top: -8rem;
+		}
+	}
+
+	.frame-standard {
+		border-radius: var(--border-radius) var(--border-radius) 0 0;
+		overflow: hidden;
+	}
+
+	.ornaments-wrapper {
+		border-radius: var(--border-radius);
+
+		.bg {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 200%;
+			transform: translate(-50%, 0);
+			opacity: .4;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(70%, 0);
+
+			@include min-md {
+				width: 40%;
+				transform: translate(70%, 0) rotate(-10deg);
+			}
+
+			@include min-lg {
+				width: 20%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 80%;
+			transform: translate(-70%, 0) scaleX(-1);
+
+			@include min-md {
+				width: 40%;
+				transform: translate(-70%, 0) rotate(10deg) scaleX(-1);
+			}
+
+			@include min-lg {
+				width: 20%;
+			}
+		}
+	}
+
 }
 
 .maps-embed {

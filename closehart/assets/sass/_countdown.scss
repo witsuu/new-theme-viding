@@ -39,10 +39,6 @@
 		.huruf {
 			font-size: 14px;
 			font-weight: 600;
-
-			@include max-xs {
-				font-size: 12px;
-			}
 		}
 
 		.angka {
@@ -53,10 +49,6 @@
 
 			@include max-md {
 				font-size: 32px;
-			}
-
-			@include max-xs {
-				font-size: 28px;
 			}
 		}
 

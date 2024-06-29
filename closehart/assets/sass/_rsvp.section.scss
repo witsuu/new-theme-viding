@@ -3,21 +3,129 @@
 	padding: 5rem 0;
 
 	@include max-md {
-		padding: 3rem 0;
+		padding: 0;
 	}
 
 	.rsvp-wrapper {
 		position: relative;
-		padding: 3rem;
-		border-radius: var(--border-radius);
+		overflow: hidden;
 
-		@include max-md {
-			padding: 3rem 2rem;
+		@include min-md {
+			border-radius: var(--border-radius);
 		}
 
 		.rsvp-form {
 			--color-button-trans: #1e1f1e;
 			position: relative;
+			padding: 5rem 3rem 10rem;
+
+			@include max-sm {
+				padding: 5rem 1.8rem 8rem;
+			}
 		}
+	}
+
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, 0);
+		opacity: .25;
+
+		.bg-2 {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -50%);
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-60%, -10%);
+	}
+
+	.tree-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(60%, -10%);
+	}
+
+	.tree-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-45%, 40%);
+	}
+
+	.tree-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 80%;
+		transform: translate(45%, 40%);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%, 0%);
+
+		.orn-2 {
+			position: absolute;
+			top: 35%;
+			left: 80%;
+			width: 60%;
+
+			.orn-3 {
+				position: absolute;
+				top: 15%;
+				left: 60%;
+				width: 80%;
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(60%, 0%) rotate(-10deg);
+
+		.orn-5 {
+			position: absolute;
+			top: 28%;
+			right: 90%;
+			width: 60%;
+			transform: rotate(10deg);
+
+			.orn-6 {
+				position: absolute;
+				top: 20%;
+				right: 70%;
+				width: 80%;
+				transform: scaleX(-1);
+			}
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 40%;
+		transform: translate(-50%, 60%);
 	}
 }

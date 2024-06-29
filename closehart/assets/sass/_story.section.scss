@@ -14,18 +14,36 @@
 			background-color: var(--color-primary);
 			color: var(--color-light);
 			border-radius: var(--border-radius);
+			overflow: hidden;
+
+			&-body {
+				position: relative;
+
+				.frame-standard {
+					@include min-lg {
+						width: calc(100% + 1.5rem);
+					}
+				}
+			}
 
 			.story-description {
 				position: relative;
 				text-align: left;
 				padding: 3rem 2rem 3rem 3rem;
 
+				@include max-lg {
+					text-align: center;
+					padding: 2rem 4rem;
+				}
+
 				@include max-sm {
-					padding: 3rem 1.8rem 1.8rem;
+					padding: 1.8rem;
 				}
 
 				.title-section {
-					text-align: left;
+					@include min-lg {
+						text-align: left;
+					}
 				}
 			}
 		}
@@ -38,11 +56,15 @@
 		.image-element {
 			@include aspect-ratio(4, 6);
 
+			@include ipad {
+				@include aspect-ratio(6, 4);
+			}
+
 			.story-background {
 				object-fit: cover;
 				border-radius: 0 20px 20px 0;
 
-				@include max-sm {
+				@include max-lg {
 					border-radius: 0 0 20px 20px;
 				}
 			}

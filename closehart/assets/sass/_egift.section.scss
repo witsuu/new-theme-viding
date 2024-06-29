@@ -14,6 +14,7 @@
 		padding: 3rem 2rem;
 		border-radius: var(--border-radius);
 		margin-bottom: 2rem;
+		overflow: hidden;
 
 		@include max-md {
 			padding: 3rem 1rem;
@@ -144,6 +145,49 @@
 	.gift-content {
 		--color-button-trans: #1e1f1e;
 		position: relative;
+	}
+
+	.elements-wrapper-absolute {
+		padding-top: 2rem;
+
+		.background-element {
+			img {
+				object-position: 50% 0%;
+				opacity: .25;
+			}
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 80%;
+		transform: translate(-70%, -10%);
+
+		@include min-md {
+			width: 60%;
+		}
+
+		@include min-lg {
+			width: 30%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 80%;
+		transform: translate(70%, -10%);
+
+		@include min-md {
+			width: 65%;
+		}
+
+		@include min-lg {
+			width: 35%;
+		}
 	}
 }
 

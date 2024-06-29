@@ -9,4 +9,19 @@
 	.appology-wrap {
 		position: relative;
 	}
+
+	.elements-wrapper-absolute {
+		padding-top: 5rem;
+
+		@include max-sm {
+			padding-top: 3rem;
+		}
+
+		.background-element {
+			img {
+				object-position: 50% 0%;
+				opacity: .25;
+			}
+		}
+	}
 }
