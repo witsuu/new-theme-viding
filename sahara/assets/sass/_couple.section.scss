@@ -58,6 +58,38 @@
 				width: 65%;
 			}
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 15%;
+			transform: translate(-26%, 0);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			right: 0;
+			width: 15%;
+			transform: translate(26%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
 	}
 
 	.couple-content {

@@ -7,6 +7,10 @@
 		right: 0;
 		width: 40%;
 		transform: translate(40%, 0) scaleX(-1);
+
+		@include max-lg {
+			transform: translate(40%, -20%) scaleX(-1);
+		}
 	}
 
 	.story {
