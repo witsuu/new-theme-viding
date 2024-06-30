@@ -1553,8 +1553,15 @@ ul li {
   text-align: left;
   margin-bottom: 3rem;
 }
-.couple-section .couple-content .title-section {
-  text-align: left;
+@media (max-width: 575px) {
+  .couple-section .couple-content {
+    text-align: center;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple-content .title-section {
+    text-align: left;
+  }
 }
 .couple-section .couple {
   position: relative;
@@ -2368,7 +2375,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .stream-section .stream-wrapper .stream-content .stream-description {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem 2rem;
   }
 }
 @media (max-width: 767px) {
