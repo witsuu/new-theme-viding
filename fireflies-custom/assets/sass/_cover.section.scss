@@ -1,0 +1,130 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.glow-1 {
+		top: 18%;
+		left: 45%;
+		@include max-lg {
+			top: 10%;
+			left: 20%;
+		}
+		@include max-md {
+			left: 10%;
+		}
+	}
+	.glow-2 {
+		top: 50%;
+		right: 25%;
+		width: 20px;
+		@include max-lg {
+			right: 15%;
+		}
+		@include max-md {
+			right: 10%;
+		}
+	}
+	.glow-3 {
+		bottom: 15%;
+		left: 40%;
+		width: 30px;
+		@include max-lg {
+			bottom: 10%;
+			left: 30%;
+		}
+		@include max-md {
+			bottom: 5%;
+			left: 25%;
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		padding: 4rem 0 3rem;
+		height: 100vh;
+		transition: opacity 1s ease;
+		@include max-lg {
+			padding: 4rem 0 7rem;
+		}
+		.cover-content {
+			text-align: center;
+			position: relative;
+			background-color: transparent;
+			border-radius: 12px;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.cover-body {
+				position: relative;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: var(--border-radius);
+				@include max-lg {
+					flex-direction: column;
+					width: 60%;
+				}
+				@include max-md {
+					width: 100%;
+				}
+				.greeting-wrapper {
+					position: relative;
+					@include max-md {
+						font-size: 14px;
+					}
+					h6 {
+						font-weight: 700;
+					}
+				}
+				h6 {
+					font-weight: 600;
+				}
+				.image-wrapper {
+					position: relative;
+					width: 280px;
+					height: auto;
+					aspect-ratio: 5/6;
+					border-radius: 500px;
+					@include max-lg {
+						width: 100%;
+						padding: 2rem;
+					}
+					@include max-xs {
+						aspect-ratio: 6/7;
+					}
+					.cover-background {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: var(--border-radius);
+						position: relative;
+					}
+				}
+				.cover-description {
+					position: relative;
+					padding: 2rem;
+					text-align: left;
+					margin-left: 1rem;
+					@include max-lg {
+						margin-left: 0;
+						padding: 0 2rem 2rem;
+					}
+					* {
+						position: relative;
+					}
+				}
+			}
+			.elements-widget {
+				width: 100%;
+			}
+		}
+	}
+}

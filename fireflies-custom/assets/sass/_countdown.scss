@@ -1,0 +1,71 @@
+.countdown {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	text-align: center;
+	justify-content: space-evenly;
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+	gap: 1rem;
+	z-index: 3;
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		color: var(--color-light);
+		padding: 1rem 2rem;
+		min-width: 100px;
+		@include max-md {
+			min-width: 72px;
+			padding: 1rem 0.75rem;
+		}
+		@include max-xs {
+			min-width: 65px;
+		}
+		@include max-rwd(350px) {
+			min-width: 72px;
+		}
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: var(--border-radius);
+			background-color: var(--color-dark);
+			opacity: 0.5;
+			content: "";
+		}
+		.huruf {
+			position: relative;
+			font-size: 14px;
+			font-weight: 600;
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+		.angka {
+			position: relative;
+			margin-bottom: 0;
+			font-weight: 700;
+			font-size: 38px;
+			font-family: $font-secondary;
+			@include max-md {
+				font-size: 28px;
+			}
+			@include max-xs {
+				font-size: 24px;
+			}
+		}
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

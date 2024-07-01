@@ -1,0 +1,87 @@
+.cover-section .elements-wrapper-absolute .background-element {
+  opacity: 0.25;
+}
+
+.header-section .elements-wrapper-absolute .background-element {
+  opacity: 0.25;
+}
+
+.thank-section .thank-wrapper .elements-wrapper-absolute .background-element {
+  opacity: 0.4;
+}
+
+.couple-section .couple-body .elements-wrapper-absolute .background-element img {
+  opacity: 0.8;
+}
+
+.reminder-wrap {
+  padding: 5rem 0;
+}
+
+.venue-section .elements-wrapper-absolute .background-element img {
+  opacity: 0.25;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body hr {
+  position: relative;
+  opacity: 1;
+  z-index: 3;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name {
+  background-color: transparent;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name .elements-wrapper-absolute .background-element img {
+  -o-object-position: 50% 15%;
+     object-position: 50% 15%;
+  opacity: 0.65;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name .date h5 {
+  font-size: 36px;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
+    font-size: 16px;
+  }
+}
+
+.rsvp-section .rsvp-wrapper .orn-5 {
+  height: 380px;
+  padding-top: 0 !important;
+}
+.rsvp-section .rsvp-wrapper .orn-5 > .image-element {
+  height: 100%;
+}
+.rsvp-section .rsvp-wrapper .orn-5 > .image-element .img-fluid {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+  opacity: 0.5;
+}
+
+.egift-section .elements-wrapper-absolute .background-element img {
+  opacity: 0.8;
+}
+
+.apology-section .elements-wrapper-absolute .background-element img {
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+  opacity: 0.25;
+}
+
+.stream-section .orn-3 {
+  top: 10rem;
+}
+.stream-section .stream-wrapper .stream-content .stream-description .elements-wrapper-absolute .background-element {
+  background-color: var(--color-primary);
+}
+.stream-section .stream-wrapper .stream-content .stream-description .elements-wrapper-absolute .background-element img {
+  -o-object-position: 50% 20%;
+     object-position: 50% 20%;
+  opacity: 0.25;
+}/*# sourceMappingURL=custom_1.css.map */

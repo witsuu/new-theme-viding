@@ -155,6 +155,16 @@
 					}
 				}
 			}
+
+			&.single {
+				.image-wrap {
+					.image-element {
+						@include min-md {
+							@include aspect-ratio(16, 9);
+						}
+					}
+				}
+			}
 		}
 
 		.bg {

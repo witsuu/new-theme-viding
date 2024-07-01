@@ -1,0 +1,45 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 5rem 0 18rem;
+	@include max-md {
+		padding: 5rem 0 15rem;
+	}
+	@include max-xs {
+		padding: 5rem 0 13rem;
+	}
+	.reminder-content {
+		position: relative;
+	}
+	.glow-7 {
+		top: 20%;
+		right: 10%;
+		width: 30px;
+	}
+	.glow-8 {
+		bottom: 10%;
+		left: 10%;
+		width: 25px;
+	}
+	.glow-9 {
+		bottom: 25%;
+		right: 10%;
+		width: 20px;
+	}
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

@@ -187,11 +187,26 @@
 		}
 
 		&.single {
-			.image-wrapper {
+			.image-wrap {
+				margin-bottom: 2rem;
+
 				.image-element {
 					@include min-md {
-						@include aspect-ratio(6, 4);
+						@include aspect-ratio(16, 9);
 					}
+				}
+			}
+
+			.couple-description {
+				padding-top: 0;
+			}
+
+			.and {
+				@include min-md {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
 				}
 			}
 		}

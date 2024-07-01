@@ -2100,6 +2100,47 @@ img[alt=tree-3] {
     font-size: 16px;
   }
 }
+.couple-section .couple-wrapper .couple.single {
+  text-align: center;
+}
+.couple-section .couple-wrapper .couple.single .and {
+  color: var(--color-dark);
+  padding: 2rem 0 1rem;
+}
+.couple-section .couple-wrapper .couple.single .image-wrap {
+  margin-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .couple.single .image-wrap .image-element {
+    padding-top: 56.25%;
+  }
+  .couple-section .couple-wrapper .couple.single .image-wrap .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.couple-section .couple-wrapper .couple.single .couple-description {
+  padding-top: 0;
+}
+.couple-section .couple-wrapper .couple.single .sosmed-wrap {
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .couple.single .orn-1,
+  .couple-section .couple-wrapper .couple.single .orn-2 {
+    width: 20%;
+  }
+}
+@media (max-width: 575px) {
+  .couple-section .couple-wrapper .couple.single .orn-1,
+  .couple-section .couple-wrapper .couple.single .orn-2 {
+    top: 40%;
+  }
+}
 .couple-section .couple-wrapper .bg {
   position: absolute;
   top: 9rem;
@@ -2161,6 +2202,12 @@ img[alt=tree-3] {
 @media (min-width: 992px) {
   .couple-section .couple-wrapper .tree-2 {
     width: 35%;
+  }
+}
+@media (max-width: 575px) {
+  .couple-section .couple-wrapper .tree-2.single {
+    top: 60%;
+    transform: translate(75%, 0);
   }
 }
 .couple-section .couple-wrapper .orn-1 {

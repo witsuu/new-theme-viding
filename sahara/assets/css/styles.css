@@ -1737,16 +1737,30 @@ img[alt=flower] {
     font-size: 16px;
   }
 }
+.couple-section .couple.single .image-wrap {
+  margin-bottom: 2rem;
+}
 @media (min-width: 768px) {
-  .couple-section .couple.single .image-wrapper .image-element {
-    padding-top: 66.6666666667%;
+  .couple-section .couple.single .image-wrap .image-element {
+    padding-top: 56.25%;
   }
-  .couple-section .couple.single .image-wrapper .image-element > * {
+  .couple-section .couple.single .image-wrap .image-element > * {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+  }
+}
+.couple-section .couple.single .couple-description {
+  padding-top: 0;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .and {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 

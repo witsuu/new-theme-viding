@@ -2059,6 +2059,18 @@ img[alt=tree-5] {
     font-size: 16px;
   }
 }
+@media (min-width: 768px) {
+  .couple-section .couple-wrapper .couple.single .image-wrap .image-element {
+    padding-top: 56.25%;
+  }
+  .couple-section .couple-wrapper .couple.single .image-wrap .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
 .couple-section .couple-wrapper .bg {
   position: absolute;
   top: 50%;

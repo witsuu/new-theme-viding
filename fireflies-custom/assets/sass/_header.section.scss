@@ -1,0 +1,364 @@
+.header-section {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	.scroll-icon {
+		position: relative;
+		margin-top: 2rem;
+		rect {
+			stroke: var(--color-light);
+		}
+	}
+	.elements-wrapper-absolute {
+		overflow: hidden;
+	}
+	.glow-1 {
+		width: 30px;
+		left: 10%;
+		top: 30%;
+	}
+	.glow-2 {
+		width: 20px;
+		right: 15%;
+		top: 20%;
+	}
+	.glow-3 {
+		width: 35px;
+		top: 40%;
+		right: 5%;
+	}
+	.glow-4 {
+		width: 25px;
+		top: 50%;
+		left: 50%;
+	}
+	.glow-5 {
+		width: 30px;
+		left: 10%;
+		top: 80%;
+	}
+	.glow-6 {
+		width: 35px;
+		top: 85%;
+		right: 30%;
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 125%;
+		transform: translate(-15%, -10%);
+		@include min-md {
+			width: 100%;
+			transform: translateZ(0);
+		}
+		@include min-lg {
+			width: 70%;
+			transform: translate(10%, 0);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 280px;
+		transform: translate(-60%, -30%);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			width: 380px;
+		}
+		img {
+			transform-origin: 60% 100%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 280px;
+		transform: translate(50%, -30%);
+		@include min-md {
+			width: 360px;
+		}
+		@include min-lg {
+			width: 380px;
+		}
+		img {
+			transform-origin: 60% 100%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(50%, 0);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+		img {
+			transform-origin: 50% 100%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-10%, 10%);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(10%, 20%);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(-60%, -30%);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+		img {
+			transform-origin: 40% 100%;
+		}
+		.orn-8 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(40%, 40%);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 50% 100%;
+			}
+			.orn-9 {
+				position: absolute;
+				top: 0;
+				left: 100%;
+				width: 120px;
+				transform: translate(-10%, 30%);
+				@include min-md {
+					width: 120px;
+				}
+				@include min-lg {
+					width: 140px;
+				}
+				img {
+					transform-origin: 40% 100%;
+				}
+			}
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(70%, -10%);
+		@include min-md {
+			width: 160px;
+			transform: translate(60%, -10%);
+		}
+		@include min-lg {
+			width: 180px;
+		}
+		img {
+			transform-origin: 50% 100%;
+		}
+		.orn-11 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 120px;
+			transform: translate(-10%, 40%);
+			@include min-md {
+				width: 140px;
+			}
+			@include min-lg {
+				width: 160px;
+			}
+			img {
+				transform-origin: 40% 100%;
+			}
+			.orn-12 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 140px;
+				transform: translate(-80%, 0);
+				@include min-md {
+					width: 160px;
+				}
+				@include min-lg {
+					width: 180px;
+				}
+				img {
+					transform-origin: 50% 100%;
+				}
+			}
+		}
+	}
+	.header-content {
+		position: relative;
+		height: 100%;
+		.header {
+			position: relative;
+			display: grid;
+			grid-template-rows: auto 1fr;
+			width: 50%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 6rem 0 0;
+			@include max-lg {
+				padding: 8rem 0 0;
+				width: 80%;
+			}
+			@include max-md {
+				padding: 6rem 0 0;
+				width: 100%;
+			}
+			.header-title {
+				position: relative;
+				text-align: center;
+				&-content {
+					position: relative;
+					border-radius: var(--border-radius);
+				}
+			}
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+			.image-wrapper {
+				position: relative;
+				width: 80%;
+				height: auto;
+				aspect-ratio: 4/6;
+				margin: 0 auto;
+				align-self: flex-end;
+				.header-background {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+				}
+				.image-element {
+					position: absolute;
+					top: 50%;
+					left: 50%;
+					transform: translate(-50%, -50%);
+					width: 90%;
+					height: 93%;
+					.header-background {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-in-main"].has-animate {
+	animation-name: zoomInMain;
+	animation-fill-mode: forwards;
+	animation-duration: 3500ms !important;
+}
+
+[data-anim="peafowl-right"].has-animate {
+	animation-name: peafowlRight;
+	animation-duration: 3500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+[data-anim="peafowl-left"].has-animate {
+	animation-name: peafowlLeft;
+	animation-duration: 2500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.33, 0.12, 0.61, 0.9);
+}
+
+@keyframes peafowlRight {
+	0% {
+		transform: translate3d(50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 5%, 0);
+	}
+}
+
+@keyframes peafowlLeft {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(-60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(-70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(-80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(-90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 5%, 0);
+	}
+}

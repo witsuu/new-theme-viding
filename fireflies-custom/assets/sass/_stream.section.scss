@@ -1,0 +1,115 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 280px;
+		transform: translate(-60%, 0) scaleX(-1);
+		@include min-md {
+			width: 320px;
+		}
+		@include min-lg {
+			width: 340px;
+		}
+		img {
+			transform-origin: 60% 100%;
+		}
+		.orn-2 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 140px;
+			transform: translate(50%, 10%) rotate(-20deg) scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 50% 100%;
+			}
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 30%;
+		right: 0;
+		width: 280px;
+		transform: translate(70%, 0);
+		@include min-md {
+			width: 320px;
+		}
+		@include min-lg {
+			width: 340px;
+		}
+		img {
+			transform-origin: 60% 100%;
+		}
+		.orn-4 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 140px;
+			transform: translate(30%, 10%) rotate(-20deg);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 40% 100%;
+			}
+		}
+	}
+	.ornament-stream {
+		position: relative;
+		width: 100%;
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				border-radius: var(--border-radius);
+				overflow: hidden;
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		width: 100%;
+	}
+}

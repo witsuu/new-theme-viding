@@ -154,6 +154,10 @@
 			text-align: left;
 			background-color: var(--color-main);
 			border-radius: var(--border-radius);
+
+			&-body {
+				position: relative;
+			}
 		}
 
 		.couple-parent {
@@ -194,6 +198,59 @@
 
 				@include max-md {
 					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+				width: 85%;
+				padding-bottom: 2rem;
+
+				.background-element {
+					@include min-md {
+						@include aspect-ratio(4, 3);
+					}
+				}
+			}
+
+			.sosmed-wrap {
+				top: 0;
+			}
+
+			.and {
+				color: var(--color-dark);
+				justify-content: flex-start;
+
+				span {
+					font-size: 28px;
+				}
+			}
+
+			.pagar {
+				@include min-md {
+					width: 130%;
+				}
+			}
+
+			.orn-1 {
+				@include min-md {
+					width: 30%;
+					left: -8%;
+				}
+			}
+
+			.orn-2 {
+				@include min-md {
+					width: 30%;
+					right: -8%;
+				}
+			}
+
+			.orn-3,
+			.orn-4 {
+				@include min-md {
+					width: 40%;
 				}
 			}
 		}

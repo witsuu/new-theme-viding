@@ -1,0 +1,241 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	padding: 5rem 0 0;
+	@include max-md {
+		padding: 3rem 0 0;
+	}
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		margin: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 48px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		.glow-1 {
+			top: 0;
+			right: 30%;
+			width: 15px;
+		}
+		.glow-2 {
+			top: 20%;
+			right: 10%;
+			width: 25px;
+		}
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 240px;
+			transform: translate(50%, 0);
+			@include min-md {
+				width: 260px;
+			}
+			@include min-lg {
+				width: 280px;
+			}
+			img {
+				transform-origin: 60% 100%;
+			}
+		}
+		.orn-2 {
+			position: relative;
+			width: 140px;
+			transform: translate(-30%, 10%) rotate(35deg);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 40% 100%;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+		.glow-3 {
+			top: 0;
+			left: 10%;
+			width: 30px;
+		}
+		.glow-4 {
+			top: 20%;
+			left: 0;
+			width: 20px;
+		}
+		.glow-5 {
+			top: 0;
+			right: 15%;
+			width: 25px;
+		}
+		.glow-6 {
+			top: 35%;
+			right: -10px;
+			width: 15px;
+		}
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			@include max-lg {
+				width: 125%;
+				transform: translateX(-20%);
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 140px;
+			transform: translate(-50%, 0) rotate(35deg);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 50% 100%;
+			}
+			.orn-3 {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 140px;
+				transform: translate(20%, 0);
+				@include min-md {
+					width: 160px;
+				}
+				@include min-lg {
+					width: 180px;
+				}
+				img {
+					transform-origin: 40% 100%;
+				}
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 1rem;
+			right: 0;
+			width: 140px;
+			transform: translate(50%, 0) rotate(-35deg) scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 50% 100%;
+			}
+			.orn-5 {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 120px;
+				transform: translate(20%, 0) scaleX(-1);
+				@include min-md {
+					width: 140px;
+				}
+				@include min-lg {
+					width: 160px;
+				}
+				img {
+					transform-origin: 40% 100%;
+				}
+			}
+		}
+	}
+	.couple-content {
+		position: relative;
+		padding: 5rem 0;
+		background-color: var(--color-primary);
+		border-top-left-radius: var(--border-radius);
+		border-top-right-radius: var(--border-radius);
+		overflow: hidden;
+		@include max-md {
+			padding: 8rem 2rem 3rem;
+		}
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		padding-top: 3rem;
+		background-color: var(--color-primary);
+		border-bottom-left-radius: var(--border-radius);
+		border-bottom-right-radius: var(--border-radius);
+		.image-wrap {
+			width: 80%;
+			position: relative;
+			aspect-ratio: 7/8;
+			margin: 0 auto;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 1rem;
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			transform: translate(-50%, 45%);
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

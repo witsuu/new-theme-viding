@@ -178,6 +178,45 @@
 					}
 				}
 			}
+
+			&.single {
+				text-align: center;
+
+				.and {
+					color: var(--color-dark);
+					padding: 2rem 0 1rem;
+				}
+
+				.image-wrap {
+					margin-bottom: 2rem;
+
+					.image-element {
+						@include min-md {
+							@include aspect-ratio(16, 9);
+						}
+					}
+				}
+
+				.couple-description {
+					padding-top: 0;
+				}
+
+				.sosmed-wrap {
+					margin-left: auto;
+					margin-right: auto;
+				}
+
+				.orn-1,
+				.orn-2 {
+					@include min-md {
+						width: 20%;
+					}
+
+					@include max-sm {
+						top: 40%;
+					}
+				}
+			}
 		}
 
 		.bg {
@@ -237,6 +276,13 @@
 
 			@include min-lg {
 				width: 35%;
+			}
+
+			&.single {
+				@include max-sm {
+					top: 60%;
+					transform: translate(75%, 0);
+				}
 			}
 		}
 

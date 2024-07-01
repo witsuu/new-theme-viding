@@ -1514,21 +1514,20 @@ ul li {
   position: relative;
 }
 .couple-section .and {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  position: relative;
-  padding: 1rem;
+  --color-button-trans: #fff;
+  position: absolute;
+  top: 50%;
+  right: 3rem;
+  transform: translate(0, -50%);
+  border-radius: 100px;
+  border: 1px solid var(--color-button-trans);
+  color: var(--color-button-trans);
   z-index: 3;
-}
-@media (min-width: 768px) {
-  .couple-section .and {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .couple-section .and span {
   position: relative;
@@ -1700,6 +1699,45 @@ ul li {
 }
 .couple-section .couple .sosmed-wrap .fab {
   font-size: 18px;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrap .image-element {
+    padding-top: 177.7777777778%;
+  }
+  .couple-section .couple.single .image-wrap .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 992px) {
+  .couple-section .couple.single .image-wrap .image-element {
+    padding-top: 133.3333333333%;
+  }
+  .couple-section .couple.single .image-wrap .image-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .couple-body {
+    width: 50%;
+  }
+}
+.couple-section .couple.single .couple-body .couple-description {
+  width: 100%;
+  height: 50%;
+}
+.couple-section .couple.single .couple-body .couple-description .name-couple {
+  height: 35%;
+}
+.couple-section .couple.single .couple-body .couple-description .detail-couple {
+  height: 65%;
 }
 
 .story-section {

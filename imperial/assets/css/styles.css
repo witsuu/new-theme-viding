@@ -2113,6 +2113,9 @@ img[alt=tree-1] {
   background-color: var(--color-main);
   border-radius: var(--border-radius);
 }
+.couple-section .couple .couple-description-body {
+  position: relative;
+}
 .couple-section .couple .couple-parent {
   width: 100%;
 }
@@ -2150,6 +2153,55 @@ img[alt=tree-1] {
 @media (max-width: 767px) {
   .couple-section .couple .sosmed-wrap .fab {
     font-size: 16px;
+  }
+}
+.couple-section .couple.single .image-wrap {
+  width: 85%;
+  padding-bottom: 2rem;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .image-wrap .background-element {
+    padding-top: 75%;
+  }
+  .couple-section .couple.single .image-wrap .background-element > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.couple-section .couple.single .sosmed-wrap {
+  top: 0;
+}
+.couple-section .couple.single .and {
+  color: var(--color-dark);
+  justify-content: flex-start;
+}
+.couple-section .couple.single .and span {
+  font-size: 28px;
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .pagar {
+    width: 130%;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .orn-1 {
+    width: 30%;
+    left: -8%;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .orn-2 {
+    width: 30%;
+    right: -8%;
+  }
+}
+@media (min-width: 768px) {
+  .couple-section .couple.single .orn-3,
+  .couple-section .couple.single .orn-4 {
+    width: 40%;
   }
 }
 
