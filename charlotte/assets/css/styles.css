@@ -131,6 +131,10 @@ h1 span {
   }
 }
 
+h3 {
+  font-size: 42px;
+}
+
 small {
   font-size: 12px;
 }
@@ -1472,14 +1476,9 @@ img[alt=tree-5] {
 .cover-section .cover-wrapper .cover-content .cover-body {
   position: relative;
   width: 100%;
-  padding: 3rem 1rem;
+  padding: 8rem 1.5rem 2rem;
   border-radius: 300px 300px 15px 15px;
   box-shadow: inset 0.25rem 1rem 2rem rgba(0, 0, 0, 0.15);
-}
-@media (max-width: 991px) {
-  .cover-section .cover-wrapper .cover-content .cover-body {
-    padding: 3rem 1.5rem 1.5rem;
-  }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
   position: relative;
@@ -1551,7 +1550,7 @@ img[alt=tree-5] {
 }
 .cover-section .tree-1 .tree {
   position: absolute;
-  top: 20%;
+  bottom: 2%;
   right: 38%;
   width: 60%;
 }
@@ -1581,7 +1580,7 @@ img[alt=tree-5] {
 }
 .cover-section .tree-2 .tree {
   position: absolute;
-  top: 15%;
+  bottom: 2%;
   left: 56%;
   width: 60%;
 }
@@ -2770,7 +2769,7 @@ img[alt=tree-5] {
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
-  max-height: 33rem;
+  height: 33rem;
   overflow: auto;
   padding-right: 1rem;
   color: var(--color-dark);

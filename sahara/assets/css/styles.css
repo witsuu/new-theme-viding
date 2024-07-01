@@ -2191,7 +2191,7 @@ img[alt=flower] {
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
-  max-height: 32rem;
+  height: 32rem;
   overflow: auto;
   padding-right: 1rem;
   color: var(--color-dark);

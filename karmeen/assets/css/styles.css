@@ -104,7 +104,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Edensor", cursive;
+  font-family: "Edensor", serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -199,7 +199,7 @@ span {
 }
 
 .font-secondary {
-  font-family: "Edensor", cursive;
+  font-family: "Edensor", serif;
 }
 
 .scaleX-reverse {
@@ -1203,7 +1203,7 @@ ul li {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 38px;
-  font-family: "Edensor", cursive;
+  font-family: "Edensor", serif;
   border: solid 1px var(--color-button-trans);
   border-radius: 100px;
   width: 70px;
@@ -1533,7 +1533,7 @@ ul li {
   position: relative;
   font-size: 36px;
   font-weight: 400;
-  font-family: "Edensor", cursive;
+  font-family: "Edensor", serif;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -1815,13 +1815,15 @@ ul li {
   justify-content: center;
   align-items: stretch;
 }
+@media (min-width: 768px) {
+  .venue-section .venue-wrapper .venue-content.row-reverse {
+    flex-direction: row-reverse;
+  }
+}
 @media (max-width: 575px) {
   .venue-section .venue-wrapper .venue-content {
     flex-direction: column;
     align-items: flex-start;
-  }
-  .venue-section .venue-wrapper .venue-content.row-reverse {
-    flex-direction: column-reverse;
   }
 }
 .venue-section .venue-wrapper .venue-content .image-element {
@@ -1897,7 +1899,7 @@ ul li {
   margin-bottom: 2rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name h4 {
-  font-family: "Edensor", cursive;
+  font-family: "Edensor", serif;
   font-size: 28px;
   margin-bottom: 2rem;
 }
