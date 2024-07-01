@@ -228,6 +228,10 @@
 	animation-name: lambai;
 }
 
+[data-anim="lambai2"].has-animate {
+	animation-name: lambai2;
+}
+
 @keyframes rotateRight {
 	0% {
 		transform: rotateZ(0);
@@ -255,6 +259,16 @@
 
 	100% {
 		transform: rotateZ(-5deg);
+	}
+}
+
+@keyframes lambai2 {
+	0% {
+		transform: rotateZ(-5deg);
+	}
+
+	100% {
+		transform: rotateZ(5deg);
 	}
 }
 
