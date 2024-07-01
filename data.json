@@ -452,36 +452,66 @@
 	{
 		"name": "Robert",
 		"path": "robert",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Hanna",
 		"path": "hanna",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Roger",
 		"path": "roger",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Kito",
 		"path": "kito",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom SF",
 		"path": "custom-sf",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom NG",
 		"path": "custom-ng",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Custom RR",
 		"path": "custom-rr",
+		"status": "DONE"
+	},
+	{
+		"name": "Charlotte",
+		"path": "charlotte",
+		"status": ""
+	},
+	{
+		"name": "Imperial",
+		"path": "imperial",
+		"status": ""
+	},
+	{
+		"name": "Karmeen",
+		"path": "karmeen",
+		"status": ""
+	},
+	{
+		"name": "Sahara",
+		"path": "sahara",
+		"status": ""
+	},
+	{
+		"name": "Closehart",
+		"path": "closehart",
+		"status": ""
+	},
+	{
+		"name": "Fireflies Custom",
+		"path": "fireflies-custom",
 		"status": ""
 	}
 ]
