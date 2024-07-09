@@ -23,20 +23,29 @@
 		height: 100vh;
 		display: flex;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-end;
 
 		@include min-lg {
 			padding: 5rem 0 0;
 		}
 
+		@include max-xs {
+			padding: 5rem 0 8rem;
+		}
+
 		.cover-content {
 			position: relative;
-			width: 80%;
-			padding: 8rem 1.5rem 2rem;
+			width: 95%;
+			padding: 0 1.5rem 2rem;
 			color: var(--color-light);
 
 			@include min-lg {
 				padding: 6rem 1.5rem 14rem;
+				width: 80%;
+			}
+
+			@include ipad {
+				width: 60%;
 			}
 
 			.cover-content-bg {
@@ -49,16 +58,25 @@
 				border-radius: 300px 300px 30px 30px;
 				opacity: .6;
 				content: "";
+
+				@include max-lg {
+					border-radius: 30px;
+				}
 			}
 
 			.cover-body {
 				position: relative;
-				z-index: 5;
+
+				@include max-xs {
+					transform: scale(.9);
+					z-index: 5;
+				}
 
 				.cover-description {
 					position: relative;
 					width: 100%;
 					text-align: center;
+					z-index: 5;
 
 					.image-wrapper {
 						position: relative;
@@ -134,6 +152,10 @@
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%, 0);
+
+		@include max-sm {
+			width: 140%;
+		}
 	}
 
 	.land {

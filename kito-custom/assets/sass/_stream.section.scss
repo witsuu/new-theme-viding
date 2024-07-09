@@ -1,69 +1,33 @@
 .stream-section {
 	position: relative;
 
-	.sky {
-		position: absolute;
-		top: 0;
-		left: 50%;
-		width: 140%;
-		transform: translate(-50%, 0%);
-	}
-
 	.rumah {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		width: 250%;
-		transform: translate(-50%, 15%);
+		width: 200%;
+		transform: translate(-50%, 0);
 		opacity: .2;
 	}
 
-	.orn-1 {
+	.elements-absolute {
+		transform: translateY(-5%);
+	}
+
+	.tree-1 {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 80%;
-		transform: translate(-70%, 1.5rem);
+		transform: translate(-60%, 0);
 	}
 
-	.orn-2 {
+	.tree-2 {
 		position: absolute;
 		top: 0;
 		right: 0;
 		width: 80%;
-		transform: translate(70%, 1.5rem);
-	}
-
-	.orn-3 {
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 30%;
-		transform: translate(-50%, 0);
-	}
-
-	.orn-4 {
-		position: absolute;
-		top: 0;
-		right: 0;
-		width: 30%;
-		transform: translate(35%, 0) scaleX(-1);
-	}
-
-	.orn-5 {
-		position: absolute;
-		top: -5rem;
-		left: -1.5rem;
-		width: 35%;
-		transform: translate(-55%, 0) rotate(20deg);
-	}
-
-	.orn-6 {
-		position: absolute;
-		top: -5rem;
-		right: -1.5rem;
-		width: 35%;
-		transform: translate(55%, 0) rotate(-20deg) scaleX(-1);
+		transform: translate(65%, 0);
 	}
 
 	.image-wrapper {

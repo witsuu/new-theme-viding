@@ -1,4 +1,4 @@
-gsap.registerPlugin(ScrollTrigger,Flip)
+gsap.registerPlugin(ScrollTrigger, Flip)
 
 window.scrollTo(0, 0);
 
@@ -131,7 +131,7 @@ const runAnimationOrnamentCover = () => {
 	document.querySelectorAll(".cover-section [data-anim]").forEach(vs => {
 		ScrollTrigger.create({
 			trigger: vs,
-			start: "top bottom",
+			start: vs.dataset.animAnchor ? vs.dataset.animAnchor : "top bottom",
 			onToggle: self => {
 				if (self.isActive) {
 					if (vs.dataset.animDuration) vs.style.animationDuration = vs.dataset.animDuration

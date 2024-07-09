@@ -9,12 +9,17 @@
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 15rem 0 0;
+		padding: 13rem 0 0;
 		min-height: 100vh;
 		display: flex;
 		justify-content: flex-end;
 		align-items: center;
 		flex-direction: column;
+
+		@include max-sm {
+			min-height: 85vh;
+			padding: 14rem 0 0;
+		}
 
 		.header {
 			position: relative;
