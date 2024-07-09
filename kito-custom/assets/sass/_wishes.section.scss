@@ -1,0 +1,187 @@
+.wishes-section {
+	position: relative;
+
+	.wishes-wrapper-form {
+		position: relative;
+		padding: 3rem 0 0;
+		overflow: hidden;
+
+		@include ipad {
+			padding: 5rem 0 0;
+		}
+
+		.tree-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(-70%, 0);
+		}
+
+		.tree-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(75%, 0);
+		}
+
+		.rumah {
+			position: absolute;
+			bottom: 3rem;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+			opacity: .2;
+		}
+
+		.land {
+			position: absolute;
+			bottom: 0;
+			left: 55%;
+			width: 120%;
+			transform: translate(-50%, 24%);
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-15%, 40%);
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 15%;
+			transform: translate(-50%, 40%);
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(35%, 20%) rotate(-90deg);
+
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 2.5rem;
+			width: 15%;
+			transform: translate(0, 50%) rotate(-20deg);
+		}
+
+		.orn-5 {
+			position: absolute;
+			bottom: 4rem;
+			right: 0;
+			width: 18%;
+			transform: translate(45%, 0) rotate(30deg) scaleX(-1);
+		}
+	}
+
+	.card-form {
+		background-color: transparent;
+
+		&.card {
+			border: none;
+		}
+
+		.card-body {
+			padding: 0 2rem 2rem;
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		background-color: var(--color-primary);
+		overflow: hidden;
+
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+
+						h6 {
+							font-weight: bold;
+						}
+
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

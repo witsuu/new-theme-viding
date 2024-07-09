@@ -1,0 +1,56 @@
+.story-section {
+	position: relative;
+	padding: 0 0 3rem;
+
+	@include ipad {
+		padding: 0 0 5rem;
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 130%;
+		transform: translate(-2rem, 6rem) scaleX(-1);
+		opacity: .15;
+
+		@include ipad {
+			transform: translate(-2rem, 4rem) scaleX(-1);
+		}
+	}
+
+	.story-content {
+		position: relative;
+
+		.story-description {
+			position: relative;
+			text-align: left;
+			padding: 0 1rem;
+
+			.title-section {
+				text-align: left;
+			}
+		}
+	}
+
+
+	.image-wrapper {
+		position: relative;
+		width: 84%;
+		margin-bottom: 1.5rem;
+
+		.image-element {
+			@include aspect-ratio(1, 1);
+
+			@include ipad {
+				@include aspect-ratio(6, 4);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

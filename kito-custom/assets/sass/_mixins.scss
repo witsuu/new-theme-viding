@@ -1,0 +1,95 @@
+@mixin min-sm {
+  @media (min-width: map-get($breakpoints-min, sm)) {
+    @content;
+  }
+}
+
+@mixin min-md {
+  @media (min-width: map-get($breakpoints-min, md)) {
+    @content;
+  }
+}
+
+@mixin min-lg {
+  @media (min-width: map-get($breakpoints-min, lg)) {
+    @content;
+  }
+}
+
+@mixin min-xl {
+  @media (min-width: map-get($breakpoints-min, xl)) {
+    @content;
+  }
+}
+
+@mixin min-xxl {
+  @media (min-width: map-get($breakpoints-min, xxl)) {
+    @content;
+  }
+}
+
+@mixin min-4k {
+  @media (min-width: map-get($breakpoints-min, 4k)) {
+    @content;
+  }
+}
+
+@mixin min-rwd($screen) {
+  @media (min-width: $screen) {
+    @content;
+  }
+}
+
+@mixin max-xs {
+  @media (max-width: map-get($breakpoints-max, xs)) {
+    @content;
+  }
+}
+
+@mixin max-sm {
+  @media (max-width: map-get($breakpoints-max, sm)) {
+    @content;
+  }
+}
+
+@mixin max-md {
+  @media (max-width: map-get($breakpoints-max, md)) {
+    @content;
+  }
+}
+
+@mixin max-lg {
+  @media (max-width: map-get($breakpoints-max, lg)) {
+    @content;
+  }
+}
+
+@mixin max-xl {
+  @media (max-width: map-get($breakpoints-max, xl)) {
+    @content;
+  }
+}
+
+@mixin max-rwd($screen) {
+  @media (max-width: $screen) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: map-get($breakpoints-max, lg)) and (min-width: map-get($breakpoints-min, md)) {
+    @content;
+  }
+}
+
+@mixin aspect-ratio($w, $h) {
+  padding-top: calc(($h / $w) * 100%);
+
+  &>* {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
