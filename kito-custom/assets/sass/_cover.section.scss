@@ -40,7 +40,7 @@
 			color: var(--color-light);
 
 			@include min-lg {
-				padding: 6rem 1.5rem 14rem;
+				padding: 6rem 1.5rem 15rem;
 				width: 80%;
 			}
 
@@ -164,6 +164,10 @@
 		left: 50%;
 		width: 100%;
 		transform: translate(-50%, 0);
+
+		@include min-lg {
+			transform: translate(-50%, 10%);
+		}
 
 		.rumah {
 			position: absolute;

@@ -1596,7 +1596,7 @@ img[alt=flower-6] {
 }
 @media (min-width: 992px) {
   .cover-section .cover-wrapper .cover-content {
-    padding: 6rem 1.5rem 14rem;
+    padding: 6rem 1.5rem 15rem;
     width: 80%;
   }
 }
@@ -1716,6 +1716,11 @@ img[alt=flower-6] {
   left: 50%;
   width: 100%;
   transform: translate(-50%, 0);
+}
+@media (min-width: 992px) {
+  .cover-section .land {
+    transform: translate(-50%, 10%);
+  }
 }
 .cover-section .land .rumah {
   position: absolute;
@@ -3107,6 +3112,14 @@ img[alt=flower-6] {
   position: relative;
   background-color: var(--color-primary);
   overflow: hidden;
+}
+.wishes-section .wishes-preview .no-comment {
+  padding-left: 4rem;
+}
+@media (max-width: 575px) {
+  .wishes-section .wishes-preview .no-comment {
+    padding-left: 3rem;
+  }
 }
 .wishes-section .wishes-preview .card {
   position: relative;

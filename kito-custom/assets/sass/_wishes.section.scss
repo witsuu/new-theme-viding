@@ -102,6 +102,14 @@
 		background-color: var(--color-primary);
 		overflow: hidden;
 
+		.no-comment {
+			padding-left: 4rem;
+
+			@include max-sm {
+				padding-left: 3rem;
+			}
+		}
+
 		.card {
 			position: relative;
 			border: none;
