@@ -1,0 +1,61 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.overlay-elements-gradient {
+		height: 100%;
+
+		&.overlay-bottom {
+			background: linear-gradient(to top, var(--color-primary) 0%, transparent 30%);
+		}
+	}
+
+	.mountain {
+		position: relative;
+		width: 100%;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+			background-color: var(--color-primary);
+			color: var(--color-dark);
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}

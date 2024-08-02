@@ -1,0 +1,62 @@
+.thank-section {
+	position: relative;
+
+
+	.thank-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		width: 100%;
+
+		@include max-sm {
+			flex-direction: column;
+		}
+
+		.image-wrapper {
+			position: relative;
+			width: 50%;
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			.image-element {
+				@include aspect-ratio(5, 6);
+
+				.thank-background {
+					object-fit: cover;
+				}
+			}
+		}
+
+		.thank {
+			position: relative;
+			width: 50%;
+			text-align: center;
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			&-body {
+				padding: 3rem 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}

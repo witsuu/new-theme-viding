@@ -1,0 +1,31 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	padding: 5rem 0 0;
+
+	@include max-md {
+		padding: 3rem 0 0;
+	}
+
+	.overlay-bottom {
+		background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
+	}
+
+	.mountain {
+		position: relative;
+		width: 100%;
+	}
+
+	.appology-wrap {
+		position: relative;
+		background-color: var(--color-main);
+		padding: 3rem 2rem;
+		border-radius: 4px;
+		text-align: center;
+		margin-bottom: 1rem;
+
+		@include max-sm {
+			padding: 3rem 1.8rem;
+		}
+	}
+}

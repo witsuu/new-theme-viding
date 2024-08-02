@@ -1,0 +1,96 @@
+.countdown {
+	position: relative;
+	display: grid;
+	grid-template-columns: 1fr;
+	margin: 0 auto;
+	width: fit-content;
+	gap: 1rem;
+	z-index: 3;
+	padding: 1rem 0;
+	color: var(--color-dark);
+
+	@include max-md {
+		gap: 0.5rem;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-primary);
+		opacity: .3;
+		border-radius: 300px;
+		content: "";
+	}
+
+	&::after {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border-radius: 300px;
+		box-shadow: 0 0 2rem var(--color-primary);
+		pointer-events: none;
+		opacity: .6;
+		content: "";
+	}
+
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		padding: 0 1rem;
+		min-width: 80px;
+
+		@include max-md {
+			min-width: 65px;
+			padding: 1rem 0.75rem;
+		}
+
+		@include max-xs {
+			min-width: 63px;
+		}
+
+		@include max-rwd(350px) {
+			min-width: 72px;
+		}
+
+		.huruf {
+			font-size: 14px;
+			font-weight: 600;
+
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+
+		.angka {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 38px;
+			font-family: $font-secondary;
+
+			@include max-md {
+				font-size: 32px;
+			}
+
+			@include max-xs {
+				font-size: 28px;
+			}
+		}
+
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

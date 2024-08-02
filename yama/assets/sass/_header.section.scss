@@ -1,0 +1,70 @@
+.header-section {
+	position: relative;
+	width: 100%;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	.scroll-icon {
+		position: relative;
+		margin-top: 1rem;
+
+		rect {
+			stroke: var(--color-dark);
+		}
+	}
+
+	.header-content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+
+		.header {
+			position: relative;
+			width: 35%;
+			padding: 4.5rem 0;
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+			}
+
+			@include max-sm {
+				width: 85%;
+			}
+
+			.header-title {
+				position: relative;
+				text-align: center;
+
+				&-content {
+					position: relative;
+				}
+			}
+
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
