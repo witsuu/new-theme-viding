@@ -1,0 +1,44 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 3rem 2rem;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+
+		@include max-sm {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-40%, 0) scaleX(-1);
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(40%, 0);
+
+		@include max-sm {
+			width: 75%;
+		}
+	}
+}

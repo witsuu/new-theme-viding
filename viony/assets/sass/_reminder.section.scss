@@ -1,0 +1,39 @@
+.reminder-wrap {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 100%;
+	transform: translateY(-50%);
+
+	.reminder-content {
+		position: relative;
+		width: fit-content;
+		max-width: 100%;
+		margin: 0 auto;
+		z-index: 2;
+		color: var(--color-light);
+
+		@include max-sm {
+			width: 100%;
+		}
+	}
+
+	.btn-reminder {
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1rem;
+		background-color: transparent;
+		border: 1px solid var(--color-light);
+		border-radius: 50px;
+
+		path {
+			fill: var(--color-light);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

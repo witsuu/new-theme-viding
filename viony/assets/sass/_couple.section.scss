@@ -1,0 +1,132 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-weight: 400;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+	}
+
+	.couple-body {
+		position: relative;
+	}
+
+	.couple-content {
+		position: relative;
+		padding: 3rem 2rem;
+		margin-bottom: 3rem;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+
+		@include max-sm {
+			padding: 2rem 1.5rem;
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			width: 100%;
+			position: relative;
+
+			.image-element {
+				@include aspect-ratio(1, 1);
+
+				.couple-image {
+					object-fit: cover;
+					border-radius: 300px;
+				}
+			}
+
+			.mask {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+
+				svg {
+					path {
+						fill: var(--color-main);
+					}
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 1rem;
+
+			h3 {
+				font-size: 38px;
+			}
+
+			.couple-parent {
+				width: 100%;
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				padding: 0.5rem 1rem;
+				border-radius: 50px;
+				margin: 0 auto;
+				border: 1px solid var(--color-button-trans);
+
+				.sosmed {
+					color: var(--color-button-trans);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+	}
+}

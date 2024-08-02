@@ -1,0 +1,66 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: 480px;
+
+		@include max-sm {
+			width: 95%;
+			margin: 0 auto;
+		}
+
+		.image-element {
+			height: 100%;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($color: #000000, $alpha: .2);
+				border-radius: 0 var(--border-radius) var(--border-radius) 0;
+				content: "";
+
+				@include max-sm {
+					border-radius: 0 0 var(--border-radius) var(--border-radius);
+				}
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 0 var(--border-radius) var(--border-radius) 0;
+
+				@include max-sm {
+					border-radius: 0 0 var(--border-radius) var(--border-radius);
+				}
+			}
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+		box-shadow: 0 0 1rem rgba($color: #000000, $alpha: .15);
+
+		@include max-lg {
+			padding: 2rem 1.8rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

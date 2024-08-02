@@ -1,0 +1,173 @@
+.header-section {
+	position: relative;
+	width: 100%;
+
+	.scroll-icon {
+		position: relative;
+		margin-top: 1rem;
+	}
+
+	.header-content {
+		position: relative;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		min-height: 100vh;
+
+		@include max-lg {
+			min-height: 80vh;
+		}
+
+		.header {
+			position: relative;
+			width: 35%;
+			padding: 4.5rem 0;
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+			}
+
+			@include max-sm {
+				width: 85%;
+			}
+
+			.header-title {
+				position: relative;
+				text-align: center;
+
+				&-content {
+					position: relative;
+
+					.image-wrapper {
+						position: relative;
+						width: 100%;
+						@include aspect-ratio(3, 4);
+						margin-bottom: 3rem;
+
+						.image-element {
+							height: 100%;
+							background-color: var(--color-primary);
+							border-radius: 300px;
+							padding: 1rem;
+
+							img {
+								width: 100%;
+								height: 100%;
+								object-fit: cover;
+								border-radius: 300px;
+							}
+						}
+					}
+				}
+			}
+
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+
+	.brush-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(20%, -20%) scaleX(-1);
+		opacity: .2;
+
+		@include max-lg {
+			width: 50%;
+			transform: translate(40%, -20%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.brush-2 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%, -50%);
+		opacity: .2;
+
+		@include max-lg {
+			width: 50%;
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-35%, -20%);
+
+		@include max-lg {
+			width: 50%;
+			transform: translate(-35%, 0%);
+		}
+
+		@include max-sm {
+			width: 60%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 80%;
+			right: 22%;
+			width: 75%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 60%;
+		right: 0;
+		width: 30%;
+		transform: translate(35%, -50%) scale(-1);
+
+		@include max-lg {
+			top: 80%;
+			width: 50%;
+		}
+
+		@include max-sm {
+			width: 60%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 70%;
+			right: 20%;
+			width: 80%;
+			transform: scaleY(-1);
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}

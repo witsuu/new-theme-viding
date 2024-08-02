@@ -1,0 +1,97 @@
+.story-section {
+	position: relative;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-secondary);
+		opacity: .1;
+		content: "";
+		box-shadow: 0 0 2rem rgba($color: #000000, $alpha: .5);
+	}
+
+	.story {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+
+		.story-content {
+			position: relative;
+
+			.story-description {
+				position: relative;
+				text-align: center;
+				padding: 3rem 2rem 0;
+
+				@include max-sm {
+					padding: 2rem 1.5rem 0;
+				}
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 25%;
+			transform: translate(-50%, -50%);
+
+			@include max-lg {
+				top: 30%;
+				width: 50%;
+			}
+
+			@include max-sm {
+				width: 60%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(35%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 50%;
+				transform: translate(35%, -15%) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 60%;
+			}
+
+			.orn-3 {
+				position: absolute;
+				top: 70%;
+				right: 20%;
+				width: 80%;
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(16, 9);
+
+			@include max-md {
+				@include aspect-ratio(4, 3);
+			}
+
+			img {
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+}
