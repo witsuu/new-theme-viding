@@ -30,7 +30,56 @@
 		padding: 5rem 0;
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 5rem 0 3rem;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(25%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 45%;
+			}
+
+			@include max-sm {
+				width: 55%;
+				transform: translate(35%, -35%) scaleX(-1);
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 60%;
+			left: 0;
+			width: 15%;
+			transform: translate(-35%, -50%);
+
+			@include max-lg {
+				width: 35%;
+			}
+
+			@include max-sm {
+				width: 45%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 60%;
+			right: 0;
+			width: 15%;
+			transform: translate(35%, -50%) scaleX(-1);
+
+			@include max-lg {
+				width: 35%;
+			}
+
+			@include max-sm {
+				width: 45%;
+			}
 		}
 	}
 
@@ -39,6 +88,10 @@
 		background-color: var(--color-primary);
 		color: var(--color-dark);
 		padding: 2rem 1rem;
+
+		@include max-sm {
+			padding: 0 0 2rem;
+		}
 	}
 
 	.couple-content {
@@ -53,9 +106,18 @@
 	.couple {
 		position: relative;
 		padding: 2rem;
+		overflow: hidden;
 
 		@include max-sm {
-			padding: 0 1rem 2rem;
+			padding: 2rem 3rem;
+		}
+
+		.mountain {
+			position: absolute;
+			top: -1px;
+			left: 50%;
+			width: 120%;
+			transform: translate(-50%, 0);
 		}
 
 		.image-wrap {
@@ -116,6 +178,12 @@
 
 		&.man {
 
+			.mountain {
+				@include max-sm {
+					background-color: var(--color-main);
+				}
+			}
+
 			.image-wrap {
 				margin-right: auto;
 			}
@@ -130,6 +198,11 @@
 		}
 
 		&.woman {
+
+			.mountain {
+				transform: translate(-50%, 0) scaleX(-1);
+			}
+
 			.image-wrap {
 				margin-left: auto;
 			}

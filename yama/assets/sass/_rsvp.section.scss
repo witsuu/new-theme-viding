@@ -3,7 +3,7 @@
 	padding: 0 0 5rem;
 
 	@include max-md {
-		padding: 0 0 3rem;
+		padding: 0;
 	}
 
 	.image-wrapper {
@@ -32,15 +32,23 @@
 
 		.rsvp-form {
 			position: relative;
-			padding: 5rem 5rem 1rem;
+			padding: 8rem 5rem 1rem;
 
 			@include max-md {
-				padding: 3rem 3rem 1rem;
+				padding: 5rem 3rem 1rem;
 			}
 
 			.title-section {
 				text-align: left;
 			}
 		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(35%, -25%) scaleX(-1);
 	}
 }

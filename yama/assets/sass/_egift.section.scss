@@ -142,6 +142,11 @@
 	.mountain {
 		position: relative;
 		width: 100%;
+
+		@include max-lg {
+			width: 120%;
+			margin-left: -10%;
+		}
 	}
 }
 

@@ -117,4 +117,71 @@
 			}
 		}
 	}
+
+	.bg {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-53%, 35%) scaleX(-1);
+		opacity: .2;
+
+		@include max-lg {
+			width: 180%;
+			transform: translate(-53%, 15%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 200%;
+		}
+	}
+
+	.mountain {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 120%;
+		transform: translate(-50%, 40%);
+
+		@include max-lg {
+			width: 140%;
+			transform: translate(-50%, 30%);
+		}
+
+		@include max-sm {
+			width: 160%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-35%, -20%);
+
+		@include max-lg {
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(42%, -20%) scaleX(-1);
+
+		@include max-lg {
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
 }

@@ -1,10 +1,10 @@
 .reminder-wrap {
 	position: relative;
 	display: block;
-	padding: 0 0 5rem;
+	padding: 5rem 0 10rem;
 
 	@include max-md {
-		padding: 0 0 3rem;
+		padding: 5rem 0 8rem;
 	}
 
 	.reminder-content {
@@ -29,6 +29,98 @@
 		path {
 			fill: var(--text-button);
 			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.mountain-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 140%;
+		}
+
+		@include max-sm {
+			width: 160%;
+		}
+
+		.mountain-2 {
+			position: absolute;
+			top: 35%;
+			left: 40%;
+			width: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.land {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			width: 150%;
+			transform: translate(-60%, 0);
+
+			@include max-sm {
+				top: 65%;
+			}
+		}
+	}
+
+	.tree {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-60%, 0);
+
+		@include max-lg {
+			width: 60%;
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-25%, 0);
+
+		@include max-lg {
+			width: 45px;
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 11%;
+		transform: translate(10%, 25%) rotate(15deg) scaleX(-1);
+
+		@include max-lg {
+			width: 20%;
+		}
+
+		@include max-sm {
+			width: 30%;
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 100%;
+			width: 100%;
+			transform: rotate(15deg) scaleX(-1);
 		}
 	}
 }

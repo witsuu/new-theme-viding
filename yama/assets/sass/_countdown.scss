@@ -7,7 +7,6 @@
 	gap: 1rem;
 	z-index: 3;
 	padding: 1rem 0;
-	color: var(--color-dark);
 
 	@include max-md {
 		gap: 0.5rem;
@@ -19,8 +18,8 @@
 		left: 0;
 		width: 100%;
 		height: 100%;
-		background-color: var(--color-primary);
-		opacity: .3;
+		background-color: var(--color-main);
+		opacity: .45;
 		border-radius: 300px;
 		content: "";
 	}
@@ -32,9 +31,8 @@
 		width: 100%;
 		height: 100%;
 		border-radius: 300px;
-		box-shadow: 0 0 2rem var(--color-primary);
+		box-shadow: 0 0 1rem var(--color-main);
 		pointer-events: none;
-		opacity: .6;
 		content: "";
 	}
 
@@ -52,7 +50,6 @@
 
 		@include max-md {
 			min-width: 65px;
-			padding: 1rem 0.75rem;
 		}
 
 		@include max-xs {
@@ -80,10 +77,6 @@
 
 			@include max-md {
 				font-size: 32px;
-			}
-
-			@include max-xs {
-				font-size: 28px;
 			}
 		}
 

@@ -8,7 +8,7 @@
 		color: var(--color-dark);
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 5rem 1rem 3rem;
 		}
 
 		.story-content {
@@ -21,6 +21,23 @@
 				.title-section {
 					text-align: left;
 				}
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 20%;
+			transform: translate(10%, 0) scaleX(-1);
+
+			@include max-lg {
+				width: 40%;
+			}
+
+			@include max-sm {
+				width: 50%;
+				transform: translate(20%, -30%) scaleX(-1);
 			}
 		}
 	}

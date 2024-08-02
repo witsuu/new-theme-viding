@@ -20,6 +20,10 @@
 		justify-content: center;
 		min-height: 100vh;
 
+		@include max-lg {
+			min-height: 85vh;
+		}
+
 		.header {
 			position: relative;
 			width: 35%;
@@ -43,11 +47,260 @@
 
 				&-content {
 					position: relative;
+					padding: 3rem 0;
+					color: var(--color-dark);
+
+					&::before {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+						border-radius: 300px;
+						background: radial-gradient(ellipse, var(--color-primary) 20%, transparent 70%);
+						opacity: .8;
+						content: "";
+					}
 				}
 			}
 
 			#scroll-animate {
 				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+
+	.mountain-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+
+		@include max-lg {
+			top: 8rem;
+			width: 120%;
+		}
+
+		@include max-sm {
+			top: 5rem;
+			width: 140%;
+		}
+
+		.mountain-2 {
+			position: absolute;
+			top: 35%;
+			left: 40%;
+			width: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.land {
+			position: absolute;
+			top: 60%;
+			left: 50%;
+			width: 150%;
+			transform: translate(-60%, 0);
+		}
+	}
+
+	.mountain-3 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 50%;
+		transform: translate(-60%, 50%);
+
+		@include max-lg {
+			width: 80%;
+			transform: translate(-60%, 10%);
+		}
+
+		@include max-sm {
+			width: 100%;
+			transform: translate(-60%, 0%);
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 45%;
+			bottom: 5rem;
+			transform: translate(-65%, 0);
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(0, 60%);
+
+		@include max-lg {
+			width: 50%;
+		}
+
+		@include max-sm {
+			width: 60%;
+		}
+	}
+
+	.tree-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(50%, 0);
+
+		@include max-lg {
+			bottom: 5rem;
+			width: 45%;
+			transform: translate(65%, 0);
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.tree-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(20%, 65%);
+
+		@include max-lg {
+			width: 50%;
+		}
+
+		@include max-sm {
+			width: 60%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-25%, -35%);
+
+		@include max-lg {
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(25%, -25%) scaleX(-1);
+
+		@include max-lg {
+			width: 45%;
+		}
+
+		@include max-sm {
+			width: 55%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(0, 28%);
+
+		@include max-lg {
+			width: 35%;
+			transform: translate(-50%, 10%);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 15%;
+			left: 80%;
+			width: 70%;
+
+			@include max-lg {
+				top: 35%;
+				left: 60%;
+			}
+
+			.orn-5 {
+				position: absolute;
+				top: 10%;
+				left: 100%;
+				width: 100%;
+				transform: scaleX(-1);
+
+				@include max-lg {
+					left: 60%;
+				}
+			}
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(5%, 25%) scaleX(-1);
+
+		@include max-lg {
+			width: 35%;
+			transform: translate(50%, 10%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+
+		.orn-7 {
+			position: absolute;
+			top: 15%;
+			left: 100%;
+			width: 70%;
+
+			@include max-lg {
+				top: 30%;
+				left: 60%;
+			}
+
+			.orn-8 {
+				position: absolute;
+				top: 10%;
+				left: 100%;
+				width: 100%;
+				transform: scaleX(-1);
+
+				@include max-sm {
+					top: 20%;
+					left: 50%;
+				}
 			}
 		}
 	}

@@ -7,25 +7,53 @@
 		padding: 3rem 0 0;
 	}
 
-	.overlay-bottom {
-		background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
-	}
-
 	.mountain {
 		position: relative;
 		width: 100%;
+
+		@include max-sm {
+			width: 120%;
+			margin-left: -10%;
+		}
+
+		.overlay-bottom {
+			background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
+		}
 	}
 
 	.appology-wrap {
 		position: relative;
-		background-color: var(--color-main);
 		padding: 3rem 2rem;
 		border-radius: 4px;
 		text-align: center;
 		margin-bottom: 1rem;
+		overflow: hidden;
 
 		@include max-sm {
 			padding: 3rem 1.8rem;
+		}
+
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: calc(100% - 5rem);
+			background-color: var(--color-main);
+			content: "";
+		}
+
+		.land {
+			position: relative;
+			width: calc(100% + 6rem);
+			margin-top: -3rem;
+			margin-left: -3rem;
+			margin-bottom: -5rem;
+			transform: scaleX(-1);
+
+			.overlay-elements-gradient {
+				height: 60%;
+			}
 		}
 	}
 }
