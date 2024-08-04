@@ -1,0 +1,255 @@
+.couple-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 28px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0 3rem;
+
+		@include ipad {
+			padding: 5rem 0;
+		}
+
+		.couple-content {
+			position: relative;
+			padding-right: 3rem;
+			text-align: left;
+			margin-bottom: 3rem;
+
+			p {
+				margin-bottom: 0;
+			}
+
+			.title-section {
+				text-align: left;
+			}
+		}
+
+		.couple {
+			position: relative;
+			width: 90%;
+			color: var(--color-dark);
+
+			&-left {
+				text-align: left;
+				margin-right: auto;
+
+				.sosmed-wrap {
+					left: 3rem;
+				}
+			}
+
+			&-right {
+				text-align: right;
+				margin-left: auto;
+
+				.sosmed-wrap {
+					right: 3rem;
+				}
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: var(--bg-custom);
+				border-radius: 300px 300px 0 0;
+				content: "";
+			}
+
+			.image-wrap {
+				position: relative;
+				width: 100%;
+
+				.image-element {
+					@include aspect-ratio(5, 6);
+
+					.couple-image {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+						border-radius: 300px 300px 0 0;
+					}
+				}
+			}
+
+			.couple-description {
+				position: relative;
+				padding: 1rem 3rem 1.5rem;
+
+				h3 {
+					position: relative;
+				}
+
+				.couple-parent {
+					position: relative;
+					width: 100%;
+					margin-bottom: 0.5rem;
+
+					p {
+						margin-bottom: 0;
+					}
+				}
+
+				.sosmed-wrap {
+					position: absolute;
+					bottom: 0;
+					width: fit-content;
+					max-width: 100%;
+					padding: 0.5rem 0.6rem;
+					border-radius: 50px;
+					background-color: var(--color-secondary);
+					transform: translateY(50%);
+
+					.sosmed {
+						color: var(--text-button);
+						text-decoration: none;
+						display: block;
+						width: fit-content;
+						margin: 0 auto;
+
+						small {
+							align-items: center;
+							gap: 0.25rem;
+							display: flex;
+							justify-content: center;
+						}
+					}
+
+					.fab {
+						font-size: 18px;
+
+						@include max-md {
+							font-size: 16px;
+						}
+					}
+				}
+			}
+		}
+
+		.tree-1 {
+			position: absolute;
+			bottom: 6rem;
+			left: 0;
+			width: 12%;
+			transform: translate(-40%, 0);
+
+			@include max-sm {
+				width: 15%;
+			}
+		}
+
+		.tree-2 {
+			position: absolute;
+			bottom: 6rem;
+			right: 0;
+			width: 12%;
+			transform: translate(40%, 0);
+
+			@include max-sm {
+				width: 15%;
+			}
+		}
+
+		.bush-1 {
+			position: absolute;
+			bottom: 6rem;
+			left: 0;
+			width: 50%;
+			transform: translate(-60%, 0);
+
+			@include max-sm {
+				width: 65%;
+			}
+		}
+
+		.bush-2 {
+			position: absolute;
+			bottom: 6rem;
+			right: 0;
+			width: 50%;
+			transform: translate(60%, 0);
+
+			@include max-sm {
+				width: 65%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(40%, 0) scaleX(-1);
+
+			@include max-sm {
+				width: 40%;
+			}
+
+			.orn-2 {
+				position: absolute;
+				top: 50%;
+				right: 20%;
+				width: 80%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-35%, 0);
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(75%, 0);
+
+			.orn-5 {
+				position: absolute;
+				top: 15%;
+				left: 0;
+				width: 100%;
+				transform: translate(-30%, 0) rotate(-45deg);
+			}
+
+			.orn-6 {
+				position: absolute;
+				top: -10%;
+				left: 10%;
+				width: 70%;
+				transform: scaleX(-1);
+			}
+		}
+	}
+}

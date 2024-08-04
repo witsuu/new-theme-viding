@@ -1,0 +1,186 @@
+.thank-section {
+	position: relative;
+	padding: 3rem 0;
+	text-align: center;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin: 0 auto 3rem;
+
+		.image-element {
+			@include aspect-ratio(5, 6);
+
+			img {
+				object-fit: cover;
+				border-radius: 300px 300px 10px 10px;
+			}
+		}
+	}
+
+	.thank {
+		position: relative;
+		color: var(--color-light);
+		margin-bottom: 8rem;
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+			border-radius: 300px 300px 30px 30px;
+			opacity: .6;
+			content: "";
+		}
+
+		.thank-body {
+			padding: 0 1.5rem 3rem;
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 25%;
+		left: 0;
+		width: 65%;
+		transform: translate(-60%, -10%);
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 25%;
+		right: 0;
+		width: 65%;
+		transform: translate(60%, -10%) scaleX(-1);
+	}
+
+	.tree-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-40%, 0);
+	}
+
+	.tree-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(40%, 0);
+	}
+
+	.tree-5 {
+		position: absolute;
+		top: 0;
+		left: 30%;
+		width: 80%;
+		transform: translate(-50%, -5%);
+	}
+
+	.tree-6 {
+		position: absolute;
+		top: 0;
+		left: 80%;
+		width: 80%;
+		transform: translate(-50%, 5%);
+	}
+
+	.tree-8 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-30%, 15%);
+	}
+
+	.tree-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(20%, 0);
+	}
+
+	.bush-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 65%;
+		transform: translate(-30%, 60%);
+	}
+
+	.bush-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 65%;
+		transform: translate(30%, 60%);
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 80%;
+		transform: translate(-50%, 0%);
+	}
+
+	.mountain {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-50%, 0);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-40%, 50%);
+
+		.orn-2 {
+			position: absolute;
+			top: 20%;
+			left: 100%;
+			width: 50%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(20%, 45%);
+
+		.orn-4 {
+			position: absolute;
+			top: 30%;
+			right: 100%;
+			width: 50%;
+			transform: scaleX(-1);
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	z-index: 5;
+
+	small {
+		position: relative;
+	}
+}

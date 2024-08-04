@@ -1,0 +1,41 @@
+.reminder-wrap {
+	position: relative;
+	width: 100%;
+	padding-bottom: 3rem;
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin: 0 auto 1rem;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+
+			img {
+				object-fit: cover;
+				border-radius: 300px 300px 10px 10px;
+			}
+		}
+	}
+
+	.reminder-content {
+		position: relative;
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin: 1.5rem auto 0;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

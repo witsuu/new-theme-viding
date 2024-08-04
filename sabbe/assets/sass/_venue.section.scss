@@ -1,0 +1,383 @@
+.venue-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.venue-wrapper {
+		position: relative;
+
+		.venue-description {
+			position: relative;
+			text-align: center;
+			padding: 0 1.5rem;
+			margin-bottom: 3rem;
+		}
+
+		.venue-content {
+			position: relative;
+
+			.ribbon-venue {
+				position: relative;
+				margin-bottom: 1rem;
+
+				svg {
+					width: 40px;
+					height: auto;
+
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+
+				.st0 {
+					fill: var(--color-secondary);
+				}
+
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+
+			.card {
+				background-color: var(--color-main);
+				color: var(--color-light);
+				border: none;
+				text-align: center;
+				border-radius: 0;
+
+				.card-body {
+					padding: 0;
+
+					h4 {
+						padding: 0 0 1rem;
+					}
+
+					.event-name {
+						position: relative;
+						padding-top: 2rem;
+						margin-bottom: 1rem;
+						width: 100%;
+						border-radius: 0 0 20px 20px;
+						overflow: hidden;
+
+						&-body {
+							position: relative;
+							width: 80%;
+							margin: 0 auto;
+							color: var(--color-light);
+							padding: 8rem 1.5rem 5rem;
+
+							&::before {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 100%;
+								height: 100%;
+								background-color: var(--color-primary);
+								border-radius: 300px 300px 0 0;
+								opacity: .6;
+								content: "";
+							}
+
+							.position-relative {
+								z-index: 5;
+							}
+						}
+
+						.date {
+							position: relative;
+							width: 100%;
+
+							h5 {
+								font-family: $font-secondary;
+								margin-bottom: 0;
+								font-size: 42px;
+							}
+
+							.line {
+								--color-button-trans: #fff;
+								width: 45px;
+								height: 1px;
+								background-color: var(--color-button-trans);
+								margin: .2rem auto .5rem;
+							}
+						}
+
+						h4 {
+							font-family: $font-secondary;
+							font-size: 32px;
+						}
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 2rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-place {
+						position: relative;
+
+						&-body {
+							padding: 2rem;
+							text-align: left;
+
+							.widget-elements {
+								position: relative;
+								width: 100%;
+								margin-top: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+
+		@include max-md {
+			padding: 2rem 0;
+		}
+
+		@include min-lg {
+			padding: 2rem 0;
+		}
+
+		* {
+			position: relative;
+		}
+
+		.prokes-wrap {
+			display: flex;
+			gap: 0.75rem;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			text-align: center;
+
+			.prokes {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				width: 132px;
+
+				@include min-lg {
+					width: 120px;
+				}
+
+				@include max-md {
+					width: 120px;
+				}
+
+				@include max-xs {
+					width: 45%;
+				}
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 0;
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+
+	.ornament {
+		width: 140%;
+
+		@include ipad {
+			width: 100%;
+		}
+	}
+
+	.rumah {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 120%;
+		transform: translate(-50%, 0%) scaleX(-1);
+		opacity: .25;
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 14%;
+		transform: translate(-55%, 0);
+
+		@include max-sm {
+			width: 18%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 14%;
+		transform: translate(55%, 0) scaleX(-1);
+
+		@include max-sm {
+			width: 18%;
+		}
+	}
+
+	.tree-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-45%, 20%);
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(-45%, 10%);
+		}
+	}
+
+	.tree-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(50%, 10%) rotate(-20deg);
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(55%, 0%) rotate(-20deg);
+		}
+	}
+
+	.bush-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-50%, 30%);
+	}
+
+	.bush-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(50%, 30%);
+	}
+
+	.orn {
+		position: absolute;
+		bottom: 0;
+		right: -15%;
+		width: 120%;
+		transform: rotate(10deg);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-40%, 35%) rotate(-10deg);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(40%, 35%) rotate(10deg) scaleX(-1);
+	}
+}
