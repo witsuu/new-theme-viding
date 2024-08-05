@@ -1,0 +1,44 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 3rem 0;
+
+	.reminder-content {
+		position: relative;
+		width: 100%;
+		background-color: var(--color-main);
+		padding-bottom: 2rem;
+
+		.rumah {
+			position: relative;
+			width: 100%;
+			overflow: hidden;
+
+			.image-element {
+				width: 140%;
+				margin-left: -20%;
+			}
+		}
+	}
+
+	.widget-element {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 50%);
+	}
+
+	.btn-reminder {
+		display: flex;
+		align-items: center;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

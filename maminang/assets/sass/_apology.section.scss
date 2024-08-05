@@ -1,0 +1,28 @@
+.apology-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	padding: 5rem 0;
+	overflow: hidden;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+	}
+
+	.rumah {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 170%;
+		transform: translate(-50%, -50%);
+		opacity: .35;
+
+		@include max-sm {
+			width: 250%;
+		}
+	}
+}

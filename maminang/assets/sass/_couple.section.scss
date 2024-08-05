@@ -1,0 +1,148 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-weight: 400;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 0 0 5rem;
+
+		@include max-md {
+			padding: 0 0 3rem;
+		}
+
+		.couple-body {
+			position: relative;
+		}
+
+		.couple-content {
+			position: relative;
+			padding: 10rem 0;
+
+			@include max-lg {
+				padding: 8rem 0;
+			}
+
+			@include max-sm {
+				padding: 6rem 0;
+			}
+
+			&-body {
+				position: relative;
+				text-align: left;
+
+				.title-section {
+					text-align: left;
+				}
+			}
+
+			.rebung {
+				width: 100%;
+
+				@include max-lg {
+					width: 150%;
+				}
+
+				@include max-sm {
+					width: 200%;
+				}
+			}
+		}
+
+		.couple {
+			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			padding: 2rem 0 2rem 4rem;
+			text-align: left;
+
+			.image-wrap {
+				width: 100%;
+				position: relative;
+				margin-bottom: 1.5rem;
+
+				.image-element {
+					@include aspect-ratio(3, 4);
+
+					.couple-image {
+						object-fit: cover;
+						border-radius: 300px 300px 0 0;
+					}
+				}
+			}
+
+			.couple-description {
+				position: relative;
+			}
+
+			.couple-parent {
+				width: 100%;
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				width: fit-content;
+				max-width: 100%;
+				background: var(--color-secondary);
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+
+				.sosmed {
+					color: var(--text-button);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		.tree-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 80%;
+			transform: translate(0, -2rem);
+		}
+	}
+}

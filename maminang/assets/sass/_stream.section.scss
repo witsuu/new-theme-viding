@@ -1,0 +1,52 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	overflow: hidden;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			text-align: center;
+			border-radius: var(--border-radius);
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}

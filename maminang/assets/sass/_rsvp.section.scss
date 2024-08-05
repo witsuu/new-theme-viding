@@ -1,0 +1,58 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem;
+		background-color: var(--color-primary);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+
+		@include max-md {
+			padding: 2rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+			padding: 5rem 2rem 3rem;
+			background-color: var(--color-main);
+			border-radius: var(--border-radius);
+		}
+	}
+
+	.rumah {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		opacity: .5;
+	}
+
+	.rebung {
+		@include min-md {
+			width: 180% !important;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-30%, 0) rotate(-20deg) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(50%, 20%);
+	}
+}
