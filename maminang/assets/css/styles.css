@@ -120,11 +120,22 @@ body {
   top: 0;
   width: 3.5rem;
 }
+.main-app .ornaments-wrapper .rebung-left .image-element {
+  flex-direction: column;
+}
 .main-app .ornaments-wrapper .rebung-right {
   top: 0;
   right: 0;
   width: 3.5rem;
   transform: scaleX(-1);
+}
+.main-app .ornaments-wrapper .rebung-right .image-element {
+  flex-direction: column;
+}
+.main-app .ornaments-wrapper .rebung .image-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logo-viding {
@@ -780,6 +791,14 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=lambai].has-animate {
+  animation-name: lambai;
+}
+
+[data-anim=lambai2].has-animate {
+  animation-name: lambai2;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -794,6 +813,22 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes lambai {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+@keyframes lambai2 {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1162,6 +1197,18 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=blue-flower] {
+  transform-origin: 45% 95%;
+}
+
+img[alt=gold-flower] {
+  transform-origin: 45% 95%;
+}
+
+img[alt=tree] {
+  transform-origin: 50% 90%;
 }
 
 .countdown {

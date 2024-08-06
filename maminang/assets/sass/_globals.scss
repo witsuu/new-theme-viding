@@ -108,6 +108,10 @@ body {
 				left: 0;
 				top: 0;
 				width: 3.5rem;
+
+				.image-element {
+					flex-direction: column;
+				}
 			}
 
 			&-right {
@@ -115,6 +119,16 @@ body {
 				right: 0;
 				width: 3.5rem;
 				transform: scaleX(-1);
+
+				.image-element {
+					flex-direction: column;
+				}
+			}
+
+			.image-element {
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
 		}
 	}
