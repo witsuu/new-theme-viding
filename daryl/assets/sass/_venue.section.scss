@@ -140,6 +140,24 @@
 				}
 			}
 		}
+
+		.ornaments-wrapper {
+			.curtain-2 {
+				width: 15%;
+				transform: translate(15%, 0) scaleX(-1);
+
+				@include max-sm {
+					width: 21%;
+				}
+			}
+
+			.orn-1 {
+				position: absolute;
+				bottom: 10%;
+				left: 0;
+				width: 220%;
+			}
+		}
 	}
 
 	.prokes-wrapper {

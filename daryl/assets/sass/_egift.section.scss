@@ -140,6 +140,38 @@
 			padding: 0 0 3rem;
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-15%, 0);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 35%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(15%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 35%;
+		}
+	}
 }
 
 @keyframes tab {

@@ -27,7 +27,6 @@
 
 		@include max-md {
 			min-width: 65px;
-			padding: 1rem 0.75rem;
 		}
 
 		@include max-xs {
@@ -48,10 +47,6 @@
 			font-weight: 500;
 			font-size: 38px;
 			font-family: $font-secondary;
-
-			@include max-md {
-				font-size: 34px;
-			}
 		}
 
 		.huruf,

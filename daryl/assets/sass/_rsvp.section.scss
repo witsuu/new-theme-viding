@@ -3,23 +3,77 @@
 	padding: 5rem 0;
 
 	@include max-md {
-		padding: 3rem 0;
+		padding: 0;
 	}
 
 	.rsvp-wrapper {
 		position: relative;
-		padding: 5rem 3rem;
+		padding: 8rem 3.5rem;
 		background-color: var(--color-primary);
 		color: var(--color-dark);
 		border-radius: var(--border-radius);
 		overflow: hidden;
 
 		@include max-md {
-			padding: 3rem 2rem;
+			padding: 5rem 3rem;
 		}
 
 		.rsvp-form {
 			position: relative;
+		}
+
+		.ornaments-wrapper {
+
+			.curtain-1,
+			.curtain-2 {
+				width: 20%;
+			}
+
+			.curtain-1 {
+				transform: translate(-20%, 0);
+			}
+
+			.curtain-2 {
+				transform: translate(20%, 0) scaleX(-1);
+			}
+
+			.orn-1 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 55%;
+				transform: translate(-20%, 35%);
+
+				.orn-2 {
+					position: absolute;
+					top: 30%;
+					right: 30%;
+					width: 80%;
+				}
+			}
+
+			.orn-3 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 55%;
+				transform: translate(20%, 30%) scaleX(-1);
+
+				.orn-4 {
+					position: absolute;
+					top: 30%;
+					right: 25%;
+					width: 80%;
+				}
+			}
+
+			.orn-5 {
+				position: absolute;
+				top: 0;
+				left: 40%;
+				width: 220%;
+				transform: translate(0, -40%) scaleY(-1);
+			}
 		}
 	}
 }

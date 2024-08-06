@@ -40,4 +40,50 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
+
+	.ornaments-wrapper {
+
+		.curtain-1,
+		.curtain-2 {
+			width: 20%;
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 55%;
+			transform: translate(-10%, 20%);
+
+			.orn-2 {
+				position: absolute;
+				top: 30%;
+				right: 30%;
+				width: 80%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 55%;
+			transform: translate(10%, 15%) scaleX(-1);
+
+			.orn-4 {
+				position: absolute;
+				top: 30%;
+				right: 25%;
+				width: 80%;
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 0;
+			left: 40%;
+			width: 220%;
+			transform: translate(0, -40%) scaleY(-1);
+		}
+	}
 }

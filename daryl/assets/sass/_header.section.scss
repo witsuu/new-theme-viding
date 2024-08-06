@@ -16,6 +16,10 @@
 		justify-content: center;
 		min-height: 100vh;
 
+		@include max-lg {
+			min-height: 80vh;
+		}
+
 		.header {
 			position: relative;
 			width: 35%;
@@ -66,6 +70,64 @@
 			#scroll-animate {
 				animation: scrollAnim 1500ms ease infinite;
 			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-10%, 30%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 30%;
+			right: 30%;
+			width: 80%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(10%, 25%) scaleX(-1);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 30%;
+			right: 25%;
+			width: 80%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 0;
+		left: 40%;
+		width: 220%;
+		transform: translate(0, -40%) scaleY(-1);
+
+		@include max-sm {
+			left: 10%;
 		}
 	}
 }

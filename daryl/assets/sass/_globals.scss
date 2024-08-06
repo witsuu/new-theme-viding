@@ -75,6 +75,56 @@ body {
 		bottom: 0;
 		left: 0;
 		pointer-events: none;
+
+		&.orn-front {
+			z-index: 3;
+		}
+
+		.curtain-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 9%;
+
+			@include max-lg {
+				width: 15%;
+				transform: translate(-10%, 0);
+			}
+
+			@include max-sm {
+				width: 25%;
+				transform: translate(-20%, 0);
+			}
+		}
+
+		.curtain-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 9%;
+			transform: scaleX(-1);
+
+			@include max-lg {
+				width: 15%;
+				transform: translate(10%, 0) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 25%;
+				transform: translate(20%, 0) scaleX(-1);
+			}
+		}
+
+		.curtain {
+			position: absolute;
+			top: 0;
+			left: 80%;
+			width: 180%;
+
+			@include max-lg {
+				width: 150%;
+			}
+		}
 	}
 }
 
@@ -140,7 +190,8 @@ span {
 	}
 }
 
-.image-element {
+.image-element,
+.background-element {
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -155,6 +206,10 @@ span {
 	@include max-md {
 		padding-left: 1.5rem;
 		padding-right: 1.5rem;
+
+		&-custom {
+			padding: 0;
+		}
 	}
 }
 

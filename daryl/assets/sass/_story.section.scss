@@ -19,8 +19,12 @@
 				text-align: center;
 				padding: 3rem 2rem 2rem;
 
+				@include max-lg {
+					padding-bottom: 5rem;
+				}
+
 				@include max-sm {
-					padding: 3rem 1.5rem 2rem;
+					padding: 3rem 1.5rem 5rem;
 				}
 			}
 		}
@@ -41,6 +45,52 @@
 			.story-background {
 				object-fit: cover;
 			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-20%, 30%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 30%;
+			right: 30%;
+			width: 80%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(20%, 25%) scaleX(-1);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 30%;
+			right: 25%;
+			width: 80%;
 		}
 	}
 }

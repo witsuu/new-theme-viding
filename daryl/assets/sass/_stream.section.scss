@@ -33,14 +33,14 @@
 
 			.stream-description {
 				position: relative;
-				padding: 3rem 2rem;
+				padding: 3rem 5rem 5rem;
 				background-color: var(--color-primary);
 				color: var(--color-dark);
 				border-radius: var(--border-radius);
 				overflow: hidden;
 
 				@include max-sm {
-					padding: 2rem 1rem;
+					padding: 2rem 3rem 5rem;
 				}
 			}
 
@@ -64,5 +64,59 @@
 
 	.yt-description {
 		position: relative;
+	}
+
+	.ornaments-wrapper {
+
+		.curtain-1,
+		.curtain-2 {
+			width: 15%;
+		}
+
+		.curtain-1 {
+			transform: translate(-20%, 0);
+		}
+
+		.curtain-2 {
+			transform: translate(20%, 0) scaleX(-1);
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-20%, 35%);
+
+			@include max-sm {
+				width: 45%;
+			}
+
+			.orn-2 {
+				position: absolute;
+				top: 30%;
+				right: 30%;
+				width: 80%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 35%;
+			transform: translate(20%, 30%) scaleX(-1);
+
+			@include max-sm {
+				width: 45%;
+			}
+
+			.orn-4 {
+				position: absolute;
+				top: 30%;
+				right: 25%;
+				width: 80%;
+			}
+		}
 	}
 }
