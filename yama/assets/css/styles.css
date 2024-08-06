@@ -738,6 +738,10 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=lambai].has-animate {
+  animation-name: lambai;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -752,6 +756,14 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes lambai {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1120,6 +1132,22 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=flower-1] {
+  transform-origin: 10% 35%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 40% 95%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 40% 95%;
+}
+
+img[alt=tree] {
+  transform-origin: 45% 95%;
 }
 
 .countdown {
