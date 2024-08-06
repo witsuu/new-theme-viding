@@ -631,8 +631,16 @@ ul li {
   animation-name: fadeUp;
 }
 
+[data-anim=fade-up2].has-animate {
+  animation-name: fadeUp2;
+}
+
 [data-anim=fade-down].has-animate {
   animation-name: fadeDown;
+}
+
+[data-anim=fade-down2].has-animate {
+  animation-name: fadeDown2;
 }
 
 @keyframes fadeAnim {
@@ -673,9 +681,29 @@ ul li {
     opacity: 1;
   }
 }
+@keyframes fadeUp2 {
+  0% {
+    transform: translate3d(0, 80%, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
 @keyframes fadeDown {
   0% {
     transform: translate3d(0, -100px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateZ(0);
+    opacity: 1;
+  }
+}
+@keyframes fadeDown2 {
+  0% {
+    transform: translate3d(0, -80%, 0);
     opacity: 0;
   }
   100% {
@@ -701,7 +729,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-80%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -787,6 +815,14 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=lambai].has-animate {
+  animation-name: lambai;
+}
+
+[data-anim=lambai2].has-animate {
+  animation-name: lambai2;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -801,6 +837,22 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes lambai {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+@keyframes lambai2 {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
   }
 }
 [data-anim=zoom-in].has-animate {
@@ -1169,6 +1221,14 @@ ul li {
   transform: scale3d(1.25, 1.25, 1.25);
   transition-duration: 5000ms !important;
   visibility: visible !important;
+}
+
+img[alt=flower] {
+  transform-origin: 20% 90%;
+}
+
+img[alt=rose] {
+  transform-origin: 20% 90%;
 }
 
 .countdown {
