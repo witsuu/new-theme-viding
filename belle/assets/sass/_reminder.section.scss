@@ -1,0 +1,141 @@
+.reminder-wrap {
+	position: relative;
+	padding: 0 0 5rem;
+	z-index: 3;
+
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-bottom: 2rem;
+
+		.image-element {
+			@include aspect-ratio(3, 4);
+
+			img {
+				object-fit: cover;
+				border-radius: 300px;
+			}
+		}
+	}
+
+	.reminder-content {
+		position: relative;
+		width: fit-content;
+		max-width: 100%;
+		margin: 0 auto;
+
+		@include max-sm {
+			width: 100%;
+		}
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 70%;
+		left: 0;
+		width: 35%;
+		transform: translate(-35%, -50%) rotate(30deg) scaleX(-1);
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(80%, -55%) rotate(50deg) scaleX(-1);
+
+			.orn-3 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 110%;
+				transform: translate(30%, -55%);
+			}
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 10%;
+		right: 0;
+		width: 35%;
+		transform: translate(35%, -5%) rotate(-15deg);
+
+		.orn-5 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			transform: translate(20%, -25%) rotate(35deg) scaleX(-1);
+
+			.orn-6 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 70%;
+				transform: translate(55%, -55%);
+
+				.orn-7 {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 140%;
+					transform: translate(25%, -50%) rotate(50deg) scaleX(-1);
+				}
+			}
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-30%, 10%) rotate(60deg) scaleX(-1);
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(25%, 0) rotate(-40deg) scale(-1);
+	}
+
+	.orn-10 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 20%;
+		transform: translate(-40%, 0);
+	}
+
+	.orn-11 {
+		position: absolute;
+		top: 50%;
+		right: 0;
+		width: 20%;
+		transform: translate(50%, 0) rotate(45deg) scaleX(-1);
+	}
+}

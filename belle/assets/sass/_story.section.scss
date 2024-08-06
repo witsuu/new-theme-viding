@@ -1,0 +1,83 @@
+.story-section {
+	position: relative;
+	z-index: 3;
+
+	.story {
+		position: relative;
+		padding: 5rem 0 2rem;
+
+		@include max-md {
+			padding: 3rem 0 2rem;
+		}
+
+		.story-content {
+			position: relative;
+
+			.story-description {
+				position: relative;
+				text-align: center;
+				z-index: 5;
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(16, 9);
+
+			@include max-md {
+				@include aspect-ratio(5, 6);
+			}
+
+			.story-background {
+				object-fit: cover;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-55%, 0);
+
+		.orn-2 {
+			position: relative;
+			width: 80%;
+			margin-top: -35%;
+			margin-left: 20%;
+
+			.orn-3 {
+				position: relative;
+				width: 60%;
+				margin-top: -40%;
+				margin-left: 25%;
+
+				.orn-4 {
+					position: relative;
+					width: 140%;
+					margin-top: -100%;
+					margin-left: -50%;
+
+					.orn-5 {
+						position: relative;
+						width: 100%;
+						margin-top: -80%;
+						margin-left: 15%;
+
+						.orn-6 {
+							position: relative;
+							width: 150%;
+							margin-top: -40%;
+							margin-left: -50%;
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,165 @@
+.header-section {
+	position: relative;
+	width: 100%;
+	background-color: var(--color-primary);
+	padding-bottom: 1rem;
+	overflow: hidden;
+
+	.scroll-icon {
+		position: relative;
+		margin-bottom: 1rem;
+
+		rect {
+			stroke: var(--color-light);
+		}
+	}
+
+	.image-wrapper {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 58%;
+		height: 70%;
+		transform: translate(-50%, -50%);
+
+		.image-element {
+			height: 100%;
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: rgba($color: #000000, $alpha: .3);
+				content: "";
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.header-content {
+		position: relative;
+		min-height: 85vh;
+
+		@include max-lg {
+			min-height: 80vh;
+		}
+
+		.header {
+			position: relative;
+			width: 45%;
+			margin: 0 auto;
+			z-index: 5;
+
+			@include max-xl {
+				width: 45%;
+			}
+
+			@include max-lg {
+				width: 80%;
+			}
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			.header-title {
+				position: absolute;
+				top: 50%;
+				left: 0;
+				width: 100%;
+				text-align: center;
+				color: var(--color-light);
+				transform: translateY(-50%);
+
+				&-content {
+					position: relative;
+				}
+			}
+
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+
+	.frame {
+		position: relative;
+		width: 100%;
+
+		@include max-sm {
+			width: 115%;
+			margin-left: -7.5%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-15%, 45%) rotate(30deg) scaleX(-1);
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(70%, -45%);
+
+			.orn-3 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 140%;
+				transform: translate(-3%, -22%);
+
+				.orn-4 {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 70%;
+					transform: translate(75%, -50%) rotate(60deg) scaleX(-1);
+				}
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: -5%;
+			left: 0;
+			width: 70%;
+			transform: rotate(-30deg);
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-40%, -15%) scale(-1);
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
