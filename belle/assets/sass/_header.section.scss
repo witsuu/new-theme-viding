@@ -106,6 +106,11 @@
 		width: 30%;
 		transform: translate(-15%, 45%) rotate(30deg) scaleX(-1);
 
+		@include max-sm {
+			width: 35%;
+			transform: translate(-20%, 45%) rotate(30deg) scaleX(-1);
+		}
+
 		.orn-2 {
 			position: absolute;
 			top: 0;
@@ -145,6 +150,10 @@
 		left: 0;
 		width: 35%;
 		transform: translate(-40%, -15%) scale(-1);
+
+		@include max-sm {
+			width: 40%;
+		}
 	}
 }
 

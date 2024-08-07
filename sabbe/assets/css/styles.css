@@ -1931,6 +1931,10 @@ img[alt=tree-3] {
     transform: translate(-50%, -50%);
   }
 }
+.couple-section .and.single {
+  padding: 2rem 3.5rem 0;
+  justify-content: flex-start;
+}
 .couple-section .and span {
   position: relative;
   font-size: 28px;

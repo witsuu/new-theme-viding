@@ -51,6 +51,10 @@
 				position: relative;
 				width: 80%;
 				margin-top: 2rem;
+
+				@include max-sm {
+					width: 85%;
+				}
 			}
 
 			.image-wrap {
@@ -142,6 +146,10 @@
 			width: 35%;
 			transform: translate(-25%, 5%) rotate(30deg) scaleX(-1);
 
+			@include max-sm {
+				width: 40%;
+			}
+
 			.orn-2 {
 				position: absolute;
 				top: 0;
@@ -165,6 +173,10 @@
 			right: 0;
 			width: 35%;
 			transform: translate(25%, -5%) rotate(-30deg);
+
+			@include max-sm {
+				width: 40%;
+			}
 
 			.orn-5 {
 				position: absolute;
@@ -198,6 +210,10 @@
 			width: 45%;
 			transform: translate(45%, 30%) scaleX(-1);
 
+			.point-ornament {
+				transform-origin: 90% 90%;
+			}
+
 			.orn-9 {
 				position: absolute;
 				bottom: 30%;
@@ -226,6 +242,12 @@
 					left: 40%;
 					width: 60%;
 					transform: rotate(50deg) scaleX(-1);
+
+					@include max-sm {
+						top: -120%;
+						left: 50%;
+						transform: rotate(70deg) scaleX(-1);
+					}
 				}
 			}
 		}

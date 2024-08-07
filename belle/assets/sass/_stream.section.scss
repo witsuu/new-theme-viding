@@ -55,6 +55,14 @@
 		width: 20%;
 		transform: translate(-50%, 0) rotate(-30deg);
 
+		@include max-lg {
+			width: 35%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+
 		.orn-4 {
 			position: absolute;
 			top: 15%;
@@ -70,6 +78,10 @@
 		right: 0;
 		width: 20%;
 		transform: translate(50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 35%;
+		}
 
 		.orn-3 {
 			position: absolute;

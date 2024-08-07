@@ -6,8 +6,8 @@
 		position: relative;
 		padding: 5rem 0 2rem;
 
-		@include max-md {
-			padding: 3rem 0 2rem;
+		@include max-sm {
+			padding: 3rem 1.8rem 2rem;
 		}
 
 		.story-content {
@@ -44,6 +44,15 @@
 		left: 0;
 		width: 20%;
 		transform: translate(-55%, 0);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+			transform: translate(-65%, 0);
+		}
 
 		.orn-2 {
 			position: relative;
