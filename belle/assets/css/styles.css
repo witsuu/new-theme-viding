@@ -1719,7 +1719,6 @@ img[alt=branch] {
   align-items: center;
   width: 100%;
   position: relative;
-  padding: 1rem;
   z-index: 3;
 }
 @media (min-width: 768px) {
@@ -1903,7 +1902,7 @@ img[alt=branch] {
   transform: translate(45%, 30%) scaleX(-1);
 }
 .couple-section .couple-wrapper .orn-8 .point-ornament {
-  transform-origin: 90% 90%;
+  transform-origin: 10% 90%;
 }
 .couple-section .couple-wrapper .orn-8 .orn-9 {
   position: absolute;

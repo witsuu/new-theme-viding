@@ -1,0 +1,82 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.background-element {
+		opacity: 0.4;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 1rem;
+		right: 0;
+		width: 180px;
+		transform: translate(50%, 0);
+		@include min-md {
+			width: 200px;
+		}
+		@include min-lg {
+			width: 240px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 4%;
+		left: 50%;
+		width: 40px;
+		transform: rotateZ(45deg);
+	}
+	.stream-wrapper {
+		position: relative;
+		.stream-content {
+			position: relative;
+			.title-section {
+				margin-left: 0;
+				margin-right: 0;
+				h2,
+				p,
+				span {
+					padding-left: 0;
+				}
+			}
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				border-top-left-radius: var(--border-radius);
+				border-top-right-radius: var(--border-radius);
+				background-color: var(--color-primary);
+				color: var(--color-dark);
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		position: relative;
+		width: 100%;
+		color: var(--color-light);
+	}
+}

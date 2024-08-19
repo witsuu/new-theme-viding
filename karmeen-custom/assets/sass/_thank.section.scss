@@ -1,0 +1,59 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 55%;
+			}
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+
+		.thank {
+			position: relative;
+			padding: 0 2rem 3rem;
+			text-align: left;
+			color: var(--color-light);
+
+			@include max-md {
+				padding: 0 1.8rem 2rem;
+			}
+
+			&-body {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				align-items: flex-start;
+				min-height: 50vh;
+
+				@include max-sm {
+					min-height: 35vh;
+				}
+
+				.title-section {
+					text-align: left;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	small {
+		position: relative;
+	}
+}

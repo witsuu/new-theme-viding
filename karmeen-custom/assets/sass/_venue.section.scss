@@ -1,0 +1,263 @@
+.venue-section {
+	position: relative;
+	padding: 5rem 0 0;
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-primary);
+		opacity: .1;
+		content: "";
+	}
+
+	@include max-md {
+		padding: 3rem 0 0;
+	}
+
+	.venue-wrapper {
+		position: relative;
+		z-index: 3;
+
+		.venue-description {
+			position: relative;
+			z-index: 2;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.venue-content {
+			position: relative;
+			display: flex;
+			justify-content: center;
+			align-items: stretch;
+
+			@include min-md {
+				&.row-reverse {
+					flex-direction: row-reverse;
+				}
+			}
+
+			@include max-sm {
+				flex-direction: column;
+				align-items: flex-start;
+			}
+
+			.image-element {
+				height: 100%;
+
+				@include max-sm {
+					height: auto;
+					@include aspect-ratio(6, 5);
+				}
+
+				.maps-embed {
+					display: block;
+					width: 100%;
+					height: 100%;
+				}
+			}
+
+
+			.card {
+				--color-button-trans: #fff;
+				width: 100%;
+				text-align: left;
+				border: none;
+				background-color: var(--color-primary);
+				color: var(--color-light);
+				border-radius: 0;
+
+				.card-body {
+					position: relative;
+					padding: 3rem;
+
+					@include max-lg {
+						padding: 3rem 2rem;
+					}
+
+					@include max-sm {
+						padding: 2rem 1.5rem;
+					}
+
+					.d-grid {
+						display: grid;
+						grid-template-columns: 35% 65%;
+						width: 100%;
+
+						.grid--item {
+							position: relative;
+
+							&>span {
+								font-size: 18px;
+
+								@include max-sm {
+									font-size: 16px;
+								}
+							}
+						}
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 2rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-name {
+						position: relative;
+						width: 100%;
+						margin-bottom: 2rem;
+
+						h4 {
+							font-family: $font-secondary;
+							font-size: 28px;
+							margin-bottom: 2rem;
+						}
+
+						span {
+							font-size: 18px;
+
+							@include max-sm {
+								font-size: 16px;
+							}
+						}
+
+						p {
+							margin-bottom: 0;
+							font-weight: 600;
+						}
+					}
+
+					.event-place {
+						position: relative;
+
+						&-body {
+							position: relative;
+						}
+
+						.widget-elements {
+							position: relative;
+							margin-top: 1rem;
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		margin-bottom: 3rem;
+		position: relative;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+
+		* {
+			position: relative;
+		}
+
+		.prokes-wrap {
+			display: flex;
+			gap: 0.75rem;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			text-align: center;
+
+			.prokes {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				width: 132px;
+
+				@include max-md {
+					width: 120px;
+				}
+
+				@include max-xs {
+					width: 45%;
+				}
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 3rem;
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}

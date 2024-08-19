@@ -1,0 +1,34 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-primary);
+		opacity: .1;
+		content: "";
+	}
+
+	.appology-wrap {
+		position: relative;
+		color: var(--color-dark);
+	}
+
+	.ornaments-wrapper {
+		.elements-wrapper-absolute {
+			.background-element {
+				img {
+					object-position: 50% 80%;
+				}
+			}
+		}
+	}
+}

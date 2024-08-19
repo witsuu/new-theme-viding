@@ -1,0 +1,37 @@
+.story-section {
+	position: relative;
+
+	.story {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+
+		.story-content {
+			position: relative;
+
+			.story-description {
+				position: relative;
+				text-align: center;
+				color: var(--color-dark);
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-bottom: 2rem;
+
+		.image-element {
+			@include aspect-ratio(5, 6);
+
+			.story-background {
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+}

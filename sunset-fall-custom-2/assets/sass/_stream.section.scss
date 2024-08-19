@@ -1,0 +1,80 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				opacity: .3;
+			}
+		}
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				color: var(--color-dark);
+				margin-bottom: 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background-color: var(--color-main);
+					border-radius: var(--border-radius);
+					box-shadow: 5px 5px 8px rgba($color: #000000, $alpha: .15);
+					opacity: .5;
+					content: "";
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+
+	.yt-description {
+		position: relative;
+		width: 100%;
+	}
+}

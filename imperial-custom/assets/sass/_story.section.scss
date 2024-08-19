@@ -1,0 +1,106 @@
+.story-section {
+	position: relative;
+
+	.story {
+		position: relative;
+		padding: 0 0 5rem;
+
+		@include max-md {
+			padding: 0 0 3rem;
+		}
+
+		.house {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, -30%) scaleX(-1);
+
+			@include max-lg {
+				width: 140%;
+			}
+
+			@include max-sm {
+				width: 180%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 25%;
+			transform: translate(50%, -10%) scaleX(-1);
+
+			@include max-lg {
+				width: 40%;
+				transform: translate(60%, -10%) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 50%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 15%;
+			transform: translate(50%, -60%) scaleX(-1);
+
+			@include max-lg {
+				width: 30%;
+				transform: translate(50%, -60%) scaleX(-1);
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
+
+		.story-content {
+			position: relative;
+			background-color: var(--color-primary);
+			color: var(--color-light);
+			border-radius: var(--border-radius);
+			margin-top: -5rem;
+
+			@include max-sm {
+				margin-top: -3rem;
+			}
+
+			.story-description {
+				position: relative;
+				text-align: left;
+				padding: 3rem;
+				z-index: 5;
+
+				@include max-sm {
+					padding: 2rem 1.8rem;
+				}
+
+				.title-section {
+					text-align: left;
+				}
+			}
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(16, 8);
+
+			@include max-md {
+				@include aspect-ratio(6, 5);
+			}
+
+			.story-background {
+				object-fit: cover;
+			}
+		}
+	}
+}

@@ -1,0 +1,84 @@
+.stream-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+	padding: 0 0 5rem;
+	text-align: center;
+
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+
+	.house {
+		position: relative;
+		width: 120%;
+		transform: translate(-10%, 0%);
+
+		@include min-md {
+			margin-top: -10%;
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-bottom: 2rem;
+
+		.image-element {
+			@include aspect-ratio(16, 8);
+
+			@include max-sm {
+				@include aspect-ratio(6, 5);
+			}
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.title-section {
+			text-align: left;
+		}
+
+		.stream-content {
+			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			border-radius: var(--border-radius);
+			overflow: hidden;
+
+			.stream-description {
+				position: relative;
+				padding: 0 2rem 3rem;
+
+				@include max-md {
+					padding: 0 1.8rem 2rem;
+				}
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}

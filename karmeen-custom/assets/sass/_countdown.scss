@@ -1,0 +1,96 @@
+.countdown {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	position: relative;
+	margin: 0 auto;
+	width: fit-content;
+	row-gap: 3rem;
+	z-index: 3;
+	width: 100%;
+
+	@include max-lg {
+		gap: 2rem;
+	}
+
+	@include max-sm {
+		column-gap: 2.5rem;
+		row-gap: 2rem;
+	}
+
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+		gap: .75rem;
+		min-width: 80px;
+
+		@include max-md {
+			min-width: 65px;
+		}
+
+		@include max-xs {
+			min-width: 63px;
+		}
+
+		@include max-rwd(350px) {
+			min-width: 72px;
+		}
+
+		.huruf {
+			font-size: 14px;
+			font-weight: 600;
+
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+
+		.angka {
+			display: block;
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 38px;
+			font-family: $font-secondary;
+			border: solid 1px var(--color-button-trans);
+			border-radius: 100px;
+			width: 70px;
+			height: 70px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include max-lg {
+				font-size: 32px;
+			}
+
+			@include max-sm {
+				width: 60px;
+				height: 60px;
+				font-size: 28px;
+			}
+		}
+
+		.huruf,
+		.angka {
+			margin: 0;
+		}
+	}
+
+	.days,
+	.hours {
+		@include min-lg {
+			justify-content: flex-start;
+		}
+	}
+
+	.minutes,
+	.seconds {
+		@include min-lg {
+			justify-content: flex-end;
+		}
+	}
+}

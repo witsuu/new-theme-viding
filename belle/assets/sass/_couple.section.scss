@@ -15,7 +15,6 @@
 		align-items: center;
 		width: 100%;
 		position: relative;
-		padding: 1rem;
 		z-index: 3;
 
 		span {
@@ -211,7 +210,7 @@
 			transform: translate(45%, 30%) scaleX(-1);
 
 			.point-ornament {
-				transform-origin: 90% 90%;
+				transform-origin: 10% 90%;
 			}
 
 			.orn-9 {
