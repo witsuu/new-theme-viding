@@ -79,6 +79,27 @@ body {
 		&.orn-front {
 			z-index: 3;
 		}
+
+		.songket {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 45%;
+
+			@include max-lg {
+				width: 65%;
+			}
+
+			@include max-sm {
+				width: 120%;
+			}
+
+			.image-element {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+			}
+		}
 	}
 }
 

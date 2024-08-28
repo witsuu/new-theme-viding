@@ -1,0 +1,65 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba($color: #000000, $alpha: .3);
+			content: "";
+		}
+
+		.image-element {
+			@include aspect-ratio(16, 8);
+
+			@include max-sm {
+				@include aspect-ratio(5, 6);
+			}
+
+			img {
+				object-fit: cover;
+			}
+		}
+	}
+
+	.reminder-content {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: fit-content;
+		max-width: 100%;
+		transform: translate(-50%, 0);
+		z-index: 3;
+		color: var(--color-light);
+
+		@include max-sm {
+			width: 100%;
+		}
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1rem;
+		margin-bottom: -1.5rem;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}
