@@ -6,6 +6,15 @@
 		padding: 5rem 0;
 	}
 
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 0%;
+				opacity: .4;
+			}
+		}
+	}
+
 	.appology-wrap {
 		position: relative;
 	}

@@ -6,11 +6,6 @@
 	min-width: 80%;
 	width: fit-content;
 	gap: 1.5rem;
-	z-index: 3;
-	background-color: rgba($color: #1e1f1e, $alpha: .6);
-	padding: .5rem 1.5rem .75rem;
-	color: var(--color-light);
-	border-radius: 8px;
 	margin: 0 auto;
 
 	@include ipad {

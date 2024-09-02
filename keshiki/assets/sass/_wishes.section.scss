@@ -8,15 +8,6 @@
 		@include ipad {
 			padding: 5rem 0 0;
 		}
-
-		.gazebo {
-			position: absolute;
-			top: 0;
-			left: 50%;
-			width: 140%;
-			transform: translate(-50%, 0);
-			opacity: .2;
-		}
 	}
 
 	.card-form {
@@ -27,7 +18,11 @@
 		}
 
 		.card-body {
-			padding: 0 2rem 2rem;
+			padding: 0 2rem 2rem 0;
+
+			.title-section {
+				text-align: left;
+			}
 		}
 	}
 

@@ -71,6 +71,22 @@ body {
 	&.orn-front {
 		z-index: 3;
 	}
+
+	.union {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: calc(100% + 1.5rem);
+		transform: translate(-50%, -50%);
+
+		.image-element {
+
+			.img-fluid {
+				mask: unset;
+				object-fit: fill;
+			}
+		}
+	}
 }
 
 .background__views {
@@ -161,11 +177,11 @@ h3 {
 }
 
 h1 {
-	font-size: 38px;
+	font-size: 46px;
 	line-height: 1.2;
 
 	@include max-md {
-		font-size: 36px;
+		font-size: 42px;
 	}
 
 	span {
@@ -234,7 +250,7 @@ span {
 
 .btn-custom {
 	background-color: var(--color-secondary);
-	padding: 0.5rem 2rem;
+	padding: 0.65rem 2rem;
 	transition: all 0.3s ease-in-out;
 	// border-color: $color-primary;
 	color: var(--text-button);
@@ -288,8 +304,7 @@ span {
 .form-control,
 .form-select {
 	font-family: $font-primary;
-	border: none;
-	padding: 0.5rem 1rem;
+	padding: 0.65rem 1rem;
 	background-color: rgba($color: #fff, $alpha: 0.8);
 	color: var(--color-dark);
 	border-radius: 8px;

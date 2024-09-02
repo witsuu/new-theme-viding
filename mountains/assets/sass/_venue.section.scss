@@ -1,5 +1,7 @@
 .venue-section {
 	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
 	padding: 3rem 0;
 
 	@include ipad {
@@ -46,14 +48,15 @@
 			}
 
 			.card {
-				background-color: var(--color-primary);
-				color: var(--color-light);
+				background-color: var(--color-main);
+				color: var(--color-dark);
 				border: none;
 				text-align: center;
 				border-radius: var(--border-radius);
+				overflow: hidden;
 
 				.card-body {
-					padding: 2rem;
+					padding: 0;
 
 					h4 {
 						padding: 0 0 1rem;
@@ -62,7 +65,7 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						margin-bottom: 1rem;
+						padding: 1rem;
 
 						.date {
 							position: relative;
@@ -75,7 +78,6 @@
 							}
 
 							.line {
-								--color-button-trans: #fff;
 								width: 45px;
 								height: 1px;
 								background-color: var(--color-button-trans);
@@ -105,8 +107,17 @@
 					.event-place {
 						position: relative;
 
+						.elements-wrapper-absolute {
+							.background-element {
+								img {
+									opacity: .4;
+								}
+							}
+						}
+
 						&-body {
-							padding-top: 1rem;
+							position: relative;
+							padding: 3rem 2rem;
 
 							.widget-elements {
 								position: relative;

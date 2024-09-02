@@ -1,18 +1,18 @@
 @font-face {
-  font-family: "Carmilla";
-  src: url(../fonts/CarmillaRegular.woff2) format(woff2);
+  font-family: "Derivia";
+  src: url(../fonts/Derivia-Regular.woff) format("woff"), url(../fonts/Derivia-Regular.woff2) format("woff2");
   font-display: swap;
 }
 :root {
-  --color-main: #B1BFC6;
-  --color-primary: #91A3AB;
-  --color-secondary: #746354;
+  --color-main: #FEFCFE;
+  --color-primary: #C0A0B2;
+  --color-secondary: #572F46;
   --color-dark: #1e1f1e;
   --color-light: #ffffff;
   --text-button: #ffffff;
   --color-button-trans: #fff;
   --vd-color-pink: #e9088a;
-  --border-radius: 20px;
+  --border-radius: 10px;
 }
 
 body {
@@ -163,18 +163,18 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
 
 h1 {
-  font-size: 38px;
+  font-size: 48px;
   line-height: 1.2;
 }
 @media (max-width: 767px) {
   h1 {
-    font-size: 36px;
+    font-size: 46px;
   }
 }
 h1 span {
@@ -268,7 +268,7 @@ span {
 }
 
 .font-secondary {
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
 }
 
 .scaleX-reverse {
@@ -290,7 +290,6 @@ span {
 .form-control,
 .form-select {
   font-family: "Nunito Sans", sans-serif;
-  border: none;
   padding: 0.5rem 1rem;
   background-color: rgba(255, 255, 255, 0.8);
   color: var(--color-dark);
@@ -1321,25 +1320,29 @@ ul li {
 }
 
 .countdown {
+  position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
-  position: relative;
-  min-width: 80%;
+  flex-direction: column;
   width: -moz-fit-content;
   width: fit-content;
   gap: 1.5rem;
   z-index: 3;
-  background-color: rgba(30, 31, 30, 0.6);
   padding: 0.5rem 1.5rem 0.75rem;
-  color: var(--color-light);
-  border-radius: 8px;
+  color: var(--color-dark);
   margin: 0 auto;
 }
-@media (max-width: 991px) and (min-width: 768px) {
-  .countdown {
-    min-width: 60%;
-  }
+.countdown::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  opacity: 0.6;
+  content: "";
+  border-radius: var(--border-radius);
 }
 .countdown .days,
 .countdown .hours,
@@ -1373,7 +1376,7 @@ ul li {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 36px;
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
@@ -1435,11 +1438,8 @@ ul li {
 .cover-section .cover-wrapper .cover-content {
   position: relative;
   width: 40%;
-  height: 100%;
-  padding-top: 5rem;
-  padding-bottom: 3rem;
+  padding: 5rem 1.8rem;
   margin: 0 auto;
-  color: var(--color-light);
 }
 .cover-section .cover-wrapper .cover-content::before {
   position: absolute;
@@ -1447,8 +1447,8 @@ ul li {
   left: 0;
   bottom: 0;
   right: 0;
-  background-color: var(--color-primary);
-  border-radius: 300px 300px 0 0;
+  background-color: var(--color-main);
+  border-radius: var(--border-radius);
   opacity: 0.6;
   content: "";
 }
@@ -1503,48 +1503,22 @@ ul li {
 .header-section .scroll-icon {
   margin-top: 1rem;
 }
-.header-section .arch {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 110%;
-  transform: translate(-50%, 8%);
-}
-.header-section .mountain {
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  width: 150%;
-  transform: translate(-50%, 0);
-}
 .header-section .header-content {
   position: relative;
   text-align: center;
   padding: 5rem 0 0;
   height: 100vh;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 .header-section .header-content .header {
   position: relative;
-  width: 80%;
+  width: 90%;
   min-height: 80%;
   text-align: center;
-  color: var(--color-light);
-  padding: 5rem 1rem 3rem;
-}
-.header-section .header-content .header::before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-primary);
-  border-radius: 300px 300px 0 0;
-  opacity: 0.6;
-  content: "";
+  padding: 5rem 1.5rem 3rem;
 }
 .header-section .header-content .header .header-title {
   position: relative;
@@ -1557,18 +1531,11 @@ ul li {
 .reminder-wrap {
   position: relative;
   width: 100%;
-  padding-top: 3rem;
-}
-.reminder-wrap .gazebo {
-  width: 140%;
-  margin: 0 -20%;
+  padding: 5rem 0;
 }
 .reminder-wrap .reminder-content {
-  position: absolute;
-  top: 60%;
-  left: 50%;
+  position: relative;
   width: 100%;
-  transform: translate(-50%, -50%);
 }
 .reminder-wrap .btn-reminder {
   z-index: 3;
@@ -1617,7 +1584,7 @@ ul li {
 .couple-section .and span {
   position: relative;
   font-size: 28px;
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -1642,13 +1609,8 @@ ul li {
 }
 .couple-section .couple .image-wrap {
   position: relative;
-  width: 70%;
-  margin: 3rem auto 4rem;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .couple-section .couple .image-wrap {
-    margin: 3rem auto;
-  }
+  width: 75%;
+  margin-bottom: 1rem;
 }
 .couple-section .couple .image-wrap .image-element {
   padding-top: 120%;
@@ -1665,12 +1627,11 @@ ul li {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 300px;
+  border-radius: var(--border-radius);
 }
 .couple-section .couple .couple-description {
   position: relative;
-  text-align: center;
-  padding: 1rem 1rem 0;
+  padding: 1rem 0 0;
 }
 .couple-section .couple .couple-description h3 {
   position: relative;
@@ -1691,7 +1652,7 @@ ul li {
   padding: 0.5rem 0.6rem;
   border-radius: 50px;
   background-color: var(--color-secondary);
-  margin: 1rem auto 0;
+  margin-top: 1rem;
 }
 .couple-section .couple .couple-description .sosmed-wrap .sosmed {
   color: var(--text-button);
@@ -1715,20 +1676,37 @@ ul li {
     font-size: 16px;
   }
 }
+.couple-section .couple.man {
+  text-align: left;
+}
+.couple-section .couple.man .image-wrap {
+  margin-right: auto;
+}
+.couple-section .couple.man .sosmed-wrap {
+  margin-right: auto;
+}
+.couple-section .couple.woman {
+  text-align: right;
+}
+.couple-section .couple.woman .image-wrap {
+  margin-left: auto;
+}
+.couple-section .couple.woman .sosmed-wrap {
+  margin-left: auto;
+}
 
 .story-section {
   position: relative;
-  padding: 3rem 0 0;
+  padding: 3rem 0;
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .story-section {
-    padding: 5rem 0 0;
+    padding: 5rem 0;
   }
 }
 .story-section .story-description {
   position: relative;
   text-align: left;
-  padding: 0 1rem;
 }
 .story-section .story-description .title-section {
   text-align: left;
@@ -1736,7 +1714,7 @@ ul li {
 .story-section .image-wrapper {
   position: relative;
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 1.5rem;
 }
 .story-section .image-wrapper .image-element {
   padding-top: 120%;
@@ -1761,23 +1739,24 @@ ul li {
   }
 }
 .story-section .image-wrapper .image-element img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: var(--border-radius);
 }
 
 .venue-section {
   position: relative;
-  padding: 3rem 0;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .venue-section {
-    padding: 5rem 0;
-  }
 }
 .venue-section .venue-wrapper {
   position: relative;
+  background-color: var(--color-primary);
+  color: var(--color-light);
+  padding: 3rem 0;
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  .venue-section .venue-wrapper {
+    padding: 5rem 0;
+  }
 }
 .venue-section .venue-wrapper .venue-description {
   position: relative;
@@ -1825,14 +1804,16 @@ ul li {
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name {
   position: relative;
   width: 100%;
-  margin-bottom: 1rem;
+  padding: 3rem 0;
+  background-color: var(--color-main);
+  color: var(--color-dark);
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
   position: relative;
   width: 100%;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date h5 {
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
   margin-bottom: 0;
   font-size: 42px;
 }
@@ -1844,7 +1825,7 @@ ul li {
   margin: 0.2rem auto 0.5rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name h4 {
-  font-family: "Carmilla", cursive;
+  font-family: "Derivia", cursive;
   font-size: 32px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
@@ -1859,14 +1840,21 @@ ul li {
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place {
   position: relative;
+  background-color: var(--color-main);
+  color: var(--color-dark);
+  border-bottom-left-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body {
-  padding-top: 1rem;
+  padding: 2rem 1.5rem 0;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-place-body .widget-elements {
   position: relative;
   width: 100%;
   margin-top: 1rem;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-place-body .widget-elements .btn-custom {
+  margin-bottom: -1.25rem;
 }
 .venue-section .prokes-wrapper {
   margin: 3rem 0 0;
@@ -1941,16 +1929,24 @@ ul li {
 }
 .rsvp-section .rsvp-wrapper {
   position: relative;
-  background-color: var(--color-primary);
-  color: var(--color-light);
-  border-radius: 300px;
+}
+.rsvp-section .rsvp-wrapper::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  border-radius: var(--border-radius);
+  opacity: 0.6;
+  content: "";
 }
 .rsvp-section .rsvp-wrapper .rsvp-form {
-  padding: 8rem 3rem;
+  padding: 3rem;
 }
 @media (max-width: 575px) {
   .rsvp-section .rsvp-wrapper .rsvp-form {
-    padding: 8rem 2rem;
+    padding: 3rem 2rem;
   }
 }
 
@@ -1966,14 +1962,6 @@ ul li {
     padding: 5rem 0 0;
   }
 }
-.wishes-section .wishes-wrapper-form .gazebo {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  width: 140%;
-  transform: translate(-50%, 0);
-  opacity: 0.2;
-}
 .wishes-section .card-form {
   background-color: transparent;
 }
@@ -1981,7 +1969,10 @@ ul li {
   border: none;
 }
 .wishes-section .card-form .card-body {
-  padding: 0 2rem 2rem;
+  padding: 0 2rem 2rem 0;
+}
+.wishes-section .card-form .card-body .title-section {
+  text-align: left;
 }
 .wishes-section .wishes-preview {
   position: relative;
@@ -2060,8 +2051,6 @@ ul li {
   position: relative;
   text-align: center;
   padding: 3rem 0;
-  background-color: var(--color-primary);
-  color: var(--color-light);
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .egift-section {
@@ -2250,6 +2239,9 @@ ul li {
 .gallery-section .gallery-default .splide .splide__arrow--next {
   right: 0;
 }
+.gallery-section iframe {
+  border-radius: var(--border-radius);
+}
 
 .apology-section {
   position: relative;
@@ -2266,45 +2258,14 @@ ul li {
 
 .stream-section {
   position: relative;
-  padding: 0 0 3rem;
+  padding: 3rem 0;
+  background-color: var(--color-primary);
+  color: var(--color-light);
 }
 @media (max-width: 991px) and (min-width: 768px) {
   .stream-section {
-    padding: 0 0 5rem;
+    padding: 5rem 0;
   }
-}
-.stream-section .image-wrapper {
-  position: relative;
-  width: 100%;
-  margin-bottom: 2rem;
-}
-.stream-section .image-wrapper .image-element {
-  padding-top: 120%;
-}
-.stream-section .image-wrapper .image-element > * {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .stream-section .image-wrapper .image-element {
-    padding-top: 56.25%;
-  }
-  .stream-section .image-wrapper .image-element > * {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-  }
-}
-.stream-section .image-wrapper .image-element img {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
 }
 .stream-section .stream-wrapper {
   position: relative;
@@ -2314,14 +2275,14 @@ ul li {
 }
 .stream-section .stream-wrapper .stream-content .stream-description {
   position: relative;
-  background-color: var(--color-primary);
-  color: var(--color-light);
+  background-color: var(--color-main);
+  color: var(--color-dark);
   border-radius: 300px 300px 20px 20px;
   padding: 8rem 1.5rem 1.5rem;
   text-align: center;
 }
 .stream-section .stream-wrapper .stream-content .stream-description iframe {
-  border-radius: 8px;
+  border-radius: var(--border-radius);
 }
 .stream-section ul {
   margin: 0 auto;
@@ -2356,7 +2317,7 @@ ul li {
 .thank-section .image-wrapper {
   position: relative;
   width: 80%;
-  margin: 0 auto 5rem;
+  margin: 0 auto 2rem;
 }
 .thank-section .image-wrapper .image-element {
   padding-top: 120%;
@@ -2369,30 +2330,13 @@ ul li {
   height: 100%;
 }
 .thank-section .image-wrapper .image-element img {
-  width: 100%;
-  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  border-radius: var(--border-radius);
 }
 .thank-section .thank {
   position: relative;
-  padding: 1.5rem 1.5rem 8rem;
-  color: var(--color-light);
   margin-bottom: 8rem;
-}
-.thank-section .thank:before {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: var(--color-primary);
-  border-radius: 20px 20px 300px 300px;
-  opacity: 0.6;
-  content: "";
-}
-.thank-section .thank .thank-body {
-  padding-top: 2rem;
 }
 
 .footer {

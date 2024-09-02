@@ -1,19 +1,29 @@
 .reminder-wrap {
 	position: relative;
 	width: 100%;
-	padding-top: 3rem;
+	padding: 3rem 0;
 
-	.gazebo {
-		width: 140%;
-		margin: 0 -20%;
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+
+		.image-element {
+			@include aspect-ratio(4, 5);
+
+			img {
+				object-fit: cover;
+				@include mask();
+			}
+		}
 	}
 
 	.reminder-content {
-		position: absolute;
-		top: 60%;
-		left: 50%;
-		width: 100%;
-		transform: translate(-50%, -50%);
+		position: relative;
+		margin-top: 1rem;
 	}
 
 	.btn-reminder {

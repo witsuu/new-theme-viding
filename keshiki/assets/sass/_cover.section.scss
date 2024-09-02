@@ -31,11 +31,8 @@
 		.cover-content {
 			position: relative;
 			width: 40%;
-			height: 100%;
-			padding-top: 5rem;
-			padding-bottom: 3rem;
+			padding: 5rem 1.8rem;
 			margin: 0 auto;
-			color: var(--color-light);
 
 			&::before {
 				position: absolute;
@@ -43,8 +40,8 @@
 				left: 0;
 				bottom: 0;
 				right: 0;
-				background-color: var(--color-primary);
-				border-radius: 300px 300px 0 0;
+				background-color: var(--color-main);
+				border-radius: var(--border-radius);
 				opacity: .6;
 				content: "";
 			}

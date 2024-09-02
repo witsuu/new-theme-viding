@@ -1,20 +1,26 @@
 .countdown {
+	position: relative;
 	display: flex;
 	text-align: center;
 	justify-content: center;
-	position: relative;
-	min-width: 80%;
+	flex-direction: column;
 	width: fit-content;
 	gap: 1.5rem;
 	z-index: 3;
-	background-color: rgba($color: #1e1f1e, $alpha: .6);
 	padding: .5rem 1.5rem .75rem;
-	color: var(--color-light);
-	border-radius: 8px;
+	color: var(--color-dark);
 	margin: 0 auto;
 
-	@include ipad {
-		min-width: 60%;
+	&::before {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background-color: var(--color-main);
+		opacity: .6;
+		content: "";
+		border-radius: var(--border-radius);
 	}
 
 	.days,

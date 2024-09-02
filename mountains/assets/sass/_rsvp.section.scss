@@ -6,17 +6,48 @@
 		padding: 5rem 0;
 	}
 
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 0%;
+			}
+		}
+	}
+
 	.rsvp-wrapper {
 		position: relative;
-		background-color: var(--color-primary);
-		color: var(--color-light);
-		border-radius: 300px;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--color-main);
+			opacity: .6;
+			border-radius: var(--border-radius);
+			box-shadow: 0 0 3rem var(--color-main);
+			content: "";
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: var(--border-radius);
+			box-shadow: 0 0 2rem var(--color-main);
+			opacity: .8;
+			content: "";
+		}
 
 		.rsvp-form {
-			padding: 8rem 3rem;
+			position: relative;
+			padding: 3rem;
 
 			@include max-sm {
-				padding: 8rem 2rem;
+				padding: 2rem 1.5rem;
 			}
 		}
 	}

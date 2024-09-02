@@ -1,13 +1,15 @@
 .venue-section {
 	position: relative;
-	padding: 3rem 0;
-
-	@include ipad {
-		padding: 5rem 0;
-	}
 
 	.venue-wrapper {
 		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		padding: 3rem 0;
+
+		@include ipad {
+			padding: 5rem 0;
+		}
 
 		.venue-description {
 			position: relative;
@@ -62,7 +64,9 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						margin-bottom: 1rem;
+						padding: 3rem 0;
+						background-color: var(--color-main);
+						color: var(--color-dark);
 
 						.date {
 							position: relative;
@@ -104,14 +108,22 @@
 
 					.event-place {
 						position: relative;
+						background-color: var(--color-main);
+						color: var(--color-dark);
+						border-bottom-left-radius: var(--border-radius);
+						border-bottom-right-radius: var(--border-radius);
 
 						&-body {
-							padding-top: 1rem;
+							padding: 2rem 1.5rem 0;
 
 							.widget-elements {
 								position: relative;
 								width: 100%;
 								margin-top: 1rem;
+
+								.btn-custom {
+									margin-bottom: -1.25rem;
+								}
 							}
 						}
 					}

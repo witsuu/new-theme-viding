@@ -5,51 +5,22 @@
 		margin-top: 1rem;
 	}
 
-	.arch {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		width: 110%;
-		transform: translate(-50%, 8%);
-	}
-
-	.mountain {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		width: 150%;
-		transform: translate(-50%, 0);
-	}
-
 	.header-content {
 		position: relative;
 		text-align: center;
 		padding: 5rem 0 0;
 		height: 100vh;
 		display: flex;
-		justify-content: flex-end;
+		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 
 		.header {
 			position: relative;
-			width: 80%;
+			width: 90%;
 			min-height: 80%;
 			text-align: center;
-			color: var(--color-light);
-			padding: 5rem 1rem 3rem;
-
-			&::before {
-				position: absolute;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				left: 0;
-				background-color: var(--color-primary);
-				border-radius: 300px 300px 0 0;
-				opacity: .6;
-				content: "";
-			}
+			padding: 5rem 1.5rem 3rem;
 
 			.header-title {
 				position: relative;
