@@ -1,0 +1,45 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-left: -2rem;
+
+		@include max-lg {
+			margin-left: 0;
+			margin-top: -1rem;
+		}
+
+		.image-element {
+			@include aspect-ratio(1, 1);
+
+			img {
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		padding: 5rem 3rem;
+		background-color: rgba($color: #fff, $alpha: .6);
+		color: var(--color-dark);
+		border-radius: var(--border-radius);
+		z-index: 3;
+
+		@include max-md {
+			padding: 3rem 2rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+		}
+	}
+}

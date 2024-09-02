@@ -1,0 +1,55 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+			background-color: var(--color-main);
+			color: var(--color-dark);
+			border-radius: var(--border-radius);
+			padding: 3rem;
+
+			@include max-sm {
+				padding: 2rem 1.5rem;
+			}
+
+			.stream-description {
+				position: relative;
+			}
+
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+
+			iframe {
+				border-radius: 6px;
+			}
+		}
+	}
+
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}
