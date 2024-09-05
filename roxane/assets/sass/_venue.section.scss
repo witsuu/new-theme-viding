@@ -167,6 +167,22 @@
 				}
 			}
 		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 35%;
+			transform: translate(-50%, 0);
+
+			@include max-lg {
+				width: 55%;
+			}
+
+			@include max-sm {
+				width: 65%;
+			}
+		}
 	}
 
 	.prokes-wrapper {

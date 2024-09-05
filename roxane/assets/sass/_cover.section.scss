@@ -34,11 +34,7 @@
 
 			.cover-body {
 				position: relative;
-				display: flex;
-				align-items: center;
-				justify-content: center;
 				width: 40%;
-				height: 100%;
 				background-color: var(--color-light);
 				color: var(--color-dark);
 				border-radius: var(--border-radius);
@@ -55,8 +51,12 @@
 
 				.cover-description {
 					position: relative;
-					padding: 1rem;
+					padding: 3rem 2rem;
 					text-align: center;
+
+					@include max-sm {
+						padding: 2rem 1.5rem;
+					}
 
 					.cover-event {
 						position: relative;
@@ -89,6 +89,40 @@
 				width: 100%;
 				padding-top: 1rem;
 			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-42%, -45%);
+
+		@include max-lg {
+			width: 55%;
+			transform: translate(-42%, -35%);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(42%, 40%);
+
+		@include max-lg {
+			width: 55%;
+			transform: translate(42%, 20%);
+		}
+
+		@include max-sm {
+			width: 65%;
 		}
 	}
 }

@@ -86,6 +86,23 @@
 			background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(40%, -45%) scaleX(-1);
+
+		@include max-lg {
+			width: 55%;
+			transform: translate(40%, 0) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
 }
 
 @keyframes scrollAnim {

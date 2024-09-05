@@ -36,4 +36,23 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 55%;
+		}
+
+		@include max-sm {
+			top: unset;
+			bottom: 0;
+			width: 65%;
+			transform: translate(-60%, 50%);
+		}
+	}
 }

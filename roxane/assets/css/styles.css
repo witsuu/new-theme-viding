@@ -19,7 +19,7 @@
 :root {
   --color-main: #EFEAE3;
   --color-primary: #DED5C2;
-  --color-secondary: #d2bb88;
+  --color-secondary: #CABEA8;
   --color-dark: #1e1f1e;
   --color-light: #fff;
   --text-button: #ffffff;
@@ -193,6 +193,7 @@ span {
   width: fit-content;
   margin: 0 auto;
   border-radius: 6px;
+  cursor: pointer;
 }
 .btn-custom:hover {
   color: var(--text-button);
@@ -302,6 +303,12 @@ span {
   .title-section span {
     font-size: 2rem;
   }
+}
+.title-section-ornament {
+  width: 100%;
+}
+.title-section-ornament .img-fluid {
+  width: 50px;
 }
 
 .overlay-elements-gradient {
@@ -1273,6 +1280,26 @@ ul li {
   fill: var(--text-button);
   transition: all 0.3s ease-in-out;
 }
+.reminder-wrap .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .reminder-wrap .orn-1 {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .reminder-wrap .orn-1 {
+    top: unset;
+    bottom: 0;
+    width: 65%;
+    transform: translate(-60%, 50%);
+  }
+}
 
 .cover-section {
   position: fixed;
@@ -1310,11 +1337,7 @@ ul li {
 }
 .cover-section .cover-wrapper .cover-content .cover-body {
   position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40%;
-  height: 100%;
   background-color: var(--color-light);
   color: var(--color-dark);
   border-radius: var(--border-radius);
@@ -1333,8 +1356,13 @@ ul li {
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
   position: relative;
-  padding: 1rem;
+  padding: 3rem 2rem;
   text-align: center;
+}
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper .cover-content .cover-body .cover-description {
+    padding: 2rem 1.5rem;
+  }
 }
 .cover-section .cover-wrapper .cover-content .cover-body .cover-description .cover-event {
   position: relative;
@@ -1359,6 +1387,42 @@ ul li {
   position: relative;
   width: 100%;
   padding-top: 1rem;
+}
+.cover-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-42%, -45%);
+}
+@media (max-width: 991px) {
+  .cover-section .orn-1 {
+    width: 55%;
+    transform: translate(-42%, -35%);
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .orn-1 {
+    width: 65%;
+  }
+}
+.cover-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(42%, 40%);
+}
+@media (max-width: 991px) {
+  .cover-section .orn-2 {
+    width: 55%;
+    transform: translate(42%, 20%);
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .orn-2 {
+    width: 65%;
+  }
 }
 
 .header-section {
@@ -1449,6 +1513,24 @@ ul li {
 .header-section .overlay-elements-gradient.overlay-bottom {
   background: linear-gradient(to top, var(--color-primary) 20%, transparent 100%);
 }
+.header-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(40%, -45%) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .header-section .orn-1 {
+    width: 55%;
+    transform: translate(40%, 0) scaleX(-1);
+  }
+}
+@media (max-width: 575px) {
+  .header-section .orn-1 {
+    width: 65%;
+  }
+}
 
 @keyframes scrollAnim {
   0% {
@@ -1501,6 +1583,20 @@ ul li {
     padding: 3rem 0;
   }
 }
+.couple-section .couple-wrapper .orn-1 {
+  position: absolute;
+  top: 3rem;
+  left: 0;
+  width: 100%;
+  transform: translate(-30%, 0) scaleX(-1);
+}
+.couple-section .couple-wrapper .orn-2 {
+  position: absolute;
+  top: 55%;
+  right: 0;
+  width: 100%;
+  transform: translate(35%, -50%) scaleX(-1);
+}
 .couple-section .couple-body {
   position: relative;
 }
@@ -1546,7 +1642,7 @@ ul li {
 }
 .couple-section .couple .couple-description {
   position: relative;
-  background-color: var(--color-light);
+  background-color: rgba(255, 255, 255, 0.8);
   color: var(--color-dark);
   border-radius: var(--border-radius);
   padding: 8rem 1rem 2rem;
@@ -1645,6 +1741,13 @@ ul li {
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: var(--border-radius);
+}
+.story-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: translate(-30%, 10%);
 }
 
 .venue-section {
@@ -1802,6 +1905,23 @@ ul li {
   position: relative;
   margin-top: 1rem;
 }
+.venue-section .venue-wrapper .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .venue-section .venue-wrapper .orn-1 {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .orn-1 {
+    width: 65%;
+  }
+}
 .venue-section .prokes-wrapper {
   margin: 3rem 0 0;
   position: relative;
@@ -1958,6 +2078,20 @@ ul li {
 .rsvp-section .rsvp-wrapper .rsvp-form {
   position: relative;
 }
+.rsvp-section .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(-45%, 50%) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .rsvp-section .orn-1 {
+    top: 0;
+    bottom: unset;
+    transform: translate(-45%, -50%) scaleX(-1);
+  }
+}
 
 .wishes-section {
   position: relative;
@@ -1970,6 +2104,13 @@ ul li {
   .wishes-section .wishes-form-wrapper {
     padding: 3rem 0;
   }
+}
+.wishes-section .wishes-form-wrapper .orn-1 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 80%;
+  transform: translate(-35%, 20%) scaleX(-1);
 }
 .wishes-section .card-form {
   background-color: rgba(255, 255, 255, 0.6);
@@ -2314,15 +2455,24 @@ ul li {
 }
 .stream-section .stream-wrapper .stream-content {
   position: relative;
-  background-color: var(--color-main);
   color: var(--color-dark);
-  border-radius: var(--border-radius);
   padding: 3rem;
 }
 @media (max-width: 575px) {
   .stream-section .stream-wrapper .stream-content {
     padding: 2rem 1.5rem;
   }
+}
+.stream-section .stream-wrapper .stream-content::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color-main);
+  border-radius: var(--border-radius);
+  opacity: 0.8;
+  content: "";
 }
 .stream-section .stream-wrapper .stream-content .stream-description {
   position: relative;
@@ -2343,6 +2493,40 @@ ul li {
 }
 .stream-section .yt-description {
   position: relative;
+}
+.stream-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(50%, 0) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .stream-section .orn-1 {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .stream-section .orn-1 {
+    width: 65%;
+  }
+}
+.stream-section .orn-2 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 35%;
+  transform: translate(-50%, 0) scaleX(-1);
+}
+@media (max-width: 991px) {
+  .stream-section .orn-2 {
+    width: 55%;
+  }
+}
+@media (max-width: 575px) {
+  .stream-section .orn-2 {
+    width: 65%;
+  }
 }
 
 .thank-section {
@@ -2388,6 +2572,13 @@ ul li {
 }
 .thank-section .thank-wrapper .title-section {
   text-align: left;
+}
+.thank-section .orn-1 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  transform: translate(38%, -10%) scaleX(-1);
 }
 
 .footer {
