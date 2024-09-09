@@ -1,0 +1,254 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	overflow: hidden;
+
+	@include max-sm {
+		.container-couple {
+			padding: 0;
+		}
+	}
+
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		margin-bottom: 1rem;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0 0;
+
+		@include max-md {
+			padding: 3rem 0 0;
+		}
+
+		.ornaments-wrapper {
+			.cloud-1 {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 200%;
+			}
+
+			.cloud-2 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 200%;
+				transform: translate(0, 10%);
+			}
+
+			.orn-1 {
+				position: absolute;
+				top: 0;
+				right: 2rem;
+				width: 18%;
+
+				@include max-sm {
+					width: 25%;
+				}
+			}
+
+			.orn-2 {
+				position: absolute;
+				top: 3rem;
+				left: 2rem;
+				width: 12%;
+				transform: rotate(25deg);
+
+				@include min-md {
+					width: 10%;
+				}
+			}
+		}
+	}
+
+	.couple-body {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius) var(--border-radius) 0 0;
+		padding: 3rem 2rem;
+
+		@include max-md {
+			padding: 2rem 1.5rem;
+		}
+
+		&::before {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			height: 150%;
+			background-color: var(--color-primary);
+			border-radius: 0 0 var(--border-radius) var(--border-radius);
+			transform: translate(0, 90%);
+			content: "";
+		}
+	}
+
+	.couple-content {
+		position: relative;
+		padding: 10rem 3rem 3rem;
+		margin-bottom: 5rem;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		border-radius: var(--border-radius) var(--border-radius) 300px 300px;
+		text-align: left;
+
+		@include max-sm {
+			padding: 10rem 1.5rem 1.5rem;
+			margin-bottom: 3rem;
+		}
+
+		.couple-content-body {
+			position: relative;
+			width: 90%;
+
+			.title-section {
+				text-align: left;
+			}
+		}
+
+		.image-wrap {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 3/4;
+			margin-top: 3rem;
+
+			.image-element {
+				height: 100%;
+
+				img[alt="couple-background"] {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 300px;
+					box-shadow: var(--shadow);
+				}
+			}
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 3/4;
+			margin: 3rem auto;
+
+			@include max-sm {
+				margin: 2rem auto;
+			}
+
+			.image-element {
+				height: 100%;
+
+				.couple-image {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 300px;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 1rem 0 3rem;
+			z-index: 3;
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+		}
+
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 1rem auto 0;
+
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+
+			.fab {
+				font-size: 18px;
+
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.and {
+				padding: 1rem 0;
+				margin-bottom: 0;
+			}
+
+			.couple-description {
+				padding: 1rem;
+			}
+
+			&.man {
+				.sosmed-wrap {
+					margin: 1rem auto 0 0;
+				}
+			}
+
+			&.women {
+				.sosmed-wrap {
+					margin: 1rem 0 0 auto;
+				}
+			}
+
+			.image-wrap {
+				@include min-md {
+					aspect-ratio: 6/4;
+				}
+			}
+		}
+	}
+}

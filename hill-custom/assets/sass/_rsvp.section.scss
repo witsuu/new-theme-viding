@@ -1,0 +1,111 @@
+.rsvp-section {
+	position: relative;
+	padding: 8rem 0;
+
+	@include max-md {
+		padding: 5rem 0 0;
+
+		.container {
+			padding: 0;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: -3rem;
+		left: 0;
+		width: 26%;
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(0, 60%);
+
+		@include min-md {
+			width: 30%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 5rem;
+		right: 0;
+		width: 10%;
+		transform: rotate(20deg);
+
+		@include max-lg {
+			top: 0;
+			right: 4rem;
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		color: var(--color-dark);
+
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 80%;
+			height: 100%;
+			background-color: var(--color-primary);
+			border-radius: var(--border-radius);
+			content: "";
+
+			@include max-md {
+				top: unset;
+				bottom: 0;
+				width: 100%;
+				height: 80%;
+			}
+		}
+
+		.image-wrap {
+			position: relative;
+			width: 100%;
+			aspect-ratio: 3/4;
+
+			.image-element {
+				height: 100%;
+
+				img {
+					width: 100%;
+					height: 100%;
+					object-fit: cover;
+					border-radius: 50%;
+				}
+			}
+
+			.frame {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				width: 106%;
+				transform: translate(-50%, -49%);
+			}
+
+			.ornaments-wrapper {
+				.image-element {
+					height: auto;
+
+					img {
+						border-radius: 0;
+					}
+				}
+			}
+		}
+
+		.rsvp-form {
+			position: relative;
+			padding: 3rem 2rem;
+
+			@include max-md {
+				padding: 4rem 1.5rem 2rem;
+			}
+		}
+	}
+}
