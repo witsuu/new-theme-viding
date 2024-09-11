@@ -1,9 +1,22 @@
 .venue-section {
 	position: relative;
 
+	.bolon {
+		position: absolute;
+		top: 3.5rem;
+		left: 0;
+		width: 100%;
+		transform: translate(-30%, 0);
+	}
+
+	.side-ornament {
+		@include max-sm {
+			display: none;
+		}
+	}
+
 	.venue-wrapper {
 		position: relative;
-		z-index: 3;
 
 		.venue-description-wrapper {
 			position: relative;
@@ -24,11 +37,6 @@
 
 		.venue-content {
 			position: relative;
-			padding: 5rem 0;
-
-			@include max-md {
-				padding: 3rem 0;
-			}
 
 			.ribbon-venue {
 				position: relative;
@@ -61,10 +69,15 @@
 				background-color: transparent;
 				text-align: center;
 				border: none;
+				overflow: hidden;
+
+				.line {
+					width: 400%;
+				}
 
 				.card-body {
 					position: relative;
-					padding: 2rem 1.5rem;
+					padding: 4rem 2rem;
 
 					h4 {
 						padding: 0 0 1rem;
@@ -82,7 +95,7 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 3rem 0;
+						padding: 4rem 0;
 						color: var(--color-light);
 
 						&::before {
@@ -112,7 +125,7 @@
 								font-family: $font-secondary;
 								font-weight: 400;
 								margin-bottom: 0;
-								font-size: 38px;
+								font-size: 42px;
 								padding: .5rem 0;
 							}
 						}
@@ -206,7 +219,7 @@
 	}
 
 	.row-venue {
-		row-gap: 3rem;
+		row-gap: 0;
 	}
 
 	.animation-loop {

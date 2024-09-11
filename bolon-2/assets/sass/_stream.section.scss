@@ -9,6 +9,19 @@
 		padding: 3rem 0;
 	}
 
+	.bolon {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 115%;
+		transform: translate(-50%, -50%);
+		opacity: .2;
+
+		@include max-sm {
+			width: 125%;
+		}
+	}
+
 	.stream-wrapper {
 		position: relative;
 
@@ -21,6 +34,7 @@
 				background-color: var(--color-main);
 				color: var(--color-dark);
 				border-radius: var(--border-radius);
+				overflow: hidden;
 
 				@include max-md {
 					padding: 2rem 1rem;

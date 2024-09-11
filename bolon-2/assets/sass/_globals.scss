@@ -79,6 +79,53 @@ body {
 		&.orn-front {
 			z-index: 3;
 		}
+
+		.line {
+			position: absolute;
+			left: 50%;
+			width: 140%;
+			transform: translate(-50%, 0);
+
+			@include max-lg {
+				width: 230%;
+			}
+
+			@include max-sm {
+				width: 350%;
+			}
+
+			&.line-top {
+				top: 0;
+			}
+
+			&.line-bottom {
+				bottom: 0;
+			}
+		}
+
+		.side-ornament {
+			position: absolute;
+			top: 50%;
+			width: 6%;
+			transform: translate(0, -50%);
+
+			@include max-lg {
+				width: 4rem;
+			}
+
+			@include max-sm {
+				width: 3rem;
+			}
+
+			&-left {
+				left: 0;
+			}
+
+			&-right {
+				right: 0;
+				transform: translate(0, -50%) scaleX(-1);
+			}
+		}
 	}
 }
 

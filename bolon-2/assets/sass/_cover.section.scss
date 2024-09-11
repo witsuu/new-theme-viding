@@ -10,6 +10,40 @@
 		transform: translateY(-100%);
 	}
 
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-25%, 50%);
+
+		@include max-lg {
+			width: 50%;
+			transform: translate(-25%, 40%);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(25%, 50%) scaleX(-1);
+
+		@include max-lg {
+			width: 50%;
+			transform: translate(25%, 40%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
 	.cover-wrapper {
 		position: relative;
 		display: flex;

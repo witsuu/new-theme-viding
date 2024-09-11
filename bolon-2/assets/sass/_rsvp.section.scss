@@ -4,7 +4,6 @@
 	.rsvp-wrapper {
 		position: relative;
 		padding: 5rem 3rem;
-		border-radius: 300px;
 
 		@include max-md {
 			padding: 5rem 2rem;
@@ -25,6 +24,18 @@
 				img {
 					object-fit: cover;
 				}
+			}
+		}
+
+		.side-ornament {
+			width: 3.5rem;
+
+			&-left {
+				transform: translate(-.7rem, -50%);
+			}
+
+			&-right {
+				transform: translate(.7rem, -50%) scaleX(-1);
 			}
 		}
 	}

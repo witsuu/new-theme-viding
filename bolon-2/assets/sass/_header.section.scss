@@ -59,6 +59,132 @@
 			}
 		}
 	}
+
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 90%;
+			}
+		}
+	}
+
+	.bolon {
+		position: absolute;
+		bottom: 5rem;
+		width: 30%;
+
+		@include max-lg {
+			width: 50%;
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+
+		&-left {
+			left: 0;
+			transform: translate(0%, 0);
+
+			@include max-lg {
+				transform: translate(-20%, 0);
+			}
+
+			@include max-sm {
+				transform: translate(-30%, 0);
+			}
+		}
+
+		&-right {
+			right: 0;
+			transform: translate(0%, 0) scaleX(-1);
+
+			@include max-lg {
+				transform: translate(20%, 0) scaleX(-1);
+			}
+
+			@include max-sm {
+				transform: translate(30%, 0) scaleX(-1);
+			}
+		}
+
+		.tree {
+			position: absolute;
+			top: 0;
+			right: 10%;
+			width: 100%;
+			transform: translate(0, -35%);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-25%, 55%);
+
+		@include max-lg {
+			width: 55%;
+			transform: translate(-25%, 50%);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(25%, 55%) scaleX(-1);
+
+		@include max-lg {
+			width: 55%;
+			transform: translate(25%, 50%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 65%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 12%;
+		transform: translate(0, 70%);
+
+		@include max-lg {
+			width: 25%;
+		}
+
+		@include max-sm {
+			left: 0;
+			width: 35%;
+			transform: translate(0, 80%);
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 4rem;
+		width: 12%;
+		transform: translate(0, 70%) scaleX(-1);
+
+		@include max-lg {
+			width: 35%;
+		}
+
+		@include max-sm {
+			right: 0;
+			width: 35%;
+			transform: translate(0, 80%) scaleX(-1);
+		}
+	}
 }
 
 @keyframes scrollAnim {

@@ -1,5 +1,10 @@
 .wishes-section {
 	position: relative;
+	padding-top: 3rem;
+
+	@include max-sm {
+		padding-top: 2.25rem;
+	}
 
 	.wishes-form-wrapper {
 		position: relative;
@@ -9,6 +14,57 @@
 
 		@include max-sm {
 			padding: 3rem 0 1rem;
+		}
+
+		.bolon {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 60%;
+			transform: translate(-50%, 0%);
+			opacity: .3;
+
+			@include max-lg {
+				top: 50%;
+				width: 80%;
+				transform: translate(-50%, -50%);
+			}
+
+			@include max-sm {
+				width: 120%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 12%;
+			transform: translate(-50%, 0);
+
+			@include max-lg {
+				width: 25%;
+			}
+
+			@include max-sm {
+				width: 35%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 12%;
+			transform: translate(50%, 40%) scaleX(-1);
+
+			@include max-lg {
+				width: 25%;
+			}
+
+			@include max-sm {
+				width: 35%;
+			}
 		}
 	}
 
@@ -31,10 +87,10 @@
 
 	.wishes-preview {
 		position: relative;
-		padding: 2rem 0 5rem;
+		padding: 4rem 0 5rem;
 
 		@include max-sm {
-			padding: 1rem 0 3rem;
+			padding: 3rem 0;
 		}
 
 		.card {
