@@ -137,6 +137,109 @@ body {
   background-size: cover;
   background-position: center;
 }
+.background__views .background__frames .tree-1 {
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  width: 50%;
+  transform: translate(-65%, 0);
+}
+@media (max-width: 575px) {
+  .background__views .background__frames .tree-1 {
+    transform: translate(-75%, 0);
+    width: 70%;
+  }
+}
+.background__views .background__frames .tree-2 {
+  position: absolute;
+  bottom: 2rem;
+  right: 0;
+  width: 50%;
+  transform: translate(75%, 0);
+}
+@media (max-width: 575px) {
+  .background__views .background__frames .tree-2 {
+    width: 65%;
+  }
+}
+.background__views .background__frames .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  transform: translate(-30%, -10%);
+}
+.background__views .background__frames .orn-2 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 25%;
+  transform: translate(30%, -10%) scaleX(-1);
+}
+.background__views .background__frames .orn-3 {
+  position: absolute;
+  top: 2rem;
+  left: 0;
+  width: 20%;
+  transform: translate(-50%, 0);
+}
+.background__views .background__frames .orn-3 .orn-4 {
+  position: absolute;
+  top: 40%;
+  right: 5%;
+  width: 100%;
+}
+.background__views .background__frames .orn-5 {
+  position: absolute;
+  top: 2rem;
+  right: 0;
+  width: 20%;
+  transform: translate(50%, 0) rotate(-30deg);
+}
+.background__views .background__frames .orn-5 .orn-6 {
+  position: absolute;
+  top: 50%;
+  left: -30%;
+  width: 100%;
+}
+.background__views .background__frames .orn-7 {
+  position: absolute;
+  bottom: 0;
+  left: 1rem;
+  width: 30%;
+  transform: translate(-40%, 0);
+}
+.background__views .background__frames .orn-7 .orn-8 {
+  position: absolute;
+  top: 35%;
+  left: 35%;
+  width: 100%;
+}
+.background__views .background__frames .orn-9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 23%;
+  transform: translate(-30%, 40%);
+}
+.background__views .background__frames .orn-9 .orn-10 {
+  position: absolute;
+  bottom: 60%;
+  right: 25%;
+  width: 80%;
+}
+.background__views .background__frames .orn-9 .orn-11 {
+  position: absolute;
+  top: 25%;
+  left: 60%;
+  width: 80%;
+}
+.background__views .background__frames .orn-9 .orn-11 .orn-12 {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 100%;
+}
 
 .layout__views {
   position: relative;
@@ -1765,7 +1868,7 @@ ul li {
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 30%;
+  width: 35%;
   transform: translate(-30%, 40%);
 }
 .header-section .orn-9 .orn-10 {
@@ -2161,33 +2264,6 @@ ul li {
     padding: 5rem 0;
   }
 }
-.venue-section .orn-1 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 30%;
-  transform: translate(-65%, -35%);
-}
-.venue-section .orn-1 .orn-2 {
-  position: absolute;
-  top: 25%;
-  right: -10%;
-  width: 80%;
-}
-.venue-section .orn-3 {
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 30%;
-  transform: translate(65%, -35%);
-}
-.venue-section .orn-3 .orn-4 {
-  position: absolute;
-  top: 25%;
-  left: 10%;
-  width: 80%;
-  transform: rotate(-45deg);
-}
 .venue-section .venue-wrapper {
   position: relative;
 }
@@ -2241,6 +2317,22 @@ ul li {
   position: relative;
   width: 100%;
   padding: 1rem;
+  overflow: hidden;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+  color: var(--color-dark);
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name .union {
+  position: relative;
+  width: 100%;
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  padding: 0 14%;
+  z-index: 5;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date {
   position: relative;
@@ -2261,8 +2353,16 @@ ul li {
   font-family: "Carmilla", cursive;
   font-size: 32px;
 }
-.venue-section .venue-wrapper .venue-content .card .card-body .event-name p {
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
   margin-bottom: 0;
+  font-size: 18px;
+}
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name p,
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name span {
+    font-size: 16px;
+  }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-description {
   position: relative;
@@ -2397,6 +2497,103 @@ ul li {
     opacity: 1;
   }
 }
+.venue-section .tenda {
+  position: absolute;
+  top: 60%;
+  right: 0;
+  width: 100%;
+  transform: translate(50%, -50%);
+}
+.venue-section .orn-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30%;
+  transform: translate(-65%, -35%);
+}
+.venue-section .orn-1 .orn-2 {
+  position: absolute;
+  top: 25%;
+  right: -10%;
+  width: 80%;
+}
+.venue-section .orn-3 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30%;
+  transform: translate(65%, -35%);
+}
+.venue-section .orn-3 .orn-4 {
+  position: absolute;
+  top: 25%;
+  left: 10%;
+  width: 80%;
+  transform: rotate(-45deg);
+}
+.venue-section .orn-5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 45%;
+  transform: translate(-50%, -20%);
+}
+.venue-section .orn-6 {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(50%, -20%) scaleX(-1);
+}
+.venue-section .orn-7 {
+  position: absolute;
+  bottom: 3rem;
+  left: 0;
+  width: 60%;
+  transform: translate(-50%, 0);
+}
+.venue-section .orn-8 {
+  position: absolute;
+  bottom: 3rem;
+  right: 0;
+  width: 60%;
+  transform: translate(50%, 0) scaleX(-1);
+}
+.venue-section .orn-9 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  transform: translate(-35%, 40%);
+}
+.venue-section .orn-10 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 50%;
+  transform: translate(40%, 40%);
+}
+.venue-section .orn-11 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40%;
+  transform: translate(-10%, 50%) rotate(-20deg);
+}
+.venue-section .orn-12 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 35%;
+  transform: translate(25%, 45%);
+}
+.venue-section .orn-12 .orn-13 {
+  position: absolute;
+  top: 15%;
+  right: 65%;
+  width: 80%;
+  transform: scaleX(-1);
+}
 
 .rsvp-section {
   position: relative;
@@ -2433,7 +2630,7 @@ ul li {
 }
 @media (max-width: 575px) {
   .rsvp-section .rsvp-wrapper .rsvp-form {
-    padding: 2rem 1.5rem;
+    padding: 4rem 3rem 3rem;
   }
 }
 .rsvp-section .rsvp-wrapper .mountain {
