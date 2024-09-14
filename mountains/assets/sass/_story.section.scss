@@ -26,4 +26,44 @@
 			}
 		}
 	}
+
+	.mountain {
+		position: absolute;
+		top: 3rem;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-60%, 0) rotate(20deg) scaleX(-1);
+
+		.orn-2 {
+			position: absolute;
+			top: 60%;
+			left: -25%;
+			width: 80%;
+			transform: rotate(10deg);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(60%, 0) rotate(-20deg);
+
+		.orn-4 {
+			position: absolute;
+			top: 60%;
+			left: -15%;
+			width: 80%;
+			transform: rotate(-20deg);
+		}
+	}
 }

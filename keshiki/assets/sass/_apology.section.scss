@@ -9,4 +9,21 @@
 	.appology-wrap {
 		position: relative;
 	}
+
+	.elements-wrapper-absolute {
+		.background-element {
+			img {
+				object-position: 50% 80%;
+				opacity: .15;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-40%, -45%) rotate(-20deg);
+	}
 }

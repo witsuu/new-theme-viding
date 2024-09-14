@@ -1,11 +1,14 @@
 .reminder-wrap {
 	position: relative;
 	width: 100%;
-	padding: 5rem 0;
+	padding: 3rem 0 0;
 
 	.reminder-content {
-		position: relative;
+		position: absolute;
+		top: 50%;
+		left: 50%;
 		width: 100%;
+		transform: translate(-50%, -50%);
 	}
 
 	.btn-reminder {
@@ -22,6 +25,89 @@
 		path {
 			fill: var(--text-button);
 			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.door {
+		position: relative;
+		width: 170%;
+		margin-left: -37%;
+	}
+
+	.fuji {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -50%);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 15%;
+		left: 0;
+		width: 32%;
+		transform: translate(-65%, 0) rotate(20deg) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 32%;
+		transform: translate(45%, 0) rotate(-20deg) scaleX(-1);
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 4rem;
+		left: 0;
+		width: 45%;
+		transform: translate(-30%, 0) scaleX(-1);
+
+		.orn-4 {
+			position: absolute;
+			top: 10%;
+			left: 35%;
+			width: 50%;
+			transform: rotate(-30deg);
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 35%;
+			left: 10%;
+			width: 80%;
+		}
+	}
+
+	.tree {
+		position: absolute;
+		bottom: 5rem;
+		right: 0;
+		width: 50%;
+		transform: translate(15%, 0);
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 3.5rem;
+		right: 0;
+		width: 45%;
+		transform: translate(40%, 0);
+
+		.orn-7 {
+			position: absolute;
+			top: 40%;
+			left: 0;
+			width: 50%;
+		}
+
+		.orn-8 {
+			position: absolute;
+			top: -5%;
+			left: 30%;
+			width: 80%;
 		}
 	}
 }

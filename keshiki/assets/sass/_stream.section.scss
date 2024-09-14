@@ -8,6 +8,15 @@
 		padding: 5rem 0;
 	}
 
+	.hill {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, -20%);
+		opacity: .6;
+	}
+
 	.stream-wrapper {
 		position: relative;
 

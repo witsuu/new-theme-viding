@@ -113,6 +113,132 @@ body {
 			background-size: cover;
 			background-position: center;
 		}
+
+		.tree-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: translate(-38%, 23%);
+		}
+
+		.tree-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(20%, 45%);
+
+			.bf {
+				position: absolute;
+				top: 15%;
+				right: 90%;
+				width: 30%;
+				transform: rotate(-35deg);
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 45%;
+			transform: translate(-20%, -60%);
+
+			.bf {
+				position: absolute;
+				bottom: -10%;
+				right: 50%;
+				width: 18%;
+				transform: rotate(30deg);
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45%;
+			transform: translate(30%, -55%) rotate(20deg) scaleX(-1);
+
+			.bf {
+				position: absolute;
+				bottom: 0%;
+				right: 35%;
+				width: 20%;
+				transform: rotate(50deg);
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30%;
+			transform: translate(-45%, 20%) scaleX(-1);
+
+			.bf {
+				position: absolute;
+				bottom: 110%;
+				right: 40%;
+				width: 40%;
+				transform: rotate(-35deg);
+			}
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 30%;
+			transform: translate(45%, 20%);
+		}
+
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 30%;
+			transform: translate(-55%, 28%);
+
+			.orn-6 {
+				position: absolute;
+				top: 48%;
+				left: 75%;
+				width: 70%;
+			}
+		}
+
+		.orn-7 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 20%;
+			transform: translate(20%, 32%);
+
+			.orn-8 {
+				position: absolute;
+				top: 22%;
+				right: 70%;
+				width: 100%;
+			}
+
+			.orn-9 {
+				position: absolute;
+				top: 0;
+				left: 35%;
+				width: 150%;
+				transform: translate(0, -40%);
+
+				.orn-10 {
+					position: absolute;
+					bottom: 100%;
+					left: -5%;
+					width: 80%;
+					transform: scaleX(-1);
+				}
+			}
+		}
 	}
 }
 
@@ -201,7 +327,8 @@ span {
 	}
 }
 
-.image-element {
+.image-element,
+.background-element {
 	position: relative;
 	width: 100%;
 	height: auto;
@@ -687,8 +814,8 @@ ul {
 	height: 5px;
 	transform: rotate(45deg);
 
-	border-right: 2px solid var(--color-light);
-	border-bottom: 2px solid var(--color-light);
+	border-right: 2px solid var(--color-button-trans);
+	border-bottom: 2px solid var(--color-button-trans);
 	margin: 0 0 3px 4px;
 
 	width: 16px;
@@ -740,7 +867,7 @@ ul {
 	width: 24px;
 	border-radius: 14px;
 	transform: none;
-	border: 2px solid var(--color-light);
+	border: 2px solid var(--color-button-trans);
 	top: 170px;
 }
 

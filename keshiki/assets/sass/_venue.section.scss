@@ -22,6 +22,7 @@
 
 			.ribbon-venue {
 				position: relative;
+				padding-top: 1rem;
 				margin-bottom: 1rem;
 
 				svg {
@@ -52,10 +53,11 @@
 				color: var(--color-light);
 				border: none;
 				text-align: center;
-				border-radius: var(--border-radius);
+				border-radius: 0;
+				overflow: hidden;
 
 				.card-body {
-					padding: 2rem;
+					padding: 0 2rem 2rem;
 
 					h4 {
 						padding: 0 0 1rem;
@@ -64,9 +66,17 @@
 					.event-name {
 						position: relative;
 						width: 100%;
-						padding: 3rem 0;
 						background-color: var(--color-main);
 						color: var(--color-dark);
+
+						&-body {
+							position: absolute;
+							top: 50%;
+							left: 50%;
+							width: 100%;
+							transform: translate(-50%, -55%);
+							padding: 0 2rem;
+						}
 
 						.date {
 							position: relative;
@@ -79,7 +89,6 @@
 							}
 
 							.line {
-								--color-button-trans: #fff;
 								width: 45px;
 								height: 1px;
 								background-color: var(--color-button-trans);
@@ -133,7 +142,7 @@
 	}
 
 	.prokes-wrapper {
-		margin: 3rem 0 0;
+		margin: 1rem 0 0;
 		position: relative;
 		padding: 2rem;
 		text-align: center;
@@ -195,5 +204,138 @@
 				row-gap: 3rem;
 			}
 		}
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+
+	.mountain {
+		position: absolute;
+		top: 30%;
+		left: 50%;
+		width: 150%;
+		transform: translate(-45%, 0);
+		opacity: .2;
+
+		.hill {
+			position: absolute;
+			top: -15%;
+			left: 50%;
+			width: 80%;
+			transform: translate(-56%, 0);
+		}
+	}
+
+	.fuji {
+		position: absolute;
+		top: 3rem;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		opacity: .2;
+	}
+
+	.door {
+		position: relative;
+		width: 120%;
+		margin-left: -11%;
+
+		@include max-sm {
+			width: 140%;
+			margin-left: -22%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-65%, -10%) rotate(20deg) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(55%, -35%) rotate(-10deg) scaleX(-1);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-70%, -45%) rotate(-25deg);
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 55%;
+		transform: translate(67%, -15%) rotate(20deg) scaleX(-1);
 	}
 }

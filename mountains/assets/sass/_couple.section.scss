@@ -51,6 +51,62 @@
 			width: 125%;
 			transform: translate(-50%, -50%);
 		}
+
+		.cloud-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			transform: translate(-40%, -50%);
+		}
+
+		.cloud-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(50%, 50%);
+		}
+
+		.mountain {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+			opacity: .6;
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: -3rem;
+			left: 2rem;
+			width: 35%;
+			transform: scaleX(-1) rotate(30deg);
+
+			.orn-2 {
+				position: absolute;
+				bottom: 68%;
+				left: -10%;
+				width: 80%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: -3rem;
+			right: 2rem;
+			width: 35%;
+			transform: rotate(30deg);
+
+			.orn-4 {
+				position: absolute;
+				bottom: 70%;
+				left: -5%;
+				width: 80%;
+				transform: rotate(-20deg) scaleX(-1);
+			}
+		}
 	}
 
 	.couple {

@@ -2,25 +2,54 @@
 	position: relative;
 
 	.scroll-icon {
+		--color-button-trans: #1e1f1e;
 		margin-top: 1rem;
 	}
 
 	.header-content {
 		position: relative;
 		text-align: center;
-		padding: 5rem 0 0;
-		height: 100vh;
+		padding: 4rem 0 3rem;
+		min-height: 100vh;
 		display: flex;
 		justify-content: center;
 		align-items: center;
 		flex-direction: column;
 
+		@include max-lg {
+			min-height: 85vh;
+		}
+
 		.header {
 			position: relative;
 			width: 90%;
-			min-height: 80%;
 			text-align: center;
-			padding: 5rem 1.5rem 3rem;
+			padding: 3rem 1.5rem 4rem;
+			color: var(--color-dark);
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: var(--color-light);
+				border-radius: 300px;
+				opacity: .3;
+				content: "";
+			}
+
+			&::after {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				box-shadow: 0 0 1rem var(--color-light);
+				border-radius: 300px;
+				opacity: .6;
+				content: "";
+			}
 
 			.header-title {
 				position: relative;
@@ -29,6 +58,173 @@
 					position: relative;
 					z-index: 5;
 				}
+			}
+		}
+	}
+
+	.mountain {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 150%;
+		transform: translate(-45%, -10%);
+	}
+
+	.hill {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 110%;
+		transform: translate(-50%, 10%);
+		opacity: .6;
+	}
+
+	.door {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 180%;
+		transform: translate(-50%, 40%);
+	}
+
+	.slide-door-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-70%, 0);
+	}
+
+	.slide-door-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(70%, 0) scaleX(-1);
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-38%, 23%);
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(20%, 45%);
+
+		.bf {
+			position: absolute;
+			top: 15%;
+			right: 90%;
+			width: 30%;
+			transform: rotate(-35deg);
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 58%;
+		transform: translate(-20%, -60%);
+
+		.bf {
+			position: absolute;
+			bottom: -10%;
+			right: 50%;
+			width: 18%;
+			transform: rotate(30deg);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 58%;
+		transform: translate(30%, -55%) rotate(20deg) scaleX(-1);
+
+		.bf {
+			position: absolute;
+			bottom: 0%;
+			right: 35%;
+			width: 20%;
+			transform: rotate(50deg);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-45%, 20%) scaleX(-1);
+
+		.bf {
+			position: absolute;
+			bottom: 110%;
+			right: 40%;
+			width: 40%;
+			transform: rotate(-35deg);
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(45%, 20%);
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-55%, 28%);
+
+		.orn-6 {
+			position: absolute;
+			top: 48%;
+			left: 75%;
+			width: 70%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(20%, 32%);
+
+		.orn-8 {
+			position: absolute;
+			top: 22%;
+			right: 70%;
+			width: 100%;
+		}
+
+		.orn-9 {
+			position: absolute;
+			top: 0;
+			left: 35%;
+			width: 150%;
+			transform: translate(0, -40%);
+
+			.orn-10 {
+				position: absolute;
+				bottom: 100%;
+				left: -5%;
+				width: 80%;
+				transform: scaleX(-1);
 			}
 		}
 	}

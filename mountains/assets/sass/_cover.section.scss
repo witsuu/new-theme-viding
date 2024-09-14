@@ -64,6 +64,7 @@
 				.background-element {
 					img {
 						opacity: .4;
+						object-position: 50% 50%;
 					}
 				}
 			}
@@ -108,6 +109,119 @@
 				position: relative;
 				width: 100%;
 			}
+		}
+	}
+
+	.elements-wrapper-absolute {
+		width: 140%;
+
+		.background-element {
+			img {
+				object-position: 50% 0%;
+				opacity: .3;
+			}
+		}
+	}
+
+	.flower {
+		position: absolute;
+		top: 30%;
+		right: 20%;
+		width: 80%;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-30%, -10%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(30%, -10%) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 25%;
+		transform: translate(-50%, 10%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 35%;
+			left: 25%;
+			width: 100%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 65%;
+			left: 80%;
+			width: 60%;
+			transform: rotate(30deg) scaleX(-1);
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(50%, 10%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+
+		.orn-7 {
+			position: absolute;
+			top: 35%;
+			right: 25%;
+			width: 100%;
+			transform: scaleX(-1);
+		}
+
+		.orn-8 {
+			position: absolute;
+			top: 65%;
+			right: 80%;
+			width: 60%;
+			transform: rotate(-30deg);
 		}
 	}
 }

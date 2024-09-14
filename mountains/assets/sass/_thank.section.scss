@@ -29,7 +29,8 @@
 	.thank {
 		position: relative;
 		padding: 3rem 2rem;
-		margin-bottom: 8rem;
+		margin-bottom: 5rem;
+		color: var(--color-dark);
 
 		&:before {
 			position: absolute;
@@ -37,9 +38,21 @@
 			right: 0;
 			bottom: 0;
 			left: 0;
-			background: radial-gradient(ellipse, var(--color-main) 0%, transparent 80%);
+			background-color: var(--color-light);
 			border-radius: 300px;
-			opacity: .8;
+			opacity: .3;
+			content: "";
+		}
+
+		&::after {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 300px;
+			box-shadow: 0 0 1rem var(--color-light);
+			opacity: .6;
 			content: "";
 		}
 
@@ -48,12 +61,127 @@
 		}
 	}
 
-	.mountain {
+	.bg {
 		position: absolute;
 		bottom: 0;
 		left: 50%;
-		width: 100%;
+		width: 120%;
 		transform: translate(-50%, 0);
+
+		.bg-2 {
+			position: absolute;
+			bottom: 0%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 35%);
+			opacity: .6;
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 2rem;
+		left: 0;
+		width: 70%;
+		transform: translate(-65%, 0);
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 2rem;
+		right: 0;
+		width: 70%;
+		transform: translate(75%, 0);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-30%, -10%);
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(30%, -10%) scaleX(-1);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%, 0);
+
+		.orn-4 {
+			position: absolute;
+			top: 40%;
+			right: 5%;
+			width: 100%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0) rotate(-30deg);
+
+		.orn-6 {
+			position: absolute;
+			top: 50%;
+			left: -30%;
+			width: 100%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 1rem;
+		width: 40%;
+		transform: translate(-40%, 0);
+
+		.orn-8 {
+			position: absolute;
+			top: 35%;
+			left: 35%;
+			width: 100%;
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-30%, 40%);
+
+		.orn-10 {
+			position: absolute;
+			bottom: 60%;
+			right: 25%;
+			width: 80%;
+		}
+
+		.orn-11 {
+			position: absolute;
+			top: 25%;
+			left: 60%;
+			width: 80%;
+
+			.orn-12 {
+				position: absolute;
+				top: 10%;
+				left: 50%;
+				width: 100%;
+			}
+		}
 	}
 }
 

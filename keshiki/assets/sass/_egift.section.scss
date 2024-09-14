@@ -130,4 +130,29 @@
 			opacity: 1;
 		}
 	}
+
+	.fuji {
+		position: absolute;
+		top: 1rem;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, 0);
+		opacity: .2;
+	}
+
+	.bf {
+		position: absolute;
+		top: 3rem;
+		left: 2rem;
+		width: 12%;
+		transform: rotate(35deg);
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(60%, 0) rotate(-20deg) scaleX(-1);
+	}
 }

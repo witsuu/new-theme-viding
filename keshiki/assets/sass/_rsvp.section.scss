@@ -29,4 +29,85 @@
 			}
 		}
 	}
+
+	.mountain {
+		position: absolute;
+		top: 2rem;
+		left: 50%;
+		width: 160%;
+		transform: translate(-45%, 0);
+		opacity: .8;
+
+		.hill {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 70%;
+			transform: translate(-56%, 5%);
+		}
+	}
+
+
+	.slide-door-1 {
+		position: absolute;
+		bottom: -1rem;
+		left: 0;
+		width: 20%;
+	}
+
+	.slide-door-2 {
+		position: absolute;
+		bottom: -1rem;
+		right: 0;
+		width: 20%;
+		transform: scaleX(-1);
+	}
+
+	.bf {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 14%;
+		transform: rotate(-35deg);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(0%, 40%) scaleX(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(0%, 40%);
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-30%, -50%) rotate(-20deg);
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 5rem;
+		left: 0;
+		width: 25%;
+		transform: translate(-45%, 0) rotate(20deg);
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 5rem;
+		right: 0;
+		width: 25%;
+		transform: translate(45%, 0) rotate(-20deg) scaleX(-1);
+	}
 }

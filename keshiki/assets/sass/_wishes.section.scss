@@ -8,6 +8,31 @@
 		@include ipad {
 			padding: 5rem 0 0;
 		}
+
+		.fuji {
+			position: absolute;
+			top: 2rem;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+			opacity: .3;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45%;
+			transform: translate(35%, -50%) rotate(20deg) scaleX(-1);
+
+			.bf {
+				position: absolute;
+				top: 110%;
+				right: 60%;
+				width: 20%;
+				transform: rotate(50deg);
+			}
+		}
 	}
 
 	.card-form {
@@ -110,6 +135,14 @@
 					}
 				}
 			}
+		}
+
+		.mountain {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 280%;
+			transform: translate(-50%, 0);
 		}
 	}
 }

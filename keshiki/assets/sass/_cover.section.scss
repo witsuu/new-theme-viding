@@ -10,29 +10,23 @@
 		transform: translateY(-100%);
 	}
 
-	.mountain {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
-		width: 100%;
-		transform: translate(-50%, 10%);
-	}
-
 	.cover-wrapper {
 		position: relative;
-		padding: 5rem 0 0;
+		padding: 5rem 0 3rem;
 		transition: opacity 1s ease;
 		height: 100vh;
+		display: flex;
+		align-items: flex-end;
+		justify-content: center;
 
 		@include max-lg {
-			padding: 5rem 0 0;
+			padding: 5rem 0 10rem;
 		}
 
 		.cover-content {
 			position: relative;
 			width: 40%;
 			padding: 5rem 1.8rem;
-			margin: 0 auto;
 
 			&::before {
 				position: absolute;
@@ -48,11 +42,11 @@
 
 			@include max-lg {
 				width: 60%;
-				padding-bottom: 10rem;
 			}
 
 			@include max-sm {
 				width: 100%;
+				padding: 3rem 1rem;
 			}
 
 			.cover-body {
@@ -95,6 +89,78 @@
 				position: relative;
 				width: 100%;
 			}
+		}
+	}
+
+	.elements-wrapper-absolute {
+		top: 25%;
+
+		@include max-lg {
+			top: 15%;
+
+			.background-element {
+				img {
+					object-position: 42% 0%;
+				}
+			}
+		}
+	}
+
+	.roof {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 140%;
+		transform: translate(-50%, -50%);
+	}
+
+	.bf-1 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 23%;
+		transform: translate(50%, 0) rotate(-30deg);
+	}
+
+	.bf-2 {
+		position: absolute;
+		bottom: 1rem;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%, 0) rotate(30deg);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-30%, 30%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+			transform: translate(-30%, 10%);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(35%, 35%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+			transform: translate(35%, 15%);
 		}
 	}
 }
