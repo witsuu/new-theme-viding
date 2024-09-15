@@ -702,7 +702,7 @@ ul li {
 
 @keyframes slideRight {
   0% {
-    transform: translate3d(-30%, 0, 0);
+    transform: translate3d(-80%, 0, 0);
   }
   100% {
     transform: translateZ(0);
@@ -710,7 +710,7 @@ ul li {
 }
 @keyframes slideLeft {
   0% {
-    transform: translate3d(30%, 0, 0);
+    transform: translate3d(80%, 0, 0);
   }
   100% {
     transform: translateZ(0);
