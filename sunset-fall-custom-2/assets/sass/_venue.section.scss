@@ -67,6 +67,8 @@
 				background-color: transparent;
 				border: none;
 				border-radius: 0;
+				overflow: hidden;
+				border-radius: var(--border-radius);
 
 				&::before {
 					position: absolute;
@@ -93,12 +95,44 @@
 						position: relative;
 						width: 100%;
 						text-align: center;
-						padding: 2rem 1rem;
 						background-color: var(--color-primary);
 						color: var(--color-light);
 						border-radius: var(--border-radius);
 						overflow: hidden;
 						margin-bottom: 1.5rem;
+
+						.elements-wrapper-absolute {
+							.background-element {
+								img {
+									opacity: .1;
+								}
+							}
+						}
+
+						.curtain {
+							width: 12%;
+
+							@include max-lg {
+								width: 17%;
+							}
+
+							&-left {
+								transform: translate(-10%, 0);
+							}
+
+							&-right {
+								transform: translate(10%, 0) scaleX(-1);
+							}
+						}
+
+						&-body {
+							position: relative;
+							padding: 3rem 2rem;
+
+							@include max-sm {
+								padding: 3rem;
+							}
+						}
 
 						.date {
 							position: relative;
@@ -152,7 +186,7 @@
 						text-align: center;
 						padding: 1rem 2rem;
 						border-radius: var(--border-radius);
-						box-shadow: .5rem .5rem 1rem rgba($color: #000000, $alpha: .1);
+						box-shadow: .5rem .5rem 1rem rgba($color: #000000, $alpha: .2);
 						margin-bottom: 1.5rem;
 
 						// &::before {
@@ -313,6 +347,79 @@
 		100% {
 			transform: scale3d(1, 1, 1);
 			opacity: 1;
+		}
+	}
+
+	.bf {
+		position: absolute;
+		top: 1rem;
+		left: .5rem;
+		width: 12%;
+		transform: rotate(30deg);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-40%, 50%);
+
+		@include max-lg {
+			width: 40%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(45%, 55%) rotate(20deg) scaleX(-1);
+
+		@include max-lg {
+			width: 40%;
+			transform: translate(45%, 50%) rotate(20deg) scaleX(-1);
+		}
+
+		.bf2 {
+			position: absolute;
+			top: 45%;
+			left: 90%;
+			width: 20%;
+			transform: rotate(45deg);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 2rem;
+		left: 0;
+		width: 15%;
+		transform: translate(-50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(45%, 15%) rotate(-20deg);
+
+		@include max-lg {
+			width: 25%;
+		}
+
+		@include max-sm {
+			width: 35%;
 		}
 	}
 }

@@ -23,6 +23,38 @@
 				}
 			}
 		}
+
+		.orn-1 {
+			position: absolute;
+			top: 45%;
+			left: 0;
+			width: 30%;
+			transform: translate(-60%, 0) rotate(-20deg);
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 40%;
+			transform: translate(45%, 0) rotate(10deg) scaleX(-1);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 2rem;
+			right: 0;
+			width: 15%;
+			transform: translate(45%, 0) rotate(-10deg) scaleX(-1);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
 	}
 
 	.card-form {

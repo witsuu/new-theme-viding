@@ -74,6 +74,49 @@ body {
 		width: 100%;
 		height: 100%;
 		pointer-events: none;
+
+		&.orn-front {
+			z-index: 3;
+		}
+
+		.curtain {
+			position: absolute;
+			top: -.5rem;
+			width: 8%;
+
+			@include max-lg {
+				width: 18%;
+			}
+
+			@include max-sm {
+				width: 26%;
+			}
+
+			&-left {
+				left: 0;
+
+				@include max-lg {
+					transform: translate(-10%, 0);
+				}
+
+				@include max-sm {
+					transform: translate(-20%, 0);
+				}
+			}
+
+			&-right {
+				right: 0;
+				transform: scaleX(-1);
+
+				@include max-lg {
+					transform: translate(10%, 0) scaleX(-1);
+				}
+
+				@include max-sm {
+					transform: translate(20%, 0) scaleX(-1);
+				}
+			}
+		}
 	}
 }
 
@@ -96,17 +139,16 @@ h3 {
 }
 
 h1 {
-	font-size: 38px;
-	line-height: 0.8;
+	font-size: 48px;
+	line-height: 1.2;
 
 	@include max-md {
-		font-size: 32px;
+		font-size: 46px;
 	}
 
 	span {
 		font-size: 26px;
 		display: block;
-		transform: translateY(1.5rem);
 
 		@include max-md {
 			font-size: 20px;
@@ -262,7 +304,7 @@ span {
 	span {
 		margin-bottom: 0;
 		font-weight: 500;
-		font-size: 32px;
+		font-size: 38px;
 		overflow: visible;
 
 		@include max-md {

@@ -1,35 +1,79 @@
 .apology-section {
 	position: relative;
 	padding: 5rem 0;
+
 	@include max-md {
 		padding: 3rem 0;
 	}
+
 	.orn-1 {
 		position: absolute;
 		top: 0;
-		right: 0;
-		width: 120px;
-		transform: translate(50%, 0) scaleX(-1) rotate(35deg);
-		@include min-md {
-			width: 160px;
+		left: 0;
+		width: 15%;
+		transform: translate(-50%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 25%;
 		}
-		@include min-lg {
-			width: 180px;
+
+		@include max-sm {
+			width: 35%;
+			transform: translate(-60%, 0) scaleX(-1);
 		}
 	}
+
 	.orn-2 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(50%, 0);
+
+		@include max-lg {
+			width: 25%;
+		}
+
+		@include max-sm {
+			width: 35%;
+			transform: translate(60%, 0);
+		}
+	}
+
+	.orn-3 {
 		position: absolute;
 		bottom: 0;
 		left: 0;
-		width: 120px;
-		transform: translate(-60%, 0) scaleX(-1);
-		@include min-md {
-			width: 140px;
+		width: 20%;
+		transform: translate(-50%, 20%) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
 		}
-		@include min-lg {
-			width: 160px;
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(-60%, 20%) scaleX(-1);
 		}
 	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(50%, 20%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(60%, 20%);
+		}
+	}
+
 	.appology-wrap {
 		position: relative;
 	}

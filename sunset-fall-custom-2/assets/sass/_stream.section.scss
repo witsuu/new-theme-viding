@@ -77,4 +77,39 @@
 		position: relative;
 		width: 100%;
 	}
+
+	.bf {
+		position: absolute;
+		top: 3rem;
+		left: 20%;
+		width: 4%;
+		transform: rotate(35deg);
+
+		@include max-lg {
+			top: 2rem;
+			width: 8%;
+		}
+
+		@include max-sm {
+			top: 1rem;
+			left: 10%;
+			width: 12%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(40%, 0) rotate(-20deg);
+
+		@include max-lg {
+			width: 25%;
+		}
+
+		@include max-sm {
+			width: 35%;
+		}
+	}
 }

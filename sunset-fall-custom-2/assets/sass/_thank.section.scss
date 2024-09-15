@@ -61,6 +61,131 @@
 			}
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 18%;
+		transform: translate(-40%, 0);
+		@include max-lg{
+			width: 30%;
+		}
+		@include max-sm{
+			width: 40%;
+		}
+
+		.bf {
+			position: absolute;
+			top: 80%;
+			right: 0;
+			width: 25%;
+			transform: rotate(30deg);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(40%, 0) rotate(-10deg) scaleX(-1);
+		@include max-lg{
+			width: 30%;
+		}
+		@include max-sm{
+			width: 40%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-35%, 10%);
+		@include max-lg{
+			width: 35%;
+		}
+		@include max-sm{
+			width: 45%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-40%, 30%);
+		@include max-lg{
+			width: 30%;
+		}
+		@include max-sm{
+			width: 40%;
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 30%;
+			left: 60%;
+			width: 100%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 25%;
+		transform: translate(45%, 20%);
+		@include max-lg{
+			width: 40%;
+		}
+		@include max-sm{
+			width: 50%;
+			transform: translate(55%, 20%);
+		}
+
+		.branch {
+			position: absolute;
+			top: 50%;
+			right: 105%;
+			width: 80%;
+			transform: scaleX(-1);
+
+			.bf {
+				position: absolute;
+				bottom: 110%;
+				left: 10%;
+				width: 30%;
+				transform: rotate(30deg);
+			}
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(0%, 30%);
+		@include max-lg{
+			width: 30%;
+		}
+		@include max-sm{
+			width: 40%;
+			transform: translate(10%, 30%);
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 76%;
+			left: 45%;
+			width: 80%;
+		}
+	}
 }
 
 .footer {

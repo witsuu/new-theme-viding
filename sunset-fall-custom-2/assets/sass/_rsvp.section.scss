@@ -54,4 +54,68 @@
 			}
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 15%;
+		transform: translate(-50%, 0) rotate(10deg);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(40%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%, 10%) scaleX(-1);
+
+		@include max-lg {
+			width: 35%;
+		}
+
+		@include max-sm {
+			width: 45%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(42%, 10%) rotate(-20deg);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
 }

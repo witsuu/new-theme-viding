@@ -38,6 +38,50 @@
 				opacity: .3;
 			}
 		}
+
+		.curtain {
+			width: 20%;
+
+			&-left {
+				transform: translate(-20%, 0);
+			}
+
+			&-right {
+				transform: translate(20%, 0) scaleX(-1);
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 15%;
+			transform: translate(-30%, 0) rotate(25deg) scaleX(-1);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 3rem;
+			right: 0;
+			width: 15%;
+			transform: translate(40%, 0) rotate(-25deg);
+
+			@include max-lg {
+				width: 30%;
+			}
+
+			@include max-sm {
+				width: 40%;
+			}
+		}
 	}
 
 	.couple-body {
@@ -100,6 +144,8 @@
 	.couple {
 		position: relative;
 		padding: 3rem 2rem;
+		overflow: hidden;
+		border-radius: var(--border-radius);
 
 		@include max-sm {
 			padding: 2rem 1.5rem;
@@ -120,7 +166,7 @@
 
 		.image-wrap {
 			position: relative;
-			width: 100%;
+			width: 90%;
 			margin: 0 auto 2rem;
 
 			.image-element {

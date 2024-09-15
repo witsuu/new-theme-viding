@@ -29,4 +29,36 @@
 			transition: all 0.3s ease-in-out;
 		}
 	}
+
+	.orn-1 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 15%;
+		transform: translate(-40%, -50%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 2rem;
+		right: 0;
+		width: 15%;
+		transform: translate(35%, 0) rotate(-25deg);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+		}
+	}
 }

@@ -8,7 +8,49 @@
 		padding: 5rem 0;
 
 		@include max-md {
-			padding: 3rem 0;
+			padding: 5rem 0 3rem;
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 15%;
+			transform: translate(-40%, 0);
+
+			@include max-lg {
+				width: 25%;
+			}
+
+			@include max-sm {
+				top: 0;
+				width: 35%;
+			}
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 2rem;
+			right: 0;
+			width: 15%;
+			transform: translate(50%, 0) rotate(-10deg) scaleX(-1);
+
+			@include max-lg {
+				width: 25%;
+			}
+
+			@include max-sm {
+				top: 0;
+				width: 35%;
+			}
+
+			.bf {
+				position: absolute;
+				bottom: 90%;
+				left: 105%;
+				width: 25%;
+				transform: rotate(-35deg);
+			}
 		}
 	}
 
