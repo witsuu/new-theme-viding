@@ -704,3 +704,19 @@
 		transform: scaleX(0.6);
 	}
 }
+
+img[alt="flower-1"] {
+	transform-origin: 10% 70%;
+}
+
+img[alt="flower-2"] {
+	transform-origin: 70% 95%;
+}
+
+img[alt="flower-3"] {
+	transform-origin: 40% 95%;
+}
+
+img[alt="branch"] {
+	transform-origin: 50% 90%;
+}
