@@ -487,31 +487,106 @@
 	{
 		"name": "Charlotte",
 		"path": "charlotte",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Imperial",
 		"path": "imperial",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Karmeen",
 		"path": "karmeen",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Sahara",
 		"path": "sahara",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Closehart",
 		"path": "closehart",
-		"status": ""
+		"status": "DONE"
 	},
 	{
 		"name": "Fireflies Custom",
 		"path": "fireflies-custom",
+		"status": "DONE"
+	},
+	{
+		"name": "Kito Custom",
+		"path": "kito-custom",
+		"status": "DONE"
+	},
+	{
+		"name": "Belle",
+		"path": "bell",
+		"status": "DONE"
+	},
+	{
+		"name": "Viony",
+		"path": "viony",
+		"status": "DONE"
+	},
+	{
+		"name": "Daryl",
+		"path": "daryl",
+		"status": "DONE"
+	},
+	{
+		"name": "Sabbe",
+		"path": "sabbe",
+		"status": "DONE"
+	},
+	{
+		"name": "Maminang",
+		"path": "maminang",
+		"status": "DONE"
+	},
+	{
+		"name": "Yama",
+		"path": "yama",
+		"status": "DONE"
+	},
+	{
+		"name": "Imperial Custom",
+		"path": "imperial custom",
+		"status": "DONE"
+	},
+	{
+		"name": "Karmeen Custom",
+		"path": "karmeen custom",
+		"status": "DONE"
+	},
+	{
+		"name": "Seomra",
+		"path": "sunset-fall-custom-2",
 		"status": ""
+	},
+	{
+		"name": "Keshiki",
+		"path": "keshiki",
+		"status": ""
+	},
+	{
+		"name": "Mountains",
+		"path": "mountains",
+		"status": ""
+	},
+	{
+		"name": "Roxane",
+		"path": "roxane",
+		"status": ""
+	},
+	{
+		"name": "Bolon 2",
+		"path": "bolon-2",
+		"status": ""
+	},
+	{
+		"name": "Hill Custom",
+		"path": "hill-custom",
+		"status": "DONE"
 	}
 ]
