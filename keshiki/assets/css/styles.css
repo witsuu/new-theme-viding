@@ -855,6 +855,40 @@ ul li {
     opacity: 1;
   }
 }
+[data-anim=butterfly].has-animate {
+  animation-name: butterfly;
+  animation-duration: 800ms !important;
+}
+
+@keyframes butterfly {
+  to {
+    transform: scaleX(0.6);
+  }
+}
+img[alt=flower-1] {
+  transform-origin: 35% 95%;
+}
+
+img[alt=flower-2] {
+  transform-origin: 53% 95%;
+}
+
+img[alt=flower-3] {
+  transform-origin: 55% 95%;
+}
+
+img[alt=flower-4] {
+  transform-origin: 68% 95%;
+}
+
+img[alt=sakura] {
+  transform-origin: 2% 0%;
+}
+
+img[alt=branch] {
+  transform-origin: 50% 90%;
+}
+
 [data-anim][data-anim] {
   will-change: transform;
 }
@@ -1046,6 +1080,14 @@ ul li {
   animation-name: rotateLeft;
 }
 
+[data-anim=lambai].has-animate {
+  animation-name: lambai;
+}
+
+[data-anim=lambai2].has-animate {
+  animation-name: lambai2;
+}
+
 @keyframes rotateRight {
   0% {
     transform: rotateZ(0);
@@ -1060,6 +1102,22 @@ ul li {
   }
   100% {
     transform: rotate(-10deg);
+  }
+}
+@keyframes lambai {
+  0% {
+    transform: rotateZ(5deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
+@keyframes lambai2 {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  100% {
+    transform: rotateZ(5deg);
   }
 }
 [data-anim=zoom-in].has-animate {
