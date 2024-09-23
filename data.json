@@ -588,5 +588,10 @@
 		"name": "Hill Custom",
 		"path": "hill-custom",
 		"status": "DONE"
+	},
+	{
+		"name": "Sweet Custom",
+		"path": "sweet-custom",
+		"status": ""
 	}
 ]
