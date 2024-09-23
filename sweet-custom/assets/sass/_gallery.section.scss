@@ -1,0 +1,51 @@
+.gallery-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.img-gallery {
+		height: auto;
+		width: 100%;
+		aspect-ratio: 3/4;
+		object-fit: cover;
+	}
+	.splide {
+		.splide__slide.is-active {
+			.img-thumbnail {
+				border: 3px solid #fff;
+			}
+		}
+		.splide__track {
+			overflow: visible;
+		}
+		.splide__arrow {
+			border-radius: 0;
+			width: 70px;
+			height: 45px;
+			background-color: var(--color-secondary);
+			border-radius: 50px;
+			@include max-lg {
+				width: 40px;
+				height: 20px;
+			}
+			svg {
+				fill: var(--text-button);
+				width: 35px;
+				height: 20px;
+				@include max-md {
+					width: 25px;
+					height: 10px;
+				}
+			}
+			&--prev {
+				transform: translate(-40%, -50%);
+				left: 0;
+			}
+			&--next {
+				right: 0;
+				transform: translate(40%, -50%);
+			}
+		}
+	}
+}

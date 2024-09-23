@@ -1,0 +1,68 @@
+.rsvp-section {
+	position: relative;
+	padding: 10rem 0 5rem;
+
+	@include max-md {
+		padding: 8rem 0 3rem;
+	}
+
+	.bg-1 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translate(-50%, -10%);
+
+		@include max-lg {
+			width: 150%;
+		}
+
+		@include max-sm {
+			width: 200%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-20%, 40%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(-20%, 50%);
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 90%;
+			left: -5%;
+			width: 65%;
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 15%;
+			right: 0;
+			width: 50%;
+			transform: translateX(110%);
+		}
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.rsvp-form {
+			position: relative;
+
+			.title-section {
+				text-align: left;
+			}
+		}
+	}
+}

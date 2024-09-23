@@ -1,0 +1,145 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		@include max-md {
+			width: 140px;
+		}
+		img {
+			position: relative;
+		}
+		.orn-3 {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translate(-60%, 60%) scaleX(-1);
+			width: 280px;
+			@include max-md {
+				width: 240px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: scale(-1) translateY(-180%);
+			width: 80px;
+			img {
+				transform-origin: 0% 50%;
+			}
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		@include max-md {
+			width: 140px;
+		}
+		img {
+			position: relative;
+		}
+		.orn-3 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translate(50%, 60%);
+			width: 280px;
+			@include max-md {
+				width: 240px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: scaleY(-1) translateY(-180%);
+			width: 80px;
+			img {
+				transform-origin: 50% 50%;
+			}
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 50%;
+		height: auto;
+		padding: 8px;
+		margin: 0 auto;
+		border: 1px solid $color-custom;
+		border-radius: 500px;
+		margin-bottom: 2rem;
+		@include max-lg {
+			width: 70%;
+		}
+		@include max-md {
+			width: 80%;
+		}
+		.image-element {
+			aspect-ratio: 3/4;
+			height: auto;
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 500px;
+			}
+		}
+	}
+	.elements-absolute {
+		overflow: hidden;
+		.orn-1 {
+			top: 0;
+			transform: translateY(30%);
+			width: 100px;
+			.orn-3 {
+				width: 240px;
+			}
+			.orn-4 {
+				width: 80px;
+			}
+		}
+		.orn-2 {
+			top: 0;
+			transform: translateY(30%);
+			width: 100px;
+			.orn-3 {
+				width: 240px;
+			}
+			.orn-4 {
+				width: 80px;
+			}
+		}
+		.background-element {
+			position: relative;
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		padding: 8rem 2rem 3rem;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		.thank {
+			position: relative;
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}
