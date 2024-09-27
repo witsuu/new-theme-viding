@@ -48,7 +48,7 @@
 
 		@include max-md {
 			width: 220px;
-			top: 38%;
+			top: 36%;
 			transform: translate(0, -100%);
 		}
 
@@ -199,6 +199,22 @@
 		}
 	}
 
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(85%, -10%) scaleX(-1);
+	}
+
+	.orn-14 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(55%, 0) rotate(20deg) scaleX(-1);
+	}
+
 	.and {
 		@include min-md {
 			display: none;
@@ -222,7 +238,10 @@
 
 	.couple-content {
 		position: relative;
-		margin-bottom: 3rem;
+
+		@include min-lg {
+			margin-bottom: 2rem;
+		}
 	}
 
 	.couple {

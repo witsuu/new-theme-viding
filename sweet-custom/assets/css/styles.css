@@ -92,6 +92,17 @@ body {
   width: 100%;
   height: 100%;
 }
+.main-app .ornaments-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+.main-app .ornaments-wrapper.scaleX-reverse {
+  transform: scaleX(-1);
+}
 .main-app .image-element,
 .main-app .image-element-ornament {
   position: relative;
@@ -150,6 +161,12 @@ small {
     font-size: 10px;
   }
 }
+.image-element,
+.background-element {
+  position: relative;
+  width: 100%;
+}
+
 .img-fluid {
   width: 100%;
   height: auto;
@@ -1321,19 +1338,8 @@ ul li {
   height: 100vh;
   width: 100%;
 }
-.cover-section.cover-opening .elements-wrapper-absolute {
-  pointer-events: none;
-}
-.cover-section.cover-opening .elements-wrapper-absolute .background-element {
-  background-color: transparent;
-  opacity: 0;
-}
-.cover-section.cover-opening .orn-5 {
-  transform: translate(100%, 50%) scaleX(-1);
-  opacity: 0;
-}
-.cover-section.cover-opening .cover-wrapper {
-  opacity: 0;
+.cover-section.cover-opening {
+  transform: translateY(-100%);
 }
 .cover-section.cover-opened {
   display: none;
@@ -1416,6 +1422,16 @@ ul li {
   left: 50%;
   width: 65%;
   transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .cover-section .gadang {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .gadang {
+    width: 160%;
+  }
 }
 .cover-section .cover-wrapper {
   position: relative;
@@ -1543,12 +1559,7 @@ ul li {
 }
 @media (max-width: 991px) {
   .header-section {
-    height: 100vh;
-  }
-}
-@media (max-width: 767px) {
-  .header-section {
-    height: auto;
+    min-height: 85vh;
   }
 }
 .header-section .scroll-icon {
@@ -1571,26 +1582,38 @@ ul li {
   opacity: 0.2;
   transition: all 2s ease;
 }
+@media (max-width: 991px) {
+  .header-section .gadang {
+    width: 160%;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .gadang {
+    width: 240%;
+  }
+}
 .header-section .orn-1 {
   position: absolute;
   left: 0;
   top: 0;
-  width: 280px;
+  width: 300px;
 }
 @media (max-width: 767px) {
   .header-section .orn-1 {
-    width: 45%;
+    width: 70%;
+    transform: translate(-25%, 0);
   }
 }
 .header-section .orn-2 {
   position: absolute;
   top: 0;
   right: 0;
-  width: 280px;
+  width: 300px;
 }
 @media (max-width: 767px) {
   .header-section .orn-2 {
-    width: 45%;
+    width: 70%;
+    transform: translate(25%, 0);
   }
 }
 .header-section .orn-3 {
@@ -1611,13 +1634,13 @@ ul li {
   }
 }
 .header-section .orn-3 .image-element img {
-  transform-origin: 50% 100%;
+  transform-origin: 25% 50%;
 }
 .header-section .orn-3 .orn-5 {
   position: absolute;
   left: 1rem;
   top: 0;
-  width: 160px;
+  width: 180px;
   transform: translate(20%, -50%);
 }
 @media (max-width: 991px) {
@@ -1628,7 +1651,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-3 .orn-5 {
-    width: 100px;
+    width: 120px;
     z-index: 5;
   }
 }
@@ -1646,7 +1669,7 @@ ul li {
   position: absolute;
   bottom: 3rem;
   right: 0;
-  width: 420px;
+  width: 360px;
 }
 @media (max-width: 767px) {
   .header-section .orn-4 {
@@ -1655,7 +1678,7 @@ ul li {
   }
 }
 .header-section .orn-4 .image-element {
-  transform: translateX(50%);
+  transform: translateX(40%);
 }
 .header-section .orn-4 .image-element img {
   transform-origin: 50% 80%;
@@ -1820,7 +1843,7 @@ ul li {
 @media (max-width: 767px) {
   .couple-section .orn-1 {
     width: 220px;
-    top: 38%;
+    top: 36%;
     transform: translate(0, -100%);
   }
 }
@@ -1953,6 +1976,20 @@ ul li {
   width: 80px;
   transform: translate(30%, 40%) rotate(-35deg);
 }
+.couple-section .orn-13 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(85%, -10%) scaleX(-1);
+}
+.couple-section .orn-14 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 45%;
+  transform: translate(55%, 0) rotate(20deg) scaleX(-1);
+}
 .couple-section .and {
   font-weight: 600;
   color: var(--color-dark);
@@ -1975,7 +2012,11 @@ ul li {
 }
 .couple-section .couple-content {
   position: relative;
-  margin-bottom: 3rem;
+}
+@media (min-width: 992px) {
+  .couple-section .couple-content {
+    margin-bottom: 2rem;
+  }
 }
 .couple-section .couple {
   position: relative;
@@ -2145,6 +2186,22 @@ ul li {
 .venue-section .orn-2 .orn-4 img {
   transform-origin: 80% 50%;
 }
+.venue-section .orn-5 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 50%;
+  transform: translate(35%, 0);
+}
+.venue-section .orn-5 #branch {
+  transform-origin: 100% 10%;
+}
+.venue-section .orn-5 .orn-6 {
+  position: absolute;
+  bottom: 14%;
+  left: 0;
+  width: 60%;
+}
 .venue-section .elements-absolute {
   transform: translateY(-60%);
 }
@@ -2175,9 +2232,6 @@ ul li {
 .venue-section .venue-wrapper .venue-content {
   position: relative;
 }
-.venue-section .venue-wrapper .venue-content .ribbon-venue {
-  padding: 1.5rem 0 0;
-}
 .venue-section .venue-wrapper .venue-content .ribbon-venue svg {
   width: 40px;
   height: auto;
@@ -2194,7 +2248,8 @@ ul li {
   border: none;
   z-index: 5;
   background-color: transparent;
-  text-align: center;
+  text-align: left;
+  overflow: hidden;
 }
 .venue-section .venue-wrapper .venue-content .card::before {
   position: absolute;
@@ -2205,14 +2260,14 @@ ul li {
   content: "";
   background-color: var(--color-main);
   opacity: 0.8;
+  border-radius: 16px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body {
-  margin-top: -2rem;
-  padding: 0 2rem 3rem;
+  padding: 3rem 2rem;
 }
 @media (max-width: 991px) {
   .venue-section .venue-wrapper .venue-content .card .card-body {
-    padding: 0 1rem 2rem;
+    padding: 2rem 1rem;
   }
 }
 .venue-section .venue-wrapper .venue-content .card .card-body h4 {
@@ -2271,13 +2326,13 @@ ul li {
 .venue-section .event-name {
   position: relative;
   width: 100%;
+  padding-bottom: 2rem;
 }
 .venue-section .event-name .date {
   width: -moz-fit-content;
   width: fit-content;
   max-width: 100%;
-  margin: 0 auto;
-  text-align: center;
+  text-align: left;
 }
 .venue-section .event-name .date h5 {
   font-weight: 700;
@@ -2296,6 +2351,14 @@ ul li {
 }
 .venue-section .event-place {
   position: relative;
+  background-color: var(--color-main);
+  color: var(--color-dark);
+  padding: 2rem 1.25rem;
+  border-radius: 10px;
+  text-align: center;
+}
+.venue-section .event-place h4 {
+  margin-top: 0 !important;
 }
 .venue-section .btn-custom {
   background-color: transparent;

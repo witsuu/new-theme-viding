@@ -82,12 +82,12 @@
                 </div>
                 <div class="orn-3">
                     <div class="image-element">
-                        <img src="./assets/images/rose-full.png" alt="rose-full" class="img-fluid rose">
+                        <img src="./assets/images/rose-full.png" alt="rose-full" class="img-fluid">
                     </div>
                 </div>
                 <div class="orn-4">
                     <div class="image-element">
-                        <img src="./assets/images/rose-cover-4.png" alt="rose-cover-4" class="img-fluid rose">
+                        <img src="./assets/images/rose-cover-4.png" alt="rose-cover-4" class="img-fluid">
                     </div>
                 </div>
                 <div class="orn-5">
@@ -160,7 +160,8 @@
                         <div class="orn-5" data-anim="fade">
                             <img src="./assets/images/leaf-1.png" alt="leaf-1" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
-                        <div class="image-element" id="rose-2">
+                        <div class="image-element">
+                            <img src="./assets/images/rose-full.png" alt="rose-full" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                     </div>
                     <div class="orn-4">
@@ -171,6 +172,7 @@
                             <img src="./assets/images/leaf-3.png" alt="leaf-1" class="img-fluid animate-loop" data-anim="rotate-right">
                         </div>
                         <div class="image-element" id="rose-3">
+                            <img src="./assets/images/rose-4.png" alt="rose-4" class="img-fluid animate-loop" data-anim="rotate-left">
                         </div>
                     </div>
                 </div>
@@ -252,6 +254,18 @@
                         <div class="col-md-6 col-xl-5">
                             <div class="couple">
                                 <div class="image-wrap man">
+                                    <div class="ornaments-wrapper" data-anim="fade">
+                                        <div class="orn-13">
+                                            <div class="image-element">
+                                                <img src="./assets/images/leaf-2.png" alt="leaf-2" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="orn-14">
+                                            <div class="image-element">
+                                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="image-element">
                                         <img src="./assets/images/mempelai-1.webp" alt="couple" class="couple-image man" data-anim="fade">
                                     </div>
@@ -274,6 +288,18 @@
                         <div class="col-md-6 col-xl-5">
                             <div class="couple">
                                 <div class="image-wrap woman">
+                                    <div class="ornaments-wrapper scaleX-reverse" data-anim="fade">
+                                        <div class="orn-13">
+                                            <div class="image-element">
+                                                <img src="./assets/images/leaf-2.png" alt="leaf-2" class="img-fluid">
+                                            </div>
+                                        </div>
+                                        <div class="orn-14">
+                                            <div class="image-element">
+                                                <img src="./assets/images/leaf.png" alt="leaf" class="img-fluid">
+                                            </div>
+                                        </div>
+                                    </div>
                                     <div class="image-element">
                                         <img src="./assets/images/mempelai-2.webp" alt="couple" class="couple-image women" data-anim="fade">
                                     </div>
@@ -422,9 +448,6 @@
                                 <div class="venue-content">
                                     <div class="row justify-content-center row-venue-sm">
                                         <div class="col-md-6 col-xl-5 position-relative">
-                                            <svg class="frame-venue" width="460" height="147" viewBox="0 0 460 147" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 147V106.394C9.64556 104.103 28.9367 94.3142 28.9367 73.4862H92.9829C106.404 49.0382 152.525 0.189577 229.775 0.000550198C229.85 0.000550198 229.925 4.58585e-05 230 0.000137509C230.075 4.58584e-05 230.15 0 230.225 0C307.475 0.189027 353.596 49.0382 367.017 73.4862H431.063C431.063 94.3142 450.354 104.103 460 106.394V147H0Z" fill="var(--color-main)" />
-                                            </svg>
                                             <div class="card">
                                                 <div class="elements-wrapper-absolute">
                                                     <div class="background-element">
@@ -432,17 +455,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
-                                                    <div class="event-name" data-anim="zoom-in">
-                                                        <h4>Marriage Contract</h4>
-                                                        <p>Minggu</p>
-                                                        <div class="date">
-                                                            <div>
-                                                                <h5>31</h5>
-                                                                <hr>
+                                                    <div class="ornaments-wrapper">
+                                                        <div class="orn-5">
+                                                            <div class="image-element animate-loop" data-anim="rotate-left" id="branch">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/branch.png" alt="branch" class="img-fluid">
+                                                                </div>
+                                                                <div class="orn-6">
+                                                                    <div class="image-element">
+                                                                        <img src="./assets/images/bird.png" alt="bird" class="img-fluid">
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <p>Desember 2023</p>
-                                                        <p>19.00 - 21.00 WIB</p>
                                                     </div>
                                                     <div class="ribbon-venue" data-animationloop="keyframe">
                                                         <div data-anim="zoom-in">
@@ -481,7 +506,19 @@
                                                             </svg>
                                                         </div>
                                                     </div>
-                                                    <div class="event-place" data-anim="zoom-in">
+                                                    <div class="event-name" data-anim="zoom-in">
+                                                        <h4>Marriage Contract</h4>
+                                                        <p>Minggu</p>
+                                                        <div class="date">
+                                                            <div>
+                                                                <h5>31</h5>
+                                                                <hr>
+                                                            </div>
+                                                        </div>
+                                                        <p>Desember 2023</p>
+                                                        <p>19.00 - 21.00 WIB</p>
+                                                    </div>
+                                                    <div class="event-place color-main" data-anim="zoom-in">
                                                         <h4>Groom House</h4>
                                                         <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
                                                             Kecamatan
@@ -496,9 +533,6 @@
                                             </div>
                                         </div>
                                         <div class="col-md-6 col-xl-5 position-relative">
-                                            <svg class="frame-venue" width="460" height="147" viewBox="0 0 460 147" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path d="M0 147V106.394C9.64556 104.103 28.9367 94.3142 28.9367 73.4862H92.9829C106.404 49.0382 152.525 0.189577 229.775 0.000550198C229.85 0.000550198 229.925 4.58585e-05 230 0.000137509C230.075 4.58584e-05 230.15 0 230.225 0C307.475 0.189027 353.596 49.0382 367.017 73.4862H431.063C431.063 94.3142 450.354 104.103 460 106.394V147H0Z" fill="var(--color-main)" />
-                                            </svg>
                                             <div class="card">
                                                 <div class="elements-wrapper-absolute">
                                                     <div class="background-element">
@@ -506,17 +540,19 @@
                                                     </div>
                                                 </div>
                                                 <div class="card-body">
-                                                    <div class="event-name" data-anim="zoom-in">
-                                                        <h4>Marriage Contract</h4>
-                                                        <p>Minggu</p>
-                                                        <div class="date">
-                                                            <div>
-                                                                <h5>31</h5>
-                                                                <hr>
+                                                    <div class="ornaments-wrapper">
+                                                        <div class="orn-5">
+                                                            <div class="image-element animate-loop" data-anim="rotate-left" id="branch">
+                                                                <div class="image-element">
+                                                                    <img src="./assets/images/branch.png" alt="branch" class="img-fluid">
+                                                                </div>
+                                                                <div class="orn-6">
+                                                                    <div class="image-element">
+                                                                        <img src="./assets/images/bird.png" alt="bird" class="img-fluid">
+                                                                    </div>
+                                                                </div>
                                                             </div>
                                                         </div>
-                                                        <p>Desember 2023</p>
-                                                        <p>19.00 - 21.00 WIB</p>
                                                     </div>
                                                     <div class="ribbon-venue" data-animationloop="keyframe">
                                                         <div data-anim="zoom-in">
@@ -555,7 +591,21 @@
                                                             </svg>
                                                         </div>
                                                     </div>
-                                                    <div class="event-place" data-anim="zoom-in">
+                                                    <div class="event-name" data-anim="zoom-in">
+                                                        <div class="event-name-body">
+                                                            <h4>Marriage Contract</h4>
+                                                            <p>Minggu</p>
+                                                            <div class="date">
+                                                                <div>
+                                                                    <h5>31</h5>
+                                                                    <hr>
+                                                                </div>
+                                                            </div>
+                                                            <p>Desember 2023</p>
+                                                            <p>19.00 - 21.00 WIB</p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="event-place color-main" data-anim="zoom-in">
                                                         <h4>Groom House</h4>
                                                         <p>Kota BNI, Jl. Jend. Sudirman No.Kav. 1, Karet Tengsin,
                                                             Kecamatan

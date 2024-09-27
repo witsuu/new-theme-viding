@@ -7,23 +7,24 @@
 	width: 100%;
 
 	&.cover-opening {
-		.elements-wrapper-absolute {
-			pointer-events: none;
+		transform: translateY(-100%);
+		// .elements-wrapper-absolute {
+		// 	pointer-events: none;
 
-			.background-element {
-				background-color: transparent;
-				opacity: 0;
-			}
-		}
+		// 	.background-element {
+		// 		background-color: transparent;
+		// 		opacity: 0;
+		// 	}
+		// }
 
-		.orn-5 {
-			transform: translate(100%, 50%) scaleX(-1);
-			opacity: 0;
-		}
+		// .orn-5 {
+		// 	transform: translate(100%, 50%) scaleX(-1);
+		// 	opacity: 0;
+		// }
 
-		.cover-wrapper {
-			opacity: 0;
-		}
+		// .cover-wrapper {
+		// 	opacity: 0;
+		// }
 	}
 
 	&.cover-opened {
@@ -110,6 +111,14 @@
 		left: 50%;
 		width: 65%;
 		transform: translate(-50%, 0);
+
+		@include max-lg {
+			width: 100%;
+		}
+
+		@include max-sm {
+			width: 160%;
+		}
 	}
 
 	.cover-wrapper {
