@@ -1,0 +1,68 @@
+.stream-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.stream-wrapper {
+		position: relative;
+		border-radius: var(--border-radius);
+		z-index: 5;
+		@include max-lg {
+			.row {
+				align-items: center;
+				gap: 2rem;
+			}
+		}
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.stream-content {
+			position: relative;
+			.stream-description {
+				position: relative;
+				padding: 3rem 2rem;
+				background: var(--color-primary);
+				border-radius: var(--border-radius);
+				box-shadow: 0 0 1rem rgba($color: #000000, $alpha: 0.15);
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+			h4 {
+				@include max-md {
+					text-align: center;
+				}
+			}
+		}
+	}
+	ul {
+		ol {
+			padding: 0;
+		}
+	}
+	.card {
+		background-color: transparent;
+		height: 100%;
+		color: var(--color-dark);
+		border: none;
+	}
+	.btn-custom {
+		width: 100%;
+		z-index: 10;
+		position: relative;
+	}
+	.yt-embed {
+		@include min-lg {
+			height: 320px;
+		}
+	}
+	.yt-description {
+		width: 100%;
+		margin-top: 3rem;
+		@include max-md {
+			text-align: center;
+		}
+	}
+}

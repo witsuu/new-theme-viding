@@ -1,0 +1,234 @@
+@import "variables", "mixins";
+
+:root {
+	--color-main: #F2F6F7;
+	--color-primary: #ffffff;
+	--color-secondary: #CFE0E2;
+	--text-button: #1e1f1e;
+}
+
+h1,
+h2,
+h3 {
+	font-family: $font-secondary;
+}
+
+h1 {
+	font-size: 48px;
+
+	@include max-sm {
+		font-size: 42px;
+	}
+
+	span {
+		font-size: 28px;
+
+		@include max-md {
+			font-size: 24px;
+		}
+	}
+}
+
+.form-control,
+.form-select {
+	border: 1px solid var(--color-dark);
+	box-shadow: none;
+}
+
+.title-section {
+	&::before {
+		width: 56px;
+		height: 46px;
+	}
+}
+
+.couple-section {
+	padding: 0 !important;
+
+	.orn-2 {
+		bottom: 20%;
+	}
+
+	.couple-wrapper {
+		background-color: var(--color-custom-main);
+		padding: 5rem 0;
+
+		@include max-sm {
+			padding: 3rem 0;
+		}
+
+		.and {
+			margin: 0 auto;
+			padding: 1.5rem 0 1rem;
+
+			span {
+				font-size: 32px;
+			}
+		}
+
+		.couple-content {
+			margin-bottom: 0;
+		}
+
+		.couple-body {
+			padding: 0;
+		}
+	}
+
+	.couple {
+		.image-wrap {
+			width: 80%;
+
+			.image-element {
+				padding: 0;
+			}
+		}
+
+		.couple-description {
+			width: 100%;
+
+			@include max-sm {
+				margin-top: 0 !important;
+			}
+
+			&::after {
+				background-color: var(--color-primary);
+				opacity: .8;
+			}
+
+			h3 {
+				font-size: 32px;
+			}
+		}
+	}
+
+	.reminder-wrap {
+		padding: 8rem 0;
+
+		@include max-sm {
+			padding: 5rem 0;
+		}
+	}
+}
+
+.story-section {
+	background-color: var(--color-custom-main);
+
+	.image-wrapper {
+		@include max-sm {
+			aspect-ratio: 1;
+		}
+	}
+}
+
+.venue-section {
+	.orn-1 {
+		@include max-md {
+			transform: translate(-50%, 20%) scaleX(-1) rotate(-45deg);
+		}
+	}
+
+	.card {
+		&-body {
+			.event-name {
+				margin-bottom: 1rem;
+			}
+		}
+	}
+}
+
+.rsvp-section {
+	.image-wrapper {
+		@include max-sm {
+			aspect-ratio: 1;
+		}
+	}
+
+	.rsvp-wrapper {
+		box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+		overflow: hidden;
+		text-align: center;
+
+		.form-label {
+			@include max-sm {
+				font-size: 14px;
+			}
+		}
+
+		.form-control {
+			text-align: center;
+		}
+
+		.form-check-group {
+			width: fit-content;
+			margin: 0 auto;
+
+			.form-check {
+				text-align: left;
+			}
+
+			.form-check-input {
+				&:focus {
+					box-shadow: none;
+				}
+			}
+
+			.form-check-label {
+				@include max-sm {
+					font-size: 14px;
+				}
+			}
+		}
+	}
+}
+
+.wishes-section {
+	.card-form {
+		overflow: hidden;
+
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 200px;
+			transform: translate(40%, -10%) scale(-1);
+
+			@include min-md {
+				width: 280px;
+			}
+
+			@include min-lg {
+				width: 320px;
+			}
+		}
+	}
+}
+
+.egift-section {
+
+	.gift-wrap {
+		box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
+	}
+
+	form {
+		.input-group-text {
+			border: 1px solid var(--color-dark);
+		}
+	}
+}
+
+.thank-section {
+
+	.thank {
+		overflow: hidden;
+		border-radius: 10px;
+	}
+}
+
+img[alt="rose-3"] {
+	transform-origin: 2% 8%;
+}
+
+img[alt="rose-4"] {
+	transform-origin: 5% 98%;
+}
