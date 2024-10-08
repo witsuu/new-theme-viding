@@ -1,0 +1,71 @@
+.story-section {
+	position: relative;
+	.story {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 200%;
+		transform: translate(-50%, 0);
+		opacity: 0.2;
+		@include min-md {
+			width: 150%;
+		}
+		@include min-lg {
+			width: 100%;
+			transform: translate(-45%, 0);
+		}
+	}
+	.corner-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		@include max-lg {
+			width: 55%;
+		}
+	}
+	.corner-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: scaleX(-1);
+		@include max-lg {
+			width: 55%;
+		}
+	}
+	.story-content {
+		position: relative;
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+		@include max-md {
+			aspect-ratio: 6/5;
+		}
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			.story-background {
+				position: relative;
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+			}
+		}
+	}
+}

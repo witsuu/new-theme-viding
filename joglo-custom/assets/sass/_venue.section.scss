@@ -1,0 +1,436 @@
+.venue-section {
+	position: relative;
+	padding: 8rem 0 5rem;
+
+	@include max-md {
+		padding: 5rem 0 3rem;
+	}
+
+	.corner-left {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-right {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: scaleX(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 90%;
+		transform: translate(-65%, 0) scale(-1);
+
+		@include min-md {
+			width: 80%;
+		}
+
+		@include min-lg {
+			width: 40%;
+			transform: translate(-30%, 0) scale(-1);
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 90%;
+		transform: translate(30%, 0) scale(-1);
+
+		@include min-md {
+			width: 80%;
+		}
+
+		@include min-lg {
+			width: 40%;
+			transform: translate(0, 0) scale(-1);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 3rem;
+		left: 0;
+		width: 40%;
+		transform: translate(-60%, 0) rotate(45deg) scaleX(-1);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 15%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		top: 1rem;
+		left: 0;
+		width: 50%;
+		transform: translate(-65%, 0) rotate(45deg);
+
+		@include min-md {
+			width: 40%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		top: 1rem;
+		right: 0;
+		width: 50%;
+		transform: translate(50%, 0) rotate(25deg);
+
+		@include min-md {
+			width: 40%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 15%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		top: 95%;
+		left: 0;
+		width: 40%;
+		transform: translate(-60%, 0) rotate(45deg) scaleX(-1);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 15%;
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		top: 95%;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 15%;
+		}
+	}
+
+	.venue-wrapper {
+		position: relative;
+		z-index: 3;
+
+		.venue-description {
+			position: relative;
+			margin: 0 auto 3rem;
+			z-index: 2;
+			text-align: center;
+		}
+
+		.venue-content {
+			position: relative;
+
+			.ribbon-venue {
+				position: relative;
+				padding: 1rem 0 2rem;
+
+				svg {
+					width: 40px;
+					height: auto;
+
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+
+				.st0 {
+					fill: var(--color-secondary);
+				}
+
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+
+			.card {
+				background-color: transparent;
+				border: none;
+				text-align: center;
+
+				.card-body {
+					position: relative;
+					padding: 0 2rem;
+
+					@include max-lg {
+						padding: 0;
+					}
+
+					h4 {
+						margin-bottom: 1.5rem;
+					}
+
+					hr {
+						display: block;
+						width: 10%;
+						height: 2px;
+						margin: 0 auto 1rem;
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 1rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-name {
+						position: relative;
+						width: 100%;
+						margin-bottom: 1rem;
+
+						&-body {
+							position: relative;
+							padding: 8rem 2rem 5rem;
+
+							.date {
+								position: relative;
+								width: 100%;
+
+								h5 {
+									font-family: $font-secondary;
+									margin-bottom: 0;
+									font-size: 28px;
+									padding: 1.25rem 0;
+								}
+							}
+
+							h4 {
+								font-family: $font-secondary;
+							}
+
+							p {
+								margin-bottom: 0;
+								font-weight: 600;
+							}
+						}
+
+						.ornaments-wrapper {
+							border-radius: var(--border-radius);
+							overflow: hidden;
+
+							.joglo {
+								position: absolute;
+								bottom: 0;
+								left: 50%;
+								width: 180%;
+								transform: translate(-50%, 0);
+								opacity: 0.2;
+							}
+
+							.corner-1 {
+								position: absolute;
+								top: 0;
+								left: 0;
+								width: 50%;
+							}
+
+							.corner-2 {
+								position: absolute;
+								top: 0;
+								right: 0;
+								width: 50%;
+								transform: scaleX(-1);
+							}
+						}
+					}
+
+					.event-place {
+						position: relative;
+						margin-bottom: 1rem;
+						background-color: var(--color-primary);
+						color: var(--color-dark);
+						border-radius: var(--border-radius);
+
+						&-body {
+							position: relative;
+							padding: 2rem 1rem;
+
+							.widget-elements {
+								position: absolute;
+								bottom: 0;
+								left: 50%;
+								width: 100%;
+								transform: translate(-50%, 50%);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+
+		@include max-md {
+			padding: 2rem 0;
+		}
+
+		* {
+			position: relative;
+		}
+	}
+
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+
+			@include max-md {
+				width: 120px;
+			}
+
+			@include max-xs {
+				width: 45%;
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 3rem;
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}
+
+.maps-embed {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

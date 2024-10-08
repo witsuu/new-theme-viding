@@ -1,0 +1,356 @@
+.couple-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	.and {
+		@include min-md {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16/8;
+
+		@include max-md {
+			aspect-ratio: 6/5;
+		}
+
+		.image-element {
+			height: 100%;
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 8rem 0;
+
+		@include max-md {
+			padding: 5rem 0;
+		}
+
+		.bg-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 200%;
+			transform: translate(-50%, 0);
+			opacity: 0.2;
+
+			@include min-md {
+				width: 150%;
+			}
+
+			@include min-lg {
+				width: 80%;
+				transform: translate(-30%, -20%);
+			}
+		}
+
+		.corner-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40%;
+
+			@include max-lg {
+				width: 55%;
+			}
+		}
+
+		.corner-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 40%;
+			transform: scaleX(-1);
+
+			@include max-lg {
+				width: 55%;
+			}
+		}
+
+		.corner-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 40%;
+			transform: scaleY(-1);
+
+			@include max-lg {
+				width: 55%;
+			}
+		}
+
+		.corner-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 40%;
+			transform: scale(-1);
+
+			@include max-lg {
+				width: 55%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 45%;
+			transform: translate(50%, 0) scaleX(-1);
+
+			@include min-md {
+				width: 35%;
+			}
+
+			@include min-lg {
+				width: 15%;
+			}
+
+			.orn-2 {
+				position: absolute;
+				top: 50%;
+				right: 5%;
+				width: 90%;
+				transform: scaleX(-1);
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(-10%, 0);
+
+			@include min-md {
+				width: 40%;
+			}
+
+			@include min-lg {
+				width: 20%;
+			}
+		}
+
+		.orn-8 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 70%;
+			transform: translate(-30%, 30%);
+
+			@include min-md {
+				width: 60%;
+			}
+
+			@include min-lg {
+				width: 40%;
+			}
+		}
+
+		.orn-9 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 70%;
+			transform: translate(30%, 30%);
+
+			@include min-md {
+				width: 60%;
+			}
+
+			@include min-lg {
+				width: 40%;
+			}
+		}
+
+		.orn-10 {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			width: 150%;
+			transform: translate(-50%, -50%) scaleX(-1);
+		}
+
+		.orn-11 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 110%;
+			transform: translate(-40%, -25%) scale(-1);
+		}
+
+		.orn-12 {
+			position: absolute;
+			bottom: 30%;
+			left: 0;
+			width: 50%;
+			transform: translate(-50%, 0);
+		}
+
+		.orn-13 {
+			position: absolute;
+			bottom: 15%;
+			left: 0;
+			width: 80%;
+			transform: translate(-35%, 0) scaleX(-1);
+		}
+
+		.orn-14 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 80%;
+			transform: translate(35%, 0);
+		}
+	}
+
+	.couple-body {
+		position: relative;
+	}
+
+	.couple-content {
+		position: relative;
+		text-align: left;
+		margin-bottom: 5rem;
+
+		@include max-sm {
+			margin-bottom: 3rem;
+		}
+
+		.title-section {
+			text-align: left;
+		}
+	}
+
+	.couple {
+		position: relative;
+		text-align: center;
+
+		.image-wrap {
+			width: 90%;
+			margin: 0 auto;
+			position: relative;
+			aspect-ratio: 3/4;
+
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+					border-radius: var(--border-radius);
+				}
+			}
+
+			.ornaments-wrapper {
+				border-radius: var(--border-radius);
+
+				.corner-1,
+				.corner-2,
+				.corner-3,
+				.corner-4 {
+					width: 56%;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 1rem 1rem 0;
+		}
+
+		.couple-parent {
+			width: 100%;
+		}
+
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+
+			.fab {
+				font-size: 18px;
+
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+				@include min-md {
+					aspect-ratio: 6/4;
+
+					.orn-10 {
+						width: 100%;
+					}
+
+					.orn-12 {
+						width: 25%;
+					}
+
+					.orn-13,
+					.orn-14 {
+						width: 40%;
+					}
+				}
+			}
+
+			.couple-description {
+				padding: 1rem;
+			}
+		}
+	}
+}

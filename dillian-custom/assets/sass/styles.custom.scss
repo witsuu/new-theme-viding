@@ -15,6 +15,7 @@ h3 {
 
 h1 {
 	font-size: 48px;
+	line-height: 1;
 
 	@include max-sm {
 		font-size: 42px;
@@ -22,6 +23,8 @@ h1 {
 
 	span {
 		font-size: 28px;
+		transform: none;
+		margin: 0;
 
 		@include max-md {
 			font-size: 24px;
@@ -79,6 +82,7 @@ h1 {
 	.couple {
 		.image-wrap {
 			width: 80%;
+			aspect-ratio: 5/6;
 
 			.image-element {
 				padding: 0;
@@ -150,6 +154,12 @@ h1 {
 		overflow: hidden;
 		text-align: center;
 
+		.title-section {
+			&::before {
+				display: none;
+			}
+		}
+
 		.form-label {
 			@include max-sm {
 				font-size: 14px;
@@ -207,6 +217,12 @@ h1 {
 
 .egift-section {
 
+	.orn-1 {
+		top: unset;
+		bottom: 0;
+		transform: translate(40%, -6%) scaleX(-1) rotate(-25deg);
+	}
+
 	.gift-wrap {
 		box-shadow: 0 10px 20px rgba($color: #000000, $alpha: 0.1);
 	}
@@ -215,6 +231,10 @@ h1 {
 		.input-group-text {
 			border: 1px solid var(--color-dark);
 		}
+	}
+
+	.gift-content {
+		background-color: transparent;
 	}
 }
 

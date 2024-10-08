@@ -1,0 +1,202 @@
+.wishes-section {
+	position: relative;
+	.corner-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+		@include max-lg {
+			width: 55%;
+		}
+	}
+	.corner-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: scaleX(-1);
+		@include max-lg {
+			width: 55%;
+		}
+	}
+	.bg-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 180%;
+		transform: translate(-50%, 0);
+		opacity: 0.2;
+		@include min-md {
+			width: 150%;
+		}
+		@include min-lg {
+			width: 80%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-10%, -10%);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 3rem;
+		right: 0;
+		width: 50%;
+		transform: translate(30%, 0);
+		@include min-md {
+			width: 40%;
+		}
+		@include min-lg {
+			width: 20%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 15%;
+		left: 0;
+		width: 60%;
+		transform: translate(-20%, 0%);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 30%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, 0);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 35%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 120%;
+		transform: translate(-25%, 20%);
+		opacity: 0.8;
+		@include min-md {
+			width: 100%;
+		}
+		@include min-lg {
+			width: 80%;
+		}
+	}
+	.wishes-form-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		color: var(--color-dark);
+		padding: 8rem 0 0;
+		@include max-md {
+			padding: 3rem 0 0;
+		}
+	}
+	.card-form {
+		background-color: transparent;
+		--color-button-trans: #1e1f1e;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.card {
+			position: relative;
+			border: none;
+			background-color: transparent;
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+				.wishes {
+					text-align: left;
+					max-height: 32rem;
+					overflow: auto;
+					padding-right: 1rem;
+					color: var(--color-dark);
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: var(--color-secondary);
+						border-radius: 20px;
+					}
+					// .text-muted {
+					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
+					// }
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: var(--color-light);
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.8);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 15px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.8);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,291 @@
+.thank-section {
+	position: relative;
+	padding: 3rem 0 25rem;
+	text-align: center;
+
+	@include max-md {
+		padding: 3rem 0 20rem;
+	}
+
+	.joglo-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 80%;
+		transform: translate(-50%, 15%);
+
+		@include max-lg {
+			width: 140%;
+			transform: translate(-50%, -10%);
+		}
+
+		.joglo-2 {
+			position: absolute;
+			bottom: 15%;
+			left: 0;
+			width: 70%;
+			transform: translate(-10%, 0);
+			opacity: 0.6;
+
+			@include max-lg {
+				bottom: -10%;
+				width: 100%;
+				transform: translate(-25%, 0);
+			}
+		}
+
+		.joglo-3 {
+			position: absolute;
+			bottom: 15%;
+			right: 0;
+			width: 70%;
+			transform: translate(10%, 0);
+			opacity: 0.6;
+
+			@include max-lg {
+				bottom: -10%;
+				width: 100%;
+				transform: translate(25%, 0);
+			}
+		}
+	}
+
+	.corner-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: scaleX(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: scaleY(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: scale(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.logo-custom {
+		position: relative;
+		width: 8%;
+		margin: 0 auto 1rem;
+
+		@include max-lg {
+			width: 10%;
+		}
+
+		@include max-md {
+			width: 102px;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 15%;
+		left: 0;
+		width: 70%;
+		transform: translate(-35%, 0);
+
+		@include min-md {
+			top: 8%;
+			width: 50%;
+		}
+
+		@include min-lg {
+			width: 25%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, -10%);
+
+		@include min-md {
+			width: 50%;
+		}
+
+		@include min-lg {
+			width: 30%;
+			transform: translate(-10%, -30%);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 12%;
+		left: 0;
+		width: 60%;
+		transform: translate(-20%, 0);
+
+		@include min-lg {
+			width: 25%;
+			transform: translate(20%, 0);
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 15%;
+		right: 0;
+		width: 65%;
+		transform: translate(35%, 0);
+
+		@include min-lg {
+			width: 30%;
+			transform: translate(-20%, 0);
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%, 0%);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 20%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 90%;
+		transform: translate(-50%, 25%);
+
+		@include min-md {
+			width: 70%;
+		}
+
+		@include min-lg {
+			width: 60%;
+			transform: translate(-50%, 35%);
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0) rotate(-65deg);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 20%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 90%;
+		transform: translate(50%, 25%);
+
+		@include min-md {
+			width: 70%;
+		}
+
+		@include min-lg {
+			width: 60%;
+			transform: translate(50%, 35%);
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 6/5;
+
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+
+		.thank {
+			position: relative;
+			background-color: var(--color-primary);
+			color: var(--color-dark);
+			border-radius: var(--border-radius);
+
+			&-body {
+				position: relative;
+				padding: 3rem 2rem;
+
+				@include max-md {
+					padding: 2rem 1rem;
+				}
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}

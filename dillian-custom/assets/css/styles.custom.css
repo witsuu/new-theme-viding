@@ -13,6 +13,7 @@ h3 {
 
 h1 {
   font-size: 48px;
+  line-height: 1;
 }
 @media (max-width: 575px) {
   h1 {
@@ -21,6 +22,8 @@ h1 {
 }
 h1 span {
   font-size: 28px;
+  transform: none;
+  margin: 0;
 }
 @media (max-width: 767px) {
   h1 span {
@@ -70,6 +73,7 @@ h1 span {
 }
 .couple-section .couple .image-wrap {
   width: 80%;
+  aspect-ratio: 5/6;
 }
 .couple-section .couple .image-wrap .image-element {
   padding: 0;
@@ -126,6 +130,9 @@ h1 span {
   overflow: hidden;
   text-align: center;
 }
+.rsvp-section .rsvp-wrapper .title-section::before {
+  display: none;
+}
 @media (max-width: 575px) {
   .rsvp-section .rsvp-wrapper .form-label {
     font-size: 14px;
@@ -172,11 +179,19 @@ h1 span {
   }
 }
 
+.egift-section .orn-1 {
+  top: unset;
+  bottom: 0;
+  transform: translate(40%, -6%) scaleX(-1) rotate(-25deg);
+}
 .egift-section .gift-wrap {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 .egift-section form .input-group-text {
   border: 1px solid var(--color-dark);
+}
+.egift-section .gift-content {
+  background-color: transparent;
 }
 
 .thank-section .thank {

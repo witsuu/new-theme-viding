@@ -1,0 +1,358 @@
+.header-section {
+	position: relative;
+	width: 100%;
+
+	.scroll-icon {
+		position: relative;
+		margin-top: 2rem;
+
+		rect {
+			stroke: var(--color-button-trans);
+		}
+	}
+
+	.joglo-1 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 80%;
+		transform: translate(-50%, 15%);
+
+		@include max-lg {
+			width: 140%;
+			transform: translate(-50%, -10%);
+		}
+
+		.joglo-2 {
+			position: absolute;
+			bottom: 15%;
+			left: 0;
+			width: 70%;
+			transform: translate(-10%, 0);
+			opacity: 0.6;
+
+			@include max-lg {
+				bottom: -10%;
+				width: 100%;
+				transform: translate(-25%, 0);
+			}
+		}
+
+		.joglo-3 {
+			position: absolute;
+			bottom: 15%;
+			right: 0;
+			width: 70%;
+			transform: translate(10%, 0);
+			opacity: 0.6;
+
+			@include max-lg {
+				bottom: -10%;
+				width: 100%;
+				transform: translate(25%, 0);
+			}
+		}
+	}
+
+	.gunungan {
+		position: absolute;
+		bottom: 5%;
+		left: 50%;
+		width: 12%;
+		transform: translate(-50%, 0%);
+
+		@include max-lg {
+			bottom: -20%;
+			width: 14%;
+		}
+	}
+
+	.corner-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 40%;
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 40%;
+		transform: scaleX(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: scaleY(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.corner-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: scale(-1);
+
+		@include max-lg {
+			width: 55%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 15%;
+		left: 0;
+		width: 70%;
+		transform: translate(-35%, 0);
+
+		@include min-md {
+			top: 8%;
+			width: 50%;
+		}
+
+		@include min-lg {
+			width: 25%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, -10%);
+
+		@include min-md {
+			width: 50%;
+		}
+
+		@include min-lg {
+			width: 30%;
+			transform: translate(-10%, -30%);
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 12%;
+		left: 0;
+		width: 60%;
+		transform: translate(-20%, 0);
+
+		@include min-lg {
+			width: 25%;
+			transform: translate(20%, 0);
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 15%;
+		right: 0;
+		width: 65%;
+		transform: translate(35%, 0);
+
+		@include min-lg {
+			width: 30%;
+			transform: translate(-20%, 0);
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-50%, 0%);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 20%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 90%;
+		transform: translate(-50%, 25%);
+
+		@include min-md {
+			width: 70%;
+		}
+
+		@include min-lg {
+			width: 60%;
+			transform: translate(-50%, 35%);
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0) rotate(-65deg);
+
+		@include min-md {
+			width: 30%;
+		}
+
+		@include min-lg {
+			width: 20%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 90%;
+		transform: translate(50%, 25%);
+
+		@include min-md {
+			width: 70%;
+		}
+
+		@include min-lg {
+			width: 45%;
+			transform: translate(20%, 30%);
+		}
+	}
+
+	.header-content {
+		position: relative;
+		height: 100vh;
+
+		.header {
+			position: relative;
+			display: grid;
+			grid-template-rows: auto 1fr;
+			width: 50%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 4.5rem 0 0;
+
+			.header-title {
+				position: relative;
+				text-align: center;
+
+				&-content {
+					position: relative;
+				}
+			}
+
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-in-main"].has-animate {
+	animation-name: zoomInMain;
+	animation-fill-mode: forwards;
+	animation-duration: 3500ms !important;
+}
+
+[data-anim="peafowl-right"].has-animate {
+	animation-name: peafowlRight;
+	animation-duration: 3500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+
+[data-anim="peafowl-left"].has-animate {
+	animation-name: peafowlLeft;
+	animation-duration: 2500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.33, 0.12, 0.61, 0.9);
+}
+
+@keyframes peafowlRight {
+	0% {
+		transform: translate3d(50%, 0, 0);
+	}
+
+	20% {
+		transform: translate3d(60%, 5%, 0);
+	}
+
+	40% {
+		transform: translate3d(70%, 0, 0);
+	}
+
+	60% {
+		transform: translate3d(80%, 5%, 0);
+	}
+
+	80% {
+		transform: translate3d(90%, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(100%, 5%, 0);
+	}
+}
+
+@keyframes peafowlLeft {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+	}
+
+	20% {
+		transform: translate3d(-60%, 5%, 0);
+	}
+
+	40% {
+		transform: translate3d(-70%, 0, 0);
+	}
+
+	60% {
+		transform: translate3d(-80%, 5%, 0);
+	}
+
+	80% {
+		transform: translate3d(-90%, 0, 0);
+	}
+
+	100% {
+		transform: translate3d(-100%, 5%, 0);
+	}
+}
