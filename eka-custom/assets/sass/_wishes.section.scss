@@ -1,0 +1,98 @@
+.wishes-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.card-form {
+		margin-bottom: 0;
+		background-color: rgba($color: #f5f4ef, $alpha: 0.5);
+		position: relative;
+		z-index: 3;
+		border-radius: var(--border-radius);
+		border: 3px solid #b4a987 !important;
+		&.card {
+			border: none;
+		}
+		.card-body {
+			padding: 2rem;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+
+	.wishes-preview {
+		position: relative;
+		@include max-lg {
+			margin-top: 2rem;
+		}
+		.card {
+			border: none;
+			position: relative;
+			background-color: transparent;
+			border-radius: var(--border-radius);
+			.card-body {
+				overflow: hidden;
+				padding: 2rem 0;
+				.wishes {
+					text-align: left;
+					max-height: 50rem;
+					overflow: auto;
+					padding-right: 1rem;
+					&::-webkit-scrollbar {
+						width: 5px;
+					}
+					&::-webkit-scrollbar-track {
+						background-color: #eee;
+						border-radius: 20px;
+						opacity: 0.15;
+					}
+					&::-webkit-scrollbar-thumb {
+						background-color: #b8b0b2;
+						border-radius: 20px;
+					}
+					.wish {
+						margin-bottom: 1.5rem;
+						display: grid;
+						grid-template-columns: auto 1fr;
+						gap: 1rem;
+						h6 {
+							font-weight: bold;
+						}
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						.wish-badge {
+							background-color: #fcfbf7;
+							width: 35px;
+							aspect-ratio: 1;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							border-radius: 50px;
+						}
+						.wish-description {
+							padding: 1rem;
+							background-color: rgba($color: #fff, $alpha: 0.5);
+							border-radius: 5px;
+							position: relative;
+							&::before {
+								position: absolute;
+								top: 10px;
+								left: 0;
+								width: 15px;
+								height: 15px;
+								transform: translateX(-100%);
+								clip-path: url(#wishes-polygon);
+								content: "";
+								background-color: rgba($color: #fff, $alpha: 0.5);
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
