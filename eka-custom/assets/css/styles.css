@@ -39,6 +39,7 @@
   --vd-color-pink: #e9088a;
   --color-gradient: linear-gradient(90deg, #c6a058 0%, #ffda92 100%);
   --border-radius: 24px;
+  --color-custom: #800000;
 }
 
 body {
@@ -261,7 +262,7 @@ small {
   margin: 0 auto;
   text-align: center;
   margin-bottom: 1.25rem;
-  color: #7c6e13;
+  color: #800000;
 }
 .title-section h3 {
   font-family: "Noto Serif Display", serif;
@@ -271,7 +272,7 @@ small {
   position: relative;
   display: block;
   border-radius: var(--border-radius);
-  border: 5px solid #b4a987;
+  border: 3px solid var(--color-custom);
   padding: 8rem 1rem;
   overflow: hidden;
 }
@@ -1112,7 +1113,7 @@ ul li {
   justify-content: center;
   align-items: center;
   position: relative;
-  background: rgba(180, 169, 135, 0.8);
+  background: rgba(128, 0, 0, 0.8);
   border-radius: var(--border-radius);
   color: var(--color-light);
   padding: 1rem 2rem;
@@ -1270,6 +1271,21 @@ ul li {
   position: relative;
   text-align: center;
   color: #7c6e13;
+  padding: 1rem;
+}
+.cover-section .cover-wrapper .cover-content .cover-body .cover-description::before {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 150%;
+  height: 150%;
+  transform: translate(-50%, -50%);
+  background: radial-gradient(ellipse, #fff 10%, transparent 80%);
+  border-radius: 300px;
+  content: "";
+}
+.cover-section .cover-wrapper .cover-content .cover-body .cover-description .name-main {
+  color: #800000;
 }
 .cover-section .cover-wrapper .cover-content .elements-widget {
   width: 100%;
@@ -1286,11 +1302,6 @@ ul li {
 }
 .header-section .scroll-icon {
   position: relative;
-}
-@media (max-width: 991px) {
-  .header-section .elements-wrapper-absolute .background-element.latar-bg img {
-    transform: translateY(20rem);
-  }
 }
 @media (max-width: 767px) {
   .header-section .elements-wrapper-absolute .background-element.latar-bg img {
@@ -1331,7 +1342,8 @@ ul li {
 }
 @media (max-width: 767px) {
   .header-section .orn-2 {
-    width: 60%;
+    width: 65%;
+    transform: translateX(-10%);
   }
 }
 .header-section .orn-3 {
@@ -1339,6 +1351,11 @@ ul li {
   top: 0;
   right: 0;
   width: 45%;
+}
+@media (max-width: 767px) {
+  .header-section .orn-3 {
+    width: 60%;
+  }
 }
 .header-section .orn-4 {
   position: absolute;
@@ -1614,7 +1631,7 @@ ul li {
   position: relative;
   padding: 1rem 0 0;
   width: 100%;
-  color: #7c6e13;
+  color: #800000;
 }
 .header-section .header-content .header .header-title-content::before {
   position: absolute;
@@ -2072,7 +2089,7 @@ ul li {
   position: relative;
   font-size: 80px;
   font-family: "Le Major", cursive;
-  color: #7c6e13;
+  color: #800000;
 }
 @media (max-width: 767px) {
   .couple-section .and span {
@@ -2084,11 +2101,6 @@ ul li {
   border-radius: var(--border-radius);
   background-color: var(--color-primary);
   padding: 1rem;
-}
-@media (max-width: 991px) {
-  .couple-section .couple-content {
-    margin-top: 3rem;
-  }
 }
 .couple-section .couple {
   position: relative;
@@ -2130,7 +2142,7 @@ ul li {
 .couple-section .couple .couple-description {
   position: relative;
   padding: 2rem 3rem;
-  color: #7c6e13;
+  color: #800000;
 }
 .couple-section .couple .couple-description .couple-name-second {
   font-family: "Le Major", cursive;
@@ -2148,7 +2160,7 @@ ul li {
   text-decoration: none;
   padding: 0.5rem 0.6rem;
   border-radius: 50px;
-  background: #7c6e13;
+  background: #800000;
   border: 1px solid transparent;
   transition: all 0.25s ease;
   display: block;
@@ -2196,7 +2208,7 @@ ul li {
 .story-section .story-description {
   position: relative;
   text-align: center;
-  color: #7c6e13;
+  color: #800000;
 }
 .story-section .story-description * {
   position: relative;
@@ -2223,19 +2235,18 @@ ul li {
 
 .venue-section {
   position: relative;
-  padding: 0 0 5rem;
+  padding: 5rem 0;
 }
 @media (max-width: 767px) {
   .venue-section {
-    padding: 0 0 3rem;
+    padding: 3rem 0;
   }
 }
 .venue-section .orn-1 {
   position: absolute;
-  bottom: 0;
-  left: 0;
+  top: 0;
   width: 180px;
-  transform: translateY(50%) scaleY(-1);
+  transform: scaleY(-1);
 }
 @media (max-width: 767px) {
   .venue-section .orn-1 {
@@ -2244,10 +2255,10 @@ ul li {
 }
 .venue-section .orn-2 {
   position: absolute;
-  bottom: 0;
+  top: 0;
   right: 0;
   width: 180px;
-  transform: translateY(50%) scale(-1);
+  transform: scale(-1);
 }
 @media (max-width: 767px) {
   .venue-section .orn-2 {
@@ -2278,7 +2289,7 @@ ul li {
 .venue-section .venue-wrapper {
   position: relative;
   background: var(--color-primary);
-  color: #7c6e13;
+  color: #800000;
   padding: 3rem;
   border-radius: 40px;
   z-index: 3;
@@ -2290,7 +2301,7 @@ ul li {
 }
 @media (max-width: 767px) {
   .venue-section .venue-wrapper {
-    padding: 1rem;
+    padding: 3rem 1rem;
   }
 }
 .venue-section .venue-wrapper .venue-description {
@@ -2320,8 +2331,8 @@ ul li {
   height: auto;
 }
 .venue-section .venue-wrapper .venue-content .ribbon-venue svg path {
-  fill: #7c6e13;
-  stroke: #7c6e13;
+  fill: #800000;
+  stroke: #800000;
 }
 .venue-section .venue-wrapper .venue-content .card {
   border: none;
@@ -2576,7 +2587,7 @@ ul li {
   border-radius: var(--border-radius);
   padding: 5rem;
   background-color: var(--color-main);
-  border: 5px solid #b4a987;
+  border: 3px solid var(--color-custom);
   overflow: hidden;
 }
 @media (max-width: 991px) {
@@ -2608,7 +2619,7 @@ ul li {
   position: relative;
   z-index: 3;
   border-radius: var(--border-radius);
-  border: 3px solid #b4a987 !important;
+  border: 3px solid var(--color-custom) !important;
 }
 .wishes-section .card-form.card {
   border: none;
@@ -3038,13 +3049,13 @@ ul li {
   aspect-ratio: 16/9;
 }
 .gallery-section .splide--nav > .splide__track > .splide__list > .splide__slide.is-active {
-  border: 3px solid #7c6e13;
+  border: 3px solid #800000;
 }
 .gallery-section .splide .splide__arrow {
   border-radius: 0;
   width: 70px;
   height: 65px;
-  background-color: #7c6e13;
+  background-color: #800000;
 }
 @media (max-width: 991px) {
   .gallery-section .splide .splide__arrow {
@@ -3091,7 +3102,7 @@ ul li {
   padding: 3rem 2rem;
   background-color: var(--color-primary);
   border-radius: var(--border-radius);
-  border: 5px solid #b4a987;
+  border: 3px solid var(--color-custom);
 }
 @media (max-width: 767px) {
   .apology-section .appology-wrap {
@@ -3178,7 +3189,7 @@ ul li {
 }
 .stream-section .stream-wrapper .stream-content .stream-description {
   position: relative;
-  color: #7c6e13;
+  color: #800000;
 }
 .stream-section ul ol {
   padding: 0;
@@ -3362,7 +3373,7 @@ ul li {
 .thank-section .thank-wrapper .thank {
   position: relative;
   padding: 3rem 2rem;
-  color: #7c6e13;
+  color: #800000;
 }
 @media (max-width: 767px) {
   .thank-section .thank-wrapper .thank {
@@ -3385,9 +3396,96 @@ ul li {
   padding: 1rem 0;
   position: relative;
   text-align: center;
-  background-color: #7c6e13;
+  background-color: #800000;
   color: var(--color-light);
 }
 .footer small {
   position: relative;
+}
+
+.btn-control {
+  border-radius: 50%;
+  height: 2.5em;
+  width: 2.5em;
+  text-align: center;
+  background: radial-gradient(rgba(255, 0, 128, 0.8) 60%, rgb(255, 255, 255) 62%) !important;
+  position: relative;
+  display: block;
+  margin: 100px auto;
+  box-shadow: 0px 0px 25px 3px rgba(255, 0, 128, 0.8);
+  animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+}
+
+.btn-control:hover {
+  animation: none;
+}
+
+.btn-pink {
+  background: #ff3190;
+  color: rgba(255, 255, 255, 0.4);
+}
+
+.btn-pink:hover {
+  color: rgb(255, 255, 255);
+}
+
+.btn-pink:hover {
+  color: rgb(255, 255, 255);
+}
+
+@keyframes pulse {
+  to {
+    box-shadow: 0 0 0 45px rgba(232, 76, 61, 0);
+  }
+}
+.skiptranslate iframe {
+  display: none !important;
+}
+
+.goog-te-gadget {
+  display: none !important;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+body {
+  top: 0px !important;
+}
+
+@media (max-width: 576px) {
+  .greeting-text {
+    font-size: 3.75vw;
+  }
+  .greeting-name-text {
+    font-size: 4vw;
+  }
+}
+@media (min-width: 577px) and (max-width: 1024px) {
+  .greeting-text {
+    font-size: 2.25vw;
+  }
+  .greeting-name-text {
+    font-size: 2.5vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 2880px) {
+  .greeting-text {
+    font-size: 1.25vw;
+  }
+  .greeting-name-text {
+    font-size: 1.5vw;
+  }
+}
+.link_item_gift {
+  border-color: var(--color-secondary) !important;
+  color: var(--color-secondary) !important;
+}
+
+.btn-hadiahkan,
+.link_item_gift:hover:not([disabled]),
+.button-gift {
+  background: var(--color-secondary) !important;
+  color: var(--text-button) !important;
 }/*# sourceMappingURL=styles.css.map */

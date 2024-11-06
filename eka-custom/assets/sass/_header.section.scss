@@ -11,9 +11,6 @@
 	.elements-wrapper-absolute {
 		.background-element.latar-bg {
 			img {
-				@include max-lg {
-					transform: translateY(20rem);
-				}
 
 				@include max-md {
 					transform: none;
@@ -53,7 +50,8 @@
 		}
 
 		@include max-md {
-			width: 60%;
+			width: 65%;
+			transform: translateX(-10%);
 		}
 	}
 
@@ -62,6 +60,10 @@
 		top: 0;
 		right: 0;
 		width: 45%;
+
+		@include max-md {
+			width: 60%;
+		}
 	}
 
 	.orn-4 {

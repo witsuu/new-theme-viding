@@ -7,14 +7,17 @@
 	width: fit-content;
 	gap: 1rem;
 	z-index: 3;
+
 	@include max-md {
 		gap: 0.5rem;
 	}
+
 	@include max-rwd(350px) {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		gap: 1rem;
 	}
+
 	.days,
 	.hours,
 	.minutes,
@@ -24,40 +27,49 @@
 		justify-content: center;
 		align-items: center;
 		position: relative;
-		background: rgba($color: #b4a987, $alpha: 0.8);
+		background: rgba($color: #800000, $alpha: 0.8);
 		border-radius: var(--border-radius);
 		color: var(--color-light);
 		padding: 1rem 2rem;
 		min-width: 120px;
+
 		@include max-md {
 			min-width: 65px;
 			padding: 1rem 0.75rem;
 		}
+
 		@include max-xs {
 			min-width: 63px;
 		}
+
 		@include max-rwd(350px) {
 			min-width: 72px;
 		}
+
 		.huruf {
 			font-size: 14px;
 			font-weight: 600;
+
 			@include max-xs {
 				font-size: 12px;
 			}
 		}
+
 		.angka {
 			margin-bottom: 0;
 			font-weight: 500;
 			font-size: 38px;
 			font-family: $font-three;
+
 			@include max-md {
 				font-size: 28px;
 			}
+
 			@include max-xs {
 				font-size: 24px;
 			}
 		}
+
 		.huruf,
 		.angka {
 			margin: 0;

@@ -1,6 +1,6 @@
 @font-face {
-  font-family: "Carmilla";
-  src: url(../fonts/CarmillaRegular.woff2) format(woff2);
+  font-family: "Gallery";
+  src: url(../fonts/GalleryRegular.woff2) format("woff2"), url(../fonts/GalleryRegular.woff) format("woff");
   font-display: swap;
 }
 :root {
@@ -280,7 +280,7 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
   text-rendering: optimizeLegibility;
   font-feature-settings: "kern" 1;
 }
@@ -385,7 +385,7 @@ span {
 }
 
 .font-secondary {
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
 }
 
 .scaleX-reverse {
@@ -1528,7 +1528,7 @@ img[alt=branch] {
   margin-bottom: 0;
   font-weight: 500;
   font-size: 36px;
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
 }
 @media (max-width: 767px) {
   .countdown .days .angka,
@@ -2074,7 +2074,7 @@ img[alt=branch] {
 .couple-section .and span {
   position: relative;
   font-size: 28px;
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
 }
 .couple-section .couple-wrapper {
   position: relative;
@@ -2383,7 +2383,7 @@ img[alt=branch] {
   width: 100%;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name .date h5 {
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
   margin-bottom: 0;
   font-size: 42px;
 }
@@ -2394,7 +2394,7 @@ img[alt=branch] {
   margin: 0.2rem auto 0.5rem;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name h4 {
-  font-family: "Carmilla", cursive;
+  font-family: "Gallery", serif;
   font-size: 32px;
 }
 .venue-section .venue-wrapper .venue-content .card .card-body .event-name p,

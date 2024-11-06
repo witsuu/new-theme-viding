@@ -6,9 +6,11 @@
 	overflow: hidden;
 	height: 100vh;
 	width: 100%;
+
 	&.cover-opened {
 		transform: translateY(-100%);
 	}
+
 	.elements-wrapper-absolute {
 		.background-element {
 			&::after {
@@ -22,51 +24,64 @@
 			}
 		}
 	}
+
 	.cover-wrapper {
 		position: relative;
 		display: flex;
 		justify-content: center;
 		align-items: flex-start;
 		padding: 4rem 0 3rem;
+
 		@include max-lg {
 			padding: 4rem 0 7rem;
 			align-items: center;
 		}
+
 		.cover-content {
 			text-align: center;
 			position: relative;
 			color: var(--color-light);
 			height: 100%;
+
 			.cover-body {
 				position: relative;
 				display: flex;
-				align-items: flex-end;
-				justify-content: center;
+				flex-direction: column;
+				align-items: center;
+				justify-content: space-between;
 				height: 100%;
 				padding: 1rem 0;
+
 				.greeting-wrapper {
 					position: relative;
+
 					@include max-md {
 						font-size: 14px;
 					}
+
 					h6 {
 						font-weight: 700;
 					}
 				}
+
 				h6 {
 					font-weight: 600;
 				}
+
 				.cover-description {
 					padding: 0 2rem;
 					text-align: center;
+
 					@include max-lg {
 						padding: 2rem 0 1rem;
 					}
+
 					* {
 						position: relative;
 					}
 				}
 			}
+
 			.elements-widget {
 				width: 100%;
 			}

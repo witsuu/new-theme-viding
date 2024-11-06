@@ -1327,8 +1327,9 @@ ul li {
 .cover-section .cover-wrapper .cover-content .cover-body {
   position: relative;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
   height: 100%;
   padding: 1rem 0;
 }
