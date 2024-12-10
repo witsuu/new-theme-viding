@@ -1,0 +1,106 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(-75%, 0);
+
+		@include min-md {
+			width: 35%;
+		}
+
+		@include min-lg {
+			width: 25%;
+			transform: translate(-75%, 0);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: -20%;
+			right: 0;
+			width: 50%;
+			transform: scaleX(-1);
+
+			@include min-md {
+				width: 40%;
+			}
+
+			@include min-lg {
+				width: 30%;
+			}
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 70%;
+			right: 0;
+			width: 50%;
+
+			@include min-md {
+				width: 40%;
+			}
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 4rem;
+		right: 0;
+		width: 50%;
+		transform: translate(75%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 35%;
+		}
+
+		@include min-lg {
+			width: 25%;
+			transform: translate(75%, 0) scaleX(-1);
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: -20%;
+			right: 0;
+			width: 50%;
+			transform: scaleX(-1);
+
+			@include min-md {
+				width: 40%;
+			}
+		}
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 3rem 2rem;
+		background-color: var(--color-primary);
+		color: var(--color-light);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+
+		&--body {
+			position: relative;
+		}
+
+		.bg-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+			opacity: 0.2;
+		}
+	}
+}

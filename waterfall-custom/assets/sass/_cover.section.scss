@@ -1,0 +1,351 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+
+	.bg-1,
+	.bg-2 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 100%;
+		transform: translateX(-50%);
+	}
+
+	.bg-1 {
+		@include max-lg {
+			width: 250%;
+		}
+
+		@include max-md {
+			width: 400%;
+		}
+	}
+
+	.bg-2 {
+		@include max-lg {
+			top: unset;
+			bottom: 0;
+		}
+
+		@include max-md {
+			width: 120%;
+		}
+	}
+
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4rem 0 6rem;
+		transition: opacity 1s ease;
+		width: 100%;
+		height: 100vh;
+
+		@include max-lg {
+			align-items: center;
+		}
+
+		.cover-content {
+			position: relative;
+			width: 35%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border-radius: var(--border-radius);
+			border-radius: 300px;
+			box-shadow: 0 0 5rem #E6EAEA;
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+			}
+
+			@include max-md {
+				width: 100%;
+			}
+
+			&::before {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100%;
+				background-color: #E6EAEA;
+				opacity: .5;
+				border-radius: 300px;
+				content: "";
+			}
+
+			.cover-body {
+				position: relative;
+				width: 100%;
+				padding: 3rem 0;
+				color: var(--color-dark);
+
+				.cover-description {
+					position: relative;
+					padding: 2rem;
+					text-align: center;
+
+					.cover-event {
+						position: relative;
+						margin-bottom: 2rem;
+					}
+
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 2rem;
+					}
+
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+
+	.joglo {
+		position: absolute;
+		bottom: -.5rem;
+		right: 47%;
+		width: 38%;
+
+		@include max-lg {
+			bottom: 7rem;
+			right: 50%;
+			width: 60%;
+		}
+
+		@include max-sm {
+			bottom: 5rem;
+			right: 40%;
+			width: 100%;
+		}
+	}
+
+	.minang {
+		position: absolute;
+		bottom: -.5rem;
+		left: 50%;
+		width: 43%;
+
+		@include max-lg {
+			bottom: 7rem;
+			left: 45%;
+			width: 70%;
+		}
+
+		@include max-sm {
+			bottom: 5rem;
+			width: 120%;
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(2rem, 65%);
+
+		@include max-lg {
+			right: 50%;
+			width: 60%;
+			transform: translate(50%, 70%);
+		}
+
+		@include max-sm {
+			width: 80%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 15%;
+		transform: translate(-38%, -35%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(-38%, -45%);
+		}
+
+		.orn-8 {
+			position: absolute;
+			top: 50%;
+			right: 20%;
+			width: 80%;
+		}
+
+		.orn-9 {
+			position: absolute;
+			top: 80%;
+			right: 15%;
+			width: 160%;
+
+			@include max-sm {
+				top: 90%;
+			}
+
+			.orn-10 {
+				position: absolute;
+				top: 80%;
+				right: 10%;
+				width: 40%;
+			}
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 4rem;
+		width: 12%;
+		transform: translate(0, 20%);
+
+		@include max-lg {
+			width: 24%;
+		}
+
+		@include max-sm {
+			left: 0;
+			width: 35%;
+			transform: translate(0, 35%);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 20%;
+			right: -70%;
+			width: 130%;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 20%;
+		transform: translate(-50%, 30%);
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-sm {
+			width: 50%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(10%, 40%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(10%, 50%);
+		}
+
+		.orn-6 {
+			position: absolute;
+			top: -10%;
+			left: 50%;
+			width: 60%;
+		}
+
+		.orn-7 {
+			position: absolute;
+			top: -20%;
+			right: 60%;
+			width: 80%;
+			transform: scaleX(-1);
+		}
+	}
+
+	.orn-11 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 15%;
+		transform: translate(30%, -10%);
+
+		@include max-lg {
+			width: 30%;
+		}
+
+		@include max-sm {
+			width: 40%;
+			transform: translate(35%, -15%);
+		}
+
+		.orn-12 {
+			position: absolute;
+			top: 28%;
+			right: 0%;
+			width: 100%;
+		}
+
+		.orn-13 {
+			position: absolute;
+			top: 70%;
+			left: 0%;
+			width: 160%;
+
+			@include max-lg {
+				top: 80%;
+			}
+		}
+
+		.orn-14 {
+			position: absolute;
+			top: 50%;
+			left: 15%;
+			width: 50%;
+			transform: scaleX(-1);
+
+			@include max-sm {
+				top: 70%;
+			}
+		}
+	}
+}

@@ -1,0 +1,163 @@
+.rsvp-section {
+	position: relative;
+
+	@include max-md {
+		.container {
+			padding: 0;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 15%;
+		left: 0;
+		width: 60%;
+		transform: translate(-60%, 0);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 15%;
+		right: 0;
+		width: 60%;
+		transform: translate(60%, 0) rotate(-5deg);
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(10%, 0);
+
+		@include min-md {
+			width: 180px;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 70%;
+		transform: translate(-30%, 70%);
+
+		@include min-md {
+			transform: translate(-30%, 75%);
+		}
+
+		@include min-lg {
+			width: 50%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(-50%, 0);
+
+		@include min-md {
+			width: 180px;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(-10%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 180px;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, 70%) scaleX(-1);
+
+		@include min-md {
+			transform: translate(30%, 75%) scaleX(-1);
+		}
+
+		@include min-lg {
+			width: 50%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(50%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 180px;
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%, 0);
+	}
+
+	.orn-10 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0);
+
+		.orn-11 {
+			position: absolute;
+			top: 80%;
+			left: 0;
+			width: 100%;
+		}
+	}
+
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 30%;
+		transform: translate(-30%, 50%);
+	}
+
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 30%;
+		transform: translate(40%, 50%);
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+		background-color: var(--color-primary);
+		padding: 5rem 2rem;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+
+		@include max-md {
+			padding: 3rem 2rem;
+		}
+
+		.rsvp-form {
+			position: relative;
+			background: linear-gradient(to bottom, var(--color-main) 0%, transparent 100%);
+			padding: 2rem 1rem;
+			border-radius: var(--border-radius);
+		}
+	}
+}

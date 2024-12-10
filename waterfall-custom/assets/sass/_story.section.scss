@@ -1,0 +1,180 @@
+.story-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-light);
+
+	.elements-wrapper-absolute {
+		opacity: 0.2;
+	}
+
+	.story {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+
+		.joglo {
+			position: absolute;
+			bottom: -.5rem;
+			right: 47%;
+			width: 38%;
+			opacity: .3;
+
+			@include max-lg {
+				right: 50%;
+				width: 60%;
+			}
+
+			@include max-sm {
+				right: 40%;
+				width: 100%;
+			}
+		}
+
+		.minang {
+			position: absolute;
+			bottom: -.5rem;
+			left: 50%;
+			width: 43%;
+			opacity: .3;
+
+			@include max-lg {
+				left: 45%;
+				width: 70%;
+			}
+
+			@include max-sm {
+				width: 120%;
+			}
+		}
+
+		.orn-1 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 75%;
+			transform: translate(-20%, 0) rotate(-15deg);
+		}
+
+		.orn-2 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 75%;
+			transform: translate(20%, 0) rotate(15deg) scaleX(-1);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 18rem;
+			left: 0;
+			width: 140px;
+			transform: translate(-60%, 0) rotate(15deg);
+
+			@include min-md {
+				top: 35rem;
+				width: 180px;
+			}
+
+			@include min-lg {
+				top: 40rem;
+				width: 200px;
+			}
+
+			.orn-8 {
+				position: absolute;
+				top: 50%;
+				right: 0%;
+				width: 60%;
+			}
+		}
+
+		.orn-4 {
+			position: absolute;
+			top: 3rem;
+			left: 0;
+			width: 30%;
+			transform: translate(-45%, 0%) scaleX(-1);
+
+			@include min-md {
+				width: 25%;
+			}
+
+			@include min-lg {
+				width: 12%;
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 1rem;
+			right: 0;
+			width: 30%;
+			transform: translate(45%, 0);
+
+			@include min-md {
+				width: 20%;
+			}
+
+			@include min-lg {
+				width: 10%;
+			}
+
+			.orn-6 {
+				position: absolute;
+				top: 50%;
+				left: 0%;
+				width: 100%;
+				transform: scaleX(-1);
+			}
+		}
+
+		.orn-7 {
+			position: absolute;
+			top: 18rem;
+			right: 0;
+			width: 35%;
+			transform: translate(50%, 0);
+
+			@include min-md {
+				width: 25%;
+			}
+
+			@include min-lg {
+				width: 12%;
+			}
+		}
+	}
+
+	.story-content {
+		position: relative;
+	}
+
+	.story-description {
+		position: relative;
+		text-align: center;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 1;
+		margin-bottom: 3rem;
+
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			.story-background {
+				object-fit: cover;
+				width: 100%;
+				height: 100%;
+				border-radius: var(--border-radius);
+			}
+		}
+	}
+}
