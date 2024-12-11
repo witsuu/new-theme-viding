@@ -90,6 +90,28 @@
 		@include max-lg {
 			top: 65%;
 		}
+
+		.minang {
+			position: absolute;
+			bottom: 89%;
+			left: 50%;
+			width: 50%;
+
+			@include max-sm {
+				width: 70%;
+			}
+		}
+
+		.joglo {
+			position: absolute;
+			bottom: 89%;
+			right: 45%;
+			width: 45%;
+
+			@include max-sm {
+				width: 65%;
+			}
+		}
 	}
 
 	.waters {

@@ -1181,6 +1181,14 @@ img[alt=tree] {
   transform-origin: 50% 95%;
 }
 
+img[alt=orchid] {
+  transform-origin: 59% 95%;
+}
+
+img[alt=orchid-2] {
+  transform-origin: 50% 5%;
+}
+
 .countdown {
   display: grid;
   text-align: center;
@@ -1901,6 +1909,18 @@ img[alt=tree] {
     bottom: 0;
     width: 150%;
   }
+}
+.header-section .bg-2 .minang {
+  position: absolute;
+  bottom: 89%;
+  left: 50%;
+  width: 50%;
+}
+.header-section .bg-2 .joglo {
+  position: absolute;
+  bottom: 89%;
+  right: 45%;
+  width: 45%;
 }
 .header-section .waters {
   position: absolute;
@@ -4339,6 +4359,28 @@ img[alt=tree] {
 @media (max-width: 991px) {
   .thank-section .bg-2 {
     top: 65%;
+  }
+}
+.thank-section .bg-2 .minang {
+  position: absolute;
+  bottom: 89%;
+  left: 50%;
+  width: 50%;
+}
+@media (max-width: 575px) {
+  .thank-section .bg-2 .minang {
+    width: 70%;
+  }
+}
+.thank-section .bg-2 .joglo {
+  position: absolute;
+  bottom: 89%;
+  right: 45%;
+  width: 45%;
+}
+@media (max-width: 575px) {
+  .thank-section .bg-2 .joglo {
+    width: 65%;
   }
 }
 .thank-section .waters {
