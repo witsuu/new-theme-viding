@@ -1,0 +1,104 @@
+.reminder-wrap {
+	position: relative;
+	display: block;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(-60%, 0) scaleX(-1);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+		img {
+			transform-origin: 65% 100%;
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 40%;
+			right: 0;
+			width: 140px;
+			transform: scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 60% 100%;
+			}
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 120px;
+		transform: translate(40%, 30%);
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+		img {
+			transform-origin: 45% 100%;
+		}
+		.orn-5 {
+			position: absolute;
+			left: 0;
+			top: 0;
+			width: 140px;
+			transform: translate(30%, -70%);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 60% 100%;
+			}
+		}
+	}
+	.orn-6 {
+		position: relative;
+		width: 140px;
+		margin: 2rem auto -10rem;
+		@include min-md {
+			width: 160px;
+			margin: 2rem auto -15rem;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.reminder-content {
+		position: relative;
+		z-index: 2;
+	}
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

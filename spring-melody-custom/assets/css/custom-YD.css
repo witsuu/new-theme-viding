@@ -1,0 +1,45 @@
+.header-section .air-mancur {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .header-section .air-mancur {
+    bottom: 3rem;
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .header-section .air-mancur {
+    width: 50%;
+  }
+}
+
+.rsvp-section .logo-custom {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  width: 70%;
+  transform: translate(-50%, 70%);
+}
+
+.thank-section .air-mancur {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 20%;
+  transform: translate(-50%, 0);
+}
+@media (max-width: 991px) {
+  .thank-section .air-mancur {
+    bottom: 2rem;
+    width: 40%;
+  }
+}
+@media (max-width: 575px) {
+  .thank-section .air-mancur {
+    width: 50%;
+  }
+}/*# sourceMappingURL=custom-YD.css.map */

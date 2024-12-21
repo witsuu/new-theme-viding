@@ -1,0 +1,48 @@
+.gallery-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.img-gallery {
+		height: auto;
+		width: 100%;
+		aspect-ratio: 3/4;
+		object-fit: cover;
+	}
+	.splide {
+		&__pagination {
+			bottom: -1rem;
+			&__page {
+				&.is-active {
+					background: var(--color-secondary);
+				}
+			}
+		}
+		.splide__arrow {
+			border-radius: 0;
+			width: 70px;
+			height: 65px;
+			background-color: var(--color-secondary);
+			@include max-lg {
+				width: 40px;
+				height: 30px;
+			}
+			svg {
+				fill: var(--text-button);
+				width: 25px;
+				height: 30px;
+				@include max-md {
+					width: 15px;
+					height: 20px;
+				}
+			}
+			&--prev {
+				left: 0;
+			}
+			&--next {
+				right: 0;
+			}
+		}
+	}
+}

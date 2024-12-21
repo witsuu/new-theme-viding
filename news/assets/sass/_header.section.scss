@@ -1,0 +1,60 @@
+.header-section {
+	position: relative;
+
+	.scroll-icon {
+		margin-top: 1rem;
+	}
+
+	.header-content {
+		position: relative;
+		text-align: center;
+		padding: 5rem 0 0;
+		min-height: 100vh;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		@include min-lg {
+			padding-top: 3rem;
+		}
+
+		@include max-lg {
+			min-height: 85vh;
+		}
+
+		.header {
+			position: relative;
+			width: 100%;
+
+			.header-title {
+				position: relative;
+
+				&-content {
+					position: relative;
+
+					.headline {
+						position: relative;
+						width: 100%;
+
+						&-text {
+							font-size: 48px;
+						}
+					}
+
+					.image-wrapper {
+						position: relative;
+						width: 100%;
+
+						.image-element {
+							@include aspect-ratio(4, 3);
+
+							img {
+								object-fit: cover;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,271 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			display: none;
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: fit-content;
+		position: relative;
+		margin: 1rem 0;
+		z-index: 3;
+		padding: 0rem 0.7rem;
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+			opacity: 0.5;
+			border-radius: 50px;
+			content: "";
+		}
+		span {
+			position: relative;
+			font-size: 32px;
+			font-family: $font-secondary;
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		.orn-1 {
+			position: absolute;
+			top: 2rem;
+			left: 0;
+			width: 100px;
+			transform: translate(-50%, 0);
+			@include min-md {
+				width: 140px;
+			}
+			@include min-lg {
+				width: 160px;
+			}
+		}
+		.orn-2 {
+			position: absolute;
+			top: 13%;
+			right: 0;
+			width: 120px;
+			transform: translate(50%, 0);
+			z-index: 3;
+			@include min-md {
+				width: 140px;
+			}
+			@include min-lg {
+				width: 160px;
+			}
+		}
+		.orn-3 {
+			position: absolute;
+			top: 25%;
+			left: 0;
+			width: 140px;
+			transform: translate(-50%, 0);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 280px;
+			transform: translate(-50%, 10%);
+			@include min-md {
+				width: 60%;
+			}
+			@include min-lg {
+				width: 40%;
+			}
+		}
+		.orn-5 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 280px;
+			transform: translate(40%, 10%);
+			@include min-md {
+				width: 60%;
+			}
+			@include min-lg {
+				width: 40%;
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 40px;
+			transform: translate(-40%, 0) rotate(45deg);
+			@include min-md {
+				width: 60px;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+		padding: 5rem 0 8rem;
+		@include max-md {
+			padding: 3rem 0 5rem;
+			.container {
+				padding: 0;
+			}
+		}
+		.elements-wrapper-absolute {
+			overflow: hidden;
+		}
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+		&::before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-primary);
+			opacity: 0.5;
+			content: "";
+		}
+		.couple-content-body {
+			padding: 3rem 2rem;
+		}
+		.image-wrapper {
+			position: relative;
+			width: 100%;
+			height: auto;
+			aspect-ratio: 6/4;
+			.couple-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+		.frame {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 60%;
+			transform: translate(-50%, -8%);
+			@include max-md {
+				width: 80%;
+				transform: translate(-50%, -5%);
+			}
+		}
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		.image-wrap {
+			width: 100%;
+			position: relative;
+			aspect-ratio: 4/6;
+			overflow: hidden;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					width: 100%;
+					border-radius: 300px 300px 10px 10px;
+				}
+			}
+		}
+		.couple-description {
+			position: absolute;
+			text-align: left;
+			bottom: 0;
+			width: 80%;
+			overflow: hidden;
+			&-body {
+				position: relative;
+				padding: 2rem 2rem 1rem;
+				&::before {
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 0;
+					background-color: var(--color-main);
+					opacity: 0.8;
+					content: "";
+				}
+			}
+			h3 {
+				position: relative;
+			}
+			.couple-parent {
+				position: relative;
+				width: 100%;
+			}
+		}
+		.sosmed-wrap {
+			position: absolute;
+			bottom: 0;
+			transform: translateY(50%);
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+		&.man {
+			.couple-description {
+				left: 0;
+				&-body {
+					&::before {
+						border-top-right-radius: 50px;
+						border-bottom-left-radius: 5px;
+					}
+				}
+			}
+			.sosmed-wrap {
+				left: 2rem;
+			}
+		}
+		&.woman {
+			.couple-description {
+				right: 0;
+				text-align: right;
+				&-body {
+					&::before {
+						border-top-left-radius: 50px;
+						border-bottom-right-radius: 5px;
+					}
+				}
+			}
+			.sosmed-wrap {
+				right: 2rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,455 @@
+.header-section {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	.scroll-icon {
+		position: relative;
+		margin-top: 2rem;
+	}
+	.frame {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 100%;
+		height: auto;
+		transform: translate(-50%, 18%);
+		@include max-lg {
+			transform: translate(-50%, 0);
+		}
+		@include max-md {
+			width: 115%;
+		}
+		.image-element {
+			width: 100%;
+			height: auto;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 240px;
+		transform: translate(-40%, -30%);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			transform: translate(-60%, -30%);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(35%, -32%);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			transform: translate(45%, -32%);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 260px;
+		transform: translate(-40%, 5%);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 40%;
+			transform: translate(-30%, 5%);
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 260px;
+		transform: translate(30%, 5%);
+		z-index: 3;
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 40%;
+			transform: translate(20%, 5%);
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 100px;
+		transform: translate(-60%, 0);
+		z-index: 3;
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100px;
+		transform: translate(-60%, 0);
+		z-index: 3;
+		@include min-md {
+			width: 140px;
+			transform: translate(-50%, 0);
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 1rem;
+		width: 60px;
+		transform: translate(0, 45%);
+		z-index: 3;
+		@include min-md {
+			left: 3rem;
+			width: 100px;
+		}
+		@include min-lg {
+			width: 120px;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 80px;
+		transform: translate(0, 65%);
+		z-index: 3;
+		@include min-md {
+			left: 7rem;
+			width: 120px;
+			transform: translate(0, 60%);
+		}
+		@include min-lg {
+			left: 9rem;
+			width: 140px;
+			transform: translate(0, 50%);
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 5rem;
+		width: 80px;
+		transform: translate(0, 70%);
+		z-index: 3;
+		@include min-md {
+			left: 10rem;
+			width: 120px;
+			transform: translate(0, 60%);
+		}
+		@include min-lg {
+			left: 14rem;
+			width: 140px;
+			transform: translate(0, 50%);
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 3rem;
+		right: 0;
+		width: 100px;
+		transform: translate(60%, 0) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100px;
+		transform: translate(30%, 0) scaleX(-1);
+		z-index: 3;
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 1rem;
+		width: 60px;
+		transform: translate(0, 60%);
+		z-index: 3;
+		@include min-md {
+			right: 5rem;
+			width: 100px;
+			transform: translate(0, 50%);
+		}
+		@include min-lg {
+			right: 7rem;
+			width: 120px;
+		}
+	}
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		right: 5rem;
+		width: 80px;
+		transform: translate(0, 30%);
+		z-index: 3;
+		@include min-md {
+			right: 10rem;
+			width: 120px;
+			transform: translate(0, 20%);
+		}
+		@include min-lg {
+			right: 15rem;
+			width: 140px;
+		}
+	}
+	.orn-14 {
+		position: absolute;
+		bottom: 1rem;
+		right: 18%;
+		width: 80px;
+		@include min-md {
+			width: 140px;
+			bottom: 3rem;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-15 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		transform: translate(10%, 0);
+		@include min-md {
+			width: 80px;
+		}
+		@include min-lg {
+			width: 100px;
+		}
+	}
+	.orn-16 {
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		width: 60px;
+		@include min-md {
+			width: 100px;
+		}
+		@include min-lg {
+			width: 120px;
+		}
+	}
+	.orn-17 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 80px;
+		transform: translate(0, 20%) scaleX(-1);
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-18 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100px;
+		transform: scaleX(-1);
+		@include min-md {
+			width: 140px;
+		}
+	}
+	.orn-19 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100px;
+		@include min-md {
+			width: 140px;
+		}
+	}
+	.orn-20 {
+		position: absolute;
+		bottom: 0;
+		left: 44%;
+		width: 180px;
+		transform: translate(-50%, -10%);
+		@include min-md {
+			width: 260px;
+		}
+		@include min-lg {
+			width: 280px;
+			transform: translate(-50%, -30%);
+		}
+		img {
+			transform-origin: 65% 35%;
+		}
+	}
+	.orn-21 {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 40px;
+		transform: translate(0, -80%) rotate(45deg);
+		@include min-md {
+			width: 60px;
+		}
+	}
+	.orn-22 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 40px;
+		transform: translate(-50%, 0) rotate(-45deg);
+		@include min-md {
+			width: 60px;
+		}
+	}
+	.header-content {
+		position: relative;
+		height: 100vh;
+		padding: 1rem 0 0;
+		.header {
+			position: relative;
+			width: 50%;
+			height: 100%;
+			margin: 0 auto;
+			padding: 8rem 2rem 0;
+			@include max-xl {
+				width: 70%;
+			}
+			@include max-lg {
+				width: 100%;
+			}
+			.header-title {
+				position: absolute;
+				top: 10rem;
+				left: 50%;
+				width: 100%;
+				transform: translate(-50%, 0);
+				text-align: center;
+				@include max-md {
+					top: 5rem;
+				}
+				&-content {
+					position: relative;
+					width: fit-content;
+					max-width: 100%;
+					border-radius: 50%;
+					background: radial-gradient(ellipse, rgba(255, 255, 255, 0.8), transparent 90%);
+					box-shadow: 0 0 1rem rgba($color: #fff, $alpha: 0.25);
+					padding: 1rem;
+					margin: 0 auto;
+				}
+			}
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-in-main"].has-animate {
+	animation-name: zoomInMain;
+	animation-fill-mode: forwards;
+	animation-duration: 3500ms !important;
+}
+
+[data-anim="peafowl-right"].has-animate {
+	animation-name: peafowlRight;
+	animation-duration: 3500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+[data-anim="peafowl-left"].has-animate {
+	animation-name: peafowlLeft;
+	animation-duration: 2500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.33, 0.12, 0.61, 0.9);
+}
+
+@keyframes peafowlRight {
+	0% {
+		transform: translate3d(50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 5%, 0);
+	}
+}
+
+@keyframes peafowlLeft {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(-60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(-70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(-80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(-90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 5%, 0);
+	}
+}

@@ -1,0 +1,355 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	.and {
+		@include min-md {
+			display: none;
+		}
+		font-weight: 600;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		margin: 1rem 0;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 48px;
+			font-family: $font-secondary;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(40%, 0) scaleX(-1);
+		@include min-md {
+			width: 260px;
+		}
+		@include min-lg {
+			width: 280px;
+		}
+		img {
+			transform-origin: 10% 100%;
+		}
+	}
+	.position-relative .orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 240px;
+		transform: translate(-40%, 0);
+		@include min-md {
+			width: 260px;
+		}
+		@include min-lg {
+			width: 280px;
+		}
+		img {
+			transform-origin: 10% 100%;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 3/4;
+		.couple-background {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			border-radius: 500px 500px 20px 20px;
+		}
+		.orn-3 {
+			position: absolute;
+			bottom: 2rem;
+			left: 0;
+			width: 140px;
+			transform: translate(-40%, 0) scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 60% 100%;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			bottom: 1rem;
+			right: 0;
+			width: 140px;
+			transform: translate(45%, 0);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 45% 100%;
+			}
+		}
+	}
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+		@include max-md {
+			padding: 3rem 0;
+		}
+		.orn-2 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 140px;
+			transform: translate(-50%, 0) scaleX(-1) rotate(-20deg);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 60% 100%;
+			}
+			.orn-3 {
+				position: absolute;
+				top: 52%;
+				right: 0;
+				width: 180px;
+				transform: translate(10%, 0) rotate(20deg) scaleX(-1);
+				@include min-md {
+					width: 200px;
+				}
+				@include min-lg {
+					width: 220px;
+				}
+				img {
+					transform-origin: 10% 100%;
+				}
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 140px;
+			transform: translate(60%, 0);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 65% 100%;
+			}
+			.orn-5 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 120px;
+				transform: translate(0, 40%) rotate(-40deg);
+				@include min-md {
+					width: 140px;
+				}
+				@include min-lg {
+					width: 160px;
+				}
+				img {
+					transform-origin: 60% 100%;
+				}
+			}
+		}
+		.orn-6 {
+			position: absolute;
+			top: 5rem;
+			left: 0;
+			width: 140px;
+			transform: translate(-60%, 0) scaleX(-1);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 65% 100%;
+			}
+			.orn-5 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 140px;
+				transform: translate(0, 40%) rotate(-45deg);
+				@include min-md {
+					width: 160px;
+				}
+				@include min-lg {
+					width: 180px;
+				}
+				img {
+					transform-origin: 60% 100%;
+				}
+			}
+		}
+		.orn-7 {
+			position: absolute;
+			top: 5rem;
+			right: 0;
+			width: 180px;
+			transform: translate(40%, 0) scaleX(-1);
+			@include min-md {
+				width: 200px;
+			}
+			@include min-lg {
+				width: 220px;
+			}
+			img {
+				transform-origin: 10% 100%;
+			}
+		}
+		.orn-8 {
+			position: absolute;
+			top: 5rem;
+			right: 0;
+			width: 140px;
+			transform: translate(60%, 0);
+			@include min-md {
+				width: 160px;
+			}
+			@include min-lg {
+				width: 180px;
+			}
+			img {
+				transform-origin: 65% 100%;
+			}
+			.orn-9 {
+				position: absolute;
+				bottom: 0;
+				right: 0;
+				width: 140px;
+				transform: translate(0, 40%) rotate(-45deg) scaleX(-1);
+				@include min-md {
+					width: 160px;
+				}
+				@include min-lg {
+					width: 180px;
+				}
+				img {
+					transform-origin: 60% 100%;
+				}
+			}
+		}
+		.orn-10 {
+			position: absolute;
+			top: 5rem;
+			left: 0;
+			width: 180px;
+			transform: translate(-40%, 0);
+			@include min-md {
+				width: 200px;
+			}
+			@include min-lg {
+				width: 220px;
+			}
+			img {
+				transform-origin: 10% 100%;
+			}
+		}
+	}
+	.couple-body {
+		position: relative;
+	}
+	.couple-content {
+		position: relative;
+		margin-bottom: 3rem;
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		padding-top: 2rem;
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		.elements-wrapper-absolute {
+			&::after {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				box-shadow: 10px 10px 1rem rgba($color: #000000, $alpha: 0.05);
+				border-radius: var(--border-radius);
+				content: "";
+			}
+		}
+		span.name {
+			position: relative;
+			font-family: $font-secondary;
+			font-size: 56px;
+			margin-bottom: 1rem;
+			@include max-md {
+				font-size: 48px;
+			}
+		}
+		.image-wrap {
+			width: 80%;
+			position: relative;
+			aspect-ratio: 7/8;
+			margin: 0 auto;
+			.image-element {
+				position: relative;
+				width: 100%;
+				height: 100%;
+				.couple-image {
+					height: 100%;
+					object-fit: cover;
+					position: relative;
+					width: 100%;
+					border-radius: 500px 500px 20px 20px;
+					box-shadow: 0 0 1rem rgba($color: #fff, $alpha: 1);
+				}
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 1rem 1rem 3rem;
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+			margin: 0 auto;
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

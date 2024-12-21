@@ -1,0 +1,140 @@
+.couple-section {
+	position: relative;
+	padding: 3rem 0 0;
+
+	@include ipad {
+		padding: 5rem 0 0;
+	}
+
+	.and {
+		@include ipad {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 2rem 0;
+		z-index: 3;
+
+		span {
+			position: relative;
+			font-size: 28px;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+
+		.couple-content {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+			text-align: justify;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+
+	.couple {
+		position: relative;
+
+		.image-wrap {
+			position: relative;
+			width: 95%;
+			margin: 0 auto;
+
+			.image-element {
+				@include aspect-ratio(4, 6);
+
+				.couple-image {
+					object-fit: cover;
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			text-align: center;
+			padding: 1rem;
+
+			h3 {
+				position: relative;
+				font-size: 24px;
+				font-weight: 700;
+			}
+
+			.couple-parent {
+				position: relative;
+				width: 100%;
+				margin-bottom: 0.5rem;
+
+				p {
+					margin-bottom: 0;
+				}
+			}
+
+			.sosmed-wrap {
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				width: fit-content;
+				max-width: 100%;
+				margin: 1rem auto 0;
+				transform: translate(-50%, 3rem);
+
+				.sosmed {
+					color: var(--color-dark);
+					text-decoration: none;
+					display: block;
+					width: fit-content;
+					margin: 0 auto;
+
+					small {
+						align-items: center;
+						gap: 0.25rem;
+						display: flex;
+						justify-content: center;
+
+						i {
+							font-size: 26px;
+						}
+					}
+				}
+
+				.fab {
+					font-size: 18px;
+
+					@include max-md {
+						font-size: 16px;
+					}
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+
+				.image-element {
+					@include aspect-ratio(4, 3);
+				}
+			}
+
+			.sosmed-wrap {
+				position: relative;
+				left: unset;
+				bottom: unset;
+				transform: none;
+				margin: 0 auto;
+			}
+		}
+	}
+}

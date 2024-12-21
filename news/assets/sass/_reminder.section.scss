@@ -1,0 +1,26 @@
+.reminder-wrap {
+	position: relative;
+	width: 100%;
+	padding-top: 2rem;
+
+	.reminder-content {
+		position: relative;
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin: 1.5rem auto 0;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+}

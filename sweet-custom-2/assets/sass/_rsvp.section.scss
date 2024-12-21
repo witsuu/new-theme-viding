@@ -1,0 +1,90 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+		@include max-md {
+			width: 140px;
+		}
+		img {
+			position: relative;
+		}
+		.orn-3 {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: translate(-60%, 60%) scaleX(-1);
+			width: 280px;
+			@include max-md {
+				width: 240px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			transform: scale(-1) translateY(-180%);
+			width: 80px;
+			img {
+				transform-origin: 80% 50%;
+			}
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		@include max-md {
+			width: 140px;
+		}
+		img {
+			position: relative;
+		}
+		.orn-3 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: translate(50%, 60%);
+			width: 280px;
+			@include max-md {
+				width: 240px;
+			}
+		}
+		.orn-4 {
+			position: absolute;
+			right: 0;
+			bottom: 0;
+			transform: scaleY(-1) translateY(-180%);
+			width: 80px;
+			img {
+				transform-origin: 80% 50%;
+			}
+		}
+	}
+	.elements-absolute {
+		transform: translateY(30%);
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem;
+		background: linear-gradient(180deg, var(--color-primary) 0%, transparent 100%);
+		border-radius: var(--border-radius);
+		@include max-lg {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			padding: 2rem;
+			position: relative;
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+		}
+	}
+}

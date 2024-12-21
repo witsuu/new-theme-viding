@@ -1,0 +1,82 @@
+.rsvp-section {
+	position: relative;
+	padding: 5rem 0;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 1rem;
+		left: 0;
+		width: 110%;
+		transform: translate(-30%, 0) rotate(45deg);
+		@include min-md {
+			width: 80%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		transform: translate(40%, -20%) scale(-1);
+		@include min-md {
+			width: 200px;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 120px;
+		transform: scaleX(-1);
+		@include min-md {
+			width: 140px;
+			transform: translateY(-10%) scaleX(-1);
+		}
+		img {
+			transform-origin: 40% 0%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 180px;
+		transform: translate(30%, -40%) scaleX(-1) rotate(25deg);
+		@include min-md {
+			width: 220px;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.rsvp-wrapper {
+		position: relative;
+		padding: 3rem 2rem;
+		background: var(--color-primary);
+		border-radius: var(--border-radius);
+		overflow: hidden;
+		@include max-md {
+			padding: 2rem 1rem;
+		}
+		.rsvp-form {
+			position: relative;
+			.title-section {
+				&::before {
+					all: unset;
+				}
+			}
+			.form-control,
+			.form-select {
+				background-color: rgba($color: #fff, $alpha: 0.7);
+			}
+		}
+	}
+}

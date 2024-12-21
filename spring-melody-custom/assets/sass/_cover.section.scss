@@ -1,0 +1,352 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+	transform: translateZ(0);
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+	.frame {
+		position: absolute;
+		top: 0;
+		left: 50%;
+		width: 40%;
+		transform: translate(-50%, -30%);
+		@include max-lg {
+			width: 50%;
+		}
+		@include max-md {
+			width: 70%;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 240px;
+		transform: translate(-40%, -30%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			transform: translate(-60%, -30%);
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 240px;
+		transform: translate(35%, -32%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			transform: translate(45%, -32%);
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 260px;
+		transform: translate(-40%, 5%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 260px;
+		transform: translate(30%, 5%);
+		@include min-md {
+			width: 60%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 100px;
+		transform: translate(-60%, 0);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 100px;
+		transform: translate(-60%, 0);
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 1rem;
+		width: 60px;
+		transform: translate(0, 45%);
+		@include min-md {
+			left: 3rem;
+			width: 100px;
+		}
+		@include min-lg {
+			width: 120px;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 3rem;
+		width: 80px;
+		transform: translate(0, 65%);
+		@include min-md {
+			left: 7rem;
+			width: 120px;
+		}
+		@include min-lg {
+			width: 140px;
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 5rem;
+		width: 80px;
+		transform: translate(0, 70%);
+		@include min-md {
+			left: 10rem;
+			width: 120px;
+		}
+		@include min-lg {
+			width: 140px;
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 3rem;
+		right: 0;
+		width: 100px;
+		transform: translate(60%, 0) scaleX(-1);
+		@include min-md {
+			width: 160px;
+		}
+		@include min-lg {
+			width: 180px;
+		}
+	}
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100px;
+		transform: translate(30%, 0) scaleX(-1);
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-12 {
+		position: absolute;
+		bottom: 0;
+		right: 1rem;
+		width: 60px;
+		transform: translate(0, 60%);
+		@include min-md {
+			right: 5rem;
+			width: 100px;
+			transform: translate(0, 50%);
+		}
+		@include min-lg {
+			width: 120px;
+		}
+	}
+	.orn-13 {
+		position: absolute;
+		bottom: 0;
+		right: 5rem;
+		width: 80px;
+		transform: translate(0, 30%);
+		@include min-md {
+			right: 10rem;
+			width: 120px;
+			transform: translate(0, 20%);
+		}
+		@include min-lg {
+			width: 140px;
+		}
+	}
+	.orn-14 {
+		position: absolute;
+		bottom: 1rem;
+		right: 18%;
+		width: 80px;
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.orn-15 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40px;
+		transform: translate(10%, 0);
+		@include min-md {
+			width: 80px;
+		}
+		@include min-lg {
+			width: 100px;
+		}
+	}
+	.orn-16 {
+		position: absolute;
+		bottom: 0;
+		left: 25%;
+		width: 60px;
+		@include min-md {
+			width: 100px;
+		}
+		@include min-lg {
+			width: 120px;
+		}
+	}
+	.orn-17 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 80px;
+		transform: translate(0, 20%) scaleX(-1);
+		@include min-md {
+			width: 140px;
+		}
+		@include min-lg {
+			width: 160px;
+		}
+	}
+	.cover-wrapper {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+		padding: 4rem 0 3rem;
+		transition: opacity 1s ease;
+		height: 100vh;
+		@include max-lg {
+			padding: 4rem 0 6rem;
+			align-items: center;
+		}
+		.cover-content {
+			text-align: center;
+			position: relative;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			.cover-body {
+				position: relative;
+				width: 70%;
+				padding: 3rem 2rem 2rem;
+				color: var(--color-dark);
+				display: flex;
+				align-items: center;
+				flex-direction: column;
+				@include max-lg {
+					width: 80%;
+				}
+				@include max-md {
+					width: 100%;
+					padding: 2rem 1rem 2rem;
+				}
+				&::before {
+					position: absolute;
+					top: 0;
+					right: 0;
+					bottom: 0;
+					left: 0;
+					background-color: var(--color-primary);
+					opacity: 0.5;
+					content: "";
+				}
+				.greeting-wrapper {
+					position: relative;
+					width: 35%;
+					margin-bottom: 3rem;
+					@include max-md {
+						font-size: 14px;
+						width: 50%;
+					}
+					h6,
+					p {
+						margin-bottom: 0;
+					}
+					h6 {
+						font-weight: 700;
+					}
+				}
+				h6 {
+					font-weight: 600;
+				}
+				.cover-description {
+					position: relative;
+					padding: 2rem 2rem 0;
+					background-color: var(--color-main);
+					width: 80%;
+					text-align: center;
+					box-shadow: 0 1rem 1.5rem rgba($color: #000000, $alpha: 0.15);
+					@include max-md {
+						width: 100%;
+						padding: 2rem 0.5rem 0;
+					}
+					* {
+						position: relative;
+					}
+					.title {
+						margin: 1rem 0;
+					}
+					.cover-event {
+						position: relative;
+						h6,
+						p {
+							margin-bottom: 0;
+						}
+						h6,
+						span {
+							font-weight: 600;
+						}
+					}
+				}
+			}
+			.elements-widget {
+				position: relative;
+				margin-top: 1.5rem;
+				margin-bottom: -1.25rem;
+			}
+		}
+	}
+}

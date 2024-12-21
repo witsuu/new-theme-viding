@@ -1,0 +1,57 @@
+.countdown {
+	display: flex;
+	text-align: center;
+	justify-content: space-around;
+	position: relative;
+	min-width: 80%;
+	width: fit-content;
+	gap: 1.5rem;
+	z-index: 3;
+	padding: .5rem 1.5rem .75rem;
+	color: var(--color-dark);
+	margin: 0 auto;
+
+	@include ipad {
+		min-width: 60%;
+	}
+
+	.days,
+	.hours,
+	.minutes,
+	.seconds {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		position: relative;
+
+		.huruf {
+			font-size: 14px;
+			font-weight: 600;
+
+			@include max-xs {
+				font-size: 12px;
+			}
+		}
+
+		.angka {
+			margin-bottom: 0;
+			font-weight: 500;
+			font-size: 36px;
+
+			@include max-md {
+				font-size: 32px;
+			}
+
+			@include max-xs {
+				font-size: 28px;
+			}
+		}
+
+		.huruf,
+		.angka {
+			margin: 0;
+			padding: 0;
+		}
+	}
+}

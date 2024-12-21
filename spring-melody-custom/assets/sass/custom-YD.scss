@@ -1,0 +1,49 @@
+@import 'mixins', "variables";
+
+.header-section {
+    .air-mancur {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 20%;
+        transform: translate(-50%, 0);
+
+        @include max-lg {
+            bottom: 3rem;
+            width: 40%;
+        }
+
+        @include max-sm {
+            width: 50%;
+        }
+    }
+}
+
+.rsvp-section {
+    .logo-custom {
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        width: 70%;
+        transform: translate(-50%, 70%);
+    }
+}
+
+.thank-section {
+    .air-mancur {
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        width: 20%;
+        transform: translate(-50%, 0);
+
+        @include max-lg {
+            bottom: 2rem;
+            width: 40%;
+        }
+
+        @include max-sm {
+            width: 50%;
+        }
+    }
+}

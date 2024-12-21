@@ -1,0 +1,138 @@
+.thank-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	overflow: hidden;
+	@include max-md {
+		padding: 3rem 0;
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 180px;
+		transform: translate(-40%, -30%);
+		@include min-md {
+			width: 220px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 90%;
+		transform: translate(-15%, -60%);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(20%, -25%);
+		@include min-md {
+			width: 220px;
+		}
+		img {
+			transform-origin: 40% 0%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 160px;
+		transform: translate(-40%, 0);
+		@include min-md {
+			top: unset;
+			bottom: 3rem;
+			width: 180px;
+		}
+		img {
+			transform-origin: 30% 0%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(10%, 25%) scaleX(-1);
+		@include min-md {
+			width: 50%;
+		}
+		@include min-lg {
+			width: 40%;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(30%, 30%) scale(-1) rotate(50deg);
+		@include min-md {
+			width: 200px;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 90%;
+		height: auto;
+		aspect-ratio: 3/4;
+		margin: 0 auto;
+		background: $stroke-gradient;
+		padding: 1px;
+		border-radius: 50%;
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			background: var(--color-main);
+			padding: 2rem;
+			border-radius: 50%;
+			overflow: hidden;
+			@include max-md {
+				padding: 1rem;
+			}
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 50%;
+				position: relative;
+			}
+		}
+	}
+	.thank-wrapper {
+		position: relative;
+		.thank {
+			position: relative;
+			padding: 2rem 2rem 3rem;
+			@include max-md {
+				padding: 1rem 1rem 2rem;
+			}
+		}
+	}
+}
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	small {
+		position: relative;
+	}
+}

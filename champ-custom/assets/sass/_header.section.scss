@@ -1,0 +1,280 @@
+.header-section {
+	position: relative;
+	min-height: 100vh;
+	width: 100%;
+	@include max-lg {
+		height: 100vh;
+	}
+	.scroll-icon {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 50%);
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 180px;
+		transform: translate(-40%, -30%);
+		@include min-md {
+			width: 260px;
+		}
+		img {
+			transform-origin: 20% 30%;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		transform: translate(-15%, -60%);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		transform: translate(20%, -20%);
+		@include min-md {
+			width: 200px;
+		}
+		@include min-xl {
+			width: 260px;
+		}
+		img {
+			transform-origin: 40% 0%;
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 160px;
+		transform: translate(-40%, -20%);
+		@include min-md {
+			width: 200px;
+		}
+		img {
+			transform-origin: 20% 30%;
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 90%;
+		transform: translate(10%, 25%) scaleX(-1);
+		@include min-md {
+			width: 70%;
+		}
+		@include min-lg {
+			width: 50%;
+		}
+		@include min-xl {
+			width: 40%;
+		}
+		img {
+			transform-origin: 0% 30%;
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 160px;
+		transform: translate(20%, 30%) scale(-1) rotate(50deg);
+		@include min-md {
+			width: 240px;
+		}
+		img {
+			transform-origin: 20% 30%;
+		}
+	}
+	.header-content {
+		position: relative;
+		height: 100%;
+		padding: 4.5rem 0 3rem;
+		@include max-lg {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.header {
+			position: relative;
+			width: 40%;
+			margin: 0 auto;
+			padding: 2rem;
+			border-radius: 50%;
+			overflow: hidden;
+			background: $stroke-gradient;
+			@include max-xl {
+				width: 50%;
+			}
+			@include max-lg {
+				width: 90%;
+			}
+			@include max-md {
+				width: 60%;
+				padding: 1rem;
+			}
+			@include max-sm {
+				width: 100%;
+			}
+			&::before {
+				position: absolute;
+				top: 1px;
+				left: 1px;
+				right: 1px;
+				bottom: 1px;
+				background: var(--color-main);
+				border-radius: 50%;
+				content: "";
+			}
+			.header-title {
+				position: relative;
+				text-align: center;
+				background: var(--color-main);
+				border-radius: 50%;
+				padding: 5rem 2rem;
+				min-height: 80vh;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				box-shadow: inset 0 0 2rem rgba($color: #000000, $alpha: 0.15);
+				@include max-lg {
+					min-height: 70vh;
+				}
+				@include max-md {
+					min-height: 60vh;
+				}
+				&-content {
+					position: relative;
+					width: 100%;
+				}
+			}
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+			.image-wrapper {
+				position: relative;
+				width: 80%;
+				height: auto;
+				aspect-ratio: 4/6;
+				margin: 0 auto;
+				.image-element {
+					width: 100%;
+					height: 100%;
+					.header-background {
+						width: 100%;
+						height: 100%;
+						object-fit: cover;
+					}
+				}
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+	50% {
+		opacity: 1;
+	}
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-in-main"].has-animate {
+	animation-name: zoomInMain;
+	animation-fill-mode: forwards;
+	animation-duration: 3500ms !important;
+}
+
+[data-anim="peafowl-right"].has-animate {
+	animation-name: peafowlRight;
+	animation-duration: 3500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: linear;
+}
+[data-anim="peafowl-left"].has-animate {
+	animation-name: peafowlLeft;
+	animation-duration: 2500ms !important;
+	animation-fill-mode: forwards;
+	animation-timing-function: cubic-bezier(0.33, 0.12, 0.61, 0.9);
+}
+
+@keyframes zoomInMain {
+	0% {
+		transform: scaleZ(1);
+	}
+	100% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+}
+
+@keyframes zoomInMain {
+	0% {
+		transform: scaleZ(1);
+	}
+	100% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+}
+
+@keyframes peafowlRight {
+	0% {
+		transform: translate3d(50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(100%, 5%, 0);
+	}
+}
+
+@keyframes peafowlLeft {
+	0% {
+		transform: translate3d(-50%, 0, 0);
+	}
+	20% {
+		transform: translate3d(-60%, 5%, 0);
+	}
+	40% {
+		transform: translate3d(-70%, 0, 0);
+	}
+	60% {
+		transform: translate3d(-80%, 5%, 0);
+	}
+	80% {
+		transform: translate3d(-90%, 0, 0);
+	}
+	100% {
+		transform: translate3d(-100%, 5%, 0);
+	}
+}
