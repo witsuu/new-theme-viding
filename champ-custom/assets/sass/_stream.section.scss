@@ -2,61 +2,76 @@
 	position: relative;
 	padding: 5rem 0;
 	text-align: center;
+
 	@include max-md {
 		padding: 3rem 0;
 	}
+
 	.orn-1 {
 		position: absolute;
 		bottom: 0;
 		right: 0;
 		width: 160px;
 		transform: translate(50%, 0) scale(-1) rotate(30deg);
+
 		@include min-md {
 			width: 180px;
 		}
 	}
+
 	.orn-2 {
 		position: absolute;
 		top: 0;
 		left: 0;
 		width: 280px;
 		transform: translate(-40%, 0) scaleY(-1) rotate(30deg);
+
 		@include min-md {
 			width: 320px;
 		}
+
 		@include min-lg {
 			width: 340px;
 		}
+
 		img {
 			transform-origin: 0% 30%;
 		}
 	}
+
 	.stream-wrapper {
 		position: relative;
 		border-radius: var(--border-radius);
-		background: var(--color-primary);
+		background: var(--color-main);
 		padding: 3rem 2rem;
 		z-index: 5;
+
 		@include max-lg {
 			.row {
 				align-items: center;
 				gap: 2rem;
 			}
 		}
+
 		@include max-md {
 			padding: 2rem 1rem;
 		}
+
 		.stream-content {
 			position: relative;
+
 			.stream-description {
 				position: relative;
 				padding: 3rem 2rem;
 				background: #f1f0e9;
+				color: var(--color-dark);
 				border-radius: var(--border-radius);
+
 				@include max-md {
 					padding: 2rem 1rem;
 				}
 			}
+
 			h4 {
 				@include max-md {
 					text-align: center;
@@ -64,30 +79,36 @@
 			}
 		}
 	}
+
 	ul {
 		ol {
 			padding: 0;
 		}
 	}
+
 	.card {
 		background-color: transparent;
 		height: 100%;
 		color: var(--color-dark);
 		border: none;
 	}
+
 	.btn-custom {
 		width: 100%;
 		z-index: 10;
 		position: relative;
 	}
+
 	.yt-embed {
 		@include min-lg {
 			height: 320px;
 		}
 	}
+
 	.yt-description {
 		width: 100%;
 		margin-top: 3rem;
+
 		@include max-md {
 			text-align: center;
 		}

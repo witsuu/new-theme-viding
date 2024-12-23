@@ -1,49 +1,62 @@
 .wishes-section {
 	position: relative;
 	background: var(--color-primary);
+	color: var(--color-dark);
+
 	.wishes-form {
 		position: relative;
 		padding: 5rem 0;
+
 		@include max-md {
 			padding: 3rem 0;
 		}
+
 		.orn-1 {
 			position: absolute;
 			bottom: 0;
 			left: 0;
 			width: 160px;
 			transform: translate(-50%, 0) scaleY(-1);
+
 			@include min-md {
 				width: 180px;
 			}
 		}
+
 		.orn-2 {
 			position: absolute;
 			top: 0;
 			right: 0;
 			width: 200px;
 			transform: translate(50%, 0) scale(-1);
+
 			@include min-md {
 				width: 280px;
 			}
+
 			@include min-lg {
 				width: 320px;
 			}
+
 			img {
 				transform-origin: 0% 30%;
 			}
 		}
 	}
+
 	.card-form {
 		margin-bottom: 0;
 		background: transparent;
 		position: relative;
 		z-index: 3;
+
 		&.card {
 			border: none;
 		}
+
 		.card-body {
 			padding: 2rem;
+
 			@include max-md {
 				padding: 2rem 1rem;
 			}
@@ -53,34 +66,43 @@
 	.wishes-preview {
 		position: relative;
 		padding: 3rem 0 5rem;
+
 		@include max-md {
 			padding: 2rem 0 3rem;
 		}
+
 		.card {
 			border: none;
 			position: relative;
 			background-color: transparent;
 			border-radius: var(--border-radius);
+
 			.card-body {
 				overflow: hidden;
 				padding: 2rem 0;
+				color: var(--color-dark);
+
 				.wishes {
 					text-align: left;
 					height: 32rem;
 					overflow: auto;
 					padding-right: 1rem;
+
 					&::-webkit-scrollbar {
 						width: 5px;
 					}
+
 					&::-webkit-scrollbar-track {
 						background-color: #eee;
 						border-radius: 20px;
 						opacity: 0.15;
 					}
+
 					&::-webkit-scrollbar-thumb {
 						background-color: var(--color-secondary);
 						border-radius: 20px;
 					}
+
 					// .text-muted {
 					// 	color: rgba($color: #fff, $alpha: 0.8) !important;
 					// }
@@ -89,13 +111,16 @@
 						display: grid;
 						grid-template-columns: auto 1fr;
 						gap: 1rem;
+
 						h6 {
 							font-weight: bold;
 						}
+
 						h6,
 						p {
 							margin-bottom: 0;
 						}
+
 						.wish-badge {
 							background-color: var(--color-light);
 							width: 35px;
@@ -105,11 +130,13 @@
 							align-items: center;
 							border-radius: 50px;
 						}
+
 						.wish-description {
 							padding: 1rem;
 							background-color: rgba($color: #fff, $alpha: 0.6);
 							border-radius: 5px;
 							position: relative;
+
 							&::before {
 								position: absolute;
 								top: 15px;

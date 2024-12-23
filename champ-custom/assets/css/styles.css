@@ -14,13 +14,13 @@
   font-display: swap;
 }
 :root {
-  --color-main: #ffedd2;
+  --color-main: #3D411E;
   --color-primary: #e9dac4;
-  --color-secondary: #a1855b;
+  --color-secondary: #681C3E;
   --color-dark: #1e1f1e;
   --color-light: #fff;
   --text-button: #ffffff;
-  --color-button-trans: #1e1f1e;
+  --color-button-trans: #fff;
   --vd-color-pink: #e9088a;
   --color-gradient: linear-gradient(180deg, var(--color-primary) 0%, transparent 100%);
   --border-radius: 20px;
@@ -28,7 +28,7 @@
 
 body {
   font-family: "Mulish", sans-serif;
-  color: var(--color-dark);
+  color: var(--color-light);
   -webkit-hyphens: manual;
           hyphens: manual;
 }
@@ -65,6 +65,14 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
+}
+.main-app .elements-wrapper-absolute.ellipse {
+  padding: 1px;
+}
+.main-app .elements-wrapper-absolute.ellipse .background-element img {
+  -o-object-fit: fill;
+     object-fit: fill;
+  border-radius: 50%;
 }
 .main-app .elements-wrapper-absolute .background-element {
   height: 100%;
@@ -285,7 +293,6 @@ span {
 .title-section h2,
 .title-section span,
 .title-section p {
-  color: #5b421c;
   margin-bottom: 0;
   font-weight: 500;
 }
@@ -1725,7 +1732,7 @@ ul li {
   text-align: center;
   background: var(--color-main);
   border-radius: 50%;
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   min-height: 80vh;
   display: flex;
   align-items: center;
@@ -1745,6 +1752,22 @@ ul li {
 .header-section .header-content .header .header-title-content {
   position: relative;
   width: 100%;
+}
+.header-section .header-content .header .header-title-content .bird {
+  position: relative;
+  width: 130%;
+  margin-left: -15%;
+}
+@media (max-width: 767px) {
+  .header-section .header-content .header .header-title-content .bird {
+    width: 140%;
+    margin-left: -20%;
+  }
+}
+.header-section .header-content .header .header-title-content .name {
+  position: relative;
+  width: 70%;
+  margin: 0 auto;
 }
 .header-section .header-content .header #scroll-animate {
   animation: scrollAnim 1500ms ease infinite;
@@ -1941,7 +1964,6 @@ ul li {
 }
 .couple-section .and {
   font-weight: 600;
-  color: #5b421c;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -2020,7 +2042,6 @@ ul li {
 .couple-section .couple .couple-description {
   position: relative;
   padding: 1rem;
-  color: #5b421c;
 }
 .couple-section .couple .couple-parent {
   width: 100%;
@@ -2033,7 +2054,7 @@ ul li {
   margin: 0 auto;
 }
 .couple-section .couple .sosmed-wrap .sosmed {
-  color: var(--color-dark);
+  color: var(--color-button-trans);
   text-decoration: none;
   display: block;
   width: -moz-fit-content;
@@ -2469,6 +2490,7 @@ ul li {
 .wishes-section {
   position: relative;
   background: var(--color-primary);
+  color: var(--color-dark);
 }
 .wishes-section .wishes-form {
   position: relative;
@@ -2546,6 +2568,7 @@ ul li {
 .wishes-section .wishes-preview .card .card-body {
   overflow: hidden;
   padding: 2rem 0;
+  color: var(--color-dark);
 }
 .wishes-section .wishes-preview .card .card-body .wishes {
   text-align: left;
@@ -3001,7 +3024,7 @@ ul li {
 .stream-section .stream-wrapper {
   position: relative;
   border-radius: var(--border-radius);
-  background: var(--color-primary);
+  background: var(--color-main);
   padding: 3rem 2rem;
   z-index: 5;
 }
@@ -3023,6 +3046,7 @@ ul li {
   position: relative;
   padding: 3rem 2rem;
   background: #f1f0e9;
+  color: var(--color-dark);
   border-radius: var(--border-radius);
 }
 @media (max-width: 767px) {
