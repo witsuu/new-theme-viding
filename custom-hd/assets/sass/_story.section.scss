@@ -1,0 +1,61 @@
+.story-section {
+	position: relative;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+
+	.story {
+		position: relative;
+		padding: 0 0 3rem;
+
+		@include ipad {
+			padding: 0 0 5rem;
+		}
+
+		.tree-1 {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 50%;
+			transform: translate(-70%, -25%) rotate(20deg);
+		}
+
+		.tree-2 {
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 50%;
+			transform: translate(70%, -25%) rotate(-20deg) scaleX(-1);
+		}
+	}
+
+	.elements-wrapper-absolute {
+		opacity: .2;
+	}
+
+	.story-description {
+		position: relative;
+		text-align: center;
+		padding: 2rem 0 0;
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin-top: 1rem;
+		z-index: 5;
+
+		.image-element {
+			@include aspect-ratio(5, 6);
+
+			@include ipad {
+				@include aspect-ratio(16, 9);
+			}
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+}

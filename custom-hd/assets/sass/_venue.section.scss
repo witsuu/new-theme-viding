@@ -1,0 +1,288 @@
+.moveable-section.venue-section {
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+}
+
+.venue-section {
+	position: relative;
+
+	.venue-wrapper {
+		position: relative;
+		padding: 8rem 0 3rem;
+
+		@include ipad {
+			padding: 8rem 0 5rem;
+		}
+
+		.venue-description {
+			position: relative;
+			text-align: center;
+			margin-bottom: 3rem;
+		}
+
+		.janur {
+			position: absolute;
+			top: 2rem;
+			width: 65%;
+
+			&-left {
+				left: 0;
+				transform: translate(-10%, 0);
+			}
+
+			&-right {
+				right: 0;
+				transform: translate(10%, 0) scaleX(-1);
+			}
+
+			.tree {
+				position: absolute;
+				top: 90%;
+				right: 55%;
+				width: 85%;
+				transform: rotate(12deg);
+			}
+		}
+
+		.tree-1 {
+			position: absolute;
+			left: 0;
+			top: 50%;
+			width: 60%;
+			transform: translate(-65%, 0) rotate(20deg);
+		}
+
+		.tree-2 {
+			position: absolute;
+			right: 0;
+			top: 50%;
+			width: 60%;
+			transform: translate(65%, 0) rotate(-20deg) scaleX(-1);
+		}
+
+		.venue-content {
+			position: relative;
+
+			.ribbon-venue {
+				position: relative;
+				margin-bottom: 1rem;
+
+				svg {
+					width: 40px;
+					height: auto;
+
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+
+				.st0 {
+					fill: var(--color-secondary);
+				}
+
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+
+			.card {
+				background-color: var(--color-main);
+				color: var(--color-dark);
+				border: none;
+				text-align: center;
+				border-radius: 300px;
+				overflow: hidden;
+
+				.card-body {
+					padding: 2rem 2rem 5rem;
+
+					@include max-lg {
+						padding: 1rem 1rem 3rem;
+					}
+
+					h4 {
+						padding: 0 0 1rem;
+					}
+
+					.event-name {
+						position: relative;
+						width: 100%;
+						margin-bottom: 1rem;
+						border-radius: 300px 300px 10px 10px;
+						overflow: hidden;
+
+						.elements-wrapper-absolute {
+							opacity: .35;
+						}
+
+						.ornaments-wrapper {
+							.tree-3 {
+								position: absolute;
+								left: 0;
+								bottom: 0;
+								width: 50%;
+								transform: translate(-55%, 15%);
+							}
+
+							.tree-4 {
+								position: absolute;
+								right: 0;
+								bottom: 0;
+								width: 50%;
+								transform: translate(55%, 15%) scaleX(-1);
+							}
+
+							.grass {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								width: 70%;
+								transform: translate(0, 30%);
+							}
+
+							.orn-2 {
+								position: absolute;
+								bottom: 0;
+								left: 0;
+								width: 35%;
+								transform: translate(-10%, 40%);
+							}
+
+							.orn-1 {
+								position: absolute;
+								bottom: 0;
+								right: 0;
+								width: 100%;
+								transform: translate(48%, 20%);
+							}
+						}
+
+						&-body {
+							position: relative;
+							padding: 5rem 2rem 6rem;
+						}
+
+						.date {
+							position: relative;
+							width: 100%;
+
+							h5 {
+								font-family: $font-secondary;
+								margin-bottom: 0;
+								font-size: 42px;
+							}
+
+							.line {
+								width: 45px;
+								height: 1px;
+								background-color: var(--color-button-trans);
+								margin: .2rem auto .5rem;
+							}
+						}
+
+						h4 {
+							font-family: $font-secondary;
+							font-size: 32px;
+						}
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 1rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-place {
+						position: relative;
+
+						&-body {
+							padding-top: 1rem;
+
+							.widget-elements {
+								position: relative;
+								width: 100%;
+								margin-top: 1rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		position: relative;
+		padding: 3rem 2rem 0;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+		}
+
+		@include max-md {
+			padding: 2rem 0;
+		}
+
+		@include min-lg {
+			padding: 2rem 0;
+		}
+
+		* {
+			position: relative;
+		}
+
+		.prokes-wrap {
+			display: flex;
+			gap: 0.75rem;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			text-align: center;
+
+			.prokes {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				width: 132px;
+
+				@include min-lg {
+					width: 120px;
+				}
+
+				@include max-md {
+					width: 120px;
+				}
+
+				@include max-xs {
+					width: 45%;
+				}
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 3rem;
+
+		&-sm {
+			@include max-md {
+				row-gap: 3rem;
+			}
+		}
+	}
+}

@@ -1,0 +1,93 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 5rem;
+
+	@include ipad {
+		padding: 0 0 5rem;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		&::before {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: var(--color-main);
+			border-radius: 300px 300px 10px 10px;
+			opacity: .6;
+			content: "";
+		}
+
+		.rsvp-form {
+			padding: 8rem 3rem 0;
+
+			@include max-sm {
+				padding: 8rem 2rem 0;
+			}
+
+			.btn-custom {
+				margin-bottom: -1.25rem;
+				margin-top: 1rem;
+			}
+		}
+	}
+
+	.grass {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 70%;
+		transform: translate(0, 30%);
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 100%;
+		transform: translate(48%, 20%);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 35%;
+		transform: translate(-10%, 40%);
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-40%, 0) scaleX(-1);
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 40%;
+		transform: translate(40%, 0);
+	}
+
+	.orn-5 {
+		position: absolute;
+		top: 5rem;
+		left: 0;
+		width: 30%;
+		transform: translate(-50%, 0) scaleX(-1);
+	}
+
+	.orn-6 {
+		position: absolute;
+		top: 8rem;
+		right: 0;
+		width: 30%;
+		transform: translate(50%, 0);
+	}
+}

@@ -1,0 +1,49 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 0 2rem;
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-60%, -20%);
+
+		&>.image-element {
+			img {
+				opacity: .3;
+			}
+		}
+
+		.tree-2 {
+			position: absolute;
+			top: 35%;
+			right: 15%;
+			width: 100%;
+
+			.tree-3 {
+				position: absolute;
+				top: 50%;
+				right: 0;
+				width: 100%;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-60%, -5%) rotate(10deg);
+	}
+}

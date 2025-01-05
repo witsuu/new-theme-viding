@@ -1,0 +1,241 @@
+.thank-section {
+	position: relative;
+	padding: 8rem 0 0;
+	text-align: center;
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		margin: 0 auto 2rem;
+
+		.image-element {
+			@include aspect-ratio(5, 6);
+
+			img {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+				border-radius: 300px 300px 10px 10px;
+			}
+		}
+	}
+
+	.thank {
+		position: relative;
+		color: var(--color-dark);
+		padding: 2rem 2rem 20rem;
+
+		@include max-sm {
+			padding-bottom: 16rem;
+		}
+
+		&:before {
+			position: absolute;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			left: 0;
+			background-color: var(--color-main);
+			border-radius: 300px 300px 0 0;
+			opacity: .6;
+			border: 4px solid var(--color-secondary);
+			content: "";
+		}
+
+		.thank-body {
+			position: relative;
+			z-index: 10;
+		}
+	}
+
+	.joglo {
+		position: absolute;
+		bottom: 5rem;
+		left: 50%;
+		width: 85%;
+		transform: translate(-48.5%, 5%);
+
+		@include max-sm {
+			bottom: 4rem;
+			width: 100%;
+			transform: translate(-50%, 5%);
+		}
+	}
+
+	.janur {
+		position: absolute;
+		top: 3rem;
+		width: 65%;
+
+		&-left {
+			left: 0;
+			transform: translate(-10%, 0);
+		}
+
+		&-right {
+			right: 0;
+			transform: translate(10%, 0) scaleX(-1);
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		top: 5%;
+		left: 0;
+		width: 70%;
+		transform: translate(-60%, 0);
+
+		@include max-sm {
+			width: 80%;
+		}
+
+		.tree-2 {
+			position: absolute;
+			top: 80%;
+			right: 5%;
+			width: 80%;
+		}
+	}
+
+	.tree-3 {
+		position: absolute;
+		top: 5%;
+		right: 0;
+		width: 70%;
+		transform: translate(50%, 0) scaleX(-1);
+
+		@include max-sm {
+			width: 80%;
+		}
+
+		.tree-4 {
+			position: absolute;
+			top: 80%;
+			right: 10%;
+			width: 80%;
+		}
+	}
+
+	.tree-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 60%;
+		transform: translate(-20%, 55%);
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.tree-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 60%;
+		transform: translate(40%, 55%);
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.bush {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		width: 200%;
+		transform: translate(-50%, 30%);
+
+		@include max-sm {
+			width: 240%;
+		}
+	}
+
+	.grass {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 40%;
+		transform: translate(-30%, 40%);
+
+		.orn-2 {
+			position: absolute;
+			top: 25%;
+			left: 80%;
+			width: 80%;
+
+			.orn-4 {
+				position: absolute;
+				top: -10%;
+				left: 100%;
+				width: 100%;
+			}
+
+			.orn-5 {
+				position: absolute;
+				top: 20%;
+				left: 50%;
+				width: 120%;
+			}
+
+			.orn-6 {
+				position: absolute;
+				top: -30%;
+				left: 70%;
+				width: 140%;
+			}
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 15%;
+			right: 0;
+			width: 100%;
+		}
+
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(20%, 10%);
+
+		.orn-9 {
+			position: absolute;
+			top: 55%;
+			right: 45%;
+			width: 65%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(10%, 30%);
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+	z-index: 5;
+
+	small {
+		position: relative;
+	}
+}
