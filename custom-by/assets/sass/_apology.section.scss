@@ -1,0 +1,17 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+		padding: 0 1rem;
+
+		@include min-xl {
+			padding: 0 2rem;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.stream-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.stream-wrapper {
+		position: relative;
+
+		.stream-content {
+			position: relative;
+
+			.stream-description {
+				position: relative;
+				padding: 0 1rem;
+				text-align: center;
+
+				@include min-xl {
+					padding: 0 2rem;
+				}
+
+				iframe {
+					border-radius: 8px;
+				}
+			}
+		}
+	}
+
+	ul {
+		margin: 0 auto;
+
+		ol {
+			padding: 0;
+		}
+	}
+
+	.btn-custom {
+		width: 100%;
+	}
+
+	.yt-description {
+		position: relative;
+	}
+}

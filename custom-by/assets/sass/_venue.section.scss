@@ -1,0 +1,275 @@
+.venue-section {
+	position: relative;
+	padding: 3rem 0 1rem;
+
+	@include ipad {
+		padding: 5rem 0 2rem;
+	}
+
+	.flower {
+		position: absolute;
+		top: 0;
+		width: 15%;
+
+		&-left {
+			left: -.75rem;
+		}
+
+		&-right {
+			right: -.75rem;
+			transform: scaleX(-1);
+		}
+	}
+
+	.venue-wrapper {
+		position: relative;
+
+		.venue-description {
+			position: relative;
+			text-align: center;
+			padding: 0 2rem;
+			margin-bottom: 1.5rem;
+		}
+
+		.venue-content {
+			position: relative;
+
+			.ribbon-venue {
+				position: relative;
+				margin-bottom: 1rem;
+
+				svg {
+					width: 40px;
+					height: auto;
+
+					path {
+						stroke: var(--color-dark);
+					}
+				}
+
+				.st0 {
+					fill: var(--color-secondary);
+				}
+
+				.st1 {
+					fill: none;
+					stroke: var(--color-secondary);
+					stroke-width: 19;
+					stroke-linecap: round;
+					stroke-miterlimit: 10;
+					transform-origin: 50% 75%;
+				}
+			}
+
+			.card {
+				background-color: transparent;
+				border: none;
+				text-align: center;
+				color: var(--text-highlight);
+
+				.card-body {
+					padding: 2rem;
+
+					@include max-sm {
+						padding: 1.5rem;
+					}
+
+					.event-name {
+						position: relative;
+						width: 100%;
+
+						&-title {
+							margin-top: 1.5rem;
+						}
+
+						.date {
+							position: relative;
+							width: 100%;
+
+							h5 {
+								font-family: $font-secondary;
+								margin-bottom: 0;
+								font-size: 38px;
+							}
+						}
+
+						p,
+						span,
+						h4 {
+							margin-bottom: 0;
+							font-size: 24px;
+
+							@include max-sm {
+								font-size: 20px;
+							}
+						}
+					}
+
+					.event-description {
+						position: relative;
+						margin-bottom: 1rem;
+
+						p {
+							margin-bottom: 0;
+						}
+					}
+
+					.event-place {
+						position: relative;
+
+						&-body {
+							padding-top: 1rem;
+
+							.widget-elements {
+								position: relative;
+								width: 100%;
+								margin-top: 1rem;
+							}
+						}
+					}
+
+					.flower-card {
+						position: relative;
+						width: 75%;
+						margin: 1rem auto;
+						transform: translateY(-1rem) scaleY(-1);
+					}
+				}
+			}
+		}
+	}
+
+	.prokes-wrapper {
+		margin: 3rem 0 0;
+		position: relative;
+		padding: 2rem;
+		text-align: center;
+		z-index: 2;
+
+		.title-section {
+			&::before {
+				all: unset;
+			}
+
+			h3 {
+				font-family: $font-primary;
+				color: var(--text-body);
+			}
+		}
+
+		@include max-md {
+			padding: 2rem 0;
+		}
+
+		@include min-lg {
+			padding: 2rem 0;
+		}
+
+		* {
+			position: relative;
+		}
+
+		.prokes-wrap {
+			display: flex;
+			gap: 0.75rem;
+			justify-content: center;
+			align-items: flex-start;
+			flex-wrap: wrap;
+			text-align: center;
+
+			.prokes {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				justify-content: flex-start;
+				width: 132px;
+
+				@include min-lg {
+					width: 120px;
+				}
+
+				@include max-md {
+					width: 120px;
+				}
+
+				@include max-xs {
+					width: 45%;
+				}
+			}
+		}
+	}
+
+	.row-venue {
+		row-gap: 3rem;
+
+		&-sm {
+			@include max-md {
+				row-gap: 3rem;
+			}
+		}
+	}
+
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+
+		40% {
+			opacity: 1;
+		}
+
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}

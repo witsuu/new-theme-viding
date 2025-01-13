@@ -1,0 +1,176 @@
+.cover-section {
+	position: fixed;
+	z-index: 1000;
+	transition: all 1s ease-out;
+	background-color: var(--color-main);
+	overflow: hidden;
+	width: 100%;
+
+	&.cover-opened {
+		transform: translateY(-100%);
+	}
+
+	.cover-wrapper {
+		position: relative;
+		transition: opacity 1s ease;
+		height: 100vh;
+
+		.cover-content {
+			position: relative;
+			width: 30%;
+			height: 100%;
+			padding-top: 5rem;
+			padding-bottom: 4rem;
+			margin: 0 auto;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+
+			@include max-xl {
+				width: 40%;
+			}
+
+			@include max-lg {
+				width: 60%;
+				padding-bottom: 10rem;
+			}
+
+			@include max-sm {
+				width: 100%;
+			}
+
+			.cover-body {
+				position: relative;
+
+				.cover-description {
+					position: relative;
+					width: 100%;
+					padding: 1rem;
+					text-align: center;
+					z-index: 5;
+
+					.cover-event {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.greeting-wrapper {
+						position: relative;
+						margin-bottom: 1rem;
+					}
+
+					.title {
+						padding: 1rem 0;
+						margin-bottom: 0;
+					}
+
+					p {
+						margin-bottom: 0;
+					}
+
+					h6 {
+						margin-bottom: 0;
+						font-weight: 600;
+					}
+				}
+			}
+
+			.elements-widget {
+				position: relative;
+				width: 100%;
+			}
+		}
+	}
+
+	.frame {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		height: 105%;
+		width: max-content;
+		transform: translate(-50%, -50%);
+
+		@include max-sm {
+			width: 110%;
+		}
+
+		&>.image-element {
+			width: auto;
+			height: 100%;
+
+			.img-fluid {
+				width: auto;
+				height: 100%;
+			}
+		}
+
+		.jasmine {
+			position: absolute;
+			top: 8%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 50%;
+			left: -1.8rem;
+			width: 35%;
+			transform: translate(0, -65%);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 2rem;
+			left: -2rem;
+			width: 30%;
+			transform: rotate(-30deg) scaleX(-1);
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 90%;
+			right: 25%;
+			width: 80%;
+			transform: rotate(-20deg) scaleX(-1);
+
+			.orn-4 {
+				position: absolute;
+				top: 90%;
+				right: 10%;
+				width: 100%;
+				transform: rotate(-65deg) scaleY(-1);
+			}
+		}
+
+		.orn-5 {
+			position: absolute;
+			top: 4rem;
+			right: 0;
+			width: 30%;
+
+			.orn-6 {
+				position: relative;
+				width: 80%;
+				margin-top: -.5rem;
+				margin-left: 2rem;
+				transform: scaleX(-1);
+			}
+
+			.orn-7 {
+				position: relative;
+				margin-top: -1rem;
+				margin-left: 2rem;
+				width: 120%;
+			}
+
+			.orn-8 {
+				position: relative;
+				width: 110%;
+				margin-top: -1rem;
+				margin-left: -.5rem;
+			}
+		}
+	}
+}

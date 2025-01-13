@@ -166,6 +166,13 @@ body {
   left: 80%;
   width: 80%;
 }
+.background__views .background__frames .janur {
+  position: absolute;
+  top: 5rem;
+  left: 0;
+  width: 40%;
+  transform: translate(-10%, 0);
+}
 
 .layout__views {
   position: relative;

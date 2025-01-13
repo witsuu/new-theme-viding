@@ -1,0 +1,19 @@
+.rsvp-section {
+	position: relative;
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.frame {
+			width: 110%;
+		}
+
+		.rsvp-form {
+			padding: 13rem 3rem 3rem;
+
+			@include max-sm {
+				padding: 10rem 2rem 3rem;
+			}
+		}
+	}
+}
