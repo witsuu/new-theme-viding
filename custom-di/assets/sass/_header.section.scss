@@ -1,0 +1,68 @@
+.header-section {
+	position: relative;
+
+	.scroll-icon {
+		margin-top: 1rem;
+	}
+
+	.header-content {
+		position: relative;
+		text-align: center;
+		padding: 10rem 0 0;
+		display: flex;
+		justify-content: flex-end;
+		align-items: flex-end;
+		flex-direction: column;
+
+		.header {
+			position: relative;
+			width: 80%;
+			text-align: right;
+
+			.header-title {
+				position: relative;
+
+				&-content {
+					position: relative;
+					z-index: 5;
+
+					.title {
+						position: relative;
+
+						p {
+							margin-bottom: 0;
+						}
+
+						.name {
+							span {
+								font-family: var(--font-secondary);
+								font-size: 90px;
+								color: var(--text-color-1);
+								line-height: .8;
+								font-weight: 600;
+
+								@include max-sm {
+									font-size: 72px;
+								}
+							}
+
+							p {
+								font-family: var(--font-secondary);
+								font-size: 26px;
+								color: var(--text-color-2);
+								line-height: .8;
+								font-weight: 600;
+							}
+						}
+
+						.and {
+							font-family: var(--font-primary);
+							font-size: 46px;
+							color: var(--text-color-2);
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,12 @@
+.apology-section {
+	position: relative;
+	padding: 3rem 0;
+
+	@include ipad {
+		padding: 5rem 0;
+	}
+
+	.appology-wrap {
+		position: relative;
+	}
+}

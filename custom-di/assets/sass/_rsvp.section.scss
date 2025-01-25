@@ -1,0 +1,16 @@
+.rsvp-section {
+	position: relative;
+	padding: 0 0 3rem;
+
+	@include ipad {
+		padding: 0 0 5rem;
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.rsvp-form {
+			padding: 0;
+		}
+	}
+}
