@@ -1,0 +1,58 @@
+.rsvp-section {
+	position: relative;
+	padding: 3rem 0;
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 50%;
+		transform: translate(0, -30%) rotate(20deg) scaleY(-1);
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50%;
+		transform: translate(0, 30%) rotate(20deg) scaleX(-1);
+	}
+
+	.rsvp-wrapper {
+		position: relative;
+
+		.gate {
+			position: relative;
+			width: 160%;
+			margin-left: -30%;
+			margin-bottom: 1rem;
+
+			@include max-sm {
+				width: 140%;
+				margin-left: -20%;
+			}
+
+			.orn-1 {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 28%;
+				transform: translate(-20%, 65%) rotate(30deg);
+
+				&.orn-reverse {
+					right: 0;
+					left: unset;
+					transform: translate(20%, 65%) rotate(-30deg) scaleX(-1);
+				}
+			}
+		}
+
+		.rsvp-form {
+			position: relative;
+
+			@include max-sm {
+				padding: 0 1rem;
+			}
+		}
+	}
+}

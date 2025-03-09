@@ -1,0 +1,28 @@
+.apology-section {
+	position: relative;
+	padding: 5rem 0;
+
+	@include max-md {
+		padding: 3rem 0;
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 10%;
+		transform: translate(40%, 0) rotate(25deg);
+
+		@include max-lg {
+			width: 20%;
+		}
+
+		@include max-sm {
+			width: 25%;
+		}
+	}
+
+	.appology-wrap {
+		position: relative;
+	}
+}
