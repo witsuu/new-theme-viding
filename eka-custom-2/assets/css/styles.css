@@ -1717,6 +1717,11 @@ ul li {
   width: 80px;
   transform: translate(-50%, 0);
 }
+@media (max-width: 575px) {
+  .header-section .gunungan {
+    width: 70px;
+  }
+}
 .header-section .bush {
   position: absolute;
   bottom: 0;

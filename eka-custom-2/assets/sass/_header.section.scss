@@ -70,6 +70,10 @@
 		left: 50%;
 		width: 80px;
 		transform: translate(-50%, 0);
+
+		@include max-sm {
+			width: 70px;
+		}
 	}
 
 	.bush {

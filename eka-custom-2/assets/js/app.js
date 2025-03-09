@@ -1,5 +1,44 @@
 window.scrollTo(0, 0)
 
+const musicControl = $("#musicControl");
+const playPauseIcon = document.querySelector("#playPause");
+const bgMusic = document.querySelector("audio");
+
+if (bgMusic) {
+	bgMusic.load();
+}
+
+const bgMusicPlay = (play = true) => {
+	if (bgMusic) {
+		bgMusic.loop = true;
+		bgMusic.controls = false;
+
+		if (play == true) {
+			bgMusic.play();
+		} else {
+			bgMusic.pause();
+		}
+	}
+};
+
+if (musicControl) {
+	musicControl.on("click", (event) => {
+		if (bgMusic.paused == true) {
+			bgMusicPlay();
+			playPauseIcon.classList.replace(
+				"icofont-music-alt",
+				"icofont-ui-pause"
+			);
+		} else {
+			bgMusicPlay(false);
+			playPauseIcon.classList.replace(
+				"icofont-ui-pause",
+				"icofont-music-alt"
+			);
+		}
+	});
+}
+
 document.body.style.overflow = "hidden"
 
 document.querySelector("#btn-envelope").addEventListener("click", () => {
@@ -8,6 +47,7 @@ document.querySelector("#btn-envelope").addEventListener("click", () => {
 	document.querySelector(".cover-section").style.transform = "translateY(-110%)"
 
 	runAnimationOrnament()
+	bgMusicPlay()
 	runAnimationLoop()
 })
 
