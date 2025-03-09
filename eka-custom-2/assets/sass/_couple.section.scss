@@ -1,0 +1,243 @@
+.couple-section {
+	position: relative;
+	padding: 5rem 0;
+	text-align: center;
+	@include max-md {
+		padding: 3rem 0;
+		.container {
+			padding: 0;
+		}
+	}
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 160px;
+	}
+	.orn-2 {
+		position: absolute;
+		top: 20%;
+		left: 0;
+		width: 180px;
+		&.women {
+			top: 25%;
+		}
+	}
+	.orn-3 {
+		position: absolute;
+		top: 40%;
+		left: 0;
+		width: 100px;
+		@include max-md {
+			width: 60px;
+			top: 45%;
+		}
+		&.women {
+			top: 50%;
+			@include max-md {
+				width: 70px;
+			}
+		}
+	}
+	.orn-4 {
+		position: absolute;
+		top: 60%;
+		left: 0;
+		width: 100px;
+		@include max-md {
+			width: 80px;
+		}
+		&.women {
+			top: 65%;
+			transform: scaleY(-1);
+			@include max-md {
+				width: 70px;
+			}
+		}
+	}
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 50px;
+		&.women {
+			width: 80px;
+			transform: translateX(-50%);
+		}
+	}
+	.orn-6 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 160px;
+		transform: scaleX(-1);
+	}
+	.orn-7 {
+		position: absolute;
+		top: 20%;
+		right: 0;
+		width: 180px;
+		transform: scaleX(-1);
+		&.women {
+			top: 25%;
+			width: 140px;
+			transform: none;
+		}
+	}
+	.orn-8 {
+		position: absolute;
+		top: 40%;
+		right: 0;
+		width: 100px;
+		transform: scaleX(-1);
+		@include max-md {
+			top: 45%;
+			width: 70px;
+		}
+		&.women {
+			top: 58%;
+			transform: translateX(35%);
+			@include max-md {
+				top: 52%;
+				width: 70px;
+			}
+		}
+	}
+	.orn-9 {
+		position: absolute;
+		top: 60%;
+		right: 0;
+		width: 100px;
+		transform: scaleX(-1);
+		@include max-md {
+			width: 80px;
+		}
+		&.women {
+			top: 70%;
+			transform: none;
+			@include max-md {
+				width: 70px;
+			}
+		}
+	}
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 50px;
+		transform: scaleX(-1);
+		&.women {
+			width: 90px;
+			transform: scale(-1);
+			@include max-md {
+				width: 60px;
+			}
+		}
+	}
+	.and {
+		@include min-lg {
+			position: absolute;
+			top: 30%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+		}
+		font-weight: 600;
+		color: var(--color-dark);
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		z-index: 3;
+		span {
+			position: relative;
+			font-size: 80px;
+			font-family: $font-three;
+			color: $color-custom;
+			@include max-md {
+				font-size: 60px;
+			}
+		}
+	}
+	.couple-content {
+		position: relative;
+		border-radius: var(--border-radius);
+		background-color: var(--color-primary);
+		padding: 1rem;
+		@include max-lg {
+			margin-top: 3rem;
+		}
+	}
+	.couple {
+		position: relative;
+		text-align: center;
+		padding: 5rem 0;
+		border-radius: 12px;
+		overflow: hidden;
+		@include max-lg {
+			&.man {
+				padding-top: 10rem;
+				margin-top: -8rem;
+			}
+			padding-bottom: 3rem;
+		}
+		.image-wrap {
+			width: 70%;
+			margin: 0 auto;
+			position: relative;
+			aspect-ratio: 4/6;
+			border-radius: 1000px;
+			@include max-lg {
+				width: 60%;
+				aspect-ratio: 3/4;
+			}
+			.couple-image {
+				height: 100%;
+				object-fit: cover;
+				position: relative;
+				width: 100%;
+				border-radius: 1000px;
+			}
+		}
+		.couple-description {
+			position: relative;
+			padding: 2rem 3rem;
+			color: $color-custom;
+			.couple-name-second {
+				font-family: $font-three;
+				font-size: 30px;
+			}
+		}
+		.couple-parent {
+			width: 100%;
+		}
+		.sosmed-wrap {
+			position: relative;
+			width: 100%;
+			.sosmed {
+				color: var(--color-light);
+				text-decoration: none;
+				padding: 0.5rem 0.6rem;
+				border-radius: 50px;
+				background: $color-custom;
+				border: 1px solid transparent;
+				transition: all 0.25s ease;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+			.fab {
+				font-size: 18px;
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+	}
+}

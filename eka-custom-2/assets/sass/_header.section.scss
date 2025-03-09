@@ -1,0 +1,803 @@
+.header-section {
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	overflow: hidden;
+
+	@include max-lg {
+		height: 87vh;
+	}
+
+	.scroll-icon {
+		position: relative;
+	}
+
+	.background-element.latar-bg {
+		img {
+			@include max-lg {
+				transform: translateY(20rem);
+			}
+
+			@include max-md {
+				transform: none;
+			}
+		}
+	}
+
+	.rumah {
+		position: absolute;
+		top: 53%;
+		left: 50%;
+		width: 67%;
+		transform: translate(-50%, -50%);
+
+		@include max-lg {
+			width: 120%;
+		}
+
+		@include max-sm {
+			top: 60%;
+			width: 125%;
+		}
+
+		.rumput {
+			position: absolute;
+			top: 83%;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+
+			@include max-lg {
+				width: 120%;
+			}
+
+			@include max-sm {
+				width: 140%;
+			}
+		}
+
+		.banana {
+			position: absolute;
+			bottom: -1rem;
+			left: -1rem;
+			width: 25%;
+		}
+	}
+
+	.gunungan {
+		position: absolute;
+		top: 5rem;
+		left: 50%;
+		width: 80px;
+		transform: translate(-50%, 0);
+	}
+
+	.bush {
+		position: absolute;
+		bottom: 0;
+		width: 40%;
+
+		@include max-lg {
+			width: 80%;
+		}
+
+		@include max-sm {
+			width: 100%;
+		}
+
+		&-left {
+			left: -1rem;
+		}
+
+		&-right {
+			bottom: -2rem;
+			right: 1rem;
+			width: 35%;
+
+			@include max-lg {
+				width: 70%;
+			}
+
+			@include max-sm {
+				width: 90%;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: -5.5rem;
+		right: -1.5rem;
+		width: 35%;
+
+		@include max-lg {
+			width: 40%;
+		}
+
+		@include max-lg {
+			bottom: 8rem;
+			right: -3rem;
+			width: 50%;
+		}
+
+		@include max-sm {
+			bottom: 12rem;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 45%;
+
+		@include max-lg {
+			transform: translateX(-20%);
+		}
+
+		@include max-md {
+			width: 60%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 45%;
+	}
+
+	.orn-people {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, -10rem);
+		width: 82px;
+
+		@include max-lg {
+			transform: translate(-50%, -8rem);
+		}
+
+		@include max-md {
+			transform: translate(-50%, -7rem);
+			width: 70px;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 3rem;
+		left: 0;
+		width: 140px;
+
+		@include max-md {
+			width: 80px;
+		}
+
+		img {
+			transform-origin: 10% 90%;
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		right: 52%;
+		width: 280px;
+
+		@include max-md {
+			width: 180px;
+			right: 65%;
+			display: none;
+		}
+
+		img {
+			transform-origin: 50% 100%;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 2rem;
+		right: 0;
+		width: 180px;
+
+		@include max-lg {
+			width: 140px;
+			bottom: 3rem;
+		}
+
+		@include max-md {
+			width: 100px;
+		}
+
+		@include max-xs {
+			width: 80px;
+		}
+
+		img {
+			transform-origin: 100% 100%;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		left: 18%;
+		width: 180px;
+
+		@include max-lg {
+			width: 160px;
+		}
+
+		@include max-md {
+			left: 8%;
+		}
+
+		@include max-xs {
+			left: 12%;
+			width: 100px;
+		}
+
+		img {
+			transform-origin: 50% 100%;
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		left: 54%;
+		width: 300px;
+
+		@include max-md {
+			width: 200px;
+		}
+
+		@include max-xs {
+			width: 140px;
+		}
+
+		img {
+			transform-origin: 80% 100%;
+		}
+	}
+
+	.orn-9 {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		transform: translate(-50%, 30%);
+		width: 220px;
+
+		@include max-lg {
+			width: 180px;
+		}
+
+		@include max-xs {
+			width: 120px;
+		}
+
+		img {
+			transform-origin: 55% 100%;
+		}
+	}
+
+	.orn-10 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 210px;
+
+		@include max-lg {
+			width: 180px;
+		}
+
+		@include max-md {
+			width: 120px;
+		}
+
+		img {
+			transform-origin: 0% 100%;
+		}
+	}
+
+	.orn-11 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 180px;
+
+		@include max-lg {
+			width: 160px;
+		}
+
+		@include max-md {
+			width: 100px;
+		}
+
+		img {
+			transform-origin: 100% 100%;
+		}
+	}
+
+	.orn-12 {
+		position: absolute;
+		left: 0;
+		top: 30%;
+		width: 90px;
+
+		@include mx-mn(767px, 392px) {
+			top: 42%;
+			width: 50px;
+		}
+
+		@include max-sm {
+			width: 75px;
+		}
+
+		@include max-xs {
+			width: 50px;
+		}
+	}
+
+	.orn-13 {
+		position: absolute;
+		left: 0;
+		top: 12%;
+		width: 200px;
+
+		@include mx-mn(767px, 392px) {
+			top: 25%;
+		}
+
+		@include max-md {
+			width: 110px;
+		}
+	}
+
+	.orn-14 {
+		position: absolute;
+		top: 30%;
+		right: 0;
+		width: 120px;
+
+		@include max-md {
+			width: 70px;
+		}
+	}
+
+	.orn-15 {
+		position: absolute;
+		top: 15%;
+		right: 0;
+		width: 180px;
+
+		@include max-md {
+			width: 85px;
+		}
+	}
+
+	.elements-wrapper-absolute {
+		top: unset;
+		bottom: 0;
+
+		.background-element {
+			display: flex;
+			align-items: flex-end;
+			transform: scale(1.2);
+
+			img,
+			source {
+				width: 100%;
+				height: auto !important;
+			}
+		}
+	}
+
+	.header-content {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+		padding-bottom: 5rem;
+
+		@include max-lg {
+			margin-bottom: 8rem;
+		}
+
+		.header {
+			position: relative;
+			display: block;
+			padding: 4rem 0;
+			font-weight: 700;
+
+			.header-title {
+				position: relative;
+				text-align: center;
+
+				.header-ornament {
+					position: relative;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					gap: 1rem;
+
+					.wayang-deco {
+						width: 72px;
+						height: auto;
+
+						@include max-lg {
+							width: 65px;
+						}
+
+						@include max-md {
+							width: 58px;
+						}
+					}
+				}
+
+				&-content {
+					position: relative;
+					padding: 1rem 0 0;
+					width: 100%;
+					color: $color-custom;
+
+					&::before {
+						position: absolute;
+						top: 0;
+						right: 0;
+						bottom: 0;
+						left: 0;
+						content: "";
+						background: radial-gradient(ellipse, rgba(255, 255, 255, 0.6) 0%, transparent 70%, transparent 100%);
+					}
+				}
+			}
+
+			#scroll-animate {
+				animation: scrollAnim 1500ms ease infinite;
+			}
+		}
+	}
+}
+
+@keyframes scrollAnim {
+	0% {
+		opacity: 0;
+		transform: translate3d(0, -20%, 0);
+	}
+
+	50% {
+		opacity: 1;
+	}
+
+	100% {
+		transform: translate3d(0, 100%, 0);
+		opacity: 0;
+	}
+}
+
+[data-anim="zoom-out-people"].has-animate {
+	animation-name: zoomOutPeople;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-latar"].has-animate {
+	animation-name: zoomOutLatar;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-bg"].has-animate {
+	animation-name: zoomOutBg;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-bg-wrap"].has-animate {
+	animation-name: zoomOutBgWrap;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-tree"].has-animate {
+	animation-name: zoomOutTree;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-tree-2"].has-animate {
+	animation-name: zoomOutTree2;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-tree-3"].has-animate {
+	animation-name: zoomOutTree3;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-tree-left"].has-animate {
+	animation-name: zoomOutTreeLeft;
+	animation-fill-mode: forwards;
+}
+
+[data-anim="zoom-out-tree-right"].has-animate {
+	animation-name: zoomOutTreeRight;
+	animation-fill-mode: forwards;
+}
+
+@keyframes zoomOutPeople {
+	0% {
+		transform: scale3d(1.3, 1.3, 1.3);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+}
+
+@include max-lg {
+	@keyframes zoomOutPeople {
+		0% {
+			transform: scale3d(1.3, 1.3, 1.3);
+		}
+
+		40% {
+			transform: scale3d(1, 1, 1) translate3d(0, 2rem, 0);
+		}
+
+		60% {
+			transform: scale3d(1, 1, 1) translate3d(0, 2rem, 0);
+		}
+
+		100% {
+			transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 2rem, 0);
+		}
+	}
+}
+
+@include mx-mn(767px, 392px) {
+	@keyframes zoomOutPeople {
+		0% {
+			transform: scale3d(1.3, 1.3, 1.3);
+		}
+
+		40% {
+			transform: scale3d(1, 1, 1) translate3d(0, 1rem, 0);
+		}
+
+		60% {
+			transform: scale3d(1, 1, 1) translate3d(0, 1rem, 0);
+		}
+
+		100% {
+			transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 1rem, 0);
+		}
+	}
+}
+
+@keyframes zoomOutLatar {
+	0% {
+		transform: scale3d(1.15, 1.15, 1.15);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: scale3d(1.5, 1.5, 1.5);
+	}
+}
+
+@keyframes zoomOutBg {
+	0% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+// @include mx-mn(991px, 768px) {
+// 	@keyframes zoomOutBg {
+// 		0% {
+// 			transform: scale3d(1.1, 1.1, 1.1);
+// 		}
+// 		40% {
+// 			transform: scale3d(1, 1, 1);
+// 		}
+// 		60% {
+// 			transform: scale3d(1, 1, 1);
+// 		}
+// 		100% {
+// 			transform: scale3d(1.1, 1.1, 1.1) translateY(-5rem);
+// 		}
+// 	}
+// }
+@keyframes zoomOutBgWrap {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	40% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+
+	60% {
+		transform: scale3d(0.9, 0.9, 0.9);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1);
+	}
+}
+
+@keyframes zoomOutTree {
+	0% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	40% {
+		transform: scale3d(0.8, 0.8, 0.8);
+	}
+
+	60% {
+		transform: scale3d(0.8, 0.8, 0.8);
+	}
+
+	100% {
+		transform: scale3d(1, 1, 1) translateX(-2rem);
+	}
+}
+
+@include mx-mn(767px, 392px) {
+	@keyframes zoomOutTree {
+		0% {
+			transform: scale3d(1, 1, 1);
+		}
+
+		40% {
+			transform: scale3d(0.9, 0.9, 0.9);
+		}
+
+		60% {
+			transform: scale3d(0.9, 0.9, 0.9);
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+		}
+	}
+}
+
+@include max-xs {
+	@keyframes zoomOutTree {
+		0% {
+			transform: scale3d(1, 1, 1);
+		}
+
+		40% {
+			transform: scale3d(0.8, 0.8, 0.8);
+		}
+
+		60% {
+			transform: scale3d(0.8, 0.8, 0.8);
+		}
+
+		100% {
+			transform: scale3d(1, 1, 1);
+		}
+	}
+}
+
+@keyframes zoomOutTree2 {
+	0% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+}
+
+@keyframes zoomOutTree3 {
+	0% {
+		transform: scale3d(1.1, 1.1, 1.1);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+}
+
+@keyframes zoomOutTreeLeft {
+	0% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: translate3d(-10%, 0, 0);
+	}
+}
+
+@include max-lg {
+	@keyframes zoomOutTreeLeft {
+		0% {
+			transform: scale3d(1.2, 1.2, 1.2);
+		}
+
+		40% {
+			transform: scale3d(1, 1, 1);
+		}
+
+		60% {
+			transform: scale3d(1, 1, 1);
+		}
+
+		100% {
+			transform: translate3d(-10%, 0, 0);
+		}
+	}
+}
+
+@keyframes zoomOutTreeRight {
+	0% {
+		transform: scale3d(1.2, 1.2, 1.2);
+	}
+
+	40% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	60% {
+		transform: scale3d(1, 1, 1);
+	}
+
+	100% {
+		transform: translateX(10%);
+	}
+}

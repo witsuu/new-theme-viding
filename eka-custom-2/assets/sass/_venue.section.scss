@@ -1,0 +1,230 @@
+.venue-section {
+	position: relative;
+	padding: 0 0 5rem;
+	@include max-md {
+		padding: 0 0 3rem;
+	}
+	.orn-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 180px;
+		transform: translateY(50%) scaleY(-1);
+		@include max-md {
+			width: 140px;
+		}
+	}
+	.orn-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 180px;
+		transform: translateY(50%) scale(-1);
+		@include max-md {
+			width: 140px;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		aspect-ratio: 16/9;
+		border-radius: var(--border-radius);
+		z-index: 3;
+		margin-bottom: 5rem;
+		@include max-md {
+			aspect-ratio: 1;
+			margin-bottom: 3rem;
+		}
+		.venue-background {
+			position: relative;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+		}
+	}
+	.venue-wrapper {
+		position: relative;
+		background: var(--color-primary);
+		color: $color-custom;
+		padding: 3rem;
+		border-radius: 40px;
+		z-index: 3;
+		@include max-lg {
+			padding: 3rem 2rem;
+		}
+		@include max-md {
+			padding: 1rem;
+		}
+		.venue-description {
+			position: relative;
+			margin: 0 auto 5rem;
+			z-index: 2;
+			text-align: center;
+			@include max-lg {
+				margin-bottom: 3rem;
+			}
+		}
+		.venue-content {
+			position: relative;
+			display: flex;
+			flex-direction: column;
+			gap: 3rem;
+			.ribbon-venue {
+				position: relative;
+				text-align: center;
+				margin: 0;
+				svg {
+					width: 40px;
+					height: auto;
+					path {
+						fill: $color-custom;
+						stroke: $color-custom;
+					}
+				}
+			}
+			.card {
+				border: none;
+				background-color: var(--color-main);
+				height: 100%;
+				border-radius: var(--border-radius);
+				overflow: hidden;
+				z-index: 5;
+				.card-body {
+					padding: 3rem 2rem;
+					@include max-md {
+						padding: 2rem 1rem;
+					}
+				}
+			}
+		}
+	}
+	.prokes-wrapper {
+		margin-top: 3rem;
+		position: relative;
+		border-radius: 10px;
+		text-align: center;
+		z-index: 2;
+		* {
+			position: relative;
+		}
+	}
+	.prokes-wrap {
+		display: flex;
+		gap: 0.75rem;
+		justify-content: center;
+		align-items: flex-start;
+		flex-wrap: wrap;
+		text-align: center;
+		.prokes {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: flex-start;
+			width: 132px;
+			@include max-md {
+				width: 120px;
+			}
+			@include max-xs {
+				width: 45%;
+			}
+		}
+	}
+	.row-venue {
+		@include max-md {
+			gap: 2rem;
+		}
+	}
+	.event-name {
+		position: relative;
+		text-align: center;
+		margin-bottom: 1.5rem;
+		h4 {
+			font-family: $font-secondary;
+			font-size: 80px;
+			@include max-lg {
+				font-size: 50px;
+			}
+		}
+		.date {
+			h5 {
+				font-weight: 700;
+				margin-bottom: 0;
+				font-size: 38px;
+			}
+			p {
+				margin-top: 0.2rem;
+			}
+		}
+		p {
+			margin-bottom: 0;
+		}
+	}
+	.event-place {
+		position: relative;
+		text-align: center;
+		margin-top: 1rem;
+	}
+	.animation-loop {
+		.st1 {
+			will-change: transform;
+			animation: zoomInRing 2000ms ease-out infinite;
+		}
+		.dot {
+			will-change: transform;
+			animation: fadeBoing 2000ms ease-out infinite;
+			transform-origin: 50% 75%;
+		}
+		#Layer_3 {
+			will-change: transform;
+			animation: boing 1000ms ease-out infinite alternate;
+		}
+	}
+
+	@keyframes zoomInRing {
+		0% {
+			opacity: 0;
+			transform: scale3d(0.5, 0.5, 0.5);
+		}
+		40% {
+			opacity: 1;
+		}
+		70% {
+			opacity: 0;
+			transform: scale3d(1.25, 1.25, 1.25);
+		}
+		100% {
+			opacity: 0;
+		}
+	}
+
+	@keyframes boing {
+		0% {
+			transform: translate3d(0, 0, 0);
+		}
+		100% {
+			transform: translate3d(0, -5rem, 0);
+		}
+	}
+
+	@keyframes fadeBoing {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			transform: scale3d(0.25, 0.25, 0.25);
+			opacity: 0;
+		}
+		100% {
+			transform: scale3d(1, 1, 1);
+			opacity: 1;
+		}
+	}
+}
+
+.maps-embed {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}

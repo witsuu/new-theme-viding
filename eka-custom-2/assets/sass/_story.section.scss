@@ -1,0 +1,42 @@
+.story-section {
+	position: relative;
+	padding: 10rem 0;
+	@include max-lg {
+		padding: 8rem 0;
+	}
+	@include max-md {
+		padding: 5rem 0;
+	}
+	.story-content {
+		position: relative;
+		border-radius: var(--border-radius);
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+	.story-description {
+		position: relative;
+		text-align: center;
+		color: $color-custom;
+		* {
+			position: relative;
+		}
+	}
+	.image-wrapper {
+		position: relative;
+		width: 50%;
+		aspect-ratio: 4/6;
+		margin: 0 auto 2rem;
+		@include max-lg {
+			width: 70%;
+		}
+		.story-image {
+			position: relative;
+			object-fit: cover;
+			width: 100%;
+			height: 100%;
+			border-radius: 1000px;
+		}
+	}
+}
