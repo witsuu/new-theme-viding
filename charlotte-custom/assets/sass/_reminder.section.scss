@@ -1,0 +1,135 @@
+.reminder-wrap {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 2rem 0 10rem;
+	background-color: var(--color-primary);
+	color: var(--color-dark);
+	min-height: 50vh;
+
+	@include max-md {
+		padding: 2rem 0 8rem;
+	}
+
+	.reminder-content {
+		position: relative;
+		width: fit-content;
+		max-width: 100%;
+		margin: 0 auto;
+		z-index: 5;
+
+		@include max-sm {
+			width: 100%;
+		}
+	}
+
+	.btn-reminder {
+		z-index: 3;
+		position: relative;
+		margin: 0 auto;
+		display: flex;
+		align-items: center;
+		position: relative;
+		gap: 0.5rem;
+		transition: all 0.2s ease-in-out;
+		text-decoration: none;
+		margin-top: 1.5rem;
+
+		path {
+			fill: var(--text-button);
+			transition: all 0.3s ease-in-out;
+		}
+	}
+
+	.tree-1 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 45%;
+		transform: translate(-10%, 65%) scaleX(-1);
+
+		@include max-lg {
+			width: 80%;
+			transform: translate(-40%, 75%) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 90%;
+		}
+	}
+
+	.tree-2 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 45%;
+		transform: translate(-10%, 75%);
+
+		@include max-lg {
+			width: 80%;
+			transform: translate(10%, 75%);
+		}
+
+		@include max-sm {
+			width: 90%;
+		}
+	}
+
+	.tree-3 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(25%, 50%);
+
+		@include max-lg {
+			width: 60%;
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 35%;
+		transform: translate(40%, 0%);
+
+		@include max-lg {
+			width: 60%;
+			transform: translate(50%, 0%);
+		}
+
+		@include max-sm {
+			width: 70%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		top: 0;
+		right: 0;
+		width: 20%;
+		transform: translate(12%, 0) scaleX(-1);
+
+		@include max-lg {
+			width: 30%;
+			transform: translate(20%, 0) scaleX(-1);
+		}
+
+		@include max-sm {
+			width: 35%;
+		}
+
+		.orn-3 {
+			position: absolute;
+			top: 30%;
+			right: 10%;
+			width: 120%;
+		}
+	}
+}

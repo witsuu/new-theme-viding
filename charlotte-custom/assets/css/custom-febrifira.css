@@ -1,0 +1,139 @@
+.cover-section .cover-wrapper {
+  align-items: flex-end;
+  padding: 4rem 0;
+}
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper {
+    padding: 4rem 0 8rem;
+  }
+}
+@media (max-width: 575px) {
+  .cover-section .cover-wrapper {
+    align-items: flex-end;
+  }
+}
+
+.header-section .rumah {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  transform: translate(0, 10%);
+}
+@media (min-width: 768px) {
+  .header-section .rumah {
+    width: 100%;
+  }
+}
+
+.couple-section .couple-wrapper .rumah {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 40%;
+  transform: translate(10%, 0);
+}
+@media (max-width: 575px) {
+  .couple-section .couple-wrapper .rumah {
+    width: 50%;
+  }
+}
+
+@media (max-width: 575px) {
+  .venue-section .tree-1 .tree {
+    top: 80%;
+  }
+}
+@media (max-width: 575px) {
+  .venue-section .tree-1 .flower {
+    top: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .venue-section .tree-1 .leaf {
+    top: 120%;
+  }
+}
+.venue-section .venue-wrapper .venue-content .rumah {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 80%;
+  transform: translate(-50%, 2%);
+}
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .venue-content .rumah {
+    width: 100%;
+  }
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name .title-event-name {
+  position: relative;
+}
+@media (max-width: 575px) {
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name .title-event-name {
+    padding-top: 133.3333333333%;
+  }
+  .venue-section .venue-wrapper .venue-content .card .card-body .event-name .title-event-name > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+.venue-section .venue-wrapper .venue-content .card .card-body .event-name .title-event-name-body {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -80%);
+  height: auto;
+}
+
+.wishes-section .wishes-form-wrapper .rumah {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 180%;
+  transform: translate(-50%, 0);
+}
+
+.thank-section .rumah {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  transform: translate(0, 20%);
+}
+@media (min-width: 768px) {
+  .thank-section .rumah {
+    width: 100%;
+  }
+}
+.thank-section .custom-1 {
+  position: absolute;
+  bottom: 2%;
+  right: 0;
+  width: 85%;
+  transform: translate(50%, -2%);
+}
+.thank-section .custom-1 .orn {
+  position: absolute;
+  bottom: 90%;
+  left: 20%;
+  width: 100%;
+}
+.thank-section .custom-2 {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 65%;
+  transform: translate(-65%, 0);
+}
+.thank-section .custom-2 .orn {
+  position: absolute;
+  bottom: 70%;
+  right: -15%;
+  width: 120%;
+}
+.thank-section .thank-body {
+  position: relative;
+}/*# sourceMappingURL=custom-febrifira.css.map */

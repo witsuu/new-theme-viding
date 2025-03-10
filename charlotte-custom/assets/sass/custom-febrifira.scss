@@ -1,0 +1,165 @@
+@import 'variables', 'mixins';
+
+.cover-section {
+    .cover-wrapper {
+        align-items: flex-end;
+        padding: 4rem 0;
+
+        @include max-sm {
+            padding: 4rem 0 8rem;
+        }
+
+        @include max-sm {
+            align-items: flex-end;
+        }
+    }
+}
+
+.header-section {
+    .rumah {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 110%;
+        transform: translate(0, 10%);
+
+        @include min-md {
+            width: 100%;
+        }
+    }
+}
+
+.couple-section {
+    .couple-wrapper {
+        .rumah {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 40%;
+            transform: translate(10%, 0);
+
+            @include max-sm {
+                width: 50%;
+            }
+        }
+    }
+}
+
+.venue-section {
+    .tree-1 {
+        .tree {
+            @include max-sm {
+                top: 80%;
+            }
+        }
+
+        .flower {
+            @include max-sm {
+                top: 100%;
+            }
+        }
+
+        .leaf {
+            @include max-sm {
+                top: 120%;
+            }
+        }
+    }
+
+    .venue-wrapper {
+        .venue-content {
+            .rumah {
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                width: 80%;
+                transform: translate(-50%, 2%);
+
+                @include max-sm {
+                    width: 100%;
+                }
+            }
+
+            .card {
+                .card-body {
+                    .event-name {
+                        .title-event-name {
+                            position: relative;
+
+                            @include max-sm {
+                                @include aspect-ratio(3, 4);
+                            }
+
+                            &-body {
+                                top: 50%;
+                                left: 50%;
+                                transform: translate(-50%, -80%);
+                                height: auto;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.wishes-section {
+    .wishes-form-wrapper {
+        .rumah {
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 180%;
+            transform: translate(-50%, 0);
+        }
+    }
+}
+
+.thank-section {
+    .rumah {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 110%;
+        transform: translate(0, 20%);
+
+        @include min-md {
+            width: 100%;
+        }
+    }
+
+    .custom-1 {
+        position: absolute;
+        bottom: 2%;
+        right: 0;
+        width: 85%;
+        transform: translate(50%, -2%);
+
+        .orn {
+            position: absolute;
+            bottom: 90%;
+            left: 20%;
+            width: 100%;
+        }
+    }
+
+    .custom-2 {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        width: 65%;
+        transform: translate(-65%, 0);
+
+        .orn {
+            position: absolute;
+            bottom: 70%;
+            right: -15%;
+            width: 120%;
+        }
+    }
+
+    .thank-body {
+        position: relative;
+    }
+}

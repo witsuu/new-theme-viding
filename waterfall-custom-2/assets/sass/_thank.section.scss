@@ -1,0 +1,274 @@
+.thank-section {
+	position: relative;
+
+	.bg {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 85%;
+
+		.image-element {
+			height: 100%;
+
+			.img-fluid {
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.bg-1 {
+		position: absolute;
+		top: 2%;
+		left: 0;
+		width: 100%;
+	}
+
+	.bg-2 {
+		position: absolute;
+		top: 50%;
+		left: 0;
+		width: 100%;
+
+		@include max-lg {
+			top: 65%;
+		}
+	}
+
+	.waters {
+		position: absolute;
+		top: 0;
+		left: 49%;
+		width: 10%;
+		height: 50%;
+		transform: translate(-50%, 22%);
+		overflow: hidden;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+
+		.water {
+			position: relative;
+			width: 100%;
+			animation-duration: 5000ms !important;
+
+			@include max-lg {
+				animation-duration: 4000ms !important;
+			}
+		}
+	}
+
+	.orn-1 {
+		position: absolute;
+		bottom: 15%;
+		left: 0;
+		width: 60%;
+		transform: translate(-60%, 0);
+
+		@include min-md {
+			width: 40%;
+		}
+
+		@include min-lg {
+			width: 30%;
+		}
+	}
+
+	.orn-2 {
+		position: absolute;
+		bottom: 15%;
+		right: 0;
+		width: 60%;
+		transform: translate(60%, 0) rotate(-5deg);
+
+		@include min-md {
+			width: 40%;
+		}
+
+		@include min-lg {
+			width: 30%;
+		}
+	}
+
+	.orn-3 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(10%, 0);
+
+		@include min-md {
+			width: 180px;
+		}
+
+		@include min-lg {
+			width: 200px;
+		}
+	}
+
+	.orn-4 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 70%;
+		transform: translate(-30%, 70%);
+
+		@include min-md {
+			width: 50%;
+			transform: translate(-30%, 75%);
+		}
+
+		@include min-lg {
+			width: 40%;
+			transform: translate(-30%, 80%);
+		}
+	}
+
+	.orn-5 {
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		width: 140px;
+		transform: translate(-50%, 0);
+
+		@include min-md {
+			width: 180px;
+		}
+
+		@include min-lg {
+			width: 200px;
+		}
+	}
+
+	.orn-6 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(-10%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 180px;
+		}
+
+		@include min-lg {
+			width: 200px;
+		}
+	}
+
+	.orn-7 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 70%;
+		transform: translate(30%, 70%) scaleX(-1);
+
+		@include min-md {
+			width: 50%;
+			transform: translate(30%, 75%) scaleX(-1);
+		}
+
+		@include min-lg {
+			width: 40%;
+			transform: translate(30%, 80%) scaleX(-1);
+		}
+	}
+
+	.orn-8 {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+		width: 140px;
+		transform: translate(50%, 0) scaleX(-1);
+
+		@include min-md {
+			width: 180px;
+		}
+
+		@include min-lg {
+			width: 200px;
+		}
+	}
+
+	.image-wrapper {
+		position: relative;
+		width: 100%;
+		height: auto;
+		aspect-ratio: 16/9;
+		margin: 0 auto;
+
+		@include max-md {
+			aspect-ratio: 6/5;
+		}
+
+		@include max-sm {
+			aspect-ratio: 5/6;
+		}
+
+		.image-element {
+			position: relative;
+			width: 100%;
+			height: 100%;
+
+			.thank-background {
+				width: 100%;
+				height: 100%;
+				object-fit: cover;
+			}
+		}
+	}
+
+	.thank-wrapper {
+		position: relative;
+		padding: 5rem 0 10rem;
+		text-align: center;
+		min-height: 100vh;
+
+		@include max-lg {
+			min-height: 65vh;
+		}
+
+		@include max-md {
+			padding: 3rem 0 8rem;
+		}
+
+		.thank {
+			position: relative;
+			padding: 3rem 2rem;
+			color: var(--color-dark);
+
+			&::before {
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background-color: var(--color-primary);
+				opacity: 0.5;
+				border-radius: var(--border-radius);
+				content: "";
+			}
+
+			@include max-md {
+				padding: 2rem 1rem;
+			}
+
+			&-body {
+				position: relative;
+			}
+		}
+	}
+}
+
+.footer {
+	padding: 1rem 0;
+	position: relative;
+	text-align: center;
+	background-color: var(--color-secondary);
+	color: var(--text-button);
+
+	small {
+		position: relative;
+	}
+}

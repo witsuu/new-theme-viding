@@ -1,0 +1,258 @@
+.couple-section {
+	position: relative;
+	text-align: center;
+	background-color: var(--color-primary);
+
+	.and {
+		@include min-md {
+			display: none;
+		}
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		position: relative;
+		padding: 1rem;
+		z-index: 3;
+		color: var(--color-light);
+
+		span {
+			position: relative;
+			font-size: 36px;
+			font-weight: 400;
+			font-family: $font-secondary;
+		}
+	}
+
+	.couple-wrapper {
+		position: relative;
+		padding: 5rem 0;
+
+		@include max-md {
+			padding: 3rem 0;
+		}
+
+		.bg {
+			position: absolute;
+			top: 2rem;
+			left: 50%;
+			width: 100%;
+			transform: translate(-50%, 0);
+
+			@include max-lg {
+				width: 150%;
+			}
+
+			@include max-sm {
+				width: 200%;
+			}
+		}
+
+		.tree {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 60%;
+			transform: translate(-50%, -10%);
+
+			@include max-lg {
+				width: 80%;
+			}
+
+			@include max-sm {
+				width: 100%;
+				transform: translate(-50%, 0%);
+			}
+		}
+
+		.pagar {
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+			width: 140%;
+			transform: translate(-50%, 0);
+		}
+
+		.orn-1 {
+			position: absolute;
+			top: 0;
+			left: -10%;
+			width: 45%;
+			transform: rotate(-30deg) scaleX(-1);
+		}
+
+		.orn-2 {
+			position: absolute;
+			top: 25%;
+			right: -10%;
+			width: 50%;
+			transform: rotate(30deg);
+		}
+
+		.orn-3 {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 65%;
+			transform: translate(-75%, 18%) rotate(5deg);
+		}
+
+		.orn-4 {
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			width: 65%;
+			transform: translate(80%, 20%);
+		}
+	}
+
+	.couple-body {
+		position: relative;
+
+		.container {
+			@include max-sm {
+				padding: 0;
+			}
+		}
+	}
+
+	.couple-content {
+		position: relative;
+		padding: 3rem 2rem;
+		background: var(--background-linear-main);
+		margin-bottom: 3rem;
+		border-radius: var(--border-radius);
+
+		@include max-sm {
+			padding: 2rem 1rem;
+		}
+	}
+
+	.couple {
+		position: relative;
+		overflow: hidden;
+
+		.image-wrap {
+			position: relative;
+			width: 80%;
+			margin: 0 auto;
+
+			.background-element {
+				@include aspect-ratio(3, 4);
+
+				.couple-image {
+					object-fit: cover;
+					border-radius: var(--border-radius);
+				}
+			}
+		}
+
+		.couple-description {
+			position: relative;
+			padding: 2rem 3.5rem 2rem 1.5rem;
+			text-align: left;
+			background-color: var(--color-main);
+			border-radius: var(--border-radius);
+
+			&-body {
+				position: relative;
+			}
+		}
+
+		.couple-parent {
+			width: 100%;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.sosmed-wrap {
+			position: absolute;
+			top: 2rem;
+			right: 1.5rem;
+			width: fit-content;
+			max-width: 100%;
+			background: var(--color-secondary);
+			padding: 0.5rem 0.6rem;
+			border-radius: 50px;
+
+			.sosmed {
+				color: var(--text-button);
+				text-decoration: none;
+				display: block;
+				width: fit-content;
+				margin: 0 auto;
+
+				small {
+					align-items: center;
+					gap: 0.25rem;
+					display: flex;
+					justify-content: center;
+				}
+			}
+
+			.fab {
+				font-size: 18px;
+
+				@include max-md {
+					font-size: 16px;
+				}
+			}
+		}
+
+		&.single {
+			.image-wrap {
+				width: 85%;
+				padding-bottom: 2rem;
+
+				.background-element {
+					@include min-md {
+						@include aspect-ratio(4, 3);
+					}
+				}
+			}
+
+			.sosmed-wrap {
+				top: 0;
+			}
+
+			.and {
+				color: var(--color-dark);
+				justify-content: flex-start;
+
+				span {
+					font-size: 28px;
+				}
+			}
+
+			.pagar {
+				@include min-md {
+					width: 130%;
+				}
+			}
+
+			.orn-1 {
+				@include min-md {
+					width: 30%;
+					left: -8%;
+				}
+			}
+
+			.orn-2 {
+				@include min-md {
+					width: 30%;
+					right: -8%;
+				}
+			}
+
+			.orn-3,
+			.orn-4 {
+				@include min-md {
+					width: 40%;
+				}
+			}
+		}
+	}
+}
